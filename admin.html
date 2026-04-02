@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>娓告垙鐩掑瓙鍚庡彴绠＄悊绯荤粺</title>
+  <title>游戏盒子后台管理系统</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- SheetJS for Excel parsing -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-  <!-- 娓告垙鏁版嵁婧?-->
+  <!-- 游戏数据源 -->
   <script src="data-embed.js"></script>
   <style>
     :root {
@@ -26,7 +26,7 @@
       --input-bg: #2a3a4a;
     }
 
-    /* 浜壊涓婚 */
+    /* 亮色主题 */
     [data-theme="light"] {
       --bg-primary: #f5f5f5;
       --bg-secondary: #ffffff;
@@ -52,7 +52,7 @@
       min-height: 100vh;
     }
 
-    /* 椤堕儴瀵艰埅 */
+    /* 顶部导航 */
     .header {
       background: var(--bg-secondary);
       padding: 15px 30px;
@@ -118,14 +118,14 @@
       margin-top: 2px;
     }
 
-    /* 涓诲唴瀹?*/
+    /* 主内容 */
     .main-content {
       padding: 25px 30px;
       max-width: 1600px;
       margin: 0 auto;
     }
 
-    /* 鍗＄墖 */
+    /* 卡片 */
     .card {
       background: var(--bg-secondary);
       border-radius: 8px;
@@ -147,7 +147,7 @@
       color: var(--accent-blue);
     }
 
-    /* 瀵煎叆瀵煎嚭 */
+    /* 导入导出 */
     .import-export-content {
       display: flex;
       gap: 20px;
@@ -182,7 +182,7 @@
       min-width: 180px;
     }
 
-    /* 鎸夐挳 */
+    /* 按钮 */
     .btn {
       padding: 12px 20px;
       border: none;
@@ -236,7 +236,7 @@
       color: #fff;
     }
 
-    /* 宸ュ叿鏍?*/
+    /* 工具栏 */
     .toolbar {
       display: flex;
       flex-wrap: wrap;
@@ -274,7 +274,7 @@
       color: var(--text-secondary);
     }
 
-    /* 绛涢€?*/
+    /* 筛选 */
     .filter-bar {
       display: flex;
       align-items: center;
@@ -293,7 +293,7 @@
       min-width: 150px;
     }
 
-    /* 琛ㄦ牸 */
+    /* 表格 */
     .games-table {
       width: 100%;
       border-collapse: collapse;
@@ -341,12 +341,12 @@
     }
 
     .checkbox.checked::after {
-      content: '鉁?;
+      content: '✓';
       color: #fff;
       font-size: 12px;
     }
 
-    /* 灏侀潰 */
+    /* 封面 */
     .game-cover {
       width: 90px;
       height: 50px;
@@ -448,7 +448,7 @@
       color: var(--text-white);
     }
 
-    /* 寮圭獥 */
+    /* 弹窗 */
     .modal {
       display: none;
       position: fixed;
@@ -529,7 +529,7 @@
       gap: 10px;
     }
 
-    /* 琛ㄥ崟 */
+    /* 表单 */
     .form-group {
       margin-bottom: 20px;
     }
@@ -567,7 +567,7 @@
       gap: 20px;
     }
 
-    /* 灏侀潰涓婁紶 */
+    /* 封面上传 */
     .cover-upload-area {
       width: 100%;
       height: 200px;
@@ -601,7 +601,7 @@
       object-fit: contain;
     }
 
-    /* 鎵归噺鎿嶄綔鏍?*/
+    /* 批量操作栏 */
     .batch-actions {
       display: none;
       position: fixed;
@@ -622,7 +622,7 @@
       display: flex;
     }
 
-    /* 鎵归噺灏侀潰 */
+    /* 批量封面 */
     .batch-cover-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -678,7 +678,7 @@
       object-fit: cover;
     }
 
-    /* 鍒嗙被绠＄悊 */
+    /* 分类管理 */
     .category-manager {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -704,7 +704,7 @@
       font-size: 14px;
     }
 
-    /* 鑱旂郴鏂瑰紡 */
+    /* 联系方式 */
     .contact-item {
       display: flex;
       gap: 10px;
@@ -712,10 +712,28 @@
       align-items: center;
     }
 
-    /* 鍙嶉鍒楄〃 */
+    /* 反馈列表 */
     .feedback-list {
       max-height: 400px;
       overflow-y: auto;
+    }
+
+    .feedback-list.grid-view {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    @media (max-width: 1200px) {
+      .feedback-list.grid-view {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .feedback-list.grid-view {
+        grid-template-columns: 1fr;
+      }
     }
 
     .feedback-item {
@@ -724,12 +742,27 @@
       border-radius: 8px;
       margin-bottom: 10px;
       border: 1px solid var(--border-color);
+      position: relative;
+      transition: all 0.2s ease;
+    }
+
+    .feedback-list.grid-view .feedback-item {
+      margin-bottom: 0;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .feedback-item:hover {
+      border-color: var(--accent-blue);
+      box-shadow: 0 4px 12px rgba(102, 192, 244, 0.15);
     }
 
     .feedback-item .header {
       display: flex;
       justify-content: space-between;
       margin-bottom: 8px;
+      align-items: center;
     }
 
     .feedback-item .type {
@@ -745,7 +778,73 @@
       font-size: 12px;
     }
 
-    /* 涓嬭浇缁熻 */
+    .feedback-item .content {
+      color: var(--text-primary);
+      margin-bottom: 8px;
+      flex: 1;
+      word-break: break-word;
+    }
+
+    .feedback-item .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .feedback-item .user-info {
+      color: var(--text-secondary);
+      font-size: 12px;
+    }
+
+    .feedback-item .actions {
+      display: flex;
+      gap: 8px;
+    }
+
+    .feedback-item .actions button {
+      padding: 4px 10px;
+      font-size: 12px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .feedback-item .btn-process {
+      background: var(--accent-red);
+      color: #fff;
+    }
+
+    .feedback-item .btn-process:hover {
+      background: #c0392b;
+    }
+
+    .feedback-item .btn-delete {
+      background: var(--bg-hover);
+      color: var(--text-secondary);
+    }
+
+    .feedback-item .btn-delete:hover {
+      background: var(--accent-red);
+      color: #fff;
+    }
+
+    .feedback-item.processed .btn-process {
+      background: var(--accent-green);
+    }
+
+    .feedback-item.processed {
+      opacity: 0.7;
+    }
+
+    .feedback-item.deleted {
+      display: none !important;
+    }
+
+    /* 下载统计 */
     .stats-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -772,12 +871,12 @@
       margin-top: 5px;
     }
 
-    /* 闅愯棌 */
+    /* 隐藏 */
     .hidden {
       display: none !important;
     }
 
-    /* 鍒嗛〉 */
+    /* 分页 */
     .pagination-bar {
       display: flex;
       justify-content: center;
@@ -819,128 +918,136 @@
   </style>
 </head>
 <body>
-  <!-- 椤堕儴瀵艰埅 -->
+  <!-- 顶部导航 -->
   <header class="header">
     <div class="header-left">
       <i class="fas fa-cog"></i>
-      <h1>娓告垙鐩掑瓙鍚庡彴绠＄悊绯荤粺</h1>
-      <button class="theme-toggle" id="themeToggle" title="鍒囨崲涓婚">
+      <h1>游戏盒子后台管理系统</h1>
+      <button class="theme-toggle" id="themeToggle" title="切换主题">
         <i class="fas fa-moon"></i>
       </button>
     </div>
     <div class="header-stats">
       <div class="stat-item" onclick="showDownloadStats()">
         <div class="stat-value" id="totalGames">0</div>
-        <div class="stat-label">娓告垙鎬绘暟</div>
+        <div class="stat-label">游戏总数</div>
       </div>
       <div class="stat-item">
         <div class="stat-value" id="totalCategories">0</div>
-        <div class="stat-label">鍒嗙被鏁伴噺</div>
+        <div class="stat-label">分类数量</div>
       </div>
       <div class="stat-item">
         <div class="stat-value" id="totalDownloadsWeb">0</div>
-        <div class="stat-label">缃戦〉鐗堜笅杞?/div>
+        <div class="stat-label">网页版下载</div>
       </div>
       <div class="stat-item">
         <div class="stat-value" id="totalDownloadsApp">0</div>
-        <div class="stat-label">瀹㈡埛绔笅杞?/div>
+        <div class="stat-label">客户端下载</div>
       </div>
-      <div class="stat-item" onclick="showDownloadStats()" title="鐐瑰嚮鏌ョ湅涓嬭浇缁熻璇︽儏">
+      <div class="stat-item" onclick="showDownloadStats()" title="点击查看下载统计详情">
         <div class="stat-value" id="totalDownloadsAll">0</div>
-        <div class="stat-label"><i class="fas fa-chart-bar"></i> 鎬讳笅杞芥鏁?/div>
+        <div class="stat-label"><i class="fas fa-chart-bar"></i> 总下载次数</div>
       </div>
     </div>
   </header>
 
-  <!-- 涓诲唴瀹?-->
+  <!-- 主内容 -->
   <main class="main-content">
-    <!-- 鏁版嵁瀵煎叆瀵煎嚭 -->
+    <!-- 数据导入导出 -->
     <div class="card">
       <div class="card-title">
         <i class="fas fa-database"></i>
-        鏁版嵁瀵煎叆瀵煎嚭
+        数据导入导出
       </div>
       <div class="import-export-content">
         <div class="upload-area" id="dropZone">
           <i class="fas fa-cloud-upload-alt"></i>
-          <p>鎷栨嫿 Excel 鏂囦欢鍒版澶勶紝鎴栫偣鍑讳笂浼?/p>
+          <p>拖拽 Excel 文件到此处，或点击上传</p>
           <input type="file" id="fileInput" accept=".xlsx,.xls" style="display: none;">
           <div style="margin-top: 10px; color: var(--text-secondary); font-size: 12px;">
-            <i class="fas fa-magic"></i> 鑷姩璇嗗埆锛氭柊娓告垙灏嗘坊鍔狅紝宸叉湁娓告垙灏嗘洿鏂?          </div>
+            <i class="fas fa-magic"></i> 自动识别：新游戏将添加，已有游戏将更新
+          </div>
         </div>
         <div class="export-buttons">
           <button class="btn" onclick="exportToExcel()">
-            <i class="fas fa-file-excel"></i> 瀵煎嚭Excel
+            <i class="fas fa-file-excel"></i> 导出Excel
           </button>
           <button class="btn" onclick="exportToJSON()">
-            <i class="fas fa-file-code"></i> 瀵煎嚭JSON
+            <i class="fas fa-file-code"></i> 导出JSON
           </button>
           <button class="btn" onclick="exportToDataEmbed()">
-            <i class="fas fa-file-export"></i> 瀵煎嚭data-embed.js
+            <i class="fas fa-file-export"></i> 导出data-embed.js
           </button>
           <button class="btn btn-danger" onclick="clearAllData()">
-            <i class="fas fa-trash-alt"></i> 娓呯┖鎵€鏈夋暟鎹?          </button>
-          <button class="btn" onclick="reloadFromSource()" title="浠?data-embed.js 閲嶆柊鍔犺浇鏁版嵁">
-            <i class="fas fa-sync"></i> 閲嶆柊鍔犺浇鏁版嵁婧?          </button>
+            <i class="fas fa-trash-alt"></i> 清空所有数据
+          </button>
+          <button class="btn" onclick="reloadFromSource()" title="从 data-embed.js 重新加载数据">
+            <i class="fas fa-sync"></i> 重新加载数据源
+          </button>
         </div>
         <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid var(--border-color);">
           <div style="color: var(--text-secondary); font-size: 13px; margin-bottom: 10px;">
-            <i class="fas fa-cloud"></i> 浜戠鍚屾
+            <i class="fas fa-cloud"></i> 云端同步
           </div>
           <div style="display: flex; gap: 10px; flex-wrap: wrap;">
             <button class="btn btn-primary" onclick="syncToCloud()">
-              <i class="fas fa-cloud-upload-alt"></i> 鍚屾鍒颁簯绔?            </button>
+              <i class="fas fa-cloud-upload-alt"></i> 同步到云端
+            </button>
             <button class="btn" onclick="loadFromCloud()">
-              <i class="fas fa-cloud-download-alt"></i> 浠庝簯绔姞杞?            </button>
+              <i class="fas fa-cloud-download-alt"></i> 从云端加载
+            </button>
             <span style="color: var(--text-secondary); font-size: 12px; align-self: center;">
-              鍚屾鍚庣綉椤电増鍜屽鎴风灏嗙湅鍒版渶鏂版暟鎹?            </span>
+              同步后网页版和客户端将看到最新数据
+            </span>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- 鎼滅储鍜屾搷浣滄爮 -->
+    <!-- 搜索和操作栏 -->
     <div class="toolbar">
       <div class="search-box">
         <i class="fas fa-search"></i>
-        <input type="text" id="searchInput" placeholder="鎼滅储娓告垙鍚嶇О..." autocomplete="off">
+        <input type="text" id="searchInput" placeholder="搜索游戏名称..." autocomplete="off">
       </div>
       <button class="btn btn-primary" onclick="addNewGame()">
-        <i class="fas fa-plus"></i> 娣诲姞娓告垙
+        <i class="fas fa-plus"></i> 添加游戏
       </button>
       <button class="btn" onclick="batchEditCategory()">
-        <i class="fas fa-folder-open"></i> 鎵归噺鏀瑰垎绫?      </button>
+        <i class="fas fa-folder-open"></i> 批量改分类
+      </button>
       <button class="btn" onclick="batchEditCover()">
-        <i class="fas fa-images"></i> 鎵归噺鏀瑰皝闈?      </button>
+        <i class="fas fa-images"></i> 批量改封面
+      </button>
       <button class="btn btn-warning" onclick="batchEditDrm()">
-        <i class="fas fa-lock"></i> 鎵归噺D鍔犲瘑
+        <i class="fas fa-lock"></i> 批量D加密
       </button>
       <button class="btn" onclick="manageCategories()">
-        <i class="fas fa-tags"></i> 鍒嗙被绠＄悊
+        <i class="fas fa-tags"></i> 分类管理
       </button>
       <button class="btn btn-info" onclick="manageContact()">
-        <i class="fas fa-address-book"></i> 鑱旂郴鏂瑰紡
+        <i class="fas fa-address-book"></i> 联系方式
       </button>
       <button class="btn" onclick="viewFeedbacks()">
-        <i class="fas fa-comments"></i> 鏌ョ湅鍙嶉
+        <i class="fas fa-comments"></i> 查看反馈
       </button>
       <button class="btn btn-danger" onclick="batchDelete()">
-        <i class="fas fa-trash-alt"></i> 鎵归噺鍒犻櫎
+        <i class="fas fa-trash-alt"></i> 批量删除
       </button>
     </div>
 
-    <!-- 绛涢€夋爮 -->
+    <!-- 筛选栏 -->
     <div class="filter-bar">
-      <span style="color: var(--text-secondary);"><i class="fas fa-filter"></i> 鍒嗙被绛涢€?</span>
+      <span style="color: var(--text-secondary);"><i class="fas fa-filter"></i> 分类筛选:</span>
       <select class="filter-select" id="categoryFilter">
-        <option value="">鍏ㄩ儴娓告垙</option>
+        <option value="">全部游戏</option>
       </select>
-      <span style="color: var(--text-secondary);"><i class="fas fa-check-square"></i> 宸查€夋嫨:</span>
+      <span style="color: var(--text-secondary);"><i class="fas fa-check-square"></i> 已选择:</span>
       <span id="selectedCount" style="color: var(--accent-blue); font-weight: bold;">0</span>
-      <span style="color: var(--text-secondary);">涓父鎴?/span>
+      <span style="color: var(--text-secondary);">个游戏</span>
     </div>
 
-    <!-- 娓告垙鍒楄〃 -->
+    <!-- 游戏列表 -->
     <div class="card">
       <table class="games-table">
         <thead>
@@ -948,191 +1055,193 @@
             <th style="width: 50px;">
               <div class="checkbox" onclick="toggleSelectAll()"></div>
             </th>
-            <th style="width: 110px;">灏侀潰</th>
-            <th>娓告垙鍚嶇О</th>
-            <th style="width: 140px;">鍒嗙被</th>
-            <th style="width: 100px;">涓嬭浇閾炬帴</th>
-            <th style="width: 90px;">涓嬭浇娆℃暟</th>
-            <th style="width: 100px;">鎿嶄綔</th>
+            <th style="width: 110px;">封面</th>
+            <th>游戏名称</th>
+            <th style="width: 140px;">分类</th>
+            <th style="width: 100px;">下载链接</th>
+            <th style="width: 90px;">下载次数</th>
+            <th style="width: 100px;">操作</th>
           </tr>
         </thead>
         <tbody id="gamesTableBody">
-          <!-- 鍔ㄦ€佺敓鎴?-->
+          <!-- 动态生成 -->
         </tbody>
       </table>
       <div class="pagination-bar" id="pagination">
-        <!-- 鍔ㄦ€佺敓鎴?-->
+        <!-- 动态生成 -->
       </div>
     </div>
   </main>
 
-  <!-- 鎵归噺鎿嶄綔鎮诞鏍?-->
+  <!-- 批量操作悬浮栏 -->
   <div class="batch-actions" id="batchActions">
-    <span>宸查€夋嫨 <strong id="batchCount">0</strong> 涓父鎴?/span>
+    <span>已选择 <strong id="batchCount">0</strong> 个游戏</span>
     <button class="btn btn-info" onclick="batchMoveCategory()">
-      <i class="fas fa-folder"></i> 绉诲姩鍒板垎绫?    </button>
+      <i class="fas fa-folder"></i> 移动到分类
+    </button>
     <button class="btn btn-danger" onclick="batchDelete()">
-      <i class="fas fa-trash"></i> 鍒犻櫎
+      <i class="fas fa-trash"></i> 删除
     </button>
     <button class="btn" onclick="clearSelection()">
-      <i class="fas fa-times"></i> 鍙栨秷閫夋嫨
+      <i class="fas fa-times"></i> 取消选择
     </button>
   </div>
 
-  <!-- 娣诲姞/缂栬緫娓告垙寮圭獥 -->
+  <!-- 添加/编辑游戏弹窗 -->
   <div class="modal" id="gameModal">
     <div class="modal-content">
       <div class="modal-header">
-        <h3 id="modalTitle">娣诲姞娓告垙</h3>
+        <h3 id="modalTitle">添加游戏</h3>
         <button class="modal-close" onclick="closeModal('gameModal')">&times;</button>
       </div>
       <div class="modal-body">
         <input type="hidden" id="gameId">
         
         <div class="form-group">
-          <label>娓告垙灏侀潰</label>
+          <label>游戏封面</label>
           <div class="cover-upload-area" id="coverUploadArea" onclick="document.getElementById('coverInput').click()">
             <i class="fas fa-image" style="font-size: 48px;"></i>
-            <p>鐐瑰嚮涓婁紶灏侀潰锛屾垨绮樿创鍥剧墖</p>
+            <p>点击上传封面，或粘贴图片</p>
             <input type="file" id="coverInput" accept="image/*" style="display: none;">
           </div>
         </div>
 
         <div class="form-row">
           <div class="form-group">
-            <label>娓告垙鍚嶇О锛堜腑鏂囷級*</label>
-            <input type="text" class="form-control" id="gameName" placeholder="杈撳叆娓告垙涓枃鍚嶇О">
+            <label>游戏名称（中文）*</label>
+            <input type="text" class="form-control" id="gameName" placeholder="输入游戏中文名称">
           </div>
           <div class="form-group">
-            <label>娓告垙鍚嶇О锛堣嫳鏂囷級</label>
-            <input type="text" class="form-control" id="gameNameEn" placeholder="杈撳叆娓告垙鑻辨枃鍚嶇О">
+            <label>游戏名称（英文）</label>
+            <input type="text" class="form-control" id="gameNameEn" placeholder="输入游戏英文名称">
           </div>
         </div>
 
         <div class="form-row">
           <div class="form-group">
-            <label>娓告垙鍒嗙被</label>
+            <label>游戏分类</label>
             <select class="form-control" id="gameCategory">
-              <option value="">-- 閫夋嫨鍒嗙被 --</option>
+              <option value="">-- 选择分类 --</option>
             </select>
           </div>
           <div class="form-group">
-            <label>娓告垙澶у皬</label>
-            <input type="text" class="form-control" id="gameSize" placeholder="渚嬪锛?0GB">
+            <label>游戏大小</label>
+            <input type="text" class="form-control" id="gameSize" placeholder="例如：50GB">
           </div>
         </div>
 
         <div class="form-group">
-          <label>娓告垙鎻忚堪</label>
-          <textarea class="form-control" id="gameDesc" placeholder="杈撳叆娓告垙鎻忚堪..."></textarea>
+          <label>游戏描述</label>
+          <textarea class="form-control" id="gameDesc" placeholder="输入游戏描述..."></textarea>
         </div>
 
         <div class="form-row">
           <div class="form-group">
-            <label>鐧惧害缃戠洏閾炬帴1</label>
+            <label>百度网盘链接1</label>
             <input type="text" class="form-control" id="baiduLink1" placeholder="https://pan.baidu.com/...">
           </div>
           <div class="form-group">
-            <label>鐧惧害缃戠洏閾炬帴2</label>
+            <label>百度网盘链接2</label>
             <input type="text" class="form-control" id="baiduLink2" placeholder="https://pan.baidu.com/...">
           </div>
         </div>
 
         <div class="form-group">
-          <label>杩呴浄浜戠洏閾炬帴</label>
+          <label>迅雷云盘链接</label>
           <input type="text" class="form-control" id="thunderLink" placeholder="https://pan.xunlei.com/...">
         </div>
 
         <div class="form-group">
           <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
             <input type="checkbox" id="isDrm" style="width: 18px; height: 18px;">
-            <span>D鍔犲瘑娓告垙</span>
+            <span>D加密游戏</span>
           </label>
         </div>
       </div>
       <div class="modal-footer">
-        <button class="btn" onclick="closeModal('gameModal')">鍙栨秷</button>
+        <button class="btn" onclick="closeModal('gameModal')">取消</button>
         <button class="btn btn-primary" onclick="saveGame()">
-          <i class="fas fa-save"></i> 淇濆瓨
+          <i class="fas fa-save"></i> 保存
         </button>
       </div>
     </div>
   </div>
 
-  <!-- 蹇嵎缂栬緫閾炬帴寮圭獥 -->
+  <!-- 快捷编辑链接弹窗 -->
   <div class="modal" id="quickEditLinksModal">
     <div class="modal-content" style="max-width: 500px;">
       <div class="modal-header">
-        <h3><i class="fas fa-link"></i> 缂栬緫涓嬭浇閾炬帴</h3>
+        <h3><i class="fas fa-link"></i> 编辑下载链接</h3>
         <button class="modal-close" onclick="closeModal('quickEditLinksModal')">&times;</button>
       </div>
       <div class="modal-body">
         <input type="hidden" id="quickEditGameId">
         
         <div style="margin-bottom: 20px; padding: 12px 15px; background: var(--bg-tertiary); border-radius: 8px; border-left: 4px solid var(--accent-blue);">
-          <div style="color: var(--text-secondary); font-size: 12px; margin-bottom: 4px;">褰撳墠娓告垙</div>
+          <div style="color: var(--text-secondary); font-size: 12px; margin-bottom: 4px;">当前游戏</div>
           <div id="quickEditGameName" style="color: var(--text-white); font-size: 16px; font-weight: bold;"></div>
           <div id="quickEditGameNameEn" style="color: var(--text-secondary); font-size: 13px; margin-top: 2px;"></div>
         </div>
 
         <div class="form-group">
-          <label><i class="fab fa-baidu" style="color: #2932e1;"></i> 鐧惧害缃戠洏閾炬帴 1</label>
+          <label><i class="fab fa-baidu" style="color: #2932e1;"></i> 百度网盘链接 1</label>
           <input type="text" class="form-control" id="quickBaiduLink1" placeholder="https://pan.baidu.com/s/...">
         </div>
 
         <div class="form-group">
-          <label><i class="fab fa-baidu" style="color: #2932e1;"></i> 鐧惧害缃戠洏閾炬帴 2</label>
+          <label><i class="fab fa-baidu" style="color: #2932e1;"></i> 百度网盘链接 2</label>
           <input type="text" class="form-control" id="quickBaiduLink2" placeholder="https://pan.baidu.com/s/...">
         </div>
 
         <div class="form-group">
-          <label><i class="fas fa-bolt" style="color: #00a8e6;"></i> 杩呴浄浜戠洏閾炬帴</label>
+          <label><i class="fas fa-bolt" style="color: #00a8e6;"></i> 迅雷云盘链接</label>
           <input type="text" class="form-control" id="quickThunderLink" placeholder="https://pan.xunlei.com/s/...">
         </div>
       </div>
       <div class="modal-footer">
-        <button class="btn" onclick="closeModal('quickEditLinksModal')">鍙栨秷</button>
+        <button class="btn" onclick="closeModal('quickEditLinksModal')">取消</button>
         <button class="btn btn-primary" onclick="saveQuickEditLinks()">
-          <i class="fas fa-save"></i> 淇濆瓨
+          <i class="fas fa-save"></i> 保存
         </button>
       </div>
     </div>
   </div>
 
-  <!-- 涓嬭浇缁熻寮圭獥 -->
+  <!-- 下载统计弹窗 -->
   <div class="modal" id="downloadStatsModal">
     <div class="modal-content large">
       <div class="modal-header">
-        <h3><i class="fas fa-chart-bar"></i> 娓告垙涓嬭浇鎺掕姒?/h3>
+        <h3><i class="fas fa-chart-bar"></i> 游戏下载排行榜</h3>
         <button class="modal-close" onclick="closeModal('downloadStatsModal')">&times;</button>
       </div>
       <div class="modal-body" style="padding: 0;">
         <div class="stats-grid" style="padding: 20px; margin: 0;">
           <div class="stats-card">
             <div class="value" id="statsTotalDownloads">0</div>
-            <div class="label">鎬讳笅杞芥鏁?/div>
+            <div class="label">总下载次数</div>
           </div>
           <div class="stats-card">
             <div class="value" id="statsWebDownloads">0</div>
-            <div class="label">缃戦〉鐗堜笅杞?/div>
+            <div class="label">网页版下载</div>
           </div>
           <div class="stats-card">
             <div class="value" id="statsAppDownloads">0</div>
-            <div class="label">瀹㈡埛绔笅杞?/div>
+            <div class="label">客户端下载</div>
           </div>
           <div class="stats-card">
             <div class="value" id="statsAvgDownloads">0</div>
-            <div class="label">骞冲潎涓嬭浇/娓告垙</div>
+            <div class="label">平均下载/游戏</div>
           </div>
         </div>
 
         <div style="padding: 15px 20px; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center;">
           <div style="color: var(--text-secondary); font-size: 13px;">
-            <i class="fas fa-info-circle"></i> 鐐瑰嚮琛ㄥご鍙帓搴?          </div>
+            <i class="fas fa-info-circle"></i> 点击表头可排序
+          </div>
           <div style="display: flex; gap: 10px;">
-            <button class="btn btn-sm" onclick="sortDownloadStats('total')">鎸夋€讳笅杞芥帓搴?/button>
-            <button class="btn btn-sm" onclick="sortDownloadStats('web')">鎸夌綉椤电増鎺掑簭</button>
-            <button class="btn btn-sm" onclick="sortDownloadStats('app')">鎸夊鎴风鎺掑簭</button>
+            <button class="btn btn-sm" onclick="sortDownloadStats('total')">按总下载排序</button>
+            <button class="btn btn-sm" onclick="sortDownloadStats('web')">按网页版排序</button>
+            <button class="btn btn-sm" onclick="sortDownloadStats('app')">按客户端排序</button>
           </div>
         </div>
 
@@ -1140,203 +1249,223 @@
           <table class="games-table">
             <thead>
               <tr>
-                <th style="width: 60px; cursor: pointer;" onclick="sortDownloadStats('rank')">鎺掑悕</th>
-                <th style="cursor: pointer;" onclick="sortDownloadStats('name')">娓告垙鍚嶇О</th>
-                <th style="width: 100px; cursor: pointer; text-align: center;" onclick="sortDownloadStats('total')">鎬讳笅杞?/th>
-                <th style="width: 100px; cursor: pointer; text-align: center;" onclick="sortDownloadStats('web')">缃戦〉鐗?/th>
-                <th style="width: 100px; cursor: pointer; text-align: center;" onclick="sortDownloadStats('app')">瀹㈡埛绔?/th>
-                <th style="width: 100px; text-align: center;">鍗犳瘮</th>
+                <th style="width: 60px; cursor: pointer;" onclick="sortDownloadStats('rank')">排名</th>
+                <th style="cursor: pointer;" onclick="sortDownloadStats('name')">游戏名称</th>
+                <th style="width: 100px; cursor: pointer; text-align: center;" onclick="sortDownloadStats('total')">总下载</th>
+                <th style="width: 100px; cursor: pointer; text-align: center;" onclick="sortDownloadStats('web')">网页版</th>
+                <th style="width: 100px; cursor: pointer; text-align: center;" onclick="sortDownloadStats('app')">客户端</th>
+                <th style="width: 100px; text-align: center;">占比</th>
               </tr>
             </thead>
             <tbody id="downloadStatsBody">
-              <!-- 鍔ㄦ€佺敓鎴?-->
+              <!-- 动态生成 -->
             </tbody>
           </table>
         </div>
       </div>
       <div class="modal-footer">
-        <button class="btn" onclick="closeModal('downloadStatsModal')">鍏抽棴</button>
+        <button class="btn" onclick="closeModal('downloadStatsModal')">关闭</button>
         <button class="btn btn-info" onclick="exportDownloadStats()">
-          <i class="fas fa-download"></i> 瀵煎嚭缁熻
+          <i class="fas fa-download"></i> 导出统计
         </button>
       </div>
     </div>
   </div>
 
-  <!-- 鎵归噺淇敼灏侀潰寮圭獥 -->
+  <!-- 批量修改封面弹窗 -->
   <div class="modal" id="batchCoverModal">
     <div class="modal-content large">
       <div class="modal-header">
-        <h3>鎵归噺淇敼灏侀潰</h3>
+        <h3>批量修改封面</h3>
         <button class="modal-close" onclick="closeModal('batchCoverModal')">&times;</button>
       </div>
       <div class="modal-body" style="padding: 0;">
         <div style="padding: 12px 20px; background: var(--bg-tertiary); border-bottom: 1px solid var(--border-color);">
           <p style="color: var(--text-secondary); margin: 0; font-size: 13px;">
             <i class="fas fa-info-circle"></i> 
-            鍦ㄧ綉椤典腑鍙抽敭澶嶅埗鍥剧墖锛岀劧鍚庣偣鍑诲搴旀父鎴忕殑绮樿创妗嗭紝鎸?Ctrl+V 绮樿创灏侀潰
+            在网页中右键复制图片，然后点击对应游戏的粘贴框，按 Ctrl+V 粘贴封面
           </p>
         </div>
         <div class="batch-cover-grid" id="batchCoverGrid" style="padding: 15px 20px;">
-          <!-- 鍔ㄦ€佺敓鎴?-->
+          <!-- 动态生成 -->
         </div>
         <div class="pagination-bar" id="batchCoverPagination"></div>
       </div>
       <div class="modal-footer">
-        <button class="btn" onclick="closeModal('batchCoverModal')">鍏抽棴</button>
+        <button class="btn" onclick="closeModal('batchCoverModal')">关闭</button>
         <button class="btn btn-primary" onclick="saveBatchCovers()">
-          <i class="fas fa-save"></i> 淇濆瓨鎵€鏈変慨鏀?        </button>
+          <i class="fas fa-save"></i> 保存所有修改
+        </button>
       </div>
     </div>
   </div>
 
-  <!-- 鍒嗙被绠＄悊寮圭獥 -->
+  <!-- 分类管理弹窗 -->
   <div class="modal" id="categoryModal">
     <div class="modal-content">
       <div class="modal-header">
-        <h3>鍒嗙被绠＄悊</h3>
+        <h3>分类管理</h3>
         <button class="modal-close" onclick="closeModal('categoryModal')">&times;</button>
       </div>
       <div class="modal-body">
         <div class="category-manager" id="categoryManager">
-          <!-- 鍔ㄦ€佺敓鎴?-->
+          <!-- 动态生成 -->
         </div>
         <button class="btn btn-primary" onclick="addCategory()" style="width: 100%; margin-top: 10px;">
-          <i class="fas fa-plus"></i> 娣诲姞鏂板垎绫?        </button>
+          <i class="fas fa-plus"></i> 添加新分类
+        </button>
       </div>
       <div class="modal-footer">
-        <button class="btn" onclick="closeModal('categoryModal')">鍙栨秷</button>
+        <button class="btn" onclick="closeModal('categoryModal')">取消</button>
         <button class="btn btn-primary" onclick="saveCategories()">
-          <i class="fas fa-save"></i> 淇濆瓨鍒嗙被
+          <i class="fas fa-save"></i> 保存分类
         </button>
       </div>
     </div>
   </div>
 
-  <!-- 鑱旂郴鏂瑰紡绠＄悊寮圭獥 -->
+  <!-- 联系方式管理弹窗 -->
   <div class="modal" id="contactModal">
     <div class="modal-content" style="max-width: 600px;">
       <div class="modal-header">
-        <h3>鑱旂郴鏂瑰紡绠＄悊</h3>
+        <h3>联系方式管理</h3>
         <button class="modal-close" onclick="closeModal('contactModal')">&times;</button>
       </div>
       <div class="modal-body">
         <div class="form-group">
-          <label>鏍囬</label>
-          <input type="text" class="form-control" id="contactTitle" placeholder="鑱旂郴鎴戜滑" value="鑱旂郴鎴戜滑">
+          <label>标题</label>
+          <input type="text" class="form-control" id="contactTitle" placeholder="联系我们" value="联系我们">
         </div>
         <div id="contactList">
-          <!-- 鍔ㄦ€佺敓鎴?-->
+          <!-- 动态生成 -->
         </div>
         <button class="btn" onclick="addContact()" style="width: 100%; margin-top: 15px;">
-          <i class="fas fa-plus"></i> 娣诲姞鑱旂郴鏂瑰紡
+          <i class="fas fa-plus"></i> 添加联系方式
         </button>
       </div>
       <div class="modal-footer">
-        <button class="btn" onclick="closeModal('contactModal')">鍙栨秷</button>
+        <button class="btn" onclick="closeModal('contactModal')">取消</button>
         <button class="btn btn-primary" onclick="saveContact()">
-          <i class="fas fa-save"></i> 淇濆瓨
+          <i class="fas fa-save"></i> 保存
         </button>
       </div>
     </div>
   </div>
 
-  <!-- 鍙嶉鍒楄〃寮圭獥 -->
+  <!-- 反馈列表弹窗 -->
   <div class="modal" id="feedbackModal">
     <div class="modal-content large">
       <div class="modal-header">
-        <h3>鐢ㄦ埛鍙嶉</h3>
+        <h3>用户反馈</h3>
         <button class="modal-close" onclick="closeModal('feedbackModal')">&times;</button>
       </div>
       <div class="modal-body" style="padding: 0;">
         <div style="display: flex; border-bottom: 1px solid var(--border-color);">
           <div id="tabPending" onclick="switchFeedbackTab('pending')" style="flex: 1; padding: 15px; text-align: center; cursor: pointer; border-bottom: 2px solid var(--accent-blue); background: var(--bg-tertiary); color: var(--text-white); font-weight: 500;">
-            <i class="fas fa-inbox"></i> 鏈鐞?<span id="pendingCount" style="background: var(--accent-red); color: #fff; padding: 2px 8px; border-radius: 10px; font-size: 11px; margin-left: 5px;">0</span>
+            <i class="fas fa-inbox"></i> 未处理 <span id="pendingCount" style="background: var(--accent-red); color: #fff; padding: 2px 8px; border-radius: 10px; font-size: 11px; margin-left: 5px;">0</span>
           </div>
           <div id="tabProcessed" onclick="switchFeedbackTab('processed')" style="flex: 1; padding: 15px; text-align: center; cursor: pointer; border-bottom: 2px solid transparent; color: var(--text-secondary);">
-            <i class="fas fa-check-circle"></i> 宸插鐞?          </div>
+            <i class="fas fa-check-circle"></i> 已处理 <span id="processedCount" style="background: var(--accent-green); color: #fff; padding: 2px 8px; border-radius: 10px; font-size: 11px; margin-left: 5px;">0</span>
+          </div>
+        </div>
+        
+        <!-- 视图切换按钮 -->
+        <div style="padding: 10px 20px; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center;">
+          <div style="display: flex; gap: 10px;">
+            <button class="btn" id="viewGridBtn" onclick="switchFeedbackView('grid')" style="padding: 6px 12px; font-size: 13px;">
+              <i class="fas fa-th"></i> 九宫格
+            </button>
+            <button class="btn" id="viewListBtn" onclick="switchFeedbackView('list')" style="padding: 6px 12px; font-size: 13px; background: var(--bg-hover);">
+              <i class="fas fa-list"></i> 列表
+            </button>
+          </div>
+          <span style="color: var(--text-secondary); font-size: 13px;">
+            共 <strong id="totalFeedbackCount" style="color: var(--accent-blue);">0</strong> 条反馈
+          </span>
         </div>
         
         <div class="feedback-list" id="feedbackList" style="padding: 15px 20px; max-height: 400px; overflow-y: auto;">
-          <!-- 鍔ㄦ€佺敓鎴?-->
+          <!-- 动态生成 -->
         </div>
       </div>
       <div class="modal-footer">
-        <button class="btn" onclick="closeModal('feedbackModal')">鍏抽棴</button>
+        <button class="btn" onclick="closeModal('feedbackModal')">关闭</button>
         <button class="btn btn-primary" onclick="refreshFeedbacks()">
-          <i class="fas fa-sync"></i> 鍒锋柊
+          <i class="fas fa-sync"></i> 刷新
         </button>
       </div>
     </div>
   </div>
 
-  <!-- 鎵归噺淇敼鍒嗙被寮圭獥 -->
+  <!-- 批量修改分类弹窗 -->
   <div class="modal" id="batchCategoryModal">
     <div class="modal-content large">
       <div class="modal-header">
-        <h3>鎵归噺淇敼鍒嗙被</h3>
+        <h3>批量修改分类</h3>
         <button class="modal-close" onclick="closeModal('batchCategoryModal')">&times;</button>
       </div>
       <div class="modal-body" style="padding: 0;">
         <div style="padding: 15px 20px; background: var(--bg-tertiary); border-bottom: 1px solid var(--border-color); display: flex; gap: 15px; align-items: center;">
-          <span style="color: var(--text-secondary); font-size: 13px;"><i class="fas fa-filter"></i> 绛涢€夊垎绫?</span>
+          <span style="color: var(--text-secondary); font-size: 13px;"><i class="fas fa-filter"></i> 筛选分类:</span>
           <select class="filter-select" id="batchCategoryFilter" onchange="renderBatchCategoryList()">
-            <option value="">鍏ㄩ儴娓告垙</option>
+            <option value="">全部游戏</option>
           </select>
           <div style="flex: 1;"></div>
           <span style="color: var(--text-secondary); font-size: 13px;">
-            宸查€夋嫨 <strong id="batchCategorySelectedCount" style="color: var(--accent-blue);">0</strong> 涓父鎴?          </span>
+            已选择 <strong id="batchCategorySelectedCount" style="color: var(--accent-blue);">0</strong> 个游戏
+          </span>
         </div>
         
         <div id="batchCategoryList" style="max-height: 400px; overflow-y: auto; padding: 15px 20px;">
-          <!-- 鍔ㄦ€佺敓鎴?-->
+          <!-- 动态生成 -->
         </div>
       </div>
       <div class="modal-footer">
         <div style="display: flex; align-items: center; gap: 15px; flex: 1;">
           <select class="form-control" id="batchTargetCategory" style="width: 180px;">
-            <option value="">-- 閫夋嫨鐩爣鍒嗙被 --</option>
+            <option value="">-- 选择目标分类 --</option>
           </select>
           <label style="display: flex; align-items: center; gap: 5px; color: var(--text-secondary); font-size: 13px; cursor: pointer;">
             <input type="checkbox" id="batchKeepOriginalCategory" style="width: 16px; height: 16px;"> 
-            淇濈暀鍘熸湁鍒嗙被锛圖鍔犲瘑涓撶敤锛?          </label>
+            保留原有分类（D加密专用）
+          </label>
         </div>
-        <button class="btn" onclick="closeModal('batchCategoryModal')">鍙栨秷</button>
+        <button class="btn" onclick="closeModal('batchCategoryModal')">取消</button>
         <button class="btn btn-primary" onclick="confirmBatchCategoryChange()">
-          <i class="fas fa-save"></i> 淇濆瓨淇敼
+          <i class="fas fa-save"></i> 保存修改
         </button>
       </div>
     </div>
   </div>
 
-  <!-- 鎵归噺璁剧疆D鍔犲瘑寮圭獥 -->
+  <!-- 批量设置D加密弹窗 -->
   <div class="modal" id="batchDrmModal">
     <div class="modal-content" style="max-width: 700px;">
       <div class="modal-header">
-        <h3><i class="fas fa-lock" style="color: var(--accent-red); margin-right: 8px;"></i>鎵归噺璁剧疆D鍔犲瘑</h3>
+        <h3><i class="fas fa-lock" style="color: var(--accent-red); margin-right: 8px;"></i>批量设置D加密</h3>
         <button class="modal-close" onclick="closeModal('batchDrmModal')">&times;</button>
       </div>
       <div class="modal-body" style="padding: 0;">
         <div style="padding: 15px 20px; background: var(--bg-tertiary); border-bottom: 1px solid var(--border-color);">
           <label style="display: flex; align-items: center; gap: 10px; cursor: pointer; color: var(--text-white); font-size: 14px;">
             <input type="checkbox" id="batchDrmSelectAll" onchange="toggleBatchDrmSelectAll()" style="width: 18px; height: 18px;">
-            <span>鍏ㄩ€?鍙栨秷鍏ㄩ€?/span>
+            <span>全选/取消全选</span>
             <span style="flex: 1;"></span>
-            <span style="color: var(--text-secondary); font-size: 13px;">宸查€夋嫨 <strong id="batchDrmSelectedCount" style="color: var(--accent-blue);">0</strong> 涓?/span>
+            <span style="color: var(--text-secondary); font-size: 13px;">已选择 <strong id="batchDrmSelectedCount" style="color: var(--accent-blue);">0</strong> 个</span>
           </label>
         </div>
         
         <div id="batchDrmList" style="max-height: 400px; overflow-y: auto; padding: 10px 20px;">
-          <!-- 鍔ㄦ€佺敓鎴?-->
+          <!-- 动态生成 -->
         </div>
       </div>
       <div class="modal-footer">
-        <button class="btn" onclick="closeModal('batchDrmModal')">鍙栨秷</button>
+        <button class="btn" onclick="closeModal('batchDrmModal')">取消</button>
         <button class="btn btn-danger" onclick="batchUnsetDrm()">
-          <i class="fas fa-unlock"></i> 鍙栨秷D鍔犲瘑
+          <i class="fas fa-unlock"></i> 取消D加密
         </button>
         <button class="btn btn-primary" onclick="batchSetDrm()">
-          <i class="fas fa-lock"></i> 璁句负D鍔犲瘑
+          <i class="fas fa-lock"></i> 设为D加密
         </button>
       </div>
     </div>
@@ -1345,13 +1474,13 @@
   <!-- Toast -->
   <div class="toast" id="toast">
     <i class="fas fa-check-circle"></i>
-    <span id="toastMessage">鎿嶄綔鎴愬姛</span>
+    <span id="toastMessage">操作成功</span>
   </div>
 
   <script>
-    // ==================== 娓告垙鐩掑瓙鍚庡彴绠＄悊绯荤粺 - 瀹屾暣鐗?====================
+    // ==================== 游戏盒子后台管理系统 - 完整版 ====================
     
-    // 閰嶇疆
+    // 配置
     const CONFIG = {
       pageSize: 20,
       batchCoverPageSize: 20,
@@ -1359,34 +1488,35 @@
       categoriesKey: 'gamebox_categories',
       contactKey: 'gamebox_contact',
       feedbackKey: 'gamebox_feedback',
-      // Cloudflare Worker API 閰嶇疆
+      // Cloudflare Worker API 配置
       apiBaseUrl: 'https://gamebox-api-v2.danyouhai.workers.dev',
       adminPassword: 'abc123'
     };
 
-    // 榛樿鍒嗙被
+    // 默认分类
     const DEFAULT_CATEGORIES = [
-      { id: 'action', name: '鍔ㄤ綔', icon: 'fa-running' },
-      { id: 'adventure', name: '鍐掗櫓', icon: 'fa-compass' },
-      { id: 'strategy', name: '绛栫暐', icon: 'fa-chess' },
-      { id: 'shooter', name: '灏勫嚮', icon: 'fa-crosshairs' },
-      { id: 'rpg', name: '瑙掕壊鎵紨', icon: 'fa-dragon' },
-      { id: 'simulation', name: '妯℃嫙缁忚惀', icon: 'fa-city' },
-      { id: 'sports', name: '浣撹偛绔炴妧', icon: 'fa-football-ball' },
-      { id: 'racing', name: '璧涜溅', icon: 'fa-car' },
-      { id: 'horror', name: '鎭愭€栨儕鎮?, icon: 'fa-ghost' },
-      { id: 'puzzle', name: '鐩婃櫤瑙ｈ皽', icon: 'fa-puzzle-piece' },
-      { id: 'mnb', name: '楠戦┈涓庣爫鏉€', icon: 'fa-horse' },
-      { id: 'tw', name: '鍏ㄩ潰鎴樹簤', icon: 'fa-chess-board' },
-      { id: 'rts', name: '鍗虫椂鎴樼暐', icon: 'fa-chess-knight' },
-      { id: 'fighting', name: '鏍兼枟', icon: 'fa-fist-raised' },
-      { id: 'arcade', name: '琛楁満鎬€鏃?, icon: 'fa-gamepad' },
-      { id: 'drm', name: 'D鍔犲瘑', icon: 'fa-lock', special: true }
+      { id: 'action', name: '动作', icon: 'fa-running' },
+      { id: 'adventure', name: '冒险', icon: 'fa-compass' },
+      { id: 'strategy', name: '策略', icon: 'fa-chess' },
+      { id: 'shooter', name: '射击', icon: 'fa-crosshairs' },
+      { id: 'rpg', name: '角色扮演', icon: 'fa-dragon' },
+      { id: 'simulation', name: '模拟经营', icon: 'fa-city' },
+      { id: 'sports', name: '体育竞技', icon: 'fa-football-ball' },
+      { id: 'racing', name: '赛车', icon: 'fa-car' },
+      { id: 'horror', name: '恐怖惊悚', icon: 'fa-ghost' },
+      { id: 'puzzle', name: '益智解谜', icon: 'fa-puzzle-piece' },
+      { id: 'mnb', name: '骑马与砍杀', icon: 'fa-horse' },
+      { id: 'tw', name: '全面战争', icon: 'fa-chess-board' },
+      { id: 'rts', name: '即时战略', icon: 'fa-chess-knight' },
+      { id: 'fighting', name: '格斗', icon: 'fa-fist-raised' },
+      { id: 'arcade', name: '街机怀旧', icon: 'fa-gamepad' },
+      { id: 'drm', name: 'D加密', icon: 'fa-lock', special: true }
     ];
 
-    // 鍏ㄥ眬鐘舵€?    let gamesData = [];
+    // 全局状态
+    let gamesData = [];
     let categories = [];
-    let contactData = { title: '鑱旂郴鎴戜滑', items: [] };
+    let contactData = { title: '联系我们', items: [] };
     let feedbackData = [];
     let selectedGames = new Set();
     let currentPage = 1;
@@ -1399,7 +1529,7 @@
     let batchCategorySelectedGames = new Set();
     let batchDrmSelectedGames = new Set();
 
-    // ==================== 鍒濆鍖?====================
+    // ==================== 初始化 ====================
     document.addEventListener('DOMContentLoaded', () => {
       initTheme();
       loadData();
@@ -1408,7 +1538,7 @@
       updateStats();
     });
 
-    // ==================== 涓婚 ====================
+    // ==================== 主题 ====================
     function initTheme() {
       const savedTheme = localStorage.getItem('admin-theme') || 'dark';
       setTheme(savedTheme);
@@ -1432,47 +1562,48 @@
       localStorage.setItem('admin-theme', theme);
     }
 
-    // ==================== 鏁版嵁绠＄悊 ====================
+    // ==================== 数据管理 ====================
     function loadData() {
-      // 鍔犺浇娓告垙鏁版嵁
+      // 加载游戏数据
       const storedGames = localStorage.getItem(CONFIG.storageKey);
       
-      // 妫€鏌?localStorage 涓殑鏁版嵁鏄惁鏈夋晥锛堟湁 name 瀛楁锛?      let localDataValid = false;
+      // 检查 localStorage 中的数据是否有效（有 name 字段）
+      let localDataValid = false;
       if (storedGames && storedGames !== '[]' && storedGames !== 'null') {
         try {
           const parsed = JSON.parse(storedGames);
           if (parsed.length > 0 && parsed[0].name) {
             localDataValid = true;
             gamesData = parsed;
-            console.log('浠?localStorage 鍔犺浇鏁版嵁:', gamesData.length, '鏉?);
+            console.log('从 localStorage 加载数据:', gamesData.length, '条');
           }
         } catch (e) {
-          console.error('localStorage 鏁版嵁瑙ｆ瀽澶辫触:', e);
+          console.error('localStorage 数据解析失败:', e);
         }
       }
       
-      // 濡傛灉 localStorage 鏁版嵁鏃犳晥锛屼粠 data-embed.js 鍔犺浇
+      // 如果 localStorage 数据无效，从 data-embed.js 加载
       if (!localDataValid && typeof importedGames !== 'undefined' && importedGames.length > 0) {
-        console.log('浠?data-embed.js 鍔犺浇鏁版嵁:', importedGames.length, '鏉?);
+        console.log('从 data-embed.js 加载数据:', importedGames.length, '条');
         gamesData = importedGames.map(game => {
-          // 灏嗕腑鏂囧垎绫诲悕杞崲涓鸿嫳鏂?id
+          // 将中文分类名转换为英文 id
           let categoryId = game.category || '';
           const categoryMapping = {
-            '鍔ㄤ綔': 'action',
-            '鍐掗櫓': 'adventure',
-            '绛栫暐': 'strategy',
-            '灏勫嚮': 'shooter',
-            '瑙掕壊鎵紨': 'rpg',
-            '妯℃嫙缁忚惀': 'simulation',
-            '浣撹偛绔炴妧': 'sports',
-            '璧涜溅': 'racing',
-            '鎭愭€栨儕鎮?: 'horror',
-            '鐩婃櫤瑙ｈ皽': 'puzzle',
-            '楠戦┈涓庣爫鏉€': 'mnb',
-            '鍏ㄩ潰鎴樹簤': 'tw',
-            '鍗虫椂鎴樼暐': 'rts',
-            '鏍兼枟': 'fighting',
-            '琛楁満鎬€鏃?: 'arcade'
+            '动作': 'action',
+            '冒险': 'adventure',
+            '策略': 'strategy',
+            '射击': 'shooter',
+            '角色扮演': 'rpg',
+            '模拟经营': 'simulation',
+            '体育竞技': 'sports',
+            '赛车': 'racing',
+            '恐怖惊悚': 'horror',
+            '益智解谜': 'puzzle',
+            '骑马与砍杀': 'mnb',
+            '全面战争': 'tw',
+            '即时战略': 'rts',
+            '格斗': 'fighting',
+            '街机怀旧': 'arcade'
           };
           if (categoryMapping[game.category]) {
             categoryId = categoryMapping[game.category];
@@ -1480,7 +1611,7 @@
           
           return {
             id: game.id,
-            name: game.name || game.title || '鏈懡鍚?,
+            name: game.name || game.title || '未命名',
             nameEn: game.nameEn || '',
             category: categoryId,
             size: game.size || '',
@@ -1495,19 +1626,20 @@
             updateTime: Date.now()
           };
         });
-        // 淇濆瓨鍒?localStorage
+        // 保存到 localStorage
         saveData();
       } else if (!localDataValid) {
         gamesData = [];
       }
       
-      // 璋冭瘯淇℃伅
-      console.log('鍔犺浇瀹屾垚锛屾父鎴忔暟閲?', gamesData.length);
+      // 调试信息
+      console.log('加载完成，游戏数量:', gamesData.length);
       if (gamesData.length > 0) {
-        console.log('绗竴鏉℃暟鎹?', gamesData[0]);
+        console.log('第一条数据:', gamesData[0]);
       }
       
-      // 鍔犺浇鍒嗙被 - 濡傛灉 localStorage 涓病鏈夋垨涓虹┖锛屼娇鐢ㄩ粯璁ゅ垎绫?      const storedCategories = localStorage.getItem(CONFIG.categoriesKey);
+      // 加载分类 - 如果 localStorage 中没有或为空，使用默认分类
+      const storedCategories = localStorage.getItem(CONFIG.categoriesKey);
       if (storedCategories && storedCategories !== '[]' && storedCategories !== 'null') {
         try {
           const parsed = JSON.parse(storedCategories);
@@ -1523,22 +1655,23 @@
         categories = [...DEFAULT_CATEGORIES];
       }
       
-      // 鍔犺浇鑱旂郴鏂瑰紡
+      // 加载联系方式
       const storedContact = localStorage.getItem(CONFIG.contactKey);
       contactData = storedContact ? JSON.parse(storedContact) : {
-        title: '鑱旂郴鎴戜滑',
+        title: '联系我们',
         items: [
-          { type: 'qq', label: '瀹樻柟QQ缇?, value: '' },
-          { type: 'email', label: '瀹樻柟閭', value: '' },
-          { type: 'wechat', label: '寰俊鍏紬鍙?, value: '' }
+          { type: 'qq', label: '官方QQ群', value: '' },
+          { type: 'email', label: '官方邮箱', value: '' },
+          { type: 'wechat', label: '微信公众号', value: '' }
         ]
       };
       
-      // 鍔犺浇鍙嶉
+      // 加载反馈
       const storedFeedback = localStorage.getItem(CONFIG.feedbackKey);
       feedbackData = storedFeedback ? JSON.parse(storedFeedback) : [];
       
-      // 鍒濆鍖栧垎绫婚€夋嫨鍣?      initCategorySelects();
+      // 初始化分类选择器
+      initCategorySelects();
     }
 
     function saveData() {
@@ -1549,9 +1682,10 @@
       localStorage.setItem('gamebox_updated', new Date().toISOString());
     }
 
-    // 鍚屾娓告垙鏁版嵁鍒颁簯绔?    async function syncToCloud() {
+    // 同步游戏数据到云端
+    async function syncToCloud() {
       try {
-        showToast('姝ｅ湪鍚屾鍒颁簯绔?..', 'success');
+        showToast('正在同步到云端...', 'success');
         
         const response = await fetch(`${CONFIG.apiBaseUrl}/api/admin/games`, {
           method: 'POST',
@@ -1567,22 +1701,23 @@
         const result = await response.json();
         
         if (response.ok) {
-          showToast(`鍚屾鎴愬姛锛佸凡鍚屾 ${result.count} 涓父鎴忓埌浜戠`, 'success');
+          showToast(`同步成功！已同步 ${result.count} 个游戏到云端`, 'success');
           return true;
         } else {
-          showToast('鍚屾澶辫触锛? + (result.error || '鏈煡閿欒'), 'error');
+          showToast('同步失败：' + (result.error || '未知错误'), 'error');
           return false;
         }
       } catch (error) {
-        console.error('鍚屾澶辫触:', error);
-        showToast('鍚屾澶辫触锛? + error.message, 'error');
+        console.error('同步失败:', error);
+        showToast('同步失败：' + error.message, 'error');
         return false;
       }
     }
 
-    // 浠庝簯绔姞杞芥暟鎹?    async function loadFromCloud() {
+    // 从云端加载数据
+    async function loadFromCloud() {
       try {
-        showToast('姝ｅ湪浠庝簯绔姞杞?..', 'success');
+        showToast('正在从云端加载...', 'success');
         
         const response = await fetch(`${CONFIG.apiBaseUrl}/api/games`);
         const result = await response.json();
@@ -1592,20 +1727,20 @@
           saveData();
           renderGamesTable();
           updateStats();
-          showToast(`鍔犺浇鎴愬姛锛佷粠浜戠鑾峰彇 ${gamesData.length} 涓父鎴廯, 'success');
+          showToast(`加载成功！从云端获取 ${gamesData.length} 个游戏`, 'success');
           return true;
         } else {
-          showToast('鍔犺浇澶辫触锛? + (result.error || '鏈煡閿欒'), 'error');
+          showToast('加载失败：' + (result.error || '未知错误'), 'error');
           return false;
         }
       } catch (error) {
-        console.error('鍔犺浇澶辫触:', error);
-        showToast('鍔犺浇澶辫触锛? + error.message, 'error');
+        console.error('加载失败:', error);
+        showToast('加载失败：' + error.message, 'error');
         return false;
       }
     }
 
-    // 涓婁紶灏侀潰鍒?R2
+    // 上传封面到 R2
     async function uploadCoverToR2(gameId, imageBlob) {
       try {
         const formData = new FormData();
@@ -1622,10 +1757,10 @@
         if (response.ok && result.url) {
           return result.url;
         } else {
-          throw new Error(result.error || '涓婁紶澶辫触');
+          throw new Error(result.error || '上传失败');
         }
       } catch (error) {
-        console.error('灏侀潰涓婁紶澶辫触:', error);
+        console.error('封面上传失败:', error);
         throw error;
       }
     }
@@ -1637,9 +1772,9 @@
         if (!select) return;
         const currentValue = select.value;
         let html = '';
-        if (id === 'categoryFilter') html = '<option value="">鍏ㄩ儴娓告垙</option>';
-        else if (id === 'batchTargetCategory') html = '<option value="">-- 閫夋嫨鐩爣鍒嗙被 --</option>';
-        else html = '<option value="">-- 閫夋嫨鍒嗙被 --</option>';
+        if (id === 'categoryFilter') html = '<option value="">全部游戏</option>';
+        else if (id === 'batchTargetCategory') html = '<option value="">-- 选择目标分类 --</option>';
+        else html = '<option value="">-- 选择分类 --</option>';
         
         categories.forEach(c => {
           html += `<option value="${c.id}">${c.name}</option>`;
@@ -1661,9 +1796,9 @@
       document.getElementById('totalDownloadsAll').textContent = (webDownloads + appDownloads).toLocaleString();
     }
 
-    // ==================== 浜嬩欢缁戝畾 ====================
+    // ==================== 事件绑定 ====================
     function initEvents() {
-      // 鎼滅储
+      // 搜索
       let searchTimeout;
       document.getElementById('searchInput').addEventListener('input', () => {
         clearTimeout(searchTimeout);
@@ -1673,17 +1808,18 @@
         }, 300);
       });
 
-      // 鍒嗙被绛涢€?      document.getElementById('categoryFilter').addEventListener('change', () => {
+      // 分类筛选
+      document.getElementById('categoryFilter').addEventListener('change', () => {
         currentPage = 1;
         renderGamesTable();
       });
 
-      // 鏂囦欢涓婁紶
+      // 文件上传
       const dropZone = document.getElementById('dropZone');
       const fileInput = document.getElementById('fileInput');
       
       dropZone.addEventListener('click', (e) => {
-        // 鐐瑰嚮瀵煎叆妯″紡閫夐」鏃朵笉瑙﹀彂鏂囦欢閫夋嫨
+        // 点击导入模式选项时不触发文件选择
         if (e.target.closest('.import-mode-option')) return;
         fileInput.click();
       });
@@ -1708,10 +1844,10 @@
 
 
 
-      // 灏侀潰涓婁紶
+      // 封面上传
       document.getElementById('coverInput').addEventListener('change', handleCoverUpload);
 
-      // 绮樿创灏侀潰
+      // 粘贴封面
       document.addEventListener('paste', async (e) => {
         const modal = document.querySelector('.modal.show');
         if (!modal) return;
@@ -1722,7 +1858,7 @@
             const blob = item.getAsFile();
             
             if (modal.id === 'gameModal') {
-              // 鍗曟父鎴忕紪杈戞ā寮?- 鐩存帴鏄剧ず base64 棰勮
+              // 单游戏编辑模式 - 直接显示 base64 预览
               const reader = new FileReader();
               reader.onload = (event) => {
                 currentCoverBase64 = event.target.result;
@@ -1730,18 +1866,19 @@
               };
               reader.readAsDataURL(blob);
             } else if (modal.id === 'batchCoverModal') {
-              // 鎵归噺妯″紡 - 涓婁紶鍒?R2
+              // 批量模式 - 上传到 R2
               const activeElement = document.activeElement;
               if (activeElement && activeElement.classList.contains('paste-area')) {
                 const gameId = activeElement.dataset.gameId;
                 
-                // 鏄剧ず涓婁紶涓?                activeElement.innerHTML = '<div style="color: var(--accent-blue);"><i class="fas fa-spinner fa-spin"></i> 涓婁紶涓?..</div>';
+                // 显示上传中
+                activeElement.innerHTML = '<div style="color: var(--accent-blue);"><i class="fas fa-spinner fa-spin"></i> 上传中...</div>';
                 
                 try {
-                  // 涓婁紶鍒?R2
+                  // 上传到 R2
                   const imageUrl = await uploadCoverToR2(gameId, blob);
                   
-                  // 鏇存柊娓告垙鏁版嵁
+                  // 更新游戏数据
                   const game = gamesData.find(g => String(g.id) === String(gameId));
                   if (game) {
                     game.cover = imageUrl;
@@ -1749,15 +1886,15 @@
                   }
                   batchCovers[gameId] = imageUrl;
                   
-                  // 鏄剧ず鍥剧墖
+                  // 显示图片
                   activeElement.innerHTML = `<img src="${imageUrl}">`;
                   activeElement.classList.add('has-image');
                   
-                  showToast('灏侀潰涓婁紶鎴愬姛', 'success');
+                  showToast('封面上传成功', 'success');
                 } catch (error) {
-                  console.error('涓婁紶澶辫触:', error);
-                  activeElement.innerHTML = '<div style="color: var(--accent-red);"><i class="fas fa-exclamation-circle"></i> 涓婁紶澶辫触</div>';
-                  showToast('灏侀潰涓婁紶澶辫触: ' + error.message, 'error');
+                  console.error('上传失败:', error);
+                  activeElement.innerHTML = '<div style="color: var(--accent-red);"><i class="fas fa-exclamation-circle"></i> 上传失败</div>';
+                  showToast('封面上传失败: ' + error.message, 'error');
                 }
               }
             }
@@ -1766,7 +1903,7 @@
         }
       });
 
-      // 寮圭獥鍏抽棴
+      // 弹窗关闭
       document.querySelectorAll('.modal').forEach(modal => {
         modal.addEventListener('click', (e) => {
           if (e.target === modal) closeModal(modal.id);
@@ -1774,7 +1911,7 @@
       });
     }
 
-    // ==================== 娓叉煋琛ㄦ牸 ====================
+    // ==================== 渲染表格 ====================
     function renderGamesTable() {
       const search = document.getElementById('searchInput').value.toLowerCase();
       const category = document.getElementById('categoryFilter').value;
@@ -1798,8 +1935,8 @@
             <td colspan="7" style="text-align: center; padding: 60px;">
               <div style="color: var(--text-secondary);">
                 <i class="fas fa-inbox" style="font-size: 48px; margin-bottom: 16px; display: block; opacity: 0.5;"></i>
-                <p>鏆傛棤娓告垙鏁版嵁</p>
-                <p style="font-size: 13px; opacity: 0.7; margin-top: 8px;">鐐瑰嚮"娣诲姞娓告垙"鎴?鎵归噺娣诲姞"寮€濮嬪綍鍏?/p>
+                <p>暂无游戏数据</p>
+                <p style="font-size: 13px; opacity: 0.7; margin-top: 8px;">点击"添加游戏"或"批量添加"开始录入</p>
               </div>
             </td>
           </tr>
@@ -1825,12 +1962,12 @@
           </td>
           <td>
             <div class="game-cover" onclick="editGame('${game.id}')">
-              ${game.cover ? `<img src="${game.cover}" alt="">` : '<span style="font-size: 10px;">鏃犲皝闈?/span>'}
-              <div class="upload-hint">鐐瑰嚮淇敼</div>
+              ${game.cover ? `<img src="${game.cover}" alt="">` : '<span style="font-size: 10px;">无封面</span>'}
+              <div class="upload-hint">点击修改</div>
             </div>
           </td>
           <td>
-            <div class="game-name">${game.name || '鏈懡鍚?}</div>
+            <div class="game-name">${game.name || '未命名'}</div>
             ${game.nameEn ? `<div class="game-name-en">${game.nameEn}</div>` : ''}
           </td>
           <td>
@@ -1839,7 +1976,7 @@
             </select>
           </td>
           <td>
-            <div class="download-indicator" onclick="quickEditLinks('${game.id}')" title="鐐瑰嚮缂栬緫涓嬭浇閾炬帴">
+            <div class="download-indicator" onclick="quickEditLinks('${game.id}')" title="点击编辑下载链接">
               <div class="download-dot ${game.baiduLink1 ? '' : 'empty'}"></div>
               <div class="download-dot ${game.baiduLink2 ? '' : 'empty'}"></div>
               <div class="download-dot ${game.thunderLink ? '' : 'empty'}"></div>
@@ -1853,8 +1990,8 @@
           </td>
           <td>
             <div class="action-btns">
-              <button class="action-btn edit" onclick="editGame('${game.id}')" title="缂栬緫"><i class="fas fa-edit"></i></button>
-              <button class="action-btn delete" onclick="deleteGame('${game.id}')" title="鍒犻櫎"><i class="fas fa-trash"></i></button>
+              <button class="action-btn edit" onclick="editGame('${game.id}')" title="编辑"><i class="fas fa-edit"></i></button>
+              <button class="action-btn delete" onclick="deleteGame('${game.id}')" title="删除"><i class="fas fa-trash"></i></button>
             </div>
           </td>
         </tr>
@@ -1865,7 +2002,7 @@
       const container = document.getElementById('pagination');
       if (totalPages <= 1) {
         container.innerHTML = filteredGames.length > 0 ? 
-          `<span style="color: var(--text-secondary);">鍏?${filteredGames.length} 涓父鎴?/span>` : '';
+          `<span style="color: var(--text-secondary);">共 ${filteredGames.length} 个游戏</span>` : '';
         return;
       }
 
@@ -1878,10 +2015,10 @@
           <i class="fas fa-chevron-right"></i>
         </button>
         <select class="filter-select" onchange="changePageSize(this.value)" style="width: auto; margin-left: 10px;">
-          <option value="10" ${CONFIG.pageSize === 10 ? 'selected' : ''}>10鏉?椤?/option>
-          <option value="20" ${CONFIG.pageSize === 20 ? 'selected' : ''}>20鏉?椤?/option>
-          <option value="50" ${CONFIG.pageSize === 50 ? 'selected' : ''}>50鏉?椤?/option>
-          <option value="100" ${CONFIG.pageSize === 100 ? 'selected' : ''}>100鏉?椤?/option>
+          <option value="10" ${CONFIG.pageSize === 10 ? 'selected' : ''}>10条/页</option>
+          <option value="20" ${CONFIG.pageSize === 20 ? 'selected' : ''}>20条/页</option>
+          <option value="50" ${CONFIG.pageSize === 50 ? 'selected' : ''}>50条/页</option>
+          <option value="100" ${CONFIG.pageSize === 100 ? 'selected' : ''}>100条/页</option>
         </select>
       `;
       container.innerHTML = html;
@@ -1900,7 +2037,7 @@
       renderGamesTable();
     }
 
-    // ==================== 閫夋嫨鍔熻兘 ====================
+    // ==================== 选择功能 ====================
     function toggleSelect(id) {
       const strId = String(id);
       if (selectedGames.has(strId)) selectedGames.delete(strId);
@@ -1941,9 +2078,9 @@
       renderGamesTable();
     }
 
-    // ==================== 娓告垙CRUD ====================
+    // ==================== 游戏CRUD ====================
     function addNewGame() {
-      document.getElementById('modalTitle').textContent = '娣诲姞娓告垙';
+      document.getElementById('modalTitle').textContent = '添加游戏';
       document.getElementById('gameId').value = '';
       document.getElementById('gameName').value = '';
       document.getElementById('gameNameEn').value = '';
@@ -1963,7 +2100,7 @@
       const game = gamesData.find(g => String(g.id) === String(id));
       if (!game) return;
       
-      document.getElementById('modalTitle').textContent = '缂栬緫娓告垙';
+      document.getElementById('modalTitle').textContent = '编辑游戏';
       document.getElementById('gameId').value = game.id;
       document.getElementById('gameName').value = game.name || '';
       document.getElementById('gameNameEn').value = game.nameEn || '';
@@ -1984,7 +2121,7 @@
       const name = document.getElementById('gameName').value.trim();
       
       if (!name) {
-        showToast('璇疯緭鍏ユ父鎴忓悕绉?, 'error');
+        showToast('请输入游戏名称', 'error');
         return;
       }
 
@@ -1992,23 +2129,23 @@
       
       let coverUrl = currentCoverBase64;
       
-      // 濡傛灉鏈夋柊鐨?base64 灏侀潰锛屼笂浼犲埌 R2
+      // 如果有新的 base64 封面，上传到 R2
       if (currentCoverBase64 && currentCoverBase64.startsWith('data:image')) {
         try {
-          showToast('姝ｅ湪涓婁紶灏侀潰...', 'success');
+          showToast('正在上传封面...', 'success');
           const gameId = id ? parseInt(id) : Date.now();
           
-          // 灏?base64 杞崲涓?blob
+          // 将 base64 转换为 blob
           const response = await fetch(currentCoverBase64);
           const blob = await response.blob();
           
-          // 涓婁紶鍒?R2
+          // 上传到 R2
           coverUrl = await uploadCoverToR2(gameId, blob);
-          showToast('灏侀潰涓婁紶鎴愬姛', 'success');
+          showToast('封面上传成功', 'success');
         } catch (error) {
-          console.error('灏侀潰涓婁紶澶辫触:', error);
-          showToast('灏侀潰涓婁紶澶辫触锛屽皢浣跨敤鏈湴瀛樺偍', 'error');
-          // 淇濈暀 base64 浣滀负鍚庡
+          console.error('封面上传失败:', error);
+          showToast('封面上传失败，将使用本地存储', 'error');
+          // 保留 base64 作为后备
         }
       }
       
@@ -2037,17 +2174,17 @@
       closeModal('gameModal');
       renderGamesTable();
       updateStats();
-      showToast(id ? '娓告垙宸叉洿鏂? : '娓告垙宸叉坊鍔?, 'success');
+      showToast(id ? '游戏已更新' : '游戏已添加', 'success');
     }
 
     function deleteGame(id) {
-      if (!confirm('纭畾瑕佸垹闄よ繖涓父鎴忓悧锛?)) return;
+      if (!confirm('确定要删除这个游戏吗？')) return;
       gamesData = gamesData.filter(g => String(g.id) !== String(id));
       selectedGames.delete(String(id));
       saveData();
       renderGamesTable();
       updateStats();
-      showToast('娓告垙宸插垹闄?, 'success');
+      showToast('游戏已删除', 'success');
     }
 
     function quickUpdateCategory(id, category) {
@@ -2056,17 +2193,17 @@
         game.category = category;
         game.updateTime = Date.now();
         saveData();
-        showToast('鍒嗙被宸叉洿鏂?, 'success');
+        showToast('分类已更新', 'success');
       }
     }
 
-    // ==================== 灏侀潰澶勭悊 ====================
+    // ==================== 封面处理 ====================
     function handleCoverUpload(e) {
       const file = e.target.files[0];
       if (!file) return;
       
       if (!file.type.startsWith('image/')) {
-        showToast('璇烽€夋嫨鍥剧墖鏂囦欢', 'error');
+        showToast('请选择图片文件', 'error');
         return;
       }
 
@@ -2084,7 +2221,7 @@
         area.innerHTML = `<img src="${currentCoverBase64}" style="max-width: 100%; max-height: 180px; object-fit: contain;"><button class="btn btn-sm btn-danger" onclick="event.stopPropagation(); removeCover()" style="position: absolute; top: 10px; right: 10px;"><i class="fas fa-trash"></i></button>`;
         area.classList.add('has-image');
       } else {
-        area.innerHTML = `<i class="fas fa-image" style="font-size: 48px;"></i><p>鐐瑰嚮涓婁紶灏侀潰锛屾垨绮樿创鍥剧墖</p><input type="file" id="coverInput" accept="image/*" style="display: none;">`;
+        area.innerHTML = `<i class="fas fa-image" style="font-size: 48px;"></i><p>点击上传封面，或粘贴图片</p><input type="file" id="coverInput" accept="image/*" style="display: none;">`;
         area.classList.remove('has-image');
         document.getElementById('coverInput').addEventListener('change', handleCoverUpload);
       }
@@ -2095,13 +2232,13 @@
       updateCoverPreview();
     }
 
-    // ==================== 蹇嵎缂栬緫閾炬帴 ====================
+    // ==================== 快捷编辑链接 ====================
     function quickEditLinks(gameId) {
       const game = gamesData.find(g => String(g.id) === String(gameId));
       if (!game) return;
 
       document.getElementById('quickEditGameId').value = gameId;
-      document.getElementById('quickEditGameName').textContent = game.name || '鏈懡鍚嶆父鎴?;
+      document.getElementById('quickEditGameName').textContent = game.name || '未命名游戏';
       document.getElementById('quickEditGameNameEn').textContent = game.nameEn || '';
       document.getElementById('quickBaiduLink1').value = game.baiduLink1 || '';
       document.getElementById('quickBaiduLink2').value = game.baiduLink2 || '';
@@ -2123,10 +2260,10 @@
       saveData();
       closeModal('quickEditLinksModal');
       renderGamesTable();
-      showToast('涓嬭浇閾炬帴宸叉洿鏂?, 'success');
+      showToast('下载链接已更新', 'success');
     }
 
-    // ==================== 涓嬭浇缁熻 ====================
+    // ==================== 下载统计 ====================
     function showDownloadStats() {
       updateDownloadStatsModal();
       openModal('downloadStatsModal');
@@ -2175,7 +2312,7 @@
           <tr>
             <td style="text-align: center; ${rankStyle}">${rank}</td>
             <td>
-              <div style="font-weight: 500;">${game.name || '鏈懡鍚?}</div>
+              <div style="font-weight: 500;">${game.name || '未命名'}</div>
               ${game.nameEn ? `<div style="font-size: 11px; color: var(--text-secondary);">${game.nameEn}</div>` : ''}
             </td>
             <td style="text-align: center; font-weight: bold; color: var(--accent-blue);">${total}</td>
@@ -2208,7 +2345,7 @@
       const sortedGames = [...gamesData].sort((a, b) => ((b.downloadsWeb || 0) + (b.downloadsApp || 0)) - ((a.downloadsWeb || 0) + (a.downloadsApp || 0)));
       const totalDownloads = gamesData.reduce((sum, g) => sum + (g.downloadsWeb || 0) + (g.downloadsApp || 0), 0);
       
-      let csv = '鎺掑悕,娓告垙鍚嶇О,鑻辨枃鍚?鎬讳笅杞芥鏁?缃戦〉鐗堜笅杞?瀹㈡埛绔笅杞?鍗犳瘮\n';
+      let csv = '排名,游戏名称,英文名,总下载次数,网页版下载,客户端下载,占比\n';
       sortedGames.forEach((game, index) => {
         const total = (game.downloadsWeb || 0) + (game.downloadsApp || 0);
         const percentage = totalDownloads > 0 ? ((total / totalDownloads) * 100).toFixed(2) + '%' : '0%';
@@ -2218,12 +2355,12 @@
       const blob = new Blob(['\ufeff' + csv], { type: 'text/csv;charset=utf-8;' });
       const link = document.createElement('a');
       link.href = URL.createObjectURL(blob);
-      link.download = `娓告垙涓嬭浇缁熻_${new Date().toLocaleDateString()}.csv`;
+      link.download = `游戏下载统计_${new Date().toLocaleDateString()}.csv`;
       link.click();
-      showToast('缁熻鎶ヨ〃宸插鍑?, 'success');
+      showToast('统计报表已导出', 'success');
     }
 
-    // ==================== 鎵归噺淇敼灏侀潰 ====================
+    // ==================== 批量修改封面 ====================
     function batchEditCover() {
       const filter = document.getElementById('categoryFilter').value;
       const search = document.getElementById('searchInput').value.toLowerCase();
@@ -2253,19 +2390,19 @@
               <div style="font-size: 10px; color: var(--text-secondary); margin-top: 2px;">ID: ${game.id}</div>
             </div>
             <div style="width: 60px; height: 34px; background: var(--input-bg); border-radius: 4px; display: flex; align-items: center; justify-content: center; overflow: hidden; border: 1px solid var(--border-color);">
-              ${hasCover ? `<img src="${game.cover}" style="width: 100%; height: 100%; object-fit: cover;">` : '<span style="font-size: 9px; color: var(--text-secondary);">鏃犲皝闈?/span>'}
+              ${hasCover ? `<img src="${game.cover}" style="width: 100%; height: 100%; object-fit: cover;">` : '<span style="font-size: 9px; color: var(--text-secondary);">无封面</span>'}
             </div>
             <div class="paste-area ${hasCover ? 'has-image' : ''}" data-game-id="${game.id}" tabindex="0" onclick="this.focus()">
               ${hasCover ? 
                 `<img src="${game.cover}"><button onclick="event.stopPropagation(); removeBatchCover('${game.id}')" style="position: absolute; bottom: 2px; right: 2px; background: var(--accent-red); color: #fff; border: none; padding: 2px 6px; border-radius: 3px; font-size: 10px;"><i class="fas fa-trash"></i></button>` : 
-                '<div style="display: flex; align-items: center; gap: 4px; font-size: 11px;"><i class="fas fa-paste"></i><span>鐐瑰嚮鍚庢寜 Ctrl+V</span></div>'
+                '<div style="display: flex; align-items: center; gap: 4px; font-size: 11px;"><i class="fas fa-paste"></i><span>点击后按 Ctrl+V</span></div>'
               }
             </div>
           </div>
         `;
       }).join('');
 
-      // 鍒嗛〉
+      // 分页
       const pagination = document.getElementById('batchCoverPagination');
       if (totalPages > 1) {
         pagination.innerHTML = `
@@ -2299,21 +2436,22 @@
       saveData();
       closeModal('batchCoverModal');
       renderGamesTable();
-      showToast('灏侀潰淇敼宸蹭繚瀛樺埌鏈湴', 'success');
+      showToast('封面修改已保存到本地', 'success');
       
-      // 璇㈤棶鏄惁鍚屾鍒颁簯绔?      if (confirm('鏄惁灏嗕慨鏀瑰悓姝ュ埌浜戠锛?)) {
+      // 询问是否同步到云端
+      if (confirm('是否将修改同步到云端？')) {
         await syncToCloud();
       }
     }
 
-    // ==================== 鍒嗙被绠＄悊 ====================
+    // ==================== 分类管理 ====================
     function manageCategories() {
       const container = document.getElementById('categoryManager');
       container.innerHTML = categories.map((cat, index) => `
         <div class="category-item">
           <i class="fas ${cat.icon || 'fa-folder'}"></i>
           <input type="text" value="${cat.name}" data-index="${index}" data-id="${cat.id}">
-          ${!cat.special ? `<button class="action-btn delete" onclick="deleteCategory(${index})" title="鍒犻櫎"><i class="fas fa-trash"></i></button>` : ''}
+          ${!cat.special ? `<button class="action-btn delete" onclick="deleteCategory(${index})" title="删除"><i class="fas fa-trash"></i></button>` : ''}
         </div>
       `).join('');
       openModal('categoryModal');
@@ -2321,12 +2459,12 @@
 
     function addCategory() {
       const newId = 'cat_' + Date.now();
-      categories.push({ id: newId, name: '鏂板垎绫?, icon: 'fa-folder' });
+      categories.push({ id: newId, name: '新分类', icon: 'fa-folder' });
       manageCategories();
     }
 
     function deleteCategory(index) {
-      if (!confirm('纭畾瑕佸垹闄よ繖涓垎绫诲悧锛熻鍒嗙被涓嬬殑娓告垙灏嗗彉涓烘湭鍒嗙被銆?)) return;
+      if (!confirm('确定要删除这个分类吗？该分类下的游戏将变为未分类。')) return;
       categories.splice(index, 1);
       manageCategories();
     }
@@ -2342,13 +2480,13 @@
       saveData();
       closeModal('categoryModal');
       renderGamesTable();
-      showToast('鍒嗙被淇濆瓨鎴愬姛', 'success');
+      showToast('分类保存成功', 'success');
     }
 
-    // ==================== 鎵归噺淇敼鍒嗙被 ====================
+    // ==================== 批量修改分类 ====================
     function batchEditCategory() {
       const filterSelect = document.getElementById('batchCategoryFilter');
-      filterSelect.innerHTML = '<option value="">鍏ㄩ儴娓告垙</option>' + categories.filter(c => !c.special).map(c => `<option value="${c.id}">${c.name}</option>`).join('');
+      filterSelect.innerHTML = '<option value="">全部游戏</option>' + categories.filter(c => !c.special).map(c => `<option value="${c.id}">${c.name}</option>`).join('');
       
       batchCategorySelectedGames.clear();
       renderBatchCategoryList();
@@ -2370,7 +2508,7 @@
             <div class="checkbox ${isSelected ? 'checked' : ''}"></div>
             <div style="flex: 1;">
               <div style="font-weight: 500;">${game.name}</div>
-              <div style="font-size: 11px; color: var(--text-secondary);">褰撳墠: ${currentCategory?.name || '鏈垎绫?}</div>
+              <div style="font-size: 11px; color: var(--text-secondary);">当前: ${currentCategory?.name || '未分类'}</div>
             </div>
           </div>
         `;
@@ -2388,11 +2526,11 @@
     function confirmBatchCategoryChange() {
       const targetCategory = document.getElementById('batchTargetCategory').value;
       if (!targetCategory) {
-        showToast('璇烽€夋嫨鐩爣鍒嗙被', 'error');
+        showToast('请选择目标分类', 'error');
         return;
       }
       if (batchCategorySelectedGames.size === 0) {
-        showToast('璇峰厛閫夋嫨瑕佷慨鏀圭殑娓告垙', 'error');
+        showToast('请先选择要修改的游戏', 'error');
         return;
       }
 
@@ -2407,11 +2545,11 @@
       saveData();
       closeModal('batchCategoryModal');
       renderGamesTable();
-      showToast(`鎴愬姛淇敼 ${batchCategorySelectedGames.size} 涓父鎴忕殑鍒嗙被`, 'success');
+      showToast(`成功修改 ${batchCategorySelectedGames.size} 个游戏的分类`, 'success');
       batchCategorySelectedGames.clear();
     }
 
-    // ==================== 鎵归噺D鍔犲瘑 ====================
+    // ==================== 批量D加密 ====================
     function batchEditDrm() {
       batchDrmSelectedGames.clear();
       renderBatchDrmList();
@@ -2436,7 +2574,7 @@
             <div style="flex: 1;">
               <div style="font-weight: 500;">${game.name}</div>
             </div>
-            ${isDrm ? '<span style="background: var(--accent-red); color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 10px;">D鍔犲瘑</span>' : ''}
+            ${isDrm ? '<span style="background: var(--accent-red); color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 10px;">D加密</span>' : ''}
           </div>
         `;
       }).join('');
@@ -2467,7 +2605,7 @@
 
     function batchSetDrm() {
       if (batchDrmSelectedGames.size === 0) {
-        showToast('璇峰厛閫夋嫨瑕佽缃殑娓告垙', 'error');
+        showToast('请先选择要设置的游戏', 'error');
         return;
       }
       batchDrmSelectedGames.forEach(id => {
@@ -2477,12 +2615,12 @@
       saveData();
       renderBatchDrmList();
       renderGamesTable();
-      showToast(`鎴愬姛璁剧疆 ${batchDrmSelectedGames.size} 涓父鎴忎负D鍔犲瘑`, 'success');
+      showToast(`成功设置 ${batchDrmSelectedGames.size} 个游戏为D加密`, 'success');
     }
 
     function batchUnsetDrm() {
       if (batchDrmSelectedGames.size === 0) {
-        showToast('璇峰厛閫夋嫨瑕佸彇娑堢殑娓告垙', 'error');
+        showToast('请先选择要取消的游戏', 'error');
         return;
       }
       batchDrmSelectedGames.forEach(id => {
@@ -2492,10 +2630,10 @@
       saveData();
       renderBatchDrmList();
       renderGamesTable();
-      showToast(`鎴愬姛鍙栨秷 ${batchDrmSelectedGames.size} 涓父鎴忕殑D鍔犲瘑`, 'success');
+      showToast(`成功取消 ${batchDrmSelectedGames.size} 个游戏的D加密`, 'success');
     }
 
-    // ==================== 鑱旂郴鏂瑰紡绠＄悊 ====================
+    // ==================== 联系方式管理 ====================
     function manageContact() {
       document.getElementById('contactTitle').value = contactData.title;
       const container = document.getElementById('contactList');
@@ -2504,12 +2642,12 @@
         <div class="contact-item">
           <select class="form-control" data-index="${index}" style="width: 100px;">
             <option value="qq" ${item.type === 'qq' ? 'selected' : ''}>QQ</option>
-            <option value="email" ${item.type === 'email' ? 'selected' : ''}>閭</option>
-            <option value="wechat" ${item.type === 'wechat' ? 'selected' : ''}>寰俊</option>
-            <option value="phone" ${item.type === 'phone' ? 'selected' : ''}>鐢佃瘽</option>
+            <option value="email" ${item.type === 'email' ? 'selected' : ''}>邮箱</option>
+            <option value="wechat" ${item.type === 'wechat' ? 'selected' : ''}>微信</option>
+            <option value="phone" ${item.type === 'phone' ? 'selected' : ''}>电话</option>
           </select>
-          <input type="text" class="form-control" placeholder="鏍囩" value="${item.label}" data-index="${index}" style="flex: 1;">
-          <input type="text" class="form-control" placeholder="鍊? value="${item.value}" data-index="${index}" style="flex: 1;">
+          <input type="text" class="form-control" placeholder="标签" value="${item.label}" data-index="${index}" style="flex: 1;">
+          <input type="text" class="form-control" placeholder="值" value="${item.value}" data-index="${index}" style="flex: 1;">
           <button class="action-btn delete" onclick="deleteContact(${index})"><i class="fas fa-trash"></i></button>
         </div>
       `).join('');
@@ -2544,10 +2682,14 @@
       
       saveData();
       closeModal('contactModal');
-      showToast('鑱旂郴鏂瑰紡宸蹭繚瀛?, 'success');
+      showToast('联系方式已保存', 'success');
     }
 
-    // ==================== 鐢ㄦ埛鍙嶉 ====================
+    // ==================== 用户反馈 ====================
+    // 反馈视图状态
+    let currentFeedbackView = 'list';
+    let currentFeedbackTab = 'pending';
+
     function viewFeedbacks() {
       renderFeedbackList();
       openModal('feedbackModal');
@@ -2555,58 +2697,146 @@
 
     function renderFeedbackList() {
       const list = document.getElementById('feedbackList');
-      if (feedbackData.length === 0) {
-        list.innerHTML = '<div style="text-align: center; padding: 40px; color: var(--text-secondary);"><i class="fas fa-inbox" style="font-size: 48px; margin-bottom: 16px; display: block; opacity: 0.5;"></i>鏆傛棤鍙嶉</div>';
+      
+      // 过滤已删除的
+      const visibleData = feedbackData.filter(f => !f.deleted);
+      
+      // 根据标签过滤
+      const filteredData = visibleData.filter(f => {
+        if (currentFeedbackTab === 'pending') return !f.processed;
+        if (currentFeedbackTab === 'processed') return f.processed;
+        return true;
+      });
+      
+      // 更新统计
+      const pendingCount = visibleData.filter(f => !f.processed).length;
+      const processedCount = visibleData.filter(f => f.processed).length;
+      document.getElementById('pendingCount').textContent = pendingCount;
+      document.getElementById('processedCount').textContent = processedCount;
+      document.getElementById('totalFeedbackCount').textContent = visibleData.length;
+      
+      if (filteredData.length === 0) {
+        list.innerHTML = '<div style="text-align: center; padding: 40px; color: var(--text-secondary);"><i class="fas fa-inbox" style="font-size: 48px; margin-bottom: 16px; display: block; opacity: 0.5;"></i>暂无' + (currentFeedbackTab === 'pending' ? '未处理' : '已处理') + '反馈</div>';
         return;
       }
 
-      list.innerHTML = feedbackData.map(f => {
-        const typeColors = { bug: '#e74c3c', feature: '#3498db', complaint: '#f39c12', other: '#95a5a6' };
-        const typeNames = { bug: 'Bug', feature: '寤鸿', complaint: '鎶曡瘔', other: '鍏朵粬' };
+      const typeColors = { bug: '#e74c3c', feature: '#3498db', complaint: '#f39c12', other: '#95a5a6' };
+      const typeNames = { bug: 'Bug', feature: '建议', complaint: '投诉', other: '其他' };
+
+      list.innerHTML = filteredData.map((f, index) => {
+        const originalIndex = feedbackData.indexOf(f);
         return `
-          <div class="feedback-item">
+          <div class="feedback-item ${f.processed ? 'processed' : ''}" data-index="${originalIndex}">
             <div class="header">
               <span class="type" style="background: ${typeColors[f.type] || typeColors.other};">${typeNames[f.type] || typeNames.other}</span>
               <span class="time">${new Date(f.time).toLocaleString()}</span>
             </div>
-            <div style="color: var(--text-primary); margin-bottom: 8px;">${f.content}</div>
-            <div style="color: var(--text-secondary); font-size: 12px;"><i class="fas fa-user"></i> ${f.contact || '鍖垮悕'}</div>
+            <div class="content">${f.content}</div>
+            <div class="footer">
+              <div class="user-info"><i class="fas fa-user"></i> ${f.contact || '匿名'}</div>
+              <div class="actions">
+                <button class="btn-process" onclick="processFeedback(${originalIndex})">
+                  ${f.processed ? '<i class="fas fa-check"></i> 已处理' : '<i class="fas fa-clock"></i> 未处理'}
+                </button>
+                <button class="btn-delete" onclick="deleteFeedback(${originalIndex})">
+                  <i class="fas fa-trash"></i> 删除
+                </button>
+              </div>
+            </div>
           </div>
         `;
       }).join('');
-
-      document.getElementById('pendingCount').textContent = feedbackData.length;
     }
 
     function switchFeedbackTab(tab) {
-      document.getElementById('tabPending').style.borderBottomColor = tab === 'pending' ? 'var(--accent-blue)' : 'transparent';
-      document.getElementById('tabPending').style.color = tab === 'pending' ? 'var(--text-white)' : 'var(--text-secondary)';
-      document.getElementById('tabProcessed').style.borderBottomColor = tab === 'processed' ? 'var(--accent-blue)' : 'transparent';
-      document.getElementById('tabProcessed').style.color = tab === 'processed' ? 'var(--text-white)' : 'var(--text-secondary)';
+      currentFeedbackTab = tab;
+      
+      // 更新标签样式
+      const tabPending = document.getElementById('tabPending');
+      const tabProcessed = document.getElementById('tabProcessed');
+      
+      if (tab === 'pending') {
+        tabPending.style.borderBottomColor = 'var(--accent-blue)';
+        tabPending.style.color = 'var(--text-white)';
+        tabPending.style.background = 'var(--bg-tertiary)';
+        tabProcessed.style.borderBottomColor = 'transparent';
+        tabProcessed.style.color = 'var(--text-secondary)';
+        tabProcessed.style.background = 'transparent';
+      } else {
+        tabPending.style.borderBottomColor = 'transparent';
+        tabPending.style.color = 'var(--text-secondary)';
+        tabPending.style.background = 'transparent';
+        tabProcessed.style.borderBottomColor = 'var(--accent-blue)';
+        tabProcessed.style.color = 'var(--text-white)';
+        tabProcessed.style.background = 'var(--bg-tertiary)';
+      }
+      
+      renderFeedbackList();
+    }
+
+    function switchFeedbackView(view) {
+      currentFeedbackView = view;
+      const list = document.getElementById('feedbackList');
+      const gridBtn = document.getElementById('viewGridBtn');
+      const listBtn = document.getElementById('viewListBtn');
+      
+      if (view === 'grid') {
+        list.classList.add('grid-view');
+        gridBtn.style.background = 'var(--bg-hover)';
+        listBtn.style.background = 'transparent';
+      } else {
+        list.classList.remove('grid-view');
+        gridBtn.style.background = 'transparent';
+        listBtn.style.background = 'var(--bg-hover)';
+      }
+    }
+
+    function processFeedback(index) {
+      if (feedbackData[index]) {
+        feedbackData[index].processed = !feedbackData[index].processed;
+        saveFeedbackData();
+        renderFeedbackList();
+        showToast(feedbackData[index].processed ? '已标记为已处理' : '已标记为未处理', 'success');
+      }
+    }
+
+    function deleteFeedback(index) {
+      if (feedbackData[index]) {
+        if (confirm('确定要删除这条反馈吗？')) {
+          feedbackData[index].deleted = true;
+          saveFeedbackData();
+          renderFeedbackList();
+          showToast('反馈已删除', 'success');
+        }
+      }
+    }
+
+    function saveFeedbackData() {
+      localStorage.setItem(CONFIG.feedbackKey, JSON.stringify(feedbackData));
     }
 
     function refreshFeedbacks() {
       renderFeedbackList();
-      showToast('鍙嶉鍒楄〃宸插埛鏂?, 'success');
+      showToast('反馈列表已刷新', 'success');
     }
 
-    // ==================== 瀵煎叆瀵煎嚭 ====================
-    // Excel 鍒楀悕鍒版父鎴忓瓧娈电殑鏄犲皠
+    // ==================== 导入导出 ====================
+    // Excel 列名到游戏字段的映射
     const EXCEL_FIELD_MAP = {
-      'id': ['id', 'ID', '缂栧彿'],
-      'name': ['name', '娓告垙鍚嶇О', '鍚嶇О', '涓枃鍚?, '娓告垙鍚?],
-      'nameEn': ['nameEn', '鑻辨枃鍚?, '鑻辨枃鍚嶇О', 'englishname'],
-      'category': ['category', '鍒嗙被', '绫诲埆', '绫诲瀷'],
-      'size': ['size', '澶у皬', '瀹归噺', '娓告垙澶у皬'],
-      'desc': ['desc', '鎻忚堪', '绠€浠?, '娓告垙鎻忚堪', '浠嬬粛'],
-      'baiduLink1': ['baiduLink1', '鐧惧害閾炬帴1', '鐧惧害缃戠洏1', '鐧惧害1'],
-      'baiduLink2': ['baiduLink2', '鐧惧害閾炬帴2', '鐧惧害缃戠洏2', '鐧惧害2'],
-      'thunderLink': ['thunderLink', '杩呴浄閾炬帴', '杩呴浄浜戠洏', '杩呴浄'],
-      'cover': ['cover', '灏侀潰', '灏侀潰鍥?, '鍥剧墖'],
-      'isDrm': ['isDrm', 'D鍔犲瘑', 'DRM', '鍔犲瘑']
+      'id': ['id', 'ID', '编号'],
+      'name': ['name', '游戏名称', '名称', '中文名', '游戏名'],
+      'nameEn': ['nameEn', '英文名', '英文名称', 'englishname'],
+      'category': ['category', '分类', '类别', '类型'],
+      'size': ['size', '大小', '容量', '游戏大小'],
+      'desc': ['desc', '描述', '简介', '游戏描述', '介绍'],
+      'baiduLink1': ['baiduLink1', '百度链接1', '百度网盘1', '百度1'],
+      'baiduLink2': ['baiduLink2', '百度链接2', '百度网盘2', '百度2'],
+      'thunderLink': ['thunderLink', '迅雷链接', '迅雷云盘', '迅雷'],
+      'cover': ['cover', '封面', '封面图', '图片'],
+      'isDrm': ['isDrm', 'D加密', 'DRM', '加密']
     };
 
-    // 浠?Excel 琛ㄥご璇嗗埆瀛楁
+    // 从 Excel 表头识别字段
     function mapExcelHeaders(headers) {
       const mapping = {};
       const lowerHeaders = headers.map(h => String(h).toLowerCase().trim());
@@ -2624,7 +2854,7 @@
       return mapping;
     }
 
-    // 瑙ｆ瀽 Excel 鏂囦欢
+    // 解析 Excel 文件
     function parseExcelFile(file, callback) {
       const reader = new FileReader();
       reader.onload = (e) => {
@@ -2632,33 +2862,36 @@
           const data = new Uint8Array(e.target.result);
           const workbook = XLSX.read(data, { type: 'array' });
           
-          // 璇诲彇绗竴涓伐浣滆〃
+          // 读取第一个工作表
           const firstSheetName = workbook.SheetNames[0];
           const worksheet = workbook.Sheets[firstSheetName];
           
-          // 杞崲涓?JSON
+          // 转换为 JSON
           const jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
           
           if (jsonData.length < 2) {
-            callback(new Error('Excel 鏂囦欢鑷冲皯闇€瑕佸寘鍚〃澶村拰涓€琛屾暟鎹?), null);
+            callback(new Error('Excel 文件至少需要包含表头和一行数据'), null);
             return;
           }
           
-          // 绗竴琛屼綔涓鸿〃澶?          const headers = jsonData[0];
+          // 第一行作为表头
+          const headers = jsonData[0];
           const fieldMapping = mapExcelHeaders(headers);
           
-          // 妫€鏌ュ繀瑕佺殑瀛楁
+          // 检查必要的字段
           if (!fieldMapping.name && !fieldMapping.nameEn) {
-            callback(new Error('Excel 鏂囦欢缂哄皯"娓告垙鍚嶇О"鍒楋紝璇锋鏌ヨ〃澶?), null);
+            callback(new Error('Excel 文件缺少"游戏名称"列，请检查表头'), null);
             return;
           }
           
-          // 瑙ｆ瀽鏁版嵁琛?          const games = [];
+          // 解析数据行
+          const games = [];
           for (let i = 1; i < jsonData.length; i++) {
             const row = jsonData[i];
             if (!row || row.length === 0) continue;
             
-            // 濡傛灉娌℃湁鍚嶇О鍒欒烦杩?            const name = fieldMapping.name !== undefined ? row[fieldMapping.name] : '';
+            // 如果没有名称则跳过
+            const name = fieldMapping.name !== undefined ? row[fieldMapping.name] : '';
             if (!name || String(name).trim() === '') continue;
             
             const game = {
@@ -2672,7 +2905,7 @@
               baiduLink2: fieldMapping.baiduLink2 !== undefined ? String(row[fieldMapping.baiduLink2] || '').trim() : '',
               thunderLink: fieldMapping.thunderLink !== undefined ? String(row[fieldMapping.thunderLink] || '').trim() : '',
               cover: fieldMapping.cover !== undefined ? String(row[fieldMapping.cover] || '').trim() : null,
-              isDrm: fieldMapping.isDrm !== undefined ? (row[fieldMapping.isDrm] === true || row[fieldMapping.isDrm] === '鏄? || row[fieldMapping.isDrm] === 'yes' || row[fieldMapping.isDrm] === '1') : false,
+              isDrm: fieldMapping.isDrm !== undefined ? (row[fieldMapping.isDrm] === true || row[fieldMapping.isDrm] === '是' || row[fieldMapping.isDrm] === 'yes' || row[fieldMapping.isDrm] === '1') : false,
               downloadsWeb: 0,
               downloadsApp: 0,
               updateTime: Date.now()
@@ -2690,31 +2923,32 @@
     }
 
     function handleFileUpload(file) {
-      // 妫€鏌ユ枃浠剁被鍨?      const validExtensions = ['.xlsx', '.xls'];
+      // 检查文件类型
+      const validExtensions = ['.xlsx', '.xls'];
       const fileExtension = file.name.substring(file.name.lastIndexOf('.')).toLowerCase();
       if (!validExtensions.includes(fileExtension)) {
-        showToast('璇烽€夋嫨 Excel 鏂囦欢 (.xlsx 鎴?.xls)', 'error');
+        showToast('请选择 Excel 文件 (.xlsx 或 .xls)', 'error');
         return;
       }
 
-      showToast('姝ｅ湪瑙ｆ瀽 Excel 鏂囦欢...', 'success');
+      showToast('正在解析 Excel 文件...', 'success');
 
       parseExcelFile(file, (err, importedData) => {
         if (err) {
-          showToast('Excel 瑙ｆ瀽澶辫触锛? + err.message, 'error');
+          showToast('Excel 解析失败：' + err.message, 'error');
           return;
         }
 
         if (!importedData || importedData.length === 0) {
-          showToast('Excel 鏂囦欢涓病鏈夋壘鍒版湁鏁堢殑娓告垙鏁版嵁', 'error');
+          showToast('Excel 文件中没有找到有效的游戏数据', 'error');
           return;
         }
 
         let added = 0, updated = 0;
 
-        // 鑷姩璇嗗埆妯″紡锛氭寜娓告垙鍚嶇О鍖归厤
-        // - 鍚嶇О涓嶅瓨鍦?鈫?鏂板
-        // - 鍚嶇О瀛樺湪 鈫?鏇存柊锛堜繚鐣欎笅杞芥鏁帮級
+        // 自动识别模式：按游戏名称匹配
+        // - 名称不存在 → 新增
+        // - 名称存在 → 更新（保留下载次数）
         importedData.forEach(newGame => {
           const existingIndex = gamesData.findIndex(g =>
             g.name && newGame.name &&
@@ -2722,17 +2956,18 @@
           );
 
           if (existingIndex >= 0) {
-            // 鏇存柊鐜版湁娓告垙锛屼繚鐣欎笅杞芥鏁板拰ID
+            // 更新现有游戏，保留下载次数和ID
             gamesData[existingIndex] = {
               ...newGame,
-              id: gamesData[existingIndex].id, // 淇濈暀鍘熸湁ID
+              id: gamesData[existingIndex].id, // 保留原有ID
               downloadsWeb: gamesData[existingIndex].downloadsWeb || 0,
               downloadsApp: gamesData[existingIndex].downloadsApp || 0,
               updateTime: Date.now()
             };
             updated++;
           } else {
-            // 娣诲姞鏂版父鎴?            gamesData.push(newGame);
+            // 添加新游戏
+            gamesData.push(newGame);
             added++;
           }
         });
@@ -2740,7 +2975,7 @@
         saveData();
         renderGamesTable();
         updateStats();
-        showToast(`瀵煎叆瀹屾垚锛氭柊澧?${added} 涓紝鏇存柊 ${updated} 涓猔, 'success');
+        showToast(`导入完成：新增 ${added} 个，更新 ${updated} 个`, 'success');
       });
     }
 
@@ -2753,43 +2988,44 @@
       a.download = `games-${new Date().toISOString().split('T')[0]}.json`;
       a.click();
       URL.revokeObjectURL(url);
-      showToast('JSON 宸插鍑?, 'success');
+      showToast('JSON 已导出', 'success');
     }
 
     function exportToExcel() {
       if (gamesData.length === 0) {
-        showToast('娌℃湁鍙鍑虹殑鏁版嵁', 'error');
+        showToast('没有可导出的数据', 'error');
         return;
       }
 
-      // 鍑嗗鏁版嵁
+      // 准备数据
       const exportData = gamesData.map(game => ({
         'ID': game.id,
-        '娓告垙鍚嶇О': game.name || '',
-        '鑻辨枃鍚?: game.nameEn || '',
-        '鍒嗙被': game.category || '',
-        '澶у皬': game.size || '',
-        '鎻忚堪': game.desc || '',
-        '鐧惧害閾炬帴1': game.baiduLink1 || '',
-        '鐧惧害閾炬帴2': game.baiduLink2 || '',
-        '杩呴浄閾炬帴': game.thunderLink || '',
-        '灏侀潰': game.cover || '',
-        'D鍔犲瘑': game.isDrm ? '鏄? : '鍚?,
-        '缃戦〉涓嬭浇': game.downloadsWeb || 0,
-        '瀹㈡埛绔笅杞?: game.downloadsApp || 0
+        '游戏名称': game.name || '',
+        '英文名': game.nameEn || '',
+        '分类': game.category || '',
+        '大小': game.size || '',
+        '描述': game.desc || '',
+        '百度链接1': game.baiduLink1 || '',
+        '百度链接2': game.baiduLink2 || '',
+        '迅雷链接': game.thunderLink || '',
+        '封面': game.cover || '',
+        'D加密': game.isDrm ? '是' : '否',
+        '网页下载': game.downloadsWeb || 0,
+        '客户端下载': game.downloadsApp || 0
       }));
 
-      // 鍒涘缓宸ヤ綔绨?      const ws = XLSX.utils.json_to_sheet(exportData);
+      // 创建工作簿
+      const ws = XLSX.utils.json_to_sheet(exportData);
       const wb = XLSX.utils.book_new();
-      XLSX.utils.book_append_sheet(wb, ws, '娓告垙鏁版嵁');
+      XLSX.utils.book_append_sheet(wb, ws, '游戏数据');
 
-      // 瀵煎嚭鏂囦欢
-      XLSX.writeFile(wb, `娓告垙鏁版嵁_${new Date().toISOString().split('T')[0]}.xlsx`);
-      showToast(`宸插鍑?${exportData.length} 涓父鎴忓埌 Excel`, 'success');
+      // 导出文件
+      XLSX.writeFile(wb, `游戏数据_${new Date().toISOString().split('T')[0]}.xlsx`);
+      showToast(`已导出 ${exportData.length} 个游戏到 Excel`, 'success');
     }
 
     function exportToDataEmbed() {
-      const jsContent = `// 娓告垙鏁版嵁 - 鐢卞悗鍙扮鐞嗙郴缁熷鍑篭nconst importedGames = ${JSON.stringify(gamesData, null, 2)};`;
+      const jsContent = `// 游戏数据 - 由后台管理系统导出\nconst importedGames = ${JSON.stringify(gamesData, null, 2)};`;
       const blob = new Blob([jsContent], { type: 'application/javascript' });
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
@@ -2797,52 +3033,54 @@
       a.download = 'data-embed.js';
       a.click();
       URL.revokeObjectURL(url);
-      showToast('data-embed.js 宸插鍑?, 'success');
+      showToast('data-embed.js 已导出', 'success');
     }
 
     function clearAllData() {
-      if (!confirm('纭畾瑕佹竻绌烘墍鏈夋父鎴忔暟鎹悧锛熸鎿嶄綔涓嶅彲鎭㈠锛?)) return;
+      if (!confirm('确定要清空所有游戏数据吗？此操作不可恢复！')) return;
       gamesData = [];
       selectedGames.clear();
       saveData();
       renderGamesTable();
       updateStats();
-      showToast('鏁版嵁宸叉竻绌?, 'success');
+      showToast('数据已清空', 'success');
     }
 
     function reloadFromSource() {
-      if (!confirm('纭畾瑕佷粠鏁版嵁婧愰噸鏂板姞杞藉悧锛熻繖浼氳鐩栧綋鍓?localStorage 涓殑鏁版嵁锛?)) return;
+      if (!confirm('确定要从数据源重新加载吗？这会覆盖当前 localStorage 中的数据！')) return;
       
       if (typeof importedGames === 'undefined' || importedGames.length === 0) {
-        showToast('鏈壘鍒版暟鎹簮 (data-embed.js)', 'error');
+        showToast('未找到数据源 (data-embed.js)', 'error');
         return;
       }
       
-      // 娓呯┖鎵€鏈夌浉鍏虫暟鎹?      localStorage.removeItem(CONFIG.storageKey);
+      // 清空所有相关数据
+      localStorage.removeItem(CONFIG.storageKey);
       localStorage.removeItem(CONFIG.categoriesKey);
       
-      // 閲嶆柊鍒濆鍖栧垎绫伙紙浣跨敤榛樿鍒嗙被锛?      categories = [...DEFAULT_CATEGORIES];
+      // 重新初始化分类（使用默认分类）
+      categories = [...DEFAULT_CATEGORIES];
       
-      // 閲嶆柊鍔犺浇鏁版嵁
+      // 重新加载数据
       gamesData = importedGames.map(game => {
-        // 灏嗕腑鏂囧垎绫诲悕杞崲涓鸿嫳鏂?id
+        // 将中文分类名转换为英文 id
         let categoryId = game.category || '';
         const categoryMapping = {
-          '鍔ㄤ綔': 'action',
-          '鍐掗櫓': 'adventure',
-          '绛栫暐': 'strategy',
-          '灏勫嚮': 'shooter',
-          '瑙掕壊鎵紨': 'rpg',
-          '妯℃嫙缁忚惀': 'simulation',
-          '浣撹偛绔炴妧': 'sports',
-          '璧涜溅': 'racing',
-          '鎭愭€栨儕鎮?: 'horror',
-          '鐩婃櫤瑙ｈ皽': 'puzzle',
-          '楠戦┈涓庣爫鏉€': 'mnb',
-          '鍏ㄩ潰鎴樹簤': 'tw',
-          '鍗虫椂鎴樼暐': 'rts',
-          '鏍兼枟': 'fighting',
-          '琛楁満鎬€鏃?: 'arcade'
+          '动作': 'action',
+          '冒险': 'adventure',
+          '策略': 'strategy',
+          '射击': 'shooter',
+          '角色扮演': 'rpg',
+          '模拟经营': 'simulation',
+          '体育竞技': 'sports',
+          '赛车': 'racing',
+          '恐怖惊悚': 'horror',
+          '益智解谜': 'puzzle',
+          '骑马与砍杀': 'mnb',
+          '全面战争': 'tw',
+          '即时战略': 'rts',
+          '格斗': 'fighting',
+          '街机怀旧': 'arcade'
         };
         if (categoryMapping[game.category]) {
           categoryId = categoryMapping[game.category];
@@ -2850,7 +3088,7 @@
         
         return {
           id: game.id,
-          name: game.name || game.title || '鏈懡鍚?,
+          name: game.name || game.title || '未命名',
           nameEn: game.nameEn || '',
           category: categoryId,
           size: game.size || '',
@@ -2866,39 +3104,41 @@
         };
       });
       
-      // 淇濆瓨鍒?localStorage
+      // 保存到 localStorage
       saveData();
       
-      // 鍒濆鍖栧垎绫婚€夋嫨鍣?      initCategorySelects();
+      // 初始化分类选择器
+      initCategorySelects();
       
-      // 閲嶆柊娓叉煋
+      // 重新渲染
       renderGamesTable();
       updateStats();
       
-      // 鏄剧ず绗竴鏉℃暟鎹敤浜庤皟璇?      console.log('閲嶆柊鍔犺浇鍚庣殑鍒嗙被:', categories);
-      console.log('閲嶆柊鍔犺浇鍚庣殑绗竴鏉℃暟鎹?', gamesData[0]);
+      // 显示第一条数据用于调试
+      console.log('重新加载后的分类:', categories);
+      console.log('重新加载后的第一条数据:', gamesData[0]);
       
-      showToast(`宸蹭粠鏁版嵁婧愰噸鏂板姞杞?${gamesData.length} 涓父鎴廯, 'success');
+      showToast(`已从数据源重新加载 ${gamesData.length} 个游戏`, 'success');
     }
 
-    // ==================== 鎵归噺鍒犻櫎 ====================
+    // ==================== 批量删除 ====================
     function batchDelete() {
       if (selectedGames.size === 0) return;
-      if (!confirm(`纭畾瑕佸垹闄ら€変腑鐨?${selectedGames.size} 涓父鎴忓悧锛焋)) return;
+      if (!confirm(`确定要删除选中的 ${selectedGames.size} 个游戏吗？`)) return;
       
       gamesData = gamesData.filter(g => !selectedGames.has(String(g.id)));
       selectedGames.clear();
       saveData();
       renderGamesTable();
       updateStats();
-      showToast('鎵归噺鍒犻櫎瀹屾垚', 'success');
+      showToast('批量删除完成', 'success');
     }
 
     function batchMoveCategory() {
       batchEditCategory();
     }
 
-    // ==================== 宸ュ叿鍑芥暟 ====================
+    // ==================== 工具函数 ====================
     function openModal(id) {
       document.getElementById(id).classList.add('show');
     }
