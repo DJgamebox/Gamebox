@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>娓告垙鐩掑瓙鍚庡彴绠＄悊绯荤粺</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- SheetJS for Excel parsing -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <!-- 娓告垙鏁版嵁婧?-->
+  <script src="data-embed.js"></script>
   <style>
     :root {
       --bg-primary: #0f1419;
@@ -154,7 +158,7 @@
       flex: 1;
       border: 2px dashed var(--border-color);
       border-radius: 8px;
-      padding: 40px;
+      padding: 30px;
       text-align: center;
       background: var(--bg-tertiary);
       cursor: pointer;
@@ -166,9 +170,9 @@
     }
 
     .upload-area i {
-      font-size: 48px;
+      font-size: 40px;
       color: var(--accent-green);
-      margin-bottom: 15px;
+      margin-bottom: 10px;
     }
 
     .export-buttons {
@@ -859,8 +863,10 @@
       <div class="import-export-content">
         <div class="upload-area" id="dropZone">
           <i class="fas fa-cloud-upload-alt"></i>
-          <p>鎷栨嫿 JSON/Excel 鏂囦欢鍒版澶勶紝鎴栫偣鍑讳笂浼?/p>
-          <input type="file" id="fileInput" accept=".json,.xlsx,.xls" style="display: none;">
+          <p>鎷栨嫿 Excel 鏂囦欢鍒版澶勶紝鎴栫偣鍑讳笂浼?/p>
+          <input type="file" id="fileInput" accept=".xlsx,.xls" style="display: none;">
+          <div style="margin-top: 10px; color: var(--text-secondary); font-size: 12px;">
+            <i class="fas fa-magic"></i> 鑷姩璇嗗埆锛氭柊娓告垙灏嗘坊鍔狅紝宸叉湁娓告垙灏嗘洿鏂?          </div>
         </div>
         <div class="export-buttons">
           <button class="btn" onclick="exportToExcel()">
@@ -874,6 +880,21 @@
           </button>
           <button class="btn btn-danger" onclick="clearAllData()">
             <i class="fas fa-trash-alt"></i> 娓呯┖鎵€鏈夋暟鎹?          </button>
+          <button class="btn" onclick="reloadFromSource()" title="浠?data-embed.js 閲嶆柊鍔犺浇鏁版嵁">
+            <i class="fas fa-sync"></i> 閲嶆柊鍔犺浇鏁版嵁婧?          </button>
+        </div>
+        <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid var(--border-color);">
+          <div style="color: var(--text-secondary); font-size: 13px; margin-bottom: 10px;">
+            <i class="fas fa-cloud"></i> 浜戠鍚屾
+          </div>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+            <button class="btn btn-primary" onclick="syncToCloud()">
+              <i class="fas fa-cloud-upload-alt"></i> 鍚屾鍒颁簯绔?            </button>
+            <button class="btn" onclick="loadFromCloud()">
+              <i class="fas fa-cloud-download-alt"></i> 浠庝簯绔姞杞?            </button>
+            <span style="color: var(--text-secondary); font-size: 12px; align-self: center;">
+              鍚屾鍚庣綉椤电増鍜屽鎴风灏嗙湅鍒版渶鏂版暟鎹?            </span>
+          </div>
         </div>
       </div>
     </div>
@@ -886,9 +907,6 @@
       </div>
       <button class="btn btn-primary" onclick="addNewGame()">
         <i class="fas fa-plus"></i> 娣诲姞娓告垙
-      </button>
-      <button class="btn btn-info" onclick="batchAddGames()">
-        <i class="fas fa-list-ul"></i> 鎵归噺娣诲姞
       </button>
       <button class="btn" onclick="batchEditCategory()">
         <i class="fas fa-folder-open"></i> 鎵归噺鏀瑰垎绫?      </button>
@@ -1036,75 +1054,6 @@
         <button class="btn" onclick="closeModal('gameModal')">鍙栨秷</button>
         <button class="btn btn-primary" onclick="saveGame()">
           <i class="fas fa-save"></i> 淇濆瓨
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <!-- 鎵归噺娣诲姞娓告垙寮圭獥 -->
-  <div class="modal" id="batchAddModal">
-    <div class="modal-content large">
-      <div class="modal-header">
-        <h3><i class="fas fa-list-ul"></i> 鎵归噺娣诲姞娓告垙</h3>
-        <button class="modal-close" onclick="closeModal('batchAddModal')">&times;</button>
-      </div>
-      <div class="modal-body">
-        <div class="card" style="margin-bottom: 15px; background: var(--bg-tertiary);">
-          <div class="card-body" style="padding: 12px 15px;">
-            <p style="margin: 0; color: var(--text-secondary); font-size: 13px;">
-              <i class="fas fa-info-circle"></i> 
-              姣忚杈撳叆涓€涓父鎴忥紝鏍煎紡锛?code>涓枃鍚峾鑻辨枃鍚峾鍒嗙被|澶у皬|鐧惧害閾炬帴1|鐧惧害閾炬帴2|杩呴浄閾炬帴</code><br>
-              浣跨敤 <code>|</code> 鍒嗛殧鍚勫瓧娈碉紝涓嶉渶瑕佺殑瀛楁鍙互鐣欑┖
-            </p>
-          </div>
-        </div>
-
-        <div style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 20px; height: 400px;">
-          <div style="display: flex; flex-direction: column;">
-            <label style="margin-bottom: 8px; color: var(--text-secondary); font-size: 13px;">
-              <i class="fas fa-edit"></i> 鎵归噺杈撳叆
-            </label>
-            <textarea class="form-control" id="batchAddInput" 
-              placeholder="涓夊浗蹇?4|Romance of the Three Kingdoms XIV|绛栫暐|15GB|https://...||&#10;璧涘崥鏈嬪厠2077|Cyberpunk 2077|瑙掕壊鎵紨|70GB|https://...|https://...|https://..."
-              style="flex: 1; font-family: monospace; font-size: 13px; resize: none;"></textarea>
-          </div>
-          <div style="display: flex; flex-direction: column;">
-            <label style="margin-bottom: 8px; color: var(--text-secondary); font-size: 13px;">
-              <i class="fas fa-eye"></i> 棰勮 (<span id="batchAddPreviewCount" style="color: var(--accent-blue); font-weight: bold;">0</span> 涓父鎴?
-            </label>
-            <div style="flex: 1; overflow: auto; background: var(--bg-primary); border: 1px solid var(--border-color); border-radius: 8px;">
-              <table class="games-table" style="font-size: 12px;">
-                <thead>
-                  <tr>
-                    <th style="width: 40px;">#</th>
-                    <th>涓枃鍚?/th>
-                    <th>鑻辨枃鍚?/th>
-                    <th style="width: 80px;">鍒嗙被</th>
-                    <th style="width: 60px;">澶у皬</th>
-                  </tr>
-                </thead>
-                <tbody id="batchAddPreviewBody">
-                  <tr>
-                    <td colspan="5" style="text-align: center; color: var(--text-secondary); padding: 40px;">
-                      <i class="fas fa-arrow-left"></i> 鍦ㄥ乏渚ц緭鍏ユ父鎴忔暟鎹悗鐐瑰嚮"瑙ｆ瀽棰勮"
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button class="btn" onclick="closeModal('batchAddModal')">鍙栨秷</button>
-        <button class="btn" onclick="clearBatchAdd()">
-          <i class="fas fa-eraser"></i> 娓呯┖
-        </button>
-        <button class="btn btn-info" onclick="parseBatchInput()">
-          <i class="fas fa-sync"></i> 瑙ｆ瀽棰勮
-        </button>
-        <button class="btn btn-primary" onclick="saveBatchGames()">
-          <i class="fas fa-save"></i> 纭娣诲姞 (<span id="batchAddSaveCount">0</span>)
         </button>
       </div>
     </div>
@@ -1409,7 +1358,10 @@
       storageKey: 'gamebox_games_data',
       categoriesKey: 'gamebox_categories',
       contactKey: 'gamebox_contact',
-      feedbackKey: 'gamebox_feedback'
+      feedbackKey: 'gamebox_feedback',
+      // Cloudflare Worker API 閰嶇疆
+      apiBaseUrl: 'https://gamebox-api-v2.danyouhai.workers.dev',
+      adminPassword: 'abc123'
     };
 
     // 榛樿鍒嗙被
@@ -1441,7 +1393,6 @@
     let filteredGames = [];
     let currentCoverBase64 = null;
     let batchCovers = {};
-    let batchGamesData = [];
     let currentDownloadSort = { field: 'total', order: 'desc' };
     let batchCoverPage = 1;
     let batchCoverFilteredGames = [];
@@ -1485,11 +1436,92 @@
     function loadData() {
       // 鍔犺浇娓告垙鏁版嵁
       const storedGames = localStorage.getItem(CONFIG.storageKey);
-      gamesData = storedGames ? JSON.parse(storedGames) : [];
       
-      // 鍔犺浇鍒嗙被
-      const storedCategories = localStorage.getItem(CONFIG.categoriesKey);
-      categories = storedCategories ? JSON.parse(storedCategories) : [...DEFAULT_CATEGORIES];
+      // 妫€鏌?localStorage 涓殑鏁版嵁鏄惁鏈夋晥锛堟湁 name 瀛楁锛?      let localDataValid = false;
+      if (storedGames && storedGames !== '[]' && storedGames !== 'null') {
+        try {
+          const parsed = JSON.parse(storedGames);
+          if (parsed.length > 0 && parsed[0].name) {
+            localDataValid = true;
+            gamesData = parsed;
+            console.log('浠?localStorage 鍔犺浇鏁版嵁:', gamesData.length, '鏉?);
+          }
+        } catch (e) {
+          console.error('localStorage 鏁版嵁瑙ｆ瀽澶辫触:', e);
+        }
+      }
+      
+      // 濡傛灉 localStorage 鏁版嵁鏃犳晥锛屼粠 data-embed.js 鍔犺浇
+      if (!localDataValid && typeof importedGames !== 'undefined' && importedGames.length > 0) {
+        console.log('浠?data-embed.js 鍔犺浇鏁版嵁:', importedGames.length, '鏉?);
+        gamesData = importedGames.map(game => {
+          // 灏嗕腑鏂囧垎绫诲悕杞崲涓鸿嫳鏂?id
+          let categoryId = game.category || '';
+          const categoryMapping = {
+            '鍔ㄤ綔': 'action',
+            '鍐掗櫓': 'adventure',
+            '绛栫暐': 'strategy',
+            '灏勫嚮': 'shooter',
+            '瑙掕壊鎵紨': 'rpg',
+            '妯℃嫙缁忚惀': 'simulation',
+            '浣撹偛绔炴妧': 'sports',
+            '璧涜溅': 'racing',
+            '鎭愭€栨儕鎮?: 'horror',
+            '鐩婃櫤瑙ｈ皽': 'puzzle',
+            '楠戦┈涓庣爫鏉€': 'mnb',
+            '鍏ㄩ潰鎴樹簤': 'tw',
+            '鍗虫椂鎴樼暐': 'rts',
+            '鏍兼枟': 'fighting',
+            '琛楁満鎬€鏃?: 'arcade'
+          };
+          if (categoryMapping[game.category]) {
+            categoryId = categoryMapping[game.category];
+          }
+          
+          return {
+            id: game.id,
+            name: game.name || game.title || '鏈懡鍚?,
+            nameEn: game.nameEn || '',
+            category: categoryId,
+            size: game.size || '',
+            desc: game.description || game.desc || '',
+            baiduLink1: game.baiduLink1 || '',
+            baiduLink2: game.baiduLink2 || '',
+            thunderLink: game.thunderLink || '',
+            cover: game.cover || '',
+            isDrm: game.isDrm || false,
+            downloadsWeb: game.downloadsWeb || 0,
+            downloadsApp: game.downloadsApp || 0,
+            updateTime: Date.now()
+          };
+        });
+        // 淇濆瓨鍒?localStorage
+        saveData();
+      } else if (!localDataValid) {
+        gamesData = [];
+      }
+      
+      // 璋冭瘯淇℃伅
+      console.log('鍔犺浇瀹屾垚锛屾父鎴忔暟閲?', gamesData.length);
+      if (gamesData.length > 0) {
+        console.log('绗竴鏉℃暟鎹?', gamesData[0]);
+      }
+      
+      // 鍔犺浇鍒嗙被 - 濡傛灉 localStorage 涓病鏈夋垨涓虹┖锛屼娇鐢ㄩ粯璁ゅ垎绫?      const storedCategories = localStorage.getItem(CONFIG.categoriesKey);
+      if (storedCategories && storedCategories !== '[]' && storedCategories !== 'null') {
+        try {
+          const parsed = JSON.parse(storedCategories);
+          if (parsed.length > 0) {
+            categories = parsed;
+          } else {
+            categories = [...DEFAULT_CATEGORIES];
+          }
+        } catch (e) {
+          categories = [...DEFAULT_CATEGORIES];
+        }
+      } else {
+        categories = [...DEFAULT_CATEGORIES];
+      }
       
       // 鍔犺浇鑱旂郴鏂瑰紡
       const storedContact = localStorage.getItem(CONFIG.contactKey);
@@ -1515,6 +1547,87 @@
       localStorage.setItem(CONFIG.contactKey, JSON.stringify(contactData));
       localStorage.setItem(CONFIG.feedbackKey, JSON.stringify(feedbackData));
       localStorage.setItem('gamebox_updated', new Date().toISOString());
+    }
+
+    // 鍚屾娓告垙鏁版嵁鍒颁簯绔?    async function syncToCloud() {
+      try {
+        showToast('姝ｅ湪鍚屾鍒颁簯绔?..', 'success');
+        
+        const response = await fetch(`${CONFIG.apiBaseUrl}/api/admin/games`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            games: gamesData,
+            adminPassword: CONFIG.adminPassword
+          })
+        });
+
+        const result = await response.json();
+        
+        if (response.ok) {
+          showToast(`鍚屾鎴愬姛锛佸凡鍚屾 ${result.count} 涓父鎴忓埌浜戠`, 'success');
+          return true;
+        } else {
+          showToast('鍚屾澶辫触锛? + (result.error || '鏈煡閿欒'), 'error');
+          return false;
+        }
+      } catch (error) {
+        console.error('鍚屾澶辫触:', error);
+        showToast('鍚屾澶辫触锛? + error.message, 'error');
+        return false;
+      }
+    }
+
+    // 浠庝簯绔姞杞芥暟鎹?    async function loadFromCloud() {
+      try {
+        showToast('姝ｅ湪浠庝簯绔姞杞?..', 'success');
+        
+        const response = await fetch(`${CONFIG.apiBaseUrl}/api/games`);
+        const result = await response.json();
+        
+        if (response.ok && result.games) {
+          gamesData = result.games;
+          saveData();
+          renderGamesTable();
+          updateStats();
+          showToast(`鍔犺浇鎴愬姛锛佷粠浜戠鑾峰彇 ${gamesData.length} 涓父鎴廯, 'success');
+          return true;
+        } else {
+          showToast('鍔犺浇澶辫触锛? + (result.error || '鏈煡閿欒'), 'error');
+          return false;
+        }
+      } catch (error) {
+        console.error('鍔犺浇澶辫触:', error);
+        showToast('鍔犺浇澶辫触锛? + error.message, 'error');
+        return false;
+      }
+    }
+
+    // 涓婁紶灏侀潰鍒?R2
+    async function uploadCoverToR2(gameId, imageBlob) {
+      try {
+        const formData = new FormData();
+        formData.append('file', imageBlob, 'cover.jpg');
+        formData.append('gameId', gameId);
+
+        const response = await fetch(`${CONFIG.apiBaseUrl}/api/upload`, {
+          method: 'POST',
+          body: formData
+        });
+
+        const result = await response.json();
+        
+        if (response.ok && result.url) {
+          return result.url;
+        } else {
+          throw new Error(result.error || '涓婁紶澶辫触');
+        }
+      } catch (error) {
+        console.error('灏侀潰涓婁紶澶辫触:', error);
+        throw error;
+      }
     }
 
     function initCategorySelects() {
@@ -1569,7 +1682,11 @@
       const dropZone = document.getElementById('dropZone');
       const fileInput = document.getElementById('fileInput');
       
-      dropZone.addEventListener('click', () => fileInput.click());
+      dropZone.addEventListener('click', (e) => {
+        // 鐐瑰嚮瀵煎叆妯″紡閫夐」鏃朵笉瑙﹀彂鏂囦欢閫夋嫨
+        if (e.target.closest('.import-mode-option')) return;
+        fileInput.click();
+      });
       dropZone.addEventListener('dragover', (e) => {
         e.preventDefault();
         dropZone.style.borderColor = 'var(--accent-blue)';
@@ -1589,11 +1706,13 @@
         if (e.target.files.length) handleFileUpload(e.target.files[0]);
       });
 
+
+
       // 灏侀潰涓婁紶
       document.getElementById('coverInput').addEventListener('change', handleCoverUpload);
 
       // 绮樿创灏侀潰
-      document.addEventListener('paste', (e) => {
+      document.addEventListener('paste', async (e) => {
         const modal = document.querySelector('.modal.show');
         if (!modal) return;
         
@@ -1601,25 +1720,47 @@
         for (let item of items) {
           if (item.type.indexOf('image') !== -1) {
             const blob = item.getAsFile();
-            const reader = new FileReader();
-            reader.onload = (event) => {
-              if (modal.id === 'gameModal') {
+            
+            if (modal.id === 'gameModal') {
+              // 鍗曟父鎴忕紪杈戞ā寮?- 鐩存帴鏄剧ず base64 棰勮
+              const reader = new FileReader();
+              reader.onload = (event) => {
                 currentCoverBase64 = event.target.result;
                 updateCoverPreview();
-              } else if (modal.id === 'batchCoverModal') {
-                // 鎵归噺妯″紡
-                const activeElement = document.activeElement;
-                if (activeElement && activeElement.classList.contains('paste-area')) {
-                  const gameId = activeElement.dataset.gameId;
-                  batchCovers[gameId] = event.target.result;
+              };
+              reader.readAsDataURL(blob);
+            } else if (modal.id === 'batchCoverModal') {
+              // 鎵归噺妯″紡 - 涓婁紶鍒?R2
+              const activeElement = document.activeElement;
+              if (activeElement && activeElement.classList.contains('paste-area')) {
+                const gameId = activeElement.dataset.gameId;
+                
+                // 鏄剧ず涓婁紶涓?                activeElement.innerHTML = '<div style="color: var(--accent-blue);"><i class="fas fa-spinner fa-spin"></i> 涓婁紶涓?..</div>';
+                
+                try {
+                  // 涓婁紶鍒?R2
+                  const imageUrl = await uploadCoverToR2(gameId, blob);
+                  
+                  // 鏇存柊娓告垙鏁版嵁
                   const game = gamesData.find(g => String(g.id) === String(gameId));
-                  if (game) game.cover = event.target.result;
-                  activeElement.innerHTML = `<img src="${event.target.result}">`;
+                  if (game) {
+                    game.cover = imageUrl;
+                    game.updateTime = Date.now();
+                  }
+                  batchCovers[gameId] = imageUrl;
+                  
+                  // 鏄剧ず鍥剧墖
+                  activeElement.innerHTML = `<img src="${imageUrl}">`;
                   activeElement.classList.add('has-image');
+                  
+                  showToast('灏侀潰涓婁紶鎴愬姛', 'success');
+                } catch (error) {
+                  console.error('涓婁紶澶辫触:', error);
+                  activeElement.innerHTML = '<div style="color: var(--accent-red);"><i class="fas fa-exclamation-circle"></i> 涓婁紶澶辫触</div>';
+                  showToast('灏侀潰涓婁紶澶辫触: ' + error.message, 'error');
                 }
               }
-            };
-            reader.readAsDataURL(blob);
+            }
             break;
           }
         }
@@ -1673,7 +1814,7 @@
     }
 
     function renderGameRow(game) {
-      const category = categories.find(c => c.id === game.category);
+      const category = categories.find(c => c.id === game.category || c.name === game.category);
       const isSelected = selectedGames.has(String(game.id));
       const totalDownloads = (game.downloadsWeb || 0) + (game.downloadsApp || 0);
 
@@ -1694,7 +1835,7 @@
           </td>
           <td>
             <select class="category-select" onchange="quickUpdateCategory('${game.id}', this.value)">
-              ${categories.map(c => `<option value="${c.id}" ${game.category === c.id ? 'selected' : ''}>${c.name}</option>`).join('')}
+              ${categories.map(c => `<option value="${c.id}" ${(game.category === c.id || game.category === c.name) ? 'selected' : ''}>${c.name}</option>`).join('')}
             </select>
           </td>
           <td>
@@ -1838,7 +1979,7 @@
       openModal('gameModal');
     }
 
-    function saveGame() {
+    async function saveGame() {
       const id = document.getElementById('gameId').value;
       const name = document.getElementById('gameName').value.trim();
       
@@ -1848,6 +1989,28 @@
       }
 
       const existingGame = gamesData.find(g => String(g.id) === String(id));
+      
+      let coverUrl = currentCoverBase64;
+      
+      // 濡傛灉鏈夋柊鐨?base64 灏侀潰锛屼笂浼犲埌 R2
+      if (currentCoverBase64 && currentCoverBase64.startsWith('data:image')) {
+        try {
+          showToast('姝ｅ湪涓婁紶灏侀潰...', 'success');
+          const gameId = id ? parseInt(id) : Date.now();
+          
+          // 灏?base64 杞崲涓?blob
+          const response = await fetch(currentCoverBase64);
+          const blob = await response.blob();
+          
+          // 涓婁紶鍒?R2
+          coverUrl = await uploadCoverToR2(gameId, blob);
+          showToast('灏侀潰涓婁紶鎴愬姛', 'success');
+        } catch (error) {
+          console.error('灏侀潰涓婁紶澶辫触:', error);
+          showToast('灏侀潰涓婁紶澶辫触锛屽皢浣跨敤鏈湴瀛樺偍', 'error');
+          // 淇濈暀 base64 浣滀负鍚庡
+        }
+      }
       
       const gameData = {
         id: id ? parseInt(id) : Date.now(),
@@ -1860,7 +2023,7 @@
         baiduLink2: document.getElementById('baiduLink2').value.trim(),
         thunderLink: document.getElementById('thunderLink').value.trim(),
         isDrm: document.getElementById('isDrm').checked,
-        cover: currentCoverBase64,
+        cover: coverUrl,
         downloadsWeb: existingGame?.downloadsWeb || 0,
         downloadsApp: existingGame?.downloadsApp || 0,
         updateTime: Date.now()
@@ -1930,101 +2093,6 @@
     function removeCover() {
       currentCoverBase64 = null;
       updateCoverPreview();
-    }
-
-    // ==================== 鎵归噺娣诲姞 ====================
-    function batchAddGames() {
-      document.getElementById('batchAddInput').value = '';
-      batchGamesData = [];
-      updateBatchPreview();
-      openModal('batchAddModal');
-    }
-
-    function parseBatchInput() {
-      const input = document.getElementById('batchAddInput').value.trim();
-      if (!input) {
-        batchGamesData = [];
-        updateBatchPreview();
-        return;
-      }
-
-      const lines = input.split('\n').filter(line => line.trim());
-      batchGamesData = lines.map((line, index) => {
-        const parts = line.includes('\t') ? line.split('\t') : line.split('|');
-        return {
-          id: Date.now() + index,
-          name: (parts[0] || '').trim(),
-          nameEn: (parts[1] || '').trim(),
-          category: (parts[2] || '').trim(),
-          size: (parts[3] || '').trim(),
-          baiduLink1: (parts[4] || '').trim(),
-          baiduLink2: (parts[5] || '').trim(),
-          thunderLink: (parts[6] || '').trim(),
-          desc: '',
-          cover: null,
-          isDrm: false,
-          downloadsWeb: 0,
-          downloadsApp: 0,
-          updateTime: Date.now()
-        };
-      }).filter(g => g.name);
-
-      updateBatchPreview();
-    }
-
-    function updateBatchPreview() {
-      const tbody = document.getElementById('batchAddPreviewBody');
-      const count = batchGamesData.length;
-      document.getElementById('batchAddPreviewCount').textContent = count;
-      document.getElementById('batchAddSaveCount').textContent = count;
-
-      if (count === 0) {
-        tbody.innerHTML = `<tr><td colspan="5" style="text-align: center; color: var(--text-secondary); padding: 40px;"><i class="fas fa-arrow-left"></i> 鍦ㄥ乏渚ц緭鍏ユ父鎴忔暟鎹悗鐐瑰嚮"瑙ｆ瀽棰勮"</td></tr>`;
-        return;
-      }
-
-      tbody.innerHTML = batchGamesData.map((game, index) => {
-        const category = categories.find(c => c.id === game.category || c.name === game.category);
-        return `
-          <tr>
-            <td>${index + 1}</td>
-            <td>${game.name}</td>
-            <td>${game.nameEn || '-'}</td>
-            <td>${category?.name || game.category || '-'}</td>
-            <td>${game.size || '-'}</td>
-          </tr>
-        `;
-      }).join('');
-    }
-
-    function clearBatchAdd() {
-      document.getElementById('batchAddInput').value = '';
-      batchGamesData = [];
-      updateBatchPreview();
-    }
-
-    function saveBatchGames() {
-      if (batchGamesData.length === 0) {
-        showToast('娌℃湁鍙坊鍔犵殑娓告垙', 'error');
-        return;
-      }
-
-      let added = 0, skipped = 0;
-      batchGamesData.forEach(game => {
-        const exists = gamesData.some(g => g.name.toLowerCase() === game.name.toLowerCase());
-        if (!exists) {
-          gamesData.push(game);
-          added++;
-        } else {
-          skipped++;
-        }
-      });
-
-      saveData();
-      closeModal('batchAddModal');
-      renderGamesTable();
-      updateStats();
-      showToast(`鎴愬姛娣诲姞 ${added} 涓父鎴?{skipped > 0 ? `锛岃烦杩?${skipped} 涓噸澶峘 : ''}`, 'success');
     }
 
     // ==================== 蹇嵎缂栬緫閾炬帴 ====================
@@ -2227,11 +2295,15 @@
       }
     }
 
-    function saveBatchCovers() {
+    async function saveBatchCovers() {
       saveData();
       closeModal('batchCoverModal');
       renderGamesTable();
-      showToast('灏侀潰淇敼宸蹭繚瀛?, 'success');
+      showToast('灏侀潰淇敼宸蹭繚瀛樺埌鏈湴', 'success');
+      
+      // 璇㈤棶鏄惁鍚屾鍒颁簯绔?      if (confirm('鏄惁灏嗕慨鏀瑰悓姝ュ埌浜戠锛?)) {
+        await syncToCloud();
+      }
     }
 
     // ==================== 鍒嗙被绠＄悊 ====================
@@ -2519,30 +2591,157 @@
     }
 
     // ==================== 瀵煎叆瀵煎嚭 ====================
-    function handleFileUpload(file) {
-      if (!file.name.endsWith('.json')) {
-        showToast('璇烽€夋嫨 JSON 鏂囦欢', 'error');
-        return;
+    // Excel 鍒楀悕鍒版父鎴忓瓧娈电殑鏄犲皠
+    const EXCEL_FIELD_MAP = {
+      'id': ['id', 'ID', '缂栧彿'],
+      'name': ['name', '娓告垙鍚嶇О', '鍚嶇О', '涓枃鍚?, '娓告垙鍚?],
+      'nameEn': ['nameEn', '鑻辨枃鍚?, '鑻辨枃鍚嶇О', 'englishname'],
+      'category': ['category', '鍒嗙被', '绫诲埆', '绫诲瀷'],
+      'size': ['size', '澶у皬', '瀹归噺', '娓告垙澶у皬'],
+      'desc': ['desc', '鎻忚堪', '绠€浠?, '娓告垙鎻忚堪', '浠嬬粛'],
+      'baiduLink1': ['baiduLink1', '鐧惧害閾炬帴1', '鐧惧害缃戠洏1', '鐧惧害1'],
+      'baiduLink2': ['baiduLink2', '鐧惧害閾炬帴2', '鐧惧害缃戠洏2', '鐧惧害2'],
+      'thunderLink': ['thunderLink', '杩呴浄閾炬帴', '杩呴浄浜戠洏', '杩呴浄'],
+      'cover': ['cover', '灏侀潰', '灏侀潰鍥?, '鍥剧墖'],
+      'isDrm': ['isDrm', 'D鍔犲瘑', 'DRM', '鍔犲瘑']
+    };
+
+    // 浠?Excel 琛ㄥご璇嗗埆瀛楁
+    function mapExcelHeaders(headers) {
+      const mapping = {};
+      const lowerHeaders = headers.map(h => String(h).toLowerCase().trim());
+      
+      for (const [field, possibleNames] of Object.entries(EXCEL_FIELD_MAP)) {
+        for (const name of possibleNames) {
+          const index = lowerHeaders.indexOf(name.toLowerCase());
+          if (index !== -1) {
+            mapping[field] = index;
+            break;
+          }
+        }
       }
       
+      return mapping;
+    }
+
+    // 瑙ｆ瀽 Excel 鏂囦欢
+    function parseExcelFile(file, callback) {
       const reader = new FileReader();
       reader.onload = (e) => {
         try {
-          const data = JSON.parse(e.target.result);
-          if (Array.isArray(data)) {
-            gamesData = data;
-            saveData();
-            renderGamesTable();
-            updateStats();
-            showToast(`鎴愬姛瀵煎叆 ${data.length} 涓父鎴廯, 'success');
-          } else {
-            showToast('鏂囦欢鏍煎紡涓嶆纭?, 'error');
+          const data = new Uint8Array(e.target.result);
+          const workbook = XLSX.read(data, { type: 'array' });
+          
+          // 璇诲彇绗竴涓伐浣滆〃
+          const firstSheetName = workbook.SheetNames[0];
+          const worksheet = workbook.Sheets[firstSheetName];
+          
+          // 杞崲涓?JSON
+          const jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
+          
+          if (jsonData.length < 2) {
+            callback(new Error('Excel 鏂囦欢鑷冲皯闇€瑕佸寘鍚〃澶村拰涓€琛屾暟鎹?), null);
+            return;
           }
+          
+          // 绗竴琛屼綔涓鸿〃澶?          const headers = jsonData[0];
+          const fieldMapping = mapExcelHeaders(headers);
+          
+          // 妫€鏌ュ繀瑕佺殑瀛楁
+          if (!fieldMapping.name && !fieldMapping.nameEn) {
+            callback(new Error('Excel 鏂囦欢缂哄皯"娓告垙鍚嶇О"鍒楋紝璇锋鏌ヨ〃澶?), null);
+            return;
+          }
+          
+          // 瑙ｆ瀽鏁版嵁琛?          const games = [];
+          for (let i = 1; i < jsonData.length; i++) {
+            const row = jsonData[i];
+            if (!row || row.length === 0) continue;
+            
+            // 濡傛灉娌℃湁鍚嶇О鍒欒烦杩?            const name = fieldMapping.name !== undefined ? row[fieldMapping.name] : '';
+            if (!name || String(name).trim() === '') continue;
+            
+            const game = {
+              id: fieldMapping.id !== undefined ? (row[fieldMapping.id] || Date.now() + i) : Date.now() + i,
+              name: String(name).trim(),
+              nameEn: fieldMapping.nameEn !== undefined ? String(row[fieldMapping.nameEn] || '').trim() : '',
+              category: fieldMapping.category !== undefined ? String(row[fieldMapping.category] || '').trim() : '',
+              size: fieldMapping.size !== undefined ? String(row[fieldMapping.size] || '').trim() : '',
+              desc: fieldMapping.desc !== undefined ? String(row[fieldMapping.desc] || '').trim() : '',
+              baiduLink1: fieldMapping.baiduLink1 !== undefined ? String(row[fieldMapping.baiduLink1] || '').trim() : '',
+              baiduLink2: fieldMapping.baiduLink2 !== undefined ? String(row[fieldMapping.baiduLink2] || '').trim() : '',
+              thunderLink: fieldMapping.thunderLink !== undefined ? String(row[fieldMapping.thunderLink] || '').trim() : '',
+              cover: fieldMapping.cover !== undefined ? String(row[fieldMapping.cover] || '').trim() : null,
+              isDrm: fieldMapping.isDrm !== undefined ? (row[fieldMapping.isDrm] === true || row[fieldMapping.isDrm] === '鏄? || row[fieldMapping.isDrm] === 'yes' || row[fieldMapping.isDrm] === '1') : false,
+              downloadsWeb: 0,
+              downloadsApp: 0,
+              updateTime: Date.now()
+            };
+            
+            games.push(game);
+          }
+          
+          callback(null, games);
         } catch (err) {
-          showToast('鏂囦欢瑙ｆ瀽澶辫触', 'error');
+          callback(err, null);
         }
       };
-      reader.readAsText(file);
+      reader.readAsArrayBuffer(file);
+    }
+
+    function handleFileUpload(file) {
+      // 妫€鏌ユ枃浠剁被鍨?      const validExtensions = ['.xlsx', '.xls'];
+      const fileExtension = file.name.substring(file.name.lastIndexOf('.')).toLowerCase();
+      if (!validExtensions.includes(fileExtension)) {
+        showToast('璇烽€夋嫨 Excel 鏂囦欢 (.xlsx 鎴?.xls)', 'error');
+        return;
+      }
+
+      showToast('姝ｅ湪瑙ｆ瀽 Excel 鏂囦欢...', 'success');
+
+      parseExcelFile(file, (err, importedData) => {
+        if (err) {
+          showToast('Excel 瑙ｆ瀽澶辫触锛? + err.message, 'error');
+          return;
+        }
+
+        if (!importedData || importedData.length === 0) {
+          showToast('Excel 鏂囦欢涓病鏈夋壘鍒版湁鏁堢殑娓告垙鏁版嵁', 'error');
+          return;
+        }
+
+        let added = 0, updated = 0;
+
+        // 鑷姩璇嗗埆妯″紡锛氭寜娓告垙鍚嶇О鍖归厤
+        // - 鍚嶇О涓嶅瓨鍦?鈫?鏂板
+        // - 鍚嶇О瀛樺湪 鈫?鏇存柊锛堜繚鐣欎笅杞芥鏁帮級
+        importedData.forEach(newGame => {
+          const existingIndex = gamesData.findIndex(g =>
+            g.name && newGame.name &&
+            g.name.toLowerCase() === newGame.name.toLowerCase()
+          );
+
+          if (existingIndex >= 0) {
+            // 鏇存柊鐜版湁娓告垙锛屼繚鐣欎笅杞芥鏁板拰ID
+            gamesData[existingIndex] = {
+              ...newGame,
+              id: gamesData[existingIndex].id, // 淇濈暀鍘熸湁ID
+              downloadsWeb: gamesData[existingIndex].downloadsWeb || 0,
+              downloadsApp: gamesData[existingIndex].downloadsApp || 0,
+              updateTime: Date.now()
+            };
+            updated++;
+          } else {
+            // 娣诲姞鏂版父鎴?            gamesData.push(newGame);
+            added++;
+          }
+        });
+
+        saveData();
+        renderGamesTable();
+        updateStats();
+        showToast(`瀵煎叆瀹屾垚锛氭柊澧?${added} 涓紝鏇存柊 ${updated} 涓猔, 'success');
+      });
     }
 
     function exportToJSON() {
@@ -2558,7 +2757,35 @@
     }
 
     function exportToExcel() {
-      showToast('Excel 瀵煎嚭鍔熻兘闇€瑕侀澶栧簱鏀寔锛岃鍏堜娇鐢?JSON 瀵煎嚭', 'error');
+      if (gamesData.length === 0) {
+        showToast('娌℃湁鍙鍑虹殑鏁版嵁', 'error');
+        return;
+      }
+
+      // 鍑嗗鏁版嵁
+      const exportData = gamesData.map(game => ({
+        'ID': game.id,
+        '娓告垙鍚嶇О': game.name || '',
+        '鑻辨枃鍚?: game.nameEn || '',
+        '鍒嗙被': game.category || '',
+        '澶у皬': game.size || '',
+        '鎻忚堪': game.desc || '',
+        '鐧惧害閾炬帴1': game.baiduLink1 || '',
+        '鐧惧害閾炬帴2': game.baiduLink2 || '',
+        '杩呴浄閾炬帴': game.thunderLink || '',
+        '灏侀潰': game.cover || '',
+        'D鍔犲瘑': game.isDrm ? '鏄? : '鍚?,
+        '缃戦〉涓嬭浇': game.downloadsWeb || 0,
+        '瀹㈡埛绔笅杞?: game.downloadsApp || 0
+      }));
+
+      // 鍒涘缓宸ヤ綔绨?      const ws = XLSX.utils.json_to_sheet(exportData);
+      const wb = XLSX.utils.book_new();
+      XLSX.utils.book_append_sheet(wb, ws, '娓告垙鏁版嵁');
+
+      // 瀵煎嚭鏂囦欢
+      XLSX.writeFile(wb, `娓告垙鏁版嵁_${new Date().toISOString().split('T')[0]}.xlsx`);
+      showToast(`宸插鍑?${exportData.length} 涓父鎴忓埌 Excel`, 'success');
     }
 
     function exportToDataEmbed() {
@@ -2581,6 +2808,77 @@
       renderGamesTable();
       updateStats();
       showToast('鏁版嵁宸叉竻绌?, 'success');
+    }
+
+    function reloadFromSource() {
+      if (!confirm('纭畾瑕佷粠鏁版嵁婧愰噸鏂板姞杞藉悧锛熻繖浼氳鐩栧綋鍓?localStorage 涓殑鏁版嵁锛?)) return;
+      
+      if (typeof importedGames === 'undefined' || importedGames.length === 0) {
+        showToast('鏈壘鍒版暟鎹簮 (data-embed.js)', 'error');
+        return;
+      }
+      
+      // 娓呯┖鎵€鏈夌浉鍏虫暟鎹?      localStorage.removeItem(CONFIG.storageKey);
+      localStorage.removeItem(CONFIG.categoriesKey);
+      
+      // 閲嶆柊鍒濆鍖栧垎绫伙紙浣跨敤榛樿鍒嗙被锛?      categories = [...DEFAULT_CATEGORIES];
+      
+      // 閲嶆柊鍔犺浇鏁版嵁
+      gamesData = importedGames.map(game => {
+        // 灏嗕腑鏂囧垎绫诲悕杞崲涓鸿嫳鏂?id
+        let categoryId = game.category || '';
+        const categoryMapping = {
+          '鍔ㄤ綔': 'action',
+          '鍐掗櫓': 'adventure',
+          '绛栫暐': 'strategy',
+          '灏勫嚮': 'shooter',
+          '瑙掕壊鎵紨': 'rpg',
+          '妯℃嫙缁忚惀': 'simulation',
+          '浣撹偛绔炴妧': 'sports',
+          '璧涜溅': 'racing',
+          '鎭愭€栨儕鎮?: 'horror',
+          '鐩婃櫤瑙ｈ皽': 'puzzle',
+          '楠戦┈涓庣爫鏉€': 'mnb',
+          '鍏ㄩ潰鎴樹簤': 'tw',
+          '鍗虫椂鎴樼暐': 'rts',
+          '鏍兼枟': 'fighting',
+          '琛楁満鎬€鏃?: 'arcade'
+        };
+        if (categoryMapping[game.category]) {
+          categoryId = categoryMapping[game.category];
+        }
+        
+        return {
+          id: game.id,
+          name: game.name || game.title || '鏈懡鍚?,
+          nameEn: game.nameEn || '',
+          category: categoryId,
+          size: game.size || '',
+          desc: game.description || game.desc || '',
+          baiduLink1: game.baiduLink1 || '',
+          baiduLink2: game.baiduLink2 || '',
+          thunderLink: game.thunderLink || '',
+          cover: game.cover || '',
+          isDrm: game.isDrm || false,
+          downloadsWeb: game.downloadsWeb || 0,
+          downloadsApp: game.downloadsApp || 0,
+          updateTime: Date.now()
+        };
+      });
+      
+      // 淇濆瓨鍒?localStorage
+      saveData();
+      
+      // 鍒濆鍖栧垎绫婚€夋嫨鍣?      initCategorySelects();
+      
+      // 閲嶆柊娓叉煋
+      renderGamesTable();
+      updateStats();
+      
+      // 鏄剧ず绗竴鏉℃暟鎹敤浜庤皟璇?      console.log('閲嶆柊鍔犺浇鍚庣殑鍒嗙被:', categories);
+      console.log('閲嶆柊鍔犺浇鍚庣殑绗竴鏉℃暟鎹?', gamesData[0]);
+      
+      showToast(`宸蹭粠鏁版嵁婧愰噸鏂板姞杞?${gamesData.length} 涓父鎴廯, 'success');
     }
 
     // ==================== 鎵归噺鍒犻櫎 ====================
