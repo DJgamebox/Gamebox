@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>游戏盒子 - 后台管理</title>
+  <script src="https://cdn.jsdelivr.net/npm/pinyin-pro@3.18.2/dist/index.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+      background: #171a21;
+      color: #c7d5e0;
+      min-height: 100vh;
+    }
+
+    .header {
+      background: #1b2838;
+      padding: 20px;
+      border-bottom: 1px solid #2a475e;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header h1 {
+      color: #66c0f4;
+      font-size: 24px;
+    }
+
+    .header .info {
+      color: #8f98a0;
+      font-size: 14px;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* 登录框 */
+    .login-box {
+      max-width: 400px;
+      margin: 100px auto;
+      background: #1b2838;
+      padding: 40px;
+      border-radius: 8px;
+      border: 1px solid #2a475e;
+    }
+
+    .login-box h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #66c0f4;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      color: #8f98a0;
+      font-size: 14px;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 12px;
+      background: #171a21;
+      border: 1px solid #2a475e;
+      border-radius: 4px;
+      color: #c7d5e0;
+      font-size: 14px;
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: #66c0f4;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: all 0.2s;
+    }
+
+    .btn-primary {
+      background: #5c7e10;
+      color: white;
+      width: 100%;
+    }
+
+    .btn-primary:hover {
+      background: #6b9c12;
+    }
+
+    .btn-secondary {
+      background: #2a475e;
+      color: #c7d5e0;
+    }
+
+    .btn-secondary:hover {
+      background: #3d5a70;
+    }
+
+    .btn-danger {
+      background: #e74c3c;
+      color: white;
+    }
+
+    .btn-danger:hover {
+      background: #c0392b;
+    }
+
+    /* 管理面板 */
+    .admin-panel {
+      display: none;
+    }
+
+    .toolbar {
+      background: #1b2838;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .toolbar .btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .stats {
+      margin-left: auto;
+      color: #8f98a0;
+      font-size: 14px;
+    }
+
+    /* 游戏列表 */
+    .games-list {
+      background: #1b2838;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .game-item {
+      display: grid;
+      grid-template-columns: 50px 1fr 150px 200px 100px;
+      gap: 15px;
+      padding: 15px 20px;
+      border-bottom: 1px solid #2a475e;
+      align-items: center;
+    }
+
+    .game-item:hover {
+      background: #2a475e;
+    }
+
+    .game-item.header {
+      background: #2a475e;
+      font-weight: bold;
+      color: #66c0f4;
+    }
+
+    .game-number {
+      color: #8f98a0;
+      font-size: 12px;
+    }
+
+    .game-name {
+      color: #c7d5e0;
+    }
+
+    .game-name .en {
+      color: #8f98a0;
+      font-size: 12px;
+      margin-top: 4px;
+    }
+
+    .game-category {
+      color: #8f98a0;
+      font-size: 13px;
+    }
+
+    .game-actions {
+      display: flex;
+      gap: 8px;
+    }
+
+    .game-actions .btn {
+      padding: 6px 12px;
+      font-size: 12px;
+    }
+
+    /* 编辑弹窗 */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal.show {
+      display: flex;
+    }
+
+    .modal-content {
+      background: #1b2838;
+      width: 90%;
+      max-width: 600px;
+      max-height: 90vh;
+      overflow-y: auto;
+      border-radius: 8px;
+      border: 1px solid #2a475e;
+    }
+
+    .modal-header {
+      padding: 20px;
+      border-bottom: 1px solid #2a475e;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .modal-header h3 {
+      color: #66c0f4;
+    }
+
+    .modal-close {
+      font-size: 24px;
+      color: #8f98a0;
+      cursor: pointer;
+    }
+
+    .modal-close:hover {
+      color: #c7d5e0;
+    }
+
+    .modal-body {
+      padding: 20px;
+    }
+
+    .modal-footer {
+      padding: 20px;
+      border-top: 1px solid #2a475e;
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    textarea.form-control {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    /* 批量导入 */
+    .import-area {
+      margin-top: 20px;
+    }
+
+    .import-area textarea {
+      width: 100%;
+      min-height: 300px;
+      background: #171a21;
+      border: 1px solid #2a475e;
+      border-radius: 4px;
+      padding: 15px;
+      color: #c7d5e0;
+      font-family: monospace;
+      font-size: 13px;
+    }
+
+    /* 提示消息 */
+    .toast {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      padding: 15px 25px;
+      border-radius: 4px;
+      color: white;
+      font-size: 14px;
+      z-index: 2000;
+      animation: slideIn 0.3s ease;
+    }
+
+    .toast.success {
+      background: #5c7e10;
+    }
+
+    .toast.error {
+      background: #e74c3c;
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    /* 搜索框 */
+    .search-box {
+      position: relative;
+      flex: 1;
+      max-width: 300px;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 10px 15px 10px 40px;
+      background: #171a21;
+      border: 1px solid #2a475e;
+      border-radius: 4px;
+      color: #c7d5e0;
+    }
+
+    .search-box::before {
+      content: "🔍";
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    /* 空状态 */
+    .empty-state {
+      text-align: center;
+      padding: 60px 20px;
+      color: #8f98a0;
+    }
+
+    .loading {
+      text-align: center;
+      padding: 40px;
+      color: #8f98a0;
+    }
+  </style>
+</head>
+<body>
+  <!-- 登录界面 -->
+  <div id="loginPanel" class="login-box">
+    <h2>🔐 游戏盒子后台管理</h2>
+    <div class="form-group">
+      <label>管理密码</label>
+      <input type="password" id="password" class="form-control" placeholder="请输入管理密码">
+    </div>
+    <button class="btn btn-primary" onclick="login()">登录</button>
+  </div>
+
+  <!-- 管理面板 -->
+  <div id="adminPanel" class="admin-panel">
+    <div class="header">
+      <div>
+        <h1>🎮 游戏盒子后台管理</h1>
+        <div class="info">通过 Cloudflare Workers 实时管理游戏数据</div>
+      </div>
+      <button class="btn btn-secondary" onclick="logout()">退出登录</button>
+    </div>
+
+    <div class="container">
+      <!-- 工具栏 -->
+      <div class="toolbar">
+        <button class="btn btn-primary" onclick="showAddModal()">
+          <span>➕</span> 添加游戏
+        </button>
+        <button class="btn btn-secondary" onclick="showImportModal()">
+          <span>📥</span> 批量导入
+        </button>
+        <button class="btn btn-secondary" onclick="exportData()">
+          <span>📤</span> 导出数据
+        </button>
+        <button class="btn btn-primary" onclick="saveToServer()">
+          <span>💾</span> 保存到服务器
+        </button>
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="搜索游戏..." oninput="searchGames()">
+        </div>
+        <div class="stats">
+          共 <span id="gameCount">0</span> 款游戏
+        </div>
+      </div>
+
+      <!-- 游戏列表 -->
+      <div class="games-list" id="gamesList">
+        <div class="loading">正在加载数据...</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 添加/编辑游戏弹窗 -->
+  <div class="modal" id="gameModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modalTitle">添加游戏</h3>
+        <span class="modal-close" onclick="closeModal('gameModal')">&times;</span>
+      </div>
+      <div class="modal-body">
+        <input type="hidden" id="gameId">
+        <div class="form-row">
+          <div class="form-group">
+            <label>游戏名称 *</label>
+            <input type="text" id="gameName" class="form-control" placeholder="中文名称">
+          </div>
+          <div class="form-group">
+            <label>英文名称</label>
+            <input type="text" id="gameNameEn" class="form-control" placeholder="English Name">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>分类 *</label>
+            <select id="gameCategory" class="form-control">
+              <option value="动作">动作</option>
+              <option value="冒险">冒险</option>
+              <option value="策略">策略</option>
+              <option value="射击">射击</option>
+              <option value="角色扮演">角色扮演</option>
+              <option value="模拟经营">模拟经营</option>
+              <option value="体育竞技">体育竞技</option>
+              <option value="赛车">赛车</option>
+              <option value="恐怖惊悚">恐怖惊悚</option>
+              <option value="益智解谜">益智解谜</option>
+              <option value="骑马与砍杀">骑马与砍杀</option>
+              <option value="全面战争">全面战争</option>
+              <option value="即时战略">即时战略</option>
+              <option value="格斗">格斗</option>
+              <option value="街机怀旧">街机怀旧</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>游戏大小</label>
+            <input type="text" id="gameSize" class="form-control" placeholder="如：50GB">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>封面图片 URL</label>
+          <input type="text" id="gameCover" class="form-control" placeholder="https://...">
+        </div>
+        <div class="form-group">
+          <label>游戏简介</label>
+          <textarea id="gameDesc" class="form-control" placeholder="游戏描述..."></textarea>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>百度网盘链接 1</label>
+            <input type="text" id="gameBaidu1" class="form-control" placeholder="https://pan.baidu.com/...">
+          </div>
+          <div class="form-group">
+            <label>百度网盘链接 2</label>
+            <input type="text" id="gameBaidu2" class="form-control" placeholder="https://pan.baidu.com/...">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>迅雷云盘链接</label>
+          <input type="text" id="gameThunder" class="form-control" placeholder="https://pan.xunlei.com/...">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" onclick="closeModal('gameModal')">取消</button>
+        <button class="btn btn-primary" onclick="saveGame()">保存</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 批量导入弹窗 -->
+  <div class="modal" id="importModal">
+    <div class="modal-content" style="max-width: 800px;">
+      <div class="modal-header">
+        <h3>批量导入游戏</h3>
+        <span class="modal-close" onclick="closeModal('importModal')">&times;</span>
+      </div>
+      <div class="modal-body">
+        <p style="color: #8f98a0; margin-bottom: 15px;">
+          粘贴 JSON 格式的游戏数据（可以从 data-embed.js 复制 importedGames 数组的内容）
+        </p>
+        <div class="import-area">
+          <textarea id="importData" placeholder="[
+  {
+    &quot;id&quot;: 1,
+    &quot;name&quot;: &quot;游戏名称&quot;,
+    &quot;category&quot;: &quot;分类&quot;,
+    ...
+  }
+]"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" onclick="closeModal('importModal')">取消</button>
+        <button class="btn btn-primary" onclick="importGames()">导入</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ==================== 配置 ====================
+    // 修改为你的 Cloudflare Worker URL
+    const API_URL = 'https://gamebox-api.yourname.workers.dev';
+    
+    // ==================== 全局变量 ====================
+    let games = [];
+    let password = '';
+    let editingId = null;
+
+    // ==================== 登录 ====================
+    function login() {
+      password = document.getElementById('password').value;
+      if (!password) {
+        showToast('请输入密码', 'error');
+        return;
+      }
+      
+      // 验证密码（尝试获取数据）
+      fetch(`${API_URL}/api/games`)
+        .then(res => {
+          if (res.ok) {
+            document.getElementById('loginPanel').style.display = 'none';
+            document.getElementById('adminPanel').style.display = 'block';
+            loadGames();
+          } else {
+            showToast('登录失败', 'error');
+          }
+        })
+        .catch(err => {
+          showToast('连接服务器失败', 'error');
+        });
+    }
+
+    function logout() {
+      password = '';
+      document.getElementById('password').value = '';
+      document.getElementById('loginPanel').style.display = 'block';
+      document.getElementById('adminPanel').style.display = 'none';
+    }
+
+    // ==================== 数据操作 ====================
+    async function loadGames() {
+      try {
+        const response = await fetch(`${API_URL}/api/games`);
+        const data = await response.json();
+        games = data.games || [];
+        renderGames();
+        showToast(`已加载 ${games.length} 款游戏`, 'success');
+      } catch (err) {
+        showToast('加载数据失败', 'error');
+        console.error(err);
+      }
+    }
+
+    async function saveToServer() {
+      try {
+        const response = await fetch(`${API_URL}/api/games`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${password}`
+          },
+          body: JSON.stringify(games)
+        });
+        
+        const result = await response.json();
+        if (result.success) {
+          showToast(result.message || '保存成功', 'success');
+        } else {
+          showToast(result.error || '保存失败', 'error');
+        }
+      } catch (err) {
+        showToast('保存失败', 'error');
+        console.error(err);
+      }
+    }
+
+    // ==================== 游戏列表渲染 ====================
+    function renderGames() {
+      const list = document.getElementById('gamesList');
+      
+      if (games.length === 0) {
+        list.innerHTML = '<div class="empty-state">暂无游戏数据，请添加或导入</div>';
+        return;
+      }
+
+      let html = `
+        <div class="game-item header">
+          <div class="game-number">#</div>
+          <div class="game-name">游戏名称</div>
+          <div class="game-category">分类</div>
+          <div class="game-category">大小</div>
+          <div class="game-actions">操作</div>
+        </div>
+      `;
+
+      games.forEach((game, index) => {
+        html += `
+          <div class="game-item">
+            <div class="game-number">${index + 1}</div>
+            <div class="game-name">
+              ${game.name}
+              ${game.nameEn ? `<div class="en">${game.nameEn}</div>` : ''}
+            </div>
+            <div class="game-category">${game.category || '-'}</div>
+            <div class="game-category">${game.size || '-'}</div>
+            <div class="game-actions">
+              <button class="btn btn-secondary" onclick="editGame('${game.id}')">编辑</button>
+              <button class="btn btn-danger" onclick="deleteGame('${game.id}')">删除</button>
+            </div>
+          </div>
+        `;
+      });
+
+      list.innerHTML = html;
+      document.getElementById('gameCount').textContent = games.length;
+    }
+
+    function searchGames() {
+      const term = document.getElementById('searchInput').value.toLowerCase();
+      const items = document.querySelectorAll('.game-item:not(.header)');
+      
+      items.forEach(item => {
+        const name = item.querySelector('.game-name').textContent.toLowerCase();
+        item.style.display = name.includes(term) ? '' : 'none';
+      });
+    }
+
+    // ==================== 游戏编辑 ====================
+    function showAddModal() {
+      editingId = null;
+      document.getElementById('modalTitle').textContent = '添加游戏';
+      document.getElementById('gameId').value = '';
+      document.getElementById('gameName').value = '';
+      document.getElementById('gameNameEn').value = '';
+      document.getElementById('gameCategory').value = '动作';
+      document.getElementById('gameSize').value = '';
+      document.getElementById('gameCover').value = '';
+      document.getElementById('gameDesc').value = '';
+      document.getElementById('gameBaidu1').value = '';
+      document.getElementById('gameBaidu2').value = '';
+      document.getElementById('gameThunder').value = '';
+      document.getElementById('gameModal').classList.add('show');
+    }
+
+    function editGame(id) {
+      const game = games.find(g => g.id == id);
+      if (!game) return;
+
+      editingId = id;
+      document.getElementById('modalTitle').textContent = '编辑游戏';
+      document.getElementById('gameId').value = game.id;
+      document.getElementById('gameName').value = game.name || '';
+      document.getElementById('gameNameEn').value = game.nameEn || '';
+      document.getElementById('gameCategory').value = game.category || '动作';
+      document.getElementById('gameSize').value = game.size || '';
+      document.getElementById('gameCover').value = game.cover || '';
+      document.getElementById('gameDesc').value = game.description || '';
+      document.getElementById('gameBaidu1').value = game.baiduLink1 || '';
+      document.getElementById('gameBaidu2').value = game.baiduLink2 || '';
+      document.getElementById('gameThunder').value = game.thunderLink || '';
+      document.getElementById('gameModal').classList.add('show');
+    }
+
+    function saveGame() {
+      const name = document.getElementById('gameName').value.trim();
+      if (!name) {
+        showToast('请输入游戏名称', 'error');
+        return;
+      }
+
+      const gameData = {
+        id: editingId || Date.now().toString(),
+        name: name,
+        nameEn: document.getElementById('gameNameEn').value.trim(),
+        category: document.getElementById('gameCategory').value,
+        size: document.getElementById('gameSize').value.trim(),
+        cover: document.getElementById('gameCover').value.trim(),
+        description: document.getElementById('gameDesc').value.trim(),
+        baiduLink1: document.getElementById('gameBaidu1').value.trim(),
+        baiduLink2: document.getElementById('gameBaidu2').value.trim(),
+        thunderLink: document.getElementById('gameThunder').value.trim(),
+        favorite: false,
+        dateAdded: new Date().toLocaleDateString('zh-CN')
+      };
+
+      if (editingId) {
+        const index = games.findIndex(g => g.id == editingId);
+        if (index !== -1) {
+          games[index] = gameData;
+        }
+      } else {
+        games.push(gameData);
+      }
+
+      renderGames();
+      closeModal('gameModal');
+      showToast(editingId ? '修改成功' : '添加成功', 'success');
+    }
+
+    function deleteGame(id) {
+      if (!confirm('确定要删除这款游戏吗？')) return;
+      
+      games = games.filter(g => g.id != id);
+      renderGames();
+      showToast('删除成功', 'success');
+    }
+
+    // ==================== 批量导入 ====================
+    function showImportModal() {
+      document.getElementById('importData').value = '';
+      document.getElementById('importModal').classList.add('show');
+    }
+
+    function importGames() {
+      const text = document.getElementById('importData').value.trim();
+      if (!text) {
+        showToast('请输入数据', 'error');
+        return;
+      }
+
+      try {
+        let data = JSON.parse(text);
+        
+        // 支持 {games: [...]} 或直接 [...]
+        if (data.games && Array.isArray(data.games)) {
+          data = data.games;
+        }
+        
+        if (!Array.isArray(data)) {
+          throw new Error('数据格式错误');
+        }
+
+        // 转换数据格式
+        const imported = data.map((game, index) => ({
+          id: game.id || Date.now() + index,
+          name: game.name || game.cn || '',
+          nameEn: game.nameEn || game.en || '',
+          category: game.category || game.type || '其他',
+          size: game.size || '',
+          cover: game.cover || '',
+          description: game.description || game.desc || '',
+          baiduLink1: game.baiduLink1 || game.link1 || '',
+          baiduLink2: game.baiduLink2 || game.link2 || '',
+          thunderLink: game.thunderLink || game.link3 || '',
+          favorite: false,
+          dateAdded: game.dateAdded || new Date().toLocaleDateString('zh-CN')
+        }));
+
+        if (confirm(`确定要导入 ${imported.length} 款游戏吗？这将覆盖现有数据。`)) {
+          games = imported;
+          renderGames();
+          closeModal('importModal');
+          showToast(`成功导入 ${imported.length} 款游戏`, 'success');
+        }
+      } catch (err) {
+        showToast('导入失败：' + err.message, 'error');
+        console.error(err);
+      }
+    }
+
+    function exportData() {
+      const data = JSON.stringify(games, null, 2);
+      const blob = new Blob([data], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `games-backup-${new Date().toISOString().split('T')[0]}.json`;
+      a.click();
+      URL.revokeObjectURL(url);
+      showToast('导出成功', 'success');
+    }
+
+    // ==================== 工具函数 ====================
+    function closeModal(id) {
+      document.getElementById(id).classList.remove('show');
+    }
+
+    function showToast(message, type) {
+      const toast = document.createElement('div');
+      toast.className = `toast ${type}`;
+      toast.textContent = message;
+      document.body.appendChild(toast);
+      
+      setTimeout(() => {
+        toast.remove();
+      }, 3000);
+    }
+
+    // 点击弹窗外部关闭
+    document.querySelectorAll('.modal').forEach(modal => {
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.classList.remove('show');
+        }
+      });
+    });
+
+    // 回车登录
+    document.getElementById('password')?.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') login();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,1795 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>游戏盒子 - GameBox</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    :root {
+      --bg-dark: #171a21;
+      --bg-light: #1b2838;
+      --bg-hover: #2a475e;
+      --bg-card: #1e2d3d;
+      --text-primary: #f0f4f8;
+      --text-secondary: #c0c8d0;
+      --text-white: #ffffff;
+      --accent-blue: #7dd3fc;
+      --accent-purple: #a371f7;
+      --accent-green: #5c7e10;
+      --border-color: #2a475e;
+    }
+
+    /* 白天模式 */
+    [data-theme="light"] {
+      --bg-dark: #f5f5f5;
+      --bg-light: #ffffff;
+      --bg-hover: #e3f2fd;
+      --bg-card: #ffffff;
+      --text-primary: #333333;
+      --text-secondary: #666666;
+      --text-white: #333333;
+      --accent-blue: #1890ff;
+      --accent-purple: #7c3aed;
+      --accent-green: #42b72a;
+      --border-color: #e8e8e8;
+    }
+
+    [data-theme="light"] .sidebar-header span {
+      color: #333333;
+    }
+
+    [data-theme="light"] .nav-item {
+      color: #666666;
+    }
+
+    [data-theme="light"] .nav-item:hover,
+    [data-theme="light"] .nav-item.active {
+      background: #e3f2fd;
+      color: #1890ff;
+    }
+
+    [data-theme="light"] .nav-item.active::before {
+      background: #1890ff;
+    }
+
+    [data-theme="light"] .nav-section-title {
+      color: #999999;
+    }
+
+    [data-theme="light"] .nav-badge {
+      color: #999999;
+    }
+
+    body {
+      font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-primary);
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      font-size: 13px;
+    }
+
+    /* 左侧边栏 - 固定宽度 */
+    .sidebar {
+      width: 200px;
+      background: var(--bg-dark);
+      display: flex;
+      flex-direction: column;
+      border-right: 1px solid var(--border-color);
+      flex-shrink: 0;
+    }
+
+    .sidebar-header {
+      padding: 12px 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .sidebar-header img {
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+
+    .sidebar-header span {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-white);
+      white-space: nowrap;
+      line-height: 1;
+      flex: 1;
+    }
+
+    .theme-toggle {
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg-hover);
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      color: var(--text-secondary);
+      cursor: pointer;
+      font-size: 14px;
+      transition: all 0.2s ease;
+      flex-shrink: 0;
+    }
+
+    .theme-toggle:hover {
+      background: var(--border-color);
+      color: var(--text-white);
+    }
+
+    /* 明亮模式下的太阳图标用橙红色 */
+    [data-theme="light"] .theme-toggle i {
+      color: #ff6b35;
+    }
+
+    .sidebar-content {
+      flex: 1;
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding: 10px 0;
+    }
+
+    .nav-section { margin-bottom: 10px; }
+
+    .nav-section-title {
+      padding: 8px 15px;
+      font-size: 10px;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-align: left;
+      white-space: nowrap;
+    }
+
+    .nav-item {
+      display: flex;
+      align-items: center;
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      color: var(--text-secondary);
+      position: relative;
+    }
+
+    .nav-item:hover, .nav-item.active {
+      background: var(--bg-hover);
+      color: var(--text-white);
+    }
+
+    .nav-item.active::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: var(--accent-blue);
+    }
+
+    .nav-item i {
+      font-size: 18px;
+      width: 24px;
+      text-align: center;
+    }
+
+    .nav-item span {
+      font-size: 12px;
+      white-space: nowrap;
+      margin-left: 12px;
+      flex: 1;
+    }
+
+    .nav-badge {
+      background: transparent;
+      color: var(--text-secondary);
+      font-size: 11px;
+      padding: 0;
+      border-radius: 0;
+      min-width: auto;
+      text-align: right;
+      transition: all 0.2s ease;
+      font-weight: 600;
+      margin-left: auto;
+    }
+
+    /* 0个时显示灰色 */
+    .nav-badge[data-count="0"] {
+      background: transparent;
+      color: var(--text-secondary);
+    }
+
+    .nav-divider {
+      height: 1px;
+      background: var(--border-color);
+      margin: 10px 15px;
+    }
+
+    .sidebar-footer {
+      padding: 10px 0;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .sync-info {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 10px;
+      color: var(--text-secondary);
+      margin-bottom: 8px;
+      padding: 0 15px;
+      white-space: nowrap;
+    }
+
+    .sync-info.online { color: var(--accent-green); }
+
+    .login-btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 15px;
+      background: var(--bg-hover);
+      border: none;
+      color: var(--text-secondary);
+      cursor: pointer;
+      font-size: 13px;
+      width: 100%;
+      transition: all 0.2s ease;
+    }
+
+    .login-btn:hover {
+      background: var(--border-color);
+      color: var(--text-white);
+    }
+
+    /* 主内容区 */
+    .main-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      background: var(--bg-light);
+    }
+
+    /* 顶部栏 */
+    .top-bar {
+      height: 60px;
+      background: linear-gradient(180deg, #2a3f54 0%, var(--bg-light) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      gap: 20px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .search-box {
+      position: relative;
+      width: 350px;
+    }
+
+    .search-box input {
+      width: 100%;
+      height: 36px;
+      padding: 0 15px 0 40px;
+      background: #316282;
+      border: 1px solid #316282;
+      border-radius: 3px;
+      color: var(--text-white);
+      font-size: 14px;
+      outline: none;
+      transition: all 0.2s ease;
+    }
+
+    .search-box input:focus {
+      background: #4080b0;
+      border-color: var(--accent-blue);
+    }
+
+    .search-box input::placeholder {
+      color: rgba(255,255,255,0.6);
+    }
+
+    .search-box i {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: rgba(255,255,255,0.6);
+      font-size: 14px;
+    }
+
+    .top-actions {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .btn-download {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border: none;
+      border-radius: 6px;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    }
+
+    .btn-download:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+    }
+
+    .sort-select {
+      padding: 8px 32px 8px 12px;
+      background: var(--bg-hover);
+      border: 1px solid var(--border-color);
+      border-radius: 3px;
+      color: var(--text-primary);
+      font-size: 13px;
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%238f98a0' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+    }
+
+    /* 游戏内容区 */
+    .content-area {
+      flex: 1;
+      overflow-y: auto;
+      padding: 20px;
+    }
+
+    .games-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+    }
+
+    .game-card {
+      background: var(--bg-card);
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: pointer;
+      border: 1px solid var(--border-color);
+      transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .game-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      z-index: 20;
+    }
+
+    .card-cover {
+      position: relative;
+      width: 100%;
+      height: 160px;
+      background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+      overflow: hidden;
+    }
+
+    .card-cover img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .card-cover .no-cover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #1a202c;
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+
+    /* 卡片下载按钮 */
+    .game-card .card-download-btn {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 12px 28px;
+      background: #5c7e10;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      white-space: nowrap;
+      z-index: 100;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+
+    .game-card:hover .card-download-btn {
+      opacity: 1;
+    }
+
+    /* 卡片收藏按钮 */
+    .game-card .card-favorite-btn {
+      display: flex;
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      width: 40px;
+      height: 40px;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.5);
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      z-index: 100;
+    }
+
+    .card-favorite-btn:hover {
+      background: rgba(0, 0, 0, 0.7);
+      transform: scale(1.1);
+    }
+
+    .card-favorite-btn i {
+      font-size: 20px;
+      color: #8f98a0;
+      transition: all 0.2s ease;
+    }
+
+    .card-favorite-btn.active i {
+      color: #e74c3c;
+    }
+
+    .card-info {
+      padding: 16px;
+    }
+
+    .card-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-white);
+      margin-bottom: 4px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .card-subtitle {
+      font-size: 12px;
+      color: var(--text-secondary);
+      margin-bottom: 8px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      min-height: 16px;
+    }
+
+    .card-tags {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .card-tag {
+      padding: 4px 10px;
+      background: rgba(102, 192, 244, 0.15);
+      color: var(--accent-blue);
+      font-size: 12px;
+      border-radius: 3px;
+    }
+
+    /* 底部状态栏 */
+    .status-bar {
+      height: 40px;
+      background: var(--bg-dark);
+      border-top: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+
+    /* 滚动条 */
+    ::-webkit-scrollbar { width: 10px; height: 10px; }
+    ::-webkit-scrollbar-track { background: var(--bg-dark); }
+    ::-webkit-scrollbar-thumb { background: var(--bg-hover); border-radius: 5px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--border-color); }
+
+    /* 弹窗 */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.8);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal-overlay.show { display: flex; }
+
+    .modal {
+      background: var(--bg-card);
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+      max-width: 850px;
+      width: 90%;
+      max-height: 85vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    }
+
+    .modal-header {
+      padding: 20px;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .modal-title { font-size: 18px; font-weight: 600; color: var(--text-white); }
+
+    .modal-close {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border-radius: 4px;
+      color: var(--text-secondary);
+      font-size: 20px;
+      transition: all 0.2s ease;
+    }
+
+    .modal-close:hover {
+      background: var(--bg-hover);
+      color: var(--text-white);
+    }
+
+    .modal-body { padding: 24px; overflow-y: auto; }
+
+    .detail-layout { display: flex; gap: 24px; }
+    .detail-left { width: 460px; flex-shrink: 0; }
+    .detail-cover { width: 100%; }
+    .detail-cover { background: var(--bg-card); border-radius: 8px; padding: 8px; border: 1px solid rgba(102, 192, 244, 0.2); box-shadow: 0 0 8px rgba(102, 192, 244, 0.15); }
+    .detail-cover img { width: 100%; height: 260px; object-fit: cover; border-radius: 4px; }
+    .detail-desc-box { margin-top: 16px; padding: 16px; background: var(--bg-card); border-radius: 8px; border: 1px solid rgba(102, 192, 244, 0.2); box-shadow: 0 0 8px rgba(102, 192, 244, 0.15); }
+    .detail-desc-title { font-size: 14px; font-weight: 600; color: var(--text-white); margin-bottom: 12px; }
+    .detail-desc-content { font-size: 14px; line-height: 1.7; color: var(--text-secondary); }
+    .detail-info { flex: 1; }
+    .detail-name { font-size: 24px; font-weight: 600; color: var(--text-white); margin-bottom: 8px; }
+    .detail-name-en { font-size: 14px; color: var(--text-secondary); margin-bottom: 16px; }
+    .detail-meta { display: flex; flex-direction: column; gap: 12px; margin-bottom: 20px; font-size: 14px; color: var(--text-secondary); }
+    .detail-meta span { display: flex; align-items: center; gap: 8px; }
+    .detail-meta i { color: var(--accent-blue); width: 16px; }
+    .detail-actions { display: flex; gap: 12px; margin-bottom: 24px; }
+
+    .btn {
+      padding: 12px 24px;
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-primary {
+      background: var(--accent-green);
+      color: #fff;
+    }
+
+    .btn-primary:hover { background: #6b9c12; }
+
+    .btn-secondary {
+      background: var(--bg-hover);
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+    }
+
+    .btn-secondary:hover { background: var(--border-color); color: var(--text-white); }
+
+    .btn-secondary.active {
+      background: #e74c3c;
+      border-color: #e74c3c;
+      color: #ffffff;
+    }
+
+    .btn-secondary.active:hover {
+      background: #c0392b;
+      border-color: #c0392b;
+    }
+
+    .btn-favorite .favorite-text {
+      font-size: 11px;
+    }
+
+    /* 工具弹窗样式 */
+    .tool-modal {
+      max-width: 600px;
+    }
+
+    .contact-modal {
+      max-width: 400px;
+    }
+
+    .tool-content {
+      color: var(--text-primary);
+    }
+
+    .tool-desc {
+      font-size: 14px;
+      color: var(--text-secondary);
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .tool-section-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--accent-blue);
+      margin: 20px 0 12px 0;
+    }
+
+    .tool-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 16px 0;
+    }
+
+    .tool-list li {
+      padding: 6px 0;
+      font-size: 14px;
+      color: var(--text-primary);
+      position: relative;
+      padding-left: 16px;
+    }
+
+    .tool-list li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: var(--accent-blue);
+    }
+
+    .tool-list.numbered {
+      counter-reset: item;
+    }
+
+    .tool-list.numbered li {
+      counter-increment: item;
+      padding-left: 24px;
+    }
+
+    .tool-list.numbered li::before {
+      content: counter(item) '.';
+      color: var(--text-primary);
+    }
+
+    .tool-list a {
+      color: var(--accent-blue);
+      text-decoration: none;
+    }
+
+    .tool-list a:hover {
+      text-decoration: underline;
+    }
+
+    .tool-tip {
+      background: rgba(102, 192, 244, 0.1);
+      border-left: 3px solid var(--accent-blue);
+      padding: 12px 16px;
+      margin: 20px 0;
+      font-size: 13px;
+      color: var(--text-secondary);
+      border-radius: 0 4px 4px 0;
+    }
+
+    .tool-tip.warning {
+      background: rgba(231, 76, 60, 0.1);
+      border-left-color: #e74c3c;
+    }
+
+    .tool-tip i {
+      margin-right: 6px;
+    }
+
+    .tool-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+      margin-top: 24px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .contact-content {
+      text-align: center;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 12px 0;
+      font-size: 15px;
+      color: var(--text-primary);
+    }
+
+    .contact-item i {
+      font-size: 20px;
+      color: var(--accent-blue);
+    }
+
+    /* 下载详情样式 */
+    .download-detail-item {
+      background: var(--bg-dark);
+      padding: 16px;
+      border-radius: 8px;
+      margin-bottom: 16px;
+    }
+
+    .download-detail-item h4 {
+      font-size: 14px;
+      color: var(--accent-blue);
+      margin-bottom: 12px;
+    }
+
+    .download-detail-item p {
+      font-size: 13px;
+      color: var(--text-secondary);
+      margin: 6px 0;
+      word-break: break-all;
+    }
+
+    /* 反馈弹窗样式 */
+    .feedback-modal {
+      max-width: 480px;
+      background: linear-gradient(180deg, #1e2530 0%, #1a1f2a 100%);
+    }
+
+    .feedback-form {
+      padding: 0 10px;
+    }
+
+    .feedback-select {
+      width: 100%;
+      padding: 12px 16px;
+      background: #2a3140;
+      border: 1px solid #3a4150;
+      border-radius: 8px;
+      color: var(--text-primary);
+      font-size: 14px;
+      outline: none;
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%238f98a0' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 16px center;
+    }
+
+    .feedback-select:focus {
+      border-color: var(--accent-blue);
+    }
+
+    .feedback-input {
+      width: 100%;
+      padding: 12px 16px;
+      background: #2a3140;
+      border: 1px solid #3a4150;
+      border-radius: 8px;
+      color: var(--text-primary);
+      font-size: 14px;
+      outline: none;
+    }
+
+    .feedback-input::placeholder {
+      color: #6b7280;
+    }
+
+    .feedback-input:focus {
+      border-color: var(--accent-blue);
+    }
+
+    .feedback-textarea {
+      width: 100%;
+      padding: 12px 16px;
+      background: #2a3140;
+      border: 1px solid #3a4150;
+      border-radius: 8px;
+      color: var(--text-primary);
+      font-size: 14px;
+      outline: none;
+      resize: none;
+      min-height: 140px;
+    }
+
+    .feedback-textarea::placeholder {
+      color: #6b7280;
+    }
+
+    .feedback-textarea:focus {
+      border-color: var(--accent-blue);
+    }
+
+    .feedback-submit {
+      padding: 12px 40px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .feedback-submit:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+    }
+
+    /* 表单样式 */
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 13px;
+      color: var(--text-secondary);
+      margin-bottom: 8px;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 10px 14px;
+      background: var(--bg-dark);
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      color: var(--text-primary);
+      font-size: 14px;
+      outline: none;
+      transition: all 0.2s ease;
+    }
+
+    .form-control:focus {
+      border-color: var(--accent-blue);
+    }
+
+    textarea.form-control {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    select.form-control {
+      cursor: pointer;
+    }
+
+    .download-links-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-white);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .download-links-title i { color: var(--accent-blue); }
+
+    .download-links-grid { display: flex; gap: 12px; flex-wrap: wrap; }
+
+    .download-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      background: linear-gradient(135deg, #1b4d6b 0%, #2a6fa8 100%);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 13px;
+      transition: all 0.2s ease;
+    }
+
+    .download-link:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(102, 192, 244, 0.3);
+    }
+
+    .empty-state {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 100px 40px;
+      color: var(--text-secondary);
+    }
+
+    .empty-state i { font-size: 64px; margin-bottom: 20px; opacity: 0.5; }
+    .empty-state h3 { font-size: 20px; color: var(--text-white); margin-bottom: 10px; }
+
+    .load-more {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .load-more-btn {
+      padding: 12px 32px;
+      background: var(--bg-hover);
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      color: var(--text-primary);
+      cursor: pointer;
+      font-size: 14px;
+      transition: all 0.2s ease;
+    }
+
+    .load-more-btn:hover {
+      background: var(--border-color);
+      color: var(--text-white);
+    }
+  </style>
+</head>
+<body>
+  <!-- 左侧边栏 -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <img src="favicon.png" alt="Logo">
+      <span>游戏盒子</span>
+      <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="切换主题">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+    
+    <div class="sidebar-content">
+      <div class="nav-section">
+        <div class="nav-item active" data-filter="all" onclick="filterGames('all')">
+          <i class="fas fa-th-large"></i>
+          <span>全部游戏</span>
+          <span class="nav-badge" id="count-all" data-count="0">0</span>
+        </div>
+        <div class="nav-item" data-filter="favorite" onclick="filterGames('favorite')">
+          <i class="fas fa-star"></i>
+          <span>收藏夹</span>
+          <span class="nav-badge" id="count-favorite" data-count="0">0</span>
+        </div>
+      </div>
+      
+      <div class="nav-divider"></div>
+      
+      <div class="nav-section">
+        <div class="nav-section-title">游戏分类</div>
+        <div id="categoryList"></div>
+      </div>
+      
+      <div class="nav-divider"></div>
+      
+      <div class="nav-section">
+        <div class="nav-item" data-filter="drm" onclick="filterGames('drm')" style="color: #e74c3c;">
+          <i class="fas fa-lock" style="color: #e74c3c;"></i>
+          <span>D加密的游戏</span>
+          <span class="nav-badge" id="count-drm" data-count="0">0</span>
+        </div>
+        <div style="padding: 8px 15px; font-size: 11px; color: var(--text-secondary); line-height: 1.5;">
+          <i class="fas fa-info-circle" style="color: var(--accent-blue); margin-right: 4px;"></i>
+          可以正常游玩Steam平台上的D加密游戏，不是虚拟机不是假入库，电脑没有蓝屏和重装系统的风险
+        </div>
+      </div>
+      
+      <div class="nav-divider"></div>
+      
+      <div class="nav-section">
+        <div class="nav-section-title">常用工具</div>
+        <div class="nav-item" onclick="showTool('runtime')">
+          <i class="fas fa-cogs"></i>
+          <span>运行环境库</span>
+        </div>
+        <div class="nav-item" onclick="showTool('driver')">
+          <i class="fas fa-desktop"></i>
+          <span>显卡驱动</span>
+        </div>
+        <div class="nav-item" onclick="showTool('trainer')">
+          <i class="fas fa-magic"></i>
+          <span>游戏修改器</span>
+        </div>
+      </div>
+      
+      <div class="nav-divider"></div>
+      
+      <div class="nav-section">
+        <div class="nav-section-title">帮助</div>
+        <div class="nav-item" onclick="showFeedback()">
+          <i class="fas fa-comment-dots"></i>
+          <span>意见反馈</span>
+        </div>
+        <div class="nav-item" onclick="showContact()">
+          <i class="fas fa-address-card"></i>
+          <span>联系我们</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="sidebar-footer">
+      <div class="sync-info" id="syncStatus">
+        <i class="fas fa-sync fa-spin"></i>
+        <span>数据同步中...</span>
+      </div>
+      <button class="login-btn" onclick="showLogin()">
+        <i class="fas fa-user"></i>
+        <span>登录</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- 主内容区 -->
+  <main class="main-content">
+    <div class="top-bar">
+      <div class="search-box">
+        <i class="fas fa-search"></i>
+        <input type="text" id="searchInput" placeholder="搜索游戏...">
+      </div>
+      <div class="top-actions">
+        <button class="btn-download" onclick="downloadClient()">
+          <i class="fas fa-download"></i>
+          <span>下载桌面客户端</span>
+        </button>
+        <select class="sort-select" id="sortSelect" onchange="sortGames()">
+          <option value="hot">按下载热度排序</option>
+          <option value="name">按字母排序</option>
+          <option value="update">按更新时间排序</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="content-area" id="scrollContainer">
+      <div class="games-grid" id="gamesGrid"></div>
+    </div>
+    
+    <div class="status-bar">
+      <span id="gameCount">共 0 款游戏</span>
+      <span id="lastUpdate">最后更新: --</span>
+    </div>
+  </main>
+
+  <!-- 详情弹窗 -->
+  <div class="modal-overlay" id="detailModal" onclick="closeModal(event)">
+    <div class="modal" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <span class="modal-title">游戏详情</span>
+        <div class="modal-close" onclick="closeModal()">&times;</div>
+      </div>
+      <div class="modal-body">
+        <div class="detail-layout">
+          <div class="detail-left">
+            <div class="detail-cover">
+              <img id="detailCover" src="" alt="" onerror="this.src='data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22460%22 height=%22260%22&gt;&lt;rect fill=%22%231e2d3d%22 width=%22460%22 height=%22260%22/&gt;&lt;text fill=%22%238f98a0%22 font-size=%2218%22 x=%22190%22 y=%22135%22&gt;无封面&lt;/text&gt;&lt;/svg&gt;'">
+            </div>
+            <div class="detail-desc-box" id="detailDescBox">
+              <div class="detail-desc-title">游戏描述</div>
+              <div class="detail-desc-content" id="detailDesc">暂无描述</div>
+            </div>
+          </div>
+          <div class="detail-info">
+            <div class="detail-name" id="detailName">--</div>
+            <div class="detail-name-en" id="detailNameEn">--</div>
+            <div class="detail-meta">
+              <span><i class="fas fa-folder"></i> 游戏类型：<span id="detailCategory">--</span></span>
+              <span><i class="fas fa-hdd"></i> 游戏大小：<span id="detailSize">--</span></span>
+              <span><i class="fas fa-calendar"></i> 更新时间：<span id="detailDate">--</span></span>
+            </div>
+            <div class="detail-actions">
+              <button class="btn btn-primary" onclick="downloadClient()"><i class="fas fa-download"></i> 下载游戏盒子客户端</button>
+              <button class="btn btn-secondary btn-favorite ${currentGame && currentGame.favorite ? 'active' : ''}" onclick="toggleFavorite()"><i class="${currentGame && currentGame.favorite ? 'fas' : 'far'} fa-heart"></i> <span class="favorite-text">${currentGame && currentGame.favorite ? '已收藏' : '收藏'}</span></button>
+            </div>
+            <div class="download-links">
+              <div class="download-links-title"><i class="fas fa-cloud-download-alt"></i> 下载链接</div>
+              <div class="download-links-grid" id="downloadLinks"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 运行环境库弹窗 -->
+  <div class="modal-overlay" id="runtimeModal" onclick="closeToolModal(event)">
+    <div class="modal tool-modal" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <span class="modal-title">游戏运行环境库</span>
+        <div class="modal-close" onclick="closeToolModal()">&times;</div>
+      </div>
+      <div class="modal-body">
+        <div class="tool-content">
+          <p class="tool-desc">游戏运行环境库包含了玩游戏所需的各种运行库组件，解决游戏无法启动、报错等问题。</p>
+          <h4 class="tool-section-title">包含组件</h4>
+          <ul class="tool-list">
+            <li>DirectX 9.0c - 11 全套运行库</li>
+            <li>Visual C++ 2005-2022 全版本</li>
+            <li>.NET Framework 3.5 - 4.8</li>
+            <li>OpenAL 音频库</li>
+            <li>XNA Framework</li>
+            <li>PhysX 物理引擎</li>
+          </ul>
+          <h4 class="tool-section-title">使用说明</h4>
+          <ol class="tool-list numbered">
+            <li>下载后解压运行安装程序</li>
+            <li>建议全部勾选安装，避免游戏缺少组件</li>
+            <li>安装完成后重启电脑生效</li>
+          </ol>
+          <div class="tool-tip">
+            <i class="fas fa-info-circle"></i> 提示：如果游戏提示"缺少xxx.dll"，安装此环境库即可解决。
+          </div>
+          <div class="tool-actions">
+            <button class="btn btn-secondary" onclick="closeToolModal()">关闭</button>
+            <button class="btn btn-primary" onclick="window.open('https://pan.baidu.com/s/1ulzlH0Ga8NsN2InBiO5EwA?pwd=8888', '_blank')">下载链接</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 显卡驱动弹窗 -->
+  <div class="modal-overlay" id="driverModal" onclick="closeToolModal(event)">
+    <div class="modal tool-modal" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <span class="modal-title">电脑显卡驱动更新流程</span>
+        <div class="modal-close" onclick="closeToolModal()">&times;</div>
+      </div>
+      <div class="modal-body">
+        <div class="tool-content">
+          <p class="tool-desc">显卡驱动是游戏流畅运行的关键，及时更新驱动可以提升游戏性能和兼容性。</p>
+          <h4 class="tool-section-title" style="color: #76b900;">NVIDIA 显卡更新</h4>
+          <ol class="tool-list numbered">
+            <li>访问 NVIDIA 官网：<a href="https://www.nvidia.cn/drivers" target="_blank">www.nvidia.cn/drivers</a></li>
+            <li>选择显卡型号和操作系统</li>
+            <li>下载 Game Ready 驱动程序</li>
+            <li>安装时选择"清洁安装"</li>
+          </ol>
+          <h4 class="tool-section-title" style="color: #ed1c24;">AMD 显卡更新</h4>
+          <ol class="tool-list numbered">
+            <li>访问 AMD 官网：<a href="https://www.amd.com/support" target="_blank">www.amd.com/support</a></li>
+            <li>选择显卡型号</li>
+            <li>下载最新版驱动</li>
+            <li>使用 AMD Cleanup Utility 清理旧驱动后安装</li>
+          </ol>
+          <div class="tool-tip">
+            <i class="fas fa-lightbulb"></i> 建议：每月检查一次驱动更新，新游戏发售前务必更新驱动。
+          </div>
+          <div class="tool-actions">
+            <button class="btn btn-secondary" onclick="closeToolModal()">关闭</button>
+            <button class="btn btn-primary" onclick="window.open('https://docs.qq.com/doc/DQldDRld0VXpLeWZk', '_blank')">显示详情</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 游戏修改器弹窗 -->
+  <div class="modal-overlay" id="trainerModal" onclick="closeToolModal(event)">
+    <div class="modal tool-modal" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <span class="modal-title">万能聚合游戏修改器</span>
+        <div class="modal-close" onclick="closeToolModal()">&times;</div>
+      </div>
+      <div class="modal-body">
+        <div class="tool-content">
+          <p class="tool-desc">集成多款游戏修改工具，支持单机游戏修改、存档管理等功能。</p>
+          <h4 class="tool-section-title">功能特点</h4>
+          <ul class="tool-list">
+            <li>支持 5000+ 款单机游戏修改</li>
+            <li>一键修改金钱、生命、弹药等</li>
+            <li>游戏存档备份与恢复</li>
+            <li>游戏速度调节（加速/减速）</li>
+            <li>内存修改功能</li>
+          </ul>
+          <h4 class="tool-section-title">使用说明</h4>
+          <ol class="tool-list numbered">
+            <li>运行修改器前先启动游戏</li>
+            <li>在修改器中选择对应游戏进程</li>
+            <li>勾选需要的修改项</li>
+            <li>按热键激活修改（默认F1-F12）</li>
+          </ol>
+          <div class="tool-tip warning">
+            <i class="fas fa-exclamation-triangle"></i> 注意：修改器仅供单机游戏使用，在线游戏使用可能导致封号！
+          </div>
+          <div class="tool-actions">
+            <button class="btn btn-secondary" onclick="closeToolModal()">关闭</button>
+            <button class="btn btn-primary" onclick="window.open('https://pan.baidu.com/s/1_5aFJlWPZmQ73dIHBWKUeQ?pwd=6666', '_blank')">下载链接</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 意见反馈弹窗 -->
+  <div class="modal-overlay" id="feedbackModal" onclick="closeToolModal(event)">
+    <div class="modal tool-modal feedback-modal" onclick="event.stopPropagation()">
+      <div class="modal-header" style="border-bottom: none; justify-content: center; padding-bottom: 10px;">
+        <span class="modal-title" style="font-size: 20px; font-weight: 500;">意见反馈</span>
+        <div class="modal-close" onclick="closeToolModal()" style="position: absolute; right: 20px;">&times;</div>
+      </div>
+      <div class="modal-body" style="padding-top: 10px;">
+        <div class="feedback-form">
+          <div class="form-group" style="margin-bottom: 16px;">
+            <select class="form-control feedback-select" id="feedbackType">
+              <option value="game">游戏增补</option>
+              <option value="link">链接失效</option>
+              <option value="bug">BUG反馈</option>
+              <option value="other">其他问题</option>
+            </select>
+          </div>
+          <div class="form-group" style="margin-bottom: 16px;">
+            <input type="text" class="form-control feedback-input" id="feedbackContact" placeholder="联系方式（QQ/微信）">
+          </div>
+          <div class="form-group" style="margin-bottom: 20px;">
+            <textarea class="form-control feedback-textarea" id="feedbackContent" rows="6" placeholder="请输入详细内容"></textarea>
+          </div>
+          <div style="text-align: center;">
+            <button class="btn btn-primary feedback-submit" onclick="submitFeedback()">提交反馈</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 联系我们弹窗 -->
+  <div class="modal-overlay" id="contactModal" onclick="closeToolModal(event)">
+    <div class="modal tool-modal contact-modal" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <span class="modal-title">联系我们</span>
+        <div class="modal-close" onclick="closeToolModal()">&times;</div>
+      </div>
+      <div class="modal-body">
+        <div class="tool-content contact-content">
+          <div class="contact-item">
+            <i class="fab fa-qq"></i>
+            <span>官方QQ：984786923</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>官方邮箱：danjiyouxihezi@gmail.com</span>
+          </div>
+          <div class="tool-actions" style="margin-top: 30px;">
+            <button class="btn btn-primary" style="width: 100%;" onclick="closeToolModal()">关闭</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="data-embed.js"></script>
+  <script>
+    const CONFIG = {
+      apiBaseUrl: 'https://api.djgamebox.com',
+      localStorageKey: 'gamebox_games_data',
+      localStorageTimeKey: 'gamebox_last_sync',
+      itemsPerPage: 24
+    };
+
+    let games = [];
+    let filteredGames = [];
+    let currentFilter = 'all';
+    let currentGame = null;
+    let currentPage = 0;
+
+    const categories = [
+      { id: '动作', icon: 'fa-running' },
+      { id: '冒险', icon: 'fa-compass' },
+      { id: '策略', icon: 'fa-chess' },
+      { id: '射击', icon: 'fa-crosshairs' },
+      { id: '角色扮演', icon: 'fa-dragon' },
+      { id: '模拟经营', icon: 'fa-city' },
+      { id: '体育竞技', icon: 'fa-futbol' },
+      { id: '赛车', icon: 'fa-car' },
+      { id: '恐怖惊悚', icon: 'fa-ghost' },
+      { id: '益智解谜', icon: 'fa-puzzle-piece' },
+      { id: '骑马与砍杀', icon: 'fa-horse' },
+      { id: '全面战争', icon: 'fa-chess-board' },
+      { id: '即时战略', icon: 'fa-chess-knight' },
+      { id: '格斗', icon: 'fa-fist-raised' },
+      { id: '街机怀旧', icon: 'fa-gamepad' }
+    ];
+
+    const categoryMap = {
+      '动作': '动作', '动作冒险': '动作', '动作射击': '动作', '动作角色扮演': '角色扮演', '动作格斗': '格斗', '动作游戏': '动作',
+      '冒险': '冒险', '冒险/生存': '冒险', '冒险恐怖': '冒险', '冒险解谜': '冒险', '生存冒险': '冒险', '解谜冒险': '冒险', '模拟冒险': '冒险', '太空模拟冒险': '冒险', '冒险科幻': '冒险', '冒险角色扮演': '角色扮演', '休闲冒险': '冒险', '平台冒险': '冒险', '冒险休闲': '冒险',
+      '策略': '策略', '策略模拟': '策略', '策略战棋': '策略', '策略角色扮演': '角色扮演', '策略塔防': '策略', '策略战争': '策略', '策略模拟经营': '模拟经营', '策略生存': '策略', '策略/战争': '策略', '策略桌游': '策略', '策略战术': '策略', '策略经营': '策略', '策略卡牌': '策略', '历史策略': '策略', '休闲策略': '策略',
+      '射击': '射击', '第一人称射击': '射击', '第三人称射击': '射击', '枪战射击': '射击', '飞行射击': '射击', '动作射击': '射击', '生存射击': '射击', '射击动作': '射击', '战术射击': '射击',
+      '角色扮演': '角色扮演', '角色扮演动作': '角色扮演', '角色扮演冒险': '冒险', '角色扮演策略': '策略', '角色扮演武侠': '角色扮演', '生存角色扮演': '角色扮演',
+      '模拟': '模拟经营', '模拟经营': '模拟经营', '模拟策略': '模拟经营', '模拟驾驶': '模拟经营', '模拟冒险': '冒险', '模拟休闲': '模拟经营', '模拟恋爱': '模拟经营', '模拟经营策略': '模拟经营', '模拟养成': '模拟经营', '模拟战争': '模拟经营', '模拟': '模拟经营', '模拟建设': '模拟经营', '模拟生存': '模拟经营', '模拟竞速': '赛车', '体育模拟': '体育竞技',
+      '体育': '体育竞技', '体育竞技': '体育竞技', '体育运动': '体育竞技', '体育格斗': '格斗',
+      '赛车': '赛车', '赛车竞速': '赛车', '越野竞速': '赛车', '竞速飞行': '赛车', '赛车游戏': '赛车',
+      '恐怖': '恐怖惊悚', '恐怖惊悚': '恐怖惊悚', '恐怖冒险': '冒险', '生存恐怖': '恐怖惊悚', '恐怖模拟': '恐怖惊悚', '恐怖潜行': '恐怖惊悚', '第一人称心理恐怖': '恐怖惊悚', '第三人称动作恐怖': '恐怖惊悚', '生存恐怖冒险': '恐怖惊悚',
+      '益智': '益智解谜', '解谜': '益智解谜', '益智解谜': '益智解谜', '休闲益智': '益智解谜',
+      '骑马与砍杀': '骑马与砍杀',
+      '全面战争': '全面战争',
+      '即时战略': '即时战略',
+      '格斗': '格斗', '动作格斗': '格斗', '体育格斗': '格斗', '格斗动作': '格斗',
+      '街机': '街机怀旧', '街机怀旧': '街机怀旧', '街机小霸王': '街机怀旧',
+      '生存': '冒险', '生存/模拟': '模拟经营', '生存建�': '模拟经营', '生存策略模拟': '策略',
+      '飞行模拟': '模拟经营', '太空模拟': '模拟经营', '太空建设': '模拟经营',
+      '音乐': '其他', '音乐/节奏': '其他', '音乐节奏': '其他',
+      '工具软件': '其他', '密室逃脱': '益智解谜', '互动电影': '其他', '互动剧情': '其他', '视觉小说冒险': '冒险', '平台跳跃冒险': '冒险', '平台跳跃/动作': '动作'
+    };
+
+    // 游戏名关键词映射到分类
+    const gameNameCategoryMap = {
+      '骑马与砍杀': '骑马与砍杀',
+      '全面战争': '全面战争'
+    };
+
+    function getMainCategory(cat, gameName) {
+      // 先检查游戏名是否包含特定关键词
+      if (gameName) {
+        for (const [keyword, category] of Object.entries(gameNameCategoryMap)) {
+          if (gameName.includes(keyword)) {
+            return category;
+          }
+        }
+      }
+      return categoryMap[cat] || cat || '其他';
+    }
+
+    function debounce(func, wait) {
+      let timeout;
+      return function(...args) {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(this, args), wait);
+      };
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      loadTheme();
+      initCategoryList();
+      initData();
+      setupScrollLoad();
+      setupEventListeners();
+    });
+
+    function initCategoryList() {
+      const list = document.getElementById('categoryList');
+      list.innerHTML = categories.map(cat => `
+        <div class="nav-item" data-filter="${cat.id}" onclick="filterGames('${cat.id}')">
+          <i class="fas ${cat.icon}"></i>
+          <span>${cat.id}</span>
+          <span class="nav-badge" id="count-${cat.id}" data-count="0">0</span>
+        </div>
+      `).join('');
+    }
+
+    async function initData() {
+      // 优先使用导入的游戏数据
+      if (typeof importedGames !== 'undefined' && importedGames.length > 0) {
+        games = importedGames;
+        localStorage.setItem(CONFIG.localStorageKey, JSON.stringify(games));
+        localStorage.setItem(CONFIG.localStorageTimeKey, new Date().toISOString());
+        filterAndRender();
+        updateStats();
+        updateSyncStatus('已加载 ' + games.length + ' 款游戏', true);
+      } else {
+        // 如果没有导入数据，尝试从本地存储加载
+        const localData = localStorage.getItem(CONFIG.localStorageKey);
+        if (localData) {
+          try {
+            games = JSON.parse(localData);
+            filterAndRender();
+            updateStats();
+            updateSyncStatus('已加载 ' + games.length + ' 款游戏', true);
+          } catch (e) {}
+        }
+      }
+
+      await syncFromCloud();
+    }
+
+    async function syncFromCloud() {
+      // 如果有导入的本地数据，优先使用，不覆盖
+      if (typeof importedGames !== 'undefined' && importedGames.length > 0) {
+        updateSyncStatus('已加载 ' + games.length + ' 款游戏', true);
+        return;
+      }
+      
+      updateSyncStatus('同步中...', true);
+      try {
+        const response = await fetch(`${CONFIG.apiBaseUrl}/api/games`);
+        const data = await response.json();
+        if (data.games && data.games.length > 0) {
+          games = data.games;
+          localStorage.setItem(CONFIG.localStorageKey, JSON.stringify(games));
+          localStorage.setItem(CONFIG.localStorageTimeKey, new Date().toISOString());
+          filterAndRender();
+          updateStats();
+          updateSyncStatus('同步完成', true);
+        }
+      } catch (error) {
+        updateSyncStatus('同步失败', false);
+      }
+    }
+
+    function updateSyncStatus(text, online) {
+      const el = document.getElementById('syncStatus');
+      el.innerHTML = `<i class="fas fa-${online ? 'sync' : 'exclamation-circle'}"></i><span>${text}</span>`;
+      el.className = 'sync-info ' + (online ? 'online' : '');
+    }
+
+    function updateStats() {
+      document.getElementById('gameCount').textContent = `共 ${games.length} 款游戏`;
+      const lastSync = localStorage.getItem(CONFIG.localStorageTimeKey);
+      if (lastSync) {
+        const date = new Date(lastSync);
+        document.getElementById('lastUpdate').textContent = 
+          `最后更新: ${date.toLocaleString('zh-CN', {month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit'})}`;
+      }
+      
+      // 更新全部游戏和收藏夹
+      const allBadge = document.getElementById('count-all');
+      allBadge.textContent = games.length;
+      allBadge.setAttribute('data-count', Math.min(games.length, 25));
+      
+      const favCount = games.filter(g => g.favorite).length;
+      const favBadge = document.getElementById('count-favorite');
+      favBadge.textContent = favCount;
+      favBadge.setAttribute('data-count', Math.min(favCount, 25));
+      
+      // 更新分类数量
+      categories.forEach(cat => {
+        const count = games.filter(g => getMainCategory(g.category, g.name) === cat.id).length;
+        const badge = document.getElementById(`count-${cat.id}`);
+        badge.textContent = count;
+        badge.setAttribute('data-count', Math.min(count, 25));
+      });
+      
+      // 更新D加密游戏数量
+      const drmCount = games.filter(g => g.isDrm === true).length;
+      const drmBadge = document.getElementById('count-drm');
+      drmBadge.textContent = drmCount;
+      drmBadge.setAttribute('data-count', Math.min(drmCount, 25));
+    }
+
+    function filterGames(category) {
+      currentFilter = category;
+      currentPage = 0;
+      document.querySelectorAll('.nav-item').forEach(item => {
+        item.classList.remove('active');
+        if (item.dataset.filter === category) item.classList.add('active');
+      });
+      filterAndRender();
+    }
+
+    function filterAndRender() {
+      const search = document.getElementById('searchInput').value.toLowerCase();
+      filteredGames = games.filter(game => {
+        const matchSearch = !search || 
+          (game.name && game.name.toLowerCase().includes(search)) ||
+          (game.nameEn && game.nameEn.toLowerCase().includes(search));
+        let matchFilter = true;
+        if (currentFilter === 'favorite') matchFilter = game.favorite;
+        else if (currentFilter === 'drm') matchFilter = game.isDrm === true;
+        else if (currentFilter !== 'all') matchFilter = getMainCategory(game.category, game.name) === currentFilter;
+        return matchSearch && matchFilter;
+      });
+      currentPage = 0;
+      renderGames();
+    }
+
+    function renderGames() {
+      const grid = document.getElementById('gamesGrid');
+      const endIndex = Math.min(filteredGames.length, (currentPage + 1) * CONFIG.itemsPerPage);
+      const visibleGames = filteredGames.slice(0, endIndex);
+      
+      if (visibleGames.length === 0) {
+        grid.innerHTML = '<div class="empty-state"><i class="fas fa-inbox"></i><h3>没有找到游戏</h3></div>';
+        return;
+      }
+      
+      grid.innerHTML = visibleGames.map(game => `
+        <div class="game-card" onclick="showDetail('${game.id}')">
+          <div class="card-cover">
+            ${game.cover ? `<img src="${game.cover}" alt="" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="no-cover" style="display:none;">暂无封面</div>` : '<div class="no-cover">暂无封面</div>'}
+            <button class="card-favorite-btn ${game.favorite ? 'active' : ''}" onclick="event.stopPropagation(); toggleFavoriteById('${game.id}')">
+              <i class="${game.favorite ? 'fas' : 'far'} fa-heart"></i>
+            </button>
+            <button class="card-download-btn" onclick="event.stopPropagation(); showDetail('${game.id}')">下载游戏</button>
+          </div>
+          <div class="card-info">
+            <div class="card-title">${game.name || '未命名'}</div>
+            <div class="card-subtitle">${game.nameEn || ''}</div>
+            <div class="card-tags"><span class="card-tag">${getMainCategory(game.category, game.name)}</span></div>
+          </div>
+        </div>
+      `).join(''); + (endIndex < filteredGames.length ? `
+        <div class="load-more">
+          <button class="load-more-btn" onclick="loadMore()">加载更多 (${filteredGames.length - endIndex} 款)</button>
+        </div>
+      ` : '');
+    }
+
+    function loadMore() {
+      currentPage++;
+      renderGames();
+    }
+
+    function setupScrollLoad() {
+      const container = document.getElementById('scrollContainer');
+      container.addEventListener('scroll', debounce(() => {
+        const scrollBottom = container.scrollTop + container.offsetHeight;
+        const containerHeight = container.scrollHeight;
+        if (scrollBottom > containerHeight - 300) {
+          const endIndex = (currentPage + 1) * CONFIG.itemsPerPage;
+          if (endIndex < filteredGames.length) loadMore();
+        }
+      }, 200), { passive: true });
+    }
+
+    function showDetail(gameId) {
+      console.log('showDetail called with:', gameId, typeof gameId);
+      console.log('games array:', games.length);
+      const game = games.find(g => g.id == gameId || g.id === gameId);
+      console.log('found game:', game);
+      if (!game) {
+        console.log('Game not found');
+        return;
+      }
+      currentGame = game;
+      document.getElementById('detailCover').src = game.cover || '';
+      document.getElementById('detailName').textContent = game.name || '未命名';
+      document.getElementById('detailNameEn').textContent = game.nameEn || '';
+      document.getElementById('detailCategory').textContent = getMainCategory(game.category, game.name);
+      document.getElementById('detailSize').textContent = game.size || '未知';
+      document.getElementById('detailDate').textContent = game.dateAdded || '--';
+      document.getElementById('detailDesc').textContent = game.description || '暂无描述';
+      
+      const links = [];
+      if (game.downloadLinks) {
+        if (game.downloadLinks.baidu) links.push(`<a href="${game.downloadLinks.baidu}" target="_blank" class="download-link" onclick="recordDownloadClick('${game.id}')"><i class="fas fa-cloud"></i>百度网盘 1</a>`);
+        if (game.downloadLinks.baidu2) links.push(`<a href="${game.downloadLinks.baidu2}" target="_blank" class="download-link" onclick="recordDownloadClick('${game.id}')"><i class="fas fa-cloud"></i>百度网盘 2</a>`);
+        if (game.downloadLinks.thunder) links.push(`<a href="${game.downloadLinks.thunder}" target="_blank" class="download-link" onclick="recordDownloadClick('${game.id}')"><i class="fas fa-bolt"></i>迅雷云盘</a>`);
+      }
+      document.getElementById('downloadLinks').innerHTML = links.length ? links.join('') : '<span style="color: var(--text-secondary);">暂无下载链接</span>';
+      
+      // 更新收藏按钮状态
+      updateDetailFavoriteButton();
+      
+      document.getElementById('detailModal').classList.add('show');
+    }
+
+    function closeModal(e) { if (!e || e.target.id === 'detailModal') document.getElementById('detailModal').classList.remove('show'); }
+    function startGame() { alert('请下载桌面客户端以启动游戏'); }
+    function toggleFavorite() { 
+      if (currentGame) { 
+        toggleFavoriteById(currentGame.id);
+      } 
+    }
+
+    function toggleFavoriteById(gameId) {
+      const game = games.find(g => g.id == gameId);
+      if (!game) return;
+      
+      game.favorite = !game.favorite;
+      
+      // 更新本地存储
+      localStorage.setItem(CONFIG.localStorageKey, JSON.stringify(games));
+      
+      // 更新统计和渲染
+      updateStats();
+      
+      // 如果当前在收藏夹视图，需要重新过滤
+      if (currentFilter === 'favorite') {
+        filterAndRender();
+      } else {
+        // 否则只重新渲染当前页面
+        renderGames();
+      }
+      
+      // 如果详情弹窗打开，更新收藏按钮状态
+      if (currentGame && currentGame.id == gameId) {
+        updateDetailFavoriteButton();
+      }
+    }
+
+    function updateDetailFavoriteButton() {
+      const btn = document.querySelector('.detail-actions .btn-secondary');
+      if (btn && currentGame) {
+        btn.innerHTML = currentGame.favorite ? '<i class="fas fa-heart"></i> 已收藏' : '<i class="far fa-heart"></i> 收藏';
+        btn.classList.toggle('active', currentGame.favorite);
+      }
+    }
+    function downloadClient() { window.open('https://pan.baidu.com/s/1ulz1H0Ga9NsN2InBi05EwA?pwd=8888', '_blank'); }
+    
+    function showTool(tool) { 
+      const modalIds = { runtime: 'runtimeModal', driver: 'driverModal', trainer: 'trainerModal' };
+      const modalId = modalIds[tool];
+      if (modalId) {
+        document.getElementById(modalId).classList.add('show');
+      }
+    }
+    
+    function closeToolModal(e) {
+      if (!e || e.target.classList.contains('modal-overlay')) {
+        document.querySelectorAll('.modal-overlay').forEach(modal => {
+          if (modal.id !== 'detailModal') {
+            modal.classList.remove('show');
+          }
+        });
+      }
+    }
+    
+    function showFeedback() { 
+      document.getElementById('feedbackModal').classList.add('show');
+    }
+    
+    function showContact() { 
+      document.getElementById('contactModal').classList.add('show');
+    }
+    
+    async function submitFeedback() {
+      const type = document.getElementById('feedbackType').value;
+      const content = document.getElementById('feedbackContent').value.trim();
+      const contact = document.getElementById('feedbackContact').value.trim();
+      
+      if (!content) {
+        alert('请填写反馈内容');
+        return;
+      }
+      
+      try {
+        const response = await fetch(`${CONFIG.apiBaseUrl}/api/feedback`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            type: type,
+            content: content,
+            contact: contact,
+            user: '网页版用户'
+          })
+        });
+        
+        if (response.ok) {
+          alert('感谢您的反馈！我们会尽快处理。');
+          closeToolModal();
+          // 清空表单
+          document.getElementById('feedbackContent').value = '';
+          document.getElementById('feedbackContact').value = '';
+        } else {
+          alert('提交失败，请稍后重试');
+        }
+      } catch (error) {
+        console.error('提交反馈失败:', error);
+        alert('提交失败，请检查网络连接');
+      }
+    }
+    
+    function showLogin() { alert('登录功能开发中...'); }
+    function sortGames() {
+      const sortType = document.getElementById('sortSelect').value;
+      
+      if (sortType === 'name') {
+        // 按字母排序
+        filteredGames.sort((a, b) => {
+          const nameA = (a.name || '').toLowerCase();
+          const nameB = (b.name || '').toLowerCase();
+          return nameA.localeCompare(nameB, 'zh-CN');
+        });
+      } else if (sortType === 'update') {
+        // 按更新时间排序（最新的在前）
+        filteredGames.sort((a, b) => {
+          const dateA = new Date(a.updatedAt || a.createdAt || 0);
+          const dateB = new Date(b.updatedAt || b.createdAt || 0);
+          return dateB - dateA;
+        });
+      } else {
+        // 按下载热度排序（默认，使用点击次数，如果没有则按ID排序保持原有顺序）
+        filteredGames.sort((a, b) => {
+          const clicksA = getDownloadClicks(a.id);
+          const clicksB = getDownloadClicks(b.id);
+          return clicksB - clicksA;
+        });
+      }
+      
+      currentPage = 0;
+      renderGames();
+    }
+
+    // 获取游戏下载点击次数
+    function getDownloadClicks(gameId) {
+      const clicks = localStorage.getItem('clicks_' + gameId);
+      return clicks ? parseInt(clicks, 10) : 0;
+    }
+
+    // 记录下载点击（单人单天多次点击算一次）
+    function recordDownloadClick(gameId) {
+      const today = new Date().toISOString().split('T')[0]; // 获取今天日期 YYYY-MM-DD
+      const recordKey = 'click_record_' + gameId + '_' + today;
+      const clicksKey = 'clicks_' + gameId;
+      
+      // 检查今天是否已经记录过
+      if (localStorage.getItem(recordKey)) {
+        return; // 今天已经点击过，不再计数
+      }
+      
+      // 标记今天已点击
+      localStorage.setItem(recordKey, '1');
+      
+      // 增加点击次数
+      const current = localStorage.getItem(clicksKey) || '0';
+      localStorage.setItem(clicksKey, (parseInt(current, 10) + 1).toString());
+    }
+
+    function setupEventListeners() {
+      document.getElementById('searchInput').addEventListener('input', debounce(filterAndRender, 300));
+    }
+
+    // 主题切换
+    let isDarkMode = true;
+    function toggleTheme() {
+      isDarkMode = !isDarkMode;
+      const body = document.body;
+      const toggleBtn = document.getElementById('themeToggle');
+      
+      if (isDarkMode) {
+        body.removeAttribute('data-theme');
+        toggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
+        toggleBtn.title = '切换白天模式';
+      } else {
+        body.setAttribute('data-theme', 'light');
+        toggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
+        toggleBtn.title = '切换夜晚模式';
+      }
+      
+      // 保存主题偏好
+      localStorage.setItem('gamebox_theme', isDarkMode ? 'dark' : 'light');
+    }
+
+    // 加载保存的主题
+    function loadTheme() {
+      const savedTheme = localStorage.getItem('gamebox_theme');
+      if (savedTheme === 'light') {
+        isDarkMode = false;
+        document.body.setAttribute('data-theme', 'light');
+        document.getElementById('themeToggle').innerHTML = '<i class="fas fa-sun"></i>';
+        document.getElementById('themeToggle').title = '切换夜晚模式';
+      }
+    }
+  </script>
+</body>
+</html>
