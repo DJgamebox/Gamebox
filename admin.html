@@ -1,0 +1,2979 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>娓告垙鐩掑瓙鍚庡彴绠＄悊绯荤粺</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- SheetJS for Excel parsing -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <!-- 娓告垙鏁版嵁婧?-->
+  <script src="data-embed.js"></script>
+  <style>
+    :root {
+      --bg-primary: #0f1419;
+      --bg-secondary: #1a2332;
+      --bg-tertiary: #1e2d3d;
+      --bg-hover: #2a3f54;
+      --text-primary: #c7d5e0;
+      --text-secondary: #8f98a0;
+      --text-white: #ffffff;
+      --accent-blue: #66c0f4;
+      --accent-green: #5c7e10;
+      --accent-red: #e74c3c;
+      --border-color: #2a3f54;
+      --shadow: 0 8px 32px rgba(0,0,0,0.5);
+      --input-bg: #2a3a4a;
+    }
+
+    /* 浜壊涓婚 */
+    [data-theme="light"] {
+      --bg-primary: #f5f5f5;
+      --bg-secondary: #ffffff;
+      --bg-tertiary: #f0f0f0;
+      --bg-hover: #e8e8e8;
+      --text-primary: #333333;
+      --text-secondary: #666666;
+      --text-white: #1a1a1a;
+      --accent-blue: #1a73e8;
+      --accent-green: #34a853;
+      --accent-red: #ea4335;
+      --border-color: #e0e0e0;
+      --shadow: 0 8px 32px rgba(0,0,0,0.1);
+      --input-bg: #f8f9fa;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      min-height: 100vh;
+    }
+
+    /* 椤堕儴瀵艰埅 */
+    .header {
+      background: var(--bg-secondary);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .header-left i {
+      font-size: 24px;
+      color: var(--accent-blue);
+    }
+
+    .header-left h1 {
+      font-size: 20px;
+      color: var(--text-white);
+      font-weight: 600;
+    }
+
+    .theme-toggle {
+      background: var(--bg-hover);
+      border: none;
+      color: var(--text-primary);
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .header-stats {
+      display: flex;
+      gap: 30px;
+    }
+
+    .stat-item {
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .stat-value {
+      font-size: 28px;
+      font-weight: bold;
+      color: var(--accent-blue);
+    }
+
+    .stat-label {
+      font-size: 12px;
+      color: var(--text-secondary);
+      margin-top: 2px;
+    }
+
+    /* 涓诲唴瀹?*/
+    .main-content {
+      padding: 25px 30px;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+
+    /* 鍗＄墖 */
+    .card {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 25px;
+      border: 1px solid var(--border-color);
+    }
+
+    .card-title {
+      font-size: 16px;
+      color: var(--text-white);
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .card-title i {
+      color: var(--accent-blue);
+    }
+
+    /* 瀵煎叆瀵煎嚭 */
+    .import-export-content {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .upload-area {
+      flex: 1;
+      border: 2px dashed var(--border-color);
+      border-radius: 8px;
+      padding: 30px;
+      text-align: center;
+      background: var(--bg-tertiary);
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .upload-area:hover {
+      border-color: var(--accent-blue);
+    }
+
+    .upload-area i {
+      font-size: 40px;
+      color: var(--accent-green);
+      margin-bottom: 10px;
+    }
+
+    .export-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      min-width: 180px;
+    }
+
+    /* 鎸夐挳 */
+    .btn {
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all 0.3s;
+      white-space: nowrap;
+      background: var(--bg-hover);
+      color: var(--text-primary);
+    }
+
+    .btn:hover {
+      background: #3a506b;
+    }
+
+    .btn-primary {
+      background: var(--accent-green);
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: #6b9c12;
+    }
+
+    .btn-danger {
+      background: var(--accent-red);
+      color: #fff;
+    }
+
+    .btn-danger:hover {
+      background: #c0392b;
+    }
+
+    .btn-info {
+      background: #3498db;
+      color: #fff;
+    }
+
+    .btn-info:hover {
+      background: #2980b9;
+    }
+
+    .btn-warning {
+      background: #f39c12;
+      color: #fff;
+    }
+
+    /* 宸ュ叿鏍?*/
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-bottom: 20px;
+      align-items: center;
+    }
+
+    .search-box {
+      position: relative;
+      flex: 1;
+      min-width: 300px;
+      max-width: 400px;
+    }
+
+    .search-box i {
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-secondary);
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 12px 15px 12px 45px;
+      background: var(--input-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      color: var(--text-primary);
+      font-size: 14px;
+    }
+
+    .search-box input::placeholder {
+      color: var(--text-secondary);
+    }
+
+    /* 绛涢€?*/
+    .filter-bar {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .filter-select {
+      padding: 10px 15px;
+      background: var(--input-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      color: var(--text-primary);
+      font-size: 14px;
+      min-width: 150px;
+    }
+
+    /* 琛ㄦ牸 */
+    .games-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .games-table th {
+      background: var(--bg-tertiary);
+      padding: 10px 12px;
+      text-align: left;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .games-table td {
+      padding: 8px 12px;
+      border-bottom: 1px solid var(--border-color);
+      font-size: 14px;
+    }
+
+    .games-table tbody tr:hover {
+      background: rgba(102,192,244,0.05);
+    }
+
+    .checkbox {
+      width: 18px;
+      height: 18px;
+      border: 2px solid var(--border-color);
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg-secondary);
+    }
+
+    .checkbox:hover {
+      border-color: var(--accent-blue);
+    }
+
+    .checkbox.checked {
+      background: var(--accent-blue);
+      border-color: var(--accent-blue);
+    }
+
+    .checkbox.checked::after {
+      content: '鉁?;
+      color: #fff;
+      font-size: 12px;
+    }
+
+    /* 灏侀潰 */
+    .game-cover {
+      width: 90px;
+      height: 50px;
+      background: var(--input-bg);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-secondary);
+      font-size: 10px;
+      overflow: hidden;
+      cursor: pointer;
+      position: relative;
+      border: 1px solid var(--border-color);
+    }
+
+    .game-cover img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .game-cover .upload-hint {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0,0,0,0.7);
+      color: #fff;
+      font-size: 9px;
+      padding: 1px 0;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+
+    .game-cover:hover .upload-hint {
+      opacity: 1;
+    }
+
+    .game-name {
+      font-weight: 500;
+      color: var(--text-white);
+      margin-bottom: 3px;
+    }
+
+    .game-name-en {
+      font-size: 11px;
+      color: var(--text-secondary);
+    }
+
+    .category-select {
+      padding: 8px 12px;
+      background: var(--input-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      color: var(--text-primary);
+      font-size: 13px;
+      min-width: 120px;
+    }
+
+    .download-indicator {
+      display: flex;
+      gap: 4px;
+    }
+
+    .download-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent-green);
+    }
+
+    .download-dot.empty {
+      background: var(--border-color);
+    }
+
+    .action-btns {
+      display: flex;
+      gap: 8px;
+    }
+
+    .action-btn {
+      width: 32px;
+      height: 32px;
+      border: none;
+      border-radius: 4px;
+      background: var(--input-bg);
+      color: var(--text-secondary);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+    }
+
+    .action-btn:hover {
+      background: var(--bg-hover);
+      color: var(--text-white);
+    }
+
+    /* 寮圭獥 */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.7);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .modal.show {
+      display: flex;
+    }
+
+    .modal-content {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      width: 100%;
+      max-width: 800px;
+      max-height: 90vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid var(--border-color);
+    }
+
+    .modal-content.large {
+      max-width: 1200px;
+    }
+
+    .modal-header {
+      padding: 20px;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .modal-header h3 {
+      font-size: 18px;
+      color: var(--text-white);
+    }
+
+    .modal-close {
+      font-size: 24px;
+      color: var(--text-secondary);
+      cursor: pointer;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      background: none;
+      border: none;
+    }
+
+    .modal-close:hover {
+      background: var(--bg-hover);
+      color: var(--text-white);
+    }
+
+    .modal-body {
+      padding: 20px;
+      overflow-y: auto;
+      flex: 1;
+    }
+
+    .modal-footer {
+      padding: 15px 20px;
+      border-top: 1px solid var(--border-color);
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+
+    /* 琛ㄥ崟 */
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--text-secondary);
+      font-size: 13px;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 12px 15px;
+      background: var(--input-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      color: var(--text-primary);
+      font-size: 14px;
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--accent-blue);
+    }
+
+    textarea.form-control {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    /* 灏侀潰涓婁紶 */
+    .cover-upload-area {
+      width: 100%;
+      height: 200px;
+      border: 2px dashed var(--border-color);
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: all 0.3s;
+      background: var(--bg-tertiary);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cover-upload-area:hover {
+      border-color: var(--accent-blue);
+    }
+
+    .cover-upload-area.has-image {
+      border-style: solid;
+      border-color: var(--accent-green);
+    }
+
+    .cover-upload-area img {
+      max-width: 100%;
+      max-height: 180px;
+      object-fit: contain;
+    }
+
+    /* 鎵归噺鎿嶄綔鏍?*/
+    .batch-actions {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--bg-secondary);
+      padding: 15px 25px;
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border-color);
+      z-index: 99;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .batch-actions.show {
+      display: flex;
+    }
+
+    /* 鎵归噺灏侀潰 */
+    .batch-cover-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      max-height: 60vh;
+      overflow-y: auto;
+    }
+
+    .batch-cover-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px;
+      background: var(--bg-tertiary);
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+    }
+
+    .batch-cover-item .game-name {
+      flex: 1;
+      font-size: 14px;
+    }
+
+    .batch-cover-item .paste-area {
+      width: 120px;
+      height: 68px;
+      border: 2px dashed var(--border-color);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-secondary);
+      font-size: 11px;
+      cursor: pointer;
+      transition: all 0.3s;
+      background: var(--input-bg);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .batch-cover-item .paste-area:hover {
+      border-color: var(--accent-blue);
+    }
+
+    .batch-cover-item .paste-area.has-image {
+      border-style: solid;
+      border-color: var(--accent-green);
+    }
+
+    .batch-cover-item .paste-area img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* 鍒嗙被绠＄悊 */
+    .category-manager {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .category-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px;
+      background: var(--bg-tertiary);
+      border-radius: 6px;
+      border: 1px solid var(--border-color);
+    }
+
+    .category-item input {
+      flex: 1;
+      background: transparent;
+      border: none;
+      color: var(--text-primary);
+      font-size: 14px;
+    }
+
+    /* 鑱旂郴鏂瑰紡 */
+    .contact-item {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+      align-items: center;
+    }
+
+    /* 鍙嶉鍒楄〃 */
+    .feedback-list {
+      max-height: 400px;
+      overflow-y: auto;
+    }
+
+    .feedback-item {
+      padding: 15px;
+      background: var(--bg-tertiary);
+      border-radius: 8px;
+      margin-bottom: 10px;
+      border: 1px solid var(--border-color);
+    }
+
+    .feedback-item .header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+
+    .feedback-item .type {
+      background: var(--accent-blue);
+      color: #fff;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+
+    .feedback-item .time {
+      color: var(--text-secondary);
+      font-size: 12px;
+    }
+
+    /* 涓嬭浇缁熻 */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .stats-card {
+      background: var(--bg-tertiary);
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .stats-card .value {
+      font-size: 32px;
+      font-weight: bold;
+      color: var(--accent-blue);
+    }
+
+    .stats-card .label {
+      font-size: 13px;
+      color: var(--text-secondary);
+      margin-top: 5px;
+    }
+
+    /* 闅愯棌 */
+    .hidden {
+      display: none !important;
+    }
+
+    /* 鍒嗛〉 */
+    .pagination-bar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      padding: 20px;
+      border-top: 1px solid var(--border-color);
+    }
+
+    /* Toast */
+    .toast {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 15px 20px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      z-index: 2000;
+      transform: translateX(150%);
+      transition: transform 0.3s;
+    }
+
+    .toast.show {
+      transform: translateX(0);
+    }
+
+    .toast.success {
+      border-left: 4px solid var(--accent-green);
+    }
+
+    .toast.error {
+      border-left: 4px solid var(--accent-red);
+    }
+  </style>
+</head>
+<body>
+  <!-- 椤堕儴瀵艰埅 -->
+  <header class="header">
+    <div class="header-left">
+      <i class="fas fa-cog"></i>
+      <h1>娓告垙鐩掑瓙鍚庡彴绠＄悊绯荤粺</h1>
+      <button class="theme-toggle" id="themeToggle" title="鍒囨崲涓婚">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+    <div class="header-stats">
+      <div class="stat-item" onclick="showDownloadStats()">
+        <div class="stat-value" id="totalGames">0</div>
+        <div class="stat-label">娓告垙鎬绘暟</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value" id="totalCategories">0</div>
+        <div class="stat-label">鍒嗙被鏁伴噺</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value" id="totalDownloadsWeb">0</div>
+        <div class="stat-label">缃戦〉鐗堜笅杞?/div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value" id="totalDownloadsApp">0</div>
+        <div class="stat-label">瀹㈡埛绔笅杞?/div>
+      </div>
+      <div class="stat-item" onclick="showDownloadStats()" title="鐐瑰嚮鏌ョ湅涓嬭浇缁熻璇︽儏">
+        <div class="stat-value" id="totalDownloadsAll">0</div>
+        <div class="stat-label"><i class="fas fa-chart-bar"></i> 鎬讳笅杞芥鏁?/div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 涓诲唴瀹?-->
+  <main class="main-content">
+    <!-- 鏁版嵁瀵煎叆瀵煎嚭 -->
+    <div class="card">
+      <div class="card-title">
+        <i class="fas fa-database"></i>
+        鏁版嵁瀵煎叆瀵煎嚭
+      </div>
+      <div class="import-export-content">
+        <div class="upload-area" id="dropZone">
+          <i class="fas fa-cloud-upload-alt"></i>
+          <p>鎷栨嫿 Excel 鏂囦欢鍒版澶勶紝鎴栫偣鍑讳笂浼?/p>
+          <input type="file" id="fileInput" accept=".xlsx,.xls" style="display: none;">
+          <div style="margin-top: 10px; color: var(--text-secondary); font-size: 12px;">
+            <i class="fas fa-magic"></i> 鑷姩璇嗗埆锛氭柊娓告垙灏嗘坊鍔狅紝宸叉湁娓告垙灏嗘洿鏂?          </div>
+        </div>
+        <div class="export-buttons">
+          <button class="btn" onclick="exportToExcel()">
+            <i class="fas fa-file-excel"></i> 瀵煎嚭Excel
+          </button>
+          <button class="btn" onclick="exportToJSON()">
+            <i class="fas fa-file-code"></i> 瀵煎嚭JSON
+          </button>
+          <button class="btn" onclick="exportToDataEmbed()">
+            <i class="fas fa-file-export"></i> 瀵煎嚭data-embed.js
+          </button>
+          <button class="btn btn-danger" onclick="clearAllData()">
+            <i class="fas fa-trash-alt"></i> 娓呯┖鎵€鏈夋暟鎹?          </button>
+          <button class="btn" onclick="reloadFromSource()" title="浠?data-embed.js 閲嶆柊鍔犺浇鏁版嵁">
+            <i class="fas fa-sync"></i> 閲嶆柊鍔犺浇鏁版嵁婧?          </button>
+        </div>
+        <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid var(--border-color);">
+          <div style="color: var(--text-secondary); font-size: 13px; margin-bottom: 10px;">
+            <i class="fas fa-cloud"></i> 浜戠鍚屾
+          </div>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+            <button class="btn btn-primary" onclick="syncToCloud()">
+              <i class="fas fa-cloud-upload-alt"></i> 鍚屾鍒颁簯绔?            </button>
+            <button class="btn" onclick="loadFromCloud()">
+              <i class="fas fa-cloud-download-alt"></i> 浠庝簯绔姞杞?            </button>
+            <span style="color: var(--text-secondary); font-size: 12px; align-self: center;">
+              鍚屾鍚庣綉椤电増鍜屽鎴风灏嗙湅鍒版渶鏂版暟鎹?            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 鎼滅储鍜屾搷浣滄爮 -->
+    <div class="toolbar">
+      <div class="search-box">
+        <i class="fas fa-search"></i>
+        <input type="text" id="searchInput" placeholder="鎼滅储娓告垙鍚嶇О..." autocomplete="off">
+      </div>
+      <button class="btn btn-primary" onclick="addNewGame()">
+        <i class="fas fa-plus"></i> 娣诲姞娓告垙
+      </button>
+      <button class="btn" onclick="batchEditCategory()">
+        <i class="fas fa-folder-open"></i> 鎵归噺鏀瑰垎绫?      </button>
+      <button class="btn" onclick="batchEditCover()">
+        <i class="fas fa-images"></i> 鎵归噺鏀瑰皝闈?      </button>
+      <button class="btn btn-warning" onclick="batchEditDrm()">
+        <i class="fas fa-lock"></i> 鎵归噺D鍔犲瘑
+      </button>
+      <button class="btn" onclick="manageCategories()">
+        <i class="fas fa-tags"></i> 鍒嗙被绠＄悊
+      </button>
+      <button class="btn btn-info" onclick="manageContact()">
+        <i class="fas fa-address-book"></i> 鑱旂郴鏂瑰紡
+      </button>
+      <button class="btn" onclick="viewFeedbacks()">
+        <i class="fas fa-comments"></i> 鏌ョ湅鍙嶉
+      </button>
+      <button class="btn btn-danger" onclick="batchDelete()">
+        <i class="fas fa-trash-alt"></i> 鎵归噺鍒犻櫎
+      </button>
+    </div>
+
+    <!-- 绛涢€夋爮 -->
+    <div class="filter-bar">
+      <span style="color: var(--text-secondary);"><i class="fas fa-filter"></i> 鍒嗙被绛涢€?</span>
+      <select class="filter-select" id="categoryFilter">
+        <option value="">鍏ㄩ儴娓告垙</option>
+      </select>
+      <span style="color: var(--text-secondary);"><i class="fas fa-check-square"></i> 宸查€夋嫨:</span>
+      <span id="selectedCount" style="color: var(--accent-blue); font-weight: bold;">0</span>
+      <span style="color: var(--text-secondary);">涓父鎴?/span>
+    </div>
+
+    <!-- 娓告垙鍒楄〃 -->
+    <div class="card">
+      <table class="games-table">
+        <thead>
+          <tr>
+            <th style="width: 50px;">
+              <div class="checkbox" onclick="toggleSelectAll()"></div>
+            </th>
+            <th style="width: 110px;">灏侀潰</th>
+            <th>娓告垙鍚嶇О</th>
+            <th style="width: 140px;">鍒嗙被</th>
+            <th style="width: 100px;">涓嬭浇閾炬帴</th>
+            <th style="width: 90px;">涓嬭浇娆℃暟</th>
+            <th style="width: 100px;">鎿嶄綔</th>
+          </tr>
+        </thead>
+        <tbody id="gamesTableBody">
+          <!-- 鍔ㄦ€佺敓鎴?-->
+        </tbody>
+      </table>
+      <div class="pagination-bar" id="pagination">
+        <!-- 鍔ㄦ€佺敓鎴?-->
+      </div>
+    </div>
+  </main>
+
+  <!-- 鎵归噺鎿嶄綔鎮诞鏍?-->
+  <div class="batch-actions" id="batchActions">
+    <span>宸查€夋嫨 <strong id="batchCount">0</strong> 涓父鎴?/span>
+    <button class="btn btn-info" onclick="batchMoveCategory()">
+      <i class="fas fa-folder"></i> 绉诲姩鍒板垎绫?    </button>
+    <button class="btn btn-danger" onclick="batchDelete()">
+      <i class="fas fa-trash"></i> 鍒犻櫎
+    </button>
+    <button class="btn" onclick="clearSelection()">
+      <i class="fas fa-times"></i> 鍙栨秷閫夋嫨
+    </button>
+  </div>
+
+  <!-- 娣诲姞/缂栬緫娓告垙寮圭獥 -->
+  <div class="modal" id="gameModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modalTitle">娣诲姞娓告垙</h3>
+        <button class="modal-close" onclick="closeModal('gameModal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <input type="hidden" id="gameId">
+        
+        <div class="form-group">
+          <label>娓告垙灏侀潰</label>
+          <div class="cover-upload-area" id="coverUploadArea" onclick="document.getElementById('coverInput').click()">
+            <i class="fas fa-image" style="font-size: 48px;"></i>
+            <p>鐐瑰嚮涓婁紶灏侀潰锛屾垨绮樿创鍥剧墖</p>
+            <input type="file" id="coverInput" accept="image/*" style="display: none;">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>娓告垙鍚嶇О锛堜腑鏂囷級*</label>
+            <input type="text" class="form-control" id="gameName" placeholder="杈撳叆娓告垙涓枃鍚嶇О">
+          </div>
+          <div class="form-group">
+            <label>娓告垙鍚嶇О锛堣嫳鏂囷級</label>
+            <input type="text" class="form-control" id="gameNameEn" placeholder="杈撳叆娓告垙鑻辨枃鍚嶇О">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>娓告垙鍒嗙被</label>
+            <select class="form-control" id="gameCategory">
+              <option value="">-- 閫夋嫨鍒嗙被 --</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>娓告垙澶у皬</label>
+            <input type="text" class="form-control" id="gameSize" placeholder="渚嬪锛?0GB">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>娓告垙鎻忚堪</label>
+          <textarea class="form-control" id="gameDesc" placeholder="杈撳叆娓告垙鎻忚堪..."></textarea>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>鐧惧害缃戠洏閾炬帴1</label>
+            <input type="text" class="form-control" id="baiduLink1" placeholder="https://pan.baidu.com/...">
+          </div>
+          <div class="form-group">
+            <label>鐧惧害缃戠洏閾炬帴2</label>
+            <input type="text" class="form-control" id="baiduLink2" placeholder="https://pan.baidu.com/...">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>杩呴浄浜戠洏閾炬帴</label>
+          <input type="text" class="form-control" id="thunderLink" placeholder="https://pan.xunlei.com/...">
+        </div>
+
+        <div class="form-group">
+          <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+            <input type="checkbox" id="isDrm" style="width: 18px; height: 18px;">
+            <span>D鍔犲瘑娓告垙</span>
+          </label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" onclick="closeModal('gameModal')">鍙栨秷</button>
+        <button class="btn btn-primary" onclick="saveGame()">
+          <i class="fas fa-save"></i> 淇濆瓨
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 蹇嵎缂栬緫閾炬帴寮圭獥 -->
+  <div class="modal" id="quickEditLinksModal">
+    <div class="modal-content" style="max-width: 500px;">
+      <div class="modal-header">
+        <h3><i class="fas fa-link"></i> 缂栬緫涓嬭浇閾炬帴</h3>
+        <button class="modal-close" onclick="closeModal('quickEditLinksModal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <input type="hidden" id="quickEditGameId">
+        
+        <div style="margin-bottom: 20px; padding: 12px 15px; background: var(--bg-tertiary); border-radius: 8px; border-left: 4px solid var(--accent-blue);">
+          <div style="color: var(--text-secondary); font-size: 12px; margin-bottom: 4px;">褰撳墠娓告垙</div>
+          <div id="quickEditGameName" style="color: var(--text-white); font-size: 16px; font-weight: bold;"></div>
+          <div id="quickEditGameNameEn" style="color: var(--text-secondary); font-size: 13px; margin-top: 2px;"></div>
+        </div>
+
+        <div class="form-group">
+          <label><i class="fab fa-baidu" style="color: #2932e1;"></i> 鐧惧害缃戠洏閾炬帴 1</label>
+          <input type="text" class="form-control" id="quickBaiduLink1" placeholder="https://pan.baidu.com/s/...">
+        </div>
+
+        <div class="form-group">
+          <label><i class="fab fa-baidu" style="color: #2932e1;"></i> 鐧惧害缃戠洏閾炬帴 2</label>
+          <input type="text" class="form-control" id="quickBaiduLink2" placeholder="https://pan.baidu.com/s/...">
+        </div>
+
+        <div class="form-group">
+          <label><i class="fas fa-bolt" style="color: #00a8e6;"></i> 杩呴浄浜戠洏閾炬帴</label>
+          <input type="text" class="form-control" id="quickThunderLink" placeholder="https://pan.xunlei.com/s/...">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" onclick="closeModal('quickEditLinksModal')">鍙栨秷</button>
+        <button class="btn btn-primary" onclick="saveQuickEditLinks()">
+          <i class="fas fa-save"></i> 淇濆瓨
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 涓嬭浇缁熻寮圭獥 -->
+  <div class="modal" id="downloadStatsModal">
+    <div class="modal-content large">
+      <div class="modal-header">
+        <h3><i class="fas fa-chart-bar"></i> 娓告垙涓嬭浇鎺掕姒?/h3>
+        <button class="modal-close" onclick="closeModal('downloadStatsModal')">&times;</button>
+      </div>
+      <div class="modal-body" style="padding: 0;">
+        <div class="stats-grid" style="padding: 20px; margin: 0;">
+          <div class="stats-card">
+            <div class="value" id="statsTotalDownloads">0</div>
+            <div class="label">鎬讳笅杞芥鏁?/div>
+          </div>
+          <div class="stats-card">
+            <div class="value" id="statsWebDownloads">0</div>
+            <div class="label">缃戦〉鐗堜笅杞?/div>
+          </div>
+          <div class="stats-card">
+            <div class="value" id="statsAppDownloads">0</div>
+            <div class="label">瀹㈡埛绔笅杞?/div>
+          </div>
+          <div class="stats-card">
+            <div class="value" id="statsAvgDownloads">0</div>
+            <div class="label">骞冲潎涓嬭浇/娓告垙</div>
+          </div>
+        </div>
+
+        <div style="padding: 15px 20px; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center;">
+          <div style="color: var(--text-secondary); font-size: 13px;">
+            <i class="fas fa-info-circle"></i> 鐐瑰嚮琛ㄥご鍙帓搴?          </div>
+          <div style="display: flex; gap: 10px;">
+            <button class="btn btn-sm" onclick="sortDownloadStats('total')">鎸夋€讳笅杞芥帓搴?/button>
+            <button class="btn btn-sm" onclick="sortDownloadStats('web')">鎸夌綉椤电増鎺掑簭</button>
+            <button class="btn btn-sm" onclick="sortDownloadStats('app')">鎸夊鎴风鎺掑簭</button>
+          </div>
+        </div>
+
+        <div style="max-height: 400px; overflow: auto;">
+          <table class="games-table">
+            <thead>
+              <tr>
+                <th style="width: 60px; cursor: pointer;" onclick="sortDownloadStats('rank')">鎺掑悕</th>
+                <th style="cursor: pointer;" onclick="sortDownloadStats('name')">娓告垙鍚嶇О</th>
+                <th style="width: 100px; cursor: pointer; text-align: center;" onclick="sortDownloadStats('total')">鎬讳笅杞?/th>
+                <th style="width: 100px; cursor: pointer; text-align: center;" onclick="sortDownloadStats('web')">缃戦〉鐗?/th>
+                <th style="width: 100px; cursor: pointer; text-align: center;" onclick="sortDownloadStats('app')">瀹㈡埛绔?/th>
+                <th style="width: 100px; text-align: center;">鍗犳瘮</th>
+              </tr>
+            </thead>
+            <tbody id="downloadStatsBody">
+              <!-- 鍔ㄦ€佺敓鎴?-->
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" onclick="closeModal('downloadStatsModal')">鍏抽棴</button>
+        <button class="btn btn-info" onclick="exportDownloadStats()">
+          <i class="fas fa-download"></i> 瀵煎嚭缁熻
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 鎵归噺淇敼灏侀潰寮圭獥 -->
+  <div class="modal" id="batchCoverModal">
+    <div class="modal-content large">
+      <div class="modal-header">
+        <h3>鎵归噺淇敼灏侀潰</h3>
+        <button class="modal-close" onclick="closeModal('batchCoverModal')">&times;</button>
+      </div>
+      <div class="modal-body" style="padding: 0;">
+        <div style="padding: 12px 20px; background: var(--bg-tertiary); border-bottom: 1px solid var(--border-color);">
+          <p style="color: var(--text-secondary); margin: 0; font-size: 13px;">
+            <i class="fas fa-info-circle"></i> 
+            鍦ㄧ綉椤典腑鍙抽敭澶嶅埗鍥剧墖锛岀劧鍚庣偣鍑诲搴旀父鎴忕殑绮樿创妗嗭紝鎸?Ctrl+V 绮樿创灏侀潰
+          </p>
+        </div>
+        <div class="batch-cover-grid" id="batchCoverGrid" style="padding: 15px 20px;">
+          <!-- 鍔ㄦ€佺敓鎴?-->
+        </div>
+        <div class="pagination-bar" id="batchCoverPagination"></div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" onclick="closeModal('batchCoverModal')">鍏抽棴</button>
+        <button class="btn btn-primary" onclick="saveBatchCovers()">
+          <i class="fas fa-save"></i> 淇濆瓨鎵€鏈変慨鏀?        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 鍒嗙被绠＄悊寮圭獥 -->
+  <div class="modal" id="categoryModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>鍒嗙被绠＄悊</h3>
+        <button class="modal-close" onclick="closeModal('categoryModal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="category-manager" id="categoryManager">
+          <!-- 鍔ㄦ€佺敓鎴?-->
+        </div>
+        <button class="btn btn-primary" onclick="addCategory()" style="width: 100%; margin-top: 10px;">
+          <i class="fas fa-plus"></i> 娣诲姞鏂板垎绫?        </button>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" onclick="closeModal('categoryModal')">鍙栨秷</button>
+        <button class="btn btn-primary" onclick="saveCategories()">
+          <i class="fas fa-save"></i> 淇濆瓨鍒嗙被
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 鑱旂郴鏂瑰紡绠＄悊寮圭獥 -->
+  <div class="modal" id="contactModal">
+    <div class="modal-content" style="max-width: 600px;">
+      <div class="modal-header">
+        <h3>鑱旂郴鏂瑰紡绠＄悊</h3>
+        <button class="modal-close" onclick="closeModal('contactModal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label>鏍囬</label>
+          <input type="text" class="form-control" id="contactTitle" placeholder="鑱旂郴鎴戜滑" value="鑱旂郴鎴戜滑">
+        </div>
+        <div id="contactList">
+          <!-- 鍔ㄦ€佺敓鎴?-->
+        </div>
+        <button class="btn" onclick="addContact()" style="width: 100%; margin-top: 15px;">
+          <i class="fas fa-plus"></i> 娣诲姞鑱旂郴鏂瑰紡
+        </button>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" onclick="closeModal('contactModal')">鍙栨秷</button>
+        <button class="btn btn-primary" onclick="saveContact()">
+          <i class="fas fa-save"></i> 淇濆瓨
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 鍙嶉鍒楄〃寮圭獥 -->
+  <div class="modal" id="feedbackModal">
+    <div class="modal-content large">
+      <div class="modal-header">
+        <h3>鐢ㄦ埛鍙嶉</h3>
+        <button class="modal-close" onclick="closeModal('feedbackModal')">&times;</button>
+      </div>
+      <div class="modal-body" style="padding: 0;">
+        <div style="display: flex; border-bottom: 1px solid var(--border-color);">
+          <div id="tabPending" onclick="switchFeedbackTab('pending')" style="flex: 1; padding: 15px; text-align: center; cursor: pointer; border-bottom: 2px solid var(--accent-blue); background: var(--bg-tertiary); color: var(--text-white); font-weight: 500;">
+            <i class="fas fa-inbox"></i> 鏈鐞?<span id="pendingCount" style="background: var(--accent-red); color: #fff; padding: 2px 8px; border-radius: 10px; font-size: 11px; margin-left: 5px;">0</span>
+          </div>
+          <div id="tabProcessed" onclick="switchFeedbackTab('processed')" style="flex: 1; padding: 15px; text-align: center; cursor: pointer; border-bottom: 2px solid transparent; color: var(--text-secondary);">
+            <i class="fas fa-check-circle"></i> 宸插鐞?          </div>
+        </div>
+        
+        <div class="feedback-list" id="feedbackList" style="padding: 15px 20px; max-height: 400px; overflow-y: auto;">
+          <!-- 鍔ㄦ€佺敓鎴?-->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" onclick="closeModal('feedbackModal')">鍏抽棴</button>
+        <button class="btn btn-primary" onclick="refreshFeedbacks()">
+          <i class="fas fa-sync"></i> 鍒锋柊
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 鎵归噺淇敼鍒嗙被寮圭獥 -->
+  <div class="modal" id="batchCategoryModal">
+    <div class="modal-content large">
+      <div class="modal-header">
+        <h3>鎵归噺淇敼鍒嗙被</h3>
+        <button class="modal-close" onclick="closeModal('batchCategoryModal')">&times;</button>
+      </div>
+      <div class="modal-body" style="padding: 0;">
+        <div style="padding: 15px 20px; background: var(--bg-tertiary); border-bottom: 1px solid var(--border-color); display: flex; gap: 15px; align-items: center;">
+          <span style="color: var(--text-secondary); font-size: 13px;"><i class="fas fa-filter"></i> 绛涢€夊垎绫?</span>
+          <select class="filter-select" id="batchCategoryFilter" onchange="renderBatchCategoryList()">
+            <option value="">鍏ㄩ儴娓告垙</option>
+          </select>
+          <div style="flex: 1;"></div>
+          <span style="color: var(--text-secondary); font-size: 13px;">
+            宸查€夋嫨 <strong id="batchCategorySelectedCount" style="color: var(--accent-blue);">0</strong> 涓父鎴?          </span>
+        </div>
+        
+        <div id="batchCategoryList" style="max-height: 400px; overflow-y: auto; padding: 15px 20px;">
+          <!-- 鍔ㄦ€佺敓鎴?-->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div style="display: flex; align-items: center; gap: 15px; flex: 1;">
+          <select class="form-control" id="batchTargetCategory" style="width: 180px;">
+            <option value="">-- 閫夋嫨鐩爣鍒嗙被 --</option>
+          </select>
+          <label style="display: flex; align-items: center; gap: 5px; color: var(--text-secondary); font-size: 13px; cursor: pointer;">
+            <input type="checkbox" id="batchKeepOriginalCategory" style="width: 16px; height: 16px;"> 
+            淇濈暀鍘熸湁鍒嗙被锛圖鍔犲瘑涓撶敤锛?          </label>
+        </div>
+        <button class="btn" onclick="closeModal('batchCategoryModal')">鍙栨秷</button>
+        <button class="btn btn-primary" onclick="confirmBatchCategoryChange()">
+          <i class="fas fa-save"></i> 淇濆瓨淇敼
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 鎵归噺璁剧疆D鍔犲瘑寮圭獥 -->
+  <div class="modal" id="batchDrmModal">
+    <div class="modal-content" style="max-width: 700px;">
+      <div class="modal-header">
+        <h3><i class="fas fa-lock" style="color: var(--accent-red); margin-right: 8px;"></i>鎵归噺璁剧疆D鍔犲瘑</h3>
+        <button class="modal-close" onclick="closeModal('batchDrmModal')">&times;</button>
+      </div>
+      <div class="modal-body" style="padding: 0;">
+        <div style="padding: 15px 20px; background: var(--bg-tertiary); border-bottom: 1px solid var(--border-color);">
+          <label style="display: flex; align-items: center; gap: 10px; cursor: pointer; color: var(--text-white); font-size: 14px;">
+            <input type="checkbox" id="batchDrmSelectAll" onchange="toggleBatchDrmSelectAll()" style="width: 18px; height: 18px;">
+            <span>鍏ㄩ€?鍙栨秷鍏ㄩ€?/span>
+            <span style="flex: 1;"></span>
+            <span style="color: var(--text-secondary); font-size: 13px;">宸查€夋嫨 <strong id="batchDrmSelectedCount" style="color: var(--accent-blue);">0</strong> 涓?/span>
+          </label>
+        </div>
+        
+        <div id="batchDrmList" style="max-height: 400px; overflow-y: auto; padding: 10px 20px;">
+          <!-- 鍔ㄦ€佺敓鎴?-->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" onclick="closeModal('batchDrmModal')">鍙栨秷</button>
+        <button class="btn btn-danger" onclick="batchUnsetDrm()">
+          <i class="fas fa-unlock"></i> 鍙栨秷D鍔犲瘑
+        </button>
+        <button class="btn btn-primary" onclick="batchSetDrm()">
+          <i class="fas fa-lock"></i> 璁句负D鍔犲瘑
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast">
+    <i class="fas fa-check-circle"></i>
+    <span id="toastMessage">鎿嶄綔鎴愬姛</span>
+  </div>
+
+  <script>
+    // ==================== 娓告垙鐩掑瓙鍚庡彴绠＄悊绯荤粺 - 瀹屾暣鐗?====================
+    
+    // 閰嶇疆
+    const CONFIG = {
+      pageSize: 20,
+      batchCoverPageSize: 20,
+      storageKey: 'gamebox_games_data',
+      categoriesKey: 'gamebox_categories',
+      contactKey: 'gamebox_contact',
+      feedbackKey: 'gamebox_feedback',
+      // Cloudflare Worker API 閰嶇疆
+      apiBaseUrl: 'https://gamebox-api-v2.danyouhai.workers.dev',
+      adminPassword: 'abc123'
+    };
+
+    // 榛樿鍒嗙被
+    const DEFAULT_CATEGORIES = [
+      { id: 'action', name: '鍔ㄤ綔', icon: 'fa-running' },
+      { id: 'adventure', name: '鍐掗櫓', icon: 'fa-compass' },
+      { id: 'strategy', name: '绛栫暐', icon: 'fa-chess' },
+      { id: 'shooter', name: '灏勫嚮', icon: 'fa-crosshairs' },
+      { id: 'rpg', name: '瑙掕壊鎵紨', icon: 'fa-dragon' },
+      { id: 'simulation', name: '妯℃嫙缁忚惀', icon: 'fa-city' },
+      { id: 'sports', name: '浣撹偛绔炴妧', icon: 'fa-football-ball' },
+      { id: 'racing', name: '璧涜溅', icon: 'fa-car' },
+      { id: 'horror', name: '鎭愭€栨儕鎮?, icon: 'fa-ghost' },
+      { id: 'puzzle', name: '鐩婃櫤瑙ｈ皽', icon: 'fa-puzzle-piece' },
+      { id: 'mnb', name: '楠戦┈涓庣爫鏉€', icon: 'fa-horse' },
+      { id: 'tw', name: '鍏ㄩ潰鎴樹簤', icon: 'fa-chess-board' },
+      { id: 'rts', name: '鍗虫椂鎴樼暐', icon: 'fa-chess-knight' },
+      { id: 'fighting', name: '鏍兼枟', icon: 'fa-fist-raised' },
+      { id: 'arcade', name: '琛楁満鎬€鏃?, icon: 'fa-gamepad' },
+      { id: 'drm', name: 'D鍔犲瘑', icon: 'fa-lock', special: true }
+    ];
+
+    // 鍏ㄥ眬鐘舵€?    let gamesData = [];
+    let categories = [];
+    let contactData = { title: '鑱旂郴鎴戜滑', items: [] };
+    let feedbackData = [];
+    let selectedGames = new Set();
+    let currentPage = 1;
+    let filteredGames = [];
+    let currentCoverBase64 = null;
+    let batchCovers = {};
+    let currentDownloadSort = { field: 'total', order: 'desc' };
+    let batchCoverPage = 1;
+    let batchCoverFilteredGames = [];
+    let batchCategorySelectedGames = new Set();
+    let batchDrmSelectedGames = new Set();
+    let feedbackView = localStorage.getItem('gamebox_feedback_view') || 'list'; // list, grid
+
+    // ==================== 鍒濆鍖?====================
+    document.addEventListener('DOMContentLoaded', () => {
+      initTheme();
+      loadData();
+      initEvents();
+      renderGamesTable();
+      updateStats();
+    });
+
+    // ==================== 涓婚 ====================
+    function initTheme() {
+      const savedTheme = localStorage.getItem('admin-theme') || 'dark';
+      setTheme(savedTheme);
+      
+      document.getElementById('themeToggle').addEventListener('click', () => {
+        const current = document.body.getAttribute('data-theme') || 'dark';
+        setTheme(current === 'dark' ? 'light' : 'dark');
+      });
+    }
+
+    function setTheme(theme) {
+      if (theme === 'light') {
+        document.body.setAttribute('data-theme', 'light');
+      } else {
+        document.body.removeAttribute('data-theme');
+      }
+      const icon = document.querySelector('#themeToggle i');
+      if (icon) {
+        icon.className = theme === 'light' ? 'fas fa-sun' : 'fas fa-moon';
+      }
+      localStorage.setItem('admin-theme', theme);
+    }
+
+    // ==================== 鏁版嵁绠＄悊 ====================
+    function loadData() {
+      // 鍔犺浇娓告垙鏁版嵁
+      const storedGames = localStorage.getItem(CONFIG.storageKey);
+      
+      // 妫€鏌?localStorage 涓殑鏁版嵁鏄惁鏈夋晥锛堟湁 name 瀛楁锛?      let localDataValid = false;
+      if (storedGames && storedGames !== '[]' && storedGames !== 'null') {
+        try {
+          const parsed = JSON.parse(storedGames);
+          if (parsed.length > 0 && parsed[0].name) {
+            localDataValid = true;
+            gamesData = parsed;
+            console.log('浠?localStorage 鍔犺浇鏁版嵁:', gamesData.length, '鏉?);
+          }
+        } catch (e) {
+          console.error('localStorage 鏁版嵁瑙ｆ瀽澶辫触:', e);
+        }
+      }
+      
+      // 濡傛灉 localStorage 鏁版嵁鏃犳晥锛屼粠 data-embed.js 鍔犺浇
+      if (!localDataValid && typeof importedGames !== 'undefined' && importedGames.length > 0) {
+        console.log('浠?data-embed.js 鍔犺浇鏁版嵁:', importedGames.length, '鏉?);
+        gamesData = importedGames.map(game => {
+          // 灏嗕腑鏂囧垎绫诲悕杞崲涓鸿嫳鏂?id
+          let categoryId = game.category || '';
+          const categoryMapping = {
+            '鍔ㄤ綔': 'action',
+            '鍐掗櫓': 'adventure',
+            '绛栫暐': 'strategy',
+            '灏勫嚮': 'shooter',
+            '瑙掕壊鎵紨': 'rpg',
+            '妯℃嫙缁忚惀': 'simulation',
+            '浣撹偛绔炴妧': 'sports',
+            '璧涜溅': 'racing',
+            '鎭愭€栨儕鎮?: 'horror',
+            '鐩婃櫤瑙ｈ皽': 'puzzle',
+            '楠戦┈涓庣爫鏉€': 'mnb',
+            '鍏ㄩ潰鎴樹簤': 'tw',
+            '鍗虫椂鎴樼暐': 'rts',
+            '鏍兼枟': 'fighting',
+            '琛楁満鎬€鏃?: 'arcade'
+          };
+          if (categoryMapping[game.category]) {
+            categoryId = categoryMapping[game.category];
+          }
+          
+          return {
+            id: game.id,
+            name: game.name || game.title || '鏈懡鍚?,
+            nameEn: game.nameEn || '',
+            category: categoryId,
+            size: game.size || '',
+            desc: game.description || game.desc || '',
+            baiduLink1: game.baiduLink1 || '',
+            baiduLink2: game.baiduLink2 || '',
+            thunderLink: game.thunderLink || '',
+            cover: game.cover || '',
+            isDrm: game.isDrm || false,
+            downloadsWeb: game.downloadsWeb || 0,
+            downloadsApp: game.downloadsApp || 0,
+            updateTime: Date.now()
+          };
+        });
+        // 淇濆瓨鍒?localStorage
+        saveData();
+      } else if (!localDataValid) {
+        gamesData = [];
+      }
+      
+      // 璋冭瘯淇℃伅
+      console.log('鍔犺浇瀹屾垚锛屾父鎴忔暟閲?', gamesData.length);
+      if (gamesData.length > 0) {
+        console.log('绗竴鏉℃暟鎹?', gamesData[0]);
+      }
+      
+      // 鍔犺浇鍒嗙被 - 濡傛灉 localStorage 涓病鏈夋垨涓虹┖锛屼娇鐢ㄩ粯璁ゅ垎绫?      const storedCategories = localStorage.getItem(CONFIG.categoriesKey);
+      if (storedCategories && storedCategories !== '[]' && storedCategories !== 'null') {
+        try {
+          const parsed = JSON.parse(storedCategories);
+          if (parsed.length > 0) {
+            categories = parsed;
+          } else {
+            categories = [...DEFAULT_CATEGORIES];
+          }
+        } catch (e) {
+          categories = [...DEFAULT_CATEGORIES];
+        }
+      } else {
+        categories = [...DEFAULT_CATEGORIES];
+      }
+      
+      // 鍔犺浇鑱旂郴鏂瑰紡
+      const storedContact = localStorage.getItem(CONFIG.contactKey);
+      contactData = storedContact ? JSON.parse(storedContact) : {
+        title: '鑱旂郴鎴戜滑',
+        items: [
+          { type: 'qq', label: '瀹樻柟QQ缇?, value: '' },
+          { type: 'email', label: '瀹樻柟閭', value: '' },
+          { type: 'wechat', label: '寰俊鍏紬鍙?, value: '' }
+        ]
+      };
+      
+      // 鍔犺浇鍙嶉
+      const storedFeedback = localStorage.getItem(CONFIG.feedbackKey);
+      feedbackData = storedFeedback ? JSON.parse(storedFeedback) : [];
+      
+      // 鍒濆鍖栧垎绫婚€夋嫨鍣?      initCategorySelects();
+    }
+
+    function saveData() {
+      localStorage.setItem(CONFIG.storageKey, JSON.stringify(gamesData));
+      localStorage.setItem(CONFIG.categoriesKey, JSON.stringify(categories));
+      localStorage.setItem(CONFIG.contactKey, JSON.stringify(contactData));
+      localStorage.setItem(CONFIG.feedbackKey, JSON.stringify(feedbackData));
+      localStorage.setItem('gamebox_updated', new Date().toISOString());
+    }
+
+    // 鍚屾娓告垙鏁版嵁鍒颁簯绔?    async function syncToCloud() {
+      try {
+        showToast('姝ｅ湪鍚屾鍒颁簯绔?..', 'success');
+        
+        const response = await fetch(`${CONFIG.apiBaseUrl}/api/admin/games`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            games: gamesData,
+            adminPassword: CONFIG.adminPassword
+          })
+        });
+
+        const result = await response.json();
+        
+        if (response.ok) {
+          showToast(`鍚屾鎴愬姛锛佸凡鍚屾 ${result.count} 涓父鎴忓埌浜戠`, 'success');
+          return true;
+        } else {
+          showToast('鍚屾澶辫触锛? + (result.error || '鏈煡閿欒'), 'error');
+          return false;
+        }
+      } catch (error) {
+        console.error('鍚屾澶辫触:', error);
+        showToast('鍚屾澶辫触锛? + error.message, 'error');
+        return false;
+      }
+    }
+
+    // 浠庝簯绔姞杞芥暟鎹?    async function loadFromCloud() {
+      try {
+        showToast('姝ｅ湪浠庝簯绔姞杞?..', 'success');
+        
+        const response = await fetch(`${CONFIG.apiBaseUrl}/api/games`);
+        const result = await response.json();
+        
+        if (response.ok && result.games) {
+          gamesData = result.games;
+          saveData();
+          renderGamesTable();
+          updateStats();
+          showToast(`鍔犺浇鎴愬姛锛佷粠浜戠鑾峰彇 ${gamesData.length} 涓父鎴廯, 'success');
+          return true;
+        } else {
+          showToast('鍔犺浇澶辫触锛? + (result.error || '鏈煡閿欒'), 'error');
+          return false;
+        }
+      } catch (error) {
+        console.error('鍔犺浇澶辫触:', error);
+        showToast('鍔犺浇澶辫触锛? + error.message, 'error');
+        return false;
+      }
+    }
+
+    // 涓婁紶灏侀潰鍒?R2
+    async function uploadCoverToR2(gameId, imageBlob) {
+      try {
+        const formData = new FormData();
+        formData.append('file', imageBlob, 'cover.jpg');
+        formData.append('gameId', gameId);
+
+        const response = await fetch(`${CONFIG.apiBaseUrl}/api/upload`, {
+          method: 'POST',
+          body: formData
+        });
+
+        const result = await response.json();
+        
+        if (response.ok && result.url) {
+          return result.url;
+        } else {
+          throw new Error(result.error || '涓婁紶澶辫触');
+        }
+      } catch (error) {
+        console.error('灏侀潰涓婁紶澶辫触:', error);
+        throw error;
+      }
+    }
+
+    function initCategorySelects() {
+      const selects = ['categoryFilter', 'gameCategory', 'batchTargetCategory'];
+      selects.forEach(id => {
+        const select = document.getElementById(id);
+        if (!select) return;
+        const currentValue = select.value;
+        let html = '';
+        if (id === 'categoryFilter') html = '<option value="">鍏ㄩ儴娓告垙</option>';
+        else if (id === 'batchTargetCategory') html = '<option value="">-- 閫夋嫨鐩爣鍒嗙被 --</option>';
+        else html = '<option value="">-- 閫夋嫨鍒嗙被 --</option>';
+        
+        categories.forEach(c => {
+          html += `<option value="${c.id}">${c.name}</option>`;
+        });
+        select.innerHTML = html;
+        select.value = currentValue;
+      });
+    }
+
+    function updateStats() {
+      document.getElementById('totalGames').textContent = gamesData.length;
+      document.getElementById('totalCategories').textContent = categories.filter(c => !c.special).length;
+      
+      const webDownloads = gamesData.reduce((sum, g) => sum + (g.downloadsWeb || 0), 0);
+      const appDownloads = gamesData.reduce((sum, g) => sum + (g.downloadsApp || 0), 0);
+      
+      document.getElementById('totalDownloadsWeb').textContent = webDownloads.toLocaleString();
+      document.getElementById('totalDownloadsApp').textContent = appDownloads.toLocaleString();
+      document.getElementById('totalDownloadsAll').textContent = (webDownloads + appDownloads).toLocaleString();
+    }
+
+    // ==================== 浜嬩欢缁戝畾 ====================
+    function initEvents() {
+      // 鎼滅储
+      let searchTimeout;
+      document.getElementById('searchInput').addEventListener('input', () => {
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(() => {
+          currentPage = 1;
+          renderGamesTable();
+        }, 300);
+      });
+
+      // 鍒嗙被绛涢€?      document.getElementById('categoryFilter').addEventListener('change', () => {
+        currentPage = 1;
+        renderGamesTable();
+      });
+
+      // 鏂囦欢涓婁紶
+      const dropZone = document.getElementById('dropZone');
+      const fileInput = document.getElementById('fileInput');
+      
+      dropZone.addEventListener('click', (e) => {
+        // 鐐瑰嚮瀵煎叆妯″紡閫夐」鏃朵笉瑙﹀彂鏂囦欢閫夋嫨
+        if (e.target.closest('.import-mode-option')) return;
+        fileInput.click();
+      });
+      dropZone.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        dropZone.style.borderColor = 'var(--accent-blue)';
+        dropZone.style.background = 'rgba(102,192,244,0.1)';
+      });
+      dropZone.addEventListener('dragleave', () => {
+        dropZone.style.borderColor = '';
+        dropZone.style.background = '';
+      });
+      dropZone.addEventListener('drop', (e) => {
+        e.preventDefault();
+        dropZone.style.borderColor = '';
+        dropZone.style.background = '';
+        if (e.dataTransfer.files.length) handleFileUpload(e.dataTransfer.files[0]);
+      });
+      fileInput.addEventListener('change', (e) => {
+        if (e.target.files.length) handleFileUpload(e.target.files[0]);
+      });
+
+
+
+      // 灏侀潰涓婁紶
+      document.getElementById('coverInput').addEventListener('change', handleCoverUpload);
+
+      // 绮樿创灏侀潰
+      document.addEventListener('paste', async (e) => {
+        const modal = document.querySelector('.modal.show');
+        if (!modal) return;
+        
+        const items = e.clipboardData.items;
+        for (let item of items) {
+          if (item.type.indexOf('image') !== -1) {
+            const blob = item.getAsFile();
+            
+            if (modal.id === 'gameModal') {
+              // 鍗曟父鎴忕紪杈戞ā寮?- 鐩存帴鏄剧ず base64 棰勮
+              const reader = new FileReader();
+              reader.onload = (event) => {
+                currentCoverBase64 = event.target.result;
+                updateCoverPreview();
+              };
+              reader.readAsDataURL(blob);
+            } else if (modal.id === 'batchCoverModal') {
+              // 鎵归噺妯″紡 - 涓婁紶鍒?R2
+              const activeElement = document.activeElement;
+              if (activeElement && activeElement.classList.contains('paste-area')) {
+                const gameId = activeElement.dataset.gameId;
+                
+                // 鏄剧ず涓婁紶涓?                activeElement.innerHTML = '<div style="color: var(--accent-blue);"><i class="fas fa-spinner fa-spin"></i> 涓婁紶涓?..</div>';
+                
+                try {
+                  // 涓婁紶鍒?R2
+                  const imageUrl = await uploadCoverToR2(gameId, blob);
+                  
+                  // 鏇存柊娓告垙鏁版嵁
+                  const game = gamesData.find(g => String(g.id) === String(gameId));
+                  if (game) {
+                    game.cover = imageUrl;
+                    game.updateTime = Date.now();
+                  }
+                  batchCovers[gameId] = imageUrl;
+                  
+                  // 鏄剧ず鍥剧墖
+                  activeElement.innerHTML = `<img src="${imageUrl}">`;
+                  activeElement.classList.add('has-image');
+                  
+                  showToast('灏侀潰涓婁紶鎴愬姛', 'success');
+                } catch (error) {
+                  console.error('涓婁紶澶辫触:', error);
+                  activeElement.innerHTML = '<div style="color: var(--accent-red);"><i class="fas fa-exclamation-circle"></i> 涓婁紶澶辫触</div>';
+                  showToast('灏侀潰涓婁紶澶辫触: ' + error.message, 'error');
+                }
+              }
+            }
+            break;
+          }
+        }
+      });
+
+      // 寮圭獥鍏抽棴
+      document.querySelectorAll('.modal').forEach(modal => {
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) closeModal(modal.id);
+        });
+      });
+    }
+
+    // ==================== 娓叉煋琛ㄦ牸 ====================
+    function renderGamesTable() {
+      const search = document.getElementById('searchInput').value.toLowerCase();
+      const category = document.getElementById('categoryFilter').value;
+
+      filteredGames = gamesData.filter(game => {
+        const matchSearch = !search || 
+          (game.name && game.name.toLowerCase().includes(search)) ||
+          (game.nameEn && game.nameEn.toLowerCase().includes(search));
+        const matchCategory = !category || game.category === category || (category === 'drm' && game.isDrm);
+        return matchSearch && matchCategory;
+      });
+
+      const totalPages = Math.ceil(filteredGames.length / CONFIG.pageSize);
+      const start = (currentPage - 1) * CONFIG.pageSize;
+      const pageData = filteredGames.slice(start, start + CONFIG.pageSize);
+
+      const tbody = document.getElementById('gamesTableBody');
+      if (pageData.length === 0) {
+        tbody.innerHTML = `
+          <tr>
+            <td colspan="7" style="text-align: center; padding: 60px;">
+              <div style="color: var(--text-secondary);">
+                <i class="fas fa-inbox" style="font-size: 48px; margin-bottom: 16px; display: block; opacity: 0.5;"></i>
+                <p>鏆傛棤娓告垙鏁版嵁</p>
+                <p style="font-size: 13px; opacity: 0.7; margin-top: 8px;">鐐瑰嚮"娣诲姞娓告垙"鎴?鎵归噺娣诲姞"寮€濮嬪綍鍏?/p>
+              </div>
+            </td>
+          </tr>
+        `;
+      } else {
+        tbody.innerHTML = pageData.map(game => renderGameRow(game)).join('');
+      }
+
+      renderPagination(totalPages);
+      updateSelectAllState();
+      updateBatchActions();
+    }
+
+    function renderGameRow(game) {
+      const category = categories.find(c => c.id === game.category || c.name === game.category);
+      const isSelected = selectedGames.has(String(game.id));
+      const totalDownloads = (game.downloadsWeb || 0) + (game.downloadsApp || 0);
+
+      return `
+        <tr>
+          <td>
+            <div class="checkbox ${isSelected ? 'checked' : ''}" onclick="toggleSelect('${game.id}')"></div>
+          </td>
+          <td>
+            <div class="game-cover" onclick="editGame('${game.id}')">
+              ${game.cover ? `<img src="${game.cover}" alt="">` : '<span style="font-size: 10px;">鏃犲皝闈?/span>'}
+              <div class="upload-hint">鐐瑰嚮淇敼</div>
+            </div>
+          </td>
+          <td>
+            <div class="game-name">${game.name || '鏈懡鍚?}</div>
+            ${game.nameEn ? `<div class="game-name-en">${game.nameEn}</div>` : ''}
+          </td>
+          <td>
+            <select class="category-select" onchange="quickUpdateCategory('${game.id}', this.value)">
+              ${categories.map(c => `<option value="${c.id}" ${(game.category === c.id || game.category === c.name) ? 'selected' : ''}>${c.name}</option>`).join('')}
+            </select>
+          </td>
+          <td>
+            <div class="download-indicator" onclick="quickEditLinks('${game.id}')" title="鐐瑰嚮缂栬緫涓嬭浇閾炬帴">
+              <div class="download-dot ${game.baiduLink1 ? '' : 'empty'}"></div>
+              <div class="download-dot ${game.baiduLink2 ? '' : 'empty'}"></div>
+              <div class="download-dot ${game.thunderLink ? '' : 'empty'}"></div>
+            </div>
+          </td>
+          <td>
+            <div style="display: flex; flex-direction: column; gap: 2px; font-size: 11px;">
+              <span style="color: var(--accent-blue); font-weight: bold;">${totalDownloads}</span>
+              <span style="color: var(--text-secondary);">W:${game.downloadsWeb || 0} A:${game.downloadsApp || 0}</span>
+            </div>
+          </td>
+          <td>
+            <div class="action-btns">
+              <button class="action-btn edit" onclick="editGame('${game.id}')" title="缂栬緫"><i class="fas fa-edit"></i></button>
+              <button class="action-btn delete" onclick="deleteGame('${game.id}')" title="鍒犻櫎"><i class="fas fa-trash"></i></button>
+            </div>
+          </td>
+        </tr>
+      `;
+    }
+
+    function renderPagination(totalPages) {
+      const container = document.getElementById('pagination');
+      if (totalPages <= 1) {
+        container.innerHTML = filteredGames.length > 0 ? 
+          `<span style="color: var(--text-secondary);">鍏?${filteredGames.length} 涓父鎴?/span>` : '';
+        return;
+      }
+
+      let html = `
+        <button class="btn btn-sm" onclick="changePage(${currentPage - 1})" ${currentPage === 1 ? 'disabled' : ''}>
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <span style="color: var(--text-secondary); padding: 0 10px;">${currentPage} / ${totalPages}</span>
+        <button class="btn btn-sm" onclick="changePage(${currentPage + 1})" ${currentPage === totalPages ? 'disabled' : ''}>
+          <i class="fas fa-chevron-right"></i>
+        </button>
+        <select class="filter-select" onchange="changePageSize(this.value)" style="width: auto; margin-left: 10px;">
+          <option value="10" ${CONFIG.pageSize === 10 ? 'selected' : ''}>10鏉?椤?/option>
+          <option value="20" ${CONFIG.pageSize === 20 ? 'selected' : ''}>20鏉?椤?/option>
+          <option value="50" ${CONFIG.pageSize === 50 ? 'selected' : ''}>50鏉?椤?/option>
+          <option value="100" ${CONFIG.pageSize === 100 ? 'selected' : ''}>100鏉?椤?/option>
+        </select>
+      `;
+      container.innerHTML = html;
+    }
+
+    function changePage(page) {
+      const totalPages = Math.ceil(filteredGames.length / CONFIG.pageSize);
+      if (page < 1 || page > totalPages) return;
+      currentPage = page;
+      renderGamesTable();
+    }
+
+    function changePageSize(size) {
+      CONFIG.pageSize = parseInt(size);
+      currentPage = 1;
+      renderGamesTable();
+    }
+
+    // ==================== 閫夋嫨鍔熻兘 ====================
+    function toggleSelect(id) {
+      const strId = String(id);
+      if (selectedGames.has(strId)) selectedGames.delete(strId);
+      else selectedGames.add(strId);
+      renderGamesTable();
+    }
+
+    function toggleSelectAll() {
+      const pageIds = filteredGames
+        .slice((currentPage - 1) * CONFIG.pageSize, currentPage * CONFIG.pageSize)
+        .map(g => String(g.id));
+      
+      const allSelected = pageIds.every(id => selectedGames.has(id));
+      pageIds.forEach(id => {
+        if (allSelected) selectedGames.delete(id);
+        else selectedGames.add(id);
+      });
+      renderGamesTable();
+    }
+
+    function updateSelectAllState() {
+      const pageIds = filteredGames
+        .slice((currentPage - 1) * CONFIG.pageSize, currentPage * CONFIG.pageSize)
+        .map(g => String(g.id));
+      const allSelected = pageIds.length > 0 && pageIds.every(id => selectedGames.has(id));
+      document.querySelector('#gamesTableBody').parentElement.querySelector('.checkbox').classList.toggle('checked', allSelected);
+    }
+
+    function updateBatchActions() {
+      const bar = document.getElementById('batchActions');
+      document.getElementById('selectedCount').textContent = selectedGames.size;
+      document.getElementById('batchCount').textContent = selectedGames.size;
+      bar.classList.toggle('show', selectedGames.size > 0);
+    }
+
+    function clearSelection() {
+      selectedGames.clear();
+      renderGamesTable();
+    }
+
+    // ==================== 娓告垙CRUD ====================
+    function addNewGame() {
+      document.getElementById('modalTitle').textContent = '娣诲姞娓告垙';
+      document.getElementById('gameId').value = '';
+      document.getElementById('gameName').value = '';
+      document.getElementById('gameNameEn').value = '';
+      document.getElementById('gameCategory').value = '';
+      document.getElementById('gameSize').value = '';
+      document.getElementById('gameDesc').value = '';
+      document.getElementById('baiduLink1').value = '';
+      document.getElementById('baiduLink2').value = '';
+      document.getElementById('thunderLink').value = '';
+      document.getElementById('isDrm').checked = false;
+      currentCoverBase64 = null;
+      updateCoverPreview();
+      openModal('gameModal');
+    }
+
+    function editGame(id) {
+      const game = gamesData.find(g => String(g.id) === String(id));
+      if (!game) return;
+      
+      document.getElementById('modalTitle').textContent = '缂栬緫娓告垙';
+      document.getElementById('gameId').value = game.id;
+      document.getElementById('gameName').value = game.name || '';
+      document.getElementById('gameNameEn').value = game.nameEn || '';
+      document.getElementById('gameCategory').value = game.category || '';
+      document.getElementById('gameSize').value = game.size || '';
+      document.getElementById('gameDesc').value = game.desc || '';
+      document.getElementById('baiduLink1').value = game.baiduLink1 || '';
+      document.getElementById('baiduLink2').value = game.baiduLink2 || '';
+      document.getElementById('thunderLink').value = game.thunderLink || '';
+      document.getElementById('isDrm').checked = game.isDrm || false;
+      currentCoverBase64 = game.cover || null;
+      updateCoverPreview();
+      openModal('gameModal');
+    }
+
+    async function saveGame() {
+      const id = document.getElementById('gameId').value;
+      const name = document.getElementById('gameName').value.trim();
+      
+      if (!name) {
+        showToast('璇疯緭鍏ユ父鎴忓悕绉?, 'error');
+        return;
+      }
+
+      const existingGame = gamesData.find(g => String(g.id) === String(id));
+      
+      let coverUrl = currentCoverBase64;
+      
+      // 濡傛灉鏈夋柊鐨?base64 灏侀潰锛屼笂浼犲埌 R2
+      if (currentCoverBase64 && currentCoverBase64.startsWith('data:image')) {
+        try {
+          showToast('姝ｅ湪涓婁紶灏侀潰...', 'success');
+          const gameId = id ? parseInt(id) : Date.now();
+          
+          // 灏?base64 杞崲涓?blob
+          const response = await fetch(currentCoverBase64);
+          const blob = await response.blob();
+          
+          // 涓婁紶鍒?R2
+          coverUrl = await uploadCoverToR2(gameId, blob);
+          showToast('灏侀潰涓婁紶鎴愬姛', 'success');
+        } catch (error) {
+          console.error('灏侀潰涓婁紶澶辫触:', error);
+          showToast('灏侀潰涓婁紶澶辫触锛屽皢浣跨敤鏈湴瀛樺偍', 'error');
+          // 淇濈暀 base64 浣滀负鍚庡
+        }
+      }
+      
+      const gameData = {
+        id: id ? parseInt(id) : Date.now(),
+        name: name,
+        nameEn: document.getElementById('gameNameEn').value.trim(),
+        category: document.getElementById('gameCategory').value,
+        size: document.getElementById('gameSize').value.trim(),
+        desc: document.getElementById('gameDesc').value.trim(),
+        baiduLink1: document.getElementById('baiduLink1').value.trim(),
+        baiduLink2: document.getElementById('baiduLink2').value.trim(),
+        thunderLink: document.getElementById('thunderLink').value.trim(),
+        isDrm: document.getElementById('isDrm').checked,
+        cover: coverUrl,
+        downloadsWeb: existingGame?.downloadsWeb || 0,
+        downloadsApp: existingGame?.downloadsApp || 0,
+        updateTime: Date.now()
+      };
+
+      const index = gamesData.findIndex(g => String(g.id) === String(gameData.id));
+      if (index >= 0) gamesData[index] = gameData;
+      else gamesData.push(gameData);
+
+      saveData();
+      closeModal('gameModal');
+      renderGamesTable();
+      updateStats();
+      showToast(id ? '娓告垙宸叉洿鏂? : '娓告垙宸叉坊鍔?, 'success');
+    }
+
+    function deleteGame(id) {
+      if (!confirm('纭畾瑕佸垹闄よ繖涓父鎴忓悧锛?)) return;
+      gamesData = gamesData.filter(g => String(g.id) !== String(id));
+      selectedGames.delete(String(id));
+      saveData();
+      renderGamesTable();
+      updateStats();
+      showToast('娓告垙宸插垹闄?, 'success');
+    }
+
+    function quickUpdateCategory(id, category) {
+      const game = gamesData.find(g => String(g.id) === String(id));
+      if (game) {
+        game.category = category;
+        game.updateTime = Date.now();
+        saveData();
+        showToast('鍒嗙被宸叉洿鏂?, 'success');
+      }
+    }
+
+    // ==================== 灏侀潰澶勭悊 ====================
+    function handleCoverUpload(e) {
+      const file = e.target.files[0];
+      if (!file) return;
+      
+      if (!file.type.startsWith('image/')) {
+        showToast('璇烽€夋嫨鍥剧墖鏂囦欢', 'error');
+        return;
+      }
+
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        currentCoverBase64 = e.target.result;
+        updateCoverPreview();
+      };
+      reader.readAsDataURL(file);
+    }
+
+    function updateCoverPreview() {
+      const area = document.getElementById('coverUploadArea');
+      if (currentCoverBase64) {
+        area.innerHTML = `<img src="${currentCoverBase64}" style="max-width: 100%; max-height: 180px; object-fit: contain;"><button class="btn btn-sm btn-danger" onclick="event.stopPropagation(); removeCover()" style="position: absolute; top: 10px; right: 10px;"><i class="fas fa-trash"></i></button>`;
+        area.classList.add('has-image');
+      } else {
+        area.innerHTML = `<i class="fas fa-image" style="font-size: 48px;"></i><p>鐐瑰嚮涓婁紶灏侀潰锛屾垨绮樿创鍥剧墖</p><input type="file" id="coverInput" accept="image/*" style="display: none;">`;
+        area.classList.remove('has-image');
+        document.getElementById('coverInput').addEventListener('change', handleCoverUpload);
+      }
+    }
+
+    function removeCover() {
+      currentCoverBase64 = null;
+      updateCoverPreview();
+    }
+
+    // ==================== 蹇嵎缂栬緫閾炬帴 ====================
+    function quickEditLinks(gameId) {
+      const game = gamesData.find(g => String(g.id) === String(gameId));
+      if (!game) return;
+
+      document.getElementById('quickEditGameId').value = gameId;
+      document.getElementById('quickEditGameName').textContent = game.name || '鏈懡鍚嶆父鎴?;
+      document.getElementById('quickEditGameNameEn').textContent = game.nameEn || '';
+      document.getElementById('quickBaiduLink1').value = game.baiduLink1 || '';
+      document.getElementById('quickBaiduLink2').value = game.baiduLink2 || '';
+      document.getElementById('quickThunderLink').value = game.thunderLink || '';
+
+      openModal('quickEditLinksModal');
+    }
+
+    function saveQuickEditLinks() {
+      const gameId = document.getElementById('quickEditGameId').value;
+      const game = gamesData.find(g => String(g.id) === String(gameId));
+      if (!game) return;
+
+      game.baiduLink1 = document.getElementById('quickBaiduLink1').value.trim();
+      game.baiduLink2 = document.getElementById('quickBaiduLink2').value.trim();
+      game.thunderLink = document.getElementById('quickThunderLink').value.trim();
+      game.updateTime = Date.now();
+
+      saveData();
+      closeModal('quickEditLinksModal');
+      renderGamesTable();
+      showToast('涓嬭浇閾炬帴宸叉洿鏂?, 'success');
+    }
+
+    // ==================== 涓嬭浇缁熻 ====================
+    function showDownloadStats() {
+      updateDownloadStatsModal();
+      openModal('downloadStatsModal');
+    }
+
+    function updateDownloadStatsModal() {
+      const totalDownloads = gamesData.reduce((sum, g) => sum + (g.downloadsWeb || 0) + (g.downloadsApp || 0), 0);
+      const webDownloads = gamesData.reduce((sum, g) => sum + (g.downloadsWeb || 0), 0);
+      const appDownloads = gamesData.reduce((sum, g) => sum + (g.downloadsApp || 0), 0);
+      const avgDownloads = gamesData.length > 0 ? Math.round(totalDownloads / gamesData.length) : 0;
+
+      document.getElementById('statsTotalDownloads').textContent = totalDownloads.toLocaleString();
+      document.getElementById('statsWebDownloads').textContent = webDownloads.toLocaleString();
+      document.getElementById('statsAppDownloads').textContent = appDownloads.toLocaleString();
+      document.getElementById('statsAvgDownloads').textContent = avgDownloads.toLocaleString();
+
+      renderDownloadStatsTable();
+    }
+
+    function renderDownloadStatsTable() {
+      const tbody = document.getElementById('downloadStatsBody');
+      
+      const sortedGames = [...gamesData].sort((a, b) => {
+        let valA, valB;
+        switch (currentDownloadSort.field) {
+          case 'name': valA = a.name || ''; valB = b.name || ''; break;
+          case 'web': valA = a.downloadsWeb || 0; valB = b.downloadsWeb || 0; break;
+          case 'app': valA = a.downloadsApp || 0; valB = b.downloadsApp || 0; break;
+          case 'total': default: valA = (a.downloadsWeb || 0) + (a.downloadsApp || 0); valB = (b.downloadsWeb || 0) + (b.downloadsApp || 0);
+        }
+        return currentDownloadSort.order === 'desc' ? (valB > valA ? 1 : -1) : (valA > valB ? 1 : -1);
+      });
+
+      const totalDownloads = gamesData.reduce((sum, g) => sum + (g.downloadsWeb || 0) + (g.downloadsApp || 0), 0);
+
+      tbody.innerHTML = sortedGames.map((game, index) => {
+        const total = (game.downloadsWeb || 0) + (game.downloadsApp || 0);
+        const percentage = totalDownloads > 0 ? ((total / totalDownloads) * 100).toFixed(1) : 0;
+        const rank = index + 1;
+        let rankStyle = '';
+        if (rank === 1) rankStyle = 'color: #FFD700; font-weight: bold;';
+        else if (rank === 2) rankStyle = 'color: #C0C0C0; font-weight: bold;';
+        else if (rank === 3) rankStyle = 'color: #CD7F32; font-weight: bold;';
+
+        return `
+          <tr>
+            <td style="text-align: center; ${rankStyle}">${rank}</td>
+            <td>
+              <div style="font-weight: 500;">${game.name || '鏈懡鍚?}</div>
+              ${game.nameEn ? `<div style="font-size: 11px; color: var(--text-secondary);">${game.nameEn}</div>` : ''}
+            </td>
+            <td style="text-align: center; font-weight: bold; color: var(--accent-blue);">${total}</td>
+            <td style="text-align: center; color: var(--text-secondary);">${game.downloadsWeb || 0}</td>
+            <td style="text-align: center; color: var(--text-secondary);">${game.downloadsApp || 0}</td>
+            <td style="text-align: center;">
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <div style="flex: 1; height: 6px; background: var(--bg-tertiary); border-radius: 3px; overflow: hidden;">
+                  <div style="width: ${percentage}%; height: 100%; background: linear-gradient(90deg, var(--accent-blue), var(--accent-green)); border-radius: 3px;"></div>
+                </div>
+                <span style="font-size: 11px; color: var(--text-secondary); min-width: 35px;">${percentage}%</span>
+              </div>
+            </td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    function sortDownloadStats(field) {
+      if (currentDownloadSort.field === field) {
+        currentDownloadSort.order = currentDownloadSort.order === 'desc' ? 'asc' : 'desc';
+      } else {
+        currentDownloadSort.field = field;
+        currentDownloadSort.order = 'desc';
+      }
+      renderDownloadStatsTable();
+    }
+
+    function exportDownloadStats() {
+      const sortedGames = [...gamesData].sort((a, b) => ((b.downloadsWeb || 0) + (b.downloadsApp || 0)) - ((a.downloadsWeb || 0) + (a.downloadsApp || 0)));
+      const totalDownloads = gamesData.reduce((sum, g) => sum + (g.downloadsWeb || 0) + (g.downloadsApp || 0), 0);
+      
+      let csv = '鎺掑悕,娓告垙鍚嶇О,鑻辨枃鍚?鎬讳笅杞芥鏁?缃戦〉鐗堜笅杞?瀹㈡埛绔笅杞?鍗犳瘮\n';
+      sortedGames.forEach((game, index) => {
+        const total = (game.downloadsWeb || 0) + (game.downloadsApp || 0);
+        const percentage = totalDownloads > 0 ? ((total / totalDownloads) * 100).toFixed(2) + '%' : '0%';
+        csv += `${index + 1},"${game.name || ''}","${game.nameEn || ''}",${total},${game.downloadsWeb || 0},${game.downloadsApp || 0},${percentage}\n`;
+      });
+
+      const blob = new Blob(['\ufeff' + csv], { type: 'text/csv;charset=utf-8;' });
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = `娓告垙涓嬭浇缁熻_${new Date().toLocaleDateString()}.csv`;
+      link.click();
+      showToast('缁熻鎶ヨ〃宸插鍑?, 'success');
+    }
+
+    // ==================== 鎵归噺淇敼灏侀潰 ====================
+    function batchEditCover() {
+      const filter = document.getElementById('categoryFilter').value;
+      const search = document.getElementById('searchInput').value.toLowerCase();
+      batchCoverFilteredGames = gamesData.filter(g => {
+        const matchSearch = !search || (g.name && g.name.toLowerCase().includes(search));
+        const matchCategory = !filter || g.category === filter || (filter === 'drm' && g.isDrm);
+        return matchSearch && matchCategory;
+      });
+      
+      batchCoverPage = 1;
+      renderBatchCoverPage();
+      openModal('batchCoverModal');
+    }
+
+    function renderBatchCoverPage() {
+      const grid = document.getElementById('batchCoverGrid');
+      const totalPages = Math.ceil(batchCoverFilteredGames.length / CONFIG.batchCoverPageSize);
+      const start = (batchCoverPage - 1) * CONFIG.batchCoverPageSize;
+      const pageData = batchCoverFilteredGames.slice(start, start + CONFIG.batchCoverPageSize);
+
+      grid.innerHTML = pageData.map(game => {
+        const hasCover = !!game.cover;
+        return `
+          <div class="batch-cover-item">
+            <div style="width: 140px; min-width: 140px;">
+              <div class="game-name" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="${game.name}">${game.name}</div>
+              <div style="font-size: 10px; color: var(--text-secondary); margin-top: 2px;">ID: ${game.id}</div>
+            </div>
+            <div style="width: 60px; height: 34px; background: var(--input-bg); border-radius: 4px; display: flex; align-items: center; justify-content: center; overflow: hidden; border: 1px solid var(--border-color);">
+              ${hasCover ? `<img src="${game.cover}" style="width: 100%; height: 100%; object-fit: cover;">` : '<span style="font-size: 9px; color: var(--text-secondary);">鏃犲皝闈?/span>'}
+            </div>
+            <div class="paste-area ${hasCover ? 'has-image' : ''}" data-game-id="${game.id}" tabindex="0" onclick="this.focus()">
+              ${hasCover ? 
+                `<img src="${game.cover}"><button onclick="event.stopPropagation(); removeBatchCover('${game.id}')" style="position: absolute; bottom: 2px; right: 2px; background: var(--accent-red); color: #fff; border: none; padding: 2px 6px; border-radius: 3px; font-size: 10px;"><i class="fas fa-trash"></i></button>` : 
+                '<div style="display: flex; align-items: center; gap: 4px; font-size: 11px;"><i class="fas fa-paste"></i><span>鐐瑰嚮鍚庢寜 Ctrl+V</span></div>'
+              }
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      // 鍒嗛〉
+      const pagination = document.getElementById('batchCoverPagination');
+      if (totalPages > 1) {
+        pagination.innerHTML = `
+          <button class="btn btn-sm" onclick="changeBatchCoverPage(${batchCoverPage - 1})" ${batchCoverPage === 1 ? 'disabled' : ''}><i class="fas fa-chevron-left"></i></button>
+          <span style="color: var(--text-secondary);">${batchCoverPage} / ${totalPages}</span>
+          <button class="btn btn-sm" onclick="changeBatchCoverPage(${batchCoverPage + 1})" ${batchCoverPage === totalPages ? 'disabled' : ''}><i class="fas fa-chevron-right"></i></button>
+        `;
+      } else {
+        pagination.innerHTML = '';
+      }
+    }
+
+    function changeBatchCoverPage(page) {
+      const totalPages = Math.ceil(batchCoverFilteredGames.length / CONFIG.batchCoverPageSize);
+      if (page < 1 || page > totalPages) return;
+      batchCoverPage = page;
+      renderBatchCoverPage();
+    }
+
+    function removeBatchCover(gameId) {
+      const game = gamesData.find(g => String(g.id) === String(gameId));
+      if (game) {
+        game.cover = '';
+        saveData();
+        renderBatchCoverPage();
+        renderGamesTable();
+      }
+    }
+
+    async function saveBatchCovers() {
+      saveData();
+      closeModal('batchCoverModal');
+      renderGamesTable();
+      showToast('灏侀潰淇敼宸蹭繚瀛樺埌鏈湴', 'success');
+      
+      // 璇㈤棶鏄惁鍚屾鍒颁簯绔?      if (confirm('鏄惁灏嗕慨鏀瑰悓姝ュ埌浜戠锛?)) {
+        await syncToCloud();
+      }
+    }
+
+    // ==================== 鍒嗙被绠＄悊 ====================
+    function manageCategories() {
+      const container = document.getElementById('categoryManager');
+      container.innerHTML = categories.map((cat, index) => `
+        <div class="category-item">
+          <i class="fas ${cat.icon || 'fa-folder'}"></i>
+          <input type="text" value="${cat.name}" data-index="${index}" data-id="${cat.id}">
+          ${!cat.special ? `<button class="action-btn delete" onclick="deleteCategory(${index})" title="鍒犻櫎"><i class="fas fa-trash"></i></button>` : ''}
+        </div>
+      `).join('');
+      openModal('categoryModal');
+    }
+
+    function addCategory() {
+      const newId = 'cat_' + Date.now();
+      categories.push({ id: newId, name: '鏂板垎绫?, icon: 'fa-folder' });
+      manageCategories();
+    }
+
+    function deleteCategory(index) {
+      if (!confirm('纭畾瑕佸垹闄よ繖涓垎绫诲悧锛熻鍒嗙被涓嬬殑娓告垙灏嗗彉涓烘湭鍒嗙被銆?)) return;
+      categories.splice(index, 1);
+      manageCategories();
+    }
+
+    function saveCategories() {
+      const inputs = document.querySelectorAll('#categoryManager input');
+      inputs.forEach(input => {
+        const index = parseInt(input.dataset.index);
+        categories[index].name = input.value;
+        categories[index].id = input.value;
+      });
+      initCategorySelects();
+      saveData();
+      closeModal('categoryModal');
+      renderGamesTable();
+      showToast('鍒嗙被淇濆瓨鎴愬姛', 'success');
+    }
+
+    // ==================== 鎵归噺淇敼鍒嗙被 ====================
+    function batchEditCategory() {
+      const filterSelect = document.getElementById('batchCategoryFilter');
+      filterSelect.innerHTML = '<option value="">鍏ㄩ儴娓告垙</option>' + categories.filter(c => !c.special).map(c => `<option value="${c.id}">${c.name}</option>`).join('');
+      
+      batchCategorySelectedGames.clear();
+      renderBatchCategoryList();
+      openModal('batchCategoryModal');
+    }
+
+    function renderBatchCategoryList() {
+      const filter = document.getElementById('batchCategoryFilter').value;
+      const container = document.getElementById('batchCategoryList');
+      
+      let filtered = gamesData;
+      if (filter) filtered = filtered.filter(g => g.category === filter);
+      
+      container.innerHTML = filtered.map(game => {
+        const isSelected = batchCategorySelectedGames.has(String(game.id));
+        const currentCategory = categories.find(c => c.id === game.category);
+        return `
+          <div style="display: flex; align-items: center; gap: 12px; padding: 10px; background: var(--input-bg); border-radius: 6px; border: 2px solid ${isSelected ? 'var(--accent-blue)' : 'transparent'}; cursor: pointer; margin-bottom: 8px;" onclick="toggleBatchCategorySelect('${game.id}')">
+            <div class="checkbox ${isSelected ? 'checked' : ''}"></div>
+            <div style="flex: 1;">
+              <div style="font-weight: 500;">${game.name}</div>
+              <div style="font-size: 11px; color: var(--text-secondary);">褰撳墠: ${currentCategory?.name || '鏈垎绫?}</div>
+            </div>
+          </div>
+        `;
+      }).join('');
+      
+      document.getElementById('batchCategorySelectedCount').textContent = batchCategorySelectedGames.size;
+    }
+
+    function toggleBatchCategorySelect(gameId) {
+      if (batchCategorySelectedGames.has(gameId)) batchCategorySelectedGames.delete(gameId);
+      else batchCategorySelectedGames.add(gameId);
+      renderBatchCategoryList();
+    }
+
+    function confirmBatchCategoryChange() {
+      const targetCategory = document.getElementById('batchTargetCategory').value;
+      if (!targetCategory) {
+        showToast('璇烽€夋嫨鐩爣鍒嗙被', 'error');
+        return;
+      }
+      if (batchCategorySelectedGames.size === 0) {
+        showToast('璇峰厛閫夋嫨瑕佷慨鏀圭殑娓告垙', 'error');
+        return;
+      }
+
+      batchCategorySelectedGames.forEach(id => {
+        const game = gamesData.find(g => String(g.id) === String(id));
+        if (game) {
+          game.category = targetCategory;
+          game.updateTime = Date.now();
+        }
+      });
+
+      saveData();
+      closeModal('batchCategoryModal');
+      renderGamesTable();
+      showToast(`鎴愬姛淇敼 ${batchCategorySelectedGames.size} 涓父鎴忕殑鍒嗙被`, 'success');
+      batchCategorySelectedGames.clear();
+    }
+
+    // ==================== 鎵归噺D鍔犲瘑 ====================
+    function batchEditDrm() {
+      batchDrmSelectedGames.clear();
+      renderBatchDrmList();
+      openModal('batchDrmModal');
+    }
+
+    function renderBatchDrmList() {
+      const container = document.getElementById('batchDrmList');
+      const filter = document.getElementById('categoryFilter').value;
+      const search = document.getElementById('searchInput').value.toLowerCase();
+      
+      let displayGames = gamesData;
+      if (filter) displayGames = displayGames.filter(g => g.category === filter);
+      if (search) displayGames = displayGames.filter(g => (g.name || '').toLowerCase().includes(search));
+
+      container.innerHTML = displayGames.map(game => {
+        const isSelected = batchDrmSelectedGames.has(String(game.id));
+        const isDrm = game.isDrm || false;
+        return `
+          <div style="display: flex; align-items: center; gap: 12px; padding: 10px; background: var(--input-bg); border-radius: 6px; border: 2px solid ${isSelected ? 'var(--accent-blue)' : 'transparent'}; cursor: pointer; margin-bottom: 8px;" onclick="toggleBatchDrmSelect('${game.id}')">
+            <div class="checkbox ${isSelected ? 'checked' : ''}"></div>
+            <div style="flex: 1;">
+              <div style="font-weight: 500;">${game.name}</div>
+            </div>
+            ${isDrm ? '<span style="background: var(--accent-red); color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 10px;">D鍔犲瘑</span>' : ''}
+          </div>
+        `;
+      }).join('');
+
+      document.getElementById('batchDrmSelectedCount').textContent = batchDrmSelectedGames.size;
+    }
+
+    function toggleBatchDrmSelect(gameId) {
+      if (batchDrmSelectedGames.has(gameId)) batchDrmSelectedGames.delete(gameId);
+      else batchDrmSelectedGames.add(gameId);
+      renderBatchDrmList();
+    }
+
+    function toggleBatchDrmSelectAll() {
+      const isChecked = document.getElementById('batchDrmSelectAll').checked;
+      const filter = document.getElementById('categoryFilter').value;
+      const search = document.getElementById('searchInput').value.toLowerCase();
+      
+      let displayGames = gamesData;
+      if (filter) displayGames = displayGames.filter(g => g.category === filter);
+      if (search) displayGames = displayGames.filter(g => (g.name || '').toLowerCase().includes(search));
+
+      if (isChecked) displayGames.forEach(g => batchDrmSelectedGames.add(String(g.id)));
+      else displayGames.forEach(g => batchDrmSelectedGames.delete(String(g.id)));
+      
+      renderBatchDrmList();
+    }
+
+    function batchSetDrm() {
+      if (batchDrmSelectedGames.size === 0) {
+        showToast('璇峰厛閫夋嫨瑕佽缃殑娓告垙', 'error');
+        return;
+      }
+      batchDrmSelectedGames.forEach(id => {
+        const game = gamesData.find(g => String(g.id) === String(id));
+        if (game) game.isDrm = true;
+      });
+      saveData();
+      renderBatchDrmList();
+      renderGamesTable();
+      showToast(`鎴愬姛璁剧疆 ${batchDrmSelectedGames.size} 涓父鎴忎负D鍔犲瘑`, 'success');
+    }
+
+    function batchUnsetDrm() {
+      if (batchDrmSelectedGames.size === 0) {
+        showToast('璇峰厛閫夋嫨瑕佸彇娑堢殑娓告垙', 'error');
+        return;
+      }
+      batchDrmSelectedGames.forEach(id => {
+        const game = gamesData.find(g => String(g.id) === String(id));
+        if (game) game.isDrm = false;
+      });
+      saveData();
+      renderBatchDrmList();
+      renderGamesTable();
+      showToast(`鎴愬姛鍙栨秷 ${batchDrmSelectedGames.size} 涓父鎴忕殑D鍔犲瘑`, 'success');
+    }
+
+    // ==================== 鑱旂郴鏂瑰紡绠＄悊 ====================
+    function manageContact() {
+      document.getElementById('contactTitle').value = contactData.title;
+      const container = document.getElementById('contactList');
+      
+      container.innerHTML = contactData.items.map((item, index) => `
+        <div class="contact-item">
+          <select class="form-control" data-index="${index}" style="width: 100px;">
+            <option value="qq" ${item.type === 'qq' ? 'selected' : ''}>QQ</option>
+            <option value="email" ${item.type === 'email' ? 'selected' : ''}>閭</option>
+            <option value="wechat" ${item.type === 'wechat' ? 'selected' : ''}>寰俊</option>
+            <option value="phone" ${item.type === 'phone' ? 'selected' : ''}>鐢佃瘽</option>
+          </select>
+          <input type="text" class="form-control" placeholder="鏍囩" value="${item.label}" data-index="${index}" style="flex: 1;">
+          <input type="text" class="form-control" placeholder="鍊? value="${item.value}" data-index="${index}" style="flex: 1;">
+          <button class="action-btn delete" onclick="deleteContact(${index})"><i class="fas fa-trash"></i></button>
+        </div>
+      `).join('');
+      
+      openModal('contactModal');
+    }
+
+    function addContact() {
+      contactData.items.push({ type: 'qq', label: '', value: '' });
+      manageContact();
+    }
+
+    function deleteContact(index) {
+      contactData.items.splice(index, 1);
+      manageContact();
+    }
+
+    function saveContact() {
+      const selects = document.querySelectorAll('#contactList select');
+      const inputs = document.querySelectorAll('#contactList input');
+      
+      contactData.title = document.getElementById('contactTitle').value;
+      contactData.items = [];
+      
+      for (let i = 0; i < selects.length; i++) {
+        contactData.items.push({
+          type: selects[i].value,
+          label: inputs[i * 2].value,
+          value: inputs[i * 2 + 1].value
+        });
+      }
+      
+      saveData();
+      closeModal('contactModal');
+      showToast('鑱旂郴鏂瑰紡宸蹭繚瀛?, 'success');
+    }
+
+    // ==================== 鐢ㄦ埛鍙嶉 ====================
+    function switchFeedbackView(view) {
+      feedbackView = view;
+      localStorage.setItem('gamebox_feedback_view', view);
+      renderFeedbackList();
+    }
+
+    function viewFeedbacks() {
+      // 娣诲姞瑙嗗浘鍒囨崲鎸夐挳鍒板脊绐梙eader
+      const header = document.querySelector('#feedbackModal .modal-header');
+      if (header && !header.querySelector('.feedback-view-switcher')) {
+        const switcher = document.createElement('div');
+        switcher.className = 'feedback-view-switcher';
+        switcher.style.cssText = 'display: flex; gap: 8px; margin-left: auto; margin-right: 40px;';
+        switcher.innerHTML = `
+          <button class="btn btn-sm ${feedbackView === 'grid' ? 'btn-primary' : ''}" onclick="switchFeedbackView('grid')" title="涔濆鏍?>
+            <i class="fas fa-th"></i>
+          </button>
+          <button class="btn btn-sm ${feedbackView === 'list' ? 'btn-primary' : ''}" onclick="switchFeedbackView('list')" title="鍒楄〃">
+            <i class="fas fa-list"></i>
+          </button>
+        `;
+        header.appendChild(switcher);
+      }
+      renderFeedbackList();
+      openModal('feedbackModal');
+    }
+
+    function renderFeedbackList() {
+      if (feedbackView === 'grid') {
+        renderFeedbackGrid();
+      } else {
+        renderFeedbackListView();
+      }
+    }
+
+    function renderFeedbackGrid() {
+      const list = document.getElementById('feedbackList');
+      if (feedbackData.length === 0) {
+        list.innerHTML = '<div style="text-align: center; padding: 40px; color: var(--text-secondary);"><i class="fas fa-inbox" style="font-size: 48px; margin-bottom: 16px; display: block; opacity: 0.5;"></i>鏆傛棤鍙嶉</div>';
+        return;
+      }
+
+      list.innerHTML = '<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px;">' + feedbackData.map(f => {
+        const typeColors = { bug: '#e74c3c', feature: '#3498db', complaint: '#f39c12', other: '#95a5a6', game: '#27ae60', link: '#f39c12' };
+        const typeNames = { bug: 'Bug', feature: '寤鸿', complaint: '鎶曡瘔', other: '鍏朵粬', game: '娓告垙澧炶ˉ', link: '閾炬帴澶辨晥' };
+        const dateStr = f.createdAt || f.time;
+        const dateDisplay = dateStr ? new Date(dateStr).toLocaleString() : '鏈煡鏃堕棿';
+        return `
+          <div class="feedback-item" style="margin-bottom: 0;">
+            <div class="header">
+              <span class="type" style="background: ${typeColors[f.type] || typeColors.other};">${typeNames[f.type] || typeNames.other}</span>
+              <span class="time">${dateDisplay}</span>
+            </div>
+            <div style="color: var(--text-primary); margin: 8px 0; font-size: 13px; line-height: 1.5; max-height: 60px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">${f.content}</div>
+            <div style="color: var(--text-secondary); font-size: 11px;"><i class="fas fa-user"></i> ${f.contact || '鍖垮悕'}</div>
+          </div>
+        `;
+      }).join('') + '</div>';
+
+      document.getElementById('pendingCount').textContent = feedbackData.length;
+    }
+
+    function renderFeedbackListView() {
+      const list = document.getElementById('feedbackList');
+      if (feedbackData.length === 0) {
+        list.innerHTML = '<div style="text-align: center; padding: 40px; color: var(--text-secondary);"><i class="fas fa-inbox" style="font-size: 48px; margin-bottom: 16px; display: block; opacity: 0.5;"></i>鏆傛棤鍙嶉</div>';
+        return;
+      }
+
+      list.innerHTML = feedbackData.map(f => {
+        const typeColors = { bug: '#e74c3c', feature: '#3498db', complaint: '#f39c12', other: '#95a5a6', game: '#27ae60', link: '#f39c12' };
+        const typeNames = { bug: 'Bug', feature: '寤鸿', complaint: '鎶曡瘔', other: '鍏朵粬', game: '娓告垙澧炶ˉ', link: '閾炬帴澶辨晥' };
+        const dateStr = f.createdAt || f.time;
+        const dateDisplay = dateStr ? new Date(dateStr).toLocaleString() : '鏈煡鏃堕棿';
+        return `
+          <div class="feedback-item">
+            <div class="header">
+              <span class="type" style="background: ${typeColors[f.type] || typeColors.other};">${typeNames[f.type] || typeNames.other}</span>
+              <span class="time">${dateDisplay}</span>
+            </div>
+            <div style="color: var(--text-primary); margin-bottom: 8px;">${f.content}</div>
+            <div style="color: var(--text-secondary); font-size: 12px;"><i class="fas fa-user"></i> ${f.contact || '鍖垮悕'}</div>
+          </div>
+        `;
+      }).join('');
+
+      document.getElementById('pendingCount').textContent = feedbackData.length;
+    }
+
+    function switchFeedbackTab(tab) {
+      document.getElementById('tabPending').style.borderBottomColor = tab === 'pending' ? 'var(--accent-blue)' : 'transparent';
+      document.getElementById('tabPending').style.color = tab === 'pending' ? 'var(--text-white)' : 'var(--text-secondary)';
+      document.getElementById('tabProcessed').style.borderBottomColor = tab === 'processed' ? 'var(--accent-blue)' : 'transparent';
+      document.getElementById('tabProcessed').style.color = tab === 'processed' ? 'var(--text-white)' : 'var(--text-secondary)';
+    }
+
+    function refreshFeedbacks() {
+      renderFeedbackList();
+      showToast('鍙嶉鍒楄〃宸插埛鏂?, 'success');
+    }
+
+    // ==================== 瀵煎叆瀵煎嚭 ====================
+    // Excel 鍒楀悕鍒版父鎴忓瓧娈电殑鏄犲皠
+    const EXCEL_FIELD_MAP = {
+      'id': ['id', 'ID', '缂栧彿'],
+      'name': ['name', '娓告垙鍚嶇О', '鍚嶇О', '涓枃鍚?, '娓告垙鍚?],
+      'nameEn': ['nameEn', '鑻辨枃鍚?, '鑻辨枃鍚嶇О', 'englishname'],
+      'category': ['category', '鍒嗙被', '绫诲埆', '绫诲瀷'],
+      'size': ['size', '澶у皬', '瀹归噺', '娓告垙澶у皬'],
+      'desc': ['desc', '鎻忚堪', '绠€浠?, '娓告垙鎻忚堪', '浠嬬粛'],
+      'baiduLink1': ['baiduLink1', '鐧惧害閾炬帴1', '鐧惧害缃戠洏1', '鐧惧害1'],
+      'baiduLink2': ['baiduLink2', '鐧惧害閾炬帴2', '鐧惧害缃戠洏2', '鐧惧害2'],
+      'thunderLink': ['thunderLink', '杩呴浄閾炬帴', '杩呴浄浜戠洏', '杩呴浄'],
+      'cover': ['cover', '灏侀潰', '灏侀潰鍥?, '鍥剧墖'],
+      'isDrm': ['isDrm', 'D鍔犲瘑', 'DRM', '鍔犲瘑']
+    };
+
+    // 浠?Excel 琛ㄥご璇嗗埆瀛楁
+    function mapExcelHeaders(headers) {
+      const mapping = {};
+      const lowerHeaders = headers.map(h => String(h).toLowerCase().trim());
+      
+      for (const [field, possibleNames] of Object.entries(EXCEL_FIELD_MAP)) {
+        for (const name of possibleNames) {
+          const index = lowerHeaders.indexOf(name.toLowerCase());
+          if (index !== -1) {
+            mapping[field] = index;
+            break;
+          }
+        }
+      }
+      
+      return mapping;
+    }
+
+    // 瑙ｆ瀽 Excel 鏂囦欢
+    function parseExcelFile(file, callback) {
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        try {
+          const data = new Uint8Array(e.target.result);
+          const workbook = XLSX.read(data, { type: 'array' });
+          
+          // 璇诲彇绗竴涓伐浣滆〃
+          const firstSheetName = workbook.SheetNames[0];
+          const worksheet = workbook.Sheets[firstSheetName];
+          
+          // 杞崲涓?JSON
+          const jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
+          
+          if (jsonData.length < 2) {
+            callback(new Error('Excel 鏂囦欢鑷冲皯闇€瑕佸寘鍚〃澶村拰涓€琛屾暟鎹?), null);
+            return;
+          }
+          
+          // 绗竴琛屼綔涓鸿〃澶?          const headers = jsonData[0];
+          const fieldMapping = mapExcelHeaders(headers);
+          
+          // 妫€鏌ュ繀瑕佺殑瀛楁
+          if (!fieldMapping.name && !fieldMapping.nameEn) {
+            callback(new Error('Excel 鏂囦欢缂哄皯"娓告垙鍚嶇О"鍒楋紝璇锋鏌ヨ〃澶?), null);
+            return;
+          }
+          
+          // 瑙ｆ瀽鏁版嵁琛?          const games = [];
+          for (let i = 1; i < jsonData.length; i++) {
+            const row = jsonData[i];
+            if (!row || row.length === 0) continue;
+            
+            // 濡傛灉娌℃湁鍚嶇О鍒欒烦杩?            const name = fieldMapping.name !== undefined ? row[fieldMapping.name] : '';
+            if (!name || String(name).trim() === '') continue;
+            
+            const game = {
+              id: fieldMapping.id !== undefined ? (row[fieldMapping.id] || Date.now() + i) : Date.now() + i,
+              name: String(name).trim(),
+              nameEn: fieldMapping.nameEn !== undefined ? String(row[fieldMapping.nameEn] || '').trim() : '',
+              category: fieldMapping.category !== undefined ? String(row[fieldMapping.category] || '').trim() : '',
+              size: fieldMapping.size !== undefined ? String(row[fieldMapping.size] || '').trim() : '',
+              desc: fieldMapping.desc !== undefined ? String(row[fieldMapping.desc] || '').trim() : '',
+              baiduLink1: fieldMapping.baiduLink1 !== undefined ? String(row[fieldMapping.baiduLink1] || '').trim() : '',
+              baiduLink2: fieldMapping.baiduLink2 !== undefined ? String(row[fieldMapping.baiduLink2] || '').trim() : '',
+              thunderLink: fieldMapping.thunderLink !== undefined ? String(row[fieldMapping.thunderLink] || '').trim() : '',
+              cover: fieldMapping.cover !== undefined ? String(row[fieldMapping.cover] || '').trim() : null,
+              isDrm: fieldMapping.isDrm !== undefined ? (row[fieldMapping.isDrm] === true || row[fieldMapping.isDrm] === '鏄? || row[fieldMapping.isDrm] === 'yes' || row[fieldMapping.isDrm] === '1') : false,
+              downloadsWeb: 0,
+              downloadsApp: 0,
+              updateTime: Date.now()
+            };
+            
+            games.push(game);
+          }
+          
+          callback(null, games);
+        } catch (err) {
+          callback(err, null);
+        }
+      };
+      reader.readAsArrayBuffer(file);
+    }
+
+    function handleFileUpload(file) {
+      // 妫€鏌ユ枃浠剁被鍨?      const validExtensions = ['.xlsx', '.xls'];
+      const fileExtension = file.name.substring(file.name.lastIndexOf('.')).toLowerCase();
+      if (!validExtensions.includes(fileExtension)) {
+        showToast('璇烽€夋嫨 Excel 鏂囦欢 (.xlsx 鎴?.xls)', 'error');
+        return;
+      }
+
+      showToast('姝ｅ湪瑙ｆ瀽 Excel 鏂囦欢...', 'success');
+
+      parseExcelFile(file, (err, importedData) => {
+        if (err) {
+          showToast('Excel 瑙ｆ瀽澶辫触锛? + err.message, 'error');
+          return;
+        }
+
+        if (!importedData || importedData.length === 0) {
+          showToast('Excel 鏂囦欢涓病鏈夋壘鍒版湁鏁堢殑娓告垙鏁版嵁', 'error');
+          return;
+        }
+
+        let added = 0, updated = 0;
+
+        // 鑷姩璇嗗埆妯″紡锛氭寜娓告垙鍚嶇О鍖归厤
+        // - 鍚嶇О涓嶅瓨鍦?鈫?鏂板
+        // - 鍚嶇О瀛樺湪 鈫?鏇存柊锛堜繚鐣欎笅杞芥鏁帮級
+        importedData.forEach(newGame => {
+          const existingIndex = gamesData.findIndex(g =>
+            g.name && newGame.name &&
+            g.name.toLowerCase() === newGame.name.toLowerCase()
+          );
+
+          if (existingIndex >= 0) {
+            // 鏇存柊鐜版湁娓告垙锛屼繚鐣欎笅杞芥鏁板拰ID
+            gamesData[existingIndex] = {
+              ...newGame,
+              id: gamesData[existingIndex].id, // 淇濈暀鍘熸湁ID
+              downloadsWeb: gamesData[existingIndex].downloadsWeb || 0,
+              downloadsApp: gamesData[existingIndex].downloadsApp || 0,
+              updateTime: Date.now()
+            };
+            updated++;
+          } else {
+            // 娣诲姞鏂版父鎴?            gamesData.push(newGame);
+            added++;
+          }
+        });
+
+        saveData();
+        renderGamesTable();
+        updateStats();
+        showToast(`瀵煎叆瀹屾垚锛氭柊澧?${added} 涓紝鏇存柊 ${updated} 涓猔, 'success');
+      });
+    }
+
+    function exportToJSON() {
+      const dataStr = JSON.stringify(gamesData, null, 2);
+      const blob = new Blob([dataStr], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `games-${new Date().toISOString().split('T')[0]}.json`;
+      a.click();
+      URL.revokeObjectURL(url);
+      showToast('JSON 宸插鍑?, 'success');
+    }
+
+    function exportToExcel() {
+      if (gamesData.length === 0) {
+        showToast('娌℃湁鍙鍑虹殑鏁版嵁', 'error');
+        return;
+      }
+
+      // 鍑嗗鏁版嵁
+      const exportData = gamesData.map(game => ({
+        'ID': game.id,
+        '娓告垙鍚嶇О': game.name || '',
+        '鑻辨枃鍚?: game.nameEn || '',
+        '鍒嗙被': game.category || '',
+        '澶у皬': game.size || '',
+        '鎻忚堪': game.desc || '',
+        '鐧惧害閾炬帴1': game.baiduLink1 || '',
+        '鐧惧害閾炬帴2': game.baiduLink2 || '',
+        '杩呴浄閾炬帴': game.thunderLink || '',
+        '灏侀潰': game.cover || '',
+        'D鍔犲瘑': game.isDrm ? '鏄? : '鍚?,
+        '缃戦〉涓嬭浇': game.downloadsWeb || 0,
+        '瀹㈡埛绔笅杞?: game.downloadsApp || 0
+      }));
+
+      // 鍒涘缓宸ヤ綔绨?      const ws = XLSX.utils.json_to_sheet(exportData);
+      const wb = XLSX.utils.book_new();
+      XLSX.utils.book_append_sheet(wb, ws, '娓告垙鏁版嵁');
+
+      // 瀵煎嚭鏂囦欢
+      XLSX.writeFile(wb, `娓告垙鏁版嵁_${new Date().toISOString().split('T')[0]}.xlsx`);
+      showToast(`宸插鍑?${exportData.length} 涓父鎴忓埌 Excel`, 'success');
+    }
+
+    function exportToDataEmbed() {
+      const jsContent = `// 娓告垙鏁版嵁 - 鐢卞悗鍙扮鐞嗙郴缁熷鍑篭nconst importedGames = ${JSON.stringify(gamesData, null, 2)};`;
+      const blob = new Blob([jsContent], { type: 'application/javascript' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'data-embed.js';
+      a.click();
+      URL.revokeObjectURL(url);
+      showToast('data-embed.js 宸插鍑?, 'success');
+    }
+
+    function clearAllData() {
+      if (!confirm('纭畾瑕佹竻绌烘墍鏈夋父鎴忔暟鎹悧锛熸鎿嶄綔涓嶅彲鎭㈠锛?)) return;
+      gamesData = [];
+      selectedGames.clear();
+      saveData();
+      renderGamesTable();
+      updateStats();
+      showToast('鏁版嵁宸叉竻绌?, 'success');
+    }
+
+    function reloadFromSource() {
+      if (!confirm('纭畾瑕佷粠鏁版嵁婧愰噸鏂板姞杞藉悧锛熻繖浼氳鐩栧綋鍓?localStorage 涓殑鏁版嵁锛?)) return;
+      
+      if (typeof importedGames === 'undefined' || importedGames.length === 0) {
+        showToast('鏈壘鍒版暟鎹簮 (data-embed.js)', 'error');
+        return;
+      }
+      
+      // 娓呯┖鎵€鏈夌浉鍏虫暟鎹?      localStorage.removeItem(CONFIG.storageKey);
+      localStorage.removeItem(CONFIG.categoriesKey);
+      
+      // 閲嶆柊鍒濆鍖栧垎绫伙紙浣跨敤榛樿鍒嗙被锛?      categories = [...DEFAULT_CATEGORIES];
+      
+      // 閲嶆柊鍔犺浇鏁版嵁
+      gamesData = importedGames.map(game => {
+        // 灏嗕腑鏂囧垎绫诲悕杞崲涓鸿嫳鏂?id
+        let categoryId = game.category || '';
+        const categoryMapping = {
+          '鍔ㄤ綔': 'action',
+          '鍐掗櫓': 'adventure',
+          '绛栫暐': 'strategy',
+          '灏勫嚮': 'shooter',
+          '瑙掕壊鎵紨': 'rpg',
+          '妯℃嫙缁忚惀': 'simulation',
+          '浣撹偛绔炴妧': 'sports',
+          '璧涜溅': 'racing',
+          '鎭愭€栨儕鎮?: 'horror',
+          '鐩婃櫤瑙ｈ皽': 'puzzle',
+          '楠戦┈涓庣爫鏉€': 'mnb',
+          '鍏ㄩ潰鎴樹簤': 'tw',
+          '鍗虫椂鎴樼暐': 'rts',
+          '鏍兼枟': 'fighting',
+          '琛楁満鎬€鏃?: 'arcade'
+        };
+        if (categoryMapping[game.category]) {
+          categoryId = categoryMapping[game.category];
+        }
+        
+        return {
+          id: game.id,
+          name: game.name || game.title || '鏈懡鍚?,
+          nameEn: game.nameEn || '',
+          category: categoryId,
+          size: game.size || '',
+          desc: game.description || game.desc || '',
+          baiduLink1: game.baiduLink1 || '',
+          baiduLink2: game.baiduLink2 || '',
+          thunderLink: game.thunderLink || '',
+          cover: game.cover || '',
+          isDrm: game.isDrm || false,
+          downloadsWeb: game.downloadsWeb || 0,
+          downloadsApp: game.downloadsApp || 0,
+          updateTime: Date.now()
+        };
+      });
+      
+      // 淇濆瓨鍒?localStorage
+      saveData();
+      
+      // 鍒濆鍖栧垎绫婚€夋嫨鍣?      initCategorySelects();
+      
+      // 閲嶆柊娓叉煋
+      renderGamesTable();
+      updateStats();
+      
+      // 鏄剧ず绗竴鏉℃暟鎹敤浜庤皟璇?      console.log('閲嶆柊鍔犺浇鍚庣殑鍒嗙被:', categories);
+      console.log('閲嶆柊鍔犺浇鍚庣殑绗竴鏉℃暟鎹?', gamesData[0]);
+      
+      showToast(`宸蹭粠鏁版嵁婧愰噸鏂板姞杞?${gamesData.length} 涓父鎴廯, 'success');
+    }
+
+    // ==================== 鎵归噺鍒犻櫎 ====================
+    function batchDelete() {
+      if (selectedGames.size === 0) return;
+      if (!confirm(`纭畾瑕佸垹闄ら€変腑鐨?${selectedGames.size} 涓父鎴忓悧锛焋)) return;
+      
+      gamesData = gamesData.filter(g => !selectedGames.has(String(g.id)));
+      selectedGames.clear();
+      saveData();
+      renderGamesTable();
+      updateStats();
+      showToast('鎵归噺鍒犻櫎瀹屾垚', 'success');
+    }
+
+    function batchMoveCategory() {
+      batchEditCategory();
+    }
+
+    // ==================== 宸ュ叿鍑芥暟 ====================
+    function openModal(id) {
+      document.getElementById(id).classList.add('show');
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).classList.remove('show');
+    }
+
+    function showToast(message, type = 'success') {
+      const toast = document.getElementById('toast');
+      document.getElementById('toastMessage').textContent = message;
+      toast.className = `toast ${type} show`;
+      toast.querySelector('i').className = type === 'success' ? 'fas fa-check-circle' : 'fas fa-exclamation-circle';
+      setTimeout(() => toast.classList.remove('show'), 3000);
+    }
+  </script>
+</body>
+</html>
