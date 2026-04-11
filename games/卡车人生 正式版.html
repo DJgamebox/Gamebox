@@ -480,7 +480,10 @@
         
         <div class="game-header">
             <div class="game-cover">
-                <img src="" alt="卡车人生 正式版" onerror="this.style.display='none'">
+                <img src="" alt="卡车人生 正式版" id="gameCoverImg" style="display:none;" onload="this.style.display='block';" onerror="this.style.display='none'; document.getElementById('gameCoverPlaceholder').style.display='flex';">
+                <div id="gameCoverPlaceholder" style="display:flex; width:100%; height:100%; align-items:center; justify-content:center; background:linear-gradient(135deg, #2d3748 0%, #1a202c 100%); color:#666; font-size:14px;">
+                    <i class="fas fa-image" style="font-size:48px; margin-bottom:10px;"></i><br>加载中...
+                </div>
             </div>
             <div class="game-info">
                 <h1 class="game-title">卡车人生 正式版</h1>
@@ -598,9 +601,112 @@
                 icon.className = 'fas fa-heart';
             }
             
+            
             // 检查登录状态
             checkLoginStatus();
+            
+            // 从 API 加载游戏数据
+            loadGameData();
         });
+        
+        // API 配置
+        const CONFIG = {
+            apiBaseUrl: 'https://api.djgamebox.com'
+        };
+
+        // 从 API 加载游戏数据
+        async function loadGameData() {
+            try {
+                const currentGame = document.querySelector('.game-title').textContent.trim();
+                console.log('[GameDetail] 当前页面游戏名称:', currentGame);
+                
+                const response = await fetch(`${CONFIG.apiBaseUrl}/api/games`);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+                console.log('[GameDetail] API 返回游戏数量:', data.games ? data.games.length : 0);
+                
+                if (data.games && data.games.length > 0) {
+                    // 查找当前游戏 - 优先精确匹配
+                    let game = data.games.find(g => g.cn === currentGame);
+                    
+                    // 如果没有精确匹配，尝试模糊匹配
+                    if (!game) {
+                        game = data.games.find(g => {
+                            const gameName = g.cn || g.name || '';
+                            return currentGame.includes(gameName) || gameName.includes(currentGame);
+                        });
+                    }
+                    
+                    if (game) {
+                        console.log('[GameDetail] 找到游戏:', game.cn, '封面:', game.cover);
+                        
+                        // 更新封面
+                        if (game.cover) {
+                            const coverImg = document.getElementById('gameCoverImg');
+                            const placeholder = document.getElementById('gameCoverPlaceholder');
+                            if (coverImg) {
+                                coverImg.src = game.cover;
+                                coverImg.style.display = 'block';
+                                if (placeholder) placeholder.style.display = 'none';
+                                console.log('[GameDetail] 封面已设置:', game.cover);
+                            }
+                        } else {
+                            console.log('[GameDetail] 游戏数据中没有封面字段');
+                            // 隐藏加载中，显示暂无封面
+                            const placeholder = document.getElementById('gameCoverPlaceholder');
+                            if (placeholder) placeholder.innerHTML = '<i class="fas fa-image" style="font-size:48px; margin-bottom:10px;"></i><br>暂无封面';
+                        }
+                        
+                        // 更新下载链接
+                        const downloadButtons = document.querySelector('.download-buttons');
+                        if (downloadButtons) {
+                            let buttonsHtml = '';
+                            
+                            if (game.link1) {
+                                buttonsHtml += `<a href="${game.link1}" target="_blank" class="download-btn baidu"><i class="fas fa-cloud"></i>百度网盘</a>`;
+                            }
+                            if (game.link2) {
+                                buttonsHtml += `<a href="${game.link2}" target="_blank" class="download-btn baidu"><i class="fas fa-cloud"></i>百度网盘2</a>`;
+                            }
+                            if (game.link3) {
+                                buttonsHtml += `<a href="${game.link3}" target="_blank" class="download-btn thunder"><i class="fas fa-bolt"></i>迅雷云盘</a>`;
+                            }
+                            
+                            if (buttonsHtml) {
+                                downloadButtons.innerHTML = buttonsHtml;
+                            }
+                        }
+                        
+                        // 更新游戏大小
+                        if (game.size) {
+                            const sizeValue = document.querySelector('.meta-item:nth-child(2) .meta-value');
+                            if (sizeValue) sizeValue.textContent = game.size;
+                        }
+                        
+                        // 更新时间 - 转换时间戳为日期格式
+                        if (game.updateTime) {
+                            const timeValue = document.querySelector('.meta-item:nth-child(3) .meta-value');
+                            if (timeValue) {
+                                const date = new Date(game.updateTime);
+                                timeValue.textContent = date.toLocaleDateString('zh-CN');
+                            }
+                        }
+                    } else {
+                        console.log('[GameDetail] 未找到匹配的游戏');
+                        // 显示暂无封面
+                        const placeholder = document.getElementById('gameCoverPlaceholder');
+                        if (placeholder) placeholder.innerHTML = '<i class="fas fa-image" style="font-size:48px; margin-bottom:10px;"></i><br>暂无封面';
+                    }
+                }
+            } catch (error) {
+                console.error('[GameDetail] 加载游戏数据失败:', error);
+                // 显示错误状态
+                const placeholder = document.getElementById('gameCoverPlaceholder');
+                if (placeholder) placeholder.innerHTML = '<i class="fas fa-exclamation-triangle" style="font-size:48px; margin-bottom:10px;"></i><br>加载失败';
+            }
+        }
         
         // 搜索功能
         function handleSearch(event) {

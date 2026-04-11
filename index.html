@@ -944,41 +944,45 @@
       opacity: 1;
     }
 
-    /* 卡片收藏按钮 */
-    .game-card .card-favorite-btn {
-      display: flex;
-      position: absolute;
-      top: 8px;
-      right: 8px;
-      width: 40px;
-      height: 40px;
-      align-items: center;
-      justify-content: center;
-      background: rgba(0, 0, 0, 0.5);
-      border: none;
-      border-radius: 50%;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      z-index: 100;
-    }
-
-    .card-favorite-btn:hover {
-      background: rgba(0, 0, 0, 0.7);
-      transform: scale(1.1);
-    }
-
-    .card-favorite-btn i {
-      font-size: 20px;
-      color: #8f98a0;
-      transition: all 0.2s ease;
-    }
-
-    .card-favorite-btn.active i {
-      color: #e74c3c;
-    }
-
     .card-info {
       padding: 16px;
+    }
+
+    /* 图片加载优化 */
+    .card-cover img {
+      background: linear-gradient(135deg, #1a2d3d 0%, #243447 100%);
+      animation: fadeIn 0.3s ease;
+      transition: opacity 0.3s ease;
+    }
+
+    .card-cover img.loading {
+      opacity: 0;
+    }
+
+    .card-cover img.loaded {
+      opacity: 1;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* 图片骨架屏占位 */
+    .card-cover .skeleton {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, #1a2d3d 25%, #243447 50%, #1a2d3d 75%);
+      background-size: 200% 100%;
+      animation: shimmer 1.5s infinite;
+    }
+
+    @keyframes shimmer {
+      0% { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
     }
 
     .card-title {
@@ -2582,6 +2586,39 @@
       return name.replace(/[:\\/\\*?"<>|\n\r+]/g, '_').trim();
     }
 
+    // 图片加载缓存和预加载管理
+    const imageCache = new Map();
+    const preloadedImages = new Set();
+    
+    // 预加载图片
+    function preloadImage(url) {
+      if (!url || preloadedImages.has(url)) return;
+      const img = new Image();
+      img.onload = () => {
+        imageCache.set(url, true);
+        preloadedImages.add(url);
+      };
+      img.onerror = () => {
+        imageCache.set(url, false);
+      };
+      img.src = url;
+    }
+    
+    // 预加载当前页和下一页的图片
+    function preloadVisibleImages(visibleGames) {
+      // 先加载当前页前8张图片（首屏优先）
+      visibleGames.slice(0, 8).forEach(game => {
+        if (game.cover) preloadImage(game.cover);
+      });
+      
+      // 延迟加载当前页剩余图片
+      setTimeout(() => {
+        visibleGames.slice(8).forEach(game => {
+          if (game.cover) preloadImage(game.cover);
+        });
+      }, 500);
+    }
+
     function renderGames() {
       const grid = document.getElementById('gamesGrid');
       const startIndex = currentPage * CONFIG.itemsPerPage;
@@ -2593,20 +2630,32 @@
         return;
       }
       
-      grid.innerHTML = visibleGames.map(game => {
+      grid.innerHTML = visibleGames.map((game, index) => {
         const isFav = isFavorited(game.id);
         const gamePageUrl = `games/${getSafeFilename(game.name)}.html?page=${currentPage + 1}&filter=${currentFilter}`;
+        const isPriority = index < 8; // 前8张图片优先加载
+        
         return `
         <div class="game-card">
           <a href="${gamePageUrl}" class="card-link" style="text-decoration:none;color:inherit;">
             <div class="card-cover">
-              ${game.cover ? `<img src="${game.cover}" alt="${game.name}下载" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="no-cover" style="display:none;">暂无封面</div>` : '<div class="no-cover">暂无封面</div>'}
+              ${game.cover ? `
+                <div class="skeleton"></div>
+                <img 
+                  src="${game.cover}" 
+                  alt="${game.name}下载" 
+                  ${isPriority ? '' : 'loading="lazy"'} 
+                  decoding="async" 
+                  style="width:100%;height:100%;object-fit:cover;position:relative;z-index:1;" 
+                  class="loading"
+                  onload="this.classList.remove('loading'); this.classList.add('loaded'); this.previousElementSibling.style.display='none';"
+                  onerror="this.style.display='none'; this.previousElementSibling.style.display='none'; this.nextElementSibling.style.display='flex';"
+                >
+                <div class="no-cover" style="display:none;">暂无封面</div>
+              ` : '<div class="no-cover">暂无封面</div>'}
               <a href="${gamePageUrl}" class="card-download-btn" style="text-decoration:none;">下载游戏</a>
             </div>
           </a>
-          <button class="card-favorite-btn ${isFav ? 'active' : ''}" onclick="toggleFavoriteById('${game.id}')">
-            <i class="${isFav ? 'fas' : 'far'} fa-heart"></i>
-          </button>
           <div class="card-info">
             <a href="${gamePageUrl}" style="text-decoration:none;color:inherit;">
               <div class="card-title">${game.name || '未命名'}</div>
@@ -2616,6 +2665,9 @@
           </div>
         </div>
       `}).join('');
+      
+      // 预加载图片
+      preloadVisibleImages(visibleGames);
       
       // 渲染分页
       renderPagination();
@@ -3138,6 +3190,42 @@
 
     // 页面加载时检查搜索参数
     checkUrlSearchParam();
+
+    // 图片懒加载优化 - 使用 Intersection Observer
+    function initLazyLoading() {
+      if ('IntersectionObserver' in window) {
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const img = entry.target;
+              // 加载图片
+              if (img.dataset.src) {
+                img.src = img.dataset.src;
+                img.removeAttribute('data-src');
+              }
+              observer.unobserve(img);
+            }
+          });
+        }, {
+          rootMargin: '100px 0px', // 提前 100px 开始加载
+          threshold: 0.01
+        });
+
+        // 观察所有需要懒加载的图片
+        document.querySelectorAll('img[data-src]').forEach(img => {
+          imageObserver.observe(img);
+        });
+      }
+    }
+
+    // 初始化
+    window.onload = function() {
+      initCategoryList();
+      initData();
+      setupScrollLoad();
+      handleUrlParams();
+      initLazyLoading();
+    };
   </script>
   <style>
     @media screen and (max-width: 480px) {
