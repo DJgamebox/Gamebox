@@ -2011,9 +2011,7 @@
       apiBaseUrl: 'https://api.djgamebox.com',
       localStorageKey: 'gamebox_games_data',
       localStorageTimeKey: 'gamebox_last_sync',
-      itemsPerPage: 24,
-      gameSeriesKey: 'gamebox_series',
-      disclaimerKey: 'gamebox_disclaimer'
+      itemsPerPage: 24
     };
 
     // 用户相关状态
@@ -2371,14 +2369,15 @@
     }
 
     async function initData() {
-      // 优先从云端加载数据（获取最新封面图片）
+      // 优先从云端同步数据
       updateSyncStatus('同步中...', true);
       try {
         const response = await fetch(`${CONFIG.apiBaseUrl}/api/games`);
         const data = await response.json();
         if (data.games && data.games.length > 0) {
+          // 转换云端数据格式为网页版格式，并过滤配置数据
           games = data.games
-            .filter(game => game.id !== '_banner_config')
+            .filter(game => game.id !== '_banner_config') // 排除宣传栏配置
             .map(game => ({
               id: game.id,
               name: game.cn || game.name || '',
@@ -2401,16 +2400,13 @@
           filterAndRender();
           updateStats();
           updateSyncStatus('同步完成', true);
-          
-          // 从云端获取游戏系列和免责声明
-          await loadGameSeriesAndDisclaimer();
-          return;
+          return; // 云端获取成功，不再使用本地数据
         }
       } catch (error) {
         console.error('云端同步失败:', error);
       }
       
-      // 云端获取失败，使用本地 data-embed.js 数据作为备用
+      // 云端获取失败，使用本地数据作为备用
       if (typeof importedGames !== 'undefined' && importedGames.length > 0) {
         games = importedGames.filter(game => game.id !== '_banner_config');
         localStorage.setItem(CONFIG.localStorageKey, JSON.stringify(games));
@@ -2418,47 +2414,17 @@
         filterAndRender();
         updateStats();
         updateSyncStatus('已加载 ' + games.length + ' 款游戏 (本地)', true);
-        return;
-      }
-      
-      // 云端获取失败，尝试从本地存储加载
-      const localData = localStorage.getItem(CONFIG.localStorageKey);
-      if (localData) {
-        try {
-          games = JSON.parse(localData).filter(game => game.id !== '_banner_config');
-          filterAndRender();
-          updateStats();
-          updateSyncStatus('已加载 ' + games.length + ' 款游戏 (本地缓存)', true);
-        } catch (e) {
-          console.error('本地数据解析失败:', e);
+      } else {
+        // 如果没有导入数据，尝试从本地存储加载
+        const localData = localStorage.getItem(CONFIG.localStorageKey);
+        if (localData) {
+          try {
+            games = JSON.parse(localData).filter(game => game.id !== '_banner_config');
+            filterAndRender();
+            updateStats();
+            updateSyncStatus('已加载 ' + games.length + ' 款游戏 (本地)', true);
+          } catch (e) {}
         }
-      }
-    }
-    
-    // 从云端加载游戏系列和免责声明
-    async function loadGameSeriesAndDisclaimer() {
-      try {
-        // 获取游戏系列
-        const seriesResponse = await fetch(`${CONFIG.apiBaseUrl}/api/game-series`);
-        if (seriesResponse.ok) {
-          const seriesData = await seriesResponse.json();
-          if (seriesData.series) {
-            localStorage.setItem(CONFIG.gameSeriesKey, JSON.stringify(seriesData.series));
-            console.log('已加载游戏系列:', Object.keys(seriesData.series).length, '个');
-          }
-        }
-        
-        // 获取免责声明
-        const disclaimerResponse = await fetch(`${CONFIG.apiBaseUrl}/api/disclaimer`);
-        if (disclaimerResponse.ok) {
-          const disclaimerData = await disclaimerResponse.json();
-          if (disclaimerData.disclaimer) {
-            localStorage.setItem(CONFIG.disclaimerKey, JSON.stringify(disclaimerData.disclaimer));
-            console.log('已加载免责声明');
-          }
-        }
-      } catch (error) {
-        console.error('加载游戏系列/免责声明失败:', error);
       }
     }
 
@@ -2629,9 +2595,7 @@
       
       grid.innerHTML = visibleGames.map(game => {
         const isFav = isFavorited(game.id);
-        // 使用游戏ID作为文件名，避免中文编码问题
-        const gameId = game.id || `game_${game.name}`;
-        const gamePageUrl = `games/${gameId}.html?page=${currentPage + 1}&filter=${currentFilter}`;
+        const gamePageUrl = `games/${getSafeFilename(game.name)}.html?page=${currentPage + 1}&filter=${currentFilter}`;
         return `
         <div class="game-card">
           <a href="${gamePageUrl}" class="card-link" style="text-decoration:none;color:inherit;">

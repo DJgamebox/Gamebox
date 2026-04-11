@@ -130,18 +130,12 @@ for (let i = 0; i < games.length; i++) {
     const game = games[i];
     if (!game.name) continue;
     
-    // 使用数字ID作为文件名，避免中文文件名编码问题
-    const gameId = game.id || `game_${i}`;
     const safeName = getSafeFilename(game.name);
-    const filename = path.join(gamesDir, `${gameId}.html`);
-    // 保存ID到名称的映射，用于URL重写
-    game._urlName = safeName;
+    const filename = path.join(gamesDir, `${safeName}.html`);
     
     try {
         const html = generateGamePage(game, i);
-        // 使用 Buffer 确保文件名编码正确
-        const filenameBuffer = Buffer.from(filename, 'utf8');
-        fs.writeFileSync(filenameBuffer, html, 'utf8');
+        fs.writeFileSync(filename, html, 'utf8');
         successCount++;
         
         if (successCount % 100 === 0) {

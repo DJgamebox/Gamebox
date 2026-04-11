@@ -1,10 +1,10 @@
-// 游戏数据 - 由后台管理系统自动生成
-// 生成时间: 2026/4/10 15:52:06
+﻿// 游戏数据 - 由后台管理系统自动生成
+// 生成时间: 2026/4/10 11:26:00
 // 游戏数量: 1989
 
 const importedGames = [
   {
-    "id": "game_0",
+    "id": "game_0_1775791560076_gw8rmg",
     "name": "三国志曹操传",
     "nameEn": "Sango CCZ",
     "cover": "",
@@ -19,10 +19,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_1",
+    "id": "game_1_1775791560086_b9uitr",
     "name": "三国志刘备传",
     "nameEn": "",
     "cover": "",
@@ -37,10 +37,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_2",
+    "id": "game_2_1775791560086_58fcfs",
     "name": "三国志5",
     "nameEn": "Romance of the Three Kingdoms 5",
     "cover": "",
@@ -55,10 +55,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_3",
+    "id": "game_3_1775791560086_7zkjlz",
     "name": "三国志7：标准/威力加强版",
     "nameEn": "Romance of the Three Kingdoms 7",
     "cover": "",
@@ -73,10 +73,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_4",
+    "id": "game_4_1775791560086_mp6tgf",
     "name": "三国志8威力加强版/三国志8威力加强版重制版",
     "nameEn": "Romance of the Three Kingdoms 8 Remake with Complete Edition‌",
     "cover": "",
@@ -91,10 +91,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_5",
+    "id": "game_5_1775791560086_kih7gl",
     "name": "三国志8重制版",
     "nameEn": "ROMANCE OF THE THREE KINGDOMS 8 REMAKE",
     "cover": "",
@@ -109,10 +109,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_6",
+    "id": "game_6_1775791560086_rb3blp",
     "name": "三国志9：标准/威力加强版",
     "nameEn": "Romance of the Three Kingdoms IX",
     "cover": "",
@@ -127,10 +127,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_7",
+    "id": "game_7_1775791560086_hwctib",
     "name": "三国志10：标准/威力加强版",
     "nameEn": "Romance Of Three Kingdom 10 PK Chinese Standal",
     "cover": "",
@@ -145,10 +145,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_8",
+    "id": "game_8_1775791560086_q5g2qq",
     "name": "三国志11：标准/威力加强版",
     "nameEn": "Sangokushi 11 Power-up Kit",
     "cover": "",
@@ -163,10 +163,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_9",
+    "id": "game_9_1775791560086_mg1o7p",
     "name": "三国志12：标准/威力加强版",
     "nameEn": "ROMANCE OF THE THREE KINGDOMS XIII",
     "cover": "",
@@ -181,10 +181,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_10",
+    "id": "game_10_1775791560086_xyh2aj",
     "name": "三国志13：标准/威力加强版",
     "nameEn": "ROMANCE OF THE THREE KINGDOMS XIII",
     "cover": "",
@@ -199,10 +199,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_11",
+    "id": "game_11_1775791560086_vg93s9",
     "name": "三国志14：标准/威力加强版",
     "nameEn": "Sangokushi 14+Sangokushi 14 Power-up Kit",
     "cover": "",
@@ -217,10 +217,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_12",
+    "id": "game_12_1775791560086_ime025",
     "name": "战神3",
     "nameEn": "God of War III",
     "cover": "",
@@ -235,10 +235,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_13",
+    "id": "game_13_1775791560086_o1epkw",
     "name": "战神4",
     "nameEn": "God of War",
     "cover": "",
@@ -253,10 +253,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_14",
+    "id": "game_14_1775791560086_lirpuh",
     "name": "战神5：诸神黄昏",
     "nameEn": "God of War Ragnarok",
     "cover": "",
@@ -271,10 +271,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_15",
+    "id": "game_15_1775791560086_rj17eq",
     "name": "尼尔：伪装者/尼尔：人工生命",
     "nameEn": "NieR Replicant",
     "cover": "",
@@ -289,10 +289,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_16",
+    "id": "game_16_1775791560086_hc4kxi",
     "name": "尼尔：机械纪元",
     "nameEn": "NieR: Automata",
     "cover": "",
@@ -307,10 +307,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_17",
+    "id": "game_17_1775791560086_6d876o",
     "name": "漫威蜘蛛侠：迈尔斯·莫拉莱斯",
     "nameEn": "Marvel’s Spider-Man: Miles Morales",
     "cover": "",
@@ -325,10 +325,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_18",
+    "id": "game_18_1775791560086_d4vam5",
     "name": "漫威蜘蛛侠重制版",
     "nameEn": "Marvel’s Spider-Man Remastered",
     "cover": "",
@@ -343,10 +343,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_19",
+    "id": "game_19_1775791560086_530pe2",
     "name": "漫威蜘蛛侠2",
     "nameEn": "Marvel's Spider-Man 2",
     "cover": "",
@@ -361,10 +361,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_20",
+    "id": "game_20_1775791560086_8z1zo9",
     "name": "漫威复仇者联盟",
     "nameEn": "Marvel's Avengers - The Definitive Edition",
     "cover": "",
@@ -379,10 +379,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_21",
+    "id": "game_21_1775791560086_wtq15b",
     "name": "漫威银河护卫队",
     "nameEn": "Marvel's Guardians of the Galaxy",
     "cover": "",
@@ -397,10 +397,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_22",
+    "id": "game_22_1775791560086_063nhj",
     "name": "帝国时代1+罗马复兴",
     "nameEn": "Age of Empires: Definitive Edition",
     "cover": "",
@@ -415,10 +415,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_23",
+    "id": "game_23_1775791560086_d1bgk2",
     "name": "帝国时代2高清版+征服者+失落帝国+非洲王国",
     "nameEn": "Age of Empires II",
     "cover": "",
@@ -433,10 +433,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_24",
+    "id": "game_24_1775791560086_544ats",
     "name": "帝国时代2：决定版",
     "nameEn": "Age of Empires II: Definitive Edition",
     "cover": "",
@@ -451,10 +451,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_25",
+    "id": "game_25_1775791560086_6s53xc",
     "name": "帝国时代3+酋长+亚洲王朝",
     "nameEn": "Age of Empires III",
     "cover": "",
@@ -469,10 +469,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_26",
+    "id": "game_26_1775791560086_nnnmmy",
     "name": "帝国时代3：决定版",
     "nameEn": "Age of Empires III: Definitive Edition",
     "cover": "",
@@ -487,10 +487,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_27",
+    "id": "game_27_1775791560086_m4433t",
     "name": "帝国时代4豪华版+帝国时代4年度版",
     "nameEn": "Age of Empires IV",
     "cover": "",
@@ -505,10 +505,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_28",
+    "id": "game_28_1775791560086_026z1q",
     "name": "战地1/战地风云1",
     "nameEn": "Battlefield 1",
     "cover": "",
@@ -523,10 +523,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_29",
+    "id": "game_29_1775791560086_rrn42o",
     "name": "战地2/战地风云2",
     "nameEn": "Battlefield 2",
     "cover": "",
@@ -541,10 +541,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_30",
+    "id": "game_30_1775791560086_2sow5g",
     "name": "战地3/战地风云3",
     "nameEn": "Battlefield 3",
     "cover": "",
@@ -559,10 +559,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_31",
+    "id": "game_31_1775791560086_g5uy8z",
     "name": "战地4/战地风云4",
     "nameEn": "Battlefield 4",
     "cover": "",
@@ -577,10 +577,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_32",
+    "id": "game_32_1775791560086_3zdav5",
     "name": "战地5/战地风云5",
     "nameEn": "Battlefield V",
     "cover": "",
@@ -595,10 +595,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_33",
+    "id": "game_33_1775791560086_uxgj47",
     "name": "战地6/战地风云6",
     "nameEn": "Battlefield 6",
     "cover": "",
@@ -613,10 +613,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_34",
+    "id": "game_34_1775791560086_4ejdwr",
     "name": "战地：硬仗",
     "nameEn": "Battlefield Hardline",
     "cover": "",
@@ -631,10 +631,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_35",
+    "id": "game_35_1775791560086_g4xuip",
     "name": "战地：叛逆连队2",
     "nameEn": "Battlefield: Bad Company 2",
     "cover": "",
@@ -649,10 +649,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_36",
+    "id": "game_36_1775791560086_m2080c",
     "name": "消逝的光芒：仇恨",
     "nameEn": "Dying Light: Bad Blood",
     "cover": "",
@@ -667,10 +667,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_37",
+    "id": "game_37_1775791560086_xzdcgk",
     "name": "消逝的光芒：信徒增强版",
     "nameEn": "Dying Light",
     "cover": "",
@@ -685,10 +685,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_38",
+    "id": "game_38_1775791560086_ff2q65",
     "name": "消逝的光芒2：人与仁之战+消逝的光芒2重装上阵版",
     "nameEn": "Dying Light 2 Stay Human+Dying Light 2 Stay Human",
     "cover": "",
@@ -703,10 +703,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_39",
+    "id": "game_39_1775791560086_804laj",
     "name": "消逝的光芒：困兽",
     "nameEn": "Dying Light: The Beast",
     "cover": "",
@@ -721,10 +721,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_40",
+    "id": "game_40_1775791560086_kggzob",
     "name": "狙击精英1",
     "nameEn": "Sniper Elite 1",
     "cover": "",
@@ -739,10 +739,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_41",
+    "id": "game_41_1775791560086_r61vj0",
     "name": "狙击精英V2重制版",
     "nameEn": "Sniper Elite V2 Remastered",
     "cover": "",
@@ -757,10 +757,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_42",
+    "id": "game_42_1775791560086_ic5pqj",
     "name": "狙击精英3",
     "nameEn": "Sniper Elite 3",
     "cover": "",
@@ -775,10 +775,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_43",
+    "id": "game_43_1775791560086_pav30t",
     "name": "狙击精英4",
     "nameEn": "Sniper Elite 4",
     "cover": "",
@@ -793,10 +793,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_44",
+    "id": "game_44_1775791560086_77f177",
     "name": "狙击精英5（全DLC)",
     "nameEn": "Sniper Elite 5",
     "cover": "",
@@ -811,10 +811,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_45",
+    "id": "game_45_1775791560086_vop39j",
     "name": "狙击精英：抵抗",
     "nameEn": "Sniper Elite Resistance",
     "cover": "",
@@ -829,10 +829,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_46",
+    "id": "game_46_1775791560086_nld7mv",
     "name": "使命召唤1",
     "nameEn": "Call Of Duty",
     "cover": "",
@@ -847,10 +847,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_47",
+    "id": "game_47_1775791560086_wz9slq",
     "name": "使命召唤2",
     "nameEn": "Call Of Duty 2",
     "cover": "",
@@ -865,10 +865,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_48",
+    "id": "game_48_1775791560086_za7x9d",
     "name": "使命召唤4：现代战争（典藏版/重制版）",
     "nameEn": "Call of Duty 4+Call of Duty 4：Modern Warfare Remastered",
     "cover": "",
@@ -883,10 +883,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_49",
+    "id": "game_49_1775791560086_2l0t6b",
     "name": "使命召唤5：战争世界",
     "nameEn": "Call of Duty: World at War",
     "cover": "",
@@ -901,10 +901,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_50",
+    "id": "game_50_1775791560086_irzje7",
     "name": "使命召唤6：现代战争2（典藏版/重制版）",
     "nameEn": "Call Of Duty：Modern Warfare II",
     "cover": "",
@@ -919,10 +919,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_51",
+    "id": "game_51_1775791560086_lob7ew",
     "name": "使命召唤7：黑色行动",
     "nameEn": "Call of Duty: Black Ops",
     "cover": "",
@@ -937,10 +937,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_52",
+    "id": "game_52_1775791560086_1mrfb5",
     "name": "使命召唤8：现代战争3",
     "nameEn": "Call of Duty: Modern Warfare 3",
     "cover": "",
@@ -955,10 +955,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_53",
+    "id": "game_53_1775791560086_862rle",
     "name": "使命召唤9：黑色行动2",
     "nameEn": "Call of Duty: Black Ops II",
     "cover": "",
@@ -973,10 +973,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_54",
+    "id": "game_54_1775791560086_rgm3h2",
     "name": "使命召唤10：幽灵",
     "nameEn": "Call of War：Ghosts",
     "cover": "",
@@ -991,10 +991,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_55",
+    "id": "game_55_1775791560086_b3r0gx",
     "name": "使命召唤11：高级战争",
     "nameEn": "Call of Duty：Advanced Warfare",
     "cover": "",
@@ -1009,10 +1009,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_56",
+    "id": "game_56_1775791560086_g0krzv",
     "name": "使命召唤12：黑色行动3",
     "nameEn": "Call of Duty：Black Ops 3",
     "cover": "",
@@ -1027,10 +1027,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_57",
+    "id": "game_57_1775791560086_4rhvwm",
     "name": "使命召唤13：无限战争",
     "nameEn": "Call of Duty: Infinite Warfare",
     "cover": "",
@@ -1045,10 +1045,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_58",
+    "id": "game_58_1775791560086_tve418",
     "name": "使命召唤14：二战",
     "nameEn": "Call of Duty 14：WWII",
     "cover": "",
@@ -1063,10 +1063,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_59",
+    "id": "game_59_1775791560086_8u47rc",
     "name": "使命召唤15：黑色行动4",
     "nameEn": "Call of Duty: Black Ops 4",
     "cover": "",
@@ -1081,10 +1081,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_60",
+    "id": "game_60_1775791560086_xiq5b5",
     "name": "使命召唤16：现代战争",
     "nameEn": "Call of Duty: Black Ops 4",
     "cover": "",
@@ -1099,10 +1099,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_61",
+    "id": "game_61_1775791560086_4krjmn",
     "name": "使命召唤17：黑色行动冷战",
     "nameEn": "Call of Duty: Black Ops Cold War",
     "cover": "",
@@ -1117,10 +1117,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_62",
+    "id": "game_62_1775791560086_18488q",
     "name": "使命召唤18：先锋",
     "nameEn": "Call of Duty: Vanguard",
     "cover": "",
@@ -1135,10 +1135,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_63",
+    "id": "game_63_1775791560086_9mid6s",
     "name": "使命召唤19：现代战争2",
     "nameEn": "Call of Duty: Modern Warfare II",
     "cover": "",
@@ -1153,10 +1153,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_64",
+    "id": "game_64_1775791560086_jew6vb",
     "name": "使命召唤20：现代战争3",
     "nameEn": "Call of Duty: Modern Warfare III",
     "cover": "",
@@ -1171,10 +1171,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_65",
+    "id": "game_65_1775791560086_vivrdb",
     "name": "使命召唤21：黑色行动6",
     "nameEn": "Call of Duty: Black Ops 6",
     "cover": "",
@@ -1189,10 +1189,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_66",
+    "id": "game_66_1775791560086_t8vwyp",
     "name": "GTA3侠盗猎车手3",
     "nameEn": "GTA3",
     "cover": "",
@@ -1207,10 +1207,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_67",
+    "id": "game_67_1775791560086_jaa8dv",
     "name": "侠盗猎车手：罪恶都市（经典版/重制版）",
     "nameEn": "Grand Theft Auto Vice City",
     "cover": "",
@@ -1225,10 +1225,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_68",
+    "id": "game_68_1775791560086_selz39",
     "name": "侠盗猎车手：圣安地列斯（经典版/重制版）",
     "nameEn": "Grand Theft Auto: San Andreas – The Definitive",
     "cover": "",
@@ -1243,10 +1243,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_69",
+    "id": "game_69_1775791560086_dep6st",
     "name": "GTA4侠盗猎车手4：自由城之章",
     "nameEn": "Grand Theft Auto Episodes From Liberty City",
     "cover": "",
@@ -1261,10 +1261,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_70",
+    "id": "game_70_1775791560086_wl8r92",
     "name": "GTA5/侠盗猎车手5(纯净版+增强版）",
     "nameEn": "Grand Theft Auto V Legacy+Grand Theft Auto V Enhanced",
     "cover": "",
@@ -1279,10 +1279,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_71",
+    "id": "game_71_1775791560086_jt0jvi",
     "name": "真三国无双3",
     "nameEn": "Shin Sangokumusou 3",
     "cover": "",
@@ -1297,10 +1297,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_72",
+    "id": "game_72_1775791560086_jrn2em",
     "name": "真三国无双5",
     "nameEn": "Shin Sangokumusou 5",
     "cover": "",
@@ -1315,10 +1315,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_73",
+    "id": "game_73_1775791560086_u77q6h",
     "name": "真三国无双6猛将传",
     "nameEn": "Shin Sangoku Musou 6：with Moushouden",
     "cover": "",
@@ -1333,10 +1333,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_74",
+    "id": "game_74_1775791560086_ywqebv",
     "name": "真三国无双7猛将传",
     "nameEn": "Shin Sangoku Musou 7：with Moushouden",
     "cover": "",
@@ -1351,10 +1351,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_75",
+    "id": "game_75_1775791560086_1oluf3",
     "name": "真三国无双7帝国",
     "nameEn": "Shin Sangoku Musou 7 Empires",
     "cover": "",
@@ -1369,10 +1369,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_76",
+    "id": "game_76_1775791560086_nkiodb",
     "name": "真三国无双8",
     "nameEn": "Dynasty Warriors 9",
     "cover": "",
@@ -1387,10 +1387,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_77",
+    "id": "game_77_1775791560086_cafjie",
     "name": "真三国无双8帝国",
     "nameEn": "Dynasty Warriors 9 Empires",
     "cover": "",
@@ -1405,10 +1405,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_78",
+    "id": "game_78_1775791560086_5ws1zv",
     "name": "真三国无双：起源",
     "nameEn": "DYNASTY WARRIORS: ORIGINS",
     "cover": "",
@@ -1423,10 +1423,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_79",
+    "id": "game_79_1775791560086_05nskl",
     "name": "刀剑乱舞无双",
     "nameEn": "Touken Ranbu Warriors",
     "cover": "",
@@ -1441,10 +1441,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_80",
+    "id": "game_80_1775791560086_2xts52",
     "name": "无双全明星",
     "nameEn": "Musou Stars",
     "cover": "",
@@ -1459,10 +1459,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_81",
+    "id": "game_81_1775791560086_rw7q1y",
     "name": "无双深渊",
     "nameEn": "WARRIORS: Abyss",
     "cover": "",
@@ -1477,10 +1477,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_82",
+    "id": "game_82_1775791560086_w6s7gw",
     "name": "无双大蛇2",
     "nameEn": "WARRIORS OROCHI 3 Ultimate Definitive Edition",
     "cover": "",
@@ -1495,10 +1495,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_83",
+    "id": "game_83_1775791560086_6m1tdj",
     "name": "无双大蛇3",
     "nameEn": "Warriors Orochi 4 Ultimate",
     "cover": "",
@@ -1513,10 +1513,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_84",
+    "id": "game_84_1775791560086_tppqnh",
     "name": "刺客信条：兄弟会",
     "nameEn": "Assassin's Creed: Brotherhood",
     "cover": "",
@@ -1531,10 +1531,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_85",
+    "id": "game_85_1775791560086_u9sqmf",
     "name": "刺客信条3重制版",
     "nameEn": "Assassin's Creed III Remastered",
     "cover": "",
@@ -1549,10 +1549,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_86",
+    "id": "game_86_1775791560086_1zcvih",
     "name": "刺客信条4：黑旗",
     "nameEn": "Assassin's Creed IV: Black Flag",
     "cover": "",
@@ -1567,10 +1567,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_87",
+    "id": "game_87_1775791560086_rckf6v",
     "name": "刺客信条5：大革命",
     "nameEn": "Assassin's Creed Unity",
     "cover": "",
@@ -1585,10 +1585,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_88",
+    "id": "game_88_1775791560086_yl7wtg",
     "name": "刺客信条6：枭雄",
     "nameEn": "Assassin's Creed Syndicate",
     "cover": "",
@@ -1603,10 +1603,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_89",
+    "id": "game_89_1775791560086_y9rddj",
     "name": "刺客信条7:起源",
     "nameEn": "Assassin's Creed Origins",
     "cover": "",
@@ -1621,10 +1621,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_90",
+    "id": "game_90_1775791560086_r2sgmu",
     "name": "刺客信条8：奥德赛",
     "nameEn": "Assassin's Creed Odyssey",
     "cover": "",
@@ -1639,10 +1639,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_91",
+    "id": "game_91_1775791560086_p4vol8",
     "name": "刺客信条：英灵殿",
     "nameEn": "Assassin's Creed: Valhalla Complete Edition",
     "cover": "",
@@ -1657,10 +1657,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_92",
+    "id": "game_92_1775791560086_7fzvzs",
     "name": "刺客信条：叛变",
     "nameEn": "Assassin’s Creed Rogue",
     "cover": "",
@@ -1675,10 +1675,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_93",
+    "id": "game_93_1775791560086_4br1l2",
     "name": "刺客信条编年史：俄罗斯",
     "nameEn": "Assassin's Creed Chronicles: Russia",
     "cover": "",
@@ -1693,10 +1693,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_94",
+    "id": "game_94_1775791560086_8p4hpz",
     "name": "刺客信条编年史：中国",
     "nameEn": "Assassin's Creed Chronicles: China",
     "cover": "",
@@ -1711,10 +1711,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_95",
+    "id": "game_95_1775791560086_7fyz4b",
     "name": "刺客信条编年史：印度",
     "nameEn": "Assassin's Creed Chronicles: India",
     "cover": "",
@@ -1729,10 +1729,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_96",
+    "id": "game_96_1775791560086_kj7muj",
     "name": "刺客信条：幻景",
     "nameEn": "Assassin's Creed Mirage",
     "cover": "",
@@ -1747,10 +1747,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_97",
+    "id": "game_97_1775791560086_gp6sjc",
     "name": "刺客信条：影",
     "nameEn": "Assassin's Creed Shadows",
     "cover": "",
@@ -1765,10 +1765,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_98",
+    "id": "game_98_1775791560086_2n7nkf",
     "name": "红色警戒：命令与征服重制版",
     "nameEn": "Command & Conquer Remastered",
     "cover": "",
@@ -1783,10 +1783,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_99",
+    "id": "game_99_1775791560086_xrteic",
     "name": "红色警戒2共和国之辉",
     "nameEn": "Red Alert 2",
     "cover": "",
@@ -1801,10 +1801,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_100",
+    "id": "game_100_1775791560086_pno17t",
     "name": "红色警戒2完整中文版+尤里的复仇",
     "nameEn": "Command & Conquer Red Alert 2 and Yuri’s Revenge",
     "cover": "",
@@ -1819,10 +1819,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_101",
+    "id": "game_101_1775791560086_z4iqxo",
     "name": "命令与征服：红色警戒3",
     "nameEn": "Command & Conquer: Red Alert 3",
     "cover": "",
@@ -1837,10 +1837,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_102",
+    "id": "game_102_1775791560086_44zng4",
     "name": "命令与征服：红色警戒3起义时刻",
     "nameEn": "Command & Conquer Red Alert 3 Uprising",
     "cover": "",
@@ -1855,10 +1855,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_103",
+    "id": "game_103_1775791560086_9j47oa",
     "name": "风暴崛起（红色警戒续作）",
     "nameEn": "Tempest Rising",
     "cover": "",
@@ -1873,10 +1873,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_104",
+    "id": "game_104_1775791560086_jwame7",
     "name": "仁王 NIOH",
     "nameEn": "Nioh: Complete Edition",
     "cover": "",
@@ -1891,10 +1891,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_105",
+    "id": "game_105_1775791560086_j4m8fd",
     "name": "仁王2 Nioh2",
     "nameEn": "Nioh 2 – The Complete Edition",
     "cover": "",
@@ -1909,10 +1909,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_106",
+    "id": "game_106_1775791560086_e18nej",
     "name": "仁王3",
     "nameEn": "NIOH 3",
     "cover": "",
@@ -1927,10 +1927,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_107",
+    "id": "game_107_1775791560086_ifmiq0",
     "name": "看门狗1",
     "nameEn": "Watch Dogs",
     "cover": "",
@@ -1945,10 +1945,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_108",
+    "id": "game_108_1775791560086_j1pr0d",
     "name": "看门狗2",
     "nameEn": "Watch Dogs 2",
     "cover": "",
@@ -1963,10 +1963,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_109",
+    "id": "game_109_1775791560086_moacx4",
     "name": "看门狗3：军团",
     "nameEn": "Watch Dogs: Legion",
     "cover": "",
@@ -1981,10 +1981,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_110",
+    "id": "game_110_1775791560086_ib2rpx",
     "name": "生化危机：浣熊市行动",
     "nameEn": "Resident Evil：Operation Raccoon City",
     "cover": "",
@@ -1999,10 +1999,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_111",
+    "id": "game_111_1775791560086_0hie7z",
     "name": "生化危机HD：重制版",
     "nameEn": "Resident Evil Biohazard HD REMASTER",
     "cover": "",
@@ -2017,10 +2017,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_112",
+    "id": "game_112_1775791560086_wrb0wo",
     "name": "生化危机2：重制版",
     "nameEn": "Resident Evil 2:Remake",
     "cover": "",
@@ -2035,10 +2035,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_113",
+    "id": "game_113_1775791560086_wsmkk3",
     "name": "生化危机3：重置版",
     "nameEn": "Resident Evil 3:Remake",
     "cover": "",
@@ -2053,10 +2053,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_114",
+    "id": "game_114_1775791560086_nnrue6",
     "name": "生化危机4：重制版",
     "nameEn": "Resident Evil 4",
     "cover": "",
@@ -2071,10 +2071,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_115",
+    "id": "game_115_1775791560086_7yuoe8",
     "name": "生化危机5：黄金版全DLC",
     "nameEn": "Resident Evil 5：Gold Edition",
     "cover": "",
@@ -2089,10 +2089,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_116",
+    "id": "game_116_1775791560086_6ocyov",
     "name": "生化危机6",
     "nameEn": "Resident Evil 6",
     "cover": "",
@@ -2107,10 +2107,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_117",
+    "id": "game_117_1775791560086_5m4gvz",
     "name": "生化危机7",
     "nameEn": "Resident Evil 7 Biohazard",
     "cover": "",
@@ -2125,10 +2125,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_118",
+    "id": "game_118_1775791560086_ndz3vi",
     "name": "生化危机8：村庄",
     "nameEn": "Resident Evil Village",
     "cover": "",
@@ -2143,10 +2143,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_119",
+    "id": "game_119_1775791560086_mfvdb8",
     "name": "生化危机9：安魂曲",
     "nameEn": "Resident Evil Requiem",
     "cover": "",
@@ -2161,10 +2161,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_120",
+    "id": "game_120_1775791560086_daozsv",
     "name": "生化危机：启示录",
     "nameEn": "Resident Evil Revelations",
     "cover": "",
@@ -2179,10 +2179,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_121",
+    "id": "game_121_1775791560086_ozddq3",
     "name": "孤岛惊魂2",
     "nameEn": "Far Cry 2",
     "cover": "",
@@ -2197,10 +2197,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_122",
+    "id": "game_122_1775791560086_bc2iu5",
     "name": "孤岛惊魂3",
     "nameEn": "Far Cry 3",
     "cover": "",
@@ -2215,10 +2215,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_123",
+    "id": "game_123_1775791560086_61mu2x",
     "name": "孤岛惊魂3：血龙",
     "nameEn": "FarCry 3：Blood Dragon",
     "cover": "",
@@ -2233,10 +2233,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_124",
+    "id": "game_124_1775791560086_fzczfh",
     "name": "孤岛惊魂4",
     "nameEn": "Far Cry 4",
     "cover": "",
@@ -2251,10 +2251,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_125",
+    "id": "game_125_1775791560086_cc3krg",
     "name": "孤岛惊魂5",
     "nameEn": "Far Cry 5",
     "cover": "",
@@ -2269,10 +2269,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_126",
+    "id": "game_126_1775791560086_2d4uhi",
     "name": "孤岛惊魂：新曙光",
     "nameEn": "Far Cry: New Dawn",
     "cover": "",
@@ -2287,10 +2287,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_127",
+    "id": "game_127_1775791560086_s1t4ke",
     "name": "孤岛惊魂6",
     "nameEn": "Far Cry 6",
     "cover": "",
@@ -2305,10 +2305,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_128",
+    "id": "game_128_1775791560086_vfw5cj",
     "name": "孤岛惊魂：原始杀戮",
     "nameEn": "FarcryPrimal",
     "cover": "",
@@ -2323,10 +2323,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_129",
+    "id": "game_129_1775791560086_czzv6x",
     "name": "英雄连",
     "nameEn": "Company of Heroes",
     "cover": "",
@@ -2341,10 +2341,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_130",
+    "id": "game_130_1775791560086_pji9wv",
     "name": "英雄连2",
     "nameEn": "Company of Heroes 2",
     "cover": "",
@@ -2359,10 +2359,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_131",
+    "id": "game_131_1775791560086_aye17v",
     "name": "英雄连3",
     "nameEn": "Company of Heroes 3",
     "cover": "",
@@ -2377,10 +2377,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_132",
+    "id": "game_132_1775791560086_jt33mn",
     "name": "古墓丽影1-3：复刻版",
     "nameEn": "Tomb Raider I-III Remastered",
     "cover": "",
@@ -2395,10 +2395,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_133",
+    "id": "game_133_1775791560086_1u2sjo",
     "name": "古墓丽影4-6：复刻版",
     "nameEn": "Tomb Raider IV-VI Remastered",
     "cover": "",
@@ -2413,10 +2413,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_134",
+    "id": "game_134_1775791560086_odbctx",
     "name": "古墓丽影三部曲：重制版",
     "nameEn": "Tomb Raider I-III Remastered Starring Lara Croft",
     "cover": "",
@@ -2431,10 +2431,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_135",
+    "id": "game_135_1775791560086_oxmwba",
     "name": "古墓丽影8：地下世界",
     "nameEn": "Tomb Raider: Underworld",
     "cover": "",
@@ -2449,10 +2449,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_136",
+    "id": "game_136_1775791560086_uc7d2c",
     "name": "古墓丽影9",
     "nameEn": "Tomb Raider Definitive Edition",
     "cover": "",
@@ -2467,10 +2467,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_137",
+    "id": "game_137_1775791560086_uxq846",
     "name": "古墓丽影10：崛起",
     "nameEn": "Rise of the Tomb Raider: 20 Year Celebration",
     "cover": "",
@@ -2485,10 +2485,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_138",
+    "id": "game_138_1775791560086_qoksn4",
     "name": "古墓丽影11：暗影",
     "nameEn": "Shadow of the Tomb Raider: Definitive Edition",
     "cover": "",
@@ -2503,10 +2503,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_139",
+    "id": "game_139_1775791560086_f8bqpm",
     "name": "小小梦魇1",
     "nameEn": "Little Nightmares",
     "cover": "",
@@ -2521,10 +2521,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_140",
+    "id": "game_140_1775791560086_kkmugj",
     "name": "小小梦魇2",
     "nameEn": "Little Nightmares II Enhanced Edition",
     "cover": "",
@@ -2539,10 +2539,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_141",
+    "id": "game_141_1775791560086_ideeon",
     "name": "小小梦魇3",
     "nameEn": "Little Nightmares III",
     "cover": "",
@@ -2557,10 +2557,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_142",
+    "id": "game_142_1775791560086_jmck7m",
     "name": "辐射：新维加斯",
     "nameEn": "Fallout: New Vegas",
     "cover": "",
@@ -2575,10 +2575,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_143",
+    "id": "game_143_1775791560086_bpm8re",
     "name": "辐射3",
     "nameEn": "Fallout 3",
     "cover": "",
@@ -2593,10 +2593,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_144",
+    "id": "game_144_1775791560086_6u21ul",
     "name": "辐射4：周年纪念版",
     "nameEn": "Fallout 4 - Anniversary Edition",
     "cover": "",
@@ -2611,10 +2611,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_145",
+    "id": "game_145_1775791560086_okz4yd",
     "name": "辐射：伦敦",
     "nameEn": "Fallout: London",
     "cover": "",
@@ -2629,10 +2629,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_146",
+    "id": "game_146_1775791560086_r3j78l",
     "name": "地铁：离去（包括增强版）",
     "nameEn": "Metro Exodus Enhanced Edition",
     "cover": "",
@@ -2647,10 +2647,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_147",
+    "id": "game_147_1775791560086_vy5qbw",
     "name": "地铁：最后的曙光重置版",
     "nameEn": "Metro: Last Light Redux",
     "cover": "",
@@ -2665,10 +2665,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_148",
+    "id": "game_148_1775791560086_l01zw2",
     "name": "地铁2033重制版",
     "nameEn": "Metro 2033 Redux",
     "cover": "",
@@ -2683,10 +2683,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_149",
+    "id": "game_149_1775791560086_6n8kdc",
     "name": "盟军敢死队：起源",
     "nameEn": "Commandos: Origins",
     "cover": "",
@@ -2701,10 +2701,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_150",
+    "id": "game_150_1775791560086_ksz086",
     "name": "盟军敢死队2高清重制版",
     "nameEn": "Commandos 2 - HD Remaster",
     "cover": "",
@@ -2719,10 +2719,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_151",
+    "id": "game_151_1775791560086_kilmva",
     "name": "盟军敢死队3高清复刻重制版",
     "nameEn": "Commandos 3 - HD Remaster",
     "cover": "",
@@ -2737,10 +2737,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_152",
+    "id": "game_152_1775791560086_c0pvl3",
     "name": "天堂的陌生人：最终幻想起源",
     "nameEn": "STRANGER OF PARADISE FINAL FANTASY ORIGIN",
     "cover": "",
@@ -2755,10 +2755,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_153",
+    "id": "game_153_1775791560086_8zyujs",
     "name": "最终幻想：零式",
     "nameEn": "Fantasy Type-0 HD",
     "cover": "",
@@ -2773,10 +2773,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_154",
+    "id": "game_154_1775791560086_kv3ep1",
     "name": "最终幻想：世界",
     "nameEn": "WORLD OF FINAL FANTASY",
     "cover": "",
@@ -2791,10 +2791,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_155",
+    "id": "game_155_1775791560086_j65y28",
     "name": "最终幻想：纷争",
     "nameEn": "Dissidia Final Fantasy NT",
     "cover": "",
@@ -2809,10 +2809,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_156",
+    "id": "game_156_1775791560086_4lwvyu",
     "name": "最终幻想7重制版",
     "nameEn": "Final Fantasy VII Remake Intergrade",
     "cover": "",
@@ -2827,10 +2827,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_157",
+    "id": "game_157_1775791560086_20n0pj",
     "name": "最终幻想7：核心危机 重聚",
     "nameEn": "CRISIS CORE –FINAL FANTASY VII– REUNION",
     "cover": "",
@@ -2845,10 +2845,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_158",
+    "id": "game_158_1775791560086_tmy4zh",
     "name": "最终幻想9",
     "nameEn": "Final Fantasy IX",
     "cover": "",
@@ -2863,10 +2863,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_159",
+    "id": "game_159_1775791560086_26zjmf",
     "name": "最终幻想12：黄道年代",
     "nameEn": "Final Fantasy XII: The Zodiac Age",
     "cover": "",
@@ -2881,10 +2881,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_160",
+    "id": "game_160_1775791560086_bezz2u",
     "name": "最终幻想13：雷光归来",
     "nameEn": "Lightning Returns：Final Fantasy XIII",
     "cover": "",
@@ -2899,10 +2899,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_161",
+    "id": "game_161_1775791560086_369f2q",
     "name": "最终幻想13/13-2",
     "nameEn": "Final Fantasy XIII+Final Fantasy XIII-2",
     "cover": "",
@@ -2917,10 +2917,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_162",
+    "id": "game_162_1775791560086_x3dg76",
     "name": "最终幻想15",
     "nameEn": "Final Fantasy XV",
     "cover": "",
@@ -2935,10 +2935,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_163",
+    "id": "game_163_1775791560086_b94w4u",
     "name": "最终幻想7：重生",
     "nameEn": "FINAL FANTASY VII REBIRTH",
     "cover": "",
@@ -2953,10 +2953,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_164",
+    "id": "game_164_1775791560086_s4azt9",
     "name": "最终幻想16",
     "nameEn": "FINAL FANTASY XVI",
     "cover": "",
@@ -2971,10 +2971,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_165",
+    "id": "game_165_1775791560086_rwnezm",
     "name": "死或生5：最后一战",
     "nameEn": "Dead or Alive 5：Last Round",
     "cover": "",
@@ -2989,10 +2989,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_166",
+    "id": "game_166_1775791560086_p0cvte",
     "name": "死或生6",
     "nameEn": "Dead or Alive 6",
     "cover": "",
@@ -3007,10 +3007,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_167",
+    "id": "game_167_1775791560086_w6clwp",
     "name": "死或生：维纳斯璀璨假期",
     "nameEn": "Venus Vacation PRISM - DEAD OR ALIVE Xtreme",
     "cover": "",
@@ -3025,10 +3025,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_168",
+    "id": "game_168_1775791560086_qb0r2m",
     "name": "极品飞车7：地下狂飙",
     "nameEn": "Need For Speed: Underground",
     "cover": "",
@@ -3043,10 +3043,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_169",
+    "id": "game_169_1775791560086_4fmiku",
     "name": "极品飞车8：地下狂飙2",
     "nameEn": "Need For Speed:Underground 2",
     "cover": "",
@@ -3061,10 +3061,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_170",
+    "id": "game_170_1775791560086_ouma3s",
     "name": "极品飞车9：最高通缉",
     "nameEn": "Need For Speed：Most Wanted",
     "cover": "",
@@ -3079,10 +3079,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_171",
+    "id": "game_171_1775791560086_y1h3zg",
     "name": "极品飞车10：卡本峡谷",
     "nameEn": "Need for Speed Carbon",
     "cover": "",
@@ -3097,10 +3097,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_172",
+    "id": "game_172_1775791560086_4phfm8",
     "name": "极品飞车12：无间风云",
     "nameEn": "Need For Speed：Undercover",
     "cover": "",
@@ -3115,10 +3115,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_173",
+    "id": "game_173_1775791560086_4ecgm9",
     "name": "极品飞车14：热力追踪3 重制版",
     "nameEn": "Need for Speed Hot Pursuit Remastered",
     "cover": "",
@@ -3133,10 +3133,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_174",
+    "id": "game_174_1775791560086_ryptxw",
     "name": "极品飞车15：变速2",
     "nameEn": "Shift 2 Unleashed",
     "cover": "",
@@ -3151,10 +3151,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_175",
+    "id": "game_175_1775791560086_tl0hki",
     "name": "极品飞车16：亡命狂飙",
     "nameEn": "Need for Speed: The Run",
     "cover": "",
@@ -3169,10 +3169,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_176",
+    "id": "game_176_1775791560086_d0sbam",
     "name": "极品飞车17：最高通缉",
     "nameEn": "Need for Speed: Most Wanted",
     "cover": "",
@@ -3187,10 +3187,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_177",
+    "id": "game_177_1775791560086_1b1ph5",
     "name": "极品飞车18：宿敌",
     "nameEn": "Need for Speed™ Rivals",
     "cover": "",
@@ -3205,10 +3205,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_178",
+    "id": "game_178_1775791560086_w4e92p",
     "name": "极品飞车20：复仇",
     "nameEn": "Need for Speed：Payback",
     "cover": "",
@@ -3223,10 +3223,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_179",
+    "id": "game_179_1775791560086_3yxubs",
     "name": "极品飞车21：热度",
     "nameEn": "Need for Speed：Heat",
     "cover": "",
@@ -3241,10 +3241,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_180",
+    "id": "game_180_1775791560086_6cljwz",
     "name": "星际争霸：重制版",
     "nameEn": "StarCraft: Remastered",
     "cover": "",
@@ -3259,10 +3259,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_181",
+    "id": "game_181_1775791560086_kizyxw",
     "name": "星际争霸1母巢之战",
     "nameEn": "StarCraft: Brood War",
     "cover": "",
@@ -3277,10 +3277,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_182",
+    "id": "game_182_1775791560086_ktefup",
     "name": "星际争霸2三族战役",
     "nameEn": "StarCraft 2",
     "cover": "",
@@ -3295,10 +3295,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_183",
+    "id": "game_183_1775791560086_bva087",
     "name": "纪元1404：威尼斯",
     "nameEn": "Anno 1404 Venice",
     "cover": "",
@@ -3313,10 +3313,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_184",
+    "id": "game_184_1775791560086_agtiik",
     "name": "大航海：纪元1701",
     "nameEn": "Anno 1701‌",
     "cover": "",
@@ -3331,10 +3331,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_185",
+    "id": "game_185_1775791560086_zfd9me",
     "name": "纪元1800",
     "nameEn": "Anno 1800",
     "cover": "",
@@ -3349,10 +3349,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_186",
+    "id": "game_186_1775791560086_ock2wt",
     "name": "纪元2205",
     "nameEn": "Anno 2205",
     "cover": "",
@@ -3367,10 +3367,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_187",
+    "id": "game_187_1775791560086_3kz06n",
     "name": "纪元117：罗马和平",
     "nameEn": "Anno 117: Pax Romana",
     "cover": "",
@@ -3385,10 +3385,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_188",
+    "id": "game_188_1775791560086_wxzfnr",
     "name": "僵尸部队三部曲",
     "nameEn": "Zombie Army Trilogy",
     "cover": "",
@@ -3403,10 +3403,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_189",
+    "id": "game_189_1775791560086_3rmwn9",
     "name": "鬼泣：123高清合集",
     "nameEn": "Devil May Cry HD Collection",
     "cover": "",
@@ -3421,10 +3421,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_190",
+    "id": "game_190_1775791560086_w8su6x",
     "name": "鬼泣4",
     "nameEn": "Devil May Cry 4",
     "cover": "",
@@ -3439,10 +3439,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_191",
+    "id": "game_191_1775791560086_1vrt96",
     "name": "鬼泣5（全DLC)",
     "nameEn": "Devil May Cry 5",
     "cover": "",
@@ -3457,10 +3457,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_192",
+    "id": "game_192_1775791560086_uqws4e",
     "name": "旁观者2",
     "nameEn": "Beholder 2",
     "cover": "",
@@ -3475,10 +3475,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_193",
+    "id": "game_193_1775791560086_dj64ml",
     "name": "旁观者3",
     "nameEn": "Beholder 3",
     "cover": "",
@@ -3493,10 +3493,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_194",
+    "id": "game_194_1775791560086_i9n0xq",
     "name": "黑暗之魂重制版",
     "nameEn": "DARK SOULS: Remastered",
     "cover": "",
@@ -3511,10 +3511,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_195",
+    "id": "game_195_1775791560086_qcgx2q",
     "name": "黑暗之魂2：原罪学者",
     "nameEn": "DARK SOULS II: Scholar of the First Sin",
     "cover": "",
@@ -3529,10 +3529,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_196",
+    "id": "game_196_1775791560086_plmf9s",
     "name": "黑暗之魂3",
     "nameEn": "DARK SOULS III",
     "cover": "",
@@ -3547,10 +3547,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_197",
+    "id": "game_197_1775791560086_ltqh8z",
     "name": "寂静岭2/寂静岭2：重制版",
     "nameEn": "SILENT HILL 2 Remake",
     "cover": "",
@@ -3565,10 +3565,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_198",
+    "id": "game_198_1775791560086_592n6i",
     "name": "寂静岭5：归乡",
     "nameEn": "Silent Hill 5:Homecoming",
     "cover": "",
@@ -3583,10 +3583,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_199",
+    "id": "game_199_1775791560086_9d3ly2",
     "name": "寂静岭F",
     "nameEn": "SILENT HILL f",
     "cover": "",
@@ -3601,10 +3601,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_200",
+    "id": "game_200_1775791560086_4z44vc",
     "name": "死亡空间/死亡空间：重制版",
     "nameEn": "Dead Space",
     "cover": "",
@@ -3619,10 +3619,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_201",
+    "id": "game_201_1775791560086_0g5pwa",
     "name": "死亡空间2",
     "nameEn": "Dead Space 2",
     "cover": "",
@@ -3637,10 +3637,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_202",
+    "id": "game_202_1775791560086_km2zgo",
     "name": "死亡空间3",
     "nameEn": "Dead Space 3",
     "cover": "",
@@ -3655,10 +3655,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_203",
+    "id": "game_203_1775791560086_yspjeg",
     "name": "合金装备3：重制版",
     "nameEn": "METAL GEAR SOLID Δ: SNAKE EATER",
     "cover": "",
@@ -3673,10 +3673,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_204",
+    "id": "game_204_1775791560086_hgep6k",
     "name": "合金装备5：幻痛",
     "nameEn": "METAL GEAR SOLID V: THE PHANTOM PAIN",
     "cover": "",
@@ -3691,10 +3691,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_205",
+    "id": "game_205_1775791560086_xts05n",
     "name": "合金装备5：原爆点",
     "nameEn": "Metal Gear Solid V: Ground Zeroes",
     "cover": "",
@@ -3709,10 +3709,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_206",
+    "id": "game_206_1775791560086_ye7tmq",
     "name": "合金装备崛起：复仇",
     "nameEn": "METAL GEAR RISING: REVENGEANCE",
     "cover": "",
@@ -3727,10 +3727,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_207",
+    "id": "game_207_1775791560086_urffj8",
     "name": "战争之人：突击小队2",
     "nameEn": "Men of War: Assault Squad 2",
     "cover": "",
@@ -3745,10 +3745,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_208",
+    "id": "game_208_1775791560086_m4w7l0",
     "name": "战争之人：突击小队2冷战",
     "nameEn": "Men of War: Assault Squad 2 Cold War",
     "cover": "",
@@ -3763,10 +3763,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_209",
+    "id": "game_209_1775791560086_866ybt",
     "name": "战争之人：突击小队2抗日战争",
     "nameEn": "People of War: Assault Team 2 Anti Japanese War",
     "cover": "",
@@ -3781,10 +3781,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_210",
+    "id": "game_210_1775791560086_9xl6h1",
     "name": "战争之人：突击小队2战魂",
     "nameEn": "Men of War: Assault Squad 2",
     "cover": "",
@@ -3799,10 +3799,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_211",
+    "id": "game_211_1775791560086_rr3myj",
     "name": "战争之人：突击小队",
     "nameEn": "Warmen Assault Team",
     "cover": "",
@@ -3817,10 +3817,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_212",
+    "id": "game_212_1775791560086_hv0zj1",
     "name": "战争之人：负罪英雄",
     "nameEn": "Men of War: Condemned Heroes",
     "cover": "",
@@ -3835,10 +3835,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_213",
+    "id": "game_213_1775791560086_sq5ly3",
     "name": "战争之人：越南",
     "nameEn": "People of War Vietnam",
     "cover": "",
@@ -3853,10 +3853,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_214",
+    "id": "game_214_1775791560086_k9aa1m",
     "name": "战争之人：赤潮",
     "nameEn": "Red Tide of War Men",
     "cover": "",
@@ -3871,10 +3871,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_215",
+    "id": "game_215_1775791560086_j0u8f5",
     "name": "战争的真相",
     "nameEn": "The Truth of War",
     "cover": "",
@@ -3889,10 +3889,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_216",
+    "id": "game_216_1775791560086_zfc2ku",
     "name": "战争之人2",
     "nameEn": "Men of War II",
     "cover": "",
@@ -3907,10 +3907,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_217",
+    "id": "game_217_1775791560086_paurzf",
     "name": "中土世界：战争之影",
     "nameEn": "Middle Earth: Shadow of War",
     "cover": "",
@@ -3925,10 +3925,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_218",
+    "id": "game_218_1775791560086_616rjo",
     "name": "中土世界：暗影魔多",
     "nameEn": "Middle Earth: Shadow of Mordor",
     "cover": "",
@@ -3943,10 +3943,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_219",
+    "id": "game_219_1775791560086_phk623",
     "name": "巫师2：国王刺客",
     "nameEn": "The Witcher 2: Assassins of Kings",
     "cover": "",
@@ -3961,10 +3961,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_220",
+    "id": "game_220_1775791560086_ng9uxz",
     "name": "巫师3：狂猎年度版",
     "nameEn": "The Witcher 3",
     "cover": "",
@@ -3979,10 +3979,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_221",
+    "id": "game_221_1775791560086_w8h43b",
     "name": "巫师3：狂猎次世代完全版",
     "nameEn": "The Witcher 3: Wild Hunt",
     "cover": "",
@@ -3997,10 +3997,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_222",
+    "id": "game_222_1775791560086_1wucag",
     "name": "影子武士",
     "nameEn": "Shadow Warrior",
     "cover": "",
@@ -4015,10 +4015,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_223",
+    "id": "game_223_1775791560086_nghv32",
     "name": "影子武士2",
     "nameEn": "Shadow Warrior 2",
     "cover": "",
@@ -4033,10 +4033,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_224",
+    "id": "game_224_1775791560086_3ph88x",
     "name": "影子武士3豪华版",
     "nameEn": "Shadow Warrior 3 Deluxe Edition",
     "cover": "",
@@ -4051,10 +4051,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_225",
+    "id": "game_225_1775791560086_olx2l4",
     "name": "钢铁之师2全面冲突版",
     "nameEn": "Steel Division 2 - Total Conflict Edition",
     "cover": "",
@@ -4069,10 +4069,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_226",
+    "id": "game_226_1775791560086_tntqju",
     "name": "钢铁之师：诺曼底44",
     "nameEn": "Steel Division: Normandy 44",
     "cover": "",
@@ -4087,10 +4087,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_227",
+    "id": "game_227_1775791560086_4haygl",
     "name": "暗黑破坏神2：狱火重生重制版+暗黑破坏神2：重制版 - 终极",
     "nameEn": "Diablo II: Resurrected",
     "cover": "",
@@ -4105,10 +4105,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_228",
+    "id": "game_228_1775791560086_tv30wf",
     "name": "暗黑破坏神3：夺魂之镰",
     "nameEn": "Diablo III",
     "cover": "",
@@ -4123,10 +4123,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_229",
+    "id": "game_229_1775791560086_yx39ys",
     "name": "美国职业摔角联盟WWE 2K15",
     "nameEn": "WWE 2K15",
     "cover": "",
@@ -4141,10 +4141,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_230",
+    "id": "game_230_1775791560086_3zxv1f",
     "name": "美国职业摔角联盟WWE 2K18",
     "nameEn": "WWE 2K18",
     "cover": "",
@@ -4159,10 +4159,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_231",
+    "id": "game_231_1775791560086_uu6nmz",
     "name": "美国职业摔角联盟WWE 2K19",
     "nameEn": "WWE 2K19",
     "cover": "",
@@ -4177,10 +4177,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_232",
+    "id": "game_232_1775791560086_wavi18",
     "name": "美国职业摔角联盟WWE 2K20",
     "nameEn": "WWE 2K20",
     "cover": "",
@@ -4195,10 +4195,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_233",
+    "id": "game_233_1775791560086_j43h5k",
     "name": "美国职业摔角联盟WWE 2K22",
     "nameEn": "WWE 2K22",
     "cover": "",
@@ -4213,10 +4213,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_234",
+    "id": "game_234_1775791560086_7r27z8",
     "name": "美国职业摔角联盟WWE 2K23（未汉化）",
     "nameEn": "WWE 2K23",
     "cover": "",
@@ -4231,10 +4231,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_235",
+    "id": "game_235_1775791560086_slovfa",
     "name": "美国职业摔角联盟WWE 2K24（未汉化）",
     "nameEn": "WWE 2K24",
     "cover": "",
@@ -4249,10 +4249,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_236",
+    "id": "game_236_1775791560086_lqp3rr",
     "name": "美国职业摔角联盟WWE 2K25（未汉化）",
     "nameEn": "WWE 2K25",
     "cover": "",
@@ -4267,10 +4267,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_237",
+    "id": "game_237_1775791560086_e2d4eq",
     "name": "地平线：零之曙光",
     "nameEn": "Horizon Zero Dawn Remastered",
     "cover": "",
@@ -4285,10 +4285,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_238",
+    "id": "game_238_1775791560086_n02fa5",
     "name": "地平线：黎明时分",
     "nameEn": "Horizon Zero Dawn",
     "cover": "",
@@ -4303,10 +4303,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_239",
+    "id": "game_239_1775791560086_u37ts8",
     "name": "地平线：西之绝境",
     "nameEn": "Horizon Forbidden West Complete Edition",
     "cover": "",
@@ -4321,10 +4321,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_240",
+    "id": "game_240_1775791560086_zcwtym",
     "name": "博德之门1",
     "nameEn": "Baldur's Gate: Enhanced Edition",
     "cover": "",
@@ -4339,10 +4339,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_241",
+    "id": "game_241_1775791560086_kx0516",
     "name": "博德之门2",
     "nameEn": "Baldur's Gate II: Enhanced Edition",
     "cover": "",
@@ -4357,10 +4357,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_242",
+    "id": "game_242_1775791560086_w0ei0c",
     "name": "博德之门3",
     "nameEn": "Baldur's Gate 3",
     "cover": "",
@@ -4375,10 +4375,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_243",
+    "id": "game_243_1775791560086_c1hyvv",
     "name": "碧蓝幻想Versus",
     "nameEn": "Granblue Fantasy: Versus",
     "cover": "",
@@ -4393,10 +4393,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_244",
+    "id": "game_244_1775791560086_e6yn93",
     "name": "碧蓝幻想Versus：崛起",
     "nameEn": "Granblue Fantasy Versus: Rising",
     "cover": "",
@@ -4411,10 +4411,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_245",
+    "id": "game_245_1775791560086_umgjoe",
     "name": "碧蓝幻想：RELINK",
     "nameEn": "Granblue Fantasy: Relink",
     "cover": "",
@@ -4429,10 +4429,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_246",
+    "id": "game_246_1775791560086_m75r6h",
     "name": "达芬奇密室1/达芬奇之家1/达芬奇的房子1",
     "nameEn": "The House of Da Vinci",
     "cover": "",
@@ -4447,10 +4447,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_247",
+    "id": "game_247_1775791560086_xk6kyv",
     "name": "达芬奇密室2/达芬奇之家2/达芬奇的房子2",
     "nameEn": "The House of Da Vinci 2",
     "cover": "",
@@ -4465,10 +4465,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_248",
+    "id": "game_248_1775791560086_huvbb7",
     "name": "达芬奇密室3/达芬奇之家3/达芬奇的房子3",
     "nameEn": "The House of Da Vinci 3",
     "cover": "",
@@ -4483,10 +4483,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_249",
+    "id": "game_249_1775791560086_uxxfpy",
     "name": "杀戮空间2",
     "nameEn": "Killing Floor 2",
     "cover": "",
@@ -4501,10 +4501,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_250",
+    "id": "game_250_1775791560086_koxrc2",
     "name": "杀戮空间3",
     "nameEn": "Killing Floor 3",
     "cover": "",
@@ -4519,10 +4519,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_251",
+    "id": "game_251_1775791560086_zlv29v",
     "name": "侏罗纪世界：进化2",
     "nameEn": "Jurassic World Evolution 2",
     "cover": "",
@@ -4537,10 +4537,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_252",
+    "id": "game_252_1775791560086_gmrw9j",
     "name": "侏罗纪世界：进化3",
     "nameEn": "Jurassic World Evolution 3",
     "cover": "",
@@ -4555,10 +4555,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_253",
+    "id": "game_253_1775791560086_d8ubdo",
     "name": "噬血代码",
     "nameEn": "Code Vein Deluxe Edition",
     "cover": "",
@@ -4573,10 +4573,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_254",
+    "id": "game_254_1775791560086_yasxio",
     "name": "噬血代码2",
     "nameEn": "CODE VEIN II",
     "cover": "",
@@ -4591,10 +4591,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_255",
+    "id": "game_255_1775791560086_14udmr",
     "name": "超级机器人大战30",
     "nameEn": "Super Robot Wars 30",
     "cover": "",
@@ -4609,10 +4609,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_256",
+    "id": "game_256_1775791560086_cx27lp",
     "name": "超级机器人大战X",
     "nameEn": "Super Robot Wars X",
     "cover": "",
@@ -4627,10 +4627,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_257",
+    "id": "game_257_1775791560086_fxrscj",
     "name": "超级机器人大战Y",
     "nameEn": "Super Robot Wars Y",
     "cover": "",
@@ -4645,10 +4645,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_258",
+    "id": "game_258_1775791560086_nuoi9d",
     "name": "超级机器人大战V",
     "nameEn": "Super Robot Wars V",
     "cover": "",
@@ -4663,10 +4663,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_259",
+    "id": "game_259_1775791560086_c9ya4j",
     "name": "零：濡鸦之巫女",
     "nameEn": "PROJECT ZERO: Maiden of Black Water",
     "cover": "",
@@ -4681,10 +4681,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_260",
+    "id": "game_260_1775791560086_chb9aw",
     "name": "零月蚀的假面",
     "nameEn": "PROJECT ZERO: Mask of the Lunar Eclipse",
     "cover": "",
@@ -4699,10 +4699,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_261",
+    "id": "game_261_1775791560086_hkcj7l",
     "name": "零：红蝶重制版/零 ～红蝶～ 重制版",
     "nameEn": "FATAL FRAME II: Crimson Butterfly REMAKE",
     "cover": "",
@@ -4717,10 +4717,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_262",
+    "id": "game_262_1775791560086_51evkz",
     "name": "女神异闻录3Reload",
     "nameEn": "PERSONA 3 RELOAD",
     "cover": "",
@@ -4735,10 +4735,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_263",
+    "id": "game_263_1775791560086_faul16",
     "name": "女神异闻录4：黄金版",
     "nameEn": "Persona 4 Golden",
     "cover": "",
@@ -4753,10 +4753,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_264",
+    "id": "game_264_1775791560086_rpufhi",
     "name": "女神异闻录5",
     "nameEn": "Persona 5",
     "cover": "",
@@ -4771,10 +4771,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_265",
+    "id": "game_265_1775791560086_me40yj",
     "name": "女神异闻录5 乱战:魅影攻手",
     "nameEn": "Persona 5 Scramble: The Phantom Strikers",
     "cover": "",
@@ -4789,10 +4789,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_266",
+    "id": "game_266_1775791560086_32x1e6",
     "name": "女神异闻录5皇家版",
     "nameEn": "Persona 5 Royal",
     "cover": "",
@@ -4807,10 +4807,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_267",
+    "id": "game_267_1775791560086_426y0f",
     "name": "女神异闻录5战略版",
     "nameEn": "Persona 5：Tactica",
     "cover": "",
@@ -4825,10 +4825,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_268",
+    "id": "game_268_1775791560086_250gz6",
     "name": "神秘海域：盗贼遗产合集",
     "nameEn": "UNCHARTED: Legacy of Thieves Collection",
     "cover": "",
@@ -4843,10 +4843,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_269",
+    "id": "game_269_1775791560086_wgmk7f",
     "name": "逃生1：绝命精神病院",
     "nameEn": "Outlast",
     "cover": "",
@@ -4861,10 +4861,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_270",
+    "id": "game_270_1775791560086_gx2pm6",
     "name": "逃生2",
     "nameEn": "Outlast 2",
     "cover": "",
@@ -4879,10 +4879,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_271",
+    "id": "game_271_1775791560086_6iq18m",
     "name": "无主之地：前奏",
     "nameEn": "Borderlands:The Pre-Sequel",
     "cover": "",
@@ -4897,10 +4897,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_272",
+    "id": "game_272_1775791560086_uy7akh",
     "name": "无主之地传说",
     "nameEn": "Tales from the Borderlands",
     "cover": "",
@@ -4915,10 +4915,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_273",
+    "id": "game_273_1775791560086_sdoqh4",
     "name": "无主之地年度版",
     "nameEn": "Borderlands Game of the Year Enhanced",
     "cover": "",
@@ -4933,10 +4933,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_274",
+    "id": "game_274_1775791560086_110tqc",
     "name": "无主之地2",
     "nameEn": "Borderlands 2",
     "cover": "",
@@ -4951,10 +4951,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_275",
+    "id": "game_275_1775791560086_p5d63g",
     "name": "无主之地3",
     "nameEn": "Borderlands 3",
     "cover": "",
@@ -4969,10 +4969,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_276",
+    "id": "game_276_1775791560086_zfhdgx",
     "name": "无主之地4",
     "nameEn": "Borderlands 4",
     "cover": "",
@@ -4987,10 +4987,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_277",
+    "id": "game_277_1775791560086_79z3fj",
     "name": "丧尸围城/丧尸围城：豪华复刻版",
     "nameEn": "Dead Rising Deluxe Remaster",
     "cover": "",
@@ -5005,10 +5005,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_278",
+    "id": "game_278_1775791560086_kdpwyv",
     "name": "丧尸围城2",
     "nameEn": "Dead Rising 2",
     "cover": "",
@@ -5023,10 +5023,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_279",
+    "id": "game_279_1775791560086_yi8uaj",
     "name": "丧尸围城3",
     "nameEn": "Dead Rising 3",
     "cover": "",
@@ -5041,10 +5041,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_280",
+    "id": "game_280_1775791560086_6fdz2z",
     "name": "丧尸围城4",
     "nameEn": "Dead Rising 4",
     "cover": "",
@@ -5059,10 +5059,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_281",
+    "id": "game_281_1775791560086_syzse3",
     "name": "正当防卫2",
     "nameEn": "Just Cause 2",
     "cover": "",
@@ -5077,10 +5077,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_282",
+    "id": "game_282_1775791560086_sbu4yi",
     "name": "正当防卫3",
     "nameEn": "Just Cause 3",
     "cover": "",
@@ -5095,10 +5095,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_283",
+    "id": "game_283_1775791560086_8gpw9h",
     "name": "正当防卫4",
     "nameEn": "Just Cause 4",
     "cover": "",
@@ -5113,10 +5113,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_284",
+    "id": "game_284_1775791560086_2hcidp",
     "name": "孤岛危机：弹头",
     "nameEn": "Crysis: WARHEAD",
     "cover": "",
@@ -5131,10 +5131,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_285",
+    "id": "game_285_1775791560086_8oni0x",
     "name": "孤岛危机1重制版",
     "nameEn": "Crysis Remastered",
     "cover": "",
@@ -5149,10 +5149,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_286",
+    "id": "game_286_1775791560086_fpwjg8",
     "name": "孤岛危机2重制版",
     "nameEn": "Crysis 2 Remastered",
     "cover": "",
@@ -5167,10 +5167,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_287",
+    "id": "game_287_1775791560086_k811cq",
     "name": "孤岛危机3重制版",
     "nameEn": "Crysis 3 Remastered",
     "cover": "",
@@ -5185,10 +5185,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_288",
+    "id": "game_288_1775791560086_h1lcfb",
     "name": "轩辕剑3：云和山的彼端",
     "nameEn": "XuanYuan Sword 3",
     "cover": "",
@@ -5203,10 +5203,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_289",
+    "id": "game_289_1775791560086_zaa07l",
     "name": "轩辕剑4：黑龙舞兮云飞扬",
     "nameEn": "XuanYuan Sword 4",
     "cover": "",
@@ -5221,10 +5221,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_290",
+    "id": "game_290_1775791560086_vd0nl9",
     "name": "轩辕剑5：一剑凌云山海情",
     "nameEn": "XuanYuan Sword 5",
     "cover": "",
@@ -5239,10 +5239,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_291",
+    "id": "game_291_1775791560086_pzsdsh",
     "name": "轩辕剑6：凤凌长空千载云",
     "nameEn": "XuanYuan Sword 6",
     "cover": "",
@@ -5257,10 +5257,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_292",
+    "id": "game_292_1775791560086_1kve0l",
     "name": "轩辕剑3外传：天之痕",
     "nameEn": "XuanYuan Sword：The Scar of the Sky",
     "cover": "",
@@ -5275,10 +5275,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_293",
+    "id": "game_293_1775791560086_1vz2pi",
     "name": "轩辕剑外传：苍之涛",
     "nameEn": "XuanYuan Sword:Millennial Destiny",
     "cover": "",
@@ -5293,10 +5293,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_294",
+    "id": "game_294_1775791560086_7nfl1n",
     "name": "轩辕剑外传：云之遥",
     "nameEn": "XuanYuan Sword:The Clouds Faraway",
     "cover": "",
@@ -5311,10 +5311,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_295",
+    "id": "game_295_1775791560086_zqv7sy",
     "name": "轩辕剑外传：穹之扉",
     "nameEn": "XuanYuan Sword:The Gate of Firmament",
     "cover": "",
@@ -5329,10 +5329,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_296",
+    "id": "game_296_1775791560086_dmtush",
     "name": "英雄传说：空之轨迹",
     "nameEn": "The Legend of Heroes：Trails in the Sky",
     "cover": "",
@@ -5347,10 +5347,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_297",
+    "id": "game_297_1775791560086_s3p33f",
     "name": "英雄传说：零之轨迹改",
     "nameEn": "The Legend of Heroes: Zero no Kiseki KAI",
     "cover": "",
@@ -5365,10 +5365,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_298",
+    "id": "game_298_1775791560086_2fszou",
     "name": "英雄传说：碧之轨迹改",
     "nameEn": "The Legend of Heroes: Ao no Kiseki KAI",
     "cover": "",
@@ -5383,10 +5383,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_299",
+    "id": "game_299_1775791560086_763g8s",
     "name": "英雄传说：创之轨迹",
     "nameEn": "The Legend of Heroes: Hajimari No Kiseki",
     "cover": "",
@@ -5401,10 +5401,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_300",
+    "id": "game_300_1775791560086_d09frs",
     "name": "英雄传说：黎之轨迹",
     "nameEn": "The Legend of Heroes: Kuro no Kiseki",
     "cover": "",
@@ -5419,10 +5419,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_301",
+    "id": "game_301_1775791560086_ymdhdo",
     "name": "英雄传说：黎之轨迹2绯红原罪",
     "nameEn": "The Legend of Heroes: Kuro no Kiseki Ⅱ -CRIMSON SiN",
     "cover": "",
@@ -5437,10 +5437,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_302",
+    "id": "game_302_1775791560086_om2q7f",
     "name": "英雄传说：闪之轨迹1",
     "nameEn": "The Legend of Heroes: Sen no Kiseki I KAI",
     "cover": "",
@@ -5455,10 +5455,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_303",
+    "id": "game_303_1775791560086_yx4u45",
     "name": "英雄传说：闪之轨迹2",
     "nameEn": "The Legend of Heroes: Sen no Kiseki II KAI",
     "cover": "",
@@ -5473,10 +5473,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_304",
+    "id": "game_304_1775791560086_wo3oow",
     "name": "英雄传说：闪之轨迹3",
     "nameEn": "The Legend of Heroes: Trails of Cold Steel III",
     "cover": "",
@@ -5491,10 +5491,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_305",
+    "id": "game_305_1775791560086_7101ug",
     "name": "英雄传说：闪之轨迹4",
     "nameEn": "The Legend of Heroes: Trails of Cold Steel IV",
     "cover": "",
@@ -5509,10 +5509,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_306",
+    "id": "game_306_1775791560086_ef6e1n",
     "name": "英雄传说：界之轨迹 告别塞姆利亚",
     "nameEn": "The Legend of Heroes: Kai no Kiseki -Farewell, O Zemuria",
     "cover": "",
@@ -5527,10 +5527,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_307",
+    "id": "game_307_1775791560086_rvrocm",
     "name": "空之轨迹 the 1st重制版",
     "nameEn": "The 1st Remake of the Empty Trajectory",
     "cover": "",
@@ -5545,10 +5545,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_308",
+    "id": "game_308_1775791560086_jjxrlm",
     "name": "质量效应：传奇版",
     "nameEn": "Mass Effect Legendary Edition",
     "cover": "",
@@ -5563,10 +5563,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_309",
+    "id": "game_309_1775791560086_nzhy6j",
     "name": "质量效应：仙女座",
     "nameEn": "Mass Effect：Andromeda",
     "cover": "",
@@ -5581,10 +5581,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_310",
+    "id": "game_310_1775791560086_vb5w7f",
     "name": "神奇蜘蛛侠1",
     "nameEn": "The Amazing Spider-Man 1",
     "cover": "",
@@ -5599,10 +5599,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_311",
+    "id": "game_311_1775791560086_9m7ziq",
     "name": "神奇蜘蛛侠2",
     "nameEn": "The Amazing Spider-Man 2",
     "cover": "",
@@ -5617,10 +5617,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_312",
+    "id": "game_312_1775791560086_c54wc0",
     "name": "皇牌空战7：突击地平线",
     "nameEn": "ACE COMBAT 7: SKIES UNKNOWN Deluxe Edition",
     "cover": "",
@@ -5635,10 +5635,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_313",
+    "id": "game_313_1775791560086_3zcdqo",
     "name": "皇牌空战7：未知空域",
     "nameEn": "ACE COMBAT 7: SKIES UNKNOWN Deluxe Edition",
     "cover": "",
@@ -5653,10 +5653,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_314",
+    "id": "game_314_1775791560086_mi82b6",
     "name": "德军总部：旧血脉",
     "nameEn": "Wolfenstein: The Old Blood",
     "cover": "",
@@ -5671,10 +5671,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_315",
+    "id": "game_315_1775791560086_3ud3s4",
     "name": "德军总部：新血脉",
     "nameEn": "Wolfenstein: Youngblood",
     "cover": "",
@@ -5689,10 +5689,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_316",
+    "id": "game_316_1775791560086_ux70gp",
     "name": "德军总部：新秩序",
     "nameEn": "Wolfenstein: The New Order",
     "cover": "",
@@ -5707,10 +5707,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_317",
+    "id": "game_317_1775791560086_0c90nq",
     "name": "德军总部2：新巨人",
     "nameEn": "Wolfenstein II: The New Colossus",
     "cover": "",
@@ -5725,10 +5725,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_318",
+    "id": "game_318_1775791560086_fq114e",
     "name": "极限竞速7",
     "nameEn": "Forza Motorsport 7",
     "cover": "",
@@ -5743,10 +5743,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_319",
+    "id": "game_319_1775791560086_6atvtc",
     "name": "极限竞速8：赛车运动",
     "nameEn": "Forza Motorsport",
     "cover": "",
@@ -5761,10 +5761,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_320",
+    "id": "game_320_1775791560086_di7227",
     "name": "极限竞速：地平线3",
     "nameEn": "Forza Horizon 3",
     "cover": "",
@@ -5779,10 +5779,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_321",
+    "id": "game_321_1775791560086_y4jaji",
     "name": "极限竞速：地平线4",
     "nameEn": "Forza Horizon 4 Ultimate Edition",
     "cover": "",
@@ -5797,10 +5797,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_322",
+    "id": "game_322_1775791560086_6hww9k",
     "name": "极限竞速：地平线5",
     "nameEn": "Forza Horizon 5 - Premium Edition",
     "cover": "",
@@ -5815,10 +5815,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_323",
+    "id": "game_323_1775791560086_ccr67w",
     "name": "三国群英传1-6",
     "nameEn": "Heroes of the Three Kingdoms",
     "cover": "",
@@ -5833,10 +5833,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_324",
+    "id": "game_324_1775791560086_agqkq9",
     "name": "三国群英传7",
     "nameEn": "Heroes of the Three Kingdoms 7",
     "cover": "",
@@ -5851,10 +5851,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_325",
+    "id": "game_325_1775791560086_sgjkdf",
     "name": "风色幻想系列8部",
     "nameEn": "Wind Fantasy",
     "cover": "",
@@ -5869,10 +5869,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_326",
+    "id": "game_326_1775791560086_ru8o23",
     "name": "杀手：代号47",
     "nameEn": "Hitman: Codename 47",
     "cover": "",
@@ -5887,10 +5887,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_327",
+    "id": "game_327_1775791560086_mhnklw",
     "name": "杀手2黄金版",
     "nameEn": "Hitman 2",
     "cover": "",
@@ -5905,10 +5905,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_328",
+    "id": "game_328_1775791560086_1f2h40",
     "name": "杀手2：沉默刺客",
     "nameEn": "Hitman 2：Silent Assassin",
     "cover": "",
@@ -5923,10 +5923,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_329",
+    "id": "game_329_1775791560086_1e6go5",
     "name": "杀手3豪华版",
     "nameEn": "Hitman 3 Deluxe Edition",
     "cover": "",
@@ -5941,10 +5941,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_330",
+    "id": "game_330_1775791560086_5ve2ff",
     "name": "杀手3：契约",
     "nameEn": "Hitman：Contracts",
     "cover": "",
@@ -5959,10 +5959,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_331",
+    "id": "game_331_1775791560086_jxakf9",
     "name": "杀手4：血钱",
     "nameEn": "Hitman: Blood Money",
     "cover": "",
@@ -5977,10 +5977,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_332",
+    "id": "game_332_1775791560086_t8lbhk",
     "name": "杀手5：赦免",
     "nameEn": "Hitman：Absolution",
     "cover": "",
@@ -5995,10 +5995,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_333",
+    "id": "game_333_1775791560086_q0383r",
     "name": "杀手6年度版",
     "nameEn": "Hitman 6",
     "cover": "",
@@ -6013,10 +6013,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_334",
+    "id": "game_334_1775791560086_ipcl1k",
     "name": "杀手GO：终极版",
     "nameEn": "Hitman GO: Definitive Edition",
     "cover": "",
@@ -6031,10 +6031,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_335",
+    "id": "game_335_1775791560086_8xm444",
     "name": "光环：士官长合集",
     "nameEn": "Halo: The Master Chief Collection",
     "cover": "",
@@ -6049,10 +6049,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_336",
+    "id": "game_336_1775791560086_g5fd1l",
     "name": "光环：致远星",
     "nameEn": "Halo: Reach",
     "cover": "",
@@ -6067,10 +6067,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_337",
+    "id": "game_337_1775791560086_o9oyh8",
     "name": "光环：无限",
     "nameEn": "Halo Infinite",
     "cover": "",
@@ -6085,10 +6085,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_338",
+    "id": "game_338_1775791560086_2qkd1b",
     "name": "光环战争2",
     "nameEn": "Halo Wars 2",
     "cover": "",
@@ -6103,10 +6103,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_339",
+    "id": "game_339_1775791560086_1kgoob",
     "name": "毁灭战士4",
     "nameEn": "Doom 4",
     "cover": "",
@@ -6121,10 +6121,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_340",
+    "id": "game_340_1775791560086_g68gyc",
     "name": "毁灭战士：永恒",
     "nameEn": "DOOM Eternal",
     "cover": "",
@@ -6139,10 +6139,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560086
   },
   {
-    "id": "game_341",
+    "id": "game_341_1775791560086_9hsngj",
     "name": "毁灭战士：黑暗时代",
     "nameEn": "DOOM: The Dark Ages",
     "cover": "",
@@ -6157,10 +6157,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_342",
+    "id": "game_342_1775791560087_y9z9p1",
     "name": "瘟疫传说：无罪",
     "nameEn": "A Plague Tale: Requiem",
     "cover": "",
@@ -6175,10 +6175,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_343",
+    "id": "game_343_1775791560087_9rakac",
     "name": "瘟疫传说：安魂曲",
     "nameEn": "A Plague Tale: Innocence",
     "cover": "",
@@ -6193,10 +6193,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_344",
+    "id": "game_344_1775791560087_6kn30v",
     "name": "蝙蝠侠 阿甘起源之黑门监狱",
     "nameEn": "Batman Arkham Origins Blackgate",
     "cover": "",
@@ -6211,10 +6211,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_345",
+    "id": "game_345_1775791560087_c3kfbv",
     "name": "蝙蝠侠 故事版",
     "nameEn": "Batman:A Telltale Games Series",
     "cover": "",
@@ -6229,10 +6229,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_346",
+    "id": "game_346_1775791560087_atsf09",
     "name": "蝙蝠侠 内战内敌",
     "nameEn": "Batman：The Enemy Within",
     "cover": "",
@@ -6247,10 +6247,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_347",
+    "id": "game_347_1775791560087_iiyf10",
     "name": "蝙蝠侠：阿卡姆疯人院",
     "nameEn": "Batman：Arkham Asylum",
     "cover": "",
@@ -6265,10 +6265,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_348",
+    "id": "game_348_1775791560087_hj5ibc",
     "name": "蝙蝠侠：阿卡姆之城",
     "nameEn": "Batman：Arkham City",
     "cover": "",
@@ -6283,10 +6283,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_349",
+    "id": "game_349_1775791560087_tfk17x",
     "name": "蝙蝠侠：阿卡姆起源完整版",
     "nameEn": "Batman: Arkham Origins",
     "cover": "",
@@ -6301,10 +6301,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_350",
+    "id": "game_350_1775791560087_42l8ta",
     "name": "蝙蝠侠：阿卡姆骑士年度版",
     "nameEn": "Batman: Arkham Knight Premium Edition",
     "cover": "",
@@ -6319,10 +6319,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_351",
+    "id": "game_351_1775791560087_fpdxyw",
     "name": "尘埃：决战",
     "nameEn": "DiRT Showdown",
     "cover": "",
@@ -6337,10 +6337,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_352",
+    "id": "game_352_1775791560087_im6e0d",
     "name": "尘埃拉力赛",
     "nameEn": "DiRT Rally",
     "cover": "",
@@ -6355,10 +6355,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_353",
+    "id": "game_353_1775791560087_tqv4k2",
     "name": "尘埃拉力赛2.0",
     "nameEn": "DiRT Rally 2.0",
     "cover": "",
@@ -6373,10 +6373,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_354",
+    "id": "game_354_1775791560087_xi19n2",
     "name": "尘埃3",
     "nameEn": "DiRT 3",
     "cover": "",
@@ -6391,10 +6391,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_355",
+    "id": "game_355_1775791560087_o3qyqb",
     "name": "尘埃4",
     "nameEn": "DiRT 4",
     "cover": "",
@@ -6409,10 +6409,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_356",
+    "id": "game_356_1775791560087_lvkbku",
     "name": "尘埃5",
     "nameEn": "DiRT 5",
     "cover": "",
@@ -6427,10 +6427,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_357",
+    "id": "game_357_1775791560087_gr6qcn",
     "name": "恶魔城：暗影之王",
     "nameEn": "Castlevania：Lords of Shadow",
     "cover": "",
@@ -6445,10 +6445,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_358",
+    "id": "game_358_1775791560087_3yo3j5",
     "name": "恶魔城：暗影之王2",
     "nameEn": "Castlevania：Lords of Shadow 2",
     "cover": "",
@@ -6463,10 +6463,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_359",
+    "id": "game_359_1775791560087_4pyp3k",
     "name": "龙腾世纪2",
     "nameEn": "Dragon Age II",
     "cover": "",
@@ -6481,10 +6481,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_360",
+    "id": "game_360_1775791560087_p20ztx",
     "name": "龙腾世纪3：审判",
     "nameEn": "Dragon Age：Inquisition",
     "cover": "",
@@ -6499,10 +6499,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_361",
+    "id": "game_361_1775791560087_q6artg",
     "name": "龙腾世纪4：影障守护者",
     "nameEn": "Dragon Age: The Veilguard",
     "cover": "",
@@ -6517,10 +6517,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_362",
+    "id": "game_362_1775791560087_v5f3dk",
     "name": "波斯王子：失落王冠",
     "nameEn": "Prince of Persia The Lost Crown",
     "cover": "",
@@ -6535,10 +6535,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_363",
+    "id": "game_363_1775791560087_yqvjcq",
     "name": "波斯王子4：重生",
     "nameEn": "prince of persia prodigy",
     "cover": "",
@@ -6553,10 +6553,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_364",
+    "id": "game_364_1775791560087_c6lo0h",
     "name": "波斯王子：Rogue",
     "nameEn": "The Rogue Prince of Persia",
     "cover": "",
@@ -6571,10 +6571,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_365",
+    "id": "game_365_1775791560087_7y3w4r",
     "name": "虐杀原形1",
     "nameEn": "Prototype",
     "cover": "",
@@ -6589,10 +6589,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_366",
+    "id": "game_366_1775791560087_66v40o",
     "name": "虐杀原形2",
     "nameEn": "Prototype2",
     "cover": "",
@@ -6607,10 +6607,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_367",
+    "id": "game_367_1775791560087_hz4s0k",
     "name": "荣誉勋章三部曲",
     "nameEn": "Medal of Honor",
     "cover": "",
@@ -6625,10 +6625,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_368",
+    "id": "game_368_1775791560087_t840mf",
     "name": "荣誉勋章：血战太平洋",
     "nameEn": "Medal of Honor Pacific Assault",
     "cover": "",
@@ -6643,10 +6643,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_369",
+    "id": "game_369_1775791560087_ewyd1v",
     "name": "荣誉勋章：战士",
     "nameEn": "Medal of Honor：Warfighter",
     "cover": "",
@@ -6661,10 +6661,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_370",
+    "id": "game_370_1775791560087_l34295",
     "name": "极速骑行3",
     "nameEn": "RIDE 3",
     "cover": "",
@@ -6679,10 +6679,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_371",
+    "id": "game_371_1775791560087_5kvee0",
     "name": "极速骑行4",
     "nameEn": "RIDE 4",
     "cover": "",
@@ -6697,10 +6697,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_372",
+    "id": "game_372_1775791560087_7tgd44",
     "name": "极速骑行5",
     "nameEn": "RIDE 5",
     "cover": "",
@@ -6715,10 +6715,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_373",
+    "id": "game_373_1775791560087_zomvkn",
     "name": "极速骑行6",
     "nameEn": "RIDE 6",
     "cover": "",
@@ -6733,10 +6733,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_374",
+    "id": "game_374_1775791560087_1o4r8x",
     "name": "NBA篮球2K14",
     "nameEn": "NBA2K14",
     "cover": "",
@@ -6751,10 +6751,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_375",
+    "id": "game_375_1775791560087_ib71ge",
     "name": "NBA篮球2K15",
     "nameEn": "NBA2K15",
     "cover": "",
@@ -6769,10 +6769,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_376",
+    "id": "game_376_1775791560087_l5mriv",
     "name": "NBA篮球2K16",
     "nameEn": "NBA2K16",
     "cover": "",
@@ -6787,10 +6787,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_377",
+    "id": "game_377_1775791560087_4c64vx",
     "name": "NBA篮球2K17",
     "nameEn": "NBA2K17",
     "cover": "",
@@ -6805,10 +6805,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_378",
+    "id": "game_378_1775791560087_gh4uss",
     "name": "NBA篮球2K18",
     "nameEn": "NBA2K18",
     "cover": "",
@@ -6823,10 +6823,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_379",
+    "id": "game_379_1775791560087_yi44cv",
     "name": "NBA篮球2K19",
     "nameEn": "NBA2K19",
     "cover": "",
@@ -6841,10 +6841,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_380",
+    "id": "game_380_1775791560087_0l7eas",
     "name": "NBA篮球2K20",
     "nameEn": "NBA2K20",
     "cover": "",
@@ -6859,10 +6859,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_381",
+    "id": "game_381_1775791560087_yts3ow",
     "name": "NBA篮球2K21",
     "nameEn": "NBA2K21",
     "cover": "",
@@ -6877,10 +6877,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_382",
+    "id": "game_382_1775791560087_9r7nx5",
     "name": "NBA篮球2K22",
     "nameEn": "NBA2K22",
     "cover": "",
@@ -6895,10 +6895,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_383",
+    "id": "game_383_1775791560087_30188w",
     "name": "NBA篮球2K23",
     "nameEn": "NBA2K23",
     "cover": "",
@@ -6913,10 +6913,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_384",
+    "id": "game_384_1775791560087_o1rn50",
     "name": "装机模拟器2",
     "nameEn": "PC Building Simulator 2",
     "cover": "",
@@ -6931,10 +6931,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_385",
+    "id": "game_385_1775791560087_64x1j9",
     "name": "牧场模拟器",
     "nameEn": "Ranch Simulator",
     "cover": "",
@@ -6949,10 +6949,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_386",
+    "id": "game_386_1775791560087_zt0kou",
     "name": "电工模拟器",
     "nameEn": "Electrician Simulator",
     "cover": "",
@@ -6967,10 +6967,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_387",
+    "id": "game_387_1775791560087_s0r752",
     "name": "海贼王：海贼无双3",
     "nameEn": "One Piece: Pirate Warriors 3",
     "cover": "",
@@ -6985,10 +6985,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_388",
+    "id": "game_388_1775791560087_s07g4g",
     "name": "海贼王：海贼无双4",
     "nameEn": "One Piece: Pirate Warriors 4",
     "cover": "",
@@ -7003,10 +7003,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_389",
+    "id": "game_389_1775791560087_4efesw",
     "name": "魔兽争霸1：重制版",
     "nameEn": "Warcraft I Remastered",
     "cover": "",
@@ -7021,10 +7021,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_390",
+    "id": "game_390_1775791560087_hhd2op",
     "name": "魔兽争霸2：重制版",
     "nameEn": "Warcraft II Remastered",
     "cover": "",
@@ -7039,10 +7039,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_391",
+    "id": "game_391_1775791560087_04id2j",
     "name": "魔兽争霸2：黑潮",
     "nameEn": "WarcraftⅡ: Tides of Darkness",
     "cover": "",
@@ -7057,10 +7057,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_392",
+    "id": "game_392_1775791560087_h86fc5",
     "name": "魔兽争霸3：八族争霸",
     "nameEn": "Warcraft III: Eight Races Conflict",
     "cover": "",
@@ -7075,10 +7075,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_393",
+    "id": "game_393_1775791560087_ica0c9",
     "name": "魔兽争霸3：涅槃重生",
     "nameEn": "Warcraft III: Reforged",
     "cover": "",
@@ -7093,10 +7093,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_394",
+    "id": "game_394_1775791560087_fzclig",
     "name": "魔兽争霸3：冰封王座",
     "nameEn": "Warcraft 3: The Frozen Throne",
     "cover": "",
@@ -7111,10 +7111,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_395",
+    "id": "game_395_1775791560087_jrzjty",
     "name": "魔兽争霸3：重制版",
     "nameEn": "Warcraft III: Reforged",
     "cover": "",
@@ -7129,10 +7129,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_396",
+    "id": "game_396_1775791560087_5ndc1e",
     "name": "范海辛的奇妙冒险2",
     "nameEn": "The Incredible Adventures of Van Helsing II",
     "cover": "",
@@ -7147,10 +7147,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_397",
+    "id": "game_397_1775791560087_qkdqzm",
     "name": "范海辛的奇妙冒险3",
     "nameEn": "The Incredible Adventures of Van Helsing III",
     "cover": "",
@@ -7165,10 +7165,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_398",
+    "id": "game_398_1775791560087_wqtbei",
     "name": "怪物猎人：世界",
     "nameEn": "Monster Hunter: World",
     "cover": "",
@@ -7183,10 +7183,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_399",
+    "id": "game_399_1775791560087_u4tttr",
     "name": "怪物猎人世界：冰原",
     "nameEn": "Monster Hunter World: Iceborne",
     "cover": "",
@@ -7201,10 +7201,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_400",
+    "id": "game_400_1775791560087_4b5im7",
     "name": "怪物猎人：崛起 曙光",
     "nameEn": "MONSTER HUNTER RISE",
     "cover": "",
@@ -7219,10 +7219,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_401",
+    "id": "game_401_1775791560087_0u51m7",
     "name": "怪物猎人物语2：毁灭之翼",
     "nameEn": "Monster Hunter Stories 2: Wings of Ruin",
     "cover": "",
@@ -7237,10 +7237,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_402",
+    "id": "game_402_1775791560087_l1gmwy",
     "name": "怪物猎人物语",
     "nameEn": "MONSTER HUNTER STORIES",
     "cover": "",
@@ -7255,10 +7255,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_403",
+    "id": "game_403_1775791560087_ie5owr",
     "name": "怪物猎人：荒野",
     "nameEn": "Monster Hunter Wilds",
     "cover": "",
@@ -7273,10 +7273,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_404",
+    "id": "game_404_1775791560087_rledn8",
     "name": "怪物猎人物语3：命运双龙",
     "nameEn": "Monster Hunter Stories 3：Twisted Reflection",
     "cover": "",
@@ -7291,10 +7291,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_405",
+    "id": "game_405_1775791560087_9mqifp",
     "name": "深海迷航美丽水世界",
     "nameEn": "Subnautica",
     "cover": "",
@@ -7309,10 +7309,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_406",
+    "id": "game_406_1775791560087_90p0d6",
     "name": "深海迷航零度之下",
     "nameEn": "Subnautica: Below Zero",
     "cover": "",
@@ -7327,10 +7327,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_407",
+    "id": "game_407_1775791560087_zilmd0",
     "name": "国际足球大联盟14_FIFA14",
     "nameEn": "FIFA14",
     "cover": "",
@@ -7345,10 +7345,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_408",
+    "id": "game_408_1775791560087_8sp815",
     "name": "国际足球大联盟15_FIFA15",
     "nameEn": "FIFA15",
     "cover": "",
@@ -7363,10 +7363,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_409",
+    "id": "game_409_1775791560087_0vvsra",
     "name": "国际足球大联盟16_FIFA16",
     "nameEn": "FIFA16",
     "cover": "",
@@ -7381,10 +7381,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_410",
+    "id": "game_410_1775791560087_4yrr4w",
     "name": "国际足球大联盟17_FIFA17",
     "nameEn": "FIFA17",
     "cover": "",
@@ -7399,10 +7399,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_411",
+    "id": "game_411_1775791560087_wj61vq",
     "name": "国际足球大联盟18_FIFA18",
     "nameEn": "FIFA18",
     "cover": "",
@@ -7417,10 +7417,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_412",
+    "id": "game_412_1775791560087_7wjliu",
     "name": "国际足球大联盟19_FIFA19",
     "nameEn": "FIFA19",
     "cover": "",
@@ -7435,10 +7435,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_413",
+    "id": "game_413_1775791560087_sjlohp",
     "name": "国际足球大联盟20_FIFA20",
     "nameEn": "FIFA20",
     "cover": "",
@@ -7453,10 +7453,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_414",
+    "id": "game_414_1775791560087_p50x5g",
     "name": "反恐精英CS1.6",
     "nameEn": "Counter-Strike",
     "cover": "",
@@ -7471,10 +7471,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_415",
+    "id": "game_415_1775791560087_75ltep",
     "name": "反恐精英2",
     "nameEn": "Counter-Strike 2",
     "cover": "",
@@ -7489,10 +7489,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_416",
+    "id": "game_416_1775791560087_c0qkb8",
     "name": "半条命1",
     "nameEn": "Half-Life",
     "cover": "",
@@ -7507,10 +7507,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_417",
+    "id": "game_417_1775791560087_bsu2u2",
     "name": "半条命2/半衰期2",
     "nameEn": "Half-Life 2",
     "cover": "",
@@ -7525,10 +7525,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_418",
+    "id": "game_418_1775791560087_pn3x2l",
     "name": "半条命：爱莉克斯",
     "nameEn": "alf-Life: Alyx",
     "cover": "",
@@ -7543,10 +7543,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_419",
+    "id": "game_419_1775791560087_56y5ma",
     "name": "塞尔达传说：荒野之息",
     "nameEn": "The Legend of Zelda: Breath of the wild",
     "cover": "",
@@ -7561,10 +7561,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_420",
+    "id": "game_420_1775791560087_ubp60r",
     "name": "塞尔达传说：王国之泪",
     "nameEn": "The Legend of Zelda: Tears of the kingdom",
     "cover": "",
@@ -7579,10 +7579,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_421",
+    "id": "game_421_1775791560087_smrqr1",
     "name": "塞尔达传说：天空之剑",
     "nameEn": "The Legend of Zelda: Skyward Sword HD",
     "cover": "",
@@ -7597,10 +7597,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_422",
+    "id": "game_422_1775791560087_rswyu4",
     "name": "塞尔达传说：智慧的再现",
     "nameEn": "The Legend Of ZELDA:Echoes of Wisdom",
     "cover": "",
@@ -7615,10 +7615,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_423",
+    "id": "game_423_1775791560087_a2xe5q",
     "name": "遗迹：灰烬重生",
     "nameEn": "Remnant: From the Ashes",
     "cover": "",
@@ -7633,10 +7633,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_424",
+    "id": "game_424_1775791560087_ihqmqc",
     "name": "遗迹2",
     "nameEn": "Remnant II",
     "cover": "",
@@ -7651,10 +7651,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_425",
+    "id": "game_425_1775791560087_q36wxw",
     "name": "赛博朋克2077：往日之影",
     "nameEn": "Cyberpunk 2077",
     "cover": "",
@@ -7669,10 +7669,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_426",
+    "id": "game_426_1775791560087_xyee6b",
     "name": "幽灵行者",
     "nameEn": "Ghostrunner",
     "cover": "",
@@ -7687,10 +7687,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_427",
+    "id": "game_427_1775791560087_um1yf1",
     "name": "幽灵行者2",
     "nameEn": "Ghostrunner 2",
     "cover": "",
@@ -7705,10 +7705,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_428",
+    "id": "game_428_1775791560087_e6mz2n",
     "name": "腐烂国度2：巨霸主宰",
     "nameEn": "State of Decay 2: Juggernaut Edition",
     "cover": "",
@@ -7723,10 +7723,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_429",
+    "id": "game_429_1775791560087_rtht7h",
     "name": "腐烂国度2：剑圣版归乡",
     "nameEn": "State of Decay: Year One Survival Edition",
     "cover": "",
@@ -7741,10 +7741,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_430",
+    "id": "game_430_1775791560087_53lna2",
     "name": "腐烂国度：周年求生版",
     "nameEn": "State of Decay: Year One Survival Edition",
     "cover": "",
@@ -7759,10 +7759,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_431",
+    "id": "game_431_1775791560087_4guy4q",
     "name": "胡闹厨房：全都好吃",
     "nameEn": "Overcooked! All You Can Eat",
     "cover": "",
@@ -7777,10 +7777,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_432",
+    "id": "game_432_1775791560087_fcv078",
     "name": "胡闹厨房2",
     "nameEn": "Overcooked! 2",
     "cover": "",
@@ -7795,10 +7795,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_433",
+    "id": "game_433_1775791560087_66m29o",
     "name": "神界：原罪",
     "nameEn": "Divinity: Original Sin - Enhanced Edition",
     "cover": "",
@@ -7813,10 +7813,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_434",
+    "id": "game_434_1775791560087_1aypwt",
     "name": "神界：原罪2",
     "nameEn": "Divinity: Original Sin 2 - Definitive Edition",
     "cover": "",
@@ -7831,10 +7831,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_435",
+    "id": "game_435_1775791560087_fyly6s",
     "name": "禁闭求生",
     "nameEn": "Grounded",
     "cover": "",
@@ -7849,10 +7849,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_436",
+    "id": "game_436_1775791560087_f9qfs0",
     "name": "禁闭求生2",
     "nameEn": "Grounded 2",
     "cover": "",
@@ -7867,10 +7867,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_437",
+    "id": "game_437_1775791560087_ox4zb1",
     "name": "空洞骑士",
     "nameEn": "Hollow Knight",
     "cover": "",
@@ -7885,10 +7885,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_438",
+    "id": "game_438_1775791560087_drpd4r",
     "name": "空洞骑士：丝之歌",
     "nameEn": "Hollow Knight: Silksong",
     "cover": "",
@@ -7903,10 +7903,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_439",
+    "id": "game_439_1775791560087_651caj",
     "name": "冲就完事模拟器",
     "nameEn": "PowerWash Simulator",
     "cover": "",
@@ -7921,10 +7921,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_440",
+    "id": "game_440_1775791560087_ml6xne",
     "name": "冲就完事模拟器2",
     "nameEn": "PowerWash Simulator 2",
     "cover": "",
@@ -7939,10 +7939,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_441",
+    "id": "game_441_1775791560087_cz0e0e",
     "name": "欧陆风云4：黄金世纪",
     "nameEn": "Europa Universalis IV",
     "cover": "",
@@ -7957,10 +7957,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_442",
+    "id": "game_442_1775791560087_nihxme",
     "name": "欧陆风云5",
     "nameEn": "Europa Universalis V",
     "cover": "",
@@ -7975,10 +7975,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_443",
+    "id": "game_443_1775791560087_fma77y",
     "name": "火影忍者博人传：忍者先锋(推荐手柄）",
     "nameEn": "NARUTO TO BORUTO: SHINOBI STRIKER",
     "cover": "",
@@ -7993,10 +7993,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_444",
+    "id": "game_444_1775791560087_jg11i5",
     "name": "火影忍者：究极忍者风暴(推荐手柄）",
     "nameEn": "NARUTO: Ultimate Ninja STORM",
     "cover": "",
@@ -8011,10 +8011,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_445",
+    "id": "game_445_1775791560087_f2zqma",
     "name": "火影忍者疾风传：究极忍者风暴2(推荐手柄）",
     "nameEn": "NARUTO SHIPPUDEN: Ultimate Ninja STOR",
     "cover": "",
@@ -8029,10 +8029,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_446",
+    "id": "game_446_1775791560087_wxlwg2",
     "name": "火影忍者疾风传：究极忍者风暴3",
     "nameEn": "NARUTO SHIPPUDEN: Ultimate Ninja STOR",
     "cover": "",
@@ -8047,10 +8047,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_447",
+    "id": "game_447_1775791560087_c020pp",
     "name": "火影忍者究极忍者风暴4：博人之路",
     "nameEn": "Naruto Shippuden: Ultimate Ninja S",
     "cover": "",
@@ -8065,10 +8065,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_448",
+    "id": "game_448_1775791560087_w5w3bk",
     "name": "火影忍者：终极风暴羁绊",
     "nameEn": "NARUTO X BORUTO Ultimate Ninja STORM CONNECTION",
     "cover": "",
@@ -8083,10 +8083,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_449",
+    "id": "game_449_1775791560087_nawkio",
     "name": "暗黑血统：战神版",
     "nameEn": "Darksiders Warmastered Edition",
     "cover": "",
@@ -8101,10 +8101,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_450",
+    "id": "game_450_1775791560087_5kl5a8",
     "name": "暗黑血统2：死亡终极版",
     "nameEn": "Darksiders II Deathinitive Edition",
     "cover": "",
@@ -8119,10 +8119,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_451",
+    "id": "game_451_1775791560087_1ar6uo",
     "name": "暗黑血统3",
     "nameEn": "Darksiders III",
     "cover": "",
@@ -8137,10 +8137,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_452",
+    "id": "game_452_1775791560087_t50ir0",
     "name": "暗黑血统：创世纪",
     "nameEn": "Darksiders Genesis",
     "cover": "",
@@ -8155,10 +8155,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_453",
+    "id": "game_453_1775791560087_j0x40m",
     "name": "武装突袭：重铸者",
     "nameEn": "Arma Reforger",
     "cover": "",
@@ -8173,10 +8173,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_454",
+    "id": "game_454_1775791560087_hx5rhp",
     "name": "武装突袭3",
     "nameEn": "Arma 3",
     "cover": "",
@@ -8191,10 +8191,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_455",
+    "id": "game_455_1775791560087_5io6kt",
     "name": "武装突袭：援德行动",
     "nameEn": "Arma Reforger",
     "cover": "",
@@ -8209,10 +8209,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_456",
+    "id": "game_456_1775791560087_tz9hi0",
     "name": "文明3",
     "nameEn": "Civilization III",
     "cover": "",
@@ -8227,10 +8227,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_457",
+    "id": "game_457_1775791560087_9sqtk6",
     "name": "文明4",
     "nameEn": "Civilization IV",
     "cover": "",
@@ -8245,10 +8245,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_458",
+    "id": "game_458_1775791560087_zcbwhh",
     "name": "文明5",
     "nameEn": "Civilization V",
     "cover": "",
@@ -8263,10 +8263,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_459",
+    "id": "game_459_1775791560087_i7gey4",
     "name": "文明6",
     "nameEn": "Civilization VI",
     "cover": "",
@@ -8281,10 +8281,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_460",
+    "id": "game_460_1775791560087_piakgh",
     "name": "文明7/席德・梅尔的文明 VII",
     "nameEn": "Sid Meier's Civilization VII",
     "cover": "",
@@ -8299,10 +8299,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_461",
+    "id": "game_461_1775791560087_0oqb6r",
     "name": "死亡搁浅",
     "nameEn": "Death Stranding",
     "cover": "",
@@ -8317,10 +8317,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_462",
+    "id": "game_462_1775791560087_8gueid",
     "name": "死亡搁浅2：冥滩之上",
     "nameEn": "DEATH STRANDING 2: ON THE BEACH",
     "cover": "",
@@ -8335,10 +8335,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_463",
+    "id": "game_463_1775791560087_1kcq0i",
     "name": "拳皇97：全球对决",
     "nameEn": "The king of fighters'97 Global Match",
     "cover": "",
@@ -8353,10 +8353,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_464",
+    "id": "game_464_1775791560087_iae7ja",
     "name": "拳皇98：终极对决",
     "nameEn": "The King of Fighters 98: Ultimate Match",
     "cover": "",
@@ -8371,10 +8371,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_465",
+    "id": "game_465_1775791560087_hub2h0",
     "name": "拳皇2002：终极之战",
     "nameEn": "The King of Fighters 2002 Unlimited Match",
     "cover": "",
@@ -8389,10 +8389,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_466",
+    "id": "game_466_1775791560087_ssdk50",
     "name": "拳皇13",
     "nameEn": "THE KING OF FIGHTERS XIII GLOBAL MATCH",
     "cover": "",
@@ -8407,10 +8407,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_467",
+    "id": "game_467_1775791560087_4sz7rd",
     "name": "拳皇14",
     "nameEn": "THE KING OF FIGHTERS XIV",
     "cover": "",
@@ -8425,10 +8425,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_468",
+    "id": "game_468_1775791560087_z5hu11",
     "name": "拳皇15",
     "nameEn": "THE KING OF FIGHTERS XV",
     "cover": "",
@@ -8443,10 +8443,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_469",
+    "id": "game_469_1775791560087_frm5fl",
     "name": "F1 2017 终极版",
     "nameEn": "",
     "cover": "",
@@ -8461,10 +8461,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_470",
+    "id": "game_470_1775791560087_jrgqz1",
     "name": "F1 2018",
     "nameEn": "",
     "cover": "",
@@ -8479,10 +8479,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_471",
+    "id": "game_471_1775791560087_4q998q",
     "name": "F1 22",
     "nameEn": "",
     "cover": "",
@@ -8497,10 +8497,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_472",
+    "id": "game_472_1775791560087_lsvmpz",
     "name": "F1 2021",
     "nameEn": "",
     "cover": "",
@@ -8515,10 +8515,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_473",
+    "id": "game_473_1775791560087_7a1e4x",
     "name": "闪客2",
     "nameEn": "shank2",
     "cover": "",
@@ -8533,10 +8533,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_474",
+    "id": "game_474_1775791560087_bh033b",
     "name": "闪客快打单机版2021",
     "nameEn": "Crazy Flasher Series 2021",
     "cover": "",
@@ -8551,10 +8551,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_475",
+    "id": "game_475_1775791560087_chx8pm",
     "name": "如龙：极重制版/人中之龙 极",
     "nameEn": "Yakuza Kiwami",
     "cover": "",
@@ -8569,10 +8569,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_476",
+    "id": "game_476_1775791560087_bdyl4d",
     "name": "如龙：极2重制版/人中之龙 极2",
     "nameEn": "Yakuza Kiwami 2",
     "cover": "",
@@ -8587,10 +8587,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_477",
+    "id": "game_477_1775791560087_sk9ym3",
     "name": "人中之龙极３+人中之龙３外传Dark Ties",
     "nameEn": "Dragon of the Human Pole 3/Dragon of the Human 3 spin off dark ties",
     "cover": "",
@@ -8605,10 +8605,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_478",
+    "id": "game_478_1775791560087_pmjny4",
     "name": "人中之龙0 誓约的场所 导演剪辑版",
     "nameEn": "Yakuza 0 Director's Cut",
     "cover": "",
@@ -8623,10 +8623,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_479",
+    "id": "game_479_1775791560087_z470ev",
     "name": "如龙3重制版",
     "nameEn": "Yakuza 3 Remastered",
     "cover": "",
@@ -8641,10 +8641,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_480",
+    "id": "game_480_1775791560087_zmp039",
     "name": "如龙4/人中之龙4",
     "nameEn": "Yakuza 4 Remastered",
     "cover": "",
@@ -8659,10 +8659,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_481",
+    "id": "game_481_1775791560087_ia0t5j",
     "name": "如龙5重制版",
     "nameEn": "Yakuza 5 Remastered",
     "cover": "",
@@ -8677,10 +8677,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_482",
+    "id": "game_482_1775791560087_os0712",
     "name": "如龙6：生命诗篇",
     "nameEn": "Yakuza 6: The Song of Life",
     "cover": "",
@@ -8695,10 +8695,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_483",
+    "id": "game_483_1775791560087_ba872k",
     "name": "如龙7：光与暗的去向",
     "nameEn": "Yakuza: Like a Dragon Hero Edition",
     "cover": "",
@@ -8713,10 +8713,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_484",
+    "id": "game_484_1775791560087_kw3ogk",
     "name": "人中之龙7外传：无名之龙",
     "nameEn": "Like a Dragon Gaiden: The Man Who Erased His",
     "cover": "",
@@ -8731,10 +8731,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_485",
+    "id": "game_485_1775791560087_r0ga2b",
     "name": "如龙8_人中之龙8",
     "nameEn": "Like a Dragon: Infinite Wealth",
     "cover": "",
@@ -8749,10 +8749,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_486",
+    "id": "game_486_1775791560087_dm9w37",
     "name": "人中之龙8外传：夏威夷海盗",
     "nameEn": "Prepurchase Like a Dragon: Pirate Yakuza in Hawaii",
     "cover": "",
@@ -8767,10 +8767,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_487",
+    "id": "game_487_1775791560087_j9yw0z",
     "name": "铁拳7",
     "nameEn": "Tekken 7 Ultimate Edition",
     "cover": "",
@@ -8785,10 +8785,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_488",
+    "id": "game_488_1775791560087_6dkkq3",
     "name": "铁拳8",
     "nameEn": "TEKKEN 8",
     "cover": "",
@@ -8803,10 +8803,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_489",
+    "id": "game_489_1775791560087_04hi33",
     "name": "刀剑神域：虚空断章",
     "nameEn": "Sword Art Online Re: Hollow Fragment",
     "cover": "",
@@ -8821,10 +8821,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_490",
+    "id": "game_490_1775791560087_ul54k8",
     "name": "刀剑神域：失落之歌",
     "nameEn": "Sword Art Online: Lost Song",
     "cover": "",
@@ -8839,10 +8839,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_491",
+    "id": "game_491_1775791560087_tuhrtt",
     "name": "刀剑神域：夺命凶弹",
     "nameEn": "Sword Art Online: Fatal Bullet",
     "cover": "",
@@ -8857,10 +8857,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_492",
+    "id": "game_492_1775791560087_31bdeq",
     "name": "刀剑神域：彼岸游境",
     "nameEn": "Sword Art Online: Alicization Lycoris",
     "cover": "",
@@ -8875,10 +8875,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_493",
+    "id": "game_493_1775791560087_bmmnu5",
     "name": "加速世界VS刀剑神域：千年的黄昏",
     "nameEn": "Accel World VS Sword Art Online: Millennium",
     "cover": "",
@@ -8893,10 +8893,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_494",
+    "id": "game_494_1775791560087_712rtm",
     "name": "刀剑神域：异绊集结",
     "nameEn": "SWORD ART ONLINE Last Recollection",
     "cover": "",
@@ -8911,10 +8911,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_495",
+    "id": "game_495_1775791560087_lw38d8",
     "name": "刀剑神域：碎梦边境",
     "nameEn": "SWORD ART ONLINE Fractured Daydream",
     "cover": "",
@@ -8929,10 +8929,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_496",
+    "id": "game_496_1775791560087_n7qv8u",
     "name": "模拟人生4",
     "nameEn": "The Sims 4",
     "cover": "",
@@ -8947,10 +8947,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_497",
+    "id": "game_497_1775791560087_w0da0t",
     "name": "星球大战：前线2",
     "nameEn": "Star Wars Battlefront II",
     "cover": "",
@@ -8965,10 +8965,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_498",
+    "id": "game_498_1775791560087_knpr9x",
     "name": "星球大战绝地：陨落的武士团",
     "nameEn": "Star Wars Jedi: Fallen Order",
     "cover": "",
@@ -8983,10 +8983,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_499",
+    "id": "game_499_1775791560087_b6xk85",
     "name": "星球大战：前线经典合集",
     "nameEn": "STAR WARS: Battlefront Classic Collection",
     "cover": "",
@@ -9001,10 +9001,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_500",
+    "id": "game_500_1775791560087_jajjp5",
     "name": "星球大战 绝地：幸存者",
     "nameEn": "STAR WARS Jedi: Survivor",
     "cover": "",
@@ -9019,10 +9019,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_501",
+    "id": "game_501_1775791560087_9n23em",
     "name": "求生之路",
     "nameEn": "Left 4 Dead",
     "cover": "",
@@ -9037,10 +9037,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_502",
+    "id": "game_502_1775791560087_l871pu",
     "name": "求生之路2",
     "nameEn": "Left 4 Dead 2",
     "cover": "",
@@ -9055,10 +9055,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_503",
+    "id": "game_503_1775791560087_e1pac6",
     "name": "战争机器",
     "nameEn": "Gears of War",
     "cover": "",
@@ -9073,10 +9073,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_504",
+    "id": "game_504_1775791560087_h67us1",
     "name": "战争机器4",
     "nameEn": "Gears of War 4",
     "cover": "",
@@ -9091,10 +9091,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_505",
+    "id": "game_505_1775791560087_i78eox",
     "name": "战争机器5",
     "nameEn": "Gears of War 5",
     "cover": "",
@@ -9109,10 +9109,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_506",
+    "id": "game_506_1775791560087_mmzicy",
     "name": "战争机器：战略版",
     "nameEn": "Gears Tactics",
     "cover": "",
@@ -9127,10 +9127,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_507",
+    "id": "game_507_1775791560087_fttysx",
     "name": "失落的星球3",
     "nameEn": "Lost Planet: Extreme Condition",
     "cover": "",
@@ -9145,10 +9145,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_508",
+    "id": "game_508_1775791560087_3co2qo",
     "name": "神力科莎",
     "nameEn": "Assetto Corsa",
     "cover": "",
@@ -9163,10 +9163,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_509",
+    "id": "game_509_1775791560087_vg0du4",
     "name": "神力科莎：竞技版",
     "nameEn": "Assetto Corsa Competizione",
     "cover": "",
@@ -9181,10 +9181,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_510",
+    "id": "game_510_1775791560087_5m1lx6",
     "name": "神力科莎：竞速",
     "nameEn": "Assetto Corsa Competizione",
     "cover": "",
@@ -9199,10 +9199,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_511",
+    "id": "game_511_1775791560087_kddqaa",
     "name": "神力科莎：拉力",
     "nameEn": "Assetto Corsa Rally",
     "cover": "",
@@ -9217,10 +9217,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_512",
+    "id": "game_512_1775791560087_if50ei",
     "name": "命令与征服3：泰伯利亚战争",
     "nameEn": "Command&Conquer_：_Tiberium_Wars",
     "cover": "",
@@ -9235,10 +9235,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_513",
+    "id": "game_513_1775791560087_nwgb0p",
     "name": "命令与征服3：凯恩之怒",
     "nameEn": "Command & Conquer 3: Kane's Wrath",
     "cover": "",
@@ -9253,10 +9253,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_514",
+    "id": "game_514_1775791560087_jfbfql",
     "name": "命令与征服：将军资料片绝命时刻",
     "nameEn": "Command & Conquer: Generals – Zero Hour",
     "cover": "",
@@ -9271,10 +9271,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_515",
+    "id": "game_515_1775791560087_r835sr",
     "name": "维多利亚2黑暗之心",
     "nameEn": "Victoria 2 Heart of Darkness",
     "cover": "",
@@ -9289,10 +9289,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_516",
+    "id": "game_516_1775791560087_n9znwf",
     "name": "维多利亚3",
     "nameEn": "Victoria 3",
     "cover": "",
@@ -9307,10 +9307,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_517",
+    "id": "game_517_1775791560087_sjjn4n",
     "name": "萝乐娜的炼金工房：亚兰德之炼金术士",
     "nameEn": "Atelier Rorona The Alchemist of Arland DX",
     "cover": "",
@@ -9325,10 +9325,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_518",
+    "id": "game_518_1775791560087_omwv6c",
     "name": "托托莉的炼金工房：亚兰德之炼金术士",
     "nameEn": "Atelier Totori The Adventurer of Arland 2DX",
     "cover": "",
@@ -9343,10 +9343,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_519",
+    "id": "game_519_1775791560087_x5lb7u",
     "name": "梅露露的炼金工房：亚兰德之炼金术士3",
     "nameEn": "Meruru no Atelier Arland no Renkinjutsushi 3DX",
     "cover": "",
@@ -9361,10 +9361,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_520",
+    "id": "game_520_1775791560087_gekyib",
     "name": "爱夏的炼金工房：黄昏大地之炼金术士",
     "nameEn": "Atelier Ayesha: The Alchemist of Dusk DX",
     "cover": "",
@@ -9379,10 +9379,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_521",
+    "id": "game_521_1775791560087_r69e0w",
     "name": "爱丝卡与卡罗吉的炼金工房：黄昏天空之炼金术士",
     "nameEn": "Atelier Escha and Logy: Alchemists of the Dusk Sky DX",
     "cover": "",
@@ -9397,10 +9397,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_522",
+    "id": "game_522_1775791560087_j67eca",
     "name": "夏莉的炼金工房：黄昏海洋之炼金术士",
     "nameEn": "Atelier Shallie: Alchemists of the Dusk Sea DX",
     "cover": "",
@@ -9415,10 +9415,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_523",
+    "id": "game_523_1775791560087_krk5wf",
     "name": "苏菲的炼金工房 ：不可思议书的炼金术士",
     "nameEn": "Atelier Sophie: The Alchemist of the Mysterious Book DX",
     "cover": "",
@@ -9433,10 +9433,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_524",
+    "id": "game_524_1775791560087_vlk7sv",
     "name": "菲莉丝的炼金工房：不可思议旅的炼金术士",
     "nameEn": "telier Firis: The Alchemist and the Mysterious Journey DX",
     "cover": "",
@@ -9451,10 +9451,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_525",
+    "id": "game_525_1775791560087_lgmtyr",
     "name": "莉迪＆苏瑞的炼金工房：不可思议绘画的炼金术士",
     "nameEn": "telier Lydie & Suelle The Alchemists and the Mysterious Paintings DX",
     "cover": "",
@@ -9469,10 +9469,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_526",
+    "id": "game_526_1775791560087_4hbd2w",
     "name": "玛莉的炼金工房：重制版",
     "nameEn": "Atelier Marie Remake: The Alchemist of Salburg",
     "cover": "",
@@ -9487,10 +9487,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_527",
+    "id": "game_527_1775791560087_8mgu5x",
     "name": "露露亚的炼金工房：亚兰德之炼金术士4",
     "nameEn": "Atelier lulua: The Apprentice of Arland 4",
     "cover": "",
@@ -9505,10 +9505,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_528",
+    "id": "game_528_1775791560087_lhg3ij",
     "name": "莱莎的炼金工房：常暗女王与秘密藏身处",
     "nameEn": "Atelier Ryza: Ever Darkness & the Secret Hideout DX",
     "cover": "",
@@ -9523,10 +9523,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_529",
+    "id": "game_529_1775791560087_yjj4rn",
     "name": "莱莎的炼金工房2：失落传说与秘密妖精",
     "nameEn": "Atelier Ryza 2: Lost Legends & the Secret Fairy DX",
     "cover": "",
@@ -9541,10 +9541,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_530",
+    "id": "game_530_1775791560087_63da41",
     "name": "莱莎的炼金工房3：终结之炼金术士与秘密钥匙",
     "nameEn": "telier Ryza 3: Alchemist of the End & the Secret Key",
     "cover": "",
@@ -9559,10 +9559,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_531",
+    "id": "game_531_1775791560087_ge924c",
     "name": "优米雅的炼金工房：追忆之炼金术士与幻创之地",
     "nameEn": "Atelier Yumia: The Alchemist of Memories & the Envisioned Land",
     "cover": "",
@@ -9577,10 +9577,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_532",
+    "id": "game_532_1775791560087_nrsv54",
     "name": "红色的炼金术士和白色的守护：蕾斯莱莉娅娜的炼金工房",
     "nameEn": "Atelier Resleriana: The Red Alchemist & the White Guardian",
     "cover": "",
@@ -9595,10 +9595,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_533",
+    "id": "game_533_1775791560087_buwrqf",
     "name": "传送门",
     "nameEn": "Portal",
     "cover": "",
@@ -9613,10 +9613,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_534",
+    "id": "game_534_1775791560087_c3ha35",
     "name": "传送门2",
     "nameEn": "Portal 2",
     "cover": "",
@@ -9631,10 +9631,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_535",
+    "id": "game_535_1775791560087_3pl1vt",
     "name": "魔法门之英雄无敌1",
     "nameEn": "Heroes of Might and Magic",
     "cover": "",
@@ -9649,10 +9649,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_536",
+    "id": "game_536_1775791560087_0tjr8z",
     "name": "魔法门之英雄无敌2：延续的战争",
     "nameEn": "Heroes of Might and Magic II",
     "cover": "",
@@ -9667,10 +9667,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_537",
+    "id": "game_537_1775791560087_g20ssp",
     "name": "魔法门之英雄无敌3高清版",
     "nameEn": "Heroes of Might & Magic III – HD Edition",
     "cover": "",
@@ -9685,10 +9685,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_538",
+    "id": "game_538_1775791560087_bhj43l",
     "name": "魔法门之英雄无敌3死亡阴影",
     "nameEn": "Heroes Of Might And Magic III The Shadows Of death",
     "cover": "",
@@ -9703,10 +9703,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_539",
+    "id": "game_539_1775791560087_q5304n",
     "name": "魔法门之英雄无敌3追随神迹",
     "nameEn": "Heroes of Might and Magic III：In the Wake of Gods",
     "cover": "",
@@ -9721,10 +9721,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_540",
+    "id": "game_540_1775791560087_6sab8z",
     "name": "魔法门之英雄无敌3深渊号角",
     "nameEn": "Heroes of Might and Magic III：Horn of the Abyss",
     "cover": "",
@@ -9739,10 +9739,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_541",
+    "id": "game_541_1775791560087_dn7tt3",
     "name": "魔法门之英雄无敌3VCMI",
     "nameEn": "Heroes of Might and Magic 3: VCMI",
     "cover": "",
@@ -9757,10 +9757,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_542",
+    "id": "game_542_1775791560087_j55uc5",
     "name": "魔法门之英雄无敌3沉默的遗产",
     "nameEn": "Heroes of Might and Magic 3: Invincible Legacy of Silence",
     "cover": "",
@@ -9775,10 +9775,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_543",
+    "id": "game_543_1775791560087_grkpsb",
     "name": "魔法门之英雄无敌4",
     "nameEn": "Heroes of Might and Magic IV",
     "cover": "",
@@ -9793,10 +9793,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_544",
+    "id": "game_544_1775791560087_fn1jj0",
     "name": "魔法门之英雄无敌5",
     "nameEn": "Heroes of Might and Magic V",
     "cover": "",
@@ -9811,10 +9811,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_545",
+    "id": "game_545_1775791560087_owztam",
     "name": "魔法门之英雄无敌6",
     "nameEn": "Heroes of Might and Magic VI",
     "cover": "",
@@ -9829,10 +9829,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_546",
+    "id": "game_546_1775791560087_tx766i",
     "name": "魔法门之英雄无敌7",
     "nameEn": "Might & Magic Heroes VII",
     "cover": "",
@@ -9847,10 +9847,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_547",
+    "id": "game_547_1775791560087_8uawjk",
     "name": "魔法门：英雄交锋决定版",
     "nameEn": "Might Magic: Clash of Heroes - Definitive Edition",
     "cover": "",
@@ -9865,10 +9865,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_548",
+    "id": "game_548_1775791560087_in3tgl",
     "name": "魔法门之英雄无敌：上古纪元",
     "nameEn": "Heroes of Might and Magic: Olden Era",
     "cover": "",
@@ -9883,10 +9883,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_549",
+    "id": "game_549_1775791560087_bfv1ew",
     "name": "突袭：二战/突袭：第二次世界大战特别版",
     "nameEn": "RAID World War II",
     "cover": "",
@@ -9901,10 +9901,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_550",
+    "id": "game_550_1775791560087_jkcfmw",
     "name": "突袭1",
     "nameEn": "Sudden Strike 1",
     "cover": "",
@@ -9919,10 +9919,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_551",
+    "id": "game_551_1775791560087_ti5zlv",
     "name": "突袭2",
     "nameEn": "Sudden Strike 2",
     "cover": "",
@@ -9937,10 +9937,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_552",
+    "id": "game_552_1775791560087_ewq2ze",
     "name": "突袭3",
     "nameEn": "Sudden Strike 3",
     "cover": "",
@@ -9955,10 +9955,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_553",
+    "id": "game_553_1775791560087_5eigg4",
     "name": "突袭4",
     "nameEn": "Sudden Strike 4",
     "cover": "",
@@ -9973,10 +9973,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_554",
+    "id": "game_554_1775791560087_0chkpr",
     "name": "进击的巨人(推荐手柄）",
     "nameEn": "Attack on Titan",
     "cover": "",
@@ -9991,10 +9991,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_555",
+    "id": "game_555_1775791560087_3is0yo",
     "name": "进击的巨人2：最终之战(推荐手柄）",
     "nameEn": "Attack on Titan 2 - A.O.T.2",
     "cover": "",
@@ -10009,10 +10009,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_556",
+    "id": "game_556_1775791560087_qeojkb",
     "name": "重装机犬",
     "nameEn": "METAL DOGS",
     "cover": "",
@@ -10027,10 +10027,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_557",
+    "id": "game_557_1775791560087_a5xbv8",
     "name": "重装机兵Xeno：重生",
     "nameEn": "METAL MAX Xeno Reborn",
     "cover": "",
@@ -10045,10 +10045,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_558",
+    "id": "game_558_1775791560087_ry7411",
     "name": "恶灵附身1",
     "nameEn": "The Evil Within",
     "cover": "",
@@ -10063,10 +10063,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_559",
+    "id": "game_559_1775791560087_8ql4s1",
     "name": "恶灵附身2",
     "nameEn": "The Evil Within 2",
     "cover": "",
@@ -10081,10 +10081,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_560",
+    "id": "game_560_1775791560087_t52fw9",
     "name": "南方公园：真理之杖",
     "nameEn": "South Park: The Stick of Truth",
     "cover": "",
@@ -10099,10 +10099,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_561",
+    "id": "game_561_1775791560087_j4btn4",
     "name": "南方公园：完整破碎",
     "nameEn": "South Park: The Fractured But Whole",
     "cover": "",
@@ -10117,10 +10117,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_562",
+    "id": "game_562_1775791560087_or9is4",
     "name": "赛车计划2",
     "nameEn": "Project CARS 2",
     "cover": "",
@@ -10135,10 +10135,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_563",
+    "id": "game_563_1775791560087_6ur4ai",
     "name": "赛车计划3",
     "nameEn": "Project CARS 3",
     "cover": "",
@@ -10153,10 +10153,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_564",
+    "id": "game_564_1775791560087_11k002",
     "name": "打鬼",
     "nameEn": "PAGUI",
     "cover": "",
@@ -10171,10 +10171,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_565",
+    "id": "game_565_1775791560087_p0pxb9",
     "name": "伊苏：塞尔塞塔的树海",
     "nameEn": "Ys：Foliage Ocean in Celceta",
     "cover": "",
@@ -10189,10 +10189,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_566",
+    "id": "game_566_1775791560087_5zvdv8",
     "name": "伊苏8：达娜的安魂曲",
     "nameEn": "Ys VIII: Lacrimosa of Dana",
     "cover": "",
@@ -10207,10 +10207,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_567",
+    "id": "game_567_1775791560087_bfxt3m",
     "name": "伊苏9：怪人之夜",
     "nameEn": "Ys IX -Monstrum NOX",
     "cover": "",
@@ -10225,10 +10225,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_568",
+    "id": "game_568_1775791560087_0s1da6",
     "name": "伊苏10：北境历险",
     "nameEn": "Ys X: Nordics",
     "cover": "",
@@ -10243,10 +10243,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_569",
+    "id": "game_569_1775791560087_e9iggd",
     "name": "伊苏X -诺曼荣光",
     "nameEn": "Ys X: Proud Nordics",
     "cover": "",
@@ -10261,10 +10261,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_570",
+    "id": "game_570_1775791560087_w156a9",
     "name": "战国无双：真田丸",
     "nameEn": "SAMURAI WARRIORS: Spirit of Sanada",
     "cover": "",
@@ -10279,10 +10279,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_571",
+    "id": "game_571_1775791560087_y9y6l9",
     "name": "战国无双2",
     "nameEn": "Sengoku Musou 2",
     "cover": "",
@@ -10297,10 +10297,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_572",
+    "id": "game_572_1775791560087_tq7z4i",
     "name": "战国无双4DX",
     "nameEn": "SAMURAI WARRIORS 4 DX",
     "cover": "",
@@ -10315,10 +10315,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_573",
+    "id": "game_573_1775791560087_ta40eu",
     "name": "战国无双4-2",
     "nameEn": "Samurai Warriors 4-II",
     "cover": "",
@@ -10333,10 +10333,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_574",
+    "id": "game_574_1775791560087_1pzn0v",
     "name": "战国无双5",
     "nameEn": "Samurai Warriors 5",
     "cover": "",
@@ -10351,10 +10351,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_575",
+    "id": "game_575_1775791560087_367735",
     "name": "黑道圣徒3：重制版",
     "nameEn": "Saints Row: The Third Remastered",
     "cover": "",
@@ -10369,10 +10369,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_576",
+    "id": "game_576_1775791560087_illm7v",
     "name": "黑道圣徒4",
     "nameEn": "Saints Row IV",
     "cover": "",
@@ -10387,10 +10387,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_577",
+    "id": "game_577_1775791560087_w40m1l",
     "name": "黑道圣徒：重启版",
     "nameEn": "Saints Row",
     "cover": "",
@@ -10405,10 +10405,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_578",
+    "id": "game_578_1775791560087_gwgpmm",
     "name": "四海兄弟：最终版",
     "nameEn": "Mafia: Definitive Edition",
     "cover": "",
@@ -10423,10 +10423,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_579",
+    "id": "game_579_1775791560087_wfd128",
     "name": "四海兄弟2：最终版",
     "nameEn": "Mafia II: Definitive Edition",
     "cover": "",
@@ -10441,10 +10441,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_580",
+    "id": "game_580_1775791560087_bt02eb",
     "name": "四海兄弟3：最终版",
     "nameEn": "Mafia III: Definitive Edition",
     "cover": "",
@@ -10459,10 +10459,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_581",
+    "id": "game_581_1775791560087_hinjeh",
     "name": "四海兄弟：故乡豪华版",
     "nameEn": "Mafia: The Old Country",
     "cover": "",
@@ -10477,10 +10477,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_582",
+    "id": "game_582_1775791560087_eatm6t",
     "name": "冠军足球经理0304",
     "nameEn": "Championship Manager 0304",
     "cover": "",
@@ -10495,10 +10495,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_583",
+    "id": "game_583_1775791560087_p1otyj",
     "name": "足球经理2020",
     "nameEn": "Football Manager 2020",
     "cover": "",
@@ -10513,10 +10513,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_584",
+    "id": "game_584_1775791560087_yobapz",
     "name": "足球经理2021",
     "nameEn": "Football Manager 2021",
     "cover": "",
@@ -10531,10 +10531,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_585",
+    "id": "game_585_1775791560087_tj1cse",
     "name": "足球经理2023",
     "nameEn": "Football Manager 2023",
     "cover": "",
@@ -10549,10 +10549,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_586",
+    "id": "game_586_1775791560087_g5veem",
     "name": "足球经理26",
     "nameEn": "Football Manager 26",
     "cover": "",
@@ -10567,10 +10567,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_587",
+    "id": "game_587_1775791560087_c5mtw6",
     "name": "幻想三国志1",
     "nameEn": "Fantasia Sango 1",
     "cover": "",
@@ -10585,10 +10585,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_588",
+    "id": "game_588_1775791560087_088ovi",
     "name": "幻想三国志2",
     "nameEn": "Fantasia Sango 2",
     "cover": "",
@@ -10603,10 +10603,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_589",
+    "id": "game_589_1775791560087_3bxlyl",
     "name": "幻想三国志4",
     "nameEn": "Fantasia Sango 4",
     "cover": "",
@@ -10621,10 +10621,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_590",
+    "id": "game_590_1775791560087_hbqjf3",
     "name": "幻想三国志5",
     "nameEn": "Fantasia Sango 5",
     "cover": "",
@@ -10639,10 +10639,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_591",
+    "id": "game_591_1775791560087_4bktav",
     "name": "奥日与黑暗森林",
     "nameEn": "Ori and the Blind Forest",
     "cover": "",
@@ -10657,10 +10657,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_592",
+    "id": "game_592_1775791560087_487gky",
     "name": "奥日与鬼火意志",
     "nameEn": "Ori and the Will of the Wisps",
     "cover": "",
@@ -10675,10 +10675,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_593",
+    "id": "game_593_1775791560087_q8krnr",
     "name": "生化奇兵：重制版",
     "nameEn": "BioShock Remastered",
     "cover": "",
@@ -10693,10 +10693,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_594",
+    "id": "game_594_1775791560087_hbx0de",
     "name": "生化奇兵2：重制版",
     "nameEn": "BioShock 2 Remastered",
     "cover": "",
@@ -10711,10 +10711,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_595",
+    "id": "game_595_1775791560087_r37gos",
     "name": "生化奇兵3：无限完全版",
     "nameEn": "BioShock Infinite",
     "cover": "",
@@ -10729,10 +10729,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_596",
+    "id": "game_596_1775791560087_vc8119",
     "name": "暗黑地牢",
     "nameEn": "Darkest Dungeon",
     "cover": "",
@@ -10747,10 +10747,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_597",
+    "id": "game_597_1775791560087_6en36b",
     "name": "暗黑地牢2",
     "nameEn": "Darkest Dungeon II",
     "cover": "",
@@ -10765,10 +10765,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_598",
+    "id": "game_598_1775791560087_oofmbk",
     "name": "甜蜜之家",
     "nameEn": "Home Sweet Home",
     "cover": "",
@@ -10783,10 +10783,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_599",
+    "id": "game_599_1775791560087_42niag",
     "name": "甜蜜之家2",
     "nameEn": "Home Sweet Home EP2",
     "cover": "",
@@ -10801,10 +10801,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_600",
+    "id": "game_600_1775791560087_32xshp",
     "name": "瘟疫公司：物竞天择",
     "nameEn": "Plague Inc: Evolved",
     "cover": "",
@@ -10819,10 +10819,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_601",
+    "id": "game_601_1775791560087_1off4r",
     "name": "反叛公司：局势升级",
     "nameEn": "Rebel Inc: Escalation",
     "cover": "",
@@ -10837,10 +10837,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_602",
+    "id": "game_602_1775791560087_4cqqbd",
     "name": "奇异人生：重制版",
     "nameEn": "Life is Strange Remastered",
     "cover": "",
@@ -10855,10 +10855,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_603",
+    "id": "game_603_1775791560087_njrq5d",
     "name": "奇异人生",
     "nameEn": "Life is Strange - Episode 1",
     "cover": "",
@@ -10873,10 +10873,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_604",
+    "id": "game_604_1775791560087_d01g4l",
     "name": "奇异人生2",
     "nameEn": "Life is Strange 2",
     "cover": "",
@@ -10891,10 +10891,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_605",
+    "id": "game_605_1775791560087_68tt7e",
     "name": "奇异人生：暴风前夕重制版",
     "nameEn": "Life is Strange: Before the Storm Remastered",
     "cover": "",
@@ -10909,10 +10909,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_606",
+    "id": "game_606_1775791560087_3fx20l",
     "name": "奇异人生：本色",
     "nameEn": "Life is Strange: True Colors",
     "cover": "",
@@ -10927,10 +10927,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_607",
+    "id": "game_607_1775791560087_5fxelv",
     "name": "奇异人生：双重曝光",
     "nameEn": "Life is Strange: Double Exposure",
     "cover": "",
@@ -10945,10 +10945,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_608",
+    "id": "game_608_1775791560087_q12vgn",
     "name": "王国保卫战：前线",
     "nameEn": "Kingdom Rush Frontiers - Tower Defense",
     "cover": "",
@@ -10963,10 +10963,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_609",
+    "id": "game_609_1775791560087_k0yso5",
     "name": "王国保卫战：起源",
     "nameEn": "Kingdom Rush Origins - Tower Defense",
     "cover": "",
@@ -10981,10 +10981,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_610",
+    "id": "game_610_1775791560087_txqs5a",
     "name": "王国保卫战：复仇",
     "nameEn": "Kingdom Rush Vengeance - Tower Defense",
     "cover": "",
@@ -10999,10 +10999,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_611",
+    "id": "game_611_1775791560087_p92kli",
     "name": "王国保卫战5：联盟（英文）",
     "nameEn": "Kingdom Rush 5: Alliance TD",
     "cover": "",
@@ -11017,10 +11017,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_612",
+    "id": "game_612_1775791560087_y1zhrw",
     "name": "战锤40K:格雷迪厄斯遗迹之战",
     "nameEn": "Warhammer 40,000: Gladius - Relics of War",
     "cover": "",
@@ -11035,10 +11035,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_613",
+    "id": "game_613_1775791560087_28rvqc",
     "name": "战锤40K:机械神教",
     "nameEn": "Warhammer 40,000: Mechanicus",
     "cover": "",
@@ -11053,10 +11053,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_614",
+    "id": "game_614_1775791560087_ibv8g3",
     "name": "战锤40K：角斗士之战争圣器",
     "nameEn": "Warhammer 40,000: Gladius Relics of War",
     "cover": "",
@@ -11071,10 +11071,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_615",
+    "id": "game_615_1775791560087_2twmvo",
     "name": "战锤40K:太空狼",
     "nameEn": "Warhammer 40,000: Space Wolf",
     "cover": "",
@@ -11089,10 +11089,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_616",
+    "id": "game_616_1775791560087_f5vbif",
     "name": "战锤40K:战斗区域",
     "nameEn": "Warhammer 40,000: Battlesector",
     "cover": "",
@@ -11107,10 +11107,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_617",
+    "id": "game_617_1775791560087_6z2g95",
     "name": "战锤40K:战争黎明2",
     "nameEn": "Warhammer 40000 Dawn of War II",
     "cover": "",
@@ -11125,10 +11125,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_618",
+    "id": "game_618_1775791560087_v90o6b",
     "name": "战锤40K:战争黎明2惩罚",
     "nameEn": "Warhammer 40000 Dawn of War II Retribution",
     "cover": "",
@@ -11143,10 +11143,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_619",
+    "id": "game_619_1775791560087_f906zz",
     "name": "战锤40K：战争黎明3",
     "nameEn": "Warhammer 40,000: Dawn Of War III",
     "cover": "",
@@ -11161,10 +11161,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_620",
+    "id": "game_620_1775791560087_t971k9",
     "name": "战锤40K：爆矢枪",
     "nameEn": "Warhammer 40,000: Boltgun",
     "cover": "",
@@ -11179,10 +11179,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_621",
+    "id": "game_621_1775791560087_1j6gll",
     "name": "战锤40K：行商浪人",
     "nameEn": "Warhammer 40,000: Rogue Trader",
     "cover": "",
@@ -11197,10 +11197,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_622",
+    "id": "game_622_1775791560087_gtd7tf",
     "name": "战锤40K：星际战士2",
     "nameEn": "Warhammer 40,000: Space Marine 2",
     "cover": "",
@@ -11215,10 +11215,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_623",
+    "id": "game_623_1775791560087_ki9hix",
     "name": "战锤40K：战区",
     "nameEn": "Warhammer 40,000: Battlesector",
     "cover": "",
@@ -11233,10 +11233,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_624",
+    "id": "game_624_1775791560087_9m44uo",
     "name": "战锤40K：暗潮",
     "nameEn": "Warhammer 40,000: Darktide",
     "cover": "",
@@ -11251,10 +11251,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_625",
+    "id": "game_625_1775791560087_sdy719",
     "name": "狙击手：幽灵战士3",
     "nameEn": "Sniper: Ghost Warrior 3",
     "cover": "",
@@ -11269,10 +11269,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_626",
+    "id": "game_626_1775791560087_6xzyz8",
     "name": "狙击手：幽灵战士契约2",
     "nameEn": "Sniper: Ghost Warrior 2",
     "cover": "",
@@ -11287,10 +11287,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_627",
+    "id": "game_627_1775791560087_nkumnw",
     "name": "狙击手：幽灵战士契约",
     "nameEn": "Sniper: Ghost Warrior",
     "cover": "",
@@ -11305,10 +11305,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_628",
+    "id": "game_628_1775791560087_rxupqw",
     "name": "十字军之王2/王国风云2",
     "nameEn": "Crusader Kings II",
     "cover": "",
@@ -11323,10 +11323,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_629",
+    "id": "game_629_1775791560087_0ixwd4",
     "name": "十字军之王3/王国风云3",
     "nameEn": "Crusader Kings III",
     "cover": "",
@@ -11341,10 +11341,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_630",
+    "id": "game_630_1775791560087_fw9lu7",
     "name": "宝可梦：剑盾",
     "nameEn": "Pokemon Sword Shield",
     "cover": "",
@@ -11359,10 +11359,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_631",
+    "id": "game_631_1775791560087_zkepx5",
     "name": "宝可梦传说：阿尔宙斯",
     "nameEn": "Pokémon Legends: Arceus",
     "cover": "",
@@ -11377,10 +11377,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_632",
+    "id": "game_632_1775791560087_yohygn",
     "name": "宝可梦：晶灿钻石",
     "nameEn": "Pokémon Brilliant Diamond and Shining Pearl",
     "cover": "",
@@ -11395,10 +11395,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_633",
+    "id": "game_633_1775791560087_buaq7e",
     "name": "宝可梦传说：Z-A",
     "nameEn": "Pokemon LEGENDS Z-A",
     "cover": "",
@@ -11413,10 +11413,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_634",
+    "id": "game_634_1775791560087_q59t3t",
     "name": "宝可梦：朱/紫",
     "nameEn": "Pokemon Scarlet and Violet",
     "cover": "",
@@ -11431,10 +11431,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_635",
+    "id": "game_635_1775791560087_li69q2",
     "name": "龙珠：超宇宙",
     "nameEn": "DRAGON BALL XENOVERSE 2",
     "cover": "",
@@ -11449,10 +11449,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_636",
+    "id": "game_636_1775791560087_djqt01",
     "name": "龙珠：超宇宙2",
     "nameEn": "DRAGON BALL XENOVERSE 2",
     "cover": "",
@@ -11467,10 +11467,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_637",
+    "id": "game_637_1775791560087_2c37hv",
     "name": "三位一体",
     "nameEn": "Trine",
     "cover": "",
@@ -11485,10 +11485,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_638",
+    "id": "game_638_1775791560087_odtpwy",
     "name": "三位一体2",
     "nameEn": "Trine 2",
     "cover": "",
@@ -11503,10 +11503,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_639",
+    "id": "game_639_1775791560087_g0a64l",
     "name": "三位一体3：权力圣器",
     "nameEn": "Trine 3: The Artifacts of Power",
     "cover": "",
@@ -11521,10 +11521,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_640",
+    "id": "game_640_1775791560087_2u7ghh",
     "name": "三位一体4：梦魇王子",
     "nameEn": "Trine 4: The Nightmare Prince",
     "cover": "",
@@ -11539,10 +11539,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_641",
+    "id": "game_641_1775791560087_7xyoxj",
     "name": "三位一体5: 发条阴谋",
     "nameEn": "Trine 5: A Clockwork Conspiracy",
     "cover": "",
@@ -11557,10 +11557,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_642",
+    "id": "game_642_1775791560087_7x5b82",
     "name": "实况足球2021",
     "nameEn": "eFootball PES 2021",
     "cover": "",
@@ -11575,10 +11575,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_643",
+    "id": "game_643_1775791560087_hzppvr",
     "name": "实况足球2019",
     "nameEn": "eFootball PES 2019",
     "cover": "",
@@ -11593,10 +11593,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_644",
+    "id": "game_644_1775791560087_1suig5",
     "name": "实况足球2018",
     "nameEn": "eFootball PES 2018",
     "cover": "",
@@ -11611,10 +11611,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_645",
+    "id": "game_645_1775791560087_eb8td6",
     "name": "信长之野望13：天道（威力加强版）",
     "nameEn": "Nobunaga No Yabou Tendou",
     "cover": "",
@@ -11629,10 +11629,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_646",
+    "id": "game_646_1775791560087_5bs7lg",
     "name": "信长之野望14：创造（战国立志传）",
     "nameEn": "Nobunaga's Ambition：Sphere of Influence Sengoku Risshiden",
     "cover": "",
@@ -11647,10 +11647,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_647",
+    "id": "game_647_1775791560087_s5gr48",
     "name": "信长之野望14：创造(威力加强版）",
     "nameEn": "Nobunaga No Yabou：Souzou PK",
     "cover": "",
@@ -11665,10 +11665,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_648",
+    "id": "game_648_1775791560087_i15ndk",
     "name": "信长之野望15：大志（标准/威力加强版）",
     "nameEn": "Nobunagas Ambition: Taishi PK",
     "cover": "",
@@ -11683,10 +11683,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_649",
+    "id": "game_649_1775791560087_ft0hl5",
     "name": "信长之野望16：新生",
     "nameEn": "NOBUNAGA'S AMBITION: Shinsei",
     "cover": "",
@@ -11701,10 +11701,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_650",
+    "id": "game_650_1775791560087_i3wwt5",
     "name": "信长之野望16：新生威力加强版",
     "nameEn": "NOBUNAGA'S AMBITION: Shinsei PK",
     "cover": "",
@@ -11719,10 +11719,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_651",
+    "id": "game_651_1775791560087_mvdpf8",
     "name": "层层恐惧",
     "nameEn": "Layers of Fear",
     "cover": "",
@@ -11737,10 +11737,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_652",
+    "id": "game_652_1775791560087_4hidby",
     "name": "层层恐惧2",
     "nameEn": "Layers of Fear 2",
     "cover": "",
@@ -11755,10 +11755,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_653",
+    "id": "game_653_1775791560087_tta2bp",
     "name": "层层恐惧3",
     "nameEn": "Layers of Fear 3",
     "cover": "",
@@ -11773,10 +11773,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_654",
+    "id": "game_654_1775791560087_n5e1vl",
     "name": "黑相集：稀望镇",
     "nameEn": "The Dark Pictures Anthology: Little Hope",
     "cover": "",
@@ -11791,10 +11791,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_655",
+    "id": "game_655_1775791560087_cb3xqh",
     "name": "黑相集：棉兰号",
     "nameEn": "The Dark Pictures Anthology: Man of Medan",
     "cover": "",
@@ -11809,10 +11809,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_656",
+    "id": "game_656_1775791560087_a11kad",
     "name": "黑相集：灰冥界",
     "nameEn": "The Dark Pictures Anthology: House of Ashes",
     "cover": "",
@@ -11827,10 +11827,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_657",
+    "id": "game_657_1775791560087_9uqkec",
     "name": "黑相集：心中魔",
     "nameEn": "The Dark Pictures: The Devil in Me",
     "cover": "",
@@ -11845,10 +11845,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_658",
+    "id": "game_658_1775791560087_hg73r2",
     "name": "国土防线2：革命",
     "nameEn": "Homefront: The Revolution",
     "cover": "",
@@ -11863,10 +11863,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_659",
+    "id": "game_659_1775791560087_0zf37y",
     "name": "国土防线",
     "nameEn": "HOMEFRONT",
     "cover": "",
@@ -11881,10 +11881,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_660",
+    "id": "game_660_1775791560087_8vhx2n",
     "name": "火炬之光3",
     "nameEn": "Torchlight III",
     "cover": "",
@@ -11899,10 +11899,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_661",
+    "id": "game_661_1775791560087_vawy83",
     "name": "火炬之光2",
     "nameEn": "Torchlight II",
     "cover": "",
@@ -11917,10 +11917,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_662",
+    "id": "game_662_1775791560087_pdg7a6",
     "name": "歧路旅人/八方旅人",
     "nameEn": "Octopath Traveler",
     "cover": "",
@@ -11935,10 +11935,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_663",
+    "id": "game_663_1775791560087_hsh60o",
     "name": "歧路旅人2/八方旅人2",
     "nameEn": "OCTOPATH TRAVELER II",
     "cover": "",
@@ -11953,10 +11953,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_664",
+    "id": "game_664_1775791560087_rs0rrs",
     "name": "歧路旅人0/八方旅人0",
     "nameEn": "OCTOPATH TRAVELER 0",
     "cover": "",
@@ -11971,10 +11971,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_665",
+    "id": "game_665_1775791560087_3akpuy",
     "name": "千户之屋：家族秘密",
     "nameEn": "House of 1,000 Doors",
     "cover": "",
@@ -11989,10 +11989,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_666",
+    "id": "game_666_1775791560087_qdluqz",
     "name": "千户之屋2：琐罗亚德斯之掌",
     "nameEn": "House of 1000 Doors - The Palm of Zoroaster",
     "cover": "",
@@ -12007,10 +12007,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_667",
+    "id": "game_667_1775791560087_38ajj7",
     "name": "千户之屋3",
     "nameEn": "House of 1000 Doors: Serpent Flame",
     "cover": "",
@@ -12025,10 +12025,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_668",
+    "id": "game_668_1775791560087_5s2ig0",
     "name": "收获日1/掠夺日1",
     "nameEn": "PAYDAY 1",
     "cover": "",
@@ -12043,10 +12043,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_669",
+    "id": "game_669_1775791560087_2a0zxt",
     "name": "收获日2/掠夺日2",
     "nameEn": "PAYDAY 2",
     "cover": "",
@@ -12061,10 +12061,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_670",
+    "id": "game_670_1775791560087_fytah7",
     "name": "收获日3/掠夺日3",
     "nameEn": "PAYDAY 3",
     "cover": "",
@@ -12079,10 +12079,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_671",
+    "id": "game_671_1775791560087_302svd",
     "name": "英雄萨姆：西伯利亚狂想曲",
     "nameEn": "Serious Sam: Siberian Mayhem",
     "cover": "",
@@ -12097,10 +12097,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_672",
+    "id": "game_672_1775791560087_e3mv0w",
     "name": "英雄萨姆4",
     "nameEn": "Serious Sam 4",
     "cover": "",
@@ -12115,10 +12115,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_673",
+    "id": "game_673_1775791560087_df9gu2",
     "name": "死亡岛终极版",
     "nameEn": "Dead Island Definitive Edition",
     "cover": "",
@@ -12133,10 +12133,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_674",
+    "id": "game_674_1775791560087_6skypz",
     "name": "死亡岛：激流",
     "nameEn": "Dead Island：Riptide",
     "cover": "",
@@ -12151,10 +12151,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_675",
+    "id": "game_675_1775791560087_oey2qe",
     "name": "死亡岛2",
     "nameEn": "Dead Island 2",
     "cover": "",
@@ -12169,10 +12169,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_676",
+    "id": "game_676_1775791560087_q4lsqk",
     "name": "坎巴拉太空计划",
     "nameEn": "Kerbal Space Program",
     "cover": "",
@@ -12187,10 +12187,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_677",
+    "id": "game_677_1775791560087_7ps0v3",
     "name": "坎巴拉太空计划2",
     "nameEn": "Kerbal Space Program 2",
     "cover": "",
@@ -12205,10 +12205,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_678",
+    "id": "game_678_1775791560087_zv8m4m",
     "name": "大富翁之升官之途中文版",
     "nameEn": "Rich promotion",
     "cover": "",
@@ -12223,10 +12223,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_679",
+    "id": "game_679_1775791560087_ws90mq",
     "name": "大富翁世界之旅2 中文版",
     "nameEn": "Rich World 2",
     "cover": "",
@@ -12241,10 +12241,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_680",
+    "id": "game_680_1775791560087_g6sdr9",
     "name": "大富翁2012 强手中文版",
     "nameEn": "Rich 2012",
     "cover": "",
@@ -12259,10 +12259,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_681",
+    "id": "game_681_1775791560087_xluudf",
     "name": "大富翁4",
     "nameEn": "Richman 4",
     "cover": "",
@@ -12277,10 +12277,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_682",
+    "id": "game_682_1775791560087_0h9zku",
     "name": "大富翁7 游宝岛中文版",
     "nameEn": "Richman 7",
     "cover": "",
@@ -12295,10 +12295,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_683",
+    "id": "game_683_1775791560087_dr07h1",
     "name": "大富翁8",
     "nameEn": "Richman 8",
     "cover": "",
@@ -12313,10 +12313,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_684",
+    "id": "game_684_1775791560087_3gzslp",
     "name": "大富翁10",
     "nameEn": "Richman 10",
     "cover": "",
@@ -12331,10 +12331,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_685",
+    "id": "game_685_1775791560087_3skmid",
     "name": "大富翁11",
     "nameEn": "Richman 11",
     "cover": "",
@@ -12349,10 +12349,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_686",
+    "id": "game_686_1775791560087_ukxwuk",
     "name": "SD世纪：火线纵横",
     "nameEn": "D Gundam G Generation: Cross Rays",
     "cover": "",
@@ -12367,10 +12367,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_687",
+    "id": "game_687_1775791560087_wm10je",
     "name": "SD激斗同盟",
     "nameEn": "SD GUNDAM BATTLE ALLIANCE",
     "cover": "",
@@ -12385,10 +12385,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_688",
+    "id": "game_688_1775791560087_wencoy",
     "name": "机动战士EED：激斗命运",
     "nameEn": "MOBILE SUIT GUNDAM SEED BATTLE DESTINY REMASTERED",
     "cover": "",
@@ -12403,10 +12403,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_689",
+    "id": "game_689_1775791560087_cenfjv",
     "name": "史莱姆牧场",
     "nameEn": "Slime Rancher",
     "cover": "",
@@ -12421,10 +12421,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_690",
+    "id": "game_690_1775791560087_tywcc9",
     "name": "史莱姆牧场2",
     "nameEn": "Slime Rancher 2",
     "cover": "",
@@ -12439,10 +12439,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_691",
+    "id": "game_691_1775791560087_595ufo",
     "name": "模拟农场17",
     "nameEn": "Farming Simulator 17",
     "cover": "",
@@ -12457,10 +12457,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_692",
+    "id": "game_692_1775791560087_sq04h9",
     "name": "模拟农场19",
     "nameEn": "Farming Simulator 19",
     "cover": "",
@@ -12475,10 +12475,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_693",
+    "id": "game_693_1775791560087_ftmh5m",
     "name": "模拟农场22",
     "nameEn": "Farming Simulator 22",
     "cover": "",
@@ -12493,10 +12493,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_694",
+    "id": "game_694_1775791560087_l9g2ib",
     "name": "模拟农场25",
     "nameEn": "Farming Simulator 25",
     "cover": "",
@@ -12511,10 +12511,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_695",
+    "id": "game_695_1775791560087_bquru8",
     "name": "钢铁雄心3",
     "nameEn": "Hearts of Iron III",
     "cover": "",
@@ -12529,10 +12529,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_696",
+    "id": "game_696_1775791560087_38yqc3",
     "name": "钢铁雄心4",
     "nameEn": "Hearts of Iron IV",
     "cover": "",
@@ -12547,10 +12547,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_697",
+    "id": "game_697_1775791560087_l9oh6j",
     "name": "方舟：生存进化",
     "nameEn": "ARK: Survival Evolved",
     "cover": "",
@@ -12565,10 +12565,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_698",
+    "id": "game_698_1775791560087_mtio9i",
     "name": "方舟：生存飞升",
     "nameEn": "ARK: Survival Ascended",
     "cover": "",
@@ -12583,10 +12583,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_699",
+    "id": "game_699_1775791560087_f6ap0f",
     "name": "小偷模拟器/盗贼模拟器",
     "nameEn": "Thief Simulator",
     "cover": "",
@@ -12601,10 +12601,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_700",
+    "id": "game_700_1775791560087_3a18wp",
     "name": "小偷模拟器2/盗贼模拟器2",
     "nameEn": "Thief Simulator 2",
     "cover": "",
@@ -12619,10 +12619,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_701",
+    "id": "game_701_1775791560087_yi10td",
     "name": "上古卷轴4：湮没/上古卷轴4：湮灭重制版",
     "nameEn": "The Elder Scrolls IV: Oblivion Remastered",
     "cover": "",
@@ -12637,10 +12637,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_702",
+    "id": "game_702_1775791560087_kpmhsf",
     "name": "上古卷轴5：天际周年纪念版/传奇版",
     "nameEn": "The Elder Scrolls V: Skyrim",
     "cover": "",
@@ -12655,10 +12655,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_703",
+    "id": "game_703_1775791560087_6k4sma",
     "name": "太阳帝国的原罪",
     "nameEn": "Sins of a Solar Empire",
     "cover": "",
@@ -12673,10 +12673,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_704",
+    "id": "game_704_1775791560087_zejxcc",
     "name": "太阳帝国的原罪2",
     "nameEn": "Sins of a Solar Empire II",
     "cover": "",
@@ -12691,10 +12691,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_705",
+    "id": "game_705_1775791560087_u41tub",
     "name": "冰汽时代",
     "nameEn": "Frostpunk",
     "cover": "",
@@ -12709,10 +12709,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_706",
+    "id": "game_706_1775791560087_abxjqp",
     "name": "冰汽时代2",
     "nameEn": "Frostpunk 2",
     "cover": "",
@@ -12727,10 +12727,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_707",
+    "id": "game_707_1775791560087_9xp1to",
     "name": "黑帝斯/哈迪斯",
     "nameEn": "Hades",
     "cover": "",
@@ -12745,10 +12745,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_708",
+    "id": "game_708_1775791560087_wq4rhn",
     "name": "黑帝斯2/哈迪斯2",
     "nameEn": "Hades II",
     "cover": "",
@@ -12763,10 +12763,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_709",
+    "id": "game_709_1775791560087_pn0kf0",
     "name": "亚瑟王：骑士传说",
     "nameEn": "King Arthur: Knight's Tale",
     "cover": "",
@@ -12781,10 +12781,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_710",
+    "id": "game_710_1775791560087_pw6j6c",
     "name": "亚瑟王：第九军团",
     "nameEn": "King Arthur: Legion IX",
     "cover": "",
@@ -12799,10 +12799,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_711",
+    "id": "game_711_1775791560087_9wue9k",
     "name": "贪婪之秋",
     "nameEn": "GreedFall",
     "cover": "",
@@ -12817,10 +12817,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_712",
+    "id": "game_712_1775791560087_r6cqjb",
     "name": "贪婪之秋2：濒死世界",
     "nameEn": "GreedFall II: The Dying World",
     "cover": "",
@@ -12835,10 +12835,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_713",
+    "id": "game_713_1775791560087_r2hmht",
     "name": "海贼王：时光旅诗",
     "nameEn": "ONE PIECE ODYSSEY",
     "cover": "",
@@ -12853,10 +12853,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_714",
+    "id": "game_714_1775791560087_bgw070",
     "name": "海贼王：无尽世界",
     "nameEn": "One Piece: Unlimited World Red",
     "cover": "",
@@ -12871,10 +12871,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_715",
+    "id": "game_715_1775791560087_rz8vzm",
     "name": "海贼王：寻秘世界",
     "nameEn": "ONE PIECE World Seeker",
     "cover": "",
@@ -12889,10 +12889,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_716",
+    "id": "game_716_1775791560087_i4or2j",
     "name": "钢铁之尾",
     "nameEn": "Tails of Iron",
     "cover": "",
@@ -12907,10 +12907,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_717",
+    "id": "game_717_1775791560087_9wcqoy",
     "name": "铁尾传奇2：凛冬之战",
     "nameEn": "Tails of Iron 2: Whiskers of Winter",
     "cover": "",
@@ -12925,10 +12925,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_718",
+    "id": "game_718_1775791560087_0pyvwu",
     "name": "兽人必须死3",
     "nameEn": "Orcs Must Die! 3",
     "cover": "",
@@ -12943,10 +12943,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_719",
+    "id": "game_719_1775791560087_av0hyt",
     "name": "兽人必须死! 死亡陷阱",
     "nameEn": "rcs Must Die! Deathtrap",
     "cover": "",
@@ -12961,10 +12961,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_720",
+    "id": "game_720_1775791560087_5q4dyw",
     "name": "天国：拯救",
     "nameEn": "Kingdom Come: Deliverance",
     "cover": "",
@@ -12979,10 +12979,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_721",
+    "id": "game_721_1775791560087_y8lfu5",
     "name": "天国：拯救2",
     "nameEn": "Kingdom Come: Deliverance II",
     "cover": "",
@@ -12997,10 +12997,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_722",
+    "id": "game_722_1775791560087_aomsxx",
     "name": "植物大战僵尸",
     "nameEn": "Plants vs. Zombies",
     "cover": "",
@@ -13015,10 +13015,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_723",
+    "id": "game_723_1775791560087_wm2kg4",
     "name": "植物大战僵尸2",
     "nameEn": "Plants vs. Zombies 2",
     "cover": "",
@@ -13033,10 +13033,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_724",
+    "id": "game_724_1775791560087_9b5bvq",
     "name": "植物大战僵尸杂交版",
     "nameEn": "Plants vs. Zombies za jiao ban",
     "cover": "",
@@ -13051,10 +13051,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_725",
+    "id": "game_725_1775791560087_9wna3j",
     "name": "植物大战僵尸：重植版",
     "nameEn": "Plants vs. Zombies: Replanted",
     "cover": "",
@@ -13069,10 +13069,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_726",
+    "id": "game_726_1775791560087_qy5l90",
     "name": "最后生还者：第一部/美国末日",
     "nameEn": "The Last of Us: Part I",
     "cover": "",
@@ -13087,10 +13087,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_727",
+    "id": "game_727_1775791560087_ukg6dt",
     "name": "最后生还者2：重制版/美国末日2",
     "nameEn": "The Last of Us Part 2",
     "cover": "",
@@ -13105,10 +13105,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_728",
+    "id": "game_728_1775791560087_j0cgpd",
     "name": "神话时代：扩展版",
     "nameEn": "Age of Mythology: Retold",
     "cover": "",
@@ -13123,10 +13123,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_729",
+    "id": "game_729_1775791560087_onqr0z",
     "name": "神话时代：重述版",
     "nameEn": "Age of Mythology: Retold",
     "cover": "",
@@ -13141,10 +13141,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_730",
+    "id": "game_730_1775791560087_mt96yk",
     "name": "专业模拟飞行11",
     "nameEn": "X-Plane 11",
     "cover": "",
@@ -13159,10 +13159,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_731",
+    "id": "game_731_1775791560087_f2jabi",
     "name": "专业模拟飞行12",
     "nameEn": "X-Plane 12",
     "cover": "",
@@ -13177,10 +13177,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_732",
+    "id": "game_732_1775791560087_i6rxcz",
     "name": "泰坦之旅：不朽王座",
     "nameEn": "Titan Quest Anniversary Edition",
     "cover": "",
@@ -13195,10 +13195,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_733",
+    "id": "game_733_1775791560087_kvt019",
     "name": "泰坦之旅2",
     "nameEn": "Titan Quest II",
     "cover": "",
@@ -13213,10 +13213,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_734",
+    "id": "game_734_1775791560087_o1m61l",
     "name": "战争号令地狱之门：东线/战争召唤地狱之门：东线",
     "nameEn": "Call to Arms - Gates of Hell: Ostfront",
     "cover": "",
@@ -13231,10 +13231,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_735",
+    "id": "game_735_1775791560087_9wzviy",
     "name": "战争号令：装甲精英",
     "nameEn": "Call to Arms: Panzer Elite",
     "cover": "",
@@ -13249,10 +13249,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_736",
+    "id": "game_736_1775791560087_n5u4we",
     "name": "天外世界",
     "nameEn": "The Outer Worlds",
     "cover": "",
@@ -13267,10 +13267,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_737",
+    "id": "game_737_1775791560087_lmtcb9",
     "name": "天外世界：太空人之选",
     "nameEn": "The Outer Worlds: Spacer's Choice Edition",
     "cover": "",
@@ -13285,10 +13285,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_738",
+    "id": "game_738_1775791560087_ig8avf",
     "name": "天外世界2",
     "nameEn": "The Outer Worlds 2",
     "cover": "",
@@ -13303,10 +13303,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_739",
+    "id": "game_739_1775791560087_uwyezn",
     "name": "鬼武者重制版",
     "nameEn": "Onimusha: Warlords",
     "cover": "",
@@ -13321,10 +13321,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_740",
+    "id": "game_740_1775791560087_rm9r2q",
     "name": "鬼武者2：高清复刻版",
     "nameEn": "Onimusha 2: Samurai's Destiny",
     "cover": "",
@@ -13339,10 +13339,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_741",
+    "id": "game_741_1775791560087_le7xrb",
     "name": "杀戮尖塔",
     "nameEn": "Slay the Spire",
     "cover": "",
@@ -13357,10 +13357,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_742",
+    "id": "game_742_1775791560087_gz6f7e",
     "name": "杀戮尖塔2",
     "nameEn": "Slay the Spire 2",
     "cover": "",
@@ -13375,10 +13375,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_743",
+    "id": "game_743_1775791560087_mst5ni",
     "name": "漫画英雄VS卡普空：无限",
     "nameEn": "Marvel vs. Capcom: Infinite",
     "cover": "",
@@ -13393,10 +13393,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_744",
+    "id": "game_744_1775791560087_vdwt10",
     "name": "漫画英雄VS卡普空3",
     "nameEn": "Ultimate Marvel vs. Capcom 3",
     "cover": "",
@@ -13411,10 +13411,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_745",
+    "id": "game_745_1775791560087_lvuhsq",
     "name": "哥特舰队：阿玛达",
     "nameEn": "Battlefleet Gothic: Armada",
     "cover": "",
@@ -13429,10 +13429,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_746",
+    "id": "game_746_1775791560087_2w5d3l",
     "name": "哥特舰队：阿玛达2",
     "nameEn": "Battlefleet Gothic: Armada 2",
     "cover": "",
@@ -13447,10 +13447,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_747",
+    "id": "game_747_1775791560087_v8b7wg",
     "name": "以撒的结合：忏悔完全版",
     "nameEn": "The Binding of Isaac: Repentance Complete Edition",
     "cover": "",
@@ -13465,10 +13465,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_748",
+    "id": "game_748_1775791560087_do0eir",
     "name": "以撒的结合：重生",
     "nameEn": "The Binding of Isaac: Rebirth",
     "cover": "",
@@ -13483,10 +13483,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_749",
+    "id": "game_749_1775791560087_3s3998",
     "name": "耻辱",
     "nameEn": "Dishonored",
     "cover": "",
@@ -13501,10 +13501,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_750",
+    "id": "game_750_1775791560087_cd0nbv",
     "name": "耻辱：界外魔之死",
     "nameEn": "Dishonored: Death of the Outsider",
     "cover": "",
@@ -13519,10 +13519,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_751",
+    "id": "game_751_1775791560087_du7tam",
     "name": "耻辱2",
     "nameEn": "Dishonored 2",
     "cover": "",
@@ -13537,10 +13537,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_752",
+    "id": "game_752_1775791560087_wdtw3c",
     "name": "变形金刚：毁灭",
     "nameEn": "Transformers: Devastation",
     "cover": "",
@@ -13555,10 +13555,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_753",
+    "id": "game_753_1775791560087_d3wecx",
     "name": "变形金刚：战场",
     "nameEn": "TRANSFORMERS: BATTLEGROUNDS",
     "cover": "",
@@ -13573,10 +13573,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_754",
+    "id": "game_754_1775791560087_m9c6rn",
     "name": "变形金刚：暗夜崛起",
     "nameEn": "Transformers: Rise of the Dark Spark",
     "cover": "",
@@ -13591,10 +13591,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_755",
+    "id": "game_755_1775791560087_6k9n58",
     "name": "变形金刚：赛博坦的陨落",
     "nameEn": "Transformers: Fall of Cybertron",
     "cover": "",
@@ -13609,10 +13609,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_756",
+    "id": "game_756_1775791560087_6qid0a",
     "name": "变形金刚：赛博坦之战",
     "nameEn": "Transformers: War for Cybertron",
     "cover": "",
@@ -13627,10 +13627,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_757",
+    "id": "game_757_1775791560087_00y9e4",
     "name": "变形金刚2：卷土重来",
     "nameEn": "Transformers 2: Revenge of the fallen",
     "cover": "",
@@ -13645,10 +13645,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_758",
+    "id": "game_758_1775791560087_w51kn4",
     "name": "变形金刚：地球火种 - 远征",
     "nameEn": "TRANSFORMERS: EARTHSPARK - Expedition",
     "cover": "",
@@ -13663,10 +13663,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_759",
+    "id": "game_759_1775791560087_qlfbkd",
     "name": "星之海洋4：最后的希望",
     "nameEn": "Star Ocean 4: The Last Hope",
     "cover": "",
@@ -13681,10 +13681,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_760",
+    "id": "game_760_1775791560087_rie077",
     "name": "星之海洋6：神圣力量",
     "nameEn": "Star Ocean 6 The Divine Force",
     "cover": "",
@@ -13699,10 +13699,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_761",
+    "id": "game_761_1775791560087_l7g6c4",
     "name": "永恒之柱",
     "nameEn": "Pillars of Eternity",
     "cover": "",
@@ -13717,10 +13717,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_762",
+    "id": "game_762_1775791560087_6luqko",
     "name": "永恒之柱2：亡焰 黑耀石版",
     "nameEn": "Pillars of Eternity II: Deadfire",
     "cover": "",
@@ -13735,10 +13735,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_763",
+    "id": "game_763_1775791560087_elt8yx",
     "name": "模拟火车2019",
     "nameEn": "Train Simulator 2019",
     "cover": "",
@@ -13753,10 +13753,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_764",
+    "id": "game_764_1775791560087_cx2jf6",
     "name": "模拟火车2022",
     "nameEn": "Train Simulator 2022",
     "cover": "",
@@ -13771,10 +13771,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_765",
+    "id": "game_765_1775791560087_m4x3t0",
     "name": "世界摩托大奖赛20",
     "nameEn": "MotoGP 20",
     "cover": "",
@@ -13789,10 +13789,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_766",
+    "id": "game_766_1775791560087_xs1uz9",
     "name": "世界摩托大奖赛21",
     "nameEn": "MotoGP 21",
     "cover": "",
@@ -13807,10 +13807,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_767",
+    "id": "game_767_1775791560087_jkd3yw",
     "name": "世界摩托大奖赛22",
     "nameEn": "MotoGP 22",
     "cover": "",
@@ -13825,10 +13825,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_768",
+    "id": "game_768_1775791560087_bi1enm",
     "name": "世界摩托大奖赛23",
     "nameEn": "MotoGP 23",
     "cover": "",
@@ -13843,10 +13843,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_769",
+    "id": "game_769_1775791560087_43tw5m",
     "name": "世界摩托大奖赛24",
     "nameEn": "MotoGP 24",
     "cover": "",
@@ -13861,10 +13861,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_770",
+    "id": "game_770_1775791560087_o0fdxr",
     "name": "世界摩托大奖赛25",
     "nameEn": "MotoGP 25",
     "cover": "",
@@ -13879,10 +13879,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_771",
+    "id": "game_771_1775791560087_1r9a0f",
     "name": "城市：天际线",
     "nameEn": "Cities: Skylines",
     "cover": "",
@@ -13897,10 +13897,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_772",
+    "id": "game_772_1775791560087_3l6hkq",
     "name": "城市：天际线2",
     "nameEn": "Cities: Skylines II",
     "cover": "",
@@ -13915,10 +13915,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_773",
+    "id": "game_773_1775791560087_hg7qk8",
     "name": "模拟火车世界3",
     "nameEn": "Train Sim World 3",
     "cover": "",
@@ -13933,10 +13933,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_774",
+    "id": "game_774_1775791560087_reboo3",
     "name": "模拟火车世界4",
     "nameEn": "Train Sim World 4",
     "cover": "",
@@ -13951,10 +13951,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_775",
+    "id": "game_775_1775791560087_ianlf8",
     "name": "模拟火车世界5",
     "nameEn": "Train Sim World 5",
     "cover": "",
@@ -13969,10 +13969,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_776",
+    "id": "game_776_1775791560087_id65sy",
     "name": "模拟火车世界6",
     "nameEn": "Train Sim World 6",
     "cover": "",
@@ -13987,10 +13987,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_777",
+    "id": "game_777_1775791560087_st4cy5",
     "name": "曼岛TT摩托车大赛",
     "nameEn": "TT Isle of Man Ride on the Edge",
     "cover": "",
@@ -14005,10 +14005,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_778",
+    "id": "game_778_1775791560087_qyuban",
     "name": "曼岛TT赛事：边缘竞速2",
     "nameEn": "TT Isle of Man Ride on the Edge 2",
     "cover": "",
@@ -14023,10 +14023,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_779",
+    "id": "game_779_1775791560087_z3tfv7",
     "name": "曼岛TT赛事：边缘竞速3",
     "nameEn": "TT Isle of Man Ride on the Edge 3",
     "cover": "",
@@ -14041,10 +14041,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_780",
+    "id": "game_780_1775791560087_e48nqi",
     "name": "大航海时代2",
     "nameEn": "Uncharted Waters 2",
     "cover": "",
@@ -14059,10 +14059,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_781",
+    "id": "game_781_1775791560087_hyd36n",
     "name": "大航海时代3",
     "nameEn": "Uncharted Waters 3",
     "cover": "",
@@ -14077,10 +14077,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_782",
+    "id": "game_782_1775791560087_arcm9p",
     "name": "大航海时代4威力加强版",
     "nameEn": "Uncharted Waters 4 HD",
     "cover": "",
@@ -14095,10 +14095,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_783",
+    "id": "game_783_1775791560087_u12pf2",
     "name": "地球防卫军5",
     "nameEn": "Earth Defense Force 5",
     "cover": "",
@@ -14113,10 +14113,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_784",
+    "id": "game_784_1775791560087_wm9yde",
     "name": "地球防卫军6",
     "nameEn": "Earth Defense Force 6",
     "cover": "",
@@ -14131,10 +14131,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_785",
+    "id": "game_785_1775791560087_ugi3z1",
     "name": "龙之信条：黑暗觉者",
     "nameEn": "Dragon's Dogma: Dark Arisen",
     "cover": "",
@@ -14149,10 +14149,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_786",
+    "id": "game_786_1775791560087_9pfta4",
     "name": "龙之信条2",
     "nameEn": "Dragon's Dogma 2",
     "cover": "",
@@ -14167,10 +14167,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_787",
+    "id": "game_787_1775791560087_5d2nd8",
     "name": "将领：太平军",
     "nameEn": "SGS Taipings",
     "cover": "",
@@ -14185,10 +14185,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_788",
+    "id": "game_788_1775791560087_5clqzl",
     "name": "SGS：霸王行动",
     "nameEn": "SGS Overlord",
     "cover": "",
@@ -14203,10 +14203,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_789",
+    "id": "game_789_1775791560087_jw15jz",
     "name": "SGS：北约的噩梦",
     "nameEn": "SGS NATO's Nightmare",
     "cover": "",
@@ -14221,10 +14221,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_790",
+    "id": "game_790_1775791560087_i1chsw",
     "name": "SGS保卫战：马德里",
     "nameEn": "SGS Battle For: Madrid",
     "cover": "",
@@ -14239,10 +14239,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_791",
+    "id": "game_791_1775791560087_lvuucl",
     "name": "SGS非洲军团：突尼斯",
     "nameEn": "SGS Afrika Korps: Tunisia",
     "cover": "",
@@ -14257,10 +14257,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_792",
+    "id": "game_792_1775791560087_syukxh",
     "name": "SGS没落行动",
     "nameEn": "SGS Operation Downfall",
     "cover": "",
@@ -14275,10 +14275,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_793",
+    "id": "game_793_1775791560087_k7ik77",
     "name": "SGS仁川登陆战",
     "nameEn": "SGS Korean War",
     "cover": "",
@@ -14293,10 +14293,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_794",
+    "id": "game_794_1775791560087_irkdul",
     "name": "壬辰卫国战争",
     "nameEn": "SGS Imjin War",
     "cover": "",
@@ -14311,10 +14311,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_795",
+    "id": "game_795_1775791560087_dhett1",
     "name": "赵云传重制版",
     "nameEn": "",
     "cover": "",
@@ -14329,10 +14329,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_796",
+    "id": "game_796_1775791560087_5sr84v",
     "name": "赵云传：云汉腾龙",
     "nameEn": "",
     "cover": "",
@@ -14347,10 +14347,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_797",
+    "id": "game_797_1775791560087_khtih0",
     "name": "拆船模拟器/船舶墓地模拟器",
     "nameEn": "Ship Graveyard Simulator",
     "cover": "",
@@ -14365,10 +14365,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_798",
+    "id": "game_798_1775791560087_zq2h4z",
     "name": "船舶墓地模拟器2",
     "nameEn": "Ship Graveyard Simulator 2",
     "cover": "",
@@ -14383,10 +14383,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_799",
+    "id": "game_799_1775791560087_ogqv5w",
     "name": "喋血街头3",
     "nameEn": "POSTAL 3",
     "cover": "",
@@ -14401,10 +14401,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_800",
+    "id": "game_800_1775791560087_932dhv",
     "name": "喋血街头4",
     "nameEn": "POSTAL 4: No Regerts",
     "cover": "",
@@ -14419,10 +14419,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_801",
+    "id": "game_801_1775791560087_ars4r9",
     "name": "吸血鬼崛起",
     "nameEn": "V Rising",
     "cover": "",
@@ -14437,10 +14437,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_802",
+    "id": "game_802_1775791560087_q2er8p",
     "name": "吸血鬼之殇：起源",
     "nameEn": "Vampire's Fall: Origins",
     "cover": "",
@@ -14455,10 +14455,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_803",
+    "id": "game_803_1775791560087_q1e32k",
     "name": "吸血鬼",
     "nameEn": "Vampyr",
     "cover": "",
@@ -14473,10 +14473,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_804",
+    "id": "game_804_1775791560087_niepcl",
     "name": "吸血鬼：避世血族2",
     "nameEn": "Vampire: The Masquerade - Bloodlines 2",
     "cover": "",
@@ -14491,10 +14491,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_805",
+    "id": "game_805_1775791560087_rreqmx",
     "name": "战略思维：闪电战",
     "nameEn": "Strategic Mind: Blitzkrieg",
     "cover": "",
@@ -14509,10 +14509,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_806",
+    "id": "game_806_1775791560087_ern2bm",
     "name": "战略思维：自由的精神",
     "nameEn": "Strategic Mind: Spirit of Liberty",
     "cover": "",
@@ -14527,10 +14527,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_807",
+    "id": "game_807_1775791560087_nswprs",
     "name": "战略思维：为自由而战",
     "nameEn": "Strategic Mind: Fight for Freedom",
     "cover": "",
@@ -14545,10 +14545,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_808",
+    "id": "game_808_1775791560087_49u3u9",
     "name": "战略思维：太平洋",
     "nameEn": "Strategic Mind：The Pacific",
     "cover": "",
@@ -14563,10 +14563,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_809",
+    "id": "game_809_1775791560087_68fy72",
     "name": "机甲战士5：雇佣兵",
     "nameEn": "MechWarrior 5: Mercenaries",
     "cover": "",
@@ -14581,10 +14581,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_810",
+    "id": "game_810_1775791560087_6ocjy3",
     "name": "机甲战士5：部落",
     "nameEn": "MechWarrior 5: Clans",
     "cover": "",
@@ -14599,10 +14599,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_811",
+    "id": "game_811_1775791560087_r80dnt",
     "name": "要塞：群雄割据",
     "nameEn": "Stronghold: Warlords",
     "cover": "",
@@ -14617,10 +14617,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_812",
+    "id": "game_812_1775791560087_scoie0",
     "name": "要塞：决定版",
     "nameEn": "Stronghold: Definitive Edition",
     "cover": "",
@@ -14635,10 +14635,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_813",
+    "id": "game_813_1775791560087_la111t",
     "name": "要塞2",
     "nameEn": "Stronghold 2",
     "cover": "",
@@ -14653,10 +14653,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_814",
+    "id": "game_814_1775791560087_94ab37",
     "name": "街霸30周年收藏版",
     "nameEn": "Street Fighter 30th Anniversary Collection",
     "cover": "",
@@ -14671,10 +14671,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_815",
+    "id": "game_815_1775791560087_06tgqg",
     "name": "街头霸王4终极版",
     "nameEn": "Ultra Street Fighter IV",
     "cover": "",
@@ -14689,10 +14689,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_816",
+    "id": "game_816_1775791560087_tc5fx3",
     "name": "街头霸王5：冠军版/街霸5",
     "nameEn": "Street Fighter V: Champion Edition",
     "cover": "",
@@ -14707,10 +14707,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_817",
+    "id": "game_817_1775791560087_vxe4xt",
     "name": "街头霸王6",
     "nameEn": "Street Fighter 6",
     "cover": "",
@@ -14725,10 +14725,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_818",
+    "id": "game_818_1775791560087_yp76y0",
     "name": "审判之眼：死神的遗言重制版",
     "nameEn": "Judgment Remastered",
     "cover": "",
@@ -14743,10 +14743,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_819",
+    "id": "game_819_1775791560087_gv3way",
     "name": "审判之逝：湮灭的记忆",
     "nameEn": "LOST JUDGMENT",
     "cover": "",
@@ -14761,10 +14761,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_820",
+    "id": "game_820_1775791560087_qdgaor",
     "name": "星河战队：人类指挥部",
     "nameEn": "Starship Troopers - Terran Command",
     "cover": "",
@@ -14779,10 +14779,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_821",
+    "id": "game_821_1775791560087_gzy4n5",
     "name": "星河战队：终焉虫潮",
     "nameEn": "Starship Troopers: Ultimate Bug War!",
     "cover": "",
@@ -14797,10 +14797,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_822",
+    "id": "game_822_1775791560087_jz551v",
     "name": "索拉斯塔：法师之冠",
     "nameEn": "Solasta: Crown of the Magister",
     "cover": "",
@@ -14815,10 +14815,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_823",
+    "id": "game_823_1775791560087_4rx6o5",
     "name": "索拉斯塔2",
     "nameEn": "Solasta II",
     "cover": "",
@@ -14833,10 +14833,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_824",
+    "id": "game_824_1775791560087_ti3psz",
     "name": "骑马与砍杀：战团",
     "nameEn": "Mount&blade: Warband",
     "cover": "",
@@ -14851,10 +14851,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_825",
+    "id": "game_825_1775791560087_rn1m4j",
     "name": "骑马与砍杀2：霸主/骑马与砍杀2：领主",
     "nameEn": "Mount & Blade II: Bannerlord",
     "cover": "",
@@ -14869,10 +14869,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_826",
+    "id": "game_826_1775791560087_bngt7a",
     "name": "骑马与砍杀2领主：汉末风云三国",
     "nameEn": "",
     "cover": "",
@@ -14887,10 +14887,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_827",
+    "id": "game_827_1775791560087_jnnw19",
     "name": "骑马与砍杀2领主：东亚王朝明清",
     "nameEn": "",
     "cover": "",
@@ -14905,10 +14905,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_828",
+    "id": "game_828_1775791560087_k9ws6s",
     "name": "骑马与砍杀2领主：衣谷三国",
     "nameEn": "",
     "cover": "",
@@ -14923,10 +14923,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_829",
+    "id": "game_829_1775791560087_0dglan",
     "name": "骑马与砍杀2领主：东亚王朝1645",
     "nameEn": "",
     "cover": "",
@@ -14941,10 +14941,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_830",
+    "id": "game_830_1775791560087_wd6xvx",
     "name": "骑马与砍杀战团：春秋战国时代古代全球版",
     "nameEn": "",
     "cover": "",
@@ -14959,10 +14959,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_831",
+    "id": "game_831_1775791560087_epaz0b",
     "name": "骑马与砍杀战团：战国剑指六国",
     "nameEn": "",
     "cover": "",
@@ -14977,10 +14977,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_832",
+    "id": "game_832_1775791560087_yv5x5v",
     "name": "骑马与砍杀战团：大汉与罗马西域雄风",
     "nameEn": "",
     "cover": "",
@@ -14995,10 +14995,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_833",
+    "id": "game_833_1775791560087_cw7762",
     "name": "骑马与砍杀战团：汉匈决战",
     "nameEn": "",
     "cover": "",
@@ -15013,10 +15013,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_834",
+    "id": "game_834_1775791560087_2hhwda",
     "name": "骑马与砍杀战团：三国黄巾之乱",
     "nameEn": "",
     "cover": "",
@@ -15031,10 +15031,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_835",
+    "id": "game_835_1775791560087_iawti8",
     "name": "骑马与砍杀战团：风云三国之东汉垂暮",
     "nameEn": "",
     "cover": "",
@@ -15049,10 +15049,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_836",
+    "id": "game_836_1775791560087_q3tn76",
     "name": "骑马与砍杀战团：风云三国黄巾崛起",
     "nameEn": "",
     "cover": "",
@@ -15067,10 +15067,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_837",
+    "id": "game_837_1775791560087_9xkgyr",
     "name": "骑马与砍杀战团：风云三国",
     "nameEn": "",
     "cover": "",
@@ -15085,10 +15085,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_838",
+    "id": "game_838_1775791560087_w0z35p",
     "name": "骑马与砍杀战团：汉殇194",
     "nameEn": "",
     "cover": "",
@@ -15103,10 +15103,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_839",
+    "id": "game_839_1775791560087_rzm2xm",
     "name": "骑马与砍杀战团：三国演义",
     "nameEn": "",
     "cover": "",
@@ -15121,10 +15121,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_840",
+    "id": "game_840_1775791560087_43mj8f",
     "name": "骑马与砍杀战团：隋唐英雄",
     "nameEn": "",
     "cover": "",
@@ -15139,10 +15139,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_841",
+    "id": "game_841_1775791560087_38ebav",
     "name": "骑马与砍杀战团：东方1135（宋）",
     "nameEn": "",
     "cover": "",
@@ -15157,10 +15157,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_842",
+    "id": "game_842_1775791560087_gfn5bj",
     "name": "骑马与砍杀战团：大宋血与尘",
     "nameEn": "",
     "cover": "",
@@ -15175,10 +15175,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_843",
+    "id": "game_843_1775791560087_2y1cov",
     "name": "骑马与砍杀战团：大宋之争霸天下",
     "nameEn": "",
     "cover": "",
@@ -15193,10 +15193,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_844",
+    "id": "game_844_1775791560087_r9kqxa",
     "name": "骑马与砍杀战团：乱舞水浒",
     "nameEn": "",
     "cover": "",
@@ -15211,10 +15211,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_845",
+    "id": "game_845_1775791560087_0fjram",
     "name": "骑马与砍杀战团：水浒传",
     "nameEn": "",
     "cover": "",
@@ -15229,10 +15229,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_846",
+    "id": "game_846_1775791560087_4wpmoh",
     "name": "骑马与砍杀战团：大明远征军",
     "nameEn": "",
     "cover": "",
@@ -15247,10 +15247,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_847",
+    "id": "game_847_1775791560087_x90f9l",
     "name": "骑马与砍杀战团：壬辰英雄传",
     "nameEn": "",
     "cover": "",
@@ -15265,10 +15265,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_848",
+    "id": "game_848_1775791560087_bbbr4h",
     "name": "骑马与砍杀战团：明末日暮西山",
     "nameEn": "",
     "cover": "",
@@ -15283,10 +15283,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_849",
+    "id": "game_849_1775791560087_4a79q7",
     "name": "骑马与砍杀战团：晚明悲歌",
     "nameEn": "",
     "cover": "",
@@ -15301,10 +15301,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_850",
+    "id": "game_850_1775791560087_dqwt9h",
     "name": "骑马与砍杀战团：晚明帝国飘摇",
     "nameEn": "",
     "cover": "",
@@ -15319,10 +15319,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_851",
+    "id": "game_851_1775791560087_auvdsc",
     "name": "骑马与砍杀战团：明末风云",
     "nameEn": "",
     "cover": "",
@@ -15337,10 +15337,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_852",
+    "id": "game_852_1775791560087_iviqt3",
     "name": "骑马与砍杀战团：康熙王朝帝国的辉煌",
     "nameEn": "",
     "cover": "",
@@ -15355,10 +15355,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_853",
+    "id": "game_853_1775791560087_amaobb",
     "name": "骑马与砍杀战团：帝国的兴衰三藩之乱",
     "nameEn": "",
     "cover": "",
@@ -15373,10 +15373,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_854",
+    "id": "game_854_1775791560087_bnf67d",
     "name": "骑马与砍杀战团：晚清余晖",
     "nameEn": "",
     "cover": "",
@@ -15391,10 +15391,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_855",
+    "id": "game_855_1775791560087_ptf1w5",
     "name": "骑马与砍杀战团：晚清1856",
     "nameEn": "",
     "cover": "",
@@ -15409,10 +15409,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_856",
+    "id": "game_856_1775791560087_2x5oat",
     "name": "骑马与砍杀战团：国魄甲午战争",
     "nameEn": "",
     "cover": "",
@@ -15427,10 +15427,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_857",
+    "id": "game_857_1775791560087_lyvmar",
     "name": "罗马：全面战争（典藏版/重制版）",
     "nameEn": "Total War: ROME",
     "cover": "",
@@ -15445,10 +15445,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_858",
+    "id": "game_858_1775791560087_61e0ov",
     "name": "中世纪2：全面战争",
     "nameEn": "otal War: MEDIEVAL II",
     "cover": "",
@@ -15463,10 +15463,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_859",
+    "id": "game_859_1775791560087_644ga8",
     "name": "帝国：全面战争",
     "nameEn": "Total War: EMPIRE",
     "cover": "",
@@ -15481,10 +15481,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_860",
+    "id": "game_860_1775791560087_pbvc8y",
     "name": "拿破仑：全面战争",
     "nameEn": "Napoleon: Total War",
     "cover": "",
@@ -15499,10 +15499,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_861",
+    "id": "game_861_1775791560087_v13a4x",
     "name": "全面战争：幕府将军2（黄金版)",
     "nameEn": "Total War:Shogun 2",
     "cover": "",
@@ -15517,10 +15517,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_862",
+    "id": "game_862_1775791560087_mkhddv",
     "name": "全面战争：罗马2",
     "nameEn": "Total War: ROME II - Emperor Edition",
     "cover": "",
@@ -15535,10 +15535,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_863",
+    "id": "game_863_1775791560087_gisp1f",
     "name": "全面战争：阿提拉",
     "nameEn": "Total War: ATTILA",
     "cover": "",
@@ -15553,10 +15553,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_864",
+    "id": "game_864_1775791560087_a3q1kv",
     "name": "全面战争：战锤1",
     "nameEn": "otal War: WARHAMMER",
     "cover": "",
@@ -15571,10 +15571,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_865",
+    "id": "game_865_1775791560087_pne01p",
     "name": "全面战争：战锤2",
     "nameEn": "Total War: WARHAMMER II",
     "cover": "",
@@ -15589,10 +15589,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_866",
+    "id": "game_866_1775791560087_nvq95r",
     "name": "全面战争：三国",
     "nameEn": "Total War:Three Kingdoms",
     "cover": "",
@@ -15607,10 +15607,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_867",
+    "id": "game_867_1775791560087_wzfb31",
     "name": "罗马：全面战争（重制版）",
     "nameEn": "Total War: ROME REMASTERED",
     "cover": "",
@@ -15625,10 +15625,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_868",
+    "id": "game_868_1775791560087_od2vu7",
     "name": "全面战争传奇：特洛伊",
     "nameEn": "Total War Saga: TROY",
     "cover": "",
@@ -15643,10 +15643,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_869",
+    "id": "game_869_1775791560087_0udo9a",
     "name": "全面战争传奇：不列颠王座",
     "nameEn": "Total War Saga: Thrones of Britannia",
     "cover": "",
@@ -15661,10 +15661,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_870",
+    "id": "game_870_1775791560087_seup0b",
     "name": "全面战争：法老 王朝版",
     "nameEn": "Total War: PHARAOH DYNASTIES",
     "cover": "",
@@ -15679,10 +15679,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_871",
+    "id": "game_871_1775791560087_pgwuyz",
     "name": "罗马MOD-春秋之平王东迁1.02",
     "nameEn": "",
     "cover": "",
@@ -15697,10 +15697,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_872",
+    "id": "game_872_1775791560087_nga32t",
     "name": "中2MOD-东周列国",
     "nameEn": "",
     "cover": "",
@@ -15715,10 +15715,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_873",
+    "id": "game_873_1775791560087_6oiztz",
     "name": "罗马MOD-战国2.0",
     "nameEn": "",
     "cover": "",
@@ -15733,10 +15733,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_874",
+    "id": "game_874_1775791560087_khgx00",
     "name": "中2MOD-战国春秋",
     "nameEn": "",
     "cover": "",
@@ -15751,10 +15751,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_875",
+    "id": "game_875_1775791560087_gyod75",
     "name": "中2MOD-战国霸业",
     "nameEn": "",
     "cover": "",
@@ -15769,10 +15769,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_876",
+    "id": "game_876_1775791560087_e6mvpy",
     "name": "中2MOD-七国争霸",
     "nameEn": "",
     "cover": "",
@@ -15787,10 +15787,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_877",
+    "id": "game_877_1775791560087_c6s98q",
     "name": "罗马MOD-秦之纵横1.1",
     "nameEn": "",
     "cover": "",
@@ -15805,10 +15805,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_878",
+    "id": "game_878_1775791560087_wrnban",
     "name": "罗马2MOD-古典欧亚之大秦西征",
     "nameEn": "",
     "cover": "",
@@ -15823,10 +15823,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_879",
+    "id": "game_879_1775791560087_8g1ax5",
     "name": "中2MOD-大秦召唤天下",
     "nameEn": "",
     "cover": "",
@@ -15841,10 +15841,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_880",
+    "id": "game_880_1775791560087_9v38cy",
     "name": "罗马MOD-秦殇2.0",
     "nameEn": "",
     "cover": "",
@@ -15859,10 +15859,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_881",
+    "id": "game_881_1775791560087_e46a8i",
     "name": "中2MOD-楚汉风云",
     "nameEn": "",
     "cover": "",
@@ -15877,10 +15877,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_882",
+    "id": "game_882_1775791560087_8x6xx3",
     "name": "罗马2MOD-大汉西征",
     "nameEn": "",
     "cover": "",
@@ -15895,10 +15895,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_883",
+    "id": "game_883_1775791560087_sggx0d",
     "name": "中2MOD-汉匈风云",
     "nameEn": "",
     "cover": "",
@@ -15913,10 +15913,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_884",
+    "id": "game_884_1775791560087_h64eu7",
     "name": "罗马MOD-三国1.9",
     "nameEn": "",
     "cover": "",
@@ -15931,10 +15931,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_885",
+    "id": "game_885_1775791560087_67zgiz",
     "name": "中2MOD-汉末群雄逐鹿2.06",
     "nameEn": "",
     "cover": "",
@@ -15949,10 +15949,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_886",
+    "id": "game_886_1775791560087_y567n8",
     "name": "中2MOD-乱世群雄（三国）",
     "nameEn": "",
     "cover": "",
@@ -15967,10 +15967,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_887",
+    "id": "game_887_1775791560087_ok9emy",
     "name": "中2MOD-汉之殇2021",
     "nameEn": "",
     "cover": "",
@@ -15985,10 +15985,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_888",
+    "id": "game_888_1775791560087_q0xvqd",
     "name": "中2MOD-风云南北朝2.06",
     "nameEn": "",
     "cover": "",
@@ -16003,10 +16003,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_889",
+    "id": "game_889_1775791560087_y20yhw",
     "name": "罗马MOD-隋唐演义1.73",
     "nameEn": "",
     "cover": "",
@@ -16021,10 +16021,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_890",
+    "id": "game_890_1775791560087_2mvtd4",
     "name": "中2MOD-大唐突厥之战",
     "nameEn": "",
     "cover": "",
@@ -16039,10 +16039,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_891",
+    "id": "game_891_1775791560087_zzddpf",
     "name": "中2MOD-天可汗",
     "nameEn": "",
     "cover": "",
@@ -16057,10 +16057,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_892",
+    "id": "game_892_1775791560087_x3f9xy",
     "name": "中2MOD-亚欧雄风1.0",
     "nameEn": "",
     "cover": "",
@@ -16075,10 +16075,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_893",
+    "id": "game_893_1775791560087_jhyhzu",
     "name": "中2MOD-大唐天下安史之乱",
     "nameEn": "",
     "cover": "",
@@ -16093,10 +16093,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_894",
+    "id": "game_894_1775791560087_hnczy4",
     "name": "罗马MOD-五代十国之谁主中原1.3",
     "nameEn": "",
     "cover": "",
@@ -16111,10 +16111,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_895",
+    "id": "game_895_1775791560087_3t437g",
     "name": "中2MOD-五代春秋",
     "nameEn": "",
     "cover": "",
@@ -16129,10 +16129,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_896",
+    "id": "game_896_1775791560087_sx8cfy",
     "name": "中2MOD-忠烈杨家将1.0",
     "nameEn": "",
     "cover": "",
@@ -16147,10 +16147,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_897",
+    "id": "game_897_1775791560087_psse4q",
     "name": "中2MOD-水浒风云",
     "nameEn": "",
     "cover": "",
@@ -16165,10 +16165,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_898",
+    "id": "game_898_1775791560087_jf9gbj",
     "name": "罗马MOD-筑梦帝国宋金风云",
     "nameEn": "",
     "cover": "",
@@ -16183,10 +16183,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_899",
+    "id": "game_899_1775791560087_zj5mj3",
     "name": "中2MOD-绍定入洛0.8",
     "nameEn": "",
     "cover": "",
@@ -16201,10 +16201,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_900",
+    "id": "game_900_1775791560087_h0m2aa",
     "name": "中2MOD-满江红",
     "nameEn": "",
     "cover": "",
@@ -16219,10 +16219,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_901",
+    "id": "game_901_1775791560087_urmtj8",
     "name": "中2MOD-抗倭风云",
     "nameEn": "",
     "cover": "",
@@ -16237,10 +16237,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_902",
+    "id": "game_902_1775791560087_js495r",
     "name": "幕府2MOD-万历远征朝鲜",
     "nameEn": "",
     "cover": "",
@@ -16255,10 +16255,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_903",
+    "id": "game_903_1775791560087_i8pzbf",
     "name": "中2MOD-后金崛起",
     "nameEn": "",
     "cover": "",
@@ -16273,10 +16273,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_904",
+    "id": "game_904_1775791560087_l2t9p4",
     "name": "中2MOD-葬明3.1",
     "nameEn": "",
     "cover": "",
@@ -16291,10 +16291,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_905",
+    "id": "game_905_1775791560087_uqh74q",
     "name": "中2MOD-日月共明3.5",
     "nameEn": "",
     "cover": "",
@@ -16309,10 +16309,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_906",
+    "id": "game_906_1775791560087_2py21j",
     "name": "中2MOD-云梦秋明1.0",
     "nameEn": "",
     "cover": "",
@@ -16327,10 +16327,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_907",
+    "id": "game_907_1775791560087_0xf30e",
     "name": "中2MOD-汉魄7.1（大明）",
     "nameEn": "",
     "cover": "",
@@ -16345,10 +16345,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_908",
+    "id": "game_908_1775791560087_7ifrqd",
     "name": "中2MOD-葬明之大清入关",
     "nameEn": "",
     "cover": "",
@@ -16363,10 +16363,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_909",
+    "id": "game_909_1775791560087_fzo64k",
     "name": "中2MOD-问鼎华夏（南明）",
     "nameEn": "",
     "cover": "",
@@ -16381,10 +16381,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_910",
+    "id": "game_910_1775791560087_j43y6j",
     "name": "中2MOD-亚洲王朝0.9",
     "nameEn": "",
     "cover": "",
@@ -16399,10 +16399,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_911",
+    "id": "game_911_1775791560087_r1nigi",
     "name": "中2MOD-三藩之乱1.8",
     "nameEn": "",
     "cover": "",
@@ -16417,10 +16417,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_912",
+    "id": "game_912_1775791560087_ujixj5",
     "name": "中2MOD-康熙王朝",
     "nameEn": "",
     "cover": "",
@@ -16435,10 +16435,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_913",
+    "id": "game_913_1775791560087_yoc5pu",
     "name": "中2MOD-洋务变革0.7",
     "nameEn": "",
     "cover": "",
@@ -16453,10 +16453,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_914",
+    "id": "game_914_1775791560087_kh8u78",
     "name": "中2MOD-甲午风云",
     "nameEn": "",
     "cover": "",
@@ -16471,10 +16471,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_915",
+    "id": "game_915_1775791560087_4vmb5u",
     "name": "中2MOD-清末",
     "nameEn": "",
     "cover": "",
@@ -16489,10 +16489,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_916",
+    "id": "game_916_1775791560087_10zfeg",
     "name": "罗马MOD-大清帝国1.2",
     "nameEn": "",
     "cover": "",
@@ -16507,10 +16507,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_917",
+    "id": "game_917_1775791560087_3xxgb2",
     "name": "中2MOD-晚清风云录1.0",
     "nameEn": "",
     "cover": "",
@@ -16525,10 +16525,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_918",
+    "id": "game_918_1775791560087_ijjral",
     "name": "中2MOD-帝国的叹息1.8",
     "nameEn": "",
     "cover": "",
@@ -16543,10 +16543,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_919",
+    "id": "game_919_1775791560087_00hnfw",
     "name": "中2MOD-中华民国1.5",
     "nameEn": "",
     "cover": "",
@@ -16561,10 +16561,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_920",
+    "id": "game_920_1775791560087_b7x3za",
     "name": "中2MOD-民国1931",
     "nameEn": "",
     "cover": "",
@@ -16579,10 +16579,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_921",
+    "id": "game_921_1775791560087_f9vce0",
     "name": "魔女之泉R",
     "nameEn": "WitchSpring R",
     "cover": "",
@@ -16597,10 +16597,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_922",
+    "id": "game_922_1775791560087_qbluv2",
     "name": "魔女之泉3",
     "nameEn": "WitchSpring3",
     "cover": "",
@@ -16615,10 +16615,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_923",
+    "id": "game_923_1775791560087_i0epgr",
     "name": "心灵杀手1重制版",
     "nameEn": "Alan Wake Remastered",
     "cover": "",
@@ -16633,10 +16633,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_924",
+    "id": "game_924_1775791560087_as6fwl",
     "name": "心灵杀手2",
     "nameEn": "Alan Wake 2",
     "cover": "",
@@ -16651,10 +16651,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_925",
+    "id": "game_925_1775791560087_11yy27",
     "name": "小镇惊魂",
     "nameEn": "DreadOut",
     "cover": "",
@@ -16669,10 +16669,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_926",
+    "id": "game_926_1775791560087_sv7zd4",
     "name": "小镇惊魂2",
     "nameEn": "DreadOut 2",
     "cover": "",
@@ -16687,10 +16687,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_927",
+    "id": "game_927_1775791560087_folptq",
     "name": "勇者斗恶龙1+2 HD-2D重制版",
     "nameEn": "DRAGON QUEST I & II HD-2D Remake",
     "cover": "",
@@ -16705,10 +16705,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_928",
+    "id": "game_928_1775791560087_y5thq2",
     "name": "勇者斗恶龙1.2.3重制版",
     "nameEn": "ragon Quest I & II & III:HD-2D Remake",
     "cover": "",
@@ -16723,10 +16723,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_929",
+    "id": "game_929_1775791560087_upgs5a",
     "name": "勇者斗恶龙：英雄2",
     "nameEn": "Dragon Quest: Heroes 2",
     "cover": "",
@@ -16741,10 +16741,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_930",
+    "id": "game_930_1775791560087_jjo43m",
     "name": "勇者斗恶龙11：追寻逝去的时光",
     "nameEn": "DRAGON QUEST XI: Echoes of an Elusive Age",
     "cover": "",
@@ -16759,10 +16759,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_931",
+    "id": "game_931_1775791560087_el5vot",
     "name": "勇者斗恶龙11S：寻觅逝去的时光决定版",
     "nameEn": "Dragon Quest XI S Echoes of an Elusive Age- Definitive Edition",
     "cover": "",
@@ -16777,10 +16777,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_932",
+    "id": "game_932_1775791560087_klsoek",
     "name": "勇者斗恶龙 寻宝探险团 蓝色眼眸与天空罗盘",
     "nameEn": "DRAGON QUEST TREASURES",
     "cover": "",
@@ -16795,10 +16795,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_933",
+    "id": "game_933_1775791560087_4q23qu",
     "name": "勇者斗恶龙3 HD-2D重制版",
     "nameEn": "DRAGON QUEST III HD-2D Remake",
     "cover": "",
@@ -16813,10 +16813,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_934",
+    "id": "game_934_1775791560087_i9ejsa",
     "name": "勇者斗恶龙Ⅶ Reimagined",
     "nameEn": "Dragon Quest Ⅶ Reimagined",
     "cover": "",
@@ -16831,10 +16831,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_935",
+    "id": "game_935_1775791560087_9zn5oj",
     "name": "杀出重围：人类分裂",
     "nameEn": "Deus Ex: Mankind Divided",
     "cover": "",
@@ -16849,10 +16849,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_936",
+    "id": "game_936_1775791560087_sk6dxd",
     "name": "杀出重围：陨落",
     "nameEn": "Deus Ex: The Fall",
     "cover": "",
@@ -16867,10 +16867,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_937",
+    "id": "game_937_1775791560087_nt5yde",
     "name": "炎龙骑士团外传：风之纹章",
     "nameEn": "Legend of the Flame Dragon Knights: Wind Emblem",
     "cover": "",
@@ -16885,10 +16885,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_938",
+    "id": "game_938_1775791560087_eoapu2",
     "name": "炎龙骑士团2：黄金城之谜",
     "nameEn": "Flame Dragon Knights 2: The Mystery of the Golden City",
     "cover": "",
@@ -16903,10 +16903,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_939",
+    "id": "game_939_1775791560087_h3zzyv",
     "name": "超级房车赛：赛车运动",
     "nameEn": "GRID Autosport",
     "cover": "",
@@ -16921,10 +16921,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_940",
+    "id": "game_940_1775791560087_j6wsue",
     "name": "超级房车赛：起点 2",
     "nameEn": "GRID 2",
     "cover": "",
@@ -16939,10 +16939,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_941",
+    "id": "game_941_1775791560087_o4dmej",
     "name": "超级房车赛2019 第三季(官方英文）",
     "nameEn": "GRID2019",
     "cover": "",
@@ -16957,10 +16957,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_942",
+    "id": "game_942_1775791560087_tn6xxn",
     "name": "神之亵渎",
     "nameEn": "Blasphemous",
     "cover": "",
@@ -16975,10 +16975,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_943",
+    "id": "game_943_1775791560087_gb9rfv",
     "name": "神之亵渎2",
     "nameEn": "Blasphemous 2",
     "cover": "",
@@ -16993,10 +16993,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_944",
+    "id": "game_944_1775791560087_i6j0z2",
     "name": "深岩银河",
     "nameEn": "Deep Rock Galactic",
     "cover": "",
@@ -17011,10 +17011,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_945",
+    "id": "game_945_1775791560087_8j942t",
     "name": "深岩银河：幸存者",
     "nameEn": "Deep Rock Galactic: Survivor",
     "cover": "",
@@ -17029,10 +17029,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_946",
+    "id": "game_946_1775791560087_hc7y72",
     "name": "地狱之刃：塞娜的献祭",
     "nameEn": "Hellblade: Senua's Sacrifice",
     "cover": "",
@@ -17047,10 +17047,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_947",
+    "id": "game_947_1775791560087_2icwqw",
     "name": "地狱之刃2：塞娜的献祭",
     "nameEn": "Senua’s Saga: Hellblade II",
     "cover": "",
@@ -17065,10 +17065,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_948",
+    "id": "game_948_1775791560087_od7pek",
     "name": "王国之心：记忆旋律",
     "nameEn": "Kingdom Hearts：Melody of Memory",
     "cover": "",
@@ -17083,10 +17083,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_949",
+    "id": "game_949_1775791560087_bm2tpb",
     "name": "王国之心3",
     "nameEn": "Kingdom Hearts III",
     "cover": "",
@@ -17101,10 +17101,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_950",
+    "id": "game_950_1775791560087_u1btn3",
     "name": "无限试驾：太阳王冠",
     "nameEn": "Test Drive Unlimited Solar Crown",
     "cover": "",
@@ -17119,10 +17119,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_951",
+    "id": "game_951_1775791560087_eyy86n",
     "name": "无限试驾2",
     "nameEn": "Test Drive Unlimited 2",
     "cover": "",
@@ -17137,10 +17137,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_952",
+    "id": "game_952_1775791560087_gjnsup",
     "name": "毒枭模拟器",
     "nameEn": "Drug Dealer Simulator",
     "cover": "",
@@ -17155,10 +17155,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_953",
+    "id": "game_953_1775791560087_8pt2bs",
     "name": "毒枭模拟器2",
     "nameEn": "Drug Dealer Simulator 2",
     "cover": "",
@@ -17173,10 +17173,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_954",
+    "id": "game_954_1775791560087_cn5mj1",
     "name": "潜行者：普里皮亚季的召唤",
     "nameEn": "S.T.A.L.K.E.R.: Call of Prypiat - Enhanced Edition",
     "cover": "",
@@ -17191,10 +17191,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_955",
+    "id": "game_955_1775791560087_wzwi3p",
     "name": "潜行者：切尔诺贝利的阴影",
     "nameEn": "S.T.A.L.K.E.R.: Shadow of Chornobyl - Enhanced Edition",
     "cover": "",
@@ -17209,10 +17209,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_956",
+    "id": "game_956_1775791560087_vlwz6t",
     "name": "潜行者：晴空",
     "nameEn": "S.T.A.L.K.E.R.: Clear Sky - Enhanced Edition",
     "cover": "",
@@ -17227,10 +17227,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_957",
+    "id": "game_957_1775791560087_zkcriu",
     "name": "潜行者2：切尔诺贝利之心",
     "nameEn": "S.T.A.L.K.E.R. 2: Heart of Chornobyl",
     "cover": "",
@@ -17245,10 +17245,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_958",
+    "id": "game_958_1775791560087_7en5zp",
     "name": "切尔诺贝利人2：禁区",
     "nameEn": "Chernobylite 2: Exclusion Zone",
     "cover": "",
@@ -17263,10 +17263,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_959",
+    "id": "game_959_1775791560087_j2pvnp",
     "name": "极度恐慌2：起源计划/极度恐慌2：重生",
     "nameEn": "F.E.A.R. 2: Project Origin",
     "cover": "",
@@ -17281,10 +17281,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_960",
+    "id": "game_960_1775791560087_1ckirc",
     "name": "极度恐慌3",
     "nameEn": "F.E.A.R. 3",
     "cover": "",
@@ -17299,10 +17299,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_961",
+    "id": "game_961_1775791560087_tpskxk",
     "name": "超级马里奥兄弟：惊奇",
     "nameEn": "Super Mario Bros Wonder",
     "cover": "",
@@ -17317,10 +17317,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_962",
+    "id": "game_962_1775791560087_16rvw0",
     "name": "新超级马里奥兄弟U豪华版",
     "nameEn": "ew Super Mario Bros. U Deluxe",
     "cover": "",
@@ -17335,10 +17335,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_963",
+    "id": "game_963_1775791560087_y9yucv",
     "name": "马里奥赛车8豪华版",
     "nameEn": "Mario Kart 8 Deluxe",
     "cover": "",
@@ -17353,10 +17353,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_964",
+    "id": "game_964_1775791560087_034hri",
     "name": "澳洲国际网球2",
     "nameEn": "AO Tennis 2",
     "cover": "",
@@ -17371,10 +17371,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_965",
+    "id": "game_965_1775791560087_05sx2l",
     "name": "网球精英4",
     "nameEn": "Tennis Elbow 4",
     "cover": "",
@@ -17389,10 +17389,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_966",
+    "id": "game_966_1775791560087_u3rtr0",
     "name": "网球世界巡回赛",
     "nameEn": "Tennis World Tour",
     "cover": "",
@@ -17407,10 +17407,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_967",
+    "id": "game_967_1775791560087_au1y2n",
     "name": "网球世界巡回赛2",
     "nameEn": "Tennis World Tour 2",
     "cover": "",
@@ -17425,10 +17425,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_968",
+    "id": "game_968_1775791560087_84imia",
     "name": "不义联盟：我们之中的神",
     "nameEn": "Injustice: Gods Among Us Ultimate Edition",
     "cover": "",
@@ -17443,10 +17443,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_969",
+    "id": "game_969_1775791560087_ofngzc",
     "name": "不义联盟2/不义联盟2传奇版",
     "nameEn": "Injustice 2",
     "cover": "",
@@ -17461,10 +17461,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_970",
+    "id": "game_970_1775791560087_pnt6sc",
     "name": "毛线小精灵",
     "nameEn": "Unravel",
     "cover": "",
@@ -17479,10 +17479,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_971",
+    "id": "game_971_1775791560087_qbsabw",
     "name": "毛线小精灵2",
     "nameEn": "Unravel Two",
     "cover": "",
@@ -17497,10 +17497,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_972",
+    "id": "game_972_1775791560087_49xwfo",
     "name": "奇妙探险队",
     "nameEn": "Curious Expedition",
     "cover": "",
@@ -17515,10 +17515,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_973",
+    "id": "game_973_1775791560087_z60z28",
     "name": "奇妙探险队2",
     "nameEn": "Curious Expedition 2",
     "cover": "",
@@ -17533,10 +17533,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_974",
+    "id": "game_974_1775791560087_k82zxz",
     "name": "油管主播的生活/主播模拟器",
     "nameEn": "Youtubers Life",
     "cover": "",
@@ -17551,10 +17551,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_975",
+    "id": "game_975_1775791560087_wnbfpv",
     "name": "油管主播的生活2/主播模拟器2",
     "nameEn": "Youtubers Life 2",
     "cover": "",
@@ -17569,10 +17569,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_976",
+    "id": "game_976_1775791560087_bncheu",
     "name": "微软飞行模拟",
     "nameEn": "Microsoft Flight Simulator",
     "cover": "",
@@ -17587,10 +17587,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_977",
+    "id": "game_977_1775791560087_wtk4s8",
     "name": "微软飞行模拟2024",
     "nameEn": "Microsoft Flight Simulator 2024",
     "cover": "",
@@ -17605,10 +17605,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_978",
+    "id": "game_978_1775791560087_793krg",
     "name": "机械战警：暴戾都市",
     "nameEn": "RoboCop: Rogue City",
     "cover": "",
@@ -17623,10 +17623,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_979",
+    "id": "game_979_1775791560087_2mjqk6",
     "name": "机械战警：暴戾都市 未竟之事",
     "nameEn": "RoboCop: Rogue City - Unfinished Business",
     "cover": "",
@@ -17641,10 +17641,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_980",
+    "id": "game_980_1775791560087_af6gak",
     "name": "数码宝贝：绝境求生",
     "nameEn": "Digimon Survive",
     "cover": "",
@@ -17659,10 +17659,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_981",
+    "id": "game_981_1775791560087_vkphpa",
     "name": "数码宝贝故事：赛博侦探",
     "nameEn": "Digimon Story: Cyber Sleuth Hacker's Memory",
     "cover": "",
@@ -17677,10 +17677,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_982",
+    "id": "game_982_1775791560087_143qyg",
     "name": "数码宝贝物语 时空异客",
     "nameEn": "Digimon Story: Time Stranger",
     "cover": "",
@@ -17695,10 +17695,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_983",
+    "id": "game_983_1775791560087_8z9gow",
     "name": "崩溃大陆",
     "nameEn": "Crashlands",
     "cover": "",
@@ -17713,10 +17713,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_984",
+    "id": "game_984_1775791560087_kzx1ok",
     "name": "崩溃大陆2",
     "nameEn": "Crashlands 2",
     "cover": "",
@@ -17731,10 +17731,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_985",
+    "id": "game_985_1775791560087_8j7wse",
     "name": "忍者龙剑传2：黑之章",
     "nameEn": "NINJA GAIDEN 2 Black",
     "cover": "",
@@ -17749,10 +17749,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_986",
+    "id": "game_986_1775791560087_x8svnj",
     "name": "忍者龙剑传4",
     "nameEn": "NINJA GAIDEN 4 Deluxe Edition",
     "cover": "",
@@ -17767,10 +17767,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_987",
+    "id": "game_987_1775791560087_2d2r3w",
     "name": "符文工房4：特别版",
     "nameEn": "Rune Factory 4 Special",
     "cover": "",
@@ -17785,10 +17785,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_988",
+    "id": "game_988_1775791560087_64fv6x",
     "name": "符文工厂3",
     "nameEn": "Rune Factory 3",
     "cover": "",
@@ -17803,10 +17803,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_989",
+    "id": "game_989_1775791560087_vocygs",
     "name": "符文工房 龙之天地",
     "nameEn": "Rune Factory: Guardians of Azuma",
     "cover": "",
@@ -17821,10 +17821,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_990",
+    "id": "game_990_1775791560087_d8756t",
     "name": "王国战争2：终极版",
     "nameEn": "Kingdom Wars 2: Definitive Edition",
     "cover": "",
@@ -17839,10 +17839,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_991",
+    "id": "game_991_1775791560087_x7smsj",
     "name": "王国战争4",
     "nameEn": "Kingdom Wars 4",
     "cover": "",
@@ -17857,10 +17857,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_992",
+    "id": "game_992_1775791560087_45gsez",
     "name": "王国战争：瘟疫",
     "nameEn": "Kingdom Wars: The Plague",
     "cover": "",
@@ -17875,10 +17875,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526356
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_993",
+    "id": "game_993_1775791560087_m5muly",
     "name": "胡闹搬家/搬家模拟器",
     "nameEn": "Moving Out",
     "cover": "",
@@ -17893,10 +17893,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_994",
+    "id": "game_994_1775791560087_qc9bjk",
     "name": "胡闹搬家2/搬家模拟器2",
     "nameEn": "Moving Out 2",
     "cover": "",
@@ -17911,10 +17911,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_995",
+    "id": "game_995_1775791560087_qu6l0k",
     "name": "吃豆人 吃遍世界",
     "nameEn": "PAC-MAN WORLD Re-PAC",
     "cover": "",
@@ -17929,10 +17929,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_996",
+    "id": "game_996_1775791560087_fehwt0",
     "name": "吃豆人 吃遍世界2",
     "nameEn": "PAC-MAN WORLD 2 Re-PAC",
     "cover": "",
@@ -17947,10 +17947,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_997",
+    "id": "game_997_1775791560087_st38d9",
     "name": "霓虹深渊",
     "nameEn": "Neon Abyss",
     "cover": "",
@@ -17965,10 +17965,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_998",
+    "id": "game_998_1775791560087_3s3wp7",
     "name": "霓虹深渊2",
     "nameEn": "Neon Abyss 2",
     "cover": "",
@@ -17983,10 +17983,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_999",
+    "id": "game_999_1775791560087_m1u5fl",
     "name": "海绵宝宝：潮汐巨神",
     "nameEn": "SpongeBob SquarePants: Titans of the Tide",
     "cover": "",
@@ -18001,10 +18001,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1000",
+    "id": "game_1000_1775791560087_cak126",
     "name": "海绵宝宝：大闹蟹堡王",
     "nameEn": "SpongeBob: Krusty Cook-Off",
     "cover": "",
@@ -18019,10 +18019,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1001",
+    "id": "game_1001_1775791560087_899wiu",
     "name": "海绵宝宝：派大星游戏",
     "nameEn": "pongeBob SquarePants: Patrick Star",
     "cover": "",
@@ -18037,10 +18037,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1002",
+    "id": "game_1002_1775791560087_sj92ak",
     "name": "海绵宝宝：宇宙摇摆",
     "nameEn": "SpongeBob SquarePants: The Cosmic Shake",
     "cover": "",
@@ -18055,10 +18055,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1003",
+    "id": "game_1003_1775791560087_fch63e",
     "name": "海绵宝宝：争霸比基尼海滩",
     "nameEn": "SpongeBob SquarePants: Battle for Bikini Bottom",
     "cover": "",
@@ -18073,10 +18073,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1004",
+    "id": "game_1004_1775791560087_qd0hf7",
     "name": "世界汽车拉力锦标赛2",
     "nameEn": "WRC 2",
     "cover": "",
@@ -18091,10 +18091,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1005",
+    "id": "game_1005_1775791560087_s10oiw",
     "name": "世界汽车拉力锦标赛5",
     "nameEn": "WRC 5",
     "cover": "",
@@ -18109,10 +18109,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1006",
+    "id": "game_1006_1775791560087_uf1ysu",
     "name": "世界汽车拉力锦标赛7",
     "nameEn": "WRC 7",
     "cover": "",
@@ -18127,10 +18127,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1007",
+    "id": "game_1007_1775791560087_j2xhmh",
     "name": "世界汽车拉力锦标赛8",
     "nameEn": "WRC 8",
     "cover": "",
@@ -18145,10 +18145,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1008",
+    "id": "game_1008_1775791560087_uffvjj",
     "name": "世界汽车拉力锦标赛9",
     "nameEn": "WRC 9",
     "cover": "",
@@ -18163,10 +18163,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1009",
+    "id": "game_1009_1775791560087_cyazm4",
     "name": "世界汽车拉力锦标赛10",
     "nameEn": "WRC 10",
     "cover": "",
@@ -18181,10 +18181,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1010",
+    "id": "game_1010_1775791560087_vkb2un",
     "name": "世界汽车拉力锦标赛：世代/WRC世代",
     "nameEn": "WRC Generations - The FIA WRC Official Game",
     "cover": "",
@@ -18199,10 +18199,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1011",
+    "id": "game_1011_1775791560087_jkidn9",
     "name": "真女神转生3 HD重置版",
     "nameEn": "Shin Megami Tensei III Nocturne HD Remaster",
     "cover": "",
@@ -18217,10 +18217,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1012",
+    "id": "game_1012_1775791560087_vihmto",
     "name": "真女神转生5",
     "nameEn": "Shin Megami Tensei V",
     "cover": "",
@@ -18235,10 +18235,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1013",
+    "id": "game_1013_1775791560087_1cksvu",
     "name": "勇气默示录HD复刻版",
     "nameEn": "勇气默示录 FLYING FAIRY HD Remaster",
     "cover": "",
@@ -18253,10 +18253,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1014",
+    "id": "game_1014_1775791560087_wfjffr",
     "name": "勇气默示录2",
     "nameEn": "BRAVELY DEFAULT II",
     "cover": "",
@@ -18271,10 +18271,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1015",
+    "id": "game_1015_1775791560087_k6zf4m",
     "name": "艾尔登法环/艾尔登法环：黄金树幽影",
     "nameEn": "ELDEN RING Shadow of the Erdtree",
     "cover": "",
@@ -18289,10 +18289,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1016",
+    "id": "game_1016_1775791560087_y3qqy5",
     "name": "艾尔登法环：黑夜君临",
     "nameEn": "ELDEN RING NIGHTREIGN",
     "cover": "",
@@ -18307,10 +18307,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1017",
+    "id": "game_1017_1775791560087_6hryds",
     "name": "崛起：罗马之子",
     "nameEn": "Ryse: Son of Rome",
     "cover": "",
@@ -18325,10 +18325,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1018",
+    "id": "game_1018_1775791560087_r4zz4o",
     "name": "战火兄弟连：进军30高地",
     "nameEn": "Brothers in Arms: Road to Hill 30",
     "cover": "",
@@ -18343,10 +18343,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1019",
+    "id": "game_1019_1775791560087_5nwlt5",
     "name": "港诡实录",
     "nameEn": "Paranormal HK",
     "cover": "",
@@ -18361,10 +18361,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1020",
+    "id": "game_1020_1775791560087_ub6s2j",
     "name": "底特律：化身为人",
     "nameEn": "Detroit: Become Human",
     "cover": "",
@@ -18379,10 +18379,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1021",
+    "id": "game_1021_1775791560087_owxzjt",
     "name": "幽灵线：东京",
     "nameEn": "Ghostwire: Tokyo",
     "cover": "",
@@ -18397,10 +18397,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1022",
+    "id": "game_1022_1775791560087_ysq829",
     "name": "只狼：影逝二度",
     "nameEn": "Sekiro: Shadows Die Twice",
     "cover": "",
@@ -18415,10 +18415,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1023",
+    "id": "game_1023_1775791560087_0gvm4i",
     "name": "僵尸世界大战：劫后余生",
     "nameEn": "World War Z: Aftermath",
     "cover": "",
@@ -18433,10 +18433,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1024",
+    "id": "game_1024_1775791560087_a7zbbo",
     "name": "往日不再",
     "nameEn": "Days Gone",
     "cover": "",
@@ -18451,10 +18451,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1025",
+    "id": "game_1025_1775791560087_f0rnt5",
     "name": "泰坦陨落2",
     "nameEn": "Titanfall 2",
     "cover": "",
@@ -18469,10 +18469,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1026",
+    "id": "game_1026_1775791560087_7eux3c",
     "name": "荒岛求生",
     "nameEn": "Castaway",
     "cover": "",
@@ -18487,10 +18487,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1027",
+    "id": "game_1027_1775791560087_292ld7",
     "name": "猎人：荒野的呼唤",
     "nameEn": "theHunter: Call of the Wild",
     "cover": "",
@@ -18505,10 +18505,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1028",
+    "id": "game_1028_1775791560087_ifoz9r",
     "name": "人渣",
     "nameEn": "SCUM",
     "cover": "",
@@ -18523,10 +18523,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1029",
+    "id": "game_1029_1775791560087_0x8pi9",
     "name": "侍魂：晓豪华版",
     "nameEn": "Samurai Shodown",
     "cover": "",
@@ -18541,10 +18541,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1030",
+    "id": "game_1030_1775791560087_2lc35e",
     "name": "灵魂能力6",
     "nameEn": "SoulCalibur VI",
     "cover": "",
@@ -18559,10 +18559,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1031",
+    "id": "game_1031_1775791560087_28l17o",
     "name": "一拳超人：无名英雄",
     "nameEn": "ONE PUNCH MAN:A HERO NOBODY KNOWS",
     "cover": "",
@@ -18577,10 +18577,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1032",
+    "id": "game_1032_1775791560087_mp37wr",
     "name": "师父",
     "nameEn": "Sifu Digital Deluxe Edition",
     "cover": "",
@@ -18595,10 +18595,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1033",
+    "id": "game_1033_1775791560087_0uuam3",
     "name": "征服的荣耀：围城",
     "nameEn": "Gloria Victis: Siege Survival",
     "cover": "",
@@ -18613,10 +18613,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1034",
+    "id": "game_1034_1775791560087_s1fy08",
     "name": "剑士",
     "nameEn": "Kenshi",
     "cover": "",
@@ -18631,10 +18631,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1035",
+    "id": "game_1035_1775791560087_vj8rn6",
     "name": "嗨爆人生",
     "nameEn": "High On Life",
     "cover": "",
@@ -18649,10 +18649,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1036",
+    "id": "game_1036_1775791560087_e19w10",
     "name": "远征军：罗马",
     "nameEn": "Expeditions: Rome",
     "cover": "",
@@ -18667,10 +18667,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1037",
+    "id": "game_1037_1775791560087_ye3xvf",
     "name": "上行战场",
     "nameEn": "The Ascent",
     "cover": "",
@@ -18685,10 +18685,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1038",
+    "id": "game_1038_1775791560087_ftzgjl",
     "name": "流放者柯南",
     "nameEn": "Conan Exiles - Complete Edition",
     "cover": "",
@@ -18703,10 +18703,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1039",
+    "id": "game_1039_1775791560087_7ch8j7",
     "name": "邪恶天才2：世界统治",
     "nameEn": "Evil Genius 2: World Domination",
     "cover": "",
@@ -18721,10 +18721,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1040",
+    "id": "game_1040_1775791560087_wrms1d",
     "name": "枪，血，黑手党2",
     "nameEn": "Guns, Gore and Cannoli 2",
     "cover": "",
@@ -18739,10 +18739,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1041",
+    "id": "game_1041_1775791560087_b0zy7w",
     "name": "托尔图加：海盗传说",
     "nameEn": "Tortuga – A Pirate’s Tale",
     "cover": "",
@@ -18757,10 +18757,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1042",
+    "id": "game_1042_1775791560087_7jcbxz",
     "name": "凯瑟琳",
     "nameEn": "Catherine Classic",
     "cover": "",
@@ -18775,10 +18775,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1043",
+    "id": "game_1043_1775791560087_bjuwwl",
     "name": "荒野大镖客：救赎1画质增强版",
     "nameEn": "Red Dead Redemption Modded",
     "cover": "",
@@ -18793,10 +18793,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1044",
+    "id": "game_1044_1775791560087_nqh76c",
     "name": "荒野大镖客：救赎2（全DLC)",
     "nameEn": "Red Dead Redemption 2: Ultimate Edition",
     "cover": "",
@@ -18811,10 +18811,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1045",
+    "id": "game_1045_1775791560087_iahvmy",
     "name": "风之旅人 Journey",
     "nameEn": "Journey",
     "cover": "",
@@ -18829,10 +18829,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1046",
+    "id": "game_1046_1775791560087_gxojuq",
     "name": "这是我的战争最终剪辑版",
     "nameEn": "This War of Mine",
     "cover": "",
@@ -18847,10 +18847,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1047",
+    "id": "game_1047_1775791560087_rvbd80",
     "name": "忍者龟：施莱德的复仇",
     "nameEn": "Teenage Mutant Ninja Turtles: Shredder's Revenge",
     "cover": "",
@@ -18865,10 +18865,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1048",
+    "id": "game_1048_1775791560087_63ecf1",
     "name": "日落黄昏时",
     "nameEn": "As Dusk Falls",
     "cover": "",
@@ -18883,10 +18883,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1049",
+    "id": "game_1049_1775791560087_59a0fg",
     "name": "龙珠Z：卡卡罗特",
     "nameEn": "DRAGON BALL Z: KAKAROT",
     "cover": "",
@@ -18901,10 +18901,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1050",
+    "id": "game_1050_1775791560087_zkn0c3",
     "name": "破坏领主",
     "nameEn": "Wolcen: Lords of Mayhem",
     "cover": "",
@@ -18919,10 +18919,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1051",
+    "id": "game_1051_1775791560087_5tao4e",
     "name": "真人快打11",
     "nameEn": "Mortal Kombat 11",
     "cover": "",
@@ -18937,10 +18937,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1052",
+    "id": "game_1052_1775791560087_7r1zoh",
     "name": "心魔",
     "nameEn": "The Beast Inside",
     "cover": "",
@@ -18955,10 +18955,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1053",
+    "id": "game_1053_1775791560087_ubiqgp",
     "name": "极乐迪斯科",
     "nameEn": "Disco Elysium - The Final Cut",
     "cover": "",
@@ -18973,10 +18973,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1054",
+    "id": "game_1054_1775791560087_9y0ygt",
     "name": "七日杀",
     "nameEn": "7 Days to Die",
     "cover": "",
@@ -18991,10 +18991,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1055",
+    "id": "game_1055_1775791560087_sv3oyh",
     "name": "幽灵行动：荒野",
     "nameEn": "Tom Clancy's Ghost Recon Wildlands",
     "cover": "",
@@ -19009,10 +19009,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1056",
+    "id": "game_1056_1775791560087_yy1vmc",
     "name": "狂怒2",
     "nameEn": "Rage 2",
     "cover": "",
@@ -19027,10 +19027,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1057",
+    "id": "game_1057_1775791560087_iz9qp2",
     "name": "流浪/迷失/喵喵喵",
     "nameEn": "Stray",
     "cover": "",
@@ -19045,10 +19045,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1058",
+    "id": "game_1058_1775791560087_3ai1wd",
     "name": "百鬼夜行 剑姬无双",
     "nameEn": "Sword.x.Hime",
     "cover": "",
@@ -19063,10 +19063,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1059",
+    "id": "game_1059_1775791560087_uy0a8j",
     "name": "命令与控制3",
     "nameEn": "Command & Control 3",
     "cover": "",
@@ -19081,10 +19081,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1060",
+    "id": "game_1060_1775791560087_rcbe0d",
     "name": "卡普空格斗合集",
     "nameEn": "MARVEL vs. CAPCOM",
     "cover": "",
@@ -19099,10 +19099,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1061",
+    "id": "game_1061_1775791560087_t3ivyj",
     "name": "永不孤单",
     "nameEn": "Never Alone",
     "cover": "",
@@ -19117,10 +19117,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1062",
+    "id": "game_1062_1775791560087_nj4r7l",
     "name": "破晓传说",
     "nameEn": "Tales of Arise",
     "cover": "",
@@ -19135,10 +19135,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1063",
+    "id": "game_1063_1775791560087_5korm1",
     "name": "柯娜：精神之桥",
     "nameEn": "Kena: Bridge of Spirits",
     "cover": "",
@@ -19153,10 +19153,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1064",
+    "id": "game_1064_1775791560087_wbt6nj",
     "name": "死无对证毁尸灭迹",
     "nameEn": "Nobodies: Murder Cleaner",
     "cover": "",
@@ -19171,10 +19171,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1065",
+    "id": "game_1065_1775791560087_eir11r",
     "name": "缺氧：眼冒金星",
     "nameEn": "Oxygen Not Included",
     "cover": "",
@@ -19189,10 +19189,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1066",
+    "id": "game_1066_1775791560087_vzynxk",
     "name": "重生细胞",
     "nameEn": "Dead Cells",
     "cover": "",
@@ -19207,10 +19207,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1067",
+    "id": "game_1067_1775791560087_2wdyhz",
     "name": "泰拉瑞亚",
     "nameEn": "Terraria",
     "cover": "",
@@ -19225,10 +19225,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1068",
+    "id": "game_1068_1775791560087_ve7dom",
     "name": "星界边境",
     "nameEn": "Starbound",
     "cover": "",
@@ -19243,10 +19243,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1069",
+    "id": "game_1069_1775791560087_ewgyi2",
     "name": "汤姆克兰西：鹰击长空2",
     "nameEn": "Tom Clancy's H.A.W.X 2",
     "cover": "",
@@ -19261,10 +19261,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1070",
+    "id": "game_1070_1775791560087_ca4onf",
     "name": "茶杯头",
     "nameEn": "Cuphead",
     "cover": "",
@@ -19279,10 +19279,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1071",
+    "id": "game_1071_1775791560087_1wlg3w",
     "name": "热血无赖：终极版",
     "nameEn": "Sleeping Dogs: Definitive Edition",
     "cover": "",
@@ -19297,10 +19297,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1072",
+    "id": "game_1072_1775791560087_k5acjg",
     "name": "掠食",
     "nameEn": "Prey Digital Deluxe Edition",
     "cover": "",
@@ -19315,10 +19315,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1073",
+    "id": "game_1073_1775791560087_rb6msr",
     "name": "我的世界",
     "nameEn": "Minecraft",
     "cover": "",
@@ -19333,10 +19333,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1074",
+    "id": "game_1074_1775791560087_gvgrlf",
     "name": "环世界：皇权/边缘世界",
     "nameEn": "Rimworld",
     "cover": "",
@@ -19351,10 +19351,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1075",
+    "id": "game_1075_1775791560087_i5gdm4",
     "name": "星露谷物语",
     "nameEn": "Stardew Valley",
     "cover": "",
@@ -19369,10 +19369,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1076",
+    "id": "game_1076_1775791560087_b461vr",
     "name": "霍格沃茨之遗",
     "nameEn": "Hogwarts Legacy",
     "cover": "",
@@ -19387,10 +19387,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1077",
+    "id": "game_1077_1775791560087_rfp2cq",
     "name": "原子之心",
     "nameEn": "Atomic Heart",
     "cover": "",
@@ -19405,10 +19405,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1078",
+    "id": "game_1078_1775791560087_knxdfy",
     "name": "森林之子",
     "nameEn": "Sons Of The Forest",
     "cover": "",
@@ -19423,10 +19423,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1079",
+    "id": "game_1079_1775791560087_1nid23",
     "name": "森林",
     "nameEn": "Forest",
     "cover": "",
@@ -19441,10 +19441,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1080",
+    "id": "game_1080_1775791560087_m4z5yt",
     "name": "塞伯利亚之谜：世界之前",
     "nameEn": "Syberia: The World Before",
     "cover": "",
@@ -19459,10 +19459,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1081",
+    "id": "game_1081_1775791560087_sx0rrf",
     "name": "救赎收割者",
     "nameEn": "Redemption Reapers",
     "cover": "",
@@ -19477,10 +19477,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1082",
+    "id": "game_1082_1775791560087_l624of",
     "name": "迪士尼梦幻星谷",
     "nameEn": "Disney Dreamlight Valley",
     "cover": "",
@@ -19495,10 +19495,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1083",
+    "id": "game_1083_1775791560087_2ot863",
     "name": "卧龙：苍天陨落",
     "nameEn": "Wo Long: Fallen Dynasty",
     "cover": "",
@@ -19513,10 +19513,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1084",
+    "id": "game_1084_1775791560087_h4z18s",
     "name": "欧洲卡车模拟2",
     "nameEn": "Euro Truck Simulator 2",
     "cover": "",
@@ -19531,10 +19531,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1085",
+    "id": "game_1085_1775791560087_8p96rf",
     "name": "美国卡车模拟",
     "nameEn": "American Truck Simulator",
     "cover": "",
@@ -19549,10 +19549,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1086",
+    "id": "game_1086_1775791560087_wrraf5",
     "name": "血色寂寞冷",
     "nameEn": "bloody lonely cold",
     "cover": "",
@@ -19567,10 +19567,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1087",
+    "id": "game_1087_1775791560087_6zt1g9",
     "name": "战争游戏：红龙",
     "nameEn": "Wargame: Red Dragon",
     "cover": "",
@@ -19585,10 +19585,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1088",
+    "id": "game_1088_1775791560087_5ae8v4",
     "name": "权力的游戏",
     "nameEn": "Game of Thrones",
     "cover": "",
@@ -19603,10 +19603,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1089",
+    "id": "game_1089_1775791560087_32iy14",
     "name": "死亡之夜",
     "nameEn": "Night of the Dead",
     "cover": "",
@@ -19621,10 +19621,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1090",
+    "id": "game_1090_1775791560087_q9lvqa",
     "name": "弗罗森海姆",
     "nameEn": "Frozenheim",
     "cover": "",
@@ -19639,10 +19639,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1091",
+    "id": "game_1091_1775791560087_bjqlal",
     "name": "帕斯卡契约终极版",
     "nameEn": "Pascal's Wager: Definitive Edition",
     "cover": "",
@@ -19657,10 +19657,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1092",
+    "id": "game_1092_1775791560087_87rvpf",
     "name": "死在水中2",
     "nameEn": "Death in the Water 2",
     "cover": "",
@@ -19675,10 +19675,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1093",
+    "id": "game_1093_1775791560087_5bn6lb",
     "name": "究极大越野：传奇",
     "nameEn": "MX vs ATV Legends",
     "cover": "",
@@ -19693,10 +19693,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1094",
+    "id": "game_1094_1775791560087_kkdw5j",
     "name": "JOJO的奇妙冒险：群星之战重制版",
     "nameEn": "JoJo's Bizarre Adventure: All-Star Battle R",
     "cover": "",
@@ -19711,10 +19711,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1095",
+    "id": "game_1095_1775791560087_zy5fyc",
     "name": "预先号令",
     "nameEn": "WARNO",
     "cover": "",
@@ -19729,10 +19729,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1096",
+    "id": "game_1096_1775791560087_7zbu9h",
     "name": "雪地奔驰",
     "nameEn": "SnowRunner",
     "cover": "",
@@ -19747,10 +19747,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1097",
+    "id": "game_1097_1775791560087_tq481b",
     "name": "遍体鳞伤",
     "nameEn": "Scars Above",
     "cover": "",
@@ -19765,10 +19765,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1098",
+    "id": "game_1098_1775791560087_t7hf7m",
     "name": "幻影旅团",
     "nameEn": "Phantom Brigade",
     "cover": "",
@@ -19783,10 +19783,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1099",
+    "id": "game_1099_1775791560087_g0qqbq",
     "name": "被遗忘的我们",
     "nameEn": "War Mongrels",
     "cover": "",
@@ -19801,10 +19801,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1100",
+    "id": "game_1100_1775791560087_880ie8",
     "name": "超时空方舟",
     "nameEn": "Chrono Ark",
     "cover": "",
@@ -19819,10 +19819,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1101",
+    "id": "game_1101_1775791560087_n5jezt",
     "name": "圣战群英传：解放",
     "nameEn": "Disciples: Liberation",
     "cover": "",
@@ -19837,10 +19837,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1102",
+    "id": "game_1102_1775791560087_pspir3",
     "name": "穿越火线：军团",
     "nameEn": "Crossfire: Legion",
     "cover": "",
@@ -19855,10 +19855,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1103",
+    "id": "game_1103_1775791560087_mtkcue",
     "name": "战争传说",
     "nameEn": "Wartales",
     "cover": "",
@@ -19873,10 +19873,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1104",
+    "id": "game_1104_1775791560087_f1bdyg",
     "name": "边境猎人: 艾尔莎的命运之轮",
     "nameEn": "Frontier Hunter: Erza's Wheel of Fortune",
     "cover": "",
@@ -19891,10 +19891,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1105",
+    "id": "game_1105_1775791560087_854bnf",
     "name": "神之天平",
     "nameEn": "ASTLIBRA Revision",
     "cover": "",
@@ -19909,10 +19909,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1106",
+    "id": "game_1106_1775791560087_3xrka8",
     "name": "神领编年史",
     "nameEn": "The DioField Chronicle",
     "cover": "",
@@ -19927,10 +19927,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1107",
+    "id": "game_1107_1775791560087_b7sriz",
     "name": "单板滑雪",
     "nameEn": "Shredders",
     "cover": "",
@@ -19945,10 +19945,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1108",
+    "id": "game_1108_1775791560087_ejqyti",
     "name": "乞丐模拟器",
     "nameEn": "Hobo: Tough Life",
     "cover": "",
@@ -19963,10 +19963,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1109",
+    "id": "game_1109_1775791560087_p7dtgx",
     "name": "地狱潜者",
     "nameEn": "Helldivers Dive Harder Edition",
     "cover": "",
@@ -19981,10 +19981,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1110",
+    "id": "game_1110_1775791560087_cj1flw",
     "name": "缉私警察",
     "nameEn": "Contraband Police",
     "cover": "",
@@ -19999,10 +19999,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1111",
+    "id": "game_1111_1775791560087_ozyhrk",
     "name": "灵媒",
     "nameEn": "The Medium",
     "cover": "",
@@ -20017,10 +20017,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1112",
+    "id": "game_1112_1775791560087_yjggti",
     "name": "玛莎已死",
     "nameEn": "Martha Is Dead",
     "cover": "",
@@ -20035,10 +20035,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1113",
+    "id": "game_1113_1775791560087_311f1s",
     "name": "叛乱：沙漠风暴",
     "nameEn": "Insurgency: Sandstorm",
     "cover": "",
@@ -20053,10 +20053,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1114",
+    "id": "game_1114_1775791560087_yjgutv",
     "name": "僚机计划",
     "nameEn": "Project Wingman",
     "cover": "",
@@ -20071,10 +20071,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1115",
+    "id": "game_1115_1775791560087_eghbph",
     "name": "防御阵型2",
     "nameEn": "Defense Grid 2",
     "cover": "",
@@ -20089,10 +20089,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1116",
+    "id": "game_1116_1775791560087_wz3bp8",
     "name": "房产达人",
     "nameEn": "House Flipper",
     "cover": "",
@@ -20107,10 +20107,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1117",
+    "id": "game_1117_1775791560087_h6phdi",
     "name": "统一指挥2",
     "nameEn": "Unity of Command II - Blitzkrieg",
     "cover": "",
@@ -20125,10 +20125,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1118",
+    "id": "game_1118_1775791560087_jcljno",
     "name": "廖添丁：绝代凶贼之末日",
     "nameEn": "Legend of Tianding",
     "cover": "",
@@ -20143,10 +20143,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1119",
+    "id": "game_1119_1775791560087_d1malc",
     "name": "玩乐迷踪",
     "nameEn": "Lost in Play",
     "cover": "",
@@ -20161,10 +20161,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1120",
+    "id": "game_1120_1775791560087_gvhppr",
     "name": "渡神纪：芬尼斯崛起",
     "nameEn": "Immortals Fenyx Rising",
     "cover": "",
@@ -20179,10 +20179,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1121",
+    "id": "game_1121_1775791560087_k69dx9",
     "name": "KARMA",
     "nameEn": "KARMA",
     "cover": "",
@@ -20197,10 +20197,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1122",
+    "id": "game_1122_1775791560087_6zirt9",
     "name": "忍者之印：重制版",
     "nameEn": "Mark of the Ninja: Remastered",
     "cover": "",
@@ -20215,10 +20215,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1123",
+    "id": "game_1123_1775791560087_0lm6qq",
     "name": "严阵以待",
     "nameEn": "Ready or Not",
     "cover": "",
@@ -20233,10 +20233,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1124",
+    "id": "game_1124_1775791560087_ms8d9x",
     "name": "穹顶守护者豪华版",
     "nameEn": "Dome Keeper",
     "cover": "",
@@ -20251,10 +20251,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1125",
+    "id": "game_1125_1775791560087_af75mf",
     "name": "海洋之王豪华版",
     "nameEn": "King of Seas",
     "cover": "",
@@ -20269,10 +20269,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1126",
+    "id": "game_1126_1775791560087_a2sc17",
     "name": "超凡双生",
     "nameEn": "Beyond: Two Souls",
     "cover": "",
@@ -20287,10 +20287,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1127",
+    "id": "game_1127_1775791560087_4kepct",
     "name": "九十六号公路",
     "nameEn": "Road 96",
     "cover": "",
@@ -20305,10 +20305,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1128",
+    "id": "game_1128_1775791560087_yk6gyt",
     "name": "疯狂的麦克斯",
     "nameEn": "Mad Max",
     "cover": "",
@@ -20323,10 +20323,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1129",
+    "id": "game_1129_1775791560087_yzpzt1",
     "name": "暴君 Tyranny",
     "nameEn": "Tyranny",
     "cover": "",
@@ -20341,10 +20341,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1130",
+    "id": "game_1130_1775791560087_l60i6g",
     "name": "暴君的游戏",
     "nameEn": "Despot's Game: Dystopian Army Builder",
     "cover": "",
@@ -20359,10 +20359,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1131",
+    "id": "game_1131_1775791560087_yo9wk3",
     "name": "最后的咒语",
     "nameEn": "The Last Spell",
     "cover": "",
@@ -20377,10 +20377,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1132",
+    "id": "game_1132_1775791560087_rgq0yz",
     "name": "脑叶公司：怪物管理模拟",
     "nameEn": "Lobotomy Corporation",
     "cover": "",
@@ -20395,10 +20395,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1133",
+    "id": "game_1133_1775791560087_64m1ar",
     "name": "千爵史诗",
     "nameEn": "Card Shark",
     "cover": "",
@@ -20413,10 +20413,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1134",
+    "id": "game_1134_1775791560087_6ptync",
     "name": "疯狂派对2",
     "nameEn": "Party Hard 2",
     "cover": "",
@@ -20431,10 +20431,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1135",
+    "id": "game_1135_1775791560087_of4jz6",
     "name": "恐怖之歌",
     "nameEn": "Song of Horror Complete Edition",
     "cover": "",
@@ -20449,10 +20449,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1136",
+    "id": "game_1136_1775791560087_z2u7to",
     "name": "小缇娜强袭龙堡：奇幻之地大冒险",
     "nameEn": "Tiny Tina's Assault Dragon Keep",
     "cover": "",
@@ -20467,10 +20467,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1137",
+    "id": "game_1137_1775791560087_95s22c",
     "name": "我还活着",
     "nameEn": "I am Alive",
     "cover": "",
@@ -20485,10 +20485,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1138",
+    "id": "game_1138_1775791560087_hsjbg1",
     "name": "皇家骑士团：重生",
     "nameEn": "Tactics Ogre: Reborn",
     "cover": "",
@@ -20503,10 +20503,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1139",
+    "id": "game_1139_1775791560087_8b5g2x",
     "name": "人类",
     "nameEn": "Humankind",
     "cover": "",
@@ -20521,10 +20521,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1140",
+    "id": "game_1140_1775791560087_hkn4zv",
     "name": "小骨：英雄杀手",
     "nameEn": "Skul: The Hero Slayer",
     "cover": "",
@@ -20539,10 +20539,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1141",
+    "id": "game_1141_1775791560087_2n8bgv",
     "name": "冰与火之舞",
     "nameEn": "A Dance of Fire and Ice",
     "cover": "",
@@ -20557,10 +20557,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1142",
+    "id": "game_1142_1775791560087_nmk6fy",
     "name": "行会3",
     "nameEn": "The Guild 3",
     "cover": "",
@@ -20575,10 +20575,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1143",
+    "id": "game_1143_1775791560087_im4wt1",
     "name": "咩咩启示录",
     "nameEn": "Cult of the Lamb",
     "cover": "",
@@ -20593,10 +20593,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1144",
+    "id": "game_1144_1775791560087_gm0hlq",
     "name": "层层梦境",
     "nameEn": "Dreamscaper",
     "cover": "",
@@ -20611,10 +20611,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1145",
+    "id": "game_1145_1775791560087_ho0f6s",
     "name": "战争与玫瑰",
     "nameEn": "Wars and Roses",
     "cover": "",
@@ -20629,10 +20629,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1146",
+    "id": "game_1146_1775791560087_0bo8gy",
     "name": "不确定性：末日光芒",
     "nameEn": "The Uncertain: Light At The End",
     "cover": "",
@@ -20647,10 +20647,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1147",
+    "id": "game_1147_1775791560087_j4715c",
     "name": "终极提督：航海时代",
     "nameEn": "Ultimate Admiral: Age of Sail",
     "cover": "",
@@ -20665,10 +20665,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1148",
+    "id": "game_1148_1775791560087_dk2isz",
     "name": "控制终极合辑",
     "nameEn": "Control Ultimate Edition",
     "cover": "",
@@ -20683,10 +20683,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1149",
+    "id": "game_1149_1775791560087_ubkq0v",
     "name": "量子破碎",
     "nameEn": "Quantum Break",
     "cover": "",
@@ -20701,10 +20701,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1150",
+    "id": "game_1150_1775791560087_ihakpw",
     "name": "海岛大亨6",
     "nameEn": "Tropico 6",
     "cover": "",
@@ -20719,10 +20719,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1151",
+    "id": "game_1151_1775791560087_wdg7pm",
     "name": "暗影觉醒",
     "nameEn": "Shadow Awakening",
     "cover": "",
@@ -20737,10 +20737,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1152",
+    "id": "game_1152_1775791560087_g99shw",
     "name": "废土3",
     "nameEn": "Wasteland 3",
     "cover": "",
@@ -20755,10 +20755,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1153",
+    "id": "game_1153_1775791560087_4dymfs",
     "name": "漫漫长夜",
     "nameEn": "The Long Dark",
     "cover": "",
@@ -20773,10 +20773,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1154",
+    "id": "game_1154_1775791560087_g9spi1",
     "name": "过山车之星",
     "nameEn": "Planet Coaster",
     "cover": "",
@@ -20791,10 +20791,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1155",
+    "id": "game_1155_1775791560087_tc220k",
     "name": "废品机械师",
     "nameEn": "Scrap Mechanic",
     "cover": "",
@@ -20809,10 +20809,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1156",
+    "id": "game_1156_1775791560087_fetuyz",
     "name": "战地模拟器（英文版）",
     "nameEn": "Ravenfield",
     "cover": "",
@@ -20827,10 +20827,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1157",
+    "id": "game_1157_1775791560087_42ai5y",
     "name": "最远的边陲",
     "nameEn": "Farthest Frontier",
     "cover": "",
@@ -20845,10 +20845,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1158",
+    "id": "game_1158_1775791560087_7mdcb7",
     "name": "土豆兄弟",
     "nameEn": "Brotato",
     "cover": "",
@@ -20863,10 +20863,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1159",
+    "id": "game_1159_1775791560087_gzo5yl",
     "name": "CarX 漂移赛车",
     "nameEn": "CarX Drift Racing",
     "cover": "",
@@ -20881,10 +20881,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1160",
+    "id": "game_1160_1775791560087_wpdt58",
     "name": "暗邪西部",
     "nameEn": "Evil West",
     "cover": "",
@@ -20899,10 +20899,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1161",
+    "id": "game_1161_1775791560087_2ab57p",
     "name": "掘地求升 和班尼特福迪一起攻克难关",
     "nameEn": "Getting Over It with Bennett Foddy",
     "cover": "",
@@ -20917,10 +20917,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1162",
+    "id": "game_1162_1775791560087_4vbcu1",
     "name": "铳墓G.O.R.E",
     "nameEn": "Gungrave G.O.R.E",
     "cover": "",
@@ -20935,10 +20935,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1163",
+    "id": "game_1163_1775791560087_idqvmq",
     "name": "行尸走肉：Telltale 最终系列",
     "nameEn": "The Walking Dead The Telltale Definitive Series",
     "cover": "",
@@ -20953,10 +20953,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1164",
+    "id": "game_1164_1775791560087_jny3uz",
     "name": "饥荒",
     "nameEn": "Don't Starve",
     "cover": "",
@@ -20971,10 +20971,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1165",
+    "id": "game_1165_1775791560087_rgvhto",
     "name": "银河破裂者",
     "nameEn": "he Riftbreaker",
     "cover": "",
@@ -20989,10 +20989,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1166",
+    "id": "game_1166_1775791560087_mtkhw7",
     "name": "变节行动/Renegade Ops",
     "nameEn": "Renegade Ops",
     "cover": "",
@@ -21007,10 +21007,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1167",
+    "id": "game_1167_1775791560087_b6xelv",
     "name": "太阁立志传5DX",
     "nameEn": "Taiko Risshiden V DX",
     "cover": "",
@@ -21025,10 +21025,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1168",
+    "id": "game_1168_1775791560087_7be5dn",
     "name": "双人成行",
     "nameEn": "It Takes Two",
     "cover": "",
@@ -21043,10 +21043,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1169",
+    "id": "game_1169_1775791560087_m2pbtk",
     "name": "食人鲨",
     "nameEn": "Maneater",
     "cover": "",
@@ -21061,10 +21061,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1170",
+    "id": "game_1170_1775791560087_fc1qhy",
     "name": "最后的战役：劫后余生",
     "nameEn": "The Last Stand: Aftermath",
     "cover": "",
@@ -21079,10 +21079,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1171",
+    "id": "game_1171_1775791560087_xkl5un",
     "name": "创世理想乡",
     "nameEn": "Craftopia",
     "cover": "",
@@ -21097,10 +21097,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1172",
+    "id": "game_1172_1775791560087_xblad3",
     "name": "荒野的召唤：垂钓者",
     "nameEn": "Call of the Wild: The Angler",
     "cover": "",
@@ -21115,10 +21115,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1173",
+    "id": "game_1173_1775791560087_fazma7",
     "name": "异星探险家",
     "nameEn": "ASTRONEER",
     "cover": "",
@@ -21133,10 +21133,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1174",
+    "id": "game_1174_1775791560087_dy77gh",
     "name": "模拟城市5：明日之城",
     "nameEn": "SimCity: Cities of Tomorrow",
     "cover": "",
@@ -21151,10 +21151,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1175",
+    "id": "game_1175_1775791560087_g3oon2",
     "name": "生化变种",
     "nameEn": "Biomutant",
     "cover": "",
@@ -21169,10 +21169,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1176",
+    "id": "game_1176_1775791560087_xgl5z6",
     "name": "死亡循环",
     "nameEn": "DEATHLOOP",
     "cover": "",
@@ -21187,10 +21187,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1177",
+    "id": "game_1177_1775791560087_a2jkpk",
     "name": "死亡在下",
     "nameEn": "Death Below",
     "cover": "",
@@ -21205,10 +21205,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1178",
+    "id": "game_1178_1775791560087_ex236l",
     "name": "足球小将：新秀崛起",
     "nameEn": "Captain Tsubasa: Rise of New Champions",
     "cover": "",
@@ -21223,10 +21223,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1179",
+    "id": "game_1179_1775791560087_36nln3",
     "name": "亿万僵尸",
     "nameEn": "They Are Billions",
     "cover": "",
@@ -21241,10 +21241,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1180",
+    "id": "game_1180_1775791560087_pmz4wc",
     "name": "猎人之路",
     "nameEn": "Way of the Hunter",
     "cover": "",
@@ -21259,10 +21259,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1181",
+    "id": "game_1181_1775791560087_wb2i59",
     "name": "钢铁收割",
     "nameEn": "Iron Harvest",
     "cover": "",
@@ -21277,10 +21277,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1182",
+    "id": "game_1182_1775791560087_efgzro",
     "name": "国王的恩赐2",
     "nameEn": "King's Bounty II",
     "cover": "",
@@ -21295,10 +21295,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1183",
+    "id": "game_1183_1775791560087_3vzec4",
     "name": "荣誉骑士2：君主",
     "nameEn": "Knights of Honor II: Sovereign",
     "cover": "",
@@ -21313,10 +21313,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1184",
+    "id": "game_1184_1775791560087_hvu7pw",
     "name": "马克思佩恩3",
     "nameEn": "Max Payne 3",
     "cover": "",
@@ -21331,10 +21331,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1185",
+    "id": "game_1185_1775791560087_ba033t",
     "name": "警察模拟器：巡警",
     "nameEn": "Police Simulator: Patrol Officers",
     "cover": "",
@@ -21349,10 +21349,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1186",
+    "id": "game_1186_1775791560087_exp3f5",
     "name": "开拓者：正义之怒",
     "nameEn": "Pathfinder: Wrath of the Righteous",
     "cover": "",
@@ -21367,10 +21367,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1187",
+    "id": "game_1187_1775791560087_xhwev4",
     "name": "魅魔：红色女神",
     "nameEn": "Succubus",
     "cover": "",
@@ -21385,10 +21385,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1188",
+    "id": "game_1188_1775791560087_eohsp7",
     "name": "武士少女",
     "nameEn": "AMURAI MAIDEN DELUXE EDITION",
     "cover": "",
@@ -21403,10 +21403,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1189",
+    "id": "game_1189_1775791560087_tieotj",
     "name": "暴雨",
     "nameEn": "Heavy Rain",
     "cover": "",
@@ -21421,10 +21421,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1190",
+    "id": "game_1190_1775791560087_jwfhv8",
     "name": "逃出生天",
     "nameEn": "A Way Out",
     "cover": "",
@@ -21439,10 +21439,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1191",
+    "id": "game_1191_1775791560087_fb6rbp",
     "name": "火焰之纹章：风花雪月",
     "nameEn": "Fire Emblem: ThreeHouses",
     "cover": "",
@@ -21457,10 +21457,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1192",
+    "id": "game_1192_1775791560087_llbabd",
     "name": "凡尔登战役",
     "nameEn": "Verdun",
     "cover": "",
@@ -21475,10 +21475,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1193",
+    "id": "game_1193_1775791560087_6lwdik",
     "name": "终结者：抵抗",
     "nameEn": "Terminator: Resistance",
     "cover": "",
@@ -21493,10 +21493,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1194",
+    "id": "game_1194_1775791560087_ujcy92",
     "name": "零世代",
     "nameEn": "Generation Zero",
     "cover": "",
@@ -21511,10 +21511,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1195",
+    "id": "game_1195_1775791560087_pllp6m",
     "name": "子弹风暴",
     "nameEn": "Bulletstorm VR",
     "cover": "",
@@ -21529,10 +21529,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1196",
+    "id": "game_1196_1775791560087_pvgt4c",
     "name": "重装刺客",
     "nameEn": "Heavy Armored Assassin",
     "cover": "",
@@ -21547,10 +21547,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1197",
+    "id": "game_1197_1775791560087_cjjlwk",
     "name": "血污：夜之仪式",
     "nameEn": "Bloodstained: Ritual of the Night",
     "cover": "",
@@ -21565,10 +21565,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1198",
+    "id": "game_1198_1775791560087_saol9o",
     "name": "巫师之昆特牌：流浪法师",
     "nameEn": "GWENT: Rogue Mage",
     "cover": "",
@@ -21583,10 +21583,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1199",
+    "id": "game_1199_1775791560087_ycqq25",
     "name": "维克多弗兰",
     "nameEn": "ictor Vran ARPG",
     "cover": "",
@@ -21601,10 +21601,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1200",
+    "id": "game_1200_1775791560087_8gho30",
     "name": "尸变纪元2",
     "nameEn": "Dead Age 2",
     "cover": "",
@@ -21619,10 +21619,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1201",
+    "id": "game_1201_1775791560087_kr5cll",
     "name": "圣斗士星矢：斗士之魂",
     "nameEn": "Saint Seiya: Soldiers'Soul",
     "cover": "",
@@ -21637,10 +21637,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1202",
+    "id": "game_1202_1775791560087_v08eiq",
     "name": "全面战争模拟器",
     "nameEn": "Totally Accurate Battle Simulator",
     "cover": "",
@@ -21655,10 +21655,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1203",
+    "id": "game_1203_1775791560087_bppy2a",
     "name": "浅红2",
     "nameEn": "Easy Red 2",
     "cover": "",
@@ -21673,10 +21673,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1204",
+    "id": "game_1204_1775791560087_vu3ak5",
     "name": "破碎的碎片",
     "nameEn": "Broken Pieces",
     "cover": "",
@@ -21691,10 +21691,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1205",
+    "id": "game_1205_1775791560087_26cdv6",
     "name": "末日准备狂",
     "nameEn": "Mr. Prepper",
     "cover": "",
@@ -21709,10 +21709,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1206",
+    "id": "game_1206_1775791560087_4xxxv5",
     "name": "马来狂人",
     "nameEn": "Amok Runner",
     "cover": "",
@@ -21727,10 +21727,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1207",
+    "id": "game_1207_1775791560087_flq8y3",
     "name": "狂野之心",
     "nameEn": "WILD HEARTS",
     "cover": "",
@@ -21745,10 +21745,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1208",
+    "id": "game_1208_1775791560087_t3xzb7",
     "name": "狂热运输2 豪华版",
     "nameEn": "Transport Fever 2",
     "cover": "",
@@ -21763,10 +21763,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1209",
+    "id": "game_1209_1775791560087_bklpr1",
     "name": "卡车人生 正式版",
     "nameEn": "TruckLife",
     "cover": "",
@@ -21781,10 +21781,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1210",
+    "id": "game_1210_1775791560087_1dhgg6",
     "name": "巨人起义",
     "nameEn": "Giants Uprising",
     "cover": "",
@@ -21799,10 +21799,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1211",
+    "id": "game_1211_1775791560087_wmu2fh",
     "name": "旧世界",
     "nameEn": "Old World",
     "cover": "",
@@ -21817,10 +21817,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1212",
+    "id": "game_1212_1775791560087_z9bw8k",
     "name": "伙伴",
     "nameEn": "The Companion",
     "cover": "",
@@ -21835,10 +21835,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1213",
+    "id": "game_1213_1775791560087_8uoaum",
     "name": "灰区 正式版",
     "nameEn": "Gray Zone",
     "cover": "",
@@ -21853,10 +21853,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1214",
+    "id": "game_1214_1775791560087_j2n04s",
     "name": "黑暗之刃",
     "nameEn": "Blade of Darkness",
     "cover": "",
@@ -21871,10 +21871,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1215",
+    "id": "game_1215_1775791560087_f52qbf",
     "name": "奠基",
     "nameEn": "Foundation",
     "cover": "",
@@ -21889,10 +21889,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1216",
+    "id": "game_1216_1775791560087_pdr92e",
     "name": "地下蚁国",
     "nameEn": "Empires of the Undergrowth",
     "cover": "",
@@ -21907,10 +21907,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1217",
+    "id": "game_1217_1775791560087_oro3ag",
     "name": "阿喀琉斯：不为人知的传奇",
     "nameEn": "Achilles: Legends Untold",
     "cover": "",
@@ -21925,10 +21925,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1218",
+    "id": "game_1218_1775791560087_prl8mh",
     "name": "幽浮2",
     "nameEn": "XCOM 2",
     "cover": "",
@@ -21943,10 +21943,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1219",
+    "id": "game_1219_1775791560087_56jqb6",
     "name": "末日地带与世隔绝",
     "nameEn": "Endzone-A World Apart",
     "cover": "",
@@ -21961,10 +21961,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1220",
+    "id": "game_1220_1775791560087_or14h1",
     "name": "钢之崛起",
     "nameEn": "Steelrising",
     "cover": "",
@@ -21979,10 +21979,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1221",
+    "id": "game_1221_1775791560087_fv3hrl",
     "name": "群星",
     "nameEn": "Stellaris",
     "cover": "",
@@ -21997,10 +21997,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1222",
+    "id": "game_1222_1775791560087_zebbjq",
     "name": "星际拓荒",
     "nameEn": "Outer Wilds",
     "cover": "",
@@ -22015,10 +22015,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1223",
+    "id": "game_1223_1775791560087_ke5lyg",
     "name": "北欧女神：极乐世界",
     "nameEn": "VALKYRIE ELYSIUM",
     "cover": "",
@@ -22033,10 +22033,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1224",
+    "id": "game_1224_1775791560087_9lwrnv",
     "name": "全面坦克战略官",
     "nameEn": "Total Tank Generals",
     "cover": "",
@@ -22051,10 +22051,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1225",
+    "id": "game_1225_1775791560087_8evowy",
     "name": "三角战略 数字豪华版",
     "nameEn": "TRIANGLE STRATEGY",
     "cover": "",
@@ -22069,10 +22069,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1226",
+    "id": "game_1226_1775791560087_j66tnv",
     "name": "边境检察官",
     "nameEn": "Border Officer",
     "cover": "",
@@ -22087,10 +22087,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1227",
+    "id": "game_1227_1775791560087_yqesm5",
     "name": "中世纪王朝",
     "nameEn": "Medieval Dynasty",
     "cover": "",
@@ -22105,10 +22105,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1228",
+    "id": "game_1228_1775791560087_6qfets",
     "name": "恐怖录像带",
     "nameEn": "Anthology of Fear",
     "cover": "",
@@ -22123,10 +22123,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1229",
+    "id": "game_1229_1775791560087_kdlakh",
     "name": "有一天你会归来导演剪辑版",
     "nameEn": "Someday You’ll Return: Director’s Cut",
     "cover": "",
@@ -22141,10 +22141,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1230",
+    "id": "game_1230_1775791560087_s7mwh7",
     "name": "二战重建者",
     "nameEn": "WW2 Rebuilder",
     "cover": "",
@@ -22159,10 +22159,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1231",
+    "id": "game_1231_1775791560087_3jwq0o",
     "name": "X4：基石",
     "nameEn": "X4: Foundations",
     "cover": "",
@@ -22177,10 +22177,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1232",
+    "id": "game_1232_1775791560087_y9rrny",
     "name": "采石场惊魂",
     "nameEn": "The Quarry",
     "cover": "",
@@ -22195,10 +22195,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1233",
+    "id": "game_1233_1775791560087_sf5elc",
     "name": "伐木工王朝",
     "nameEn": "Lumberjack’s Dynasty",
     "cover": "",
@@ -22213,10 +22213,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1234",
+    "id": "game_1234_1775791560087_5cjqoe",
     "name": "哥谭骑士",
     "nameEn": "Gotham Knights",
     "cover": "",
@@ -22231,10 +22231,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1235",
+    "id": "game_1235_1775791560087_v9lfr5",
     "name": "乐高星球大战：天行者传奇",
     "nameEn": "LEGO® Star Wars™: The Skywalker Saga",
     "cover": "",
@@ -22249,10 +22249,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1236",
+    "id": "game_1236_1775791560087_ssb7na",
     "name": "麻布仔大冒险",
     "nameEn": "Sackboy: A Big Adventure",
     "cover": "",
@@ -22267,10 +22267,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1237",
+    "id": "game_1237_1775791560087_ty84ml",
     "name": "模拟山羊3数字豪华版",
     "nameEn": "Goat Simulator 3",
     "cover": "",
@@ -22285,10 +22285,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1238",
+    "id": "game_1238_1775791560087_o83cpc",
     "name": "太空工程师",
     "nameEn": "Space Engineers",
     "cover": "",
@@ -22303,10 +22303,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1239",
+    "id": "game_1239_1775791560087_sggitj",
     "name": "逃离塔科夫",
     "nameEn": "Escape from Tarkov",
     "cover": "",
@@ -22321,10 +22321,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1240",
+    "id": "game_1240_1775791560087_ibfype",
     "name": "夏洛克·福尔摩斯：觉醒重制版",
     "nameEn": "Sherlock Holmes The Awakened",
     "cover": "",
@@ -22339,10 +22339,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1241",
+    "id": "game_1241_1775791560087_fg1rtl",
     "name": "翼星求生",
     "nameEn": "ICARUS",
     "cover": "",
@@ -22357,10 +22357,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1242",
+    "id": "game_1242_1775791560087_hwg6bm",
     "name": "影子战术：将军之刃",
     "nameEn": "Shadow Tactics: Blades of the Shogun",
     "cover": "",
@@ -22375,10 +22375,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1243",
+    "id": "game_1243_1775791560087_zdmpvu",
     "name": "60秒！重制版",
     "nameEn": "60 Seconds! Reatomized",
     "cover": "",
@@ -22393,10 +22393,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1244",
+    "id": "game_1244_1775791560087_4u25k3",
     "name": "超阈限空间",
     "nameEn": "Superliminal",
     "cover": "",
@@ -22411,10 +22411,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1245",
+    "id": "game_1245_1775791560087_6r0g78",
     "name": "恶霸鲁尼 奖学金版",
     "nameEn": "Bully: Scholarship Edition",
     "cover": "",
@@ -22429,10 +22429,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1246",
+    "id": "game_1246_1775791560087_pb7e9e",
     "name": "福尔摩斯觉醒 重制豪华尊享版",
     "nameEn": "Sherlock Holmes The Awakened",
     "cover": "",
@@ -22447,10 +22447,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1247",
+    "id": "game_1247_1775791560087_5rvg6s",
     "name": "记忆边境",
     "nameEn": "Thymesia",
     "cover": "",
@@ -22465,10 +22465,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1248",
+    "id": "game_1248_1775791560087_bezwbp",
     "name": "卡拉贡",
     "nameEn": "Karagon",
     "cover": "",
@@ -22483,10 +22483,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1249",
+    "id": "game_1249_1775791560087_m8hcv8",
     "name": "涅克罗蒙达：赏金猎人",
     "nameEn": "Necromunda: Hired Gun",
     "cover": "",
@@ -22501,10 +22501,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1250",
+    "id": "game_1250_1775791560087_fb832g",
     "name": "怒之铁拳4",
     "nameEn": "Streets of Rage 4",
     "cover": "",
@@ -22519,10 +22519,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1251",
+    "id": "game_1251_1775791560087_bhwscp",
     "name": "水之城 Aquatico",
     "nameEn": "Aquatico",
     "cover": "",
@@ -22537,10 +22537,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1252",
+    "id": "game_1252_1775791560087_c8uuhu",
     "name": "死亡回归豪华版",
     "nameEn": "Returnal",
     "cover": "",
@@ -22555,10 +22555,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1253",
+    "id": "game_1253_1775791560087_r7wzxe",
     "name": "死亡细胞",
     "nameEn": "Dead Cells",
     "cover": "",
@@ -22573,10 +22573,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1254",
+    "id": "game_1254_1775791560087_4o1rzh",
     "name": "战锤：末世鼠疫2",
     "nameEn": "Warhammer: Vermintide 2",
     "cover": "",
@@ -22591,10 +22591,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1255",
+    "id": "game_1255_1775791560087_xw2p15",
     "name": "诺斯加德 北境之地",
     "nameEn": "Northgard",
     "cover": "",
@@ -22609,10 +22609,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1256",
+    "id": "game_1256_1775791560087_la7i8s",
     "name": "超越欲望",
     "nameEn": "Lust from Beyond",
     "cover": "",
@@ -22627,10 +22627,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1257",
+    "id": "game_1257_1775791560087_hdye77",
     "name": "地狱剑术/骇厉四斩",
     "nameEn": "Hellish Quart",
     "cover": "",
@@ -22645,10 +22645,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1258",
+    "id": "game_1258_1775791560087_1ho7fn",
     "name": "黑色洛城",
     "nameEn": "L.A. Noire",
     "cover": "",
@@ -22663,10 +22663,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1259",
+    "id": "game_1259_1775791560087_dgascm",
     "name": "jump大乱斗",
     "nameEn": "Jump Force",
     "cover": "",
@@ -22681,10 +22681,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1260",
+    "id": "game_1260_1775791560087_af1rue",
     "name": "木筏求生",
     "nameEn": "Raft",
     "cover": "",
@@ -22699,10 +22699,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1261",
+    "id": "game_1261_1775791560087_r9abc9",
     "name": "全面冲突：抵抗",
     "nameEn": "Total Conflict: Resistance",
     "cover": "",
@@ -22717,10 +22717,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1262",
+    "id": "game_1262_1775791560087_yp2e3d",
     "name": "先驱者",
     "nameEn": "Outriders",
     "cover": "",
@@ -22735,10 +22735,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1263",
+    "id": "game_1263_1775791560087_60pmlh",
     "name": "迸发2",
     "nameEn": "The Surge 2",
     "cover": "",
@@ -22753,10 +22753,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1264",
+    "id": "game_1264_1775791560087_2292wg",
     "name": "传述之魔女",
     "nameEn": "The witch of the Ihanashi",
     "cover": "",
@@ -22771,10 +22771,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1265",
+    "id": "game_1265_1775791560087_qv30qh",
     "name": "地球陨落",
     "nameEn": "Earthfall",
     "cover": "",
@@ -22789,10 +22789,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1266",
+    "id": "game_1266_1775791560087_clsahq",
     "name": "地下城与勇士：决斗",
     "nameEn": "DNF Duel",
     "cover": "",
@@ -22807,10 +22807,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1267",
+    "id": "game_1267_1775791560087_2sfadv",
     "name": "杜蒙",
     "nameEn": "Dolmen",
     "cover": "",
@@ -22825,10 +22825,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1268",
+    "id": "game_1268_1775791560087_j290o7",
     "name": "凤凰点",
     "nameEn": "Phoenix Point: Year One Edition",
     "cover": "",
@@ -22843,10 +22843,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1269",
+    "id": "game_1269_1775791560087_n8tg1e",
     "name": "福尔摩斯：恶魔之女",
     "nameEn": "Sherlock Holmes: The Devil's Daughter",
     "cover": "",
@@ -22861,10 +22861,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1270",
+    "id": "game_1270_1775791560087_1xhjt4",
     "name": "孤胆枪手2：新纪元",
     "nameEn": "Alien Shooter 2 – New Era",
     "cover": "",
@@ -22879,10 +22879,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1271",
+    "id": "game_1271_1775791560087_8cuwhl",
     "name": "亨利毕绍普的历史",
     "nameEn": "The Story of Henry Bishop",
     "cover": "",
@@ -22897,10 +22897,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1272",
+    "id": "game_1272_1775791560087_6p10c5",
     "name": "灰蛊",
     "nameEn": "Grey Goo",
     "cover": "",
@@ -22915,10 +22915,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1273",
+    "id": "game_1273_1775791560087_bn5c4v",
     "name": "AI梦境档案：涅槃肇始",
     "nameEn": "AI: The Somnium Files - nirvanA Initiative",
     "cover": "",
@@ -22933,10 +22933,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1274",
+    "id": "game_1274_1775791560087_jw1ffy",
     "name": "模拟狩猎",
     "nameEn": "Hunting Simulator",
     "cover": "",
@@ -22951,10 +22951,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1275",
+    "id": "game_1275_1775791560087_840wn3",
     "name": "尼布甲尼撒王",
     "nameEn": "Nebuchadnezzar",
     "cover": "",
@@ -22969,10 +22969,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1276",
+    "id": "game_1276_1775791560087_xcc8n2",
     "name": "奇迹时代4高级版",
     "nameEn": "Age of Wonders 4",
     "cover": "",
@@ -22987,10 +22987,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1277",
+    "id": "game_1277_1775791560087_i8c6gd",
     "name": "ELEX",
     "nameEn": "ELEX",
     "cover": "",
@@ -23005,10 +23005,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1278",
+    "id": "game_1278_1775791560087_cwdy1u",
     "name": "搜魔人：英雄联盟传奇",
     "nameEn": "The Mageseeker: A League of Legends Story",
     "cover": "",
@@ -23023,10 +23023,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1279",
+    "id": "game_1279_1775791560087_un2tej",
     "name": "王国风云2",
     "nameEn": "Crusader Kings II",
     "cover": "",
@@ -23041,10 +23041,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1280",
+    "id": "game_1280_1775791560087_4bvgrf",
     "name": "维斯塔利亚传说外传：席鲁巴比尔西的圣剑",
     "nameEn": "Vestaria Saga Gaiden: The Sacred Sword of Silvanist",
     "cover": "",
@@ -23059,10 +23059,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1281",
+    "id": "game_1281_1775791560087_ovi6w0",
     "name": "Inside",
     "nameEn": "Inside",
     "cover": "",
@@ -23077,10 +23077,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1282",
+    "id": "game_1282_1775791560087_6jc0al",
     "name": "我的世界传奇",
     "nameEn": "Minecraft Legends",
     "cover": "",
@@ -23095,10 +23095,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1283",
+    "id": "game_1283_1775791560087_d3o80d",
     "name": "峡谷",
     "nameEn": "Canyons",
     "cover": "",
@@ -23113,10 +23113,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1284",
+    "id": "game_1284_1775791560087_xt6mw8",
     "name": "渔帆暗涌豪华版",
     "nameEn": "DREDGE",
     "cover": "",
@@ -23131,10 +23131,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1285",
+    "id": "game_1285_1775791560087_g46h8n",
     "name": "这是我的土地",
     "nameEn": "This Land Is My Land",
     "cover": "",
@@ -23149,10 +23149,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1286",
+    "id": "game_1286_1775791560087_xzcqp8",
     "name": "布兰博：山丘之王",
     "nameEn": "Bramble: The Mountain King",
     "cover": "",
@@ -23167,10 +23167,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1287",
+    "id": "game_1287_1775791560087_u7puey",
     "name": "帝国霸业银河生存",
     "nameEn": "Empyrion – Galactic Survival",
     "cover": "",
@@ -23185,10 +23185,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1288",
+    "id": "game_1288_1775791560087_hqv5im",
     "name": "呼吸边缘",
     "nameEn": "Breathedge",
     "cover": "",
@@ -23203,10 +23203,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1289",
+    "id": "game_1289_1775791560087_21si6y",
     "name": "加尔德维尔编年史",
     "nameEn": "hronicles of Galdurvale",
     "cover": "",
@@ -23221,10 +23221,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1290",
+    "id": "game_1290_1775791560087_ut2pwg",
     "name": "迷失之刃",
     "nameEn": "Stray Blade",
     "cover": "",
@@ -23239,10 +23239,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1291",
+    "id": "game_1291_1775791560087_34fjap",
     "name": "末光",
     "nameEn": "Strayed Lights",
     "cover": "",
@@ -23257,10 +23257,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1292",
+    "id": "game_1292_1775791560087_5ibsom",
     "name": "枪手真人秀",
     "nameEn": "Showgunners",
     "cover": "",
@@ -23275,10 +23275,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1293",
+    "id": "game_1293_1775791560087_sitnqf",
     "name": "虚空列车",
     "nameEn": "VOIDTRAIN",
     "cover": "",
@@ -23293,10 +23293,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1294",
+    "id": "game_1294_1775791560087_a7doqm",
     "name": "查尔斯小火车",
     "nameEn": "Choo-Choo Charles",
     "cover": "",
@@ -23311,10 +23311,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1295",
+    "id": "game_1295_1775791560087_wbmadj",
     "name": "Z字特遣队正式版",
     "nameEn": "Zcrew",
     "cover": "",
@@ -23329,10 +23329,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1296",
+    "id": "game_1296_1775791560087_6p4iyn",
     "name": "神之天平",
     "nameEn": "ASTLIBRA Revision",
     "cover": "",
@@ -23347,10 +23347,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1297",
+    "id": "game_1297_1775791560087_4v4j62",
     "name": "遨游中国2/中国卡车模拟",
     "nameEn": "CTS6",
     "cover": "",
@@ -23365,10 +23365,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1298",
+    "id": "game_1298_1775791560087_plo7zc",
     "name": "永恒空间2",
     "nameEn": "EVERSPACE 2",
     "cover": "",
@@ -23383,10 +23383,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1299",
+    "id": "game_1299_1775791560087_rl51d3",
     "name": "哆啦A梦牧场物语自然王国与和乐家人",
     "nameEn": "DORAEMON STORY OF SEASONS: FotGK",
     "cover": "",
@@ -23401,10 +23401,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1300",
+    "id": "game_1300_1775791560087_aejdpx",
     "name": "堕落之王",
     "nameEn": "Lords of the Fallen",
     "cover": "",
@@ -23419,10 +23419,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1301",
+    "id": "game_1301_1775791560087_yub2jv",
     "name": "海狸浮生记",
     "nameEn": "Timberborn",
     "cover": "",
@@ -23437,10 +23437,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1302",
+    "id": "game_1302_1775791560087_5m11mq",
     "name": "聚点危机：英雄联盟外传",
     "nameEn": "CONV/RGENCE: A League of Legends Story",
     "cover": "",
@@ -23455,10 +23455,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1303",
+    "id": "game_1303_1775791560087_lqfdcq",
     "name": "拉娜之星",
     "nameEn": "Planet of Lana",
     "cover": "",
@@ -23473,10 +23473,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1304",
+    "id": "game_1304_1775791560087_l8jekx",
     "name": "炼狱神罚",
     "nameEn": "Scathe",
     "cover": "",
@@ -23491,10 +23491,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1305",
+    "id": "game_1305_1775791560087_68cqyy",
     "name": "迷瘴纪事豪华版",
     "nameEn": "Miasma Chronicles",
     "cover": "",
@@ -23509,10 +23509,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1306",
+    "id": "game_1306_1775791560087_sqnd2h",
     "name": "魔戒：咕噜",
     "nameEn": "The Lord of the Rings: Gollum",
     "cover": "",
@@ -23527,10 +23527,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1307",
+    "id": "game_1307_1775791560087_mc7c0y",
     "name": "匹诺曹的谎言",
     "nameEn": "Lies of P",
     "cover": "",
@@ -23545,10 +23545,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1308",
+    "id": "game_1308_1775791560087_30yebh",
     "name": "莎木3",
     "nameEn": "Shenmue III",
     "cover": "",
@@ -23563,10 +23563,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1309",
+    "id": "game_1309_1775791560087_wndykp",
     "name": "蛇上而生",
     "nameEn": "Above Snakesr",
     "cover": "",
@@ -23581,10 +23581,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1310",
+    "id": "game_1310_1775791560087_dd9p0f",
     "name": "失忆症：地堡",
     "nameEn": "Amnesia The Bunker",
     "cover": "",
@@ -23599,10 +23599,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1311",
+    "id": "game_1311_1775791560087_yjvqgv",
     "name": "团队索尼克赛车",
     "nameEn": "Team Sonic Racing",
     "cover": "",
@@ -23617,10 +23617,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1312",
+    "id": "game_1312_1775791560087_1pci7b",
     "name": "网络奇兵重制版",
     "nameEn": "System Shock",
     "cover": "",
@@ -23635,10 +23635,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1313",
+    "id": "game_1313_1775791560087_cvibnf",
     "name": "小缇娜的奇幻之地：魅幻绝伦版",
     "nameEn": "Tiny Tina’s Wonderlands",
     "cover": "",
@@ -23653,10 +23653,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1314",
+    "id": "game_1314_1775791560087_9oe0gr",
     "name": "小小部队：全球行动",
     "nameEn": "Tiny Troopers: Global Ops",
     "cover": "",
@@ -23671,10 +23671,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1315",
+    "id": "game_1315_1775791560087_5e40s6",
     "name": "隐迹渐现",
     "nameEn": "Pentiment",
     "cover": "",
@@ -23689,10 +23689,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1316",
+    "id": "game_1316_1775791560087_olwpx1",
     "name": "只能向上！",
     "nameEn": "Only Up !",
     "cover": "",
@@ -23707,10 +23707,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1317",
+    "id": "game_1317_1775791560087_7km88n",
     "name": "罪恶装备：STRIVE",
     "nameEn": "GUILTY GEAR -STRIVE",
     "cover": "",
@@ -23725,10 +23725,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1318",
+    "id": "game_1318_1775791560087_m72p8h",
     "name": "爱丽丝：疯狂回归",
     "nameEn": "Alice: Madness Returns",
     "cover": "",
@@ -23743,10 +23743,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1319",
+    "id": "game_1319_1775791560087_w3qaf8",
     "name": "飞向",
     "nameEn": "Flyto",
     "cover": "",
@@ -23761,10 +23761,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1320",
+    "id": "game_1320_1775791560087_wm2mhz",
     "name": "僵尸列车",
     "nameEn": "Zompiercer",
     "cover": "",
@@ -23779,10 +23779,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1321",
+    "id": "game_1321_1775791560087_ncfpth",
     "name": "富甲天下2",
     "nameEn": "The Millionaire of 3 Kingdoms 2",
     "cover": "",
@@ -23797,10 +23797,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1322",
+    "id": "game_1322_1775791560087_qjymyd",
     "name": "鬼屋魔影重制版",
     "nameEn": "Alone in the Dark",
     "cover": "",
@@ -23815,10 +23815,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1323",
+    "id": "game_1323_1775791560087_jlsy7h",
     "name": "幻灵降世录",
     "nameEn": "Lost Eidolons",
     "cover": "",
@@ -23833,10 +23833,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1324",
+    "id": "game_1324_1775791560087_fygrkg",
     "name": "灰岭事件",
     "nameEn": "Greyhill Incident",
     "cover": "",
@@ -23851,10 +23851,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1325",
+    "id": "game_1325_1775791560087_1jh6vq",
     "name": "流浪汉模拟器",
     "nameEn": "Bum Simulator",
     "cover": "",
@@ -23869,10 +23869,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1326",
+    "id": "game_1326_1775791560087_cq19y7",
     "name": "枪匠模拟器",
     "nameEn": "Gunsmith Simulator",
     "cover": "",
@@ -23887,10 +23887,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1327",
+    "id": "game_1327_1775791560087_eqkh6w",
     "name": "求生岛：不老泉传说",
     "nameEn": "Survival: Fountain of Youth",
     "cover": "",
@@ -23905,10 +23905,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1328",
+    "id": "game_1328_1775791560087_ba3wao",
     "name": "闪电战2：解放",
     "nameEn": "Blitzkrieg 2",
     "cover": "",
@@ -23923,10 +23923,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1329",
+    "id": "game_1329_1775791560087_jtoyrl",
     "name": "生物实验室",
     "nameEn": "Creature Lab",
     "cover": "",
@@ -23941,10 +23941,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1330",
+    "id": "game_1330_1775791560087_97y6xy",
     "name": "死亡之种：甜蜜家园",
     "nameEn": "Seed of the Dead: Sweet Home",
     "cover": "",
@@ -23959,10 +23959,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1331",
+    "id": "game_1331_1775791560087_yd5e7z",
     "name": "铁路帝国2",
     "nameEn": "Railway Empire 2",
     "cover": "",
@@ -23977,10 +23977,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1332",
+    "id": "game_1332_1775791560087_xf1g6q",
     "name": "王国围攻",
     "nameEn": "Warlords Under Siege",
     "cover": "",
@@ -23995,10 +23995,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1333",
+    "id": "game_1333_1775791560087_anhf0h",
     "name": "巫师学校：密室逃脱",
     "nameEn": "Wizardry School: Escape Room",
     "cover": "",
@@ -24013,10 +24013,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1334",
+    "id": "game_1334_1775791560087_gucja3",
     "name": "雄心壮志",
     "nameEn": "Big Ambitions",
     "cover": "",
@@ -24031,10 +24031,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1335",
+    "id": "game_1335_1775791560087_aleelh",
     "name": "遗忘之城",
     "nameEn": "he Forgotten City",
     "cover": "",
@@ -24049,10 +24049,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1336",
+    "id": "game_1336_1775791560087_hfmd2f",
     "name": "珊瑚岛",
     "nameEn": "Coral Island",
     "cover": "",
@@ -24067,10 +24067,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1337",
+    "id": "game_1337_1775791560087_ykfy6w",
     "name": "凶影疑云",
     "nameEn": "Shadows of Doubt",
     "cover": "",
@@ -24085,10 +24085,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1338",
+    "id": "game_1338_1775791560087_s62jjt",
     "name": "巴特拉：家在何方",
     "nameEn": "Batora: Lost Haven",
     "cover": "",
@@ -24103,10 +24103,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1339",
+    "id": "game_1339_1775791560087_ysn0kr",
     "name": "兵团",
     "nameEn": "Regiments",
     "cover": "",
@@ -24121,10 +24121,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560087
   },
   {
-    "id": "game_1340",
+    "id": "game_1340_1775791560088_whynxq",
     "name": "出行路线/横冲直撞",
     "nameEn": "TRAIL OUT",
     "cover": "",
@@ -24139,10 +24139,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1341",
+    "id": "game_1341_1775791560088_hes0go",
     "name": "恐鬼症",
     "nameEn": "Phasmophobia",
     "cover": "",
@@ -24157,10 +24157,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1342",
+    "id": "game_1342_1775791560088_8jh6kn",
     "name": "狂想乐园数字豪华版",
     "nameEn": "Park Beyond",
     "cover": "",
@@ -24175,10 +24175,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1343",
+    "id": "game_1343_1775791560088_jofx3y",
     "name": "汽车俱乐部2(英文版）",
     "nameEn": "Automobilista 2",
     "cover": "",
@@ -24193,10 +24193,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1344",
+    "id": "game_1344_1775791560088_dkfanb",
     "name": "驱魔集团",
     "nameEn": "Inout",
     "cover": "",
@@ -24211,10 +24211,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1345",
+    "id": "game_1345_1775791560088_jjqtub",
     "name": "小小世界：荒野求生",
     "nameEn": "Smalland: Survive the Wilds",
     "cover": "",
@@ -24229,10 +24229,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1346",
+    "id": "game_1346_1775791560088_r5yur8",
     "name": "幸福工厂Satisfactory",
     "nameEn": "Satisfactory",
     "cover": "",
@@ -24247,10 +24247,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1347",
+    "id": "game_1347_1775791560088_96v5ue",
     "name": "致命广播",
     "nameEn": "Deadly Broadcast",
     "cover": "",
@@ -24265,10 +24265,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1348",
+    "id": "game_1348_1775791560088_ojfuzi",
     "name": "撞车嘉年华完全版",
     "nameEn": "Wreckfest Complete Edition",
     "cover": "",
@@ -24283,10 +24283,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1349",
+    "id": "game_1349_1775791560088_7sljbs",
     "name": "挖矿专家",
     "nameEn": "Hydroneer",
     "cover": "",
@@ -24301,10 +24301,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1350",
+    "id": "game_1350_1775791560088_stxmn6",
     "name": "阿玛拉王国：惩罚",
     "nameEn": "Kingdoms of Amalur: Re-Reckoning",
     "cover": "",
@@ -24319,10 +24319,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1351",
+    "id": "game_1351_1775791560088_k953hn",
     "name": "安妮的游戏",
     "nameEn": "The Game of Annie",
     "cover": "",
@@ -24337,10 +24337,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1352",
+    "id": "game_1352_1775791560088_7h0rim",
     "name": "巴士模拟21",
     "nameEn": "Bus Simulator 21",
     "cover": "",
@@ -24355,10 +24355,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1353",
+    "id": "game_1353_1775791560088_kug7zr",
     "name": "冰封之焰",
     "nameEn": "Frozen Flame",
     "cover": "",
@@ -24373,10 +24373,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1354",
+    "id": "game_1354_1775791560088_ompq5a",
     "name": "超级冲锋：开箱",
     "nameEn": "HYPERCHARGE: Unboxed",
     "cover": "",
@@ -24391,10 +24391,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1355",
+    "id": "game_1355_1775791560088_eidh1h",
     "name": "大将军：罗马",
     "nameEn": "mperator: Rome",
     "cover": "",
@@ -24409,10 +24409,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1356",
+    "id": "game_1356_1775791560088_xrj0m6",
     "name": "盾墙",
     "nameEn": "hieldwall",
     "cover": "",
@@ -24427,10 +24427,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1357",
+    "id": "game_1357_1775791560088_94ll3b",
     "name": "公路救赎",
     "nameEn": "Road Redemption",
     "cover": "",
@@ -24445,10 +24445,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1358",
+    "id": "game_1358_1775791560088_rupqsf",
     "name": "海参2",
     "nameEn": "Trepang2",
     "cover": "",
@@ -24463,10 +24463,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1359",
+    "id": "game_1359_1775791560088_ijtbrm",
     "name": "Soulstice豪华版",
     "nameEn": "Soulstice Deluxe Edition",
     "cover": "",
@@ -24481,10 +24481,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1360",
+    "id": "game_1360_1775791560088_cqf9ps",
     "name": "和声",
     "nameEn": "Chorus",
     "cover": "",
@@ -24499,10 +24499,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1361",
+    "id": "game_1361_1775791560088_d8c6ze",
     "name": "核心重铸/重生核心",
     "nameEn": "ReCore: Definitive Edition",
     "cover": "",
@@ -24517,10 +24517,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1362",
+    "id": "game_1362_1775791560088_2l1r12",
     "name": "红至日2：幸存者",
     "nameEn": "Red Solstice 2: Survivors",
     "cover": "",
@@ -24535,10 +24535,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1363",
+    "id": "game_1363_1775791560088_cyivjl",
     "name": "降速王者",
     "nameEn": "Descenders",
     "cover": "",
@@ -24553,10 +24553,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1364",
+    "id": "game_1364_1775791560088_9c94iq",
     "name": "酒店大改造",
     "nameEn": "Hotel Renovator",
     "cover": "",
@@ -24571,10 +24571,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1365",
+    "id": "game_1365_1775791560088_g31h32",
     "name": "恐怖黎明",
     "nameEn": "Grim Dawn",
     "cover": "",
@@ -24589,10 +24589,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1366",
+    "id": "game_1366_1775791560088_68d6zg",
     "name": "逆风停航/狂风",
     "nameEn": "Windbound",
     "cover": "",
@@ -24607,10 +24607,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1367",
+    "id": "game_1367_1775791560088_pvabvd",
     "name": "拉力赛艺术",
     "nameEn": "art of rally",
     "cover": "",
@@ -24625,10 +24625,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1368",
+    "id": "game_1368_1775791560088_yzge9c",
     "name": "龙之矛",
     "nameEn": "Dragon Spear",
     "cover": "",
@@ -24643,10 +24643,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1369",
+    "id": "game_1369_1775791560088_m3wwko",
     "name": "密室逃脱模拟器",
     "nameEn": "Escape Simulator",
     "cover": "",
@@ -24661,10 +24661,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1370",
+    "id": "game_1370_1775791560088_62dtvo",
     "name": "漂移21",
     "nameEn": "DRIFT21",
     "cover": "",
@@ -24679,10 +24679,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1371",
+    "id": "game_1371_1775791560088_85fv1j",
     "name": "赏金奇兵3正式版",
     "nameEn": "Desperados III",
     "cover": "",
@@ -24697,10 +24697,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1372",
+    "id": "game_1372_1775791560088_esrgng",
     "name": "书行者：故事窃贼",
     "nameEn": "The Bookwalker",
     "cover": "",
@@ -24715,10 +24715,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1373",
+    "id": "game_1373_1775791560088_s2zyiv",
     "name": "铁腕军阀：冬季攻势",
     "nameEn": "Iron Grip: Warlord Winter Offensive",
     "cover": "",
@@ -24733,10 +24733,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1374",
+    "id": "game_1374_1775791560088_aa91zk",
     "name": "玩命关头：十字路口",
     "nameEn": "Fast Furious Crossroads",
     "cover": "",
@@ -24751,10 +24751,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1375",
+    "id": "game_1375_1775791560088_uarwoq",
     "name": "维京之路",
     "nameEn": "Viking Trail",
     "cover": "",
@@ -24769,10 +24769,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1376",
+    "id": "game_1376_1775791560088_kpuh19",
     "name": "伟大时代：中世纪",
     "nameEn": "GrandAges:Medieval",
     "cover": "",
@@ -24787,10 +24787,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1377",
+    "id": "game_1377_1775791560088_24o4xh",
     "name": "星辰沙海",
     "nameEn": "Starsand",
     "cover": "",
@@ -24805,10 +24805,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1378",
+    "id": "game_1378_1775791560088_e3qu6h",
     "name": "猩红之雪",
     "nameEn": "Crimson Snow",
     "cover": "",
@@ -24823,10 +24823,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1379",
+    "id": "game_1379_1775791560088_bbaksr",
     "name": "永恒天空",
     "nameEn": "Forever Skies",
     "cover": "",
@@ -24841,10 +24841,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1380",
+    "id": "game_1380_1775791560088_580jfu",
     "name": "勇敢之地骑士团",
     "nameEn": "Knights of Braveland",
     "cover": "",
@@ -24859,10 +24859,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1381",
+    "id": "game_1381_1775791560088_a6pvw3",
     "name": "装甲军团2",
     "nameEn": "Panzer Corps 2",
     "cover": "",
@@ -24877,10 +24877,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1382",
+    "id": "game_1382_1775791560088_mfxkd8",
     "name": "费卢杰六日",
     "nameEn": "Six Days in Fallujah",
     "cover": "",
@@ -24895,10 +24895,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1383",
+    "id": "game_1383_1775791560088_dgqb91",
     "name": "黑色间歇泉：黑暗的使者",
     "nameEn": "Black Geyser: Couriers of Darkness",
     "cover": "",
@@ -24913,10 +24913,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1384",
+    "id": "game_1384_1775791560088_g2cobz",
     "name": "猎杀潜航3",
     "nameEn": "Silent Hunter 3",
     "cover": "",
@@ -24931,10 +24931,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1385",
+    "id": "game_1385_1775791560088_u0yp9p",
     "name": "潜水员戴夫",
     "nameEn": "DAVE THE DIVER",
     "cover": "",
@@ -24949,10 +24949,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1386",
+    "id": "game_1386_1775791560088_xoz7wf",
     "name": "斯拉夫朋克：老古董",
     "nameEn": "SlavicPunk: Oldtimer",
     "cover": "",
@@ -24967,10 +24967,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1387",
+    "id": "game_1387_1775791560088_jfii8j",
     "name": "铁路公司",
     "nameEn": "Railroad Corporation Complete Collection",
     "cover": "",
@@ -24985,10 +24985,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1388",
+    "id": "game_1388_1775791560088_vc6muf",
     "name": "陨灭",
     "nameEn": "PERISH",
     "cover": "",
@@ -25003,10 +25003,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1389",
+    "id": "game_1389_1775791560088_82hopd",
     "name": "拟真车祸模拟",
     "nameEn": "Real Car Crash",
     "cover": "",
@@ -25021,10 +25021,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1390",
+    "id": "game_1390_1775791560088_vbpq22",
     "name": "超能融合",
     "nameEn": "Superfuse",
     "cover": "",
@@ -25039,10 +25039,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1391",
+    "id": "game_1391_1775791560088_fx9ohb",
     "name": "渡鸦之境",
     "nameEn": "Ravenbound",
     "cover": "",
@@ -25057,10 +25057,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1392",
+    "id": "game_1392_1775791560088_bt8ps9",
     "name": "恶魔之影",
     "nameEn": "Shadow Of The Devil",
     "cover": "",
@@ -25075,10 +25075,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1393",
+    "id": "game_1393_1775791560088_xk8ta9",
     "name": "浮岛风云",
     "nameEn": "Isles of Etherion",
     "cover": "",
@@ -25093,10 +25093,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1394",
+    "id": "game_1394_1775791560088_7sfjmf",
     "name": "割草模拟器",
     "nameEn": "Lawn Mowing Simulator",
     "cover": "",
@@ -25111,10 +25111,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1395",
+    "id": "game_1395_1775791560088_bz0d4o",
     "name": "格尔达：寒冬之火",
     "nameEn": "Gerda: A Flame in Winter",
     "cover": "",
@@ -25129,10 +25129,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1396",
+    "id": "game_1396_1775791560088_nkd1fg",
     "name": "后勤模拟器/坦克修理模拟",
     "nameEn": "Tank Mechanic Simulator",
     "cover": "",
@@ -25147,10 +25147,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1397",
+    "id": "game_1397_1775791560088_rfeejs",
     "name": "家族传奇：马匹养成竞技",
     "nameEn": "Rival Stars Horse Racing: Desktop Edition",
     "cover": "",
@@ -25165,10 +25165,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1398",
+    "id": "game_1398_1775791560088_mu0txh",
     "name": "狂野西部时代",
     "nameEn": "Wild West Dynasty",
     "cover": "",
@@ -25183,10 +25183,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1399",
+    "id": "game_1399_1775791560088_8ragxz",
     "name": "七日杀7",
     "nameEn": "7 Days to Die",
     "cover": "",
@@ -25201,10 +25201,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1400",
+    "id": "game_1400_1775791560088_fqtjj0",
     "name": "史诗战争模拟",
     "nameEn": "Ultimate Epic Battle Simulator",
     "cover": "",
@@ -25219,10 +25219,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1401",
+    "id": "game_1401_1775791560088_l0sdz1",
     "name": "噬神者3",
     "nameEn": "OD EATER 3",
     "cover": "",
@@ -25237,10 +25237,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1402",
+    "id": "game_1402_1775791560088_m7zj1i",
     "name": "水族箱设计师",
     "nameEn": "Aquarium Designer",
     "cover": "",
@@ -25255,10 +25255,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1403",
+    "id": "game_1403_1775791560088_erpxwo",
     "name": "斯盖尔仪式",
     "nameEn": "Sker Ritual",
     "cover": "",
@@ -25273,10 +25273,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1404",
+    "id": "game_1404_1775791560088_wzokhq",
     "name": "异形：坠入黑暗",
     "nameEn": "Aliens: Dark Descent",
     "cover": "",
@@ -25291,10 +25291,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1405",
+    "id": "game_1405_1775791560088_e1i1vp",
     "name": "幽灵放逐",
     "nameEn": "Ghost Exile",
     "cover": "",
@@ -25309,10 +25309,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1406",
+    "id": "game_1406_1775791560088_modhy6",
     "name": "终极钓鱼模拟器2",
     "nameEn": "Ultimate Fishing Simulator 2",
     "cover": "",
@@ -25327,10 +25327,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1407",
+    "id": "game_1407_1775791560088_61soxx",
     "name": "东方：新世界",
     "nameEn": "Touhou: New World",
     "cover": "",
@@ -25345,10 +25345,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1408",
+    "id": "game_1408_1775791560088_max11b",
     "name": "恶魔学家",
     "nameEn": "Demonologist",
     "cover": "",
@@ -25363,10 +25363,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1409",
+    "id": "game_1409_1775791560088_5disjp",
     "name": "人类一败涂地",
     "nameEn": "Human Fall Flat",
     "cover": "",
@@ -25381,10 +25381,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1410",
+    "id": "game_1410_1775791560088_xsadjf",
     "name": "太空引擎",
     "nameEn": "SpaceEngine",
     "cover": "",
@@ -25399,10 +25399,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1411",
+    "id": "game_1411_1775791560088_8niexg",
     "name": "AEW全精英摔角永远的战斗",
     "nameEn": "All Elite Wrestling",
     "cover": "",
@@ -25417,10 +25417,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1412",
+    "id": "game_1412_1775791560088_nn4zev",
     "name": "铁路先驱",
     "nameEn": "Sweet Transit",
     "cover": "",
@@ -25435,10 +25435,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1413",
+    "id": "game_1413_1775791560088_dtpo45",
     "name": "铁血联盟3",
     "nameEn": "Jagged Alliance 3",
     "cover": "",
@@ -25453,10 +25453,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1414",
+    "id": "game_1414_1775791560088_7amvp3",
     "name": "遗言：高人之序",
     "nameEn": "Testament: The Order of High Human",
     "cover": "",
@@ -25471,10 +25471,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1415",
+    "id": "game_1415_1775791560088_3os1y2",
     "name": "False Front",
     "nameEn": "False Front",
     "cover": "",
@@ -25489,10 +25489,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1416",
+    "id": "game_1416_1775791560088_6h49yn",
     "name": "真实攀岩",
     "nameEn": "New Heights: Realistic Climbing and Bouldering",
     "cover": "",
@@ -25507,10 +25507,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1417",
+    "id": "game_1417_1775791560088_ujczjv",
     "name": "马里奥高尔夫：超级冲冲冲",
     "nameEn": "Mario Golf: Super Rush",
     "cover": "",
@@ -25525,10 +25525,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1418",
+    "id": "game_1418_1775791560088_9zxmgo",
     "name": "约会模拟器",
     "nameEn": "Dating Simulator",
     "cover": "",
@@ -25543,10 +25543,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1419",
+    "id": "game_1419_1775791560088_ovjh9v",
     "name": "监狱模拟器/狱警模拟器",
     "nameEn": "Prison Simulator",
     "cover": "",
@@ -25561,10 +25561,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1420",
+    "id": "game_1420_1775791560088_61w39q",
     "name": "石油大亨/石油骚动/采油热",
     "nameEn": "Turmoil",
     "cover": "",
@@ -25579,10 +25579,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1421",
+    "id": "game_1421_1775791560088_3pmyn5",
     "name": "常青：山区生活模拟器",
     "nameEn": "Evergreen - Mountain Life Simulator",
     "cover": "",
@@ -25597,10 +25597,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1422",
+    "id": "game_1422_1775791560088_yskzw2",
     "name": "冲突：混沌神器",
     "nameEn": "Clash: Artifacts of Chaos",
     "cover": "",
@@ -25615,10 +25615,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1423",
+    "id": "game_1423_1775791560088_f0oi18",
     "name": "地球不屈",
     "nameEn": "Terra Invicta",
     "cover": "",
@@ -25633,10 +25633,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1424",
+    "id": "game_1424_1775791560088_jriknm",
     "name": "房屋建造者",
     "nameEn": "House Builder",
     "cover": "",
@@ -25651,10 +25651,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1425",
+    "id": "game_1425_1775791560088_27w8rn",
     "name": "疯狂：圣罗德小镇",
     "nameEn": "Lunacy: Saint Rhodes",
     "cover": "",
@@ -25669,10 +25669,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1426",
+    "id": "game_1426_1775791560088_fzu6wq",
     "name": "富豪/财阀崛起",
     "nameEn": "Plutocracy",
     "cover": "",
@@ -25687,10 +25687,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1427",
+    "id": "game_1427_1775791560088_tqi5bk",
     "name": "钢铁指挥官",
     "nameEn": "Mechabellum",
     "cover": "",
@@ -25705,10 +25705,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1428",
+    "id": "game_1428_1775791560088_4wjik1",
     "name": "诡门",
     "nameEn": "Unholy",
     "cover": "",
@@ -25723,10 +25723,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1429",
+    "id": "game_1429_1775791560088_rj7vxk",
     "name": "极限巅峰",
     "nameEn": "Steep",
     "cover": "",
@@ -25741,10 +25741,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1430",
+    "id": "game_1430_1775791560088_4upe4h",
     "name": "劲爆51飞行队",
     "nameEn": "Squad 51 vs. the Flying Saucers",
     "cover": "",
@@ -25759,10 +25759,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1431",
+    "id": "game_1431_1775791560088_cao3sz",
     "name": "美邻街",
     "nameEn": "My Friendly Neighborhood",
     "cover": "",
@@ -25777,10 +25777,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1432",
+    "id": "game_1432_1775791560088_9kqmyd",
     "name": "迷宫探险",
     "nameEn": "Labyrinthine",
     "cover": "",
@@ -25795,10 +25795,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1433",
+    "id": "game_1433_1775791560088_c8eglo",
     "name": "魔咒之地",
     "nameEn": "Forspoken",
     "cover": "",
@@ -25813,10 +25813,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1434",
+    "id": "game_1434_1775791560088_7ydbmm",
     "name": "纳赫鲁博王国地下城：混沌护符",
     "nameEn": "Naheulbeuk's Dungeon Master",
     "cover": "",
@@ -25831,10 +25831,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1435",
+    "id": "game_1435_1775791560088_jk7mqu",
     "name": "农场经理2021",
     "nameEn": "Farm Manager 2021",
     "cover": "",
@@ -25849,10 +25849,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1436",
+    "id": "game_1436_1775791560088_24yg8j",
     "name": "农夫王朝",
     "nameEn": "Farmer's Dynasty",
     "cover": "",
@@ -25867,10 +25867,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1437",
+    "id": "game_1437_1775791560088_1e8fxu",
     "name": "前线任务1：重制版",
     "nameEn": "FRONT MISSION 1st: Remake",
     "cover": "",
@@ -25885,10 +25885,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1438",
+    "id": "game_1438_1775791560088_4zrn78",
     "name": "情定雷克堡：月老模拟器",
     "nameEn": "Lakeburg Legacies",
     "cover": "",
@@ -25903,10 +25903,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1439",
+    "id": "game_1439_1775791560088_hhb2qs",
     "name": "瑞奇与叮当：时空跳转",
     "nameEn": "Ratchet & Clank: Rift Apart",
     "cover": "",
@@ -25921,10 +25921,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1440",
+    "id": "game_1440_1775791560088_ocju2h",
     "name": "深入后室/密室内部",
     "nameEn": "Inside the Backrooms",
     "cover": "",
@@ -25939,10 +25939,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1441",
+    "id": "game_1441_1775791560088_qftozt",
     "name": "失落王国",
     "nameEn": "Stolen Realm",
     "cover": "",
@@ -25957,10 +25957,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1442",
+    "id": "game_1442_1775791560088_t8tepf",
     "name": "死亡链接",
     "nameEn": "Deadlink",
     "cover": "",
@@ -25975,10 +25975,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1443",
+    "id": "game_1443_1775791560088_n18moo",
     "name": "太空站长/空间站工程师",
     "nameEn": "Stationeers",
     "cover": "",
@@ -25993,10 +25993,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1444",
+    "id": "game_1444_1775791560088_gx037m",
     "name": "脱轨的山谷",
     "nameEn": "Derail Valley",
     "cover": "",
@@ -26011,10 +26011,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1445",
+    "id": "game_1445_1775791560088_g8jkz5",
     "name": "玩具熊的五夜后宫：安全漏洞",
     "nameEn": "Five Nights at Freddy's: Security Breach",
     "cover": "",
@@ -26029,10 +26029,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1446",
+    "id": "game_1446_1775791560088_39wyze",
     "name": "MX vs ATV",
     "nameEn": "MX vs ATV Legends",
     "cover": "",
@@ -26047,10 +26047,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1447",
+    "id": "game_1447_1775791560088_cttrpq",
     "name": "修理厂：修复模拟器",
     "nameEn": "The Repair House: Restoration Sim",
     "cover": "",
@@ -26065,10 +26065,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1448",
+    "id": "game_1448_1775791560088_af2vgw",
     "name": "寻血猎犬",
     "nameEn": "Bloodhound",
     "cover": "",
@@ -26083,10 +26083,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1449",
+    "id": "game_1449_1775791560088_8v943i",
     "name": "淹没：隐藏深处",
     "nameEn": "Submerged: Hidden Depths",
     "cover": "",
@@ -26101,10 +26101,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1450",
+    "id": "game_1450_1775791560088_hear38",
     "name": "永恒边缘",
     "nameEn": "Edge Of Eternity",
     "cover": "",
@@ -26119,10 +26119,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1451",
+    "id": "game_1451_1775791560088_v0x0y5",
     "name": "浴血黑帮：傀儡师",
     "nameEn": "Peaky Blinders: Mastermind",
     "cover": "",
@@ -26137,10 +26137,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1452",
+    "id": "game_1452_1775791560088_imsgca",
     "name": "争分夺秒",
     "nameEn": "Second",
     "cover": "",
@@ -26155,10 +26155,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1453",
+    "id": "game_1453_1775791560088_obwjiw",
     "name": "终极海军上将：无畏舰",
     "nameEn": "Ultimate Admiral: Dreadnoughts",
     "cover": "",
@@ -26173,10 +26173,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1454",
+    "id": "game_1454_1775791560088_rgn33w",
     "name": "诸神灰烬：抉择",
     "nameEn": "sh of Gods: The Way",
     "cover": "",
@@ -26191,10 +26191,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1455",
+    "id": "game_1455_1775791560088_x4ajpo",
     "name": "安抚",
     "nameEn": "Pacify",
     "cover": "",
@@ -26209,10 +26209,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1456",
+    "id": "game_1456_1775791560088_3hzbl5",
     "name": "沙丘香料战争",
     "nameEn": "Dune: Spice Wars",
     "cover": "",
@@ -26227,10 +26227,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1457",
+    "id": "game_1457_1775791560088_yos7sc",
     "name": "双截龙外传：双龙出海",
     "nameEn": "Double Dragon Gaiden: Rise Of Dragons",
     "cover": "",
@@ -26245,10 +26245,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1458",
+    "id": "game_1458_1775791560088_erm9dy",
     "name": "只有攀爬：共同进步",
     "nameEn": "Only Climb: Better Together",
     "cover": "",
@@ -26263,10 +26263,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1459",
+    "id": "game_1459_1775791560088_lfhkif",
     "name": "禁忌试炼",
     "nameEn": "Taboo Trial",
     "cover": "",
@@ -26281,10 +26281,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1460",
+    "id": "game_1460_1775791560088_ehgzkf",
     "name": "海之号角2：失落王国的骑士",
     "nameEn": "Oceanhorn 2: Knights of the Lost Realm",
     "cover": "",
@@ -26299,10 +26299,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1461",
+    "id": "game_1461_1775791560088_bicpeo",
     "name": "30XX 正式版",
     "nameEn": "30XX",
     "cover": "",
@@ -26317,10 +26317,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1462",
+    "id": "game_1462_1775791560088_hftfyh",
     "name": "不同步",
     "nameEn": "Desynced",
     "cover": "",
@@ -26335,10 +26335,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1463",
+    "id": "game_1463_1775791560088_8ho6f7",
     "name": "尘封大陆：沙之王国",
     "nameEn": "Atlas Fallen: Reign Of Sand",
     "cover": "",
@@ -26353,10 +26353,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1464",
+    "id": "game_1464_1775791560088_lnfjhj",
     "name": "戈德",
     "nameEn": "Gord",
     "cover": "",
@@ -26371,10 +26371,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1465",
+    "id": "game_1465_1775791560088_4odvfq",
     "name": "欢迎来到九龙",
     "nameEn": "Welcome to Kowloon",
     "cover": "",
@@ -26389,10 +26389,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1466",
+    "id": "game_1466_1775791560088_5we7z6",
     "name": "机场大亨",
     "nameEn": "Sky Haven Tycoon - Airport Simulator",
     "cover": "",
@@ -26407,10 +26407,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1467",
+    "id": "game_1467_1775791560088_clom84",
     "name": "家园狂杀",
     "nameEn": "urbo Overkill",
     "cover": "",
@@ -26425,10 +26425,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1468",
+    "id": "game_1468_1775791560088_25cpkg",
     "name": "僵尸毁灭工程",
     "nameEn": "Project Zomboid",
     "cover": "",
@@ -26443,10 +26443,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1469",
+    "id": "game_1469_1775791560088_4fi70e",
     "name": "开拓者：拥王者",
     "nameEn": "Pathfinder: Kingmaker",
     "cover": "",
@@ -26461,10 +26461,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1470",
+    "id": "game_1470_1775791560088_ry9onq",
     "name": "莱姆里亚 雷姆利亚",
     "nameEn": "Lemuria",
     "cover": "",
@@ -26479,10 +26479,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1471",
+    "id": "game_1471_1775791560088_4wxn86",
     "name": "绿色军团：塑料战争",
     "nameEn": "The Mean Greens - Plastic Warfare",
     "cover": "",
@@ -26497,10 +26497,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1472",
+    "id": "game_1472_1775791560088_jjc3pa",
     "name": "漫野奇谭",
     "nameEn": "Wildermyth",
     "cover": "",
@@ -26515,10 +26515,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1473",
+    "id": "game_1473_1775791560088_5hqrvf",
     "name": "朋友：烤肉串模拟器",
     "nameEn": "Amigo: Kebab Simulator",
     "cover": "",
@@ -26533,10 +26533,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1474",
+    "id": "game_1474_1775791560088_3m90qc",
     "name": "弃船逃生",
     "nameEn": "Abandon Ship",
     "cover": "",
@@ -26551,10 +26551,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1475",
+    "id": "game_1475_1775791560088_hjxnro",
     "name": "圣女之歌零2",
     "nameEn": "eroine Anthem Zero 2",
     "cover": "",
@@ -26569,10 +26569,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1476",
+    "id": "game_1476_1775791560088_qplyzd",
     "name": "索利斯堡",
     "nameEn": "Fort Solis",
     "cover": "",
@@ -26587,10 +26587,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1477",
+    "id": "game_1477_1775791560088_lkx241",
     "name": "逃离密室",
     "nameEn": "Escape the Backrooms",
     "cover": "",
@@ -26605,10 +26605,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1478",
+    "id": "game_1478_1775791560088_uiuhew",
     "name": "网吧模拟器2",
     "nameEn": "Internet Cafe Simulator 2",
     "cover": "",
@@ -26623,10 +26623,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1479",
+    "id": "game_1479_1775791560088_wldmhp",
     "name": "我是小鱼儿",
     "nameEn": "I Am Fish",
     "cover": "",
@@ -26641,10 +26641,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1480",
+    "id": "game_1480_1775791560088_7iqmk1",
     "name": "影子诡局：被诅咒的海盗",
     "nameEn": "Shadow Gambit: The Cursed Crew",
     "cover": "",
@@ -26659,10 +26659,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1481",
+    "id": "game_1481_1775791560088_meqh37",
     "name": "越野车机械师模拟器",
     "nameEn": "Offroad Mechanic Simulator",
     "cover": "",
@@ -26677,10 +26677,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1482",
+    "id": "game_1482_1775791560088_0yucv6",
     "name": "云端掠影正式版",
     "nameEn": "Black Skylands",
     "cover": "",
@@ -26695,10 +26695,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1483",
+    "id": "game_1483_1775791560088_thj4q6",
     "name": "战国王朝",
     "nameEn": "Sengoku Dynasty",
     "cover": "",
@@ -26713,10 +26713,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1484",
+    "id": "game_1484_1775791560088_p3iayo",
     "name": "阿加莎·克里斯蒂/赫尔克里·波洛：伦敦案件",
     "nameEn": "Agatha Christie - Hercule Poirot: The London Case",
     "cover": "",
@@ -26731,10 +26731,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1485",
+    "id": "game_1485_1775791560088_wnjtn7",
     "name": "白日梦魇：沙堡1994",
     "nameEn": "Daymare: 1994 Sandcastle",
     "cover": "",
@@ -26749,10 +26749,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1486",
+    "id": "game_1486_1775791560088_1i6vvj",
     "name": "初音未来：歌姬计划 Mega39's",
     "nameEn": "Hatsune Miku: Project Diva Mega39’s",
     "cover": "",
@@ -26767,10 +26767,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1487",
+    "id": "game_1487_1775791560088_0njel5",
     "name": "穿越火线：塞拉小队(VR)",
     "nameEn": "Crossfire: Sierra Squad",
     "cover": "",
@@ -26785,10 +26785,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1488",
+    "id": "game_1488_1775791560088_8uh35t",
     "name": "地牢围攻3",
     "nameEn": "Dungeon Siege III",
     "cover": "",
@@ -26803,10 +26803,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1489",
+    "id": "game_1489_1775791560088_swcuig",
     "name": "废墟图书馆",
     "nameEn": "Library Of Ruina",
     "cover": "",
@@ -26821,10 +26821,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1490",
+    "id": "game_1490_1775791560088_zfg4kc",
     "name": "魔法大师",
     "nameEn": "Master of Magic",
     "cover": "",
@@ -26839,10 +26839,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1491",
+    "id": "game_1491_1775791560088_cggk7o",
     "name": "星空",
     "nameEn": "Starfield",
     "cover": "",
@@ -26857,10 +26857,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1492",
+    "id": "game_1492_1775791560088_x6afzf",
     "name": "占领火星",
     "nameEn": "Occupy Mars: The Game",
     "cover": "",
@@ -26875,10 +26875,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1493",
+    "id": "game_1493_1775791560088_983o16",
     "name": "众神：解放",
     "nameEn": "Immortal: Unchained",
     "cover": "",
@@ -26893,10 +26893,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1494",
+    "id": "game_1494_1775791560088_y6ovt0",
     "name": "装甲核心6：境界天火/机战拥兵6：境界天火",
     "nameEn": "ARMORED CORE VI FIRES OF RUBICON",
     "cover": "",
@@ -26911,10 +26911,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1495",
+    "id": "game_1495_1775791560088_8wtc1z",
     "name": "最后纪元",
     "nameEn": "Last Epoch",
     "cover": "",
@@ -26929,10 +26929,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1496",
+    "id": "game_1496_1775791560088_px67c2",
     "name": "北部塔防 诺森德塔防",
     "nameEn": "Northend Tower Defense",
     "cover": "",
@@ -26947,10 +26947,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1497",
+    "id": "game_1497_1775791560088_ljut43",
     "name": "冰河世纪：斯克莱特坚果冒险",
     "nameEn": "Ice Age Scrat's Nutty Adventure",
     "cover": "",
@@ -26965,10 +26965,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1498",
+    "id": "game_1498_1775791560088_yvmejq",
     "name": "繁星尽头",
     "nameEn": "Stars End",
     "cover": "",
@@ -26983,10 +26983,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1499",
+    "id": "game_1499_1775791560088_n9t2lm",
     "name": "高层都市",
     "nameEn": "Highrise City",
     "cover": "",
@@ -27001,10 +27001,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1500",
+    "id": "game_1500_1775791560088_z1d63o",
     "name": "怪物圣所",
     "nameEn": "Monster Sanctuary",
     "cover": "",
@@ -27019,10 +27019,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1501",
+    "id": "game_1501_1775791560088_ryaw27",
     "name": "黑色间歇泉：黑暗的使者",
     "nameEn": "Black Geyser: Couriers of Darkness",
     "cover": "",
@@ -27037,10 +27037,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1502",
+    "id": "game_1502_1775791560088_7h26au",
     "name": "太空工程师",
     "nameEn": "Space Engineers",
     "cover": "",
@@ -27055,10 +27055,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1503",
+    "id": "game_1503_1775791560088_3assmq",
     "name": "太阳港",
     "nameEn": "Sun Haven",
     "cover": "",
@@ -27073,10 +27073,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1504",
+    "id": "game_1504_1775791560088_cy8wtq",
     "name": "天体(必须使用手柄）",
     "nameEn": "Heavenly Bodies",
     "cover": "",
@@ -27091,10 +27091,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1505",
+    "id": "game_1505_1775791560088_p1tp0n",
     "name": "无人深空",
     "nameEn": "No Man's Sky",
     "cover": "",
@@ -27109,10 +27109,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1506",
+    "id": "game_1506_1775791560088_j70nyl",
     "name": "小兵步枪/小兵带步枪",
     "nameEn": "Running with Rifles",
     "cover": "",
@@ -27127,10 +27127,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1507",
+    "id": "game_1507_1775791560088_0vk7kx",
     "name": "星之海",
     "nameEn": "Sea of Stars",
     "cover": "",
@@ -27145,10 +27145,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1508",
+    "id": "game_1508_1775791560088_1dazrz",
     "name": "1406号公寓：恐怖",
     "nameEn": "Apartament 1406: Horror",
     "cover": "",
@@ -27163,10 +27163,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1509",
+    "id": "game_1509_1775791560088_o9j7so",
     "name": "碧波之下",
     "nameEn": "Under The Waves",
     "cover": "",
@@ -27181,10 +27181,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1510",
+    "id": "game_1510_1775791560088_hoxg6q",
     "name": "动物园之星",
     "nameEn": "Planet Zoo",
     "cover": "",
@@ -27199,10 +27199,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1511",
+    "id": "game_1511_1775791560088_s8kpdk",
     "name": "堕灭暴徒",
     "nameEn": "RUINER",
     "cover": "",
@@ -27217,10 +27217,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1512",
+    "id": "game_1512_1775791560088_eya4sn",
     "name": "恶神",
     "nameEn": "Lempo",
     "cover": "",
@@ -27235,10 +27235,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1513",
+    "id": "game_1513_1775791560088_p3pke3",
     "name": "疯狂之月",
     "nameEn": "Moons of Madness",
     "cover": "",
@@ -27253,10 +27253,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1514",
+    "id": "game_1514_1775791560088_z6jdk8",
     "name": "过山车大亨：世界",
     "nameEn": "RollerCoaster Tycoon World",
     "cover": "",
@@ -27271,10 +27271,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1515",
+    "id": "game_1515_1775791560088_qcgmdt",
     "name": "黑暗时代：背水一战",
     "nameEn": "Age of Darkness: Final Stand",
     "cover": "",
@@ -27289,10 +27289,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1516",
+    "id": "game_1516_1775791560088_hnqlxb",
     "name": "库尔斯克",
     "nameEn": "KURSK",
     "cover": "",
@@ -27307,10 +27307,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1517",
+    "id": "game_1517_1775791560088_jjvgj6",
     "name": "绿色地狱/丛林地狱",
     "nameEn": "Green Hell",
     "cover": "",
@@ -27325,10 +27325,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1518",
+    "id": "game_1518_1775791560088_v9e8ur",
     "name": "汽车修理工模拟2021",
     "nameEn": "Car Mechanic Simulator 2021",
     "cover": "",
@@ -27343,10 +27343,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1519",
+    "id": "game_1519_1775791560088_4xqfah",
     "name": "强力四轮越野车",
     "nameEn": "Overpass",
     "cover": "",
@@ -27361,10 +27361,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1520",
+    "id": "game_1520_1775791560088_ms8s8x",
     "name": "太平洋雄风",
     "nameEn": "Victory At Sea Pacific",
     "cover": "",
@@ -27379,10 +27379,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1521",
+    "id": "game_1521_1775791560088_7fd0cn",
     "name": "旺达与巨像",
     "nameEn": "Shadow of the Colossus",
     "cover": "",
@@ -27397,10 +27397,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1522",
+    "id": "game_1522_1775791560088_qo57wk",
     "name": "无尽时光",
     "nameEn": "Ad Infinitum",
     "cover": "",
@@ -27415,10 +27415,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1523",
+    "id": "game_1523_1775791560088_l26xak",
     "name": "西游记之大圣归来",
     "nameEn": "MONKEY KING HERO IS BACK Deluxe Edition",
     "cover": "",
@@ -27433,10 +27433,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1524",
+    "id": "game_1524_1775791560088_3fe67e",
     "name": "Tchia",
     "nameEn": "Tchia",
     "cover": "",
@@ -27451,10 +27451,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1525",
+    "id": "game_1525_1775791560088_hmy843",
     "name": "预先警告",
     "nameEn": "FOREWARNED",
     "cover": "",
@@ -27469,10 +27469,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1526",
+    "id": "game_1526_1775791560088_aopbkg",
     "name": "战争交响曲：尼菲林传奇",
     "nameEn": "Symphony of War: The Nephilim Saga",
     "cover": "",
@@ -27487,10 +27487,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1527",
+    "id": "game_1527_1775791560088_vdkxiu",
     "name": "重型挑战：越野卡车模拟器",
     "nameEn": "Heavy Duty Challenge: The Off-Road Truck Simulator",
     "cover": "",
@@ -27505,10 +27505,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1528",
+    "id": "game_1528_1775791560088_9q6hmr",
     "name": "命运/武士遗存者",
     "nameEn": "Fate/Samurai Remnant",
     "cover": "",
@@ -27523,10 +27523,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1529",
+    "id": "game_1529_1775791560088_3elmid",
     "name": "末世奥力",
     "nameEn": "The Last Oricru",
     "cover": "",
@@ -27541,10 +27541,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1530",
+    "id": "game_1530_1775791560088_5c2inc",
     "name": "邪吟",
     "nameEn": "The Chant",
     "cover": "",
@@ -27559,10 +27559,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1531",
+    "id": "game_1531_1775791560088_64p6f4",
     "name": "越野之旅2",
     "nameEn": "Overpass2",
     "cover": "",
@@ -27577,10 +27577,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1532",
+    "id": "game_1532_1775791560088_l3obrb",
     "name": "堕落之主",
     "nameEn": "Lords of the Fallen",
     "cover": "",
@@ -27595,10 +27595,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1533",
+    "id": "game_1533_1775791560088_o5loxu",
     "name": "龙珠斗士Z",
     "nameEn": "Dragon Ball Fighter Z",
     "cover": "",
@@ -27613,10 +27613,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1534",
+    "id": "game_1534_1775791560088_k16k42",
     "name": "前线之战（The Front）",
     "nameEn": "The Front",
     "cover": "",
@@ -27631,10 +27631,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1535",
+    "id": "game_1535_1775791560088_vsvn23",
     "name": "恶意",
     "nameEn": "illWill",
     "cover": "",
@@ -27649,10 +27649,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1536",
+    "id": "game_1536_1775791560088_o8e94u",
     "name": "阿加莎·克里斯蒂：东方快车谋杀案",
     "nameEn": "Agatha Christie - Murder on the Orient Express",
     "cover": "",
@@ -27667,10 +27667,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1537",
+    "id": "game_1537_1775791560088_ya8z7o",
     "name": "阿拉斯加卡车司机",
     "nameEn": "Alaskan Road Truckers",
     "cover": "",
@@ -27685,10 +27685,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1538",
+    "id": "game_1538_1775791560088_xdwolp",
     "name": "暗使",
     "nameEn": "Dark Envoy",
     "cover": "",
@@ -27703,10 +27703,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1539",
+    "id": "game_1539_1775791560088_kpjqwe",
     "name": "风火轮爆发2：涡轮增压",
     "nameEn": "HOT WHEELS UNLEASHED 2 Turbocharged",
     "cover": "",
@@ -27721,10 +27721,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1540",
+    "id": "game_1540_1775791560088_0ic0hw",
     "name": "孤高之人",
     "nameEn": "Solitary Person",
     "cover": "",
@@ -27739,10 +27739,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1541",
+    "id": "game_1541_1775791560088_cjb5um",
     "name": "寒冬2：迷雾",
     "nameEn": "Kona II Brume",
     "cover": "",
@@ -27757,10 +27757,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1542",
+    "id": "game_1542_1775791560088_77xlfn",
     "name": "流浪的灵魂",
     "nameEn": "Stray Souls",
     "cover": "",
@@ -27775,10 +27775,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1543",
+    "id": "game_1543_1775791560088_25fr2k",
     "name": "银河文明4：超新星",
     "nameEn": "alactic Civilizations IV: Supernova",
     "cover": "",
@@ -27793,10 +27793,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1544",
+    "id": "game_1544_1775791560088_sfssic",
     "name": "勇气与胜利",
     "nameEn": "Valor & Victory",
     "cover": "",
@@ -27811,10 +27811,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1545",
+    "id": "game_1545_1775791560088_c0vigj",
     "name": "指环王：重返莫瑞亚",
     "nameEn": "The Lord of the Rings：Return to Moria",
     "cover": "",
@@ -27829,10 +27829,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1546",
+    "id": "game_1546_1775791560088_j1ylwp",
     "name": "艾迪芬奇的记忆",
     "nameEn": "What Remains of Edith Finch",
     "cover": "",
@@ -27847,10 +27847,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1547",
+    "id": "game_1547_1775791560088_z4w2k6",
     "name": "X重生",
     "nameEn": "X Rebirth",
     "cover": "",
@@ -27865,10 +27865,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1548",
+    "id": "game_1548_1775791560088_1bh4ou",
     "name": "蓝精灵2：绿石之囚",
     "nameEn": "The Smurfs 2：The Prisoner of the Green Stone",
     "cover": "",
@@ -27883,10 +27883,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1549",
+    "id": "game_1549_1775791560088_nc97ai",
     "name": "汪汪队立大功：锦标赛",
     "nameEn": "PAW Patrol: Grand Prix",
     "cover": "",
@@ -27901,10 +27901,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1550",
+    "id": "game_1550_1775791560088_3oxbue",
     "name": "流浪之魂",
     "nameEn": "Stray Souls",
     "cover": "",
@@ -27919,10 +27919,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1551",
+    "id": "game_1551_1775791560088_yh39e8",
     "name": "无敌号",
     "nameEn": "TheInvincible",
     "cover": "",
@@ -27937,10 +27937,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1552",
+    "id": "game_1552_1775791560088_evwk1v",
     "name": "超级力量3",
     "nameEn": "SuperPower 3",
     "cover": "",
@@ -27955,10 +27955,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1553",
+    "id": "game_1553_1775791560088_w4gr4r",
     "name": "传说之下",
     "nameEn": "Undertale",
     "cover": "",
@@ -27973,10 +27973,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1554",
+    "id": "game_1554_1775791560088_9dkvet",
     "name": "归途列车",
     "nameEn": "Last Train Home",
     "cover": "",
@@ -27991,10 +27991,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1555",
+    "id": "game_1555_1775791560088_b7zrb6",
     "name": "卡特尔大亨",
     "nameEn": "Cartel Tycoon",
     "cover": "",
@@ -28009,10 +28009,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1556",
+    "id": "game_1556_1775791560088_dl3e0b",
     "name": "山脊赛车：无限",
     "nameEn": "Ridge Racer Unbounded",
     "cover": "",
@@ -28027,10 +28027,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1557",
+    "id": "game_1557_1775791560088_sv5mjg",
     "name": "舍伍德侠盗团",
     "nameEn": "Gangs of Sherwood",
     "cover": "",
@@ -28045,10 +28045,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1558",
+    "id": "game_1558_1775791560088_pvvqkp",
     "name": "史前王国",
     "nameEn": "Prehistoric Kingdom",
     "cover": "",
@@ -28063,10 +28063,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1559",
+    "id": "game_1559_1775791560088_goamo6",
     "name": "双点医院",
     "nameEn": "Two Point Hospital",
     "cover": "",
@@ -28081,10 +28081,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1560",
+    "id": "game_1560_1775791560088_sfwb2a",
     "name": "讨鬼传：极",
     "nameEn": "Toukiden: Kiwami",
     "cover": "",
@@ -28099,10 +28099,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1561",
+    "id": "game_1561_1775791560088_pjtz5i",
     "name": "仙王座协议",
     "nameEn": "Cepheus Protocol",
     "cover": "",
@@ -28117,10 +28117,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1562",
+    "id": "game_1562_1775791560088_rqirpo",
     "name": "幽暗村庄",
     "nameEn": "Gloomy Village",
     "cover": "",
@@ -28135,10 +28135,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1563",
+    "id": "game_1563_1775791560088_mukhjc",
     "name": "莱卡：鲜血铸就",
     "nameEn": "Laika: Aged Through Blood",
     "cover": "",
@@ -28153,10 +28153,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1564",
+    "id": "game_1564_1775791560088_re6dnh",
     "name": "魔法使之夜",
     "nameEn": "WITCH ON THE HOLY NIGHT",
     "cover": "",
@@ -28171,10 +28171,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1565",
+    "id": "game_1565_1775791560088_clr3ia",
     "name": "命运指南针：伊斯坦布尔",
     "nameEn": "Compass of Destiny: Istanbul",
     "cover": "",
@@ -28189,10 +28189,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1566",
+    "id": "game_1566_1775791560088_pn4j70",
     "name": "乐高2K竞速",
     "nameEn": "LEGO 2K Drive",
     "cover": "",
@@ -28207,10 +28207,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1567",
+    "id": "game_1567_1775791560088_jpyin7",
     "name": "不朽者传奇",
     "nameEn": "Immortals of Aveum",
     "cover": "",
@@ -28225,10 +28225,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1568",
+    "id": "game_1568_1775791560088_j6044w",
     "name": "避风港",
     "nameEn": "Haven",
     "cover": "",
@@ -28243,10 +28243,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1569",
+    "id": "game_1569_1775791560088_6l5rwb",
     "name": "波提：字节国度大冒险",
     "nameEn": "Boti: Byteland Overclocked",
     "cover": "",
@@ -28261,10 +28261,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1570",
+    "id": "game_1570_1775791560088_95ntuu",
     "name": "红矮星",
     "nameEn": "SUNSET OF ATE",
     "cover": "",
@@ -28279,10 +28279,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1571",
+    "id": "game_1571_1775791560088_mv12em",
     "name": "吉原彼岸花",
     "nameEn": "Yoshiwara Higanbana",
     "cover": "",
@@ -28297,10 +28297,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1572",
+    "id": "game_1572_1775791560088_fnti27",
     "name": "蓝色反射：帝/蔚蓝反射：帝",
     "nameEn": "Blue Reflection: Second Light",
     "cover": "",
@@ -28315,10 +28315,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1573",
+    "id": "game_1573_1775791560088_5x2x1p",
     "name": "末世少女",
     "nameEn": "Zombie Girl",
     "cover": "",
@@ -28333,10 +28333,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1574",
+    "id": "game_1574_1775791560088_4bsl77",
     "name": "偶像大师：星耀季节",
     "nameEn": "THE IDOLM STER STARLIT SEASON",
     "cover": "",
@@ -28351,10 +28351,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1575",
+    "id": "game_1575_1775791560088_3wzdbc",
     "name": "骑士精神2",
     "nameEn": "Chivalry 2",
     "cover": "",
@@ -28369,10 +28369,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1576",
+    "id": "game_1576_1775791560088_zmclua",
     "name": "失落迷城：群星的诅咒",
     "nameEn": "Asterigos: Curse of the Stars",
     "cover": "",
@@ -28387,10 +28387,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1577",
+    "id": "game_1577_1775791560088_jp91td",
     "name": "武士遗迹",
     "nameEn": "Samurai Remnant",
     "cover": "",
@@ -28405,10 +28405,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1578",
+    "id": "game_1578_1775791560088_cfuagd",
     "name": "人性末日",
     "nameEn": "HumanitZ",
     "cover": "",
@@ -28423,10 +28423,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1579",
+    "id": "game_1579_1775791560088_s098t9",
     "name": "罪恶王权",
     "nameEn": "Monark",
     "cover": "",
@@ -28441,10 +28441,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1580",
+    "id": "game_1580_1775791560088_dxdgo3",
     "name": "沉没之城",
     "nameEn": "The Sinking City Remastered",
     "cover": "",
@@ -28459,10 +28459,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1581",
+    "id": "game_1581_1775791560088_03ce0l",
     "name": "幻兽帕鲁",
     "nameEn": "alworld",
     "cover": "",
@@ -28477,10 +28477,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1582",
+    "id": "game_1582_1775791560088_3czkjj",
     "name": "绝望血咒",
     "nameEn": "DESPAIR BLOOD CURSE",
     "cover": "",
@@ -28495,10 +28495,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1583",
+    "id": "game_1583_1775791560088_6o765e",
     "name": "M.A.S.S.建造者",
     "nameEn": "M.A.S.S.Builder",
     "cover": "",
@@ -28513,10 +28513,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1584",
+    "id": "game_1584_1775791560088_flv75w",
     "name": "兽人的新娘",
     "nameEn": "Orc's Bride",
     "cover": "",
@@ -28531,10 +28531,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1585",
+    "id": "game_1585_1775791560088_x4kbxs",
     "name": "诡野西部",
     "nameEn": "Weird West",
     "cover": "",
@@ -28549,10 +28549,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1586",
+    "id": "game_1586_1775791560088_t2c8xa",
     "name": "低魔时代",
     "nameEn": "Low Magic Age",
     "cover": "",
@@ -28567,10 +28567,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1587",
+    "id": "game_1587_1775791560088_izws7u",
     "name": "root茂林源记",
     "nameEn": "Root",
     "cover": "",
@@ -28585,10 +28585,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1588",
+    "id": "game_1588_1775791560088_505l7y",
     "name": "德州电锯杀人狂(英文版）",
     "nameEn": "The Texas Chain Saw Massacre",
     "cover": "",
@@ -28603,10 +28603,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1589",
+    "id": "game_1589_1775791560088_jipp0g",
     "name": "风火轮释放2：涡轮增压",
     "nameEn": "HOT WHEELS UNLEASHED",
     "cover": "",
@@ -28621,10 +28621,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1590",
+    "id": "game_1590_1775791560088_god8ck",
     "name": "海盗传承",
     "nameEn": "Corsairs Legacy – Pirate Action RPG & Sea Battles",
     "cover": "",
@@ -28639,10 +28639,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1591",
+    "id": "game_1591_1775791560088_h7nuol",
     "name": "幻日夜羽 ：湛海耀光",
     "nameEn": "YOHANE THE PARHELION -BLAZE in the DEEPBLUE",
     "cover": "",
@@ -28657,10 +28657,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1592",
+    "id": "game_1592_1775791560088_xqhh0w",
     "name": "梦幻模拟战1+2",
     "nameEn": "Langrisser I & II",
     "cover": "",
@@ -28675,10 +28675,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1593",
+    "id": "game_1593_1775791560088_wtq221",
     "name": "切尔诺贝利人",
     "nameEn": "Chernobylite",
     "cover": "",
@@ -28693,10 +28693,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1594",
+    "id": "game_1594_1775791560088_coth0m",
     "name": "驱灵者：新伊甸的幽灵",
     "nameEn": "Banishers: Ghosts of New Eden",
     "cover": "",
@@ -28711,10 +28711,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1595",
+    "id": "game_1595_1775791560088_ari2f7",
     "name": "超市模拟器",
     "nameEn": "Supermarket Simulator",
     "cover": "",
@@ -28729,10 +28729,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1596",
+    "id": "game_1596_1775791560088_up5ddz",
     "name": "桑德里亚地牢",
     "nameEn": "Dungeons of Sundaria",
     "cover": "",
@@ -28747,10 +28747,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1597",
+    "id": "game_1597_1775791560088_i2fa5t",
     "name": "塔洛斯的法则2",
     "nameEn": "The Talos Principle 2",
     "cover": "",
@@ -28765,10 +28765,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1598",
+    "id": "game_1598_1775791560088_2swey2",
     "name": "雾锁王国",
     "nameEn": "Enshrouded",
     "cover": "",
@@ -28783,10 +28783,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1599",
+    "id": "game_1599_1775791560088_jwghag",
     "name": "星际之门：计时员",
     "nameEn": "Stargate: Timekeepers",
     "cover": "",
@@ -28801,10 +28801,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1600",
+    "id": "game_1600_1775791560088_snoryd",
     "name": "鸦卫奇旅",
     "nameEn": "Ravenswatch",
     "cover": "",
@@ -28819,10 +28819,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1601",
+    "id": "game_1601_1775791560088_9uydxj",
     "name": "夜莺传说",
     "nameEn": "Nightingale",
     "cover": "",
@@ -28837,10 +28837,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1602",
+    "id": "game_1602_1775791560088_45m1ls",
     "name": "科纳风暴2：薄雾",
     "nameEn": "Kona II: Brume",
     "cover": "",
@@ -28855,10 +28855,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1603",
+    "id": "game_1603_1775791560088_kblsd7",
     "name": "古龙风云录",
     "nameEn": "The Legend of Gu Long",
     "cover": "",
@@ -28873,10 +28873,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1604",
+    "id": "game_1604_1775791560088_7qvlse",
     "name": "兄弟：双子传说重制版",
     "nameEn": "Brothers: A Tale of Two Sons Remake",
     "cover": "",
@@ -28891,10 +28891,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1605",
+    "id": "game_1605_1775791560088_nbswkd",
     "name": "终结者：黑暗命运-反抗",
     "nameEn": "Terminator: Dark Fate - Defiance",
     "cover": "",
@@ -28909,10 +28909,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1606",
+    "id": "game_1606_1775791560088_we98n3",
     "name": "罗宾汉：舍伍德建造者",
     "nameEn": "Robin Hood - Sherwood Builders",
     "cover": "",
@@ -28927,10 +28927,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1607",
+    "id": "game_1607_1775791560088_3kxtjm",
     "name": "西部狂徒",
     "nameEn": "Outlaws of the Old West",
     "cover": "",
@@ -28945,10 +28945,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1608",
+    "id": "game_1608_1775791560088_obn77w",
     "name": "奇唤士",
     "nameEn": "The Thaumaturge",
     "cover": "",
@@ -28963,10 +28963,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1609",
+    "id": "game_1609_1775791560088_gbq7g7",
     "name": "绝密：法国 ‘44年",
     "nameEn": "Classified: France ’44",
     "cover": "",
@@ -28981,10 +28981,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1610",
+    "id": "game_1610_1775791560088_0gd9p4",
     "name": "绝地潜兵",
     "nameEn": "Helldiver",
     "cover": "",
@@ -28999,10 +28999,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1611",
+    "id": "game_1611_1775791560088_b52cw4",
     "name": "鬼屋魔影：重制版",
     "nameEn": "Alone in the Dark",
     "cover": "",
@@ -29017,10 +29017,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1612",
+    "id": "game_1612_1775791560088_7eb2ka",
     "name": "时空英豪：新起点",
     "nameEn": "Outcast – A New Beginning",
     "cover": "",
@@ -29035,10 +29035,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1613",
+    "id": "game_1613_1775791560088_uz0xlg",
     "name": "太空熊",
     "nameEn": "Bears In Space",
     "cover": "",
@@ -29053,10 +29053,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1614",
+    "id": "game_1614_1775791560088_b5jovt",
     "name": "星球探险家",
     "nameEn": "Planet Explorers",
     "cover": "",
@@ -29071,10 +29071,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1615",
+    "id": "game_1615_1775791560088_argdbt",
     "name": "木卫四协议",
     "nameEn": "The Callisto Protocol",
     "cover": "",
@@ -29089,10 +29089,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1616",
+    "id": "game_1616_1775791560088_dx3yyo",
     "name": "恶意不息",
     "nameEn": "No Rest for the Wicked",
     "cover": "",
@@ -29107,10 +29107,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1617",
+    "id": "game_1617_1775791560088_jvczl9",
     "name": "峰顶王国",
     "nameEn": "Laysara：Summit Kingdom",
     "cover": "",
@@ -29125,10 +29125,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1618",
+    "id": "game_1618_1775791560088_r63u5u",
     "name": "怪物领域",
     "nameEn": "Monsters Domain",
     "cover": "",
@@ -29143,10 +29143,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1619",
+    "id": "game_1619_1775791560088_bq8o0x",
     "name": "黑山：起源",
     "nameEn": "Black Mesa：Source",
     "cover": "",
@@ -29161,10 +29161,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1620",
+    "id": "game_1620_1775791560088_7a5xqn",
     "name": "笠鬼",
     "nameEn": "The Devil Within: Satgat",
     "cover": "",
@@ -29179,10 +29179,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1621",
+    "id": "game_1621_1775791560088_ok0ac9",
     "name": "沙石镇时光",
     "nameEn": "My Time at Sandrock",
     "cover": "",
@@ -29197,10 +29197,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1622",
+    "id": "game_1622_1775791560088_u66y6f",
     "name": "战争召唤",
     "nameEn": "Call to Arms",
     "cover": "",
@@ -29215,10 +29215,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1623",
+    "id": "game_1623_1775791560088_2aosr0",
     "name": "指挥部：二战",
     "nameEn": "Headquarters: World War II",
     "cover": "",
@@ -29233,10 +29233,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1624",
+    "id": "game_1624_1775791560088_gnrvuf",
     "name": "庄园领主",
     "nameEn": "Manor Lords",
     "cover": "",
@@ -29251,10 +29251,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1625",
+    "id": "game_1625_1775791560088_trriyx",
     "name": "百英雄传（建议手柄）",
     "nameEn": "Eiyuden Chronicle: Hundred Heroes",
     "cover": "",
@@ -29269,10 +29269,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1626",
+    "id": "game_1626_1775791560088_8mvtjp",
     "name": "杰克福尔摩斯：木偶大师",
     "nameEn": "Jack Holmes : Master of Puppets",
     "cover": "",
@@ -29287,10 +29287,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1627",
+    "id": "game_1627_1775791560088_za9neh",
     "name": "颂钟长鸣",
     "nameEn": "Bellwright",
     "cover": "",
@@ -29305,10 +29305,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1628",
+    "id": "game_1628_1775791560088_q3txod",
     "name": "捉鬼敢死队：灵魂释放",
     "nameEn": "Ghostbusters: Spirits Unleashed",
     "cover": "",
@@ -29323,10 +29323,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1629",
+    "id": "game_1629_1775791560088_7jab8m",
     "name": "百万吨级武藏W：WIRED",
     "nameEn": "MEGATON MUSASHI W: WIRED",
     "cover": "",
@@ -29341,10 +29341,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1630",
+    "id": "game_1630_1775791560088_tcjy2f",
     "name": "无感染区",
     "nameEn": "/Infection Free Zone",
     "cover": "",
@@ -29359,10 +29359,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1631",
+    "id": "game_1631_1775791560088_uhe7xw",
     "name": "埃雷西斯",
     "nameEn": "Eresys",
     "cover": "",
@@ -29377,10 +29377,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1632",
+    "id": "game_1632_1775791560088_yxajt3",
     "name": "印蒂卡",
     "nameEn": "INDIKA",
     "cover": "",
@@ -29395,10 +29395,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1633",
+    "id": "game_1633_1775791560088_xf5n8y",
     "name": "对马岛之魂：导演剪辑版",
     "nameEn": "Ghost of Tsushima DIRECTOR'S CUT",
     "cover": "",
@@ -29413,10 +29413,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1634",
+    "id": "game_1634_1775791560088_6qcop5",
     "name": "喋血复仇",
     "nameEn": "Back 4 Blood",
     "cover": "",
@@ -29431,10 +29431,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1635",
+    "id": "game_1635_1775791560088_6oryc3",
     "name": "居民",
     "nameEn": "Denizen",
     "cover": "",
@@ -29449,10 +29449,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1636",
+    "id": "game_1636_1775791560088_crud8j",
     "name": "狂战传说/绯夜传奇",
     "nameEn": "Tales of Berseria",
     "cover": "",
@@ -29467,10 +29467,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1637",
+    "id": "game_1637_1775791560088_1vcb4n",
     "name": "女鬼桥：开魂路",
     "nameEn": "THE BRIDGE CURSE：Road to Salvation",
     "cover": "",
@@ -29485,10 +29485,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1638",
+    "id": "game_1638_1775791560088_qyaga5",
     "name": "热血大乱斗进行曲",
     "nameEn": "River City Melee Mach!!",
     "cover": "",
@@ -29503,10 +29503,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1639",
+    "id": "game_1639_1775791560088_71l86h",
     "name": "TEVI",
     "nameEn": "TEVI",
     "cover": "",
@@ -29521,10 +29521,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1640",
+    "id": "game_1640_1775791560088_n4snyc",
     "name": "热血三国志：全员集合",
     "nameEn": "River City Saga: Three Kingdoms",
     "cover": "",
@@ -29539,10 +29539,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1641",
+    "id": "game_1641_1775791560088_2yee13",
     "name": "沙漠大冒险",
     "nameEn": "SAND LAND",
     "cover": "",
@@ -29557,10 +29557,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1642",
+    "id": "game_1642_1775791560088_3b46n8",
     "name": "女巫",
     "nameEn": "Noita",
     "cover": "",
@@ -29575,10 +29575,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1643",
+    "id": "game_1643_1775791560088_sowzlr",
     "name": "邪恶冥刻/死亡冥刻/邪恶铭刻/碑Inscryption",
     "nameEn": "Inscryption",
     "cover": "",
@@ -29593,10 +29593,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1644",
+    "id": "game_1644_1775791560088_9k3uwr",
     "name": "寻路者",
     "nameEn": "Wayfinder",
     "cover": "",
@@ -29611,10 +29611,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1645",
+    "id": "game_1645_1775791560088_p9kxt3",
     "name": "物质世界：终极版",
     "nameEn": "Outward Definitive Edition",
     "cover": "",
@@ -29629,10 +29629,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1646",
+    "id": "game_1646_1775791560088_9dmcne",
     "name": "CHANGE：无家可归的生存体验",
     "nameEn": "CHANGE: A Homeless Survival Experience",
     "cover": "",
@@ -29647,10 +29647,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1647",
+    "id": "game_1647_1775791560088_s26unz",
     "name": "中途岛战役：血战太平洋",
     "nameEn": "Battlestations Pacific",
     "cover": "",
@@ -29665,10 +29665,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1648",
+    "id": "game_1648_1775791560088_erhsop",
     "name": "红视2",
     "nameEn": "Redout 2",
     "cover": "",
@@ -29683,10 +29683,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1649",
+    "id": "game_1649_1775791560088_d15rdi",
     "name": "废品大亨",
     "nameEn": "Barn Finders",
     "cover": "",
@@ -29701,10 +29701,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1650",
+    "id": "game_1650_1775791560088_dpy1a4",
     "name": "四步杀",
     "nameEn": "Scholar’s Mate",
     "cover": "",
@@ -29719,10 +29719,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1651",
+    "id": "game_1651_1775791560088_onweze",
     "name": "验尸模拟器",
     "nameEn": "Autopsy Simulator",
     "cover": "",
@@ -29737,10 +29737,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1652",
+    "id": "game_1652_1775791560088_0gcqgr",
     "name": "活侠传",
     "nameEn": "Legend of Mortal",
     "cover": "",
@@ -29755,10 +29755,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1653",
+    "id": "game_1653_1775791560088_siw94f",
     "name": "法外枭雄：滚石城",
     "nameEn": "Crime Boss: Rockay City",
     "cover": "",
@@ -29773,10 +29773,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1654",
+    "id": "game_1654_1775791560088_bem04d",
     "name": "喘息2",
     "nameEn": "Gasping 2",
     "cover": "",
@@ -29791,10 +29791,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1655",
+    "id": "game_1655_1775791560088_s1pedy",
     "name": "风暴之城",
     "nameEn": "Against the Storm",
     "cover": "",
@@ -29809,10 +29809,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1656",
+    "id": "game_1656_1775791560088_f9r9e3",
     "name": "同舟共济",
     "nameEn": "Ship of Fools",
     "cover": "",
@@ -29827,10 +29827,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1657",
+    "id": "game_1657_1775791560088_cp047b",
     "name": "隔离区:丧尸末日生存",
     "nameEn": "ZED ZONE",
     "cover": "",
@@ -29845,10 +29845,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1658",
+    "id": "game_1658_1775791560088_d4865g",
     "name": "随身摄像机",
     "nameEn": "Bodycam",
     "cover": "",
@@ -29863,10 +29863,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1659",
+    "id": "game_1659_1775791560088_0h6piw",
     "name": "疯狂连杀(英文版）",
     "nameEn": "ULTRAKILL",
     "cover": "",
@@ -29881,10 +29881,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1660",
+    "id": "game_1660_1775791560088_qyjmul",
     "name": "艾诺提亚：失落之歌",
     "nameEn": "Enotria: The Last Song",
     "cover": "",
@@ -29899,10 +29899,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1661",
+    "id": "game_1661_1775791560088_izl92i",
     "name": "弗兰克·斯通的阴影",
     "nameEn": "The Casting of Frank Stone",
     "cover": "",
@@ -29917,10 +29917,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1662",
+    "id": "game_1662_1775791560088_7vd3m2",
     "name": "高达破坏者4",
     "nameEn": "Gundam Breaker 4",
     "cover": "",
@@ -29935,10 +29935,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1663",
+    "id": "game_1663_1775791560088_8wk6a8",
     "name": "无人想死",
     "nameEn": "Nobody Wants to Die",
     "cover": "",
@@ -29953,10 +29953,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1664",
+    "id": "game_1664_1775791560088_1g46k1",
     "name": "演灭",
     "nameEn": "EVOTINCTION",
     "cover": "",
@@ -29971,10 +29971,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1665",
+    "id": "game_1665_1775791560088_fa8mcc",
     "name": "阿拉：不为人知的历史",
     "nameEn": "Ara: History Untold",
     "cover": "",
@@ -29989,10 +29989,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1666",
+    "id": "game_1666_1775791560088_fmo02n",
     "name": "寓言之地",
     "nameEn": "Fabledom",
     "cover": "",
@@ -30007,10 +30007,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1667",
+    "id": "game_1667_1775791560088_9600tn",
     "name": "集换卡店模拟器",
     "nameEn": "TCG Card Shop Simulator",
     "cover": "",
@@ -30025,10 +30025,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1668",
+    "id": "game_1668_1775791560088_gfvw1p",
     "name": "阿拉斯加卡车司机",
     "nameEn": "Alaskan Road Truckers",
     "cover": "",
@@ -30043,10 +30043,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1669",
+    "id": "game_1669_1775791560088_gmj4cc",
     "name": "Funko Fusion",
     "nameEn": "Funko Fusion",
     "cover": "",
@@ -30061,10 +30061,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1670",
+    "id": "game_1670_1775791560088_i7s82w",
     "name": "七龙珠 电光炸裂！ZERO",
     "nameEn": "DRAGON BALL: Sparking! ZERO",
     "cover": "",
@@ -30079,10 +30079,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1671",
+    "id": "game_1671_1775791560088_4zroqm",
     "name": "直到黎明",
     "nameEn": "Until Dawn",
     "cover": "",
@@ -30097,10 +30097,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1672",
+    "id": "game_1672_1775791560088_gaspwi",
     "name": "万神之城",
     "nameEn": "Citadelum",
     "cover": "",
@@ -30115,10 +30115,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1673",
+    "id": "game_1673_1775791560088_vlw4fe",
     "name": "仓库猎人模拟器",
     "nameEn": "Storage Hunter Simulator",
     "cover": "",
@@ -30133,10 +30133,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1674",
+    "id": "game_1674_1775791560088_8g5giv",
     "name": "暗喻幻想：ReFantazio",
     "nameEn": "Metaphor: ReFantazio",
     "cover": "",
@@ -30151,10 +30151,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1675",
+    "id": "game_1675_1775791560088_pult6c",
     "name": "家园3",
     "nameEn": "Homeworld 3",
     "cover": "",
@@ -30169,10 +30169,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1676",
+    "id": "game_1676_1775791560088_nl70xd",
     "name": "漂流计划",
     "nameEn": "Project Castaway",
     "cover": "",
@@ -30187,10 +30187,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1677",
+    "id": "game_1677_1775791560088_h81sfd",
     "name": "阿尔巴特罗斯",
     "nameEn": "Albatroz",
     "cover": "",
@@ -30205,10 +30205,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1678",
+    "id": "game_1678_1775791560088_0b103e",
     "name": "蚂蚁帝国",
     "nameEn": "Empire of the Ants",
     "cover": "",
@@ -30223,10 +30223,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1679",
+    "id": "game_1679_1775791560088_gx6t2h",
     "name": "SINce Memories 星穹之下",
     "nameEn": "SINce Memories: Off The Starry Sky",
     "cover": "",
@@ -30241,10 +30241,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1680",
+    "id": "game_1680_1775791560088_e3ls7c",
     "name": "忍者神龟：变种释放",
     "nameEn": "Teenage Mutant Ninja Turtles: Mutants Unleashed",
     "cover": "",
@@ -30259,10 +30259,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1681",
+    "id": "game_1681_1775791560088_5wmy9d",
     "name": "U型潜艇/德国水手",
     "nameEn": "UBOAT",
     "cover": "",
@@ -30277,10 +30277,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1682",
+    "id": "game_1682_1775791560088_qyb4pt",
     "name": "未见之界",
     "nameEn": "The Axis Unseen",
     "cover": "",
@@ -30295,10 +30295,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1683",
+    "id": "game_1683_1775791560088_3ba2gf",
     "name": "蜡笔小新“煤炭镇的小白”",
     "nameEn": "Shin chan: Shiro and the Coal Town",
     "cover": "",
@@ -30313,10 +30313,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1684",
+    "id": "game_1684_1775791560088_4vm07c",
     "name": "风暴：深厚友谊的开始重制版",
     "nameEn": "Windstorm: Start of a Great Friendship – Remastered",
     "cover": "",
@@ -30331,10 +30331,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1685",
+    "id": "game_1685_1775791560088_sern0a",
     "name": "寂静之地：前路漫漫",
     "nameEn": "A Quiet Place: The Road Ahead",
     "cover": "",
@@ -30349,10 +30349,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1686",
+    "id": "game_1686_1775791560088_tq3480",
     "name": "纳扎尔",
     "nameEn": "Nazar",
     "cover": "",
@@ -30367,10 +30367,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1687",
+    "id": "game_1687_1775791560088_1q79xt",
     "name": "外婆/恐怖奶奶",
     "nameEn": "Granny Remake",
     "cover": "",
@@ -30385,10 +30385,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1688",
+    "id": "game_1688_1775791560088_hj2gdl",
     "name": "永恒寒冬",
     "nameEn": "The Forever Winter",
     "cover": "",
@@ -30403,10 +30403,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1689",
+    "id": "game_1689_1775791560088_7luqye",
     "name": "终极将军：内战",
     "nameEn": "Ultimate General：Civil War",
     "cover": "",
@@ -30421,10 +30421,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1690",
+    "id": "game_1690_1775791560088_8wz4gy",
     "name": "人类黎明",
     "nameEn": "Dawn of Man",
     "cover": "",
@@ -30439,10 +30439,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1691",
+    "id": "game_1691_1775791560088_bqgozw",
     "name": "乐高地平线大冒险",
     "nameEn": "LEGO Horizon Adventures",
     "cover": "",
@@ -30457,10 +30457,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1692",
+    "id": "game_1692_1775791560088_raidp6",
     "name": "阿加斯巴之塔",
     "nameEn": "Towers of Aghasba",
     "cover": "",
@@ -30475,10 +30475,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1693",
+    "id": "game_1693_1775791560088_hyunwo",
     "name": "黑山基地/黑山：起源",
     "nameEn": "Black Mesa：Source",
     "cover": "",
@@ -30493,10 +30493,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1694",
+    "id": "game_1694_1775791560088_2xi0jm",
     "name": "车祸模拟器",
     "nameEn": "BeamNG.drive",
     "cover": "",
@@ -30511,10 +30511,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1695",
+    "id": "game_1695_1775791560088_ny80op",
     "name": "践踏之塔",
     "nameEn": "Tower of Trample",
     "cover": "",
@@ -30529,10 +30529,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1696",
+    "id": "game_1696_1775791560088_6a4sgj",
     "name": "夺宝奇兵：古老之圈",
     "nameEn": "Indiana Jones and the Great Circle",
     "cover": "",
@@ -30547,10 +30547,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1697",
+    "id": "game_1697_1775791560088_c2x0w9",
     "name": "世界盒子：上帝模拟器",
     "nameEn": "WorldBox - God Simulator",
     "cover": "",
@@ -30565,10 +30565,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1698",
+    "id": "game_1698_1775791560088_g33pwf",
     "name": "米塔",
     "nameEn": "MiSide",
     "cover": "",
@@ -30583,10 +30583,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1699",
+    "id": "game_1699_1775791560088_sj0u0i",
     "name": "驱灵者：新伊甸的幽灵",
     "nameEn": "Banishers: Ghosts of New Eden",
     "cover": "",
@@ -30601,10 +30601,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1700",
+    "id": "game_1700_1775791560088_pcsxa3",
     "name": "无冬之夜：增强版",
     "nameEn": "Neverwinter Nights 2",
     "cover": "",
@@ -30619,10 +30619,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1701",
+    "id": "game_1701_1775791560088_27r49k",
     "name": "暗影：最后的召唤者",
     "nameEn": "Umbra: The Last Summoner",
     "cover": "",
@@ -30637,10 +30637,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1702",
+    "id": "game_1702_1775791560088_dj8frx",
     "name": "地狱钱汤：修复版",
     "nameEn": "The Bathhouse",
     "cover": "",
@@ -30655,10 +30655,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1703",
+    "id": "game_1703_1775791560088_py7zy3",
     "name": "邻居",
     "nameEn": "Neighbor",
     "cover": "",
@@ -30673,10 +30673,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1704",
+    "id": "game_1704_1775791560088_thaoj8",
     "name": "热辣可爱：甜心",
     "nameEn": "Hot and Lovely: Suger",
     "cover": "",
@@ -30691,10 +30691,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1705",
+    "id": "game_1705_1775791560088_51vuxa",
     "name": "赛博城",
     "nameEn": "Cyber City",
     "cover": "",
@@ -30709,10 +30709,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1706",
+    "id": "game_1706_1775791560088_gxg7cw",
     "name": "特种部队：眼镜蛇之怒",
     "nameEn": "G.I. Joe Wrath of Cobra",
     "cover": "",
@@ -30727,10 +30727,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1707",
+    "id": "game_1707_1775791560088_7o0kcf",
     "name": "未知9号：觉醒",
     "nameEn": "Unknown 9: Awakening",
     "cover": "",
@@ -30745,10 +30745,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1708",
+    "id": "game_1708_1775791560088_jirn7i",
     "name": "修女地下城",
     "nameEn": "Nunholy",
     "cover": "",
@@ -30763,10 +30763,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1709",
+    "id": "game_1709_1775791560088_ekakqv",
     "name": "卓越：夺取前线",
     "nameEn": "Eximius: Seize the Frontline",
     "cover": "",
@@ -30781,10 +30781,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1710",
+    "id": "game_1710_1775791560088_euzlb8",
     "name": "仓库猎人模拟器",
     "nameEn": "Storage Hunter Simulator",
     "cover": "",
@@ -30799,10 +30799,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1711",
+    "id": "game_1711_1775791560088_5hhxbj",
     "name": "拉力修车模拟器",
     "nameEn": "Rally Mechanic Simulator",
     "cover": "",
@@ -30817,10 +30817,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1712",
+    "id": "game_1712_1775791560088_6vjl52",
     "name": "主播人生模拟器2",
     "nameEn": "Streamer Life Simulator 2",
     "cover": "",
@@ -30835,10 +30835,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1713",
+    "id": "game_1713_1775791560088_k3ezra",
     "name": "自杀小队：消灭正义联盟",
     "nameEn": "Suicide Squad: Kill the Justice League",
     "cover": "",
@@ -30853,10 +30853,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1714",
+    "id": "game_1714_1775791560088_bbx5nm",
     "name": "逆转检察官1&2御剑精选集",
     "nameEn": "Ace Attorney Investigations Collection",
     "cover": "",
@@ -30871,10 +30871,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1715",
+    "id": "game_1715_1775791560088_su5l46",
     "name": "犯罪现场清理工",
     "nameEn": "Crime Scene Cleaner",
     "cover": "",
@@ -30889,10 +30889,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1716",
+    "id": "game_1716_1775791560088_24y6e6",
     "name": "伊克西翁",
     "nameEn": "IXION",
     "cover": "",
@@ -30907,10 +30907,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1717",
+    "id": "game_1717_1775791560088_orra73",
     "name": "僵尸2：噬魂咒",
     "nameEn": "The Jiang Shi 2 ：Curse of Soul",
     "cover": "",
@@ -30925,10 +30925,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1718",
+    "id": "game_1718_1775791560088_6tar2l",
     "name": "牧场模拟器",
     "nameEn": "Ranch Simulator",
     "cover": "",
@@ -30943,10 +30943,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1719",
+    "id": "game_1719_1775791560088_i2h6tk",
     "name": "世界大战：西方战线",
     "nameEn": "The Great War: Western Front",
     "cover": "",
@@ -30961,10 +30961,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1720",
+    "id": "game_1720_1775791560088_qkmgj8",
     "name": "越野卡车模拟器：重型卡车挑战",
     "nameEn": "Offroad Truck Simulator: Heavy Duty Challenge",
     "cover": "",
@@ -30979,10 +30979,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1721",
+    "id": "game_1721_1775791560088_hb2ben",
     "name": "模拟铁路：铁路模拟器",
     "nameEn": "SimRail - The Railway Simulator",
     "cover": "",
@@ -30997,10 +30997,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1722",
+    "id": "game_1722_1775791560088_6dbkzm",
     "name": "VR战士5",
     "nameEn": "Virtua Fighter 5 R.E.V.O.",
     "cover": "",
@@ -31015,10 +31015,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1723",
+    "id": "game_1723_1775791560088_jsp1jd",
     "name": "救护车生活：救护员模拟器",
     "nameEn": "Ambulance Life: A Paramedic Simulator",
     "cover": "",
@@ -31033,10 +31033,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1724",
+    "id": "game_1724_1775791560088_umbgs8",
     "name": "宣誓",
     "nameEn": "Avowed Premium Edition",
     "cover": "",
@@ -31051,10 +31051,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1725",
+    "id": "game_1725_1775791560088_97nx7w",
     "name": "埃及建设者",
     "nameEn": "Builders of Egypt",
     "cover": "",
@@ -31069,10 +31069,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1726",
+    "id": "game_1726_1775791560088_nb6nb3",
     "name": "怪物少女传奇：堕落英雄",
     "nameEn": "Monster Girl Saga: Fallen Heroes",
     "cover": "",
@@ -31087,10 +31087,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1727",
+    "id": "game_1727_1775791560088_wfnz0g",
     "name": "绝影战士",
     "nameEn": "Shadow of the Ninja – Reborn",
     "cover": "",
@@ -31105,10 +31105,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1728",
+    "id": "game_1728_1775791560088_o3ftot",
     "name": "军事冲突：越南",
     "nameEn": "Military Conflict: Vietnam",
     "cover": "",
@@ -31123,10 +31123,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1729",
+    "id": "game_1729_1775791560088_t1k3j3",
     "name": "生死抉择：血霾",
     "nameEn": "Decision: Red Daze",
     "cover": "",
@@ -31141,10 +31141,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1730",
+    "id": "game_1730_1775791560088_mzy4l8",
     "name": "灾厄堡垒",
     "nameEn": "Cataclismo",
     "cover": "",
@@ -31159,10 +31159,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1731",
+    "id": "game_1731_1775791560088_ei1lal",
     "name": "战术小队",
     "nameEn": "Squad",
     "cover": "",
@@ -31177,10 +31177,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1732",
+    "id": "game_1732_1775791560088_651aa4",
     "name": "超侦探事件簿:雾雨谜宫",
     "nameEn": "Master Detective Archives: Rain Code",
     "cover": "",
@@ -31195,10 +31195,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1733",
+    "id": "game_1733_1775791560088_juh74g",
     "name": "失落的记录：绽放与愤怒",
     "nameEn": "Lost Records: Bloom & Rage",
     "cover": "",
@@ -31213,10 +31213,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1734",
+    "id": "game_1734_1775791560088_au0p33",
     "name": "铁路在线",
     "nameEn": "RAILROADS Online!",
     "cover": "",
@@ -31231,10 +31231,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1735",
+    "id": "game_1735_1775791560088_lg2dmb",
     "name": "极限国度",
     "nameEn": "Riders Republic",
     "cover": "",
@@ -31249,10 +31249,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1736",
+    "id": "game_1736_1775791560088_j9fyp5",
     "name": "圣剑传说：玛娜幻象",
     "nameEn": "Visions of Mana",
     "cover": "",
@@ -31267,10 +31267,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1737",
+    "id": "game_1737_1775791560088_xeihy3",
     "name": "双点校园",
     "nameEn": "Two Point Campus",
     "cover": "",
@@ -31285,10 +31285,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1738",
+    "id": "game_1738_1775791560088_60uu8x",
     "name": "跨西伯利亚铁路模拟器",
     "nameEn": "rans-Siberian Railway Simulator",
     "cover": "",
@@ -31303,10 +31303,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1739",
+    "id": "game_1739_1775791560088_56m6yk",
     "name": "双影奇境",
     "nameEn": "Split Fiction",
     "cover": "",
@@ -31321,10 +31321,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1740",
+    "id": "game_1740_1775791560088_eteps2",
     "name": "俄罗斯方块效应/俄罗斯方块效应：连接",
     "nameEn": "Tetris Effect: Connected",
     "cover": "",
@@ -31339,10 +31339,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1741",
+    "id": "game_1741_1775791560088_rcb6wo",
     "name": "超自然车旅",
     "nameEn": "Pacific Drive",
     "cover": "",
@@ -31357,10 +31357,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1742",
+    "id": "game_1742_1775791560088_5ps2p3",
     "name": "SCP：大流行病",
     "nameEn": "SCP: 5K",
     "cover": "",
@@ -31375,10 +31375,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1743",
+    "id": "game_1743_1775791560088_tiij5j",
     "name": "护身术道场",
     "nameEn": "Self Defense Dojo",
     "cover": "",
@@ -31393,10 +31393,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1744",
+    "id": "game_1744_1775791560088_lr2xbv",
     "name": "幻想水浒传1+2HD复刻版",
     "nameEn": "Suikoden I &amp; II HD Remaster: Gate Rune and Dunan Unification Wars",
     "cover": "",
@@ -31411,10 +31411,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1745",
+    "id": "game_1745_1775791560088_po1bae",
     "name": "勇闯西部",
     "nameEn": "World to the West",
     "cover": "",
@@ -31429,10 +31429,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1746",
+    "id": "game_1746_1775791560088_qgsqg0",
     "name": "自由战争：复刻版",
     "nameEn": "FREEDOM WARS Remastered",
     "cover": "",
@@ -31447,10 +31447,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1747",
+    "id": "game_1747_1775791560088_2xqte6",
     "name": "浪人崛起",
     "nameEn": "Rise of the Ronin",
     "cover": "",
@@ -31465,10 +31465,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1748",
+    "id": "game_1748_1775791560088_d6ha5h",
     "name": "丁丁历险记：法老的雪茄",
     "nameEn": "Tintin Reporter - Cigars of the Pharaoh",
     "cover": "",
@@ -31483,10 +31483,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1749",
+    "id": "game_1749_1775791560088_ngn60y",
     "name": "纷争终结者:被遗弃的孩子们",
     "nameEn": "TROUBLESHOOTER: Abandoned Children",
     "cover": "",
@@ -31501,10 +31501,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1750",
+    "id": "game_1750_1775791560088_rsmsaw",
     "name": "孤岛诡影",
     "nameEn": "Them and Us",
     "cover": "",
@@ -31519,10 +31519,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1751",
+    "id": "game_1751_1775791560088_8y16zw",
     "name": "幻影行动",
     "nameEn": "Phantom Ops",
     "cover": "",
@@ -31537,10 +31537,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1752",
+    "id": "game_1752_1775791560088_v0tdb7",
     "name": "巨型水族馆：建筑师的收藏",
     "nameEn": "Megaquarium Architects Collection",
     "cover": "",
@@ -31555,10 +31555,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1753",
+    "id": "game_1753_1775791560088_amnzaa",
     "name": "了不起的预言",
     "nameEn": "Pocket Oracle",
     "cover": "",
@@ -31573,10 +31573,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1754",
+    "id": "game_1754_1775791560088_xh2uzr",
     "name": "弥助模拟器(官方英文）",
     "nameEn": "Yasuke Simulator",
     "cover": "",
@@ -31591,10 +31591,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1755",
+    "id": "game_1755_1775791560088_j4uwrc",
     "name": "努力，加油！化身西西弗斯",
     "nameEn": "Pushing It! With Sisyphus",
     "cover": "",
@@ -31609,10 +31609,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1756",
+    "id": "game_1756_1775791560088_v4ljr9",
     "name": "审判者",
     "nameEn": "The Inquisitor",
     "cover": "",
@@ -31627,10 +31627,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1757",
+    "id": "game_1757_1775791560088_qvc7yy",
     "name": "死神：魂魄觉醒",
     "nameEn": "BLEACH Rebirth of Souls",
     "cover": "",
@@ -31645,10 +31645,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1758",
+    "id": "game_1758_1775791560088_lvuitb",
     "name": "头条猎手",
     "nameEn": "he Headliners",
     "cover": "",
@@ -31663,10 +31663,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1759",
+    "id": "game_1759_1775791560088_eiup4d",
     "name": "仙乐传说",
     "nameEn": "Tales of Symphonia",
     "cover": "",
@@ -31681,10 +31681,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1760",
+    "id": "game_1760_1775791560088_0wrlow",
     "name": "真实动漫情境体验！",
     "nameEn": "Real Anime Situation! DT",
     "cover": "",
@@ -31699,10 +31699,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1761",
+    "id": "game_1761_1775791560088_21aimb",
     "name": "鬼灭之刃 争当最强队士！",
     "nameEn": "Demon Slayer -Kimetsu no Yaiba- Sweep the Board!",
     "cover": "",
@@ -31717,10 +31717,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1762",
+    "id": "game_1762_1775791560088_ycv6k5",
     "name": "污痕圣杯：阿瓦隆的陨落",
     "nameEn": "Tainted Grail: The Fall of Avalon",
     "cover": "",
@@ -31735,10 +31735,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1763",
+    "id": "game_1763_1775791560088_antfdj",
     "name": "午夜以南",
     "nameEn": "South of Midnight",
     "cover": "",
@@ -31753,10 +31753,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1764",
+    "id": "game_1764_1775791560088_ky54l2",
     "name": "怪形：复刻版",
     "nameEn": "The Thing: Remastered",
     "cover": "",
@@ -31771,10 +31771,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1765",
+    "id": "game_1765_1775791560088_qetubz",
     "name": "勇闯死人谷：暗黑之日",
     "nameEn": "Into the Dead: Our Darkest Days",
     "cover": "",
@@ -31789,10 +31789,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1766",
+    "id": "game_1766_1775791560088_j1bthu",
     "name": "骨头镇(官方英文）",
     "nameEn": "BoneTown",
     "cover": "",
@@ -31807,10 +31807,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1767",
+    "id": "game_1767_1775791560088_znhxvk",
     "name": "云族裔/财阀模拟器/inZOI",
     "nameEn": "inZOI",
     "cover": "",
@@ -31825,10 +31825,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1768",
+    "id": "game_1768_1775791560088_ko5kbz",
     "name": "短雪",
     "nameEn": "Short Snow",
     "cover": "",
@@ -31843,10 +31843,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1769",
+    "id": "game_1769_1775791560088_ivr7ee",
     "name": "饿狼传说：群狼之城",
     "nameEn": "FATAL FURY: City of the Wolves",
     "cover": "",
@@ -31861,10 +31861,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1770",
+    "id": "game_1770_1775791560088_v8tmcd",
     "name": "疾速竞跃！",
     "nameEn": "Run-Sprint-Parkour!",
     "cover": "",
@@ -31879,10 +31879,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1771",
+    "id": "game_1771_1775791560088_vixt47",
     "name": "浪漫沙加2：七英雄的复仇",
     "nameEn": "Romancing SaGa 2: Revenge of the Seven",
     "cover": "",
@@ -31897,10 +31897,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1772",
+    "id": "game_1772_1775791560088_tzbmns",
     "name": "秘影曼德拉",
     "nameEn": "Mandragora: Whispers of the Witch Tree",
     "cover": "",
@@ -31915,10 +31915,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1773",
+    "id": "game_1773_1775791560088_jf5mxc",
     "name": "死亡之屋：重制版",
     "nameEn": "THE HOUSE OF THE DEAD: Remake",
     "cover": "",
@@ -31933,10 +31933,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1774",
+    "id": "game_1774_1775791560088_p6volh",
     "name": "铁锈战争",
     "nameEn": "Rusted Warfare - RTS",
     "cover": "",
@@ -31951,10 +31951,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1775",
+    "id": "game_1775_1775791560088_h00jg8",
     "name": "钢铁之种",
     "nameEn": "Steel Seed",
     "cover": "",
@@ -31969,10 +31969,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1776",
+    "id": "game_1776_1775791560088_gzm0js",
     "name": "百日战纪 -最终防卫学园",
     "nameEn": "The Hundred Line -Last Defense Academy-",
     "cover": "",
@@ -31987,10 +31987,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1777",
+    "id": "game_1777_1775791560088_0fiw3f",
     "name": "光与影：33号远征队",
     "nameEn": "Clair Obscur: Expedition 33",
     "cover": "",
@@ -32005,10 +32005,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1778",
+    "id": "game_1778_1775791560088_70vead",
     "name": "灵魂射手：死亡使者",
     "nameEn": "Soulslinger: Envoy of Death",
     "cover": "",
@@ -32023,10 +32023,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1779",
+    "id": "game_1779_1775791560088_qnfbxj",
     "name": "九日",
     "nameEn": "Nine Sols",
     "cover": "",
@@ -32041,10 +32041,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1780",
+    "id": "game_1780_1775791560088_jpaazf",
     "name": "钻核公司",
     "nameEn": "Drill Core",
     "cover": "",
@@ -32059,10 +32059,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1781",
+    "id": "game_1781_1775791560088_t3zho3",
     "name": "蔑视",
     "nameEn": "Scorn",
     "cover": "",
@@ -32077,10 +32077,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1782",
+    "id": "game_1782_1775791560088_wam5yi",
     "name": "黑客网络",
     "nameEn": "Hacknet",
     "cover": "",
@@ -32095,10 +32095,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1783",
+    "id": "game_1783_1775791560088_mlrqti",
     "name": "幻想生活ｉ 转圈圈的龙和偷取时间的少女",
     "nameEn": "FANTASY LIFE i: The Girl Who Steals Time",
     "cover": "",
@@ -32113,10 +32113,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1784",
+    "id": "game_1784_1775791560088_qrnc6s",
     "name": "警区",
     "nameEn": "The Precinct",
     "cover": "",
@@ -32131,10 +32131,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1785",
+    "id": "game_1785_1775791560088_a5jq76",
     "name": "混乱军团/混沌军团",
     "nameEn": "Chaos Legion",
     "cover": "",
@@ -32149,10 +32149,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1786",
+    "id": "game_1786_1775791560088_uhkfzd",
     "name": "时光之帽",
     "nameEn": "A Hat in Time",
     "cover": "",
@@ -32167,10 +32167,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1787",
+    "id": "game_1787_1775791560088_cpmk30",
     "name": "DCL无人机冠军联盟",
     "nameEn": "DCL - The Game",
     "cover": "",
@@ -32185,10 +32185,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1788",
+    "id": "game_1788_1775791560088_eo9h5s",
     "name": "心之眼",
     "nameEn": "MindsEye",
     "cover": "",
@@ -32203,10 +32203,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1789",
+    "id": "game_1789_1775791560088_oapv4h",
     "name": "多重人生",
     "nameEn": "The Alters",
     "cover": "",
@@ -32221,10 +32221,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1790",
+    "id": "game_1790_1775791560088_q0d003",
     "name": "司辰之书",
     "nameEn": "BOOK OF HOURS",
     "cover": "",
@@ -32239,10 +32239,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1791",
+    "id": "game_1791_1775791560088_bbnvjo",
     "name": "断箭",
     "nameEn": "Broken Arrow",
     "cover": "",
@@ -32257,10 +32257,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1792",
+    "id": "game_1792_1775791560088_5r7sic",
     "name": "历史时代3",
     "nameEn": "Age of History 3",
     "cover": "",
@@ -32275,10 +32275,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1793",
+    "id": "game_1793_1775791560088_xm2yd9",
     "name": "烈焰之刃",
     "nameEn": "Blades of Fire",
     "cover": "",
@@ -32293,10 +32293,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1794",
+    "id": "game_1794_1775791560088_hlx15t",
     "name": "秋末求生",
     "nameEn": "Survive the Fall",
     "cover": "",
@@ -32311,10 +32311,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1795",
+    "id": "game_1795_1775791560088_gt09qh",
     "name": "剑星豪华版",
     "nameEn": "Stellar Blade",
     "cover": "",
@@ -32329,10 +32329,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1796",
+    "id": "game_1796_1775791560088_8sf0r8",
     "name": "黑色一号：血盟兄弟(英文版）",
     "nameEn": "Black One Blood Brothers",
     "cover": "",
@@ -32347,10 +32347,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1797",
+    "id": "game_1797_1775791560088_eanepp",
     "name": "华夏山河",
     "nameEn": "Chinese Frontiers",
     "cover": "",
@@ -32365,10 +32365,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1798",
+    "id": "game_1798_1775791560088_zqy6hz",
     "name": "烈文",
     "nameEn": "Riven",
     "cover": "",
@@ -32383,10 +32383,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1799",
+    "id": "game_1799_1775791560088_1zp2pu",
     "name": "灵魂石幸存者",
     "nameEn": "Soulstone Survivors",
     "cover": "",
@@ -32401,10 +32401,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1800",
+    "id": "game_1800_1775791560088_aep3un",
     "name": "第一狂战士：卡赞",
     "nameEn": "The First Berserker：Khazan",
     "cover": "",
@@ -32419,10 +32419,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1801",
+    "id": "game_1801_1775791560088_juje0n",
     "name": "地下城4",
     "nameEn": "Dungeons 4",
     "cover": "",
@@ -32437,10 +32437,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1802",
+    "id": "game_1802_1775791560088_ngfn0d",
     "name": "摩托GP25",
     "nameEn": "MotoGP 25",
     "cover": "",
@@ -32455,10 +32455,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1803",
+    "id": "game_1803_1775791560088_qxax69",
     "name": "永恒之链",
     "nameEn": "Eternal Strands",
     "cover": "",
@@ -32473,10 +32473,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1804",
+    "id": "game_1804_1775791560088_pseily",
     "name": "祇：女神之道",
     "nameEn": "Kunitsu-Gami: Path of the Goddess",
     "cover": "",
@@ -32491,10 +32491,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1805",
+    "id": "game_1805_1775791560088_rd6zfz",
     "name": "龙与地下城：无冬之夜2",
     "nameEn": "Dungeons & Dragons Neverwinter Nights 2: Enhanced Edition",
     "cover": "",
@@ -32509,10 +32509,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1806",
+    "id": "game_1806_1775791560088_5qv4ga",
     "name": "夜勤旅店",
     "nameEn": "Nightmare Shift",
     "cover": "",
@@ -32527,10 +32527,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1807",
+    "id": "game_1807_1775791560088_sx9p31",
     "name": "勒芒终极赛",
     "nameEn": "Le Mans Ultimate",
     "cover": "",
@@ -32545,10 +32545,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1808",
+    "id": "game_1808_1775791560088_qcmt49",
     "name": "狂野星球复仇记",
     "nameEn": "Revenge of the Savage Planet",
     "cover": "",
@@ -32563,10 +32563,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1809",
+    "id": "game_1809_1775791560088_1bpemr",
     "name": "地狱即我们",
     "nameEn": "Hell is Us",
     "cover": "",
@@ -32581,10 +32581,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1810",
+    "id": "game_1810_1775791560088_4er46t",
     "name": "机甲战魔 神话之裔",
     "nameEn": "Daemon X Machina: Titanic Scion",
     "cover": "",
@@ -32599,10 +32599,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1811",
+    "id": "game_1811_1775791560088_t44kg2",
     "name": "末日的回声",
     "nameEn": "Echoes of the End",
     "cover": "",
@@ -32617,10 +32617,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1812",
+    "id": "game_1812_1775791560088_cn9we9",
     "name": "牧场物语 来吧！风之繁华集市",
     "nameEn": "STORY OF SEASONS: Grand Bazaar",
     "cover": "",
@@ -32635,10 +32635,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1813",
+    "id": "game_1813_1775791560088_9vr2rx",
     "name": "灾后修复师",
     "nameEn": "RoadCraft Rebuild Edition",
     "cover": "",
@@ -32653,10 +32653,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1814",
+    "id": "game_1814_1775791560088_lavqog",
     "name": "战争机器：重装上阵",
     "nameEn": "Gears of War: Reloaded",
     "cover": "",
@@ -32671,10 +32671,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1815",
+    "id": "game_1815_1775791560088_0vq1c7",
     "name": "终天教团",
     "nameEn": "SHUTEN ORDER",
     "cover": "",
@@ -32689,10 +32689,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1816",
+    "id": "game_1816_1775791560088_m61342",
     "name": "十字军骑士",
     "nameEn": "Knights of the Crusades",
     "cover": "",
@@ -32707,10 +32707,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1817",
+    "id": "game_1817_1775791560088_hhm83z",
     "name": "最高指挥2",
     "nameEn": "Supreme Commander 2",
     "cover": "",
@@ -32725,10 +32725,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1818",
+    "id": "game_1818_1775791560088_jyiejw",
     "name": "异形：盗贼入侵",
     "nameEn": "Alien: Rogue Incursion Evolved Edition",
     "cover": "",
@@ -32743,10 +32743,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1819",
+    "id": "game_1819_1775791560088_7qdtvl",
     "name": "恶魔之刃",
     "nameEn": "DAIMON BLADES",
     "cover": "",
@@ -32761,10 +32761,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1820",
+    "id": "game_1820_1775791560088_n6av5b",
     "name": "无尽帝国2",
     "nameEn": "ENDLESS Legend 2",
     "cover": "",
@@ -32779,10 +32779,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1821",
+    "id": "game_1821_1775791560088_sibl2m",
     "name": "消防模拟：火苗燃动",
     "nameEn": "Firefighting Simulator: Ignite",
     "cover": "",
@@ -32797,10 +32797,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1822",
+    "id": "game_1822_1775791560088_5ye4u4",
     "name": "至高天",
     "nameEn": "Empyreal",
     "cover": "",
@@ -32815,10 +32815,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1823",
+    "id": "game_1823_1775791560088_7aefiu",
     "name": "图灵完备",
     "nameEn": "uring Complete",
     "cover": "",
@@ -32833,10 +32833,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1824",
+    "id": "game_1824_1775791560088_z9mjmj",
     "name": "骗子酒吧",
     "nameEn": "Liar's Bar",
     "cover": "",
@@ -32851,10 +32851,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1825",
+    "id": "game_1825_1775791560088_5hiuif",
     "name": "恐龙世界",
     "nameEn": "Dinosaur World",
     "cover": "",
@@ -32869,10 +32869,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1826",
+    "id": "game_1826_1775791560088_55r141",
     "name": "地狱边境",
     "nameEn": "Limbo",
     "cover": "",
@@ -32887,10 +32887,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1827",
+    "id": "game_1827_1775791560088_6llty9",
     "name": "合金弹头X",
     "nameEn": "METAL SLUG X",
     "cover": "",
@@ -32905,10 +32905,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1828",
+    "id": "game_1828_1775791560088_mxlhj3",
     "name": "风中行者",
     "nameEn": "Windblown",
     "cover": "",
@@ -32923,10 +32923,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1829",
+    "id": "game_1829_1775791560088_sw39zb",
     "name": "愤怒的小鸟：季节版",
     "nameEn": "Angry Birds Seasons",
     "cover": "",
@@ -32941,10 +32941,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1830",
+    "id": "game_1830_1775791560088_oh3dvc",
     "name": "不动即死",
     "nameEn": "Move or Die",
     "cover": "",
@@ -32959,10 +32959,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1831",
+    "id": "game_1831_1775791560088_venuv9",
     "name": "八尺様",
     "nameEn": "Hachishaku",
     "cover": "",
@@ -32977,10 +32977,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1832",
+    "id": "game_1832_1775791560088_w0kxoc",
     "name": "兵团突击：现代战争",
     "nameEn": "Operation: Polygon Storm",
     "cover": "",
@@ -32995,10 +32995,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1833",
+    "id": "game_1833_1775791560088_2yy4d0",
     "name": "壁纸引擎",
     "nameEn": "Wallpaper Engine",
     "cover": "",
@@ -33013,10 +33013,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1834",
+    "id": "game_1834_1775791560088_p4j8fp",
     "name": "霸王2",
     "nameEn": "Overlord II",
     "cover": "",
@@ -33031,10 +33031,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1835",
+    "id": "game_1835_1775791560088_0w6kyv",
     "name": "巴别塔圣歌",
     "nameEn": "Chants of Sennaar",
     "cover": "",
@@ -33049,10 +33049,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1836",
+    "id": "game_1836_1775791560088_is6z90",
     "name": "特技摩托：崛起",
     "nameEn": "Trials Rising",
     "cover": "",
@@ -33067,10 +33067,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1837",
+    "id": "game_1837_1775791560088_t2esff",
     "name": "双人骑行",
     "nameEn": "Try To Drive",
     "cover": "",
@@ -33085,10 +33085,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1838",
+    "id": "game_1838_1775791560088_qqofkd",
     "name": "星链：阿特拉斯之战",
     "nameEn": "Starlink: Battle for Atlas",
     "cover": "",
@@ -33103,10 +33103,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1839",
+    "id": "game_1839_1775791560088_wmsz5x",
     "name": "飙酷车神2",
     "nameEn": "The Crew 2",
     "cover": "",
@@ -33121,10 +33121,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1840",
+    "id": "game_1840_1775791560088_1ou5sr",
     "name": "阴暗森林",
     "nameEn": "Darkwood",
     "cover": "",
@@ -33139,10 +33139,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1841",
+    "id": "game_1841_1775791560088_wiq4vw",
     "name": "整蛊邻居：归来",
     "nameEn": "Neighbours back From Hell",
     "cover": "",
@@ -33157,10 +33157,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1842",
+    "id": "game_1842_1775791560088_oa5bf7",
     "name": "斩妖除魔重制版",
     "nameEn": "Painkiller",
     "cover": "",
@@ -33175,10 +33175,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1843",
+    "id": "game_1843_1775791560088_3h4bk1",
     "name": "触及",
     "nameEn": "Reach VR",
     "cover": "",
@@ -33193,10 +33193,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1844",
+    "id": "game_1844_1775791560088_9lgfr1",
     "name": "全民高尔夫 环球之旅",
     "nameEn": "EVERYBODY'S GOLF HOT SHOTS",
     "cover": "",
@@ -33211,10 +33211,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1845",
+    "id": "game_1845_1775791560088_oni1oc",
     "name": "窒爱",
     "nameEn": "SUFFOCATE",
     "cover": "",
@@ -33229,10 +33229,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1846",
+    "id": "game_1846_1775791560088_4kk93s",
     "name": "雾锁温泉",
     "nameEn": "Misty Onsen",
     "cover": "",
@@ -33247,10 +33247,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1847",
+    "id": "game_1847_1775791560088_j12je6",
     "name": "双截龙再临",
     "nameEn": "Double Dragon Revive",
     "cover": "",
@@ -33265,10 +33265,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1848",
+    "id": "game_1848_1775791560088_trgq2x",
     "name": "受折磨的灵魂2",
     "nameEn": "Tormented Souls 2",
     "cover": "",
@@ -33283,10 +33283,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1849",
+    "id": "game_1849_1775791560088_4s60r6",
     "name": "梦幻主义",
     "nameEn": "Onirism",
     "cover": "",
@@ -33301,10 +33301,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1850",
+    "id": "game_1850_1775791560088_04finy",
     "name": "光明之响：龙奏回音",
     "nameEn": "Shining Resonance Refrain",
     "cover": "",
@@ -33319,10 +33319,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1851",
+    "id": "game_1851_1775791560088_h3w550",
     "name": "沉寂回响",
     "nameEn": "Somber Echoes",
     "cover": "",
@@ -33337,10 +33337,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1852",
+    "id": "game_1852_1775791560088_7ifyz3",
     "name": "埃里克斯霍姆：被偷走的梦",
     "nameEn": "Eriksholm: The Stolen Dream",
     "cover": "",
@@ -33355,10 +33355,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1853",
+    "id": "game_1853_1775791560088_p3yljl",
     "name": "爬行实验室",
     "nameEn": "Crawling Lab",
     "cover": "",
@@ -33373,10 +33373,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1854",
+    "id": "game_1854_1775791560088_di0eeb",
     "name": "闹鬼避难所/逃离诡秘庇护所",
     "nameEn": "Escape From Blue Shelter",
     "cover": "",
@@ -33391,10 +33391,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1855",
+    "id": "game_1855_1775791560088_fnvcz3",
     "name": "黎明杀机终极版",
     "nameEn": "Dead by Daylight Ultimate Edition",
     "cover": "",
@@ -33409,10 +33409,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1856",
+    "id": "game_1856_1775791560088_swxev6",
     "name": "破坏创造王",
     "nameEn": "Wreckreation",
     "cover": "",
@@ -33427,10 +33427,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1857",
+    "id": "game_1857_1775791560088_lupvg9",
     "name": "超级电影大亨",
     "nameEn": "Super Movie Tycoon",
     "cover": "",
@@ -33445,10 +33445,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1858",
+    "id": "game_1858_1775791560088_bk999b",
     "name": "无尽传奇：复刻版",
     "nameEn": "Tales of Xillia Remastered",
     "cover": "",
@@ -33463,10 +33463,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1859",
+    "id": "game_1859_1775791560088_78aav2",
     "name": "黑暗任务4",
     "nameEn": "Dark Quest 4",
     "cover": "",
@@ -33481,10 +33481,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1860",
+    "id": "game_1860_1775791560088_nkpuy8",
     "name": "房车漫旅",
     "nameEn": "Caravanners",
     "cover": "",
@@ -33499,10 +33499,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1861",
+    "id": "game_1861_1775791560088_mnjcqi",
     "name": "古老传说：多米努斯",
     "nameEn": "Tales of Old: Dominus",
     "cover": "",
@@ -33517,10 +33517,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1862",
+    "id": "game_1862_1775791560088_g31jht",
     "name": "合金天使：堕入伊甸",
     "nameEn": "METAL EDEN",
     "cover": "",
@@ -33535,10 +33535,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1863",
+    "id": "game_1863_1775791560088_ngl9nj",
     "name": "尼霍克职业滑板3+4重置版（英文版）",
     "nameEn": "Tony Hawk's Pro Skater 3+4",
     "cover": "",
@@ -33553,10 +33553,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1864",
+    "id": "game_1864_1775791560088_x5p6wx",
     "name": "绝对魔权",
     "nameEn": "Absolum",
     "cover": "",
@@ -33571,10 +33571,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1865",
+    "id": "game_1865_1775791560088_xgqrj7",
     "name": "泡姆泡姆",
     "nameEn": "POPUCOM",
     "cover": "",
@@ -33589,10 +33589,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1866",
+    "id": "game_1866_1775791560088_lm8u3w",
     "name": "超英派遣中心",
     "nameEn": "Dispatch",
     "cover": "",
@@ -33607,10 +33607,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1867",
+    "id": "game_1867_1775791560088_ljiwzr",
     "name": "竞速之夜",
     "nameEn": "Speed Night",
     "cover": "",
@@ -33625,10 +33625,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1868",
+    "id": "game_1868_1775791560088_r61jzg",
     "name": "镜头人生-模特写真馆",
     "nameEn": "Photo Studio Simulator",
     "cover": "",
@@ -33643,10 +33643,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1869",
+    "id": "game_1869_1775791560088_fac3hd",
     "name": "旅游巴士模拟",
     "nameEn": "Tourist Bus Simulator",
     "cover": "",
@@ -33661,10 +33661,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1870",
+    "id": "game_1870_1775791560088_qxcr5b",
     "name": "生化女神：末日开端",
     "nameEn": "Bio Goddess : Doomsday Begins",
     "cover": "",
@@ -33679,10 +33679,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1871",
+    "id": "game_1871_1775791560088_dov367",
     "name": "料理模拟器_烹饪模拟器",
     "nameEn": "Cooking Simulator",
     "cover": "",
@@ -33697,10 +33697,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1872",
+    "id": "game_1872_1775791560088_768w2l",
     "name": "首都高赛车",
     "nameEn": "Tokyo Xtreme Racer",
     "cover": "",
@@ -33715,10 +33715,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1873",
+    "id": "game_1873_1775791560088_t84mg6",
     "name": "迷途狗爪",
     "nameEn": "Lost Paws",
     "cover": "",
@@ -33733,10 +33733,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1874",
+    "id": "game_1874_1775791560088_pejyvx",
     "name": "火星求生：重制版",
     "nameEn": "Surviving Mars: Relaunched",
     "cover": "",
@@ -33751,10 +33751,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1875",
+    "id": "game_1875_1775791560088_hnys0j",
     "name": "懊悔谷",
     "nameEn": "Rue Valley",
     "cover": "",
@@ -33769,10 +33769,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1876",
+    "id": "game_1876_1775791560088_i2todw",
     "name": "从前从前有个块魂",
     "nameEn": "Once Upon A KATAMARI",
     "cover": "",
@@ -33787,10 +33787,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1877",
+    "id": "game_1877_1775791560088_der66l",
     "name": "动物栏：桌面牧场",
     "nameEn": "Tiny Pasture",
     "cover": "",
@@ -33805,10 +33805,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1878",
+    "id": "game_1878_1775791560088_6xoud5",
     "name": "热力纳斯卡25（官方英文）",
     "nameEn": "NASCAR 25",
     "cover": "",
@@ -33823,10 +33823,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1879",
+    "id": "game_1879_1775791560088_3mnbny",
     "name": "闪电十一人:英雄们的胜利之路",
     "nameEn": "INAZUMA ELEVEN: Victory Roa",
     "cover": "",
@@ -33841,10 +33841,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1880",
+    "id": "game_1880_1775791560088_xcny78",
     "name": "所有者",
     "nameEn": "Possessors",
     "cover": "",
@@ -33859,10 +33859,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1881",
+    "id": "game_1881_1775791560088_yqzv7x",
     "name": "我的小柯基",
     "nameEn": "My Little Puppy",
     "cover": "",
@@ -33877,10 +33877,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1882",
+    "id": "game_1882_1775791560088_v2f8sb",
     "name": "伊藤润二狂热：无止的囹圄",
     "nameEn": "Junji Ito Maniac: An Infinite Gaol",
     "cover": "",
@@ -33895,10 +33895,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1883",
+    "id": "game_1883_1775791560088_li6ulg",
     "name": "绝命时刻",
     "nameEn": "Zero Hour",
     "cover": "",
@@ -33913,10 +33913,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1884",
+    "id": "game_1884_1775791560088_c24ds5",
     "name": "指挥大师",
     "nameEn": "Master of Command",
     "cover": "",
@@ -33931,10 +33931,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1885",
+    "id": "game_1885_1775791560088_1vwflp",
     "name": "敌军前线",
     "nameEn": "Enemy Front",
     "cover": "",
@@ -33949,10 +33949,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1886",
+    "id": "game_1886_1775791560088_u12fxr",
     "name": "真女神转生3：HD重置版",
     "nameEn": "Shin Megami Tensei III Nocturne HD Remaster",
     "cover": "",
@@ -33967,10 +33967,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1887",
+    "id": "game_1887_1775791560088_fg2pde",
     "name": "灰雨钢锋",
     "nameEn": "Of Ash and Steel",
     "cover": "",
@@ -33985,10 +33985,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1888",
+    "id": "game_1888_1775791560088_9bphb4",
     "name": "汽车竞速计划",
     "nameEn": "Project Motor Racing",
     "cover": "",
@@ -34003,10 +34003,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1889",
+    "id": "game_1889_1775791560088_oxh8zt",
     "name": "卡牌生存：热带岛屿",
     "nameEn": "Card Survival: Tropical Island",
     "cover": "",
@@ -34021,10 +34021,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1890",
+    "id": "game_1890_1775791560088_bp2fm0",
     "name": "无眠梦魇",
     "nameEn": "SLEEP AWAKE",
     "cover": "",
@@ -34039,10 +34039,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1891",
+    "id": "game_1891_1775791560088_wbi5bz",
     "name": "我独自升级：起立·觉醒",
     "nameEn": "Solo Leveling: ARISE OVERDRIVE",
     "cover": "",
@@ -34057,10 +34057,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1892",
+    "id": "game_1892_1775791560088_bbjy43",
     "name": "完美音浪",
     "nameEn": "Hi-Fi RUSH",
     "cover": "",
@@ -34075,10 +34075,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1893",
+    "id": "game_1893_1775791560088_vkkt8h",
     "name": "蛮荒计划",
     "nameEn": "FEROCIOUS",
     "cover": "",
@@ -34093,10 +34093,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1894",
+    "id": "game_1894_1775791560088_4jq7mz",
     "name": "云之国",
     "nameEn": "Cloudheim",
     "cover": "",
@@ -34111,10 +34111,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1895",
+    "id": "game_1895_1775791560088_wb4dea",
     "name": "天朝上国",
     "nameEn": "Celestial Empire",
     "cover": "",
@@ -34129,10 +34129,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1896",
+    "id": "game_1896_1775791560088_54mjul",
     "name": "进化2",
     "nameEn": "Jurassic World Evolution 2",
     "cover": "",
@@ -34147,10 +34147,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1897",
+    "id": "game_1897_1775791560088_qz2uyb",
     "name": "魂斗罗初代：重制版",
     "nameEn": "Contra: Operation Galuga",
     "cover": "",
@@ -34165,10 +34165,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1898",
+    "id": "game_1898_1775791560088_nb8gdr",
     "name": "极速俱乐部：无限2终极版",
     "nameEn": "Gear.Club Unlimited 2 - Ultimate Edition",
     "cover": "",
@@ -34183,10 +34183,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1899",
+    "id": "game_1899_1775791560088_m3gouv",
     "name": "荒原先驱",
     "nameEn": "PIONER",
     "cover": "",
@@ -34201,10 +34201,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1900",
+    "id": "game_1900_1775791560088_n731se",
     "name": "王之凝视",
     "nameEn": "The King is Watching",
     "cover": "",
@@ -34219,10 +34219,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1901",
+    "id": "game_1901_1775791560088_26hus5",
     "name": "索尼克缤纷色彩：究极版",
     "nameEn": "Sonic Colors: Ultimate",
     "cover": "",
@@ -34237,10 +34237,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1902",
+    "id": "game_1902_1775791560088_4rz2or",
     "name": "时间旅者：重生曙光",
     "nameEn": "Cronos: The New Dawn",
     "cover": "",
@@ -34255,10 +34255,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1903",
+    "id": "game_1903_1775791560088_08pzl3",
     "name": "爆发：恐怖阴影",
     "nameEn": "Outbreak: Shades of Horror",
     "cover": "",
@@ -34273,10 +34273,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1904",
+    "id": "game_1904_1775791560088_xamuu6",
     "name": "黑神话：悟空",
     "nameEn": "Black Myth: Wukong",
     "cover": "",
@@ -34291,10 +34291,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1905",
+    "id": "game_1905_1775791560088_dtg11i",
     "name": "检疫区：最后一站",
     "nameEn": "Quarantine Zone: The Last Check",
     "cover": "",
@@ -34309,10 +34309,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1906",
+    "id": "game_1906_1775791560088_l35khz",
     "name": "鲁特里一家死了",
     "nameEn": "The Roottrees are Dead",
     "cover": "",
@@ -34327,10 +34327,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1907",
+    "id": "game_1907_1775791560088_dblzsj",
     "name": "我的世界：地下城",
     "nameEn": "Minecraft Dungeons",
     "cover": "",
@@ -34345,10 +34345,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1908",
+    "id": "game_1908_1775791560088_sqvyxi",
     "name": "生灵重塑",
     "nameEn": "REANIMAL",
     "cover": "",
@@ -34363,10 +34363,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1909",
+    "id": "game_1909_1775791560088_8hh3uw",
     "name": "高能人生2",
     "nameEn": "High On Life 2",
     "cover": "",
@@ -34381,10 +34381,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1910",
+    "id": "game_1910_1775791560088_hd72ry",
     "name": "大头盔英雄",
     "nameEn": "Big Helmet Heroes",
     "cover": "",
@@ -34399,10 +34399,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1911",
+    "id": "game_1911_1775791560088_0nk031",
     "name": "捣蛋鹅/无题大鹅模拟",
     "nameEn": "Untitled Goose Game",
     "cover": "",
@@ -34417,10 +34417,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1912",
+    "id": "game_1912_1775791560088_se6ead",
     "name": "孤山独影",
     "nameEn": "Cairn",
     "cover": "",
@@ -34435,10 +34435,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1913",
+    "id": "game_1913_1775791560088_jya7zi",
     "name": "星际裂变",
     "nameEn": "StarRupture",
     "cover": "",
@@ -34453,10 +34453,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1914",
+    "id": "game_1914_1775791560088_e08rp4",
     "name": "战场兄弟",
     "nameEn": "/Battle Brothers",
     "cover": "",
@@ -34471,10 +34471,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1915",
+    "id": "game_1915_1775791560088_vfq94b",
     "name": "咒语旅团",
     "nameEn": "The Spell Brigade",
     "cover": "",
@@ -34489,10 +34489,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1916",
+    "id": "game_1916_1775791560088_fibnhc",
     "name": "嗜血之王：崛起",
     "nameEn": "Vampires: Bloodlord Rising",
     "cover": "",
@@ -34507,10 +34507,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1917",
+    "id": "game_1917_1775791560088_xyyaoa",
     "name": "忍者外传：怒之羁绊",
     "nameEn": "NINJA GAIDEN: Ragebound",
     "cover": "",
@@ -34525,10 +34525,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1918",
+    "id": "game_1918_1775791560088_7brhvv",
     "name": "索尼克 未知边境",
     "nameEn": "Sonic Frontiers",
     "cover": "",
@@ -34543,10 +34543,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1919",
+    "id": "game_1919_1775791560088_2489s9",
     "name": "血源诅咒",
     "nameEn": "Bloodborne",
     "cover": "",
@@ -34561,10 +34561,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1920",
+    "id": "game_1920_1775791560088_mfhu5f",
     "name": "绯夜传奇：重制版",
     "nameEn": "Tales of Berseria Remastered",
     "cover": "",
@@ -34579,10 +34579,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1921",
+    "id": "game_1921_1775791560088_31j1h0",
     "name": "风之马传说",
     "nameEn": "The Legend of Khiimori",
     "cover": "",
@@ -34597,10 +34597,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1922",
+    "id": "game_1922_1775791560088_lbqu9b",
     "name": "阿凡达：潘多拉边境",
     "nameEn": "Avatar: Frontiers of Pandora",
     "cover": "",
@@ -34615,10 +34615,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1923",
+    "id": "game_1923_1775791560088_k6dlks",
     "name": "龙的传人：孤旅",
     "nameEn": "Dragonkin: The Banished",
     "cover": "",
@@ -34633,10 +34633,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1924",
+    "id": "game_1924_1775791560088_tklnx0",
     "name": "喵喵的结合",
     "nameEn": "Mewgenics",
     "cover": "",
@@ -34651,10 +34651,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1925",
+    "id": "game_1925_1775791560088_s1jx0h",
     "name": "前往中世纪",
     "nameEn": "Going Medieval",
     "cover": "",
@@ -34669,10 +34669,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1926",
+    "id": "game_1926_1775791560088_8jowe7",
     "name": "托马斯和朋友：多多岛奇观",
     "nameEn": "Thomas & Friends: Wonders of Sodor",
     "cover": "",
@@ -34687,10 +34687,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1927",
+    "id": "game_1927_1775791560088_gt35ze",
     "name": "加勒比传奇：海盗时代",
     "nameEn": "Caribbean Legend: Age of Pirates",
     "cover": "",
@@ -34705,10 +34705,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1928",
+    "id": "game_1928_1775791560088_dxblmm",
     "name": "红色沙漠",
     "nameEn": "Crimson Desert",
     "cover": "",
@@ -34723,10 +34723,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1929",
+    "id": "game_1929_1775791560088_38uum6",
     "name": "1941反击战",
     "nameEn": "",
     "cover": "",
@@ -34741,10 +34741,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1930",
+    "id": "game_1930_1775791560088_kd5fn9",
     "name": "1942反击战",
     "nameEn": "",
     "cover": "",
@@ -34759,10 +34759,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1931",
+    "id": "game_1931_1775791560088_nlcp5b",
     "name": "1943-中途岛决战",
     "nameEn": "",
     "cover": "",
@@ -34777,10 +34777,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1932",
+    "id": "game_1932_1775791560088_9szr9p",
     "name": "19XX：命运否决战",
     "nameEn": "",
     "cover": "",
@@ -34795,10 +34795,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1933",
+    "id": "game_1933_1775791560088_38evjz",
     "name": "Blood Bros",
     "nameEn": "",
     "cover": "",
@@ -34813,10 +34813,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1934",
+    "id": "game_1934_1775791560088_hqh0b4",
     "name": "幻影战士",
     "nameEn": "",
     "cover": "",
@@ -34831,10 +34831,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1935",
+    "id": "game_1935_1775791560088_4mgmz8",
     "name": "自由战士",
     "nameEn": "",
     "cover": "",
@@ -34849,10 +34849,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1936",
+    "id": "game_1936_1775791560088_qp1ydl",
     "name": "Q版沙罗曼蛇",
     "nameEn": "",
     "cover": "",
@@ -34867,10 +34867,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1937",
+    "id": "game_1937_1775791560088_c4u0ho",
     "name": "SPY特别计划",
     "nameEn": "",
     "cover": "",
@@ -34885,10 +34885,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1938",
+    "id": "game_1938_1775791560088_akgj94",
     "name": "兽王记",
     "nameEn": "",
     "cover": "",
@@ -34903,10 +34903,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1939",
+    "id": "game_1939_1775791560088_amhfr7",
     "name": "原始岛",
     "nameEn": "",
     "cover": "",
@@ -34921,10 +34921,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1940",
+    "id": "game_1940_1775791560088_cmkfbn",
     "name": "双截龙",
     "nameEn": "",
     "cover": "",
@@ -34939,10 +34939,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1941",
+    "id": "game_1941_1775791560088_hypols",
     "name": "变身忍者",
     "nameEn": "",
     "cover": "",
@@ -34957,10 +34957,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1942",
+    "id": "game_1942_1775791560088_e347bh",
     "name": "古巴战士",
     "nameEn": "",
     "cover": "",
@@ -34975,10 +34975,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1943",
+    "id": "game_1943_1775791560088_2pntyn",
     "name": "名将",
     "nameEn": "",
     "cover": "",
@@ -34993,10 +34993,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1944",
+    "id": "game_1944_1775791560088_vrxoua",
     "name": "吞食天地2：赤壁之战",
     "nameEn": "",
     "cover": "",
@@ -35011,10 +35011,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1945",
+    "id": "game_1945_1775791560088_osmvn5",
     "name": "圆桌骑士",
     "nameEn": "",
     "cover": "",
@@ -35029,10 +35029,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1946",
+    "id": "game_1946_1775791560088_18fd7j",
     "name": "大旋风",
     "nameEn": "",
     "cover": "",
@@ -35047,10 +35047,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1947",
+    "id": "game_1947_1775791560088_toup98",
     "name": "奇迹三合一",
     "nameEn": "",
     "cover": "",
@@ -35065,10 +35065,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1948",
+    "id": "game_1948_1775791560088_pz9ll0",
     "name": "威虎战机-雷暴行动",
     "nameEn": "",
     "cover": "",
@@ -35083,10 +35083,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1949",
+    "id": "game_1949_1775791560088_z3u6i3",
     "name": "对决：坦克大战",
     "nameEn": "",
     "cover": "",
@@ -35101,10 +35101,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1950",
+    "id": "game_1950_1775791560088_ewblsf",
     "name": "忍者神龟",
     "nameEn": "",
     "cover": "",
@@ -35119,10 +35119,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1951",
+    "id": "game_1951_1775791560088_br7qs0",
     "name": "快打旋风",
     "nameEn": "",
     "cover": "",
@@ -35137,10 +35137,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1952",
+    "id": "game_1952_1775791560088_ynt5pv",
     "name": "怒",
     "nameEn": "",
     "cover": "",
@@ -35155,10 +35155,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1953",
+    "id": "game_1953_1775791560088_dpdhbz",
     "name": "恐龙时代",
     "nameEn": "",
     "cover": "",
@@ -35173,10 +35173,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1954",
+    "id": "game_1954_1775791560088_02foh8",
     "name": "惩罚者/复仇者",
     "nameEn": "",
     "cover": "",
@@ -35191,10 +35191,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1955",
+    "id": "game_1955_1775791560088_3q7dgt",
     "name": "战国之刃",
     "nameEn": "",
     "cover": "",
@@ -35209,10 +35209,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1956",
+    "id": "game_1956_1775791560088_92n3xk",
     "name": "战斗原始人",
     "nameEn": "",
     "cover": "",
@@ -35227,10 +35227,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1957",
+    "id": "game_1957_1775791560088_43qali",
     "name": "战斧",
     "nameEn": "",
     "cover": "",
@@ -35245,10 +35245,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1958",
+    "id": "game_1958_1775791560088_e2oi9w",
     "name": "打击着",
     "nameEn": "",
     "cover": "",
@@ -35263,10 +35263,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1959",
+    "id": "game_1959_1775791560088_d21oid",
     "name": "捉鬼敢死队/双子星/昆虫世界",
     "nameEn": "",
     "cover": "",
@@ -35281,10 +35281,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1960",
+    "id": "game_1960_1775791560088_2xu34y",
     "name": "捉鬼大师",
     "nameEn": "",
     "cover": "",
@@ -35299,10 +35299,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1961",
+    "id": "game_1961_1775791560088_5ajj7g",
     "name": "摔跤霸王",
     "nameEn": "",
     "cover": "",
@@ -35317,10 +35317,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1962",
+    "id": "game_1962_1775791560088_4zefg6",
     "name": "暴力克星",
     "nameEn": "",
     "cover": "",
@@ -35335,10 +35335,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1963",
+    "id": "game_1963_1775791560088_d9k5xk",
     "name": "沙罗曼蛇",
     "nameEn": "",
     "cover": "",
@@ -35353,10 +35353,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1964",
+    "id": "game_1964_1775791560088_hzb46w",
     "name": "海底大战争",
     "nameEn": "",
     "cover": "",
@@ -35371,10 +35371,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1965",
+    "id": "game_1965_1775791560088_nqfn9b",
     "name": "特殊部队",
     "nameEn": "",
     "cover": "",
@@ -35389,10 +35389,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1966",
+    "id": "game_1966_1775791560088_ci9tae",
     "name": "电神魔傀",
     "nameEn": "",
     "cover": "",
@@ -35407,10 +35407,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1967",
+    "id": "game_1967_1775791560088_zfikgt",
     "name": "绿色兵团",
     "nameEn": "",
     "cover": "",
@@ -35425,10 +35425,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1968",
+    "id": "game_1968_1775791560088_4ywaed",
     "name": "绿色兵团2",
     "nameEn": "",
     "cover": "",
@@ -35443,10 +35443,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1969",
+    "id": "game_1969_1775791560088_e1d5uq",
     "name": "群殴",
     "nameEn": "",
     "cover": "",
@@ -35461,10 +35461,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1970",
+    "id": "game_1970_1775791560088_dm1h4r",
     "name": "联合大作战",
     "nameEn": "",
     "cover": "",
@@ -35479,10 +35479,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1971",
+    "id": "game_1971_1775791560088_rkzcfb",
     "name": "脱狱-战俘",
     "nameEn": "",
     "cover": "",
@@ -35497,10 +35497,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1972",
+    "id": "game_1972_1775791560088_pio198",
     "name": "花式桌球",
     "nameEn": "",
     "cover": "",
@@ -35515,10 +35515,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1973",
+    "id": "game_1973_1775791560088_0nzkct",
     "name": "落日骑士",
     "nameEn": "",
     "cover": "",
@@ -35533,10 +35533,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1974",
+    "id": "game_1974_1775791560088_989h2d",
     "name": "街头霸王",
     "nameEn": "",
     "cover": "",
@@ -35551,10 +35551,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1975",
+    "id": "game_1975_1775791560088_phearu",
     "name": "街头霸王2：天下斗士",
     "nameEn": "",
     "cover": "",
@@ -35569,10 +35569,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1976",
+    "id": "game_1976_1775791560088_alu6hs",
     "name": "街头霸王2：四大天王",
     "nameEn": "",
     "cover": "",
@@ -35587,10 +35587,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1977",
+    "id": "game_1977_1775791560088_ng3q4a",
     "name": "西游降魔录",
     "nameEn": "",
     "cover": "",
@@ -35605,10 +35605,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1978",
+    "id": "game_1978_1775791560088_7cp4vx",
     "name": "豪血侍一族",
     "nameEn": "",
     "cover": "",
@@ -35623,10 +35623,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1979",
+    "id": "game_1979_1775791560088_elzffq",
     "name": "赤色要塞/特殊部队",
     "nameEn": "",
     "cover": "",
@@ -35641,10 +35641,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1980",
+    "id": "game_1980_1775791560088_9qxrzs",
     "name": "超级魂斗罗",
     "nameEn": "",
     "cover": "",
@@ -35659,10 +35659,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1981",
+    "id": "game_1981_1775791560088_q1r49f",
     "name": "钢铁要塞",
     "nameEn": "",
     "cover": "",
@@ -35677,10 +35677,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1982",
+    "id": "game_1982_1775791560088_hkymip",
     "name": "铁钩船长",
     "nameEn": "",
     "cover": "",
@@ -35695,10 +35695,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1983",
+    "id": "game_1983_1775791560088_8v380n",
     "name": "雌虎战机/美国海军",
     "nameEn": "",
     "cover": "",
@@ -35713,10 +35713,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1984",
+    "id": "game_1984_1775791560088_wceb9u",
     "name": "雪人兄弟",
     "nameEn": "",
     "cover": "",
@@ -35731,10 +35731,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1985",
+    "id": "game_1985_1775791560088_23x2es",
     "name": "饿流祸",
     "nameEn": "",
     "cover": "",
@@ -35749,10 +35749,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1986",
+    "id": "game_1986_1775791560088_fjsuze",
     "name": "魂斗罗",
     "nameEn": "",
     "cover": "",
@@ -35767,10 +35767,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1987",
+    "id": "game_1987_1775791560088_yciar6",
     "name": "魔法警备队",
     "nameEn": "",
     "cover": "",
@@ -35785,10 +35785,10 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   },
   {
-    "id": "game_1988",
+    "id": "game_1988_1775791560088_b6ohz5",
     "name": "龙行忍者",
     "nameEn": "",
     "cover": "",
@@ -35803,7 +35803,7 @@ const importedGames = [
     "isDrm": false,
     "downloadsWeb": 0,
     "downloadsApp": 0,
-    "updateTime": 1775807526357
+    "updateTime": 1775791560088
   }
 ];
 
