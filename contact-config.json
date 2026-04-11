@@ -1,0 +1,26 @@
+{
+  "title": "联系我们",
+  "items": [
+    {
+      "type": "qq",
+      "label": "官方QQ群",
+      "value": "123456789"
+    },
+    {
+      "type": "email",
+      "label": "官方邮箱",
+      "value": "support@gamebox.com"
+    },
+    {
+      "type": "wechat",
+      "label": "微信公众号",
+      "value": "GameBox官方"
+    },
+    {
+      "type": "phone",
+      "label": "客服电话",
+      "value": "400-123-4567"
+    }
+  ],
+  "updateTime": "2026-03-27T12:00:00.000Z"
+}

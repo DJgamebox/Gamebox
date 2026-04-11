@@ -1,0 +1,30 @@
+{
+  "categories": [
+    {"id": "动作", "name": "动作", "icon": "fa-running"},
+    {"id": "冒险", "name": "冒险", "icon": "fa-compass"},
+    {"id": "策略", "name": "策略", "icon": "fa-chess"},
+    {"id": "射击", "name": "射击", "icon": "fa-crosshairs"},
+    {"id": "角色扮演", "name": "角色扮演", "icon": "fa-dragon"},
+    {"id": "模拟经营", "name": "模拟经营", "icon": "fa-city"},
+    {"id": "体育竞技", "name": "体育竞技", "icon": "fa-football-ball"},
+    {"id": "赛车", "name": "赛车", "icon": "fa-car"},
+    {"id": "恐怖惊悚", "name": "恐怖惊悚", "icon": "fa-ghost"},
+    {"id": "益智解谜", "name": "益智解谜", "icon": "fa-puzzle-piece"},
+    {"id": "骑马与砍杀", "name": "骑马与砍杀", "icon": "fa-horse"},
+    {"id": "全面战争", "name": "全面战争", "icon": "fa-chess-board"},
+    {"id": "即时战略", "name": "即时战略", "icon": "fa-chess-knight"},
+    {"id": "格斗", "name": "格斗", "icon": "fa-fist-raised"},
+    {"id": "街机怀旧", "name": "街机怀旧", "icon": "fa-gamepad"},
+    {"id": "D加密", "name": "D加密的游戏", "icon": "fa-lock", "special": true}
+  ],
+  "tools": [
+    {"id": "runtime", "name": "游戏运行环境库", "icon": "fa-cogs", "url": ""},
+    {"id": "driver", "name": "显卡驱动更新", "icon": "fa-desktop", "url": ""},
+    {"id": "trainer", "name": "游戏修改器", "icon": "fa-magic", "url": ""}
+  ],
+  "help": [
+    {"id": "feedback", "name": "意见反馈", "icon": "fa-comment-dots", "action": "showFeedbackModal"},
+    {"id": "contact", "name": "联系我们", "icon": "fa-address-card", "action": "showContactModal"}
+  ],
+  "updateTime": "2026-03-27T13:00:00.000Z"
+}

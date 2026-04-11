@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Allow: /games/
+Disallow: /admin/
+Disallow: /api/
+
+Sitemap: https://project-dyazn.vercel.app/sitemap.xml
