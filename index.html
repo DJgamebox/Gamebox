@@ -3133,8 +3133,18 @@
       renderGames();
     }
 
-    // 获取游戏下载点击次数
+    // 获取游戏下载点击次数（优先使用服务器统计，其次使用本地存储）
     function getDownloadClicks(gameId) {
+      // 先从游戏数据中获取服务器统计的点击数
+      const game = games.find(g => g.id === gameId);
+      if (game) {
+        // 优先使用 downloadsWeb（网页端下载次数），其次使用 downloadsApp，最后使用 hot
+        const serverClicks = game.downloadsWeb || game.downloadsApp || game.hot || 0;
+        if (serverClicks > 0) {
+          return serverClicks;
+        }
+      }
+      // 如果服务器没有数据，使用本地存储作为备选
       const clicks = localStorage.getItem('clicks_' + gameId);
       return clicks ? parseInt(clicks, 10) : 0;
     }
