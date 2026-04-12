@@ -41,6 +41,25 @@
             line-height: 1.6;
             transition: background 0.3s, color 0.3s;
         }
+        .loading-overlay {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: var(--bg-dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.3s;
+        }
+        .loading-overlay.hidden { opacity: 0; pointer-events: none; }
+        .loading-spinner {
+            width: 40px; height: 40px;
+            border: 3px solid var(--border-color);
+            border-top-color: var(--accent-blue);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
         .header {
             background: var(--bg-light);
             padding: 15px 30px;
@@ -446,6 +465,9 @@
     </style>
 </head>
 <body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner"></div>
+    </div>
     <header class="header">
         <div class="header-left">
             <img src="../favicon.png" alt="游戏盒子">
@@ -515,14 +537,14 @@
         
         <div class="download-section">
             <h2 class="section-title"><i class="fas fa-download"></i>游戏下载</h2>
-            <div class="download-buttons">
+            <div class="download-buttons" id="downloadButtons">
                 DOWNLOAD_LINKS
             </div>
         </div>
         
         <div class="game-description">
             <h2><i class="fas fa-info-circle"></i>游戏介绍</h2>
-            <p>使命召唤18：先锋是一款射击游戏。本站提供使命召唤18：先锋百度网盘、迅雷云盘高速下载，绿色免安装中文版，解压即可玩。</p>
+            <p id="gameDesc">使命召唤18：先锋是一款射击游戏。本站提供使命召唤18：先锋百度网盘、迅雷云盘高速下载，绿色免安装中文版，解压即可玩。</p>
         </div>
         
         <a href="../" class="back-link" id="backLink"><i class="fas fa-arrow-left"></i>返回游戏列表</a>
@@ -718,6 +740,107 @@
         
         // 先加载游戏系列，然后添加免责声明
         loadGameSeries().then(addDisclaimer).catch(addDisclaimer);
+
+        // ========== 动态加载最新数据 ==========
+        (async function loadDynamicData() {
+            const gameId = '63';
+            if (!gameId || gameId === '63') {
+                document.getElementById('loadingOverlay').classList.add('hidden');
+                return;
+            }
+            
+            try {
+                console.log('[动态加载] 正在从 Worker API 获取游戏数据...');
+                const response = await fetch('https://api.djgamebox.com/api/games');
+                if (!response.ok) throw new Error('API 请求失败: ' + response.status);
+                
+                const result = await response.json();
+                if (!result.success || !Array.isArray(result.data)) {
+                    throw new Error('API 返回格式错误');
+                }
+                
+                // 查找当前游戏
+                const game = result.data.find(g => String(g.id) === String(gameId));
+                if (!game) {
+                    console.log('[动态加载] 未找到游戏 ID:', gameId);
+                    document.getElementById('loadingOverlay').classList.add('hidden');
+                    return;
+                }
+                
+                console.log('[动态加载] 获取到最新数据:', game.cn || game.name);
+                
+                // 字段映射 (Worker API 格式 -> 网页格式)
+                const name = game.cn || game.name || document.getElementById('gameName').textContent;
+                const nameEn = game.en || game.nameEn || '';
+                const category = game.type || game.category || document.getElementById('gameCategory').textContent;
+                const size = game.size || document.getElementById('gameSize').textContent;
+                const updateTime = game.update || game.updateTime;
+                const desc = game.desc || game.description || '';
+                const cover = game.cover || document.getElementById('gameCover').src;
+                
+                // 更新 DOM
+                document.getElementById('gameName').textContent = name;
+                document.getElementById('breadcrumbName').textContent = name;
+                document.title = name + ' - 游戏下载 - 游戏盒子';
+                
+                if (nameEn) {
+                    document.getElementById('gameNameEn').textContent = nameEn;
+                    document.getElementById('gameNameEn').style.display = 'block';
+                }
+                
+                document.getElementById('gameCategory').textContent = category;
+                document.getElementById('gameSize').textContent = size || '未知';
+                
+                // 格式化更新时间
+                if (updateTime) {
+                    const date = new Date(Number(updateTime));
+                    if (!isNaN(date.getTime())) {
+                        document.getElementById('gameDate').textContent = date.toLocaleDateString('zh-CN');
+                    }
+                }
+                
+                // 更新封面
+                if (cover) {
+                    document.getElementById('gameCover').src = cover;
+                    document.getElementById('gameCover').style.display = 'block';
+                }
+                
+                // 更新下载链接
+                const downloadContainer = document.getElementById('downloadButtons');
+                if (downloadContainer && (game.link1 || game.baiduLink1)) {
+                    let linksHtml = '';
+                    const link1 = game.link1 || game.baiduLink1;
+                    const link2 = game.link2 || game.baiduLink2;
+                    const link3 = game.link3 || game.thunderLink;
+                    
+                    if (link1) {
+                        linksHtml += `<a href="${link1}" target="_blank" class="download-btn baidu"><i class="fas fa-cloud"></i>百度网盘下载</a>`;
+                    }
+                    if (link2) {
+                        linksHtml += `<a href="${link2}" target="_blank" class="download-btn baidu"><i class="fas fa-cloud"></i>百度网盘备用</a>`;
+                    }
+                    if (link3) {
+                        linksHtml += `<a href="${link3}" target="_blank" class="download-btn thunder"><i class="fas fa-bolt"></i>迅雷下载</a>`;
+                    }
+                    
+                    if (linksHtml) {
+                        downloadContainer.innerHTML = linksHtml;
+                    }
+                }
+                
+                // 更新描述
+                if (desc) {
+                    const descEl = document.getElementById('gameDesc');
+                    if (descEl) descEl.textContent = desc;
+                }
+                
+                console.log('[动态加载] 数据更新完成');
+            } catch (err) {
+                console.log('[动态加载] 失败，使用静态数据:', err.message);
+            } finally {
+                document.getElementById('loadingOverlay').classList.add('hidden');
+            }
+        })();
     </script>
 </body>
 </html>
