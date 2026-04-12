@@ -2519,7 +2519,11 @@
               },
               favorite: game.favorite || false,
               isDrm: game.isDrm || false,
-              dateAdded: game.dateAdded || game.update || ''
+              dateAdded: game.dateAdded || game.update || '',
+              updateTime: game.updateTime || game.update || Date.now(),
+              downloadsWeb: game.downloadsWeb || 0,
+              downloadsApp: game.downloadsApp || 0,
+              hot: game.hot || 0
             }));
           localStorage.setItem(CONFIG.localStorageKey, JSON.stringify(games));
           localStorage.setItem(CONFIG.localStorageTimeKey, new Date().toISOString());
