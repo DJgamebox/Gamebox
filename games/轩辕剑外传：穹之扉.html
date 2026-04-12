@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
@@ -260,14 +260,19 @@
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            padding: 15px 30px;
+            padding: 12px 24px;
             border-radius: 6px;
             text-decoration: none;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 500;
             transition: all 0.2s;
             border: 1px solid var(--border-color);
         }
+.download-btn img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
         /* 夜晚模式 - 灰黑色底色 */
         .download-btn.baidu {
             background: #2a2a3e;
@@ -665,13 +670,13 @@
                             let buttonsHtml = '';
                             
                             if (game.link1) {
-                                buttonsHtml += `<a href="${game.link1}" target="_blank" class="download-btn baidu"><i class="fas fa-cloud"></i>百度网盘</a>`;
+                                buttonsHtml += `<a href="${game.link1}" target="_blank" class="download-btn baidu"><img src="../images/baidu-icon.png" alt="">百度网盘</a>`;
                             }
                             if (game.link2) {
-                                buttonsHtml += `<a href="${game.link2}" target="_blank" class="download-btn baidu"><i class="fas fa-cloud"></i>百度网盘2</a>`;
+                                buttonsHtml += `<a href="${game.link2}" target="_blank" class="download-btn baidu"><img src="../images/baidu-icon.png" alt="">百度网盘2</a>`;
                             }
                             if (game.link3) {
-                                buttonsHtml += `<a href="${game.link3}" target="_blank" class="download-btn thunder"><i class="fas fa-bolt"></i>迅雷云盘</a>`;
+                                buttonsHtml += `<a href="${game.link3}" target="_blank" class="download-btn thunder"><img src="../images/xunlei-icon.png" alt="">迅雷云盘</a>`;
                             }
                             
                             if (buttonsHtml) {
@@ -827,3 +832,4 @@
     </script>
 </body>
 </html>
+
