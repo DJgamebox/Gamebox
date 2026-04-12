@@ -3100,31 +3100,44 @@
       const sortType = document.getElementById('sortSelect').value;
       
       if (sortType === 'name') {
-        // 按字母排序
+        // 按字母排序：数字转换为拼音首字母（1→Y, 2→E, 3→S, 4→S, 5→W, 6→L, 7→Q, 8→B, 9→J, 0→L）
+        const numToPinyin = {
+          '0': 'L', '1': 'Y', '2': 'E', '3': 'S', '4': 'S',
+          '5': 'W', '6': 'L', '7': 'Q', '8': 'B', '9': 'J'
+        };
         filteredGames.sort((a, b) => {
-          const nameA = (a.name || '').toLowerCase();
-          const nameB = (b.name || '').toLowerCase();
-          return nameA.localeCompare(nameB, 'zh-CN');
+          const getSortKey = (name) => {
+            if (!name) return '';
+            const firstChar = name.charAt(0);
+            // 数字转拼音首字母
+            if (numToPinyin[firstChar]) {
+              return numToPinyin[firstChar];
+            }
+            return firstChar.toLowerCase();
+          };
+          const keyA = getSortKey(a.cn || a.name);
+          const keyB = getSortKey(b.cn || b.name);
+          return keyA.localeCompare(keyB, 'zh-CN');
         });
       } else if (sortType === 'update') {
-        // 按更新时间排序（最新的在前）
+        // 按更新时间排序（下载链接修改时间，最新的在前）
         filteredGames.sort((a, b) => {
-          // 支持多种字段名：updateTime (timestamp), dateAdded (string), updatedAt/createdAt
-          const timeA = a.updateTime || new Date(a.dateAdded || a.updatedAt || 0).getTime();
-          const timeB = b.updateTime || new Date(b.dateAdded || b.updatedAt || 0).getTime();
+          // 优先使用 updateTime（下载链接修改时间），其次使用 dateAdded
+          const timeA = a.updateTime || a.dateAdded || 0;
+          const timeB = b.updateTime || b.dateAdded || 0;
           return timeB - timeA;
         });
       } else {
-        // 按下载热度排序（默认，使用点击次数，如果没有则按updateTime排序）
+        // 按下载热度排序（使用服务器统计的 downloadsWeb + downloadsApp）
         filteredGames.sort((a, b) => {
-          const clicksA = getDownloadClicks(a.id);
-          const clicksB = getDownloadClicks(b.id);
+          const clicksA = (a.downloadsWeb || 0) + (a.downloadsApp || 0);
+          const clicksB = (b.downloadsWeb || 0) + (b.downloadsApp || 0);
           if (clicksB !== clicksA) {
             return clicksB - clicksA;
           }
           // 点击数相同则按更新时间排序
-          const timeA = a.updateTime || new Date(a.dateAdded || 0).getTime();
-          const timeB = b.updateTime || new Date(b.dateAdded || 0).getTime();
+          const timeA = a.updateTime || a.dateAdded || 0;
+          const timeB = b.updateTime || b.dateAdded || 0;
           return timeB - timeA;
         });
       }
