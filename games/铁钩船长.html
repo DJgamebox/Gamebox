@@ -551,10 +551,12 @@
     </div>
     
     <script>
-        // 收藏功能
+        // 收藏功能 - 使用与主页相同的 localStorage key
+        const FAVORITES_KEY = 'gamebox_local_favorites';
+        
         function toggleFavorite() {
             const gameId = '1983';
-            let favorites = JSON.parse(localStorage.getItem('gamebox_favorites') || '[]');
+            let favorites = JSON.parse(localStorage.getItem(FAVORITES_KEY) || '[]');
             const btn = document.querySelector('.action-btn.favorite');
             const text = document.getElementById('favText');
             const icon = btn.querySelector('i');
@@ -564,16 +566,46 @@
                 btn.classList.remove('active');
                 text.textContent = '收藏';
                 icon.className = 'far fa-heart';
-                alert('已取消收藏');
+                showToast('已取消收藏', 'info');
             } else {
                 favorites.push(gameId);
                 btn.classList.add('active');
                 text.textContent = '已收藏';
                 icon.className = 'fas fa-heart';
-                alert('已添加到收藏夹');
+                showToast('已添加到收藏夹', 'success');
             }
             
-            localStorage.setItem('gamebox_favorites', JSON.stringify(favorites));
+            localStorage.setItem(FAVORITES_KEY, JSON.stringify(favorites));
+            
+            // 发送消息通知主页更新收藏状态（如果主页在 opener 中）
+            if (window.opener) {
+                window.opener.postMessage({ type: 'favoriteChanged', gameId: gameId, isFav: favorites.includes(gameId) }, '*');
+            }
+        }
+        
+        // 显示提示消息
+        function showToast(message, type = 'info') {
+            const toast = document.createElement('div');
+            toast.style.cssText = `
+                position: fixed;
+                top: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                padding: 12px 24px;
+                background: ${type === 'success' ? '#10b981' : '#3b82f6'};
+                color: white;
+                border-radius: 8px;
+                font-size: 14px;
+                z-index: 10000;
+                animation: fadeIn 0.3s ease;
+            `;
+            toast.textContent = message;
+            document.body.appendChild(toast);
+            setTimeout(() => {
+                toast.style.opacity = '0';
+                toast.style.transition = 'opacity 0.3s';
+                setTimeout(() => toast.remove(), 300);
+            }, 2000);
         }
         
         // 主题切换功能
@@ -610,7 +642,7 @@
             
             // 收藏状态检查
             const gameId = '1983';
-            const favorites = JSON.parse(localStorage.getItem('gamebox_favorites') || '[]');
+            const favorites = JSON.parse(localStorage.getItem(FAVORITES_KEY) || '[]');
             if (favorites.includes(gameId)) {
                 const btn = document.querySelector('.action-btn.favorite');
                 const text = document.getElementById('favText');
@@ -619,6 +651,24 @@
                 text.textContent = '已收藏';
                 icon.className = 'fas fa-heart';
             }
+            
+            // 监听来自主页的收藏变更消息
+            window.addEventListener('message', function(event) {
+                if (event.data && event.data.type === 'favoriteChanged' && event.data.gameId === gameId) {
+                    const btn = document.querySelector('.action-btn.favorite');
+                    const text = document.getElementById('favText');
+                    const icon = btn.querySelector('i');
+                    if (event.data.isFav) {
+                        btn.classList.add('active');
+                        text.textContent = '已收藏';
+                        icon.className = 'fas fa-heart';
+                    } else {
+                        btn.classList.remove('active');
+                        text.textContent = '收藏';
+                        icon.className = 'far fa-heart';
+                    }
+                }
+            });
             
             // 检查登录状态
             checkLoginStatus();
