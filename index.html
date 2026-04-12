@@ -3132,10 +3132,10 @@
           return timeB - timeA;
         });
       } else {
-        // 按下载热度排序（使用服务器统计的 downloadsWeb + downloadsApp）
+        // 按下载热度排序（使用服务器统计的 downloadsWeb + downloadsApp，如果没有则使用 hot 字段）
         filteredGames.sort((a, b) => {
-          const clicksA = (a.downloadsWeb || 0) + (a.downloadsApp || 0);
-          const clicksB = (b.downloadsWeb || 0) + (b.downloadsApp || 0);
+          const clicksA = (a.downloadsWeb || 0) + (a.downloadsApp || 0) || a.hot || 0;
+          const clicksB = (b.downloadsWeb || 0) + (b.downloadsApp || 0) || b.hot || 0;
           if (clicksB !== clicksA) {
             return clicksB - clicksA;
           }
