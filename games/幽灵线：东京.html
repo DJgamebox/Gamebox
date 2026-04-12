@@ -919,7 +919,94 @@
             link.click();
             document.body.removeChild(link);
             
-            showToast('下载已开始', 'success');
+            showDownloadCompleteTip();
+        }
+        
+        // 显示下载完成提示弹窗（与主页保持一致）
+        function showDownloadCompleteTip() {
+            const overlay = document.createElement('div');
+            overlay.id = 'downloadTipOverlay';
+            overlay.className = 'modal-overlay show';
+            overlay.style.zIndex = '2000';
+            overlay.onclick = function(e) {
+                if (e.target === overlay) {
+                    document.body.removeChild(overlay);
+                }
+            };
+            
+            overlay.innerHTML = `
+                <div class="modal" style="max-width: 420px; background: var(--bg-card); border-radius: 12px; border: 1px solid var(--border-color); overflow: hidden;" onclick="event.stopPropagation()">
+                    <div style="padding: 30px 24px; text-align: center; background: linear-gradient(135deg, var(--accent-green) 0%, #4a6b0f 100%);">
+                        <i class="fas fa-check-circle" style="font-size: 56px; color: #fff; margin-bottom: 12px;"></i>
+                        <div style="font-size: 20px; font-weight: 600; color: #fff;">下载已开始</div>
+                    </div>
+                    <div style="padding: 24px;">
+                        <div style="font-size: 14px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 20px;">
+                            <p style="margin-bottom: 12px;"><strong style="color: var(--text-white);">安装步骤：</strong></p>
+                            <ol style="padding-left: 20px; margin: 0;">
+                                <li style="margin-bottom: 8px;">等待下载完成（约 81MB）</li>
+                                <li style="margin-bottom: 8px;">双击下载的文件运行安装</li>
+                                <li>按提示完成安装即可使用</li>
+                            </ol>
+                        </div>
+                        
+                        <div style="background: rgba(102, 192, 244, 0.1); border-left: 3px solid var(--accent-blue); padding: 12px 16px; border-radius: 0 4px 4px 0; margin-bottom: 20px;">
+                            <i class="fas fa-lightbulb" style="color: var(--accent-blue); margin-right: 8px;"></i>
+                            <span style="font-size: 12px; color: var(--text-secondary);">提示：安装完成后桌面会创建快捷方式</span>
+                        </div>
+                        
+                        <div style="display: flex; gap: 12px;">
+                            <button onclick="showShortcutTip();" 
+                                    style="flex: 1; padding: 12px 20px; background: var(--accent-blue); border: none; border-radius: 6px; color: #fff; font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.2s;"
+                                    onmouseover="this.style.background='#4a9fd8'"
+                                    onmouseout="this.style.background='var(--accent-blue)'">
+                                <i class="fas fa-keyboard" style="margin-right: 8px;"></i>查看下载 (Ctrl+J)
+                            </button>
+                            <button onclick="document.getElementById('downloadTipOverlay').remove();" 
+                                    style="padding: 12px 24px; background: var(--bg-hover); border: 1px solid var(--border-color); border-radius: 6px; color: var(--text-primary); font-size: 14px; cursor: pointer; transition: all 0.2s;"
+                                    onmouseover="this.style.background='var(--border-color)'"
+                                    onmouseout="this.style.background='var(--bg-hover)'">
+                                关闭
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            document.body.appendChild(overlay);
+        }
+        
+        // 显示快捷键提示
+        function showShortcutTip() {
+            const overlay = document.createElement('div');
+            overlay.id = 'shortcutTipOverlay';
+            overlay.className = 'modal-overlay show';
+            overlay.style.zIndex = '2001';
+            overlay.onclick = function(e) {
+                if (e.target === overlay) {
+                    document.body.removeChild(overlay);
+                }
+            };
+            
+            overlay.innerHTML = `
+                <div class="modal" style="max-width: 360px; background: var(--bg-card); border-radius: 12px; border: 1px solid var(--border-color); overflow: hidden;" onclick="event.stopPropagation()">
+                    <div style="padding: 24px; text-align: center;">
+                        <i class="fas fa-keyboard" style="font-size: 48px; color: var(--accent-blue); margin-bottom: 16px;"></i>
+                        <div style="font-size: 18px; font-weight: 600; color: var(--text-white); margin-bottom: 12px;">浏览器快捷键</div>
+                        <div style="font-size: 14px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 20px;">
+                            <p style="margin-bottom: 8px;"><strong>Chrome/Edge:</strong> Ctrl + J</p>
+                            <p style="margin-bottom: 8px;"><strong>Firefox:</strong> Ctrl + Shift + Y</p>
+                            <p><strong>Safari:</strong> Command + Option + L</p>
+                        </div>
+                        <button onclick="document.getElementById('shortcutTipOverlay').remove();" 
+                                style="padding: 10px 24px; background: var(--accent-blue); border: none; border-radius: 6px; color: #fff; font-size: 14px; cursor: pointer;">
+                            知道了
+                        </button>
+                    </div>
+                </div>
+            `;
+            
+            document.body.appendChild(overlay);
         }
     </script>
 </body>
