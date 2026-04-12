@@ -634,24 +634,24 @@
     .batch-cover-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 15px;
-      max-height: 60vh;
+      gap: 8px;
+      max-height: 70vh;
       overflow-y: auto;
     }
 
     .batch-cover-item {
       display: flex;
       align-items: center;
-      gap: 12px;
-      padding: 12px;
+      gap: 8px;
+      padding: 6px 10px;
       background: var(--bg-tertiary);
-      border-radius: 8px;
+      border-radius: 4px;
       border: 1px solid var(--border-color);
     }
 
     .batch-cover-item .game-name {
       flex: 1;
-      font-size: 14px;
+      font-size: 12px;
     }
 
     .batch-cover-item .paste-area {
@@ -6070,7 +6070,7 @@ if (typeof module !== 'undefined' && module.exports) {
     // ==================== 批量修改大小 ====================
     let batchSizeFilter = 'all';
     let batchSizePage = 1;
-    const batchSizePageSize = 20;
+    const batchSizePageSize = 50;
     let batchSizeChanges = new Map();
 
     function batchEditSize() {
@@ -6130,14 +6130,14 @@ if (typeof module !== 'undefined' && module.exports) {
         return `
           <div class="batch-cover-item" style="${isChanged ? 'border-color: var(--accent-green);' : ''}">
             <div class="game-name" title="${game.name}">${game.name}</div>
-            <div style="display: flex; align-items: center; gap: 8px; min-width: 150px;">
+            <div style="display: flex; align-items: center; gap: 6px; min-width: 130px;">
               <input type="text" 
                      class="form-control" 
                      value="${currentSize}" 
-                     placeholder="例如：50GB"
+                     placeholder="50GB"
                      onchange="updateBatchSize('${game.id}', this.value)"
-                     style="width: 120px; font-size: 13px; ${isChanged ? 'border-color: var(--accent-green);' : ''}">
-              ${isChanged ? '<i class="fas fa-check-circle" style="color: var(--accent-green);"></i>' : ''}
+                     style="width: 100px; font-size: 12px; padding: 6px 8px; ${isChanged ? 'border-color: var(--accent-green);' : ''}">
+              ${isChanged ? '<i class="fas fa-check-circle" style="color: var(--accent-green); font-size: 12px;"></i>' : ''}
             </div>
           </div>
         `;
