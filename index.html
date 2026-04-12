@@ -3028,7 +3028,6 @@
         btn.classList.toggle('active', isFav);
       }
     }
-    function downloadClient() { window.open('https://pan.baidu.com/s/1ulz1H0Ga9NsN2InBi05EwA?pwd=8888', '_blank'); }
     
     function showTool(tool) { 
       const modalIds = { runtime: 'runtimeModal', driver: 'driverModal', trainer: 'trainerModal' };
@@ -3221,19 +3220,16 @@
         console.error('记录客户端下载失败:', error);
       }
       
-      // 从配置文件获取下载链接
-      try {
-        const response = await fetch('config.json?v=' + Date.now());
-        const config = await response.json();
-        if (config.clientDownload && config.clientDownload.enabled && config.clientDownload.url) {
-          window.open(config.clientDownload.url, '_blank');
-        } else {
-          alert('下载链接配置错误，请联系管理员');
-        }
-      } catch (error) {
-        console.error('获取下载配置失败:', error);
-        alert('获取下载链接失败，请稍后重试');
-      }
+      // 直接下载本地安装包
+      const link = document.createElement('a');
+      link.href = 'downloads/GameBox-Setup-1.0.5.exe';
+      link.download = '游戏盒子 Setup 1.0.5.exe';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      
+      // 显示下载提示
+      showDownloadCompleteTip();
     }
     
     // 显示下载完成提示
