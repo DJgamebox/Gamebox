@@ -634,23 +634,37 @@
     .batch-cover-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 8px;
-      max-height: 70vh;
+      gap: 15px;
+      max-height: 60vh;
       overflow-y: auto;
     }
 
     .batch-cover-item {
       display: flex;
       align-items: center;
-      gap: 8px;
-      padding: 6px 10px;
+      gap: 12px;
+      padding: 12px;
       background: var(--bg-tertiary);
-      border-radius: 4px;
+      border-radius: 8px;
       border: 1px solid var(--border-color);
     }
 
     .batch-cover-item .game-name {
       flex: 1;
+      font-size: 14px;
+    }
+
+    /* 批量大小 - 更紧凑的布局 */
+    #batchSizeGrid {
+      gap: 8px;
+      max-height: 70vh;
+    }
+    #batchSizeGrid .batch-cover-item {
+      gap: 8px;
+      padding: 6px 10px;
+      border-radius: 4px;
+    }
+    #batchSizeGrid .batch-cover-item .game-name {
       font-size: 12px;
     }
 
