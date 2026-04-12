@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- SheetJS for Excel parsing -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <!-- Chart.js for data visualization -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <!-- 游戏数据源 -->
   <script src="data-embed.js"></script>
   <style>
@@ -237,6 +239,9 @@
     .btn-warning {
       background: #f39c12;
       color: #fff;
+    }
+    .btn-warning:hover {
+      background: #e67e22;
     }
 
     /* 工具栏 */
@@ -681,6 +686,110 @@
       object-fit: cover;
     }
 
+    /* 批量修改封面 - 筛选标签 */
+    .batch-cover-tabs {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .batch-cover-tabs .tab-btn {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      color: var(--text-secondary);
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .batch-cover-tabs .tab-btn:hover {
+      background: var(--bg-hover);
+      border-color: var(--accent-blue);
+    }
+
+    .batch-cover-tabs .tab-btn.active {
+      background: var(--accent-blue);
+      border-color: var(--accent-blue);
+      color: #fff;
+    }
+
+    .batch-cover-tabs .tab-btn.active .tab-count {
+      background: rgba(255,255,255,0.2);
+      color: #fff;
+    }
+
+    .batch-cover-tabs .tab-count {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 20px;
+      height: 20px;
+      padding: 0 6px;
+      background: var(--bg-tertiary);
+      border-radius: 10px;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      margin-left: 4px;
+    }
+
+    /* 分页控件样式 */
+    .pagination-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .pagination-bar .page-btn {
+      min-width: 36px;
+      height: 36px;
+      padding: 0 12px;
+      background: var(--bg-tertiary);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      color: var(--text-primary);
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .pagination-bar .page-btn:hover:not(:disabled) {
+      background: var(--bg-hover);
+      border-color: var(--accent-blue);
+    }
+
+    .pagination-bar .page-btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .pagination-bar .page-btn.active {
+      background: var(--accent-blue);
+      border-color: var(--accent-blue);
+      color: #fff;
+    }
+
+    .pagination-bar .page-btn.first,
+    .pagination-bar .page-btn.last {
+      padding: 0 16px;
+    }
+
+    .pagination-bar .page-info {
+      color: var(--text-secondary);
+      font-size: 13px;
+      padding: 0 10px;
+    }
+
     /* 分类管理 */
     .category-manager {
       display: grid;
@@ -847,6 +956,60 @@
       display: none !important;
     }
 
+    /* 反馈批量操作 */
+    .feedback-batch-bar {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--bg-secondary);
+      padding: 15px 25px;
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border-color);
+      z-index: 99;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .feedback-batch-bar.show {
+      display: flex;
+    }
+
+    .feedback-item .feedback-checkbox {
+      width: 18px;
+      height: 18px;
+      border: 2px solid var(--border-color);
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg-secondary);
+      margin-right: 10px;
+    }
+
+    .feedback-item .feedback-checkbox:hover {
+      border-color: var(--accent-blue);
+    }
+
+    .feedback-item .feedback-checkbox.checked {
+      background: var(--accent-blue);
+      border-color: var(--accent-blue);
+    }
+
+    .feedback-item .feedback-checkbox.checked::after {
+      content: '✓';
+      color: #fff;
+      font-size: 12px;
+    }
+
+    .feedback-item.selected {
+      border-color: var(--accent-blue);
+      box-shadow: 0 0 0 2px rgba(102, 192, 244, 0.3);
+    }
+
     /* 下载统计 */
     .stats-grid {
       display: grid;
@@ -887,6 +1050,152 @@
       gap: 10px;
       padding: 20px;
       border-top: 1px solid var(--border-color);
+    }
+
+    /* 宣传栏预览 */
+    .banner-preview {
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .banner-preview.default {
+      background: linear-gradient(90deg, #ffd700, #ffed4e);
+      color: #333;
+      border: 1px solid #e6c200;
+    }
+
+    .banner-preview.custom {
+      background: linear-gradient(90deg, var(--accent-blue), #764ba2);
+      color: #fff;
+    }
+
+    /* 用户数据统计样式 */
+    .user-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    /* 下载统计样式 */
+    .download-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .download-stat-card {
+      background: var(--bg-tertiary);
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .download-stat-card .value {
+      font-size: 36px;
+      font-weight: bold;
+      color: var(--accent-green);
+    }
+
+    .download-stat-card .label {
+      font-size: 13px;
+      color: var(--text-secondary);
+      margin-top: 5px;
+    }
+
+    .download-source-tag {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    .download-source-tag.detail {
+      background: rgba(102, 192, 244, 0.2);
+      color: var(--accent-blue);
+    }
+
+    .download-source-tag.home {
+      background: rgba(92, 126, 16, 0.2);
+      color: var(--accent-green);
+    }
+
+    .user-stat-card {
+      background: var(--bg-tertiary);
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .user-stat-card .value {
+      font-size: 32px;
+      font-weight: bold;
+      color: var(--accent-blue);
+    }
+
+    .user-stat-card .label {
+      font-size: 13px;
+      color: var(--text-secondary);
+      margin-top: 5px;
+    }
+
+    .chart-container {
+      background: var(--bg-tertiary);
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      height: 300px;
+    }
+
+    .user-filter-bar {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+      flex-wrap: wrap;
+    }
+
+    .user-list {
+      max-height: 300px;
+      overflow-y: auto;
+      background: var(--bg-tertiary);
+      border-radius: 8px;
+    }
+
+    .user-list-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 15px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .user-list-item:last-child {
+      border-bottom: none;
+    }
+
+    .user-list-item:hover {
+      background: var(--bg-hover);
+    }
+
+    .user-info-cell {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .user-name {
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+
+    .user-date {
+      font-size: 12px;
+      color: var(--text-secondary);
     }
 
     /* Toast */
@@ -981,11 +1290,11 @@
           <button class="btn" onclick="exportToDataEmbed()">
             <i class="fas fa-file-export"></i> 导出data-embed.js
           </button>
-          <button class="btn btn-danger" onclick="clearAllData()">
-            <i class="fas fa-trash-alt"></i> 清空所有数据
-          </button>
           <button class="btn" onclick="reloadFromSource()" title="从 data-embed.js 重新加载数据">
             <i class="fas fa-sync"></i> 重新加载数据源
+          </button>
+          <button class="btn" onclick="clearLocalStorageAndReload()" title="清除本地缓存并重新加载">
+            <i class="fas fa-trash"></i> 清除缓存重载
           </button>
         </div>
         <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid var(--border-color);">
@@ -1002,6 +1311,38 @@
             <span style="color: var(--text-secondary); font-size: 12px; align-self: center;">
               同步后网页版和客户端将看到最新数据
             </span>
+          </div>
+        </div>
+        
+        <!-- 下载统计 -->
+        <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid var(--border-color);">
+          <div style="color: var(--accent-blue); font-size: 13px; margin-bottom: 10px;">
+            <i class="fas fa-chart-line"></i> 下载统计
+          </div>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap; flex-direction: column; align-items: flex-start;">
+            <button class="btn btn-success" onclick="viewClientDownloadStats()">
+              <i class="fas fa-download"></i> 客户端下载统计
+            </button>
+            <div style="display: flex; gap: 10px;">
+              <button class="btn" onclick="viewGameDownloadStats()">
+                <i class="fas fa-gamepad"></i> 游戏下载统计
+              </button>
+              <button class="btn btn-primary" onclick="syncDownloadStats()">
+                <i class="fas fa-sync-alt"></i> 同步下载统计
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 危险操作区域 -->
+        <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid var(--border-color);">
+          <div style="color: var(--accent-red); font-size: 12px; margin-bottom: 8px;">
+            <i class="fas fa-exclamation-triangle"></i> 危险操作
+          </div>
+          <div style="display: flex; gap: 10px;">
+            <button class="btn btn-danger" onclick="clearAllDataWithConfirm()" style="padding: 6px 12px; font-size: 12px;">
+              <i class="fas fa-trash-alt"></i> 清空所有数据
+            </button>
           </div>
         </div>
       </div>
@@ -1022,6 +1363,12 @@
       <button class="btn" onclick="batchEditCover()">
         <i class="fas fa-images"></i> 批量改封面
       </button>
+      <button class="btn" onclick="batchEditSize()">
+        <i class="fas fa-hdd"></i> 批量改大小
+      </button>
+      <button class="btn" onclick="restoreCoversFromR2()" style="background: #e74c3c; color: white;">
+        <i class="fas fa-cloud-download-alt"></i> 从R2恢复封面
+      </button>
       <button class="btn btn-warning" onclick="batchEditDrm()">
         <i class="fas fa-lock"></i> 批量D加密
       </button>
@@ -1031,8 +1378,20 @@
       <button class="btn btn-info" onclick="manageContact()">
         <i class="fas fa-address-book"></i> 联系方式
       </button>
+      <button class="btn" onclick="manageBanner()">
+        <i class="fas fa-bullhorn"></i> 宣传栏
+      </button>
+      <button class="btn" onclick="manageGameSeries()" style="background: #9b59b6; color: white;">
+        <i class="fas fa-layer-group"></i> 游戏系列
+      </button>
+      <button class="btn" onclick="manageDisclaimer()" style="background: #34495e; color: white;">
+        <i class="fas fa-shield-alt"></i> 免责声明
+      </button>
       <button class="btn" onclick="viewFeedbacks()">
         <i class="fas fa-comments"></i> 查看反馈
+      </button>
+      <button class="btn btn-success" onclick="viewUserData()">
+        <i class="fas fa-users"></i> 用户数据
       </button>
       <button class="btn btn-danger" onclick="batchDelete()">
         <i class="fas fa-trash-alt"></i> 批量删除
@@ -1188,17 +1547,17 @@
 
         <div class="form-group">
           <label><i class="fab fa-baidu" style="color: #2932e1;"></i> 百度网盘链接 1</label>
-          <input type="text" class="form-control" id="quickBaiduLink1" placeholder="https://pan.baidu.com/s/...">
+          <input type="text" class="form-control" id="quickBaiduLink1" placeholder="https://pan.baidu.com/s/..." style="font-size: 12px;">
         </div>
 
         <div class="form-group">
           <label><i class="fab fa-baidu" style="color: #2932e1;"></i> 百度网盘链接 2</label>
-          <input type="text" class="form-control" id="quickBaiduLink2" placeholder="https://pan.baidu.com/s/...">
+          <input type="text" class="form-control" id="quickBaiduLink2" placeholder="https://pan.baidu.com/s/..." style="font-size: 12px;">
         </div>
 
         <div class="form-group">
           <label><i class="fas fa-bolt" style="color: #00a8e6;"></i> 迅雷云盘链接</label>
-          <input type="text" class="form-control" id="quickThunderLink" placeholder="https://pan.xunlei.com/s/...">
+          <input type="text" class="form-control" id="quickThunderLink" placeholder="https://pan.xunlei.com/s/..." style="font-size: 12px;">
         </div>
       </div>
       <div class="modal-footer">
@@ -1283,7 +1642,24 @@
         <button class="modal-close" onclick="closeModal('batchCoverModal')">&times;</button>
       </div>
       <div class="modal-body" style="padding: 0;">
+        <!-- 筛选标签 -->
         <div style="padding: 12px 20px; background: var(--bg-tertiary); border-bottom: 1px solid var(--border-color);">
+          <div class="batch-cover-tabs" style="display: flex; gap: 10px; flex-wrap: wrap;">
+            <button class="tab-btn active" data-filter="all" onclick="setBatchCoverFilter('all')">
+              <i class="fas fa-th-large"></i> 全量游戏
+              <span class="tab-count" id="tabCountAll">0</span>
+            </button>
+            <button class="tab-btn" data-filter="uploaded" onclick="setBatchCoverFilter('uploaded')">
+              <i class="fas fa-check-circle"></i> 已上传封面
+              <span class="tab-count" id="tabCountUploaded">0</span>
+            </button>
+            <button class="tab-btn" data-filter="empty" onclick="setBatchCoverFilter('empty')">
+              <i class="fas fa-circle"></i> 未上传封面
+              <span class="tab-count" id="tabCountEmpty">0</span>
+            </button>
+          </div>
+        </div>
+        <div style="padding: 10px 20px; background: var(--bg-secondary); border-bottom: 1px solid var(--border-color);">
           <p style="color: var(--text-secondary); margin: 0; font-size: 13px;">
             <i class="fas fa-info-circle"></i> 
             在网页中右键复制图片，然后点击对应游戏的粘贴框，按 Ctrl+V 粘贴封面
@@ -1292,11 +1668,56 @@
         <div class="batch-cover-grid" id="batchCoverGrid" style="padding: 15px 20px;">
           <!-- 动态生成 -->
         </div>
-        <div class="pagination-bar" id="batchCoverPagination"></div>
+        <div class="pagination-bar" id="batchCoverPagination" style="padding: 15px 20px; border-top: 1px solid var(--border-color);"></div>
       </div>
       <div class="modal-footer">
         <button class="btn" onclick="closeModal('batchCoverModal')">关闭</button>
         <button class="btn btn-primary" onclick="saveBatchCovers()">
+          <i class="fas fa-save"></i> 保存所有修改
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 批量修改大小弹窗 -->
+  <div class="modal" id="batchSizeModal">
+    <div class="modal-content large">
+      <div class="modal-header">
+        <h3>批量修改游戏大小</h3>
+        <button class="modal-close" onclick="closeModal('batchSizeModal')">&times;</button>
+      </div>
+      <div class="modal-body" style="padding: 0;">
+        <!-- 筛选标签 -->
+        <div style="padding: 12px 20px; background: var(--bg-tertiary); border-bottom: 1px solid var(--border-color);">
+          <div class="batch-cover-tabs" style="display: flex; gap: 10px; flex-wrap: wrap;">
+            <button class="tab-btn active" data-filter="all" onclick="setBatchSizeFilter('all')">
+              <i class="fas fa-th-large"></i> 全部游戏
+              <span class="tab-count" id="tabSizeCountAll">0</span>
+            </button>
+            <button class="tab-btn" data-filter="hasSize" onclick="setBatchSizeFilter('hasSize')">
+              <i class="fas fa-check-circle"></i> 已有大小
+              <span class="tab-count" id="tabSizeCountHas">0</span>
+            </button>
+            <button class="tab-btn" data-filter="noSize" onclick="setBatchSizeFilter('noSize')">
+              <i class="fas fa-circle"></i> 暂无大小
+              <span class="tab-count" id="tabSizeCountNo">0</span>
+            </button>
+          </div>
+        </div>
+        <div style="padding: 10px 20px; background: var(--bg-secondary); border-bottom: 1px solid var(--border-color);">
+          <p style="color: var(--text-secondary); margin: 0; font-size: 13px;">
+            <i class="fas fa-info-circle"></i> 
+            点击游戏大小输入框，直接输入新的大小值（如：50GB、100MB）
+          </p>
+        </div>
+        <div class="batch-cover-grid" id="batchSizeGrid" style="padding: 15px 20px;">
+          <!-- 动态生成 -->
+        </div>
+        <div class="pagination-bar" id="batchSizePagination" style="padding: 15px 20px; border-top: 1px solid var(--border-color);"></div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" onclick="closeModal('batchSizeModal')">关闭</button>
+        <button class="btn btn-primary" onclick="saveBatchSizes()">
           <i class="fas fa-save"></i> 保存所有修改
         </button>
       </div>
@@ -1355,6 +1776,185 @@
     </div>
   </div>
 
+  <!-- 宣传栏管理弹窗 -->
+  <div class="modal" id="bannerModal">
+    <div class="modal-content" style="max-width: 600px;">
+      <div class="modal-header">
+        <h3>宣传栏管理</h3>
+        <button class="modal-close" onclick="closeModal('bannerModal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label>宣传文字内容</label>
+          <textarea class="form-control" id="bannerText" rows="3" placeholder="输入要显示在网页版和客户端顶部的宣传文字..."></textarea>
+        </div>
+        <div class="form-group">
+          <label>背景样式</label>
+          <select class="form-control" id="bannerStyle" onchange="updateBannerPreview()">
+            <option value="default">黄色渐变（默认）</option>
+            <option value="blue">蓝色渐变</option>
+            <option value="green">绿色渐变</option>
+            <option value="red">红色渐变</option>
+            <option value="purple">紫色渐变</option>
+            <option value="dark">深色渐变</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>预览效果</label>
+          <div class="banner-preview default" id="bannerPreview">
+            <i class="fas fa-shield-alt" style="margin-right: 8px;"></i>
+            <span id="bannerPreviewText">本站和其他网站不同，库里面的所有游戏均：没有虚拟机、没有假入库，请放心玩</span>
+          </div>
+        </div>
+        <div style="background: var(--bg-tertiary); padding: 12px; border-radius: 6px; margin-top: 15px;">
+          <div style="color: var(--text-secondary); font-size: 12px; margin-bottom: 8px;">
+            <i class="fas fa-info-circle"></i> 说明
+          </div>
+          <div style="color: var(--text-secondary); font-size: 12px; line-height: 1.6;">
+            • 修改后点击保存，将同步到网页版和客户端版盒子<br>
+            • 宣传栏显示在页面顶部，用于重要公告或提示<br>
+            • 留空则不显示宣传栏
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" onclick="closeModal('bannerModal')">取消</button>
+        <button class="btn btn-primary" onclick="saveBanner()">
+          <i class="fas fa-save"></i> 保存并同步
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 游戏系列管理弹窗 -->
+  <div class="modal" id="gameSeriesModal">
+    <div class="modal-content" style="max-width:700px;">
+      <div class="modal-header">
+        <h3><i class="fas fa-layer-group"></i> 游戏系列管理</h3>
+        <button class="modal-close" onclick="closeModal('gameSeriesModal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div style="margin-bottom:15px;">
+          <button class="btn btn-primary" onclick="addGameSeries()">
+            <i class="fas fa-plus"></i> 添加系列
+          </button>
+          <button class="btn btn-success" onclick="exportGameSeries()" style="margin-left:10px;">
+            <i class="fas fa-download"></i> 导出系列
+          </button>
+        </div>
+        <div id="gameSeriesList" style="max-height:400px;overflow-y:auto;">
+          <!-- 系列列表将在这里渲染 -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" onclick="closeModal('gameSeriesModal')">关闭</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 免责声明管理弹窗 -->
+  <div class="modal" id="disclaimerModal">
+    <div class="modal-content" style="max-width:700px;">
+      <div class="modal-header">
+        <h3><i class="fas fa-shield-alt"></i> 免责声明管理</h3>
+        <button class="modal-close" onclick="closeModal('disclaimerModal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div style="margin-bottom:15px;">
+          <label style="display:block;margin-bottom:5px;color:var(--text-secondary);">标题:</label>
+          <input type="text" id="disclaimerTitle" class="form-control" placeholder="# 免责声明 #" style="width:100%;padding:10px;background:var(--input-bg);border:1px solid var(--border-color);border-radius:6px;color:var(--text-primary);">
+        </div>
+        <div style="margin-bottom:15px;">
+          <label style="display:block;margin-bottom:5px;color:var(--text-secondary);">内容:</label>
+          <textarea id="disclaimerContent" class="form-control" rows="6" placeholder="请输入免责声明内容..." style="width:100%;padding:10px;background:var(--input-bg);border:1px solid var(--border-color);border-radius:6px;color:var(--text-primary);resize:vertical;"></textarea>
+        </div>
+        <div style="margin-bottom:15px;">
+          <label style="display:block;margin-bottom:5px;color:var(--text-secondary);">预览:</label>
+          <div style="padding:15px;background:var(--bg-tertiary);border-radius:8px;border:1px solid var(--border-color);">
+            <h4 id="disclaimerPreviewTitle" style="color:var(--accent-blue);text-align:center;margin-bottom:12px;font-size:14px;"># 免责声明 #</h4>
+            <p id="disclaimerPreviewContent" style="font-size:11px;color:var(--text-secondary);line-height:1.8;text-align:justify;"></p>
+          </div>
+        </div>
+        <div>
+          <button class="btn btn-success" onclick="exportDisclaimer()">
+            <i class="fas fa-download"></i> 导出免责声明
+          </button>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" onclick="closeModal('disclaimerModal')">取消</button>
+        <button class="btn btn-primary" onclick="saveDisclaimer()">
+          <i class="fas fa-save"></i> 保存
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 用户数据弹窗 -->
+  <div class="modal" id="userDataModal">
+    <div class="modal-content large">
+      <div class="modal-header">
+        <h3>用户数据统计</h3>
+        <button class="modal-close" onclick="closeModal('userDataModal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <!-- 统计卡片 -->
+        <div class="user-stats-grid">
+          <div class="user-stat-card">
+            <div class="value" id="totalUsers">0</div>
+            <div class="label">总注册用户数</div>
+          </div>
+          <div class="user-stat-card">
+            <div class="value" id="todayUsers">0</div>
+            <div class="label">今日注册</div>
+          </div>
+          <div class="user-stat-card">
+            <div class="value" id="weekUsers">0</div>
+            <div class="label">本周注册</div>
+          </div>
+        </div>
+
+        <!-- 筛选栏 -->
+        <div class="user-filter-bar">
+          <select class="filter-select" id="userTimeFilter" onchange="filterUserData()">
+            <option value="all">全部时间</option>
+            <option value="today">今天</option>
+            <option value="week">最近7天</option>
+            <option value="month">最近30天</option>
+            <option value="custom">自定义</option>
+          </select>
+          <input type="date" class="form-control" id="userStartDate" style="width: 140px; display: none;" onchange="filterUserData()">
+          <input type="date" class="form-control" id="userEndDate" style="width: 140px; display: none;" onchange="filterUserData()">
+          <select class="filter-select" id="userRegionFilter" onchange="filterUserData()" style="min-width: 120px;">
+            <option value="all">全部地域</option>
+          </select>
+          <select class="filter-select" id="userCityFilter" onchange="filterUserData()" style="min-width: 120px; display: none;">
+            <option value="all">全部城市</option>
+          </select>
+          <button class="btn btn-primary" onclick="exportUserData()">
+            <i class="fas fa-download"></i> 导出数据
+          </button>
+        </div>
+
+        <!-- 折线图 -->
+        <div class="chart-container">
+          <canvas id="userChart"></canvas>
+        </div>
+
+        <!-- 用户列表 -->
+        <div style="margin-bottom: 10px; color: var(--text-secondary); font-size: 13px;">
+          用户明细（<span id="filteredUserCount">0</span> 人）
+        </div>
+        <div class="user-list" id="userList">
+          <!-- 动态生成 -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" onclick="closeModal('userDataModal')">关闭</button>
+      </div>
+    </div>
+  </div>
+
   <!-- 反馈列表弹窗 -->
   <div class="modal" id="feedbackModal">
     <div class="modal-content large">
@@ -1372,8 +1972,17 @@
           </div>
         </div>
         
-        <!-- 视图切换按钮 -->
-        <div style="padding: 10px 20px; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center;">
+        <!-- 批量操作栏 -->
+        <div style="padding: 10px 20px; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; background: var(--bg-tertiary);">
+          <div style="display: flex; gap: 15px; align-items: center;">
+            <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; color: var(--text-white); font-size: 14px;">
+              <div class="checkbox" id="feedbackSelectAll" onclick="toggleFeedbackSelectAll()"></div>
+              <span>全选</span>
+            </label>
+            <span style="color: var(--text-secondary); font-size: 13px;">
+              已选择 <strong id="feedbackSelectedCount" style="color: var(--accent-blue);">0</strong> 条
+            </span>
+          </div>
           <div style="display: flex; gap: 10px;">
             <button class="btn" id="viewGridBtn" onclick="switchFeedbackView('grid')" style="padding: 6px 12px; font-size: 13px;">
               <i class="fas fa-th"></i> 九宫格
@@ -1381,10 +1990,10 @@
             <button class="btn" id="viewListBtn" onclick="switchFeedbackView('list')" style="padding: 6px 12px; font-size: 13px; background: var(--bg-hover);">
               <i class="fas fa-list"></i> 列表
             </button>
+            <button class="btn btn-danger" onclick="batchDeleteFeedbacks()" style="padding: 6px 12px; font-size: 13px;">
+              <i class="fas fa-trash-alt"></i> 批量删除
+            </button>
           </div>
-          <span style="color: var(--text-secondary); font-size: 13px;">
-            共 <strong id="totalFeedbackCount" style="color: var(--accent-blue);">0</strong> 条反馈
-          </span>
         </div>
         
         <div class="feedback-list" id="feedbackList" style="padding: 15px 20px; max-height: 400px; overflow-y: auto;">
@@ -1396,6 +2005,188 @@
         <button class="btn btn-primary" onclick="refreshFeedbacks()">
           <i class="fas fa-sync"></i> 刷新
         </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 客户端下载统计弹窗 -->
+  <div class="modal" id="clientDownloadModal">
+    <div class="modal-content large">
+      <div class="modal-header">
+        <h3>客户端下载统计</h3>
+        <button class="modal-close" onclick="closeModal('clientDownloadModal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <!-- 统计卡片 -->
+        <div class="download-stats-grid">
+          <div class="download-stat-card">
+            <div class="value" id="totalClientDownloads">0</div>
+            <div class="label">总下载量</div>
+          </div>
+          <div class="download-stat-card">
+            <div class="value" id="todayClientDownloads">0</div>
+            <div class="label">今日下载</div>
+          </div>
+          <div class="download-stat-card">
+            <div class="value" id="weekClientDownloads">0</div>
+            <div class="label">本周下载</div>
+          </div>
+          <div class="download-stat-card">
+            <div class="value" id="monthClientDownloads">0</div>
+            <div class="label">本月下载</div>
+          </div>
+        </div>
+
+        <!-- 筛选栏 -->
+        <div class="user-filter-bar">
+          <select class="filter-select" id="clientDownloadTimeFilter" onchange="filterClientDownloadStats()">
+            <option value="all">全部时间</option>
+            <option value="today">今天</option>
+            <option value="week">最近7天</option>
+            <option value="month">最近30天</option>
+            <option value="custom">自定义</option>
+          </select>
+          <input type="date" class="form-control" id="clientDownloadStartDate" style="width: 140px; display: none;" onchange="filterClientDownloadStats()">
+          <input type="date" class="form-control" id="clientDownloadEndDate" style="width: 140px; display: none;" onchange="filterClientDownloadStats()">
+          <select class="filter-select" id="clientDownloadSourceFilter" onchange="filterClientDownloadStats()">
+            <option value="all">全部来源</option>
+            <option value="detail">游戏详情页</option>
+            <option value="home">主页面</option>
+          </select>
+          <button class="btn btn-primary" onclick="exportClientDownloadStats()">
+            <i class="fas fa-download"></i> 导出数据
+          </button>
+        </div>
+
+        <!-- 地域分布 -->
+        <div style="margin-bottom: 15px;">
+          <div style="color: var(--text-secondary); font-size: 13px; margin-bottom: 10px;">
+            <i class="fas fa-map-marker-alt"></i> 地域分布
+          </div>
+          <div id="regionStats" style="display: flex; flex-wrap: wrap; gap: 10px;">
+            <!-- 动态生成 -->
+          </div>
+        </div>
+
+        <!-- 折线图 -->
+        <div class="chart-container">
+          <canvas id="clientDownloadChart"></canvas>
+        </div>
+
+        <!-- 下载记录列表 -->
+        <div style="margin-bottom: 10px; color: var(--text-secondary); font-size: 13px;">
+          下载记录（<span id="filteredClientDownloadCount">0</span> 条）
+        </div>
+        <div class="user-list" id="clientDownloadList">
+          <!-- 动态生成 -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" onclick="closeModal('clientDownloadModal')">关闭</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 游戏下载统计弹窗 -->
+  <div class="modal" id="gameDownloadModal">
+    <div class="modal-content large">
+      <div class="modal-header">
+        <h3>游戏下载统计</h3>
+        <button class="modal-close" onclick="closeModal('gameDownloadModal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <!-- 统计卡片 -->
+        <div class="download-stats-grid">
+          <div class="download-stat-card">
+            <div class="value" id="totalGameDownloads">0</div>
+            <div class="label">总下载量</div>
+          </div>
+          <div class="download-stat-card">
+            <div class="value" id="webGameDownloads" style="color: #66c0f4;">0</div>
+            <div class="label">网页版下载</div>
+          </div>
+          <div class="download-stat-card">
+            <div class="value" id="appGameDownloads" style="color: #5c7e10;">0</div>
+            <div class="label">客户端版下载</div>
+          </div>
+          <div class="download-stat-card">
+            <div class="value" id="filteredGameCount">0</div>
+            <div class="label">游戏数量</div>
+          </div>
+        </div>
+
+        <!-- 筛选栏 -->
+        <div class="user-filter-bar">
+          <select class="filter-select" id="gameDownloadSort" onchange="filterGameDownloadStats()">
+            <option value="total">按总下载量排序</option>
+            <option value="web">按网页版下载排序</option>
+            <option value="app">按客户端版下载排序</option>
+          </select>
+          <select class="filter-select" id="gameDownloadRegionFilter" onchange="filterGameDownloadStats()">
+            <option value="all">全部地域</option>
+          </select>
+          <select class="filter-select" id="gameDownloadTimeFilter" onchange="filterGameDownloadStats()">
+            <option value="all">全部时间</option>
+            <option value="today">今日</option>
+            <option value="week">本周</option>
+            <option value="month">本月</option>
+          </select>
+          <button class="btn btn-primary" onclick="exportGameDownloadStats()">
+            <i class="fas fa-download"></i> 导出数据
+          </button>
+        </div>
+
+        <!-- 柱状图 -->
+        <div class="chart-container">
+          <canvas id="gameDownloadChart"></canvas>
+        </div>
+
+        <!-- 时间趋势折线图 -->
+        <div style="margin: 20px 0 10px 0; color: var(--text-secondary); font-size: 13px;">
+          <i class="fas fa-chart-line"></i> 下载趋势（按时间）
+        </div>
+        <div class="chart-container" style="height: 250px;">
+          <canvas id="gameDownloadTrendChart"></canvas>
+        </div>
+
+        <!-- 地域分布 -->
+        <div style="margin: 20px 0 10px 0; color: var(--text-secondary); font-size: 13px;">
+          <i class="fas fa-map-marker-alt"></i> 地域分布
+        </div>
+        <div class="region-stats" id="gameRegionStats" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 15px;">
+          <!-- 动态生成 -->
+        </div>
+        
+        <!-- 地域明细表格 -->
+        <div style="margin-bottom: 10px; color: var(--text-secondary); font-size: 13px;">
+          <i class="fas fa-list"></i> 地域明细
+        </div>
+        <div class="table-container" style="max-height: 300px; overflow-y: auto;">
+          <table class="data-table" style="width: 100%;">
+            <thead>
+              <tr>
+                <th style="width: 80px;">序号</th>
+                <th>省份</th>
+                <th>城市</th>
+                <th style="width: 100px;">下载次数</th>
+              </tr>
+            </thead>
+            <tbody id="gameRegionDetailList">
+              <!-- 动态生成 -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 游戏下载列表 -->
+        <div style="margin: 20px 0 10px 0; color: var(--text-secondary); font-size: 13px;">
+          游戏下载排行（前 <span id="gameListCount">0</span> 款）
+        </div>
+        <div class="user-list" id="gameDownloadList">
+          <!-- 动态生成 -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" onclick="closeModal('gameDownloadModal')">关闭</button>
       </div>
     </div>
   </div>
@@ -1458,7 +2249,20 @@
           </label>
         </div>
         
-        <div id="batchDrmList" style="max-height: 400px; overflow-y: auto; padding: 10px 20px;">
+        <!-- 搜索和筛选 -->
+        <div style="padding: 12px 20px; border-bottom: 1px solid var(--border-color); display: flex; gap: 10px;">
+          <div class="search-box" style="flex: 1;">
+            <i class="fas fa-search"></i>
+            <input type="text" id="batchDrmSearchInput" placeholder="搜索游戏名称..." oninput="filterBatchDrmList()" autocomplete="off">
+          </div>
+          <select id="batchDrmFilter" class="filter-select" onchange="filterBatchDrmList()" style="width: 160px;">
+            <option value="all">全部游戏</option>
+            <option value="drm">D加密</option>
+            <option value="normal">非D加密</option>
+          </select>
+        </div>
+        
+        <div id="batchDrmList" style="max-height: 350px; overflow-y: auto; padding: 10px 20px;">
           <!-- 动态生成 -->
         </div>
       </div>
@@ -1491,9 +2295,11 @@
       categoriesKey: 'gamebox_categories',
       contactKey: 'gamebox_contact',
       feedbackKey: 'gamebox_feedback',
+      bannerKey: 'gamebox_banner',
       // Cloudflare Worker API 配置
-      apiBaseUrl: 'https://gamebox-api-v2.danyouhai.workers.dev',
-      adminPassword: 'abc123'
+      apiBaseUrl: 'https://api.djgamebox.com',
+      adminPassword: 'abc123',
+      kvNamespace: 'GAMEBOX_KV'
     };
 
     // 默认分类
@@ -1529,17 +2335,64 @@
     let currentDownloadSort = { field: 'total', order: 'desc' };
     let batchCoverPage = 1;
     let batchCoverFilteredGames = [];
+    let batchCoverFilterType = 'all'; // 筛选类型: all, uploaded, empty
     let batchCategorySelectedGames = new Set();
     let batchDrmSelectedGames = new Set();
+    let lastFocusedPasteArea = null; // 记录最后点击的粘贴区域
 
     // ==================== 初始化 ====================
-    document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', async () => {
       initTheme();
-      loadData();
+      await loadData();
       initEvents();
       renderGamesTable();
       updateStats();
+      
+      // 启动自动备份（每5分钟自动导出到 data-embed.js）
+      startAutoBackup();
     });
+    
+    // 自动备份功能 - 自动下载 data-embed.js
+    let autoBackupInterval = null;
+    let lastBackupTime = parseInt(localStorage.getItem('lastBackupTime') || '0');
+    let pendingBackup = false;
+    
+    function startAutoBackup() {
+      // 立即检查是否需要备份
+      checkAndBackup();
+      
+      // 每5分钟检查一次
+      autoBackupInterval = setInterval(checkAndBackup, 5 * 60 * 1000);
+    }
+    
+    function checkAndBackup() {
+      const now = Date.now();
+      const fiveMinutes = 5 * 60 * 1000;
+      
+      // 如果有待备份标记且超过5分钟未备份
+      if (pendingBackup && now - lastBackupTime > fiveMinutes) {
+        console.log('自动备份到 data-embed.js...');
+        exportToDataEmbed();
+        pendingBackup = false;
+        lastBackupTime = now;
+        localStorage.setItem('lastBackupTime', lastBackupTime.toString());
+        console.log('自动备份完成，请替换 data-embed.js 文件');
+      }
+    }
+    
+    // 标记需要备份
+    function markForBackup() {
+      pendingBackup = true;
+      // 延迟2秒后自动触发备份（给用户时间做其他操作）
+      setTimeout(() => {
+        if (pendingBackup) {
+          exportToDataEmbed();
+          pendingBackup = false;
+          lastBackupTime = Date.now();
+          localStorage.setItem('lastBackupTime', lastBackupTime.toString());
+        }
+      }, 2000);
+    }
 
     // ==================== 主题 ====================
     function initTheme() {
@@ -1566,51 +2419,74 @@
     }
 
     // ==================== 数据管理 ====================
-    function loadData() {
-      // 加载游戏数据
-      const storedGames = localStorage.getItem(CONFIG.storageKey);
-      
-      // 检查 localStorage 中的数据是否有效（有 name 字段）
-      let localDataValid = false;
-      if (storedGames && storedGames !== '[]' && storedGames !== 'null') {
+    async function loadData() {
+      // 1. 首先尝试从 localStorage 加载（保留用户上传的封面等数据）
+      const localData = localStorage.getItem(CONFIG.storageKey);
+      if (localData) {
         try {
-          const parsed = JSON.parse(storedGames);
-          if (parsed.length > 0 && parsed[0].name) {
-            localDataValid = true;
+          const parsed = JSON.parse(localData);
+          if (parsed && parsed.length > 0) {
+            console.log('从 localStorage 加载数据:', parsed.length, '条');
             gamesData = parsed;
-            console.log('从 localStorage 加载数据:', gamesData.length, '条');
+            // 仍然从云端获取最新数据（后台更新）
           }
         } catch (e) {
-          console.error('localStorage 数据解析失败:', e);
+          console.log('localStorage 数据解析失败');
         }
       }
       
-      // 如果 localStorage 数据无效，从 data-embed.js 加载
-      if (!localDataValid && typeof importedGames !== 'undefined' && importedGames.length > 0) {
+      // 2. 从云端加载（获取最新数据，但不覆盖本地封面）
+      let loadedFromCloud = false;
+      try {
+        const response = await fetch(`${CONFIG.apiBaseUrl}/api/games`);
+        if (response.ok) {
+          const result = await response.json();
+          if (result.games && result.games.length > 0) {
+            console.log('从云端加载数据:', result.games.length, '条');
+            // 合并云端数据和本地数据（保留本地封面）
+            const cloudGames = result.games.map(game => {
+              // 查找本地是否有这个游戏
+              const localGame = gamesData.find(g => String(g.id) === String(game.id));
+              
+              return {
+                id: game.id,
+                name: game.cn || game.name || '',
+                nameEn: game.en || game.nameEn || '',
+                category: game.type || game.category || '',
+                size: game.size || '',
+                desc: game.desc || game.description || '',
+                baiduLink1: game.link1 || game.baiduLink1 || '',
+                baiduLink2: game.link2 || game.baiduLink2 || '',
+                thunderLink: game.link3 || game.thunderLink || '',
+                // 优先使用本地封面，如果没有则使用云端封面
+                cover: (localGame && localGame.cover) ? localGame.cover : (game.cover || ''),
+                isDrm: game.isDrm || false,
+                downloadsWeb: game.downloadsWeb || 0,
+                downloadsApp: game.downloadsApp || 0,
+                updateTime: game.updateTime || Date.now()
+              };
+            });
+            
+            gamesData = cloudGames;
+            saveData();
+            loadedFromCloud = true;
+          }
+        }
+      } catch (e) {
+        console.log('从云端加载失败:', e);
+      }
+      
+      // 如果云端没有数据，从 data-embed.js 加载（但保留本地封面）
+      if (!loadedFromCloud && typeof importedGames !== 'undefined' && importedGames.length > 0) {
         console.log('从 data-embed.js 加载数据:', importedGames.length, '条');
         gamesData = importedGames.map(game => {
-          // 将中文分类名转换为英文 id
           let categoryId = game.category || '';
-          const categoryMapping = {
-            '动作': 'action',
-            '冒险': 'adventure',
-            '策略': 'strategy',
-            '射击': 'shooter',
-            '角色扮演': 'rpg',
-            '模拟经营': 'simulation',
-            '体育竞技': 'sports',
-            '赛车': 'racing',
-            '恐怖惊悚': 'horror',
-            '益智解谜': 'puzzle',
-            '骑马与砍杀': 'mnb',
-            '全面战争': 'tw',
-            '即时战略': 'rts',
-            '格斗': 'fighting',
-            '街机怀旧': 'arcade'
-          };
-          if (categoryMapping[game.category]) {
-            categoryId = categoryMapping[game.category];
-          }
+          const baiduLink1 = game.baiduLink1 || (game.downloadLinks && game.downloadLinks.baidu) || (game.downloadLinks && game.downloadLinks.baidu1) || '';
+          const baiduLink2 = game.baiduLink2 || (game.downloadLinks && game.downloadLinks.baidu2) || '';
+          const thunderLink = game.thunderLink || (game.downloadLinks && game.downloadLinks.thunder) || '';
+          
+          // 查找本地是否有这个游戏（保留本地封面）
+          const localGame = gamesData.find(g => String(g.id) === String(game.id));
           
           return {
             id: game.id,
@@ -1619,19 +2495,19 @@
             category: categoryId,
             size: game.size || '',
             desc: game.description || game.desc || '',
-            baiduLink1: game.baiduLink1 || '',
-            baiduLink2: game.baiduLink2 || '',
-            thunderLink: game.thunderLink || '',
-            cover: game.cover || '',
+            baiduLink1: baiduLink1,
+            baiduLink2: baiduLink2,
+            thunderLink: thunderLink,
+            // 优先使用本地封面，如果没有则使用 data-embed.js 中的封面
+            cover: (localGame && localGame.cover) ? localGame.cover : (game.cover || ''),
             isDrm: game.isDrm || false,
             downloadsWeb: game.downloadsWeb || 0,
             downloadsApp: game.downloadsApp || 0,
             updateTime: Date.now()
           };
         });
-        // 保存到 localStorage
         saveData();
-      } else if (!localDataValid) {
+      } else if (!loadedFromCloud) {
         gamesData = [];
       }
       
@@ -1658,16 +2534,36 @@
         categories = [...DEFAULT_CATEGORIES];
       }
       
-      // 加载联系方式
-      const storedContact = localStorage.getItem(CONFIG.contactKey);
-      contactData = storedContact ? JSON.parse(storedContact) : {
-        title: '联系我们',
-        items: [
-          { type: 'qq', label: '官方QQ群', value: '' },
-          { type: 'email', label: '官方邮箱', value: '' },
-          { type: 'wechat', label: '微信公众号', value: '' }
-        ]
-      };
+      // 加载联系方式 - 优先从云端获取
+      try {
+        const contactResponse = await fetch(`${CONFIG.apiBaseUrl}/api/contact`);
+        if (contactResponse.ok) {
+          const contactResult = await contactResponse.json();
+          contactData = contactResult || {
+            title: '联系我们',
+            items: [
+              { type: 'qq', label: '官方QQ群', value: '' },
+              { type: 'email', label: '官方邮箱', value: '' },
+              { type: 'wechat', label: '微信公众号', value: '' }
+            ]
+          };
+          console.log('从云端加载联系方式:', contactData);
+        } else {
+          throw new Error('云端获取失败');
+        }
+      } catch (e) {
+        // 如果云端获取失败，从 localStorage 加载
+        console.log('从本地加载联系方式');
+        const storedContact = localStorage.getItem(CONFIG.contactKey);
+        contactData = storedContact ? JSON.parse(storedContact) : {
+          title: '联系我们',
+          items: [
+            { type: 'qq', label: '官方QQ群', value: '' },
+            { type: 'email', label: '官方邮箱', value: '' },
+            { type: 'wechat', label: '微信公众号', value: '' }
+          ]
+        };
+      }
       
       // 加载反馈
       const storedFeedback = localStorage.getItem(CONFIG.feedbackKey);
@@ -1684,11 +2580,59 @@
       localStorage.setItem(CONFIG.feedbackKey, JSON.stringify(feedbackData));
       localStorage.setItem('gamebox_updated', new Date().toISOString());
     }
+    
+    // 保存数据并触发备份（用于用户操作后）
+    function saveDataAndBackup() {
+      saveData();
+      // 标记需要备份（2秒后自动下载）
+      if (typeof markForBackup === 'function') {
+        markForBackup();
+      }
+    }
 
     // 同步游戏数据到云端
     async function syncToCloud() {
       try {
         showToast('正在同步到云端...', 'success');
+        
+        // 英文分类名映射到中文
+        const englishToChineseMap = {
+          'action': '动作',
+          'adventure': '冒险',
+          'strategy': '策略',
+          'shooter': '射击',
+          'rpg': '角色扮演',
+          'simulation': '模拟经营',
+          'sports': '体育竞技',
+          'racing': '赛车',
+          'horror': '恐怖惊悚',
+          'puzzle': '益智解谜',
+          'mnb': '骑马与砍杀',
+          'tw': '全面战争',
+          'rts': '即时战略',
+          'fighting': '格斗',
+          'arcade': '街机怀旧'
+        };
+        
+        // 转换字段名为客户端期望的格式
+        const gamesToSync = gamesData.map(game => ({
+          id: game.id,
+          cn: game.name || '',
+          en: game.nameEn || '',
+          cover: game.cover || '',
+          type: englishToChineseMap[game.category] || game.category || '',
+          size: game.size || '',
+          update: game.updateTime || Date.now(),
+          updateTime: game.updateTime || Date.now(),
+          hot: game.hot || 0,
+          isDrm: game.isDrm || false,
+          desc: game.desc || '',
+          link1: game.baiduLink1 || '',
+          link2: game.baiduLink2 || '',
+          link3: game.thunderLink || '',
+          downloadsWeb: game.downloadsWeb || 0,
+          downloadsApp: game.downloadsApp || 0
+        }));
         
         const response = await fetch(`${CONFIG.apiBaseUrl}/api/admin/games`, {
           method: 'POST',
@@ -1696,7 +2640,7 @@
             'Content-Type': 'application/json'
           },
           body: JSON.stringify({
-            games: gamesData,
+            games: gamesToSync,
             adminPassword: CONFIG.adminPassword
           })
         });
@@ -1788,11 +2732,13 @@
     }
 
     function updateStats() {
-      document.getElementById('totalGames').textContent = gamesData.length;
+      // 过滤掉宣传栏配置数据（只排除 _banner_config）
+      const validGames = gamesData.filter(g => g.name !== '_banner_config');
+      document.getElementById('totalGames').textContent = validGames.length;
       document.getElementById('totalCategories').textContent = categories.filter(c => !c.special).length;
       
-      const webDownloads = gamesData.reduce((sum, g) => sum + (g.downloadsWeb || 0), 0);
-      const appDownloads = gamesData.reduce((sum, g) => sum + (g.downloadsApp || 0), 0);
+      const webDownloads = validGames.reduce((sum, g) => sum + (g.downloadsWeb || 0), 0);
+      const appDownloads = validGames.reduce((sum, g) => sum + (g.downloadsApp || 0), 0);
       
       document.getElementById('totalDownloadsWeb').textContent = webDownloads.toLocaleString();
       document.getElementById('totalDownloadsApp').textContent = appDownloads.toLocaleString();
@@ -1870,7 +2816,16 @@
               reader.readAsDataURL(blob);
             } else if (modal.id === 'batchCoverModal') {
               // 批量模式 - 上传到 R2
-              const activeElement = document.activeElement;
+              // 获取当前聚焦的元素，或者查找带有 focused 类的 paste-area
+              let activeElement = document.activeElement;
+              if (!activeElement || !activeElement.classList.contains('paste-area')) {
+                activeElement = document.querySelector('.paste-area.focused');
+              }
+              // 如果还是没有，尝试获取最后一个点击过的 paste-area
+              if (!activeElement) {
+                activeElement = lastFocusedPasteArea;
+              }
+              
               if (activeElement && activeElement.classList.contains('paste-area')) {
                 const gameId = activeElement.dataset.gameId;
                 
@@ -1893,7 +2848,10 @@
                   activeElement.innerHTML = `<img src="${imageUrl}">`;
                   activeElement.classList.add('has-image');
                   
-                  showToast('封面上传成功', 'success');
+                  // 保存数据并触发备份
+                  saveDataAndBackup();
+                  
+                  showToast('封面上传成功，2秒后自动下载备份文件', 'success');
                 } catch (error) {
                   console.error('上传失败:', error);
                   activeElement.innerHTML = '<div style="color: var(--accent-red);"><i class="fas fa-exclamation-circle"></i> 上传失败</div>';
@@ -1957,6 +2915,13 @@
       const category = categories.find(c => c.id === game.category || c.name === game.category);
       const isSelected = selectedGames.has(String(game.id));
       const totalDownloads = (game.downloadsWeb || 0) + (game.downloadsApp || 0);
+      
+      // 检查封面URL是否有效
+      const hasValidCover = game.cover && (
+        game.cover.startsWith('http://') || 
+        game.cover.startsWith('https://') || 
+        game.cover.startsWith('data:')
+      );
 
       return `
         <tr>
@@ -1964,9 +2929,8 @@
             <div class="checkbox ${isSelected ? 'checked' : ''}" onclick="toggleSelect('${game.id}')"></div>
           </td>
           <td>
-            <div class="game-cover" onclick="editGame('${game.id}')">
-              ${game.cover ? `<img src="${game.cover}" alt="">` : '<span style="font-size: 10px;">无封面</span>'}
-              <div class="upload-hint">点击修改</div>
+            <div class="game-cover" style="cursor: default;">
+              ${hasValidCover ? `<img src="${game.cover}" alt="" onerror="this.style.display='none'">` : ''}
             </div>
           </td>
           <td>
@@ -2009,14 +2973,35 @@
         return;
       }
 
+      // 计算显示的页码范围
+      let startPage = Math.max(1, currentPage - 2);
+      let endPage = Math.min(totalPages, startPage + 4);
+      if (endPage - startPage < 4) {
+        startPage = Math.max(1, endPage - 4);
+      }
+
+      let pageNumbers = '';
+      for (let i = startPage; i <= endPage; i++) {
+        pageNumbers += `<button class="btn btn-sm ${i === currentPage ? 'active' : ''}" onclick="changePage(${i})" style="margin: 0 2px;">${i}</button>`;
+      }
+
       let html = `
-        <button class="btn btn-sm" onclick="changePage(${currentPage - 1})" ${currentPage === 1 ? 'disabled' : ''}>
+        <button class="btn btn-sm" onclick="changePage(1)" ${currentPage === 1 ? 'disabled' : ''} title="首页">
+          <i class="fas fa-angle-double-left"></i>
+        </button>
+        <button class="btn btn-sm" onclick="changePage(${currentPage - 1})" ${currentPage === 1 ? 'disabled' : ''} title="上一页">
           <i class="fas fa-chevron-left"></i>
         </button>
-        <span style="color: var(--text-secondary); padding: 0 10px;">${currentPage} / ${totalPages}</span>
-        <button class="btn btn-sm" onclick="changePage(${currentPage + 1})" ${currentPage === totalPages ? 'disabled' : ''}>
+        ${pageNumbers}
+        <button class="btn btn-sm" onclick="changePage(${currentPage + 1})" ${currentPage === totalPages ? 'disabled' : ''} title="下一页">
           <i class="fas fa-chevron-right"></i>
         </button>
+        <button class="btn btn-sm" onclick="changePage(${totalPages})" ${currentPage === totalPages ? 'disabled' : ''} title="尾页">
+          <i class="fas fa-angle-double-right"></i>
+        </button>
+        <span style="color: var(--text-secondary); padding: 0 10px;">${currentPage} / ${totalPages}</span>
+        <input type="number" id="jumpPageInput" placeholder="页码" style="width: 60px; padding: 4px 8px; border: 1px solid var(--border-color); border-radius: 4px; background: var(--input-bg); color: var(--text-primary);" min="1" max="${totalPages}">
+        <button class="btn btn-sm" onclick="jumpToPage()">跳转</button>
         <select class="filter-select" onchange="changePageSize(this.value)" style="width: auto; margin-left: 10px;">
           <option value="10" ${CONFIG.pageSize === 10 ? 'selected' : ''}>10条/页</option>
           <option value="20" ${CONFIG.pageSize === 20 ? 'selected' : ''}>20条/页</option>
@@ -2025,6 +3010,17 @@
         </select>
       `;
       container.innerHTML = html;
+    }
+
+    function jumpToPage() {
+      const input = document.getElementById('jumpPageInput');
+      const page = parseInt(input.value);
+      const totalPages = Math.ceil(filteredGames.length / CONFIG.pageSize);
+      if (page >= 1 && page <= totalPages) {
+        changePage(page);
+      } else {
+        showToast('页码超出范围', 'error');
+      }
     }
 
     function changePage(page) {
@@ -2169,22 +3165,91 @@
         updateTime: Date.now()
       };
 
+      // 检查是否有实际修改（对比现有数据）
+      let hasChanges = false;
+      if (index >= 0) {
+        const oldGame = gamesData[index];
+        hasChanges = JSON.stringify(oldGame) !== JSON.stringify(gameData);
+      } else {
+        hasChanges = true; // 新游戏
+      }
+
       const index = gamesData.findIndex(g => String(g.id) === String(gameData.id));
       if (index >= 0) gamesData[index] = gameData;
       else gamesData.push(gameData);
 
-      saveData();
-      closeModal('gameModal');
-      renderGamesTable();
-      updateStats();
-      showToast(id ? '游戏已更新' : '游戏已添加', 'success');
+      // 只在有修改时才保存和同步
+      if (hasChanges) {
+        saveDataAndBackup();
+        closeModal('gameModal');
+        renderGamesTable();
+        updateStats();
+        showToast(id ? '游戏已更新' : '游戏已添加', 'success');
+        
+        // 自动同步到云端（不再同步到本地 data-embed.js，避免重复弹窗）
+        syncToCloud();
+      } else {
+        closeModal('gameModal');
+        showToast('没有检测到修改', 'info');
+      }
+    }
+
+    // 同步游戏数据到 data-embed.js（通过本地服务器）
+    async function syncToDataEmbed() {
+      try {
+        // 转换数据格式以匹配 data-embed.js 的结构
+        const exportGames = gamesData.map(game => ({
+          id: game.id,
+          name: game.name || '',
+          nameEn: game.nameEn || '',
+          cover: game.cover || '',
+          screenshots: [],
+          category: getCategoryName(game.category),
+          size: game.size || '',
+          description: game.desc || '',
+          baiduLink1: game.baiduLink1 || '',
+          baiduLink2: game.baiduLink2 || '',
+          thunderLink: game.thunderLink || '',
+          favorite: false,
+          dateAdded: new Date().toLocaleDateString('zh-CN'),
+          isDrm: game.isDrm || false,
+          downloadsWeb: game.downloadsWeb || 0,
+          downloadsApp: game.downloadsApp || 0,
+          updateTime: game.updateTime || Date.now()
+        }));
+        
+        const response = await fetch(`${CONFIG.apiBaseUrl}/api/admin/games`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'X-Admin-Password': CONFIG.adminPassword
+          },
+          body: JSON.stringify({ games: exportGames, adminPassword: CONFIG.adminPassword })
+        });
+        
+        if (response.ok) {
+          const result = await response.json();
+          console.log('已同步到云端:', result.message);
+        } else {
+          console.error('同步到云端失败');
+        }
+      } catch (error) {
+        console.error('同步到 data-embed.js 失败:', error);
+        // 静默失败，不影响用户体验
+      }
+    }
+
+    // 获取分类的中文名称
+    function getCategoryName(categoryId) {
+      const category = categories.find(c => c.id === categoryId);
+      return category ? category.name : categoryId;
     }
 
     function deleteGame(id) {
       if (!confirm('确定要删除这个游戏吗？')) return;
       gamesData = gamesData.filter(g => String(g.id) !== String(id));
       selectedGames.delete(String(id));
-      saveData();
+      saveDataAndBackup();
       renderGamesTable();
       updateStats();
       showToast('游戏已删除', 'success');
@@ -2240,12 +3305,21 @@
       const game = gamesData.find(g => String(g.id) === String(gameId));
       if (!game) return;
 
+      // 打印游戏数据到控制台，用于调试
+      console.log('编辑游戏:', game.name, game);
+
       document.getElementById('quickEditGameId').value = gameId;
       document.getElementById('quickEditGameName').textContent = game.name || '未命名游戏';
       document.getElementById('quickEditGameNameEn').textContent = game.nameEn || '';
-      document.getElementById('quickBaiduLink1').value = game.baiduLink1 || '';
-      document.getElementById('quickBaiduLink2').value = game.baiduLink2 || '';
-      document.getElementById('quickThunderLink').value = game.thunderLink || '';
+      
+      // 尝试不同的字段名
+      const baiduLink1 = game.baiduLink1 || game.baiduLink || game['百度链接1'] || game['百度网盘1'] || '';
+      const baiduLink2 = game.baiduLink2 || game.baiduLink2 || game['百度链接2'] || game['百度网盘2'] || '';
+      const thunderLink = game.thunderLink || game['迅雷链接'] || game['迅雷云盘'] || '';
+      
+      document.getElementById('quickBaiduLink1').value = baiduLink1;
+      document.getElementById('quickBaiduLink2').value = baiduLink2;
+      document.getElementById('quickThunderLink').value = thunderLink;
 
       openModal('quickEditLinksModal');
     }
@@ -2363,19 +3437,113 @@
       showToast('统计报表已导出', 'success');
     }
 
+    // ==================== 从R2恢复封面 ====================
+    async function restoreCoversFromR2() {
+      if (!confirm('确定要从R2恢复封面吗？\n\n这将扫描R2中的所有封面图片，并自动匹配到对应的游戏。')) return;
+      
+      showToast('正在扫描R2中的封面...', 'success');
+      
+      try {
+        const response = await fetch(`${CONFIG.apiBaseUrl}/api/admin/covers?adminPassword=${CONFIG.adminPassword}`);
+        const result = await response.json();
+        
+        if (!response.ok) {
+          throw new Error(result.error || '扫描失败');
+        }
+        
+        const covers = result.covers || [];
+        let restoredCount = 0;
+        
+        // 遍历所有封面，匹配游戏ID
+        covers.forEach(cover => {
+          const gameId = cover.gameId;
+          const game = gamesData.find(g => String(g.id) === String(gameId));
+          
+          if (game && !game.cover) {
+            game.cover = cover.url;
+            restoredCount++;
+          }
+        });
+        
+        if (restoredCount > 0) {
+          saveData();
+          renderGamesTable();
+          showToast(`成功恢复 ${restoredCount} 个封面！`, 'success');
+        } else {
+          showToast('没有找到可恢复的封面', 'info');
+        }
+        
+      } catch (error) {
+        console.error('恢复封面失败:', error);
+        showToast('恢复失败: ' + error.message, 'error');
+      }
+    }
+
     // ==================== 批量修改封面 ====================
     function batchEditCover() {
       const filter = document.getElementById('categoryFilter').value;
       const search = document.getElementById('searchInput').value.toLowerCase();
-      batchCoverFilteredGames = gamesData.filter(g => {
+      
+      // 先按分类和搜索筛选
+      let baseFiltered = gamesData.filter(g => {
         const matchSearch = !search || (g.name && g.name.toLowerCase().includes(search));
         const matchCategory = !filter || g.category === filter || (filter === 'drm' && g.isDrm);
         return matchSearch && matchCategory;
       });
       
+      // 计算各状态数量
+      const totalCount = baseFiltered.length;
+      const uploadedCount = baseFiltered.filter(g => !!g.cover).length;
+      const emptyCount = totalCount - uploadedCount;
+      
+      // 更新标签数量显示
+      document.getElementById('tabCountAll').textContent = totalCount;
+      document.getElementById('tabCountUploaded').textContent = uploadedCount;
+      document.getElementById('tabCountEmpty').textContent = emptyCount;
+      
+      // 根据当前筛选类型过滤游戏
+      applyBatchCoverFilter(baseFiltered);
+      
       batchCoverPage = 1;
       renderBatchCoverPage();
       openModal('batchCoverModal');
+    }
+    
+    // 应用筛选
+    function applyBatchCoverFilter(baseGames) {
+      if (batchCoverFilterType === 'all') {
+        batchCoverFilteredGames = baseGames;
+      } else if (batchCoverFilterType === 'uploaded') {
+        batchCoverFilteredGames = baseGames.filter(g => !!g.cover);
+      } else if (batchCoverFilterType === 'empty') {
+        batchCoverFilteredGames = baseGames.filter(g => !g.cover);
+      }
+    }
+    
+    // 设置筛选类型
+    function setBatchCoverFilter(type) {
+      batchCoverFilterType = type;
+      
+      // 更新标签样式
+      document.querySelectorAll('.batch-cover-tabs .tab-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.dataset.filter === type) {
+          btn.classList.add('active');
+        }
+      });
+      
+      // 重新筛选
+      const filter = document.getElementById('categoryFilter').value;
+      const search = document.getElementById('searchInput').value.toLowerCase();
+      let baseFiltered = gamesData.filter(g => {
+        const matchSearch = !search || (g.name && g.name.toLowerCase().includes(search));
+        const matchCategory = !filter || g.category === filter || (filter === 'drm' && g.isDrm);
+        return matchSearch && matchCategory;
+      });
+      
+      applyBatchCoverFilter(baseFiltered);
+      batchCoverPage = 1;
+      renderBatchCoverPage();
     }
 
     function renderBatchCoverPage() {
@@ -2384,37 +3552,92 @@
       const start = (batchCoverPage - 1) * CONFIG.batchCoverPageSize;
       const pageData = batchCoverFilteredGames.slice(start, start + CONFIG.batchCoverPageSize);
 
+      // 图片错误处理函数 - 加载失败时清空
+      const imgErrorHandler = 'onerror="this.style.display=\'none\'"';
+
       grid.innerHTML = pageData.map(game => {
         const hasCover = !!game.cover;
+        const coverUrl = game.cover || '';
+        // 检查是否是有效的URL（以http开头）
+        const isValidUrl = coverUrl.startsWith('http://') || coverUrl.startsWith('https://') || coverUrl.startsWith('data:');
+        const showCover = hasCover && isValidUrl;
+        
         return `
           <div class="batch-cover-item">
-            <div style="width: 140px; min-width: 140px;">
+            <div style="flex: 1; min-width: 0;">
               <div class="game-name" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="${game.name}">${game.name}</div>
-              <div style="font-size: 10px; color: var(--text-secondary); margin-top: 2px;">ID: ${game.id}</div>
+              ${game.nameEn ? `<div style="font-size: 11px; color: var(--text-secondary); margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${game.nameEn}</div>` : '<div style="font-size: 11px; color: var(--text-secondary); margin-top: 2px;">-</div>'}
             </div>
-            <div style="width: 60px; height: 34px; background: var(--input-bg); border-radius: 4px; display: flex; align-items: center; justify-content: center; overflow: hidden; border: 1px solid var(--border-color);">
-              ${hasCover ? `<img src="${game.cover}" style="width: 100%; height: 100%; object-fit: cover;">` : '<span style="font-size: 9px; color: var(--text-secondary);">无封面</span>'}
-            </div>
-            <div class="paste-area ${hasCover ? 'has-image' : ''}" data-game-id="${game.id}" tabindex="0" onclick="this.focus()">
-              ${hasCover ? 
-                `<img src="${game.cover}"><button onclick="event.stopPropagation(); removeBatchCover('${game.id}')" style="position: absolute; bottom: 2px; right: 2px; background: var(--accent-red); color: #fff; border: none; padding: 2px 6px; border-radius: 3px; font-size: 10px;"><i class="fas fa-trash"></i></button>` : 
-                '<div style="display: flex; align-items: center; gap: 4px; font-size: 11px;"><i class="fas fa-paste"></i><span>点击后按 Ctrl+V</span></div>'
+            <div class="paste-area ${showCover ? 'has-image' : ''}" data-game-id="${game.id}" tabindex="0" 
+                 onclick="lastFocusedPasteArea = this; this.focus(); document.querySelectorAll('.paste-area').forEach(el => el.classList.remove('focused')); this.classList.add('focused');"
+                 style="cursor: pointer; outline: none; width: 120px; height: 68px;">
+              ${showCover ? 
+                `<img src="${coverUrl}" ${imgErrorHandler}><button onclick="event.stopPropagation(); removeBatchCover('${game.id}')" style="position: absolute; bottom: 2px; right: 2px; background: var(--accent-red); color: #fff; border: none; padding: 2px 6px; border-radius: 3px; font-size: 10px;"><i class="fas fa-trash"></i></button>` : 
+                '<div style="display: flex; align-items: center; gap: 4px; font-size: 11px; pointer-events: none;"><i class="fas fa-paste"></i><span>点击后按 Ctrl+V</span></div>'
               }
             </div>
           </div>
         `;
       }).join('');
 
-      // 分页
+      // 分页 - 完整分页控件（首页、页码、尾页）
       const pagination = document.getElementById('batchCoverPagination');
       if (totalPages > 1) {
-        pagination.innerHTML = `
-          <button class="btn btn-sm" onclick="changeBatchCoverPage(${batchCoverPage - 1})" ${batchCoverPage === 1 ? 'disabled' : ''}><i class="fas fa-chevron-left"></i></button>
-          <span style="color: var(--text-secondary);">${batchCoverPage} / ${totalPages}</span>
-          <button class="btn btn-sm" onclick="changeBatchCoverPage(${batchCoverPage + 1})" ${batchCoverPage === totalPages ? 'disabled' : ''}><i class="fas fa-chevron-right"></i></button>
-        `;
+        let pageButtons = '';
+        
+        // 首页按钮
+        pageButtons += `<button class="page-btn first" onclick="changeBatchCoverPage(1)" ${batchCoverPage === 1 ? 'disabled' : ''}><i class="fas fa-angle-double-left"></i> 首页</button>`;
+        
+        // 上一页按钮
+        pageButtons += `<button class="page-btn" onclick="changeBatchCoverPage(${batchCoverPage - 1})" ${batchCoverPage === 1 ? 'disabled' : ''}><i class="fas fa-chevron-left"></i></button>`;
+        
+        // 页码按钮 - 显示当前页附近的页码
+        const maxVisiblePages = 5;
+        let startPage = Math.max(1, batchCoverPage - Math.floor(maxVisiblePages / 2));
+        let endPage = Math.min(totalPages, startPage + maxVisiblePages - 1);
+        
+        // 调整起始页，确保显示足够的页码
+        if (endPage - startPage + 1 < maxVisiblePages) {
+          startPage = Math.max(1, endPage - maxVisiblePages + 1);
+        }
+        
+        // 第一页（如果不在范围内）
+        if (startPage > 1) {
+          pageButtons += `<button class="page-btn" onclick="changeBatchCoverPage(1)">1</button>`;
+          if (startPage > 2) {
+            pageButtons += `<span class="page-info">...</span>`;
+          }
+        }
+        
+        // 中间页码
+        for (let i = startPage; i <= endPage; i++) {
+          pageButtons += `<button class="page-btn ${i === batchCoverPage ? 'active' : ''}" onclick="changeBatchCoverPage(${i})">${i}</button>`;
+        }
+        
+        // 最后一页（如果不在范围内）
+        if (endPage < totalPages) {
+          if (endPage < totalPages - 1) {
+            pageButtons += `<span class="page-info">...</span>`;
+          }
+          pageButtons += `<button class="page-btn" onclick="changeBatchCoverPage(${totalPages})">${totalPages}</button>`;
+        }
+        
+        // 下一页按钮
+        pageButtons += `<button class="page-btn" onclick="changeBatchCoverPage(${batchCoverPage + 1})" ${batchCoverPage === totalPages ? 'disabled' : ''}><i class="fas fa-chevron-right"></i></button>`;
+        
+        // 尾页按钮
+        pageButtons += `<button class="page-btn last" onclick="changeBatchCoverPage(${totalPages})" ${batchCoverPage === totalPages ? 'disabled' : ''}>尾页 <i class="fas fa-angle-double-right"></i></button>`;
+        
+        // 页码信息
+        const start = (batchCoverPage - 1) * CONFIG.batchCoverPageSize + 1;
+        const end = Math.min(batchCoverPage * CONFIG.batchCoverPageSize, batchCoverFilteredGames.length);
+        pageButtons += `<span class="page-info">${start}-${end} / ${batchCoverFilteredGames.length} 条</span>`;
+        
+        pagination.innerHTML = pageButtons;
+      } else if (batchCoverFilteredGames.length > 0) {
+        pagination.innerHTML = `<span class="page-info">共 ${batchCoverFilteredGames.length} 条</span>`;
       } else {
-        pagination.innerHTML = '';
+        pagination.innerHTML = '<span class="page-info">暂无数据</span>';
       }
     }
 
@@ -2425,14 +3648,44 @@
       renderBatchCoverPage();
     }
 
-    function removeBatchCover(gameId) {
+    async function removeBatchCover(gameId) {
       const game = gamesData.find(g => String(g.id) === String(gameId));
-      if (game) {
-        game.cover = '';
-        saveData();
-        renderBatchCoverPage();
-        renderGamesTable();
+      if (!game) return;
+      
+      // 先更新本地数据
+      game.cover = '';
+      game.updateTime = Date.now();
+      delete batchCovers[gameId];
+      
+      // 保存到本地
+      saveData();
+      
+      // 同步单个游戏到云端
+      try {
+        showToast('正在同步删除操作...', 'success');
+        const response = await fetch(`${CONFIG.apiBaseUrl}/api/admin/game`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            game: game,
+            adminPassword: CONFIG.adminPassword
+          })
+        });
+        
+        if (response.ok) {
+          showToast('封面已删除并同步到云端', 'success');
+        } else {
+          showToast('云端同步失败，但本地已删除', 'error');
+        }
+      } catch (error) {
+        console.error('同步删除失败:', error);
+        showToast('云端同步失败，但本地已删除', 'error');
       }
+      
+      renderBatchCoverPage();
+      renderGamesTable();
     }
 
     async function saveBatchCovers() {
@@ -2441,9 +3694,17 @@
       renderGamesTable();
       showToast('封面修改已保存到本地', 'success');
       
-      // 询问是否同步到云端
-      if (confirm('是否将修改同步到云端？')) {
+      // 自动同步到 data-embed.js
+      await syncToDataEmbed();
+      
+      // 自动同步到云端（不再询问，直接同步）
+      showToast('正在同步到云端...', 'success');
+      try {
         await syncToCloud();
+        showToast('封面修改已同步到云端，网页版将显示新封面', 'success');
+      } catch (error) {
+        console.error('同步到云端失败:', error);
+        showToast('同步到云端失败，请检查网络或稍后重试', 'error');
       }
     }
 
@@ -2553,22 +3814,56 @@
     }
 
     // ==================== 批量D加密 ====================
+    let batchDrmFilteredGames = []; // 存储过滤后的游戏列表
+    
     function batchEditDrm() {
       batchDrmSelectedGames.clear();
+      document.getElementById('batchDrmSearchInput').value = ''; // 清空搜索框
+      updateBatchDrmFilterOptions(); // 更新下拉菜单数量
       renderBatchDrmList();
       openModal('batchDrmModal');
     }
 
+    // 更新D加密筛选下拉菜单的选项（显示数量）
+    function updateBatchDrmFilterOptions() {
+      const totalCount = gamesData.length;
+      const drmCount = gamesData.filter(g => g.isDrm).length;
+      const normalCount = totalCount - drmCount;
+      
+      const select = document.getElementById('batchDrmFilter');
+      if (select) {
+        select.innerHTML = `
+          <option value="all">全部游戏 (${totalCount})</option>
+          <option value="drm">D加密 (${drmCount})</option>
+          <option value="normal">非D加密 (${normalCount})</option>
+        `;
+      }
+    }
+
     function renderBatchDrmList() {
       const container = document.getElementById('batchDrmList');
-      const filter = document.getElementById('categoryFilter').value;
-      const search = document.getElementById('searchInput').value.toLowerCase();
+      const searchInput = document.getElementById('batchDrmSearchInput');
+      const search = searchInput ? searchInput.value.toLowerCase() : '';
+      const drmFilter = document.getElementById('batchDrmFilter')?.value || 'all';
       
-      let displayGames = gamesData;
-      if (filter) displayGames = displayGames.filter(g => g.category === filter);
-      if (search) displayGames = displayGames.filter(g => (g.name || '').toLowerCase().includes(search));
+      // 过滤游戏列表
+      batchDrmFilteredGames = gamesData.filter(g => {
+        // 按D加密状态筛选
+        if (drmFilter === 'drm' && !g.isDrm) return false;
+        if (drmFilter === 'normal' && g.isDrm) return false;
+        
+        // 按名称搜索
+        if (!search) return true;
+        return (g.name || '').toLowerCase().includes(search) || 
+               (g.nameEn || '').toLowerCase().includes(search);
+      });
 
-      container.innerHTML = displayGames.map(game => {
+      if (batchDrmFilteredGames.length === 0) {
+        container.innerHTML = '<div style="text-align: center; padding: 40px; color: var(--text-secondary);"><i class="fas fa-search" style="font-size: 32px; margin-bottom: 10px; display: block; opacity: 0.5;"></i>没有找到匹配的游戏</div>';
+        return;
+      }
+
+      container.innerHTML = batchDrmFilteredGames.map(game => {
         const isSelected = batchDrmSelectedGames.has(String(game.id));
         const isDrm = game.isDrm || false;
         return `
@@ -2576,6 +3871,7 @@
             <div class="checkbox ${isSelected ? 'checked' : ''}"></div>
             <div style="flex: 1;">
               <div style="font-weight: 500;">${game.name}</div>
+              ${game.nameEn ? `<div style="font-size: 11px; color: var(--text-secondary);">${game.nameEn}</div>` : ''}
             </div>
             ${isDrm ? '<span style="background: var(--accent-red); color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 10px;">D加密</span>' : ''}
           </div>
@@ -2583,6 +3879,10 @@
       }).join('');
 
       document.getElementById('batchDrmSelectedCount').textContent = batchDrmSelectedGames.size;
+    }
+    
+    function filterBatchDrmList() {
+      renderBatchDrmList();
     }
 
     function toggleBatchDrmSelect(gameId) {
@@ -2593,15 +3893,13 @@
 
     function toggleBatchDrmSelectAll() {
       const isChecked = document.getElementById('batchDrmSelectAll').checked;
-      const filter = document.getElementById('categoryFilter').value;
-      const search = document.getElementById('searchInput').value.toLowerCase();
       
-      let displayGames = gamesData;
-      if (filter) displayGames = displayGames.filter(g => g.category === filter);
-      if (search) displayGames = displayGames.filter(g => (g.name || '').toLowerCase().includes(search));
-
-      if (isChecked) displayGames.forEach(g => batchDrmSelectedGames.add(String(g.id)));
-      else displayGames.forEach(g => batchDrmSelectedGames.delete(String(g.id)));
+      // 只对当前过滤后的结果进行全选/取消全选
+      if (isChecked) {
+        batchDrmFilteredGames.forEach(g => batchDrmSelectedGames.add(String(g.id)));
+      } else {
+        batchDrmFilteredGames.forEach(g => batchDrmSelectedGames.delete(String(g.id)));
+      }
       
       renderBatchDrmList();
     }
@@ -2668,7 +3966,7 @@
       manageContact();
     }
 
-    function saveContact() {
+    async function saveContact() {
       const selects = document.querySelectorAll('#contactList select');
       const inputs = document.querySelectorAll('#contactList input');
       
@@ -2683,18 +3981,1391 @@
         });
       }
       
-      saveData();
-      closeModal('contactModal');
-      showToast('联系方式已保存', 'success');
+      // 同步到云端
+      try {
+        showToast('正在同步联系方式到云端...', 'success');
+        
+        const response = await fetch(`${CONFIG.apiBaseUrl}/api/admin/contact`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            contact: contactData,
+            adminPassword: CONFIG.adminPassword
+          })
+        });
+        
+        if (response.ok) {
+          const result = await response.json();
+          saveData();
+          closeModal('contactModal');
+          showToast('联系方式已保存并同步到云端', 'success');
+        } else {
+          const error = await response.json();
+          showToast('同步失败: ' + (error.error || '未知错误'), 'error');
+        }
+      } catch (error) {
+        console.error('同步联系方式失败:', error);
+        showToast('同步失败: ' + error.message + '，已保存到本地', 'error');
+        // 即使同步失败也保存到本地
+        saveData();
+        closeModal('contactModal');
+      }
+    }
+
+    // ==================== 宣传栏管理 ====================
+    // 默认宣传栏数据
+    const DEFAULT_BANNER = {
+      text: '本站和其他网站不同，库里面的所有游戏均：没有虚拟机、没有假入库，请放心玩',
+      style: 'default',
+      icon: 'fa-shield-alt'
+    };
+
+    let bannerData = JSON.parse(localStorage.getItem(CONFIG.bannerKey)) || { ...DEFAULT_BANNER };
+
+    function manageBanner() {
+      document.getElementById('bannerText').value = bannerData.text;
+      document.getElementById('bannerStyle').value = bannerData.style;
+      updateBannerPreview();
+      openModal('bannerModal');
+    }
+
+    function updateBannerPreview() {
+      const text = document.getElementById('bannerText').value || '请输入宣传文字';
+      const style = document.getElementById('bannerStyle').value;
+      
+      document.getElementById('bannerPreviewText').textContent = text;
+      
+      const preview = document.getElementById('bannerPreview');
+      preview.className = 'banner-preview ' + style;
+      
+      // 根据样式更新预览
+      const styleMap = {
+        'default': { bg: 'linear-gradient(90deg, #ffd700, #ffed4e)', color: '#333', icon: 'fa-shield-alt' },
+        'blue': { bg: 'linear-gradient(90deg, #1e3a5f, #2a5298)', color: '#fff', icon: 'fa-info-circle' },
+        'green': { bg: 'linear-gradient(90deg, #1b5e20, #2e7d32)', color: '#fff', icon: 'fa-check-circle' },
+        'red': { bg: 'linear-gradient(90deg, #b71c1c, #d32f2f)', color: '#fff', icon: 'fa-exclamation-circle' },
+        'purple': { bg: 'linear-gradient(90deg, #4a148c, #7b1fa2)', color: '#fff', icon: 'fa-star' },
+        'dark': { bg: 'linear-gradient(90deg, #1a1a2e, #16213e)', color: '#fff', icon: 'fa-bell' }
+      };
+      
+      const s = styleMap[style] || styleMap['default'];
+      preview.style.background = s.bg;
+      preview.style.color = s.color;
+      preview.querySelector('i').className = 'fas ' + s.icon;
+    }
+
+    async function saveBanner() {
+      const text = document.getElementById('bannerText').value.trim();
+      const style = document.getElementById('bannerStyle').value;
+      
+      bannerData = {
+        text: text,
+        style: style,
+        icon: getIconByStyle(style),
+        updateTime: Date.now()
+      };
+      
+      // 保存到本地
+      localStorage.setItem(CONFIG.bannerKey, JSON.stringify(bannerData));
+      
+      // 将宣传栏数据附加到游戏数据中同步
+      // 使用一个特殊的游戏ID来存储宣传栏数据
+      const bannerGameIndex = gamesData.findIndex(g => g.id === '_banner_config');
+      const bannerGame = {
+        id: '_banner_config',
+        name: '_banner_config',
+        nameEn: '_banner_config',
+        category: '_system',
+        desc: JSON.stringify(bannerData),
+        updateTime: Date.now()
+      };
+      
+      if (bannerGameIndex >= 0) {
+        gamesData[bannerGameIndex] = bannerGame;
+      } else {
+        gamesData.push(bannerGame);
+      }
+      
+      // 同步到云端（通过现有的游戏同步接口）
+      try {
+        showToast('正在同步宣传栏到云端...', 'success');
+        
+        const response = await fetch(`${CONFIG.apiBaseUrl}/api/admin/games`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            games: gamesData,
+            adminPassword: CONFIG.adminPassword
+          })
+        });
+        
+        if (response.ok) {
+          closeModal('bannerModal');
+          showToast('宣传栏已保存并同步到云端', 'success');
+        } else {
+          const error = await response.json();
+          showToast('同步失败: ' + (error.error || '未知错误'), 'error');
+        }
+      } catch (error) {
+        console.error('同步宣传栏失败:', error);
+        showToast('同步失败: ' + error.message + '，已保存到本地', 'error');
+        closeModal('bannerModal');
+      }
+    }
+
+    function getIconByStyle(style) {
+      const iconMap = {
+        'default': 'fa-shield-alt',
+        'blue': 'fa-info-circle',
+        'green': 'fa-check-circle',
+        'red': 'fa-exclamation-circle',
+        'purple': 'fa-star',
+        'dark': 'fa-bell'
+      };
+      return iconMap[style] || 'fa-shield-alt';
+    }
+
+    // ==================== 用户数据统计 ====================
+    let userData = [];
+    let filteredUserData = [];
+    let userChart = null;
+
+    async function viewUserData() {
+      try {
+        showToast('正在加载用户数据...', 'success');
+        
+        const response = await fetch(`${CONFIG.apiBaseUrl}/api/admin/users`, {
+          headers: {
+            'X-Admin-Password': CONFIG.adminPassword
+          }
+        });
+        
+        if (response.ok) {
+          const result = await response.json();
+          userData = result.users || [];
+          filteredUserData = [...userData];
+          renderUserData();
+          openModal('userDataModal');
+        } else {
+          const error = await response.json();
+          showToast('获取用户数据失败: ' + (error.error || '未知错误'), 'error');
+        }
+      } catch (error) {
+        console.error('获取用户数据失败:', error);
+        showToast('获取用户数据失败: ' + error.message, 'error');
+      }
+    }
+
+    function renderUserData() {
+      updateUserStats();
+      initUserRegionFilter();
+      renderUserChart();
+      renderUserList();
+    }
+    
+    // 初始化地域筛选选项
+    function initUserRegionFilter() {
+      const regionSelect = document.getElementById('userRegionFilter');
+      const citySelect = document.getElementById('userCityFilter');
+      
+      // 提取所有地域
+      const regions = new Set();
+      const cities = new Set();
+      
+      userData.forEach(u => {
+        const region = u.region || u.province;
+        const city = u.city;
+        if (region) regions.add(region);
+        if (city) cities.add(city);
+      });
+      
+      // 保存当前选择
+      const currentRegion = regionSelect.value;
+      const currentCity = citySelect.value;
+      
+      // 更新省份选项
+      let regionOptions = '<option value="all">全部地域</option>';
+      Array.from(regions).sort().forEach(r => {
+        regionOptions += `<option value="${r}">${r}</option>`;
+      });
+      regionSelect.innerHTML = regionOptions;
+      regionSelect.value = currentRegion;
+      
+      // 如果有选择省份，显示城市筛选
+      if (currentRegion !== 'all') {
+        citySelect.style.display = 'block';
+        
+        // 更新城市选项（只显示该省份的城市）
+        const regionCities = new Set();
+        userData.forEach(u => {
+          const region = u.region || u.province;
+          const city = u.city;
+          if (region === currentRegion && city) {
+            regionCities.add(city);
+          }
+        });
+        
+        let cityOptions = '<option value="all">全部城市</option>';
+        Array.from(regionCities).sort().forEach(c => {
+          cityOptions += `<option value="${c}">${c}</option>`;
+        });
+        citySelect.innerHTML = cityOptions;
+        citySelect.value = currentCity;
+      } else {
+        citySelect.style.display = 'none';
+        citySelect.innerHTML = '<option value="all">全部城市</option>';
+      }
+      
+      // 省份改变时更新城市选项
+      regionSelect.onchange = function() {
+        const selectedRegion = this.value;
+        if (selectedRegion !== 'all') {
+          citySelect.style.display = 'block';
+          
+          const regionCities = new Set();
+          userData.forEach(u => {
+            const region = u.region || u.province;
+            const city = u.city;
+            if (region === selectedRegion && city) {
+              regionCities.add(city);
+            }
+          });
+          
+          let cityOptions = '<option value="all">全部城市</option>';
+          Array.from(regionCities).sort().forEach(c => {
+            cityOptions += `<option value="${c}">${c}</option>`;
+          });
+          citySelect.innerHTML = cityOptions;
+        } else {
+          citySelect.style.display = 'none';
+          citySelect.innerHTML = '<option value="all">全部城市</option>';
+        }
+        filterUserData();
+      };
+    }
+
+    function updateUserStats() {
+      const total = filteredUserData.length;
+      
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      const todayCount = filteredUserData.filter(u => {
+        const d = new Date(u.createdAt);
+        return d >= today;
+      }).length;
+      
+      const weekAgo = new Date();
+      weekAgo.setDate(weekAgo.getDate() - 7);
+      const weekCount = filteredUserData.filter(u => {
+        const d = new Date(u.createdAt);
+        return d >= weekAgo;
+      }).length;
+      
+      document.getElementById('totalUsers').textContent = total;
+      document.getElementById('todayUsers').textContent = todayCount;
+      document.getElementById('weekUsers').textContent = weekCount;
+      document.getElementById('filteredUserCount').textContent = total;
+    }
+
+    function renderUserChart() {
+      const ctx = document.getElementById('userChart').getContext('2d');
+      
+      // 按日期统计注册数
+      const dateMap = {};
+      filteredUserData.forEach(u => {
+        const date = new Date(u.createdAt).toLocaleDateString('zh-CN');
+        dateMap[date] = (dateMap[date] || 0) + 1;
+      });
+      
+      // 排序日期
+      const sortedDates = Object.keys(dateMap).sort((a, b) => {
+        return new Date(a) - new Date(b);
+      });
+      
+      // 只显示最近30天的数据
+      const recentDates = sortedDates.slice(-30);
+      const counts = recentDates.map(d => dateMap[d]);
+      
+      if (userChart) {
+        userChart.destroy();
+      }
+      
+      userChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: recentDates,
+          datasets: [{
+            label: '每日注册用户数',
+            data: counts,
+            borderColor: '#66c0f4',
+            backgroundColor: 'rgba(102, 192, 244, 0.1)',
+            borderWidth: 2,
+            fill: true,
+            tension: 0.4
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: false
+            }
+          },
+          scales: {
+            x: {
+              ticks: {
+                color: '#8f98a0',
+                maxTicksLimit: 10
+              },
+              grid: {
+                color: 'rgba(255,255,255,0.1)'
+              }
+            },
+            y: {
+              ticks: {
+                color: '#8f98a0'
+              },
+              grid: {
+                color: 'rgba(255,255,255,0.1)'
+              },
+              beginAtZero: true
+            }
+          }
+        }
+      });
+    }
+
+    function renderUserList() {
+      const list = document.getElementById('userList');
+      
+      if (filteredUserData.length === 0) {
+        list.innerHTML = '<div style="padding: 40px; text-align: center; color: var(--text-secondary);">暂无用户数据</div>';
+        return;
+      }
+      
+      // 按注册时间倒序
+      const sorted = [...filteredUserData].sort((a, b) => {
+        return new Date(b.createdAt) - new Date(a.createdAt);
+      });
+      
+      list.innerHTML = sorted.map(u => {
+        const date = new Date(u.createdAt).toLocaleString('zh-CN');
+        const region = u.region || u.province || '-';
+        const city = u.city || '-';
+        const location = region !== '-' ? (city !== '-' ? `${region} · ${city}` : region) : '-';
+        return `
+          <div class="user-list-item">
+            <div class="user-info-cell">
+              <span class="user-name">${u.username || '未知'}</span>
+              <span class="user-date">注册时间: ${date}</span>
+              ${location !== '-' ? `<span style="font-size: 11px; color: var(--accent-blue);"><i class="fas fa-map-marker-alt"></i> ${location}</span>` : ''}
+            </div>
+            <span style="font-size: 12px; color: var(--text-secondary);">ID: ${u.id || '-'}</span>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function filterUserData() {
+      const filter = document.getElementById('userTimeFilter').value;
+      const startDateInput = document.getElementById('userStartDate');
+      const endDateInput = document.getElementById('userEndDate');
+      
+      // 显示/隐藏自定义日期输入
+      if (filter === 'custom') {
+        startDateInput.style.display = 'block';
+        endDateInput.style.display = 'block';
+      } else {
+        startDateInput.style.display = 'none';
+        endDateInput.style.display = 'none';
+      }
+      
+      const now = new Date();
+      let startDate = null;
+      let endDate = null;
+      
+      switch(filter) {
+        case 'today':
+          startDate = new Date();
+          startDate.setHours(0, 0, 0, 0);
+          break;
+        case 'week':
+          startDate = new Date();
+          startDate.setDate(startDate.getDate() - 7);
+          break;
+        case 'month':
+          startDate = new Date();
+          startDate.setDate(startDate.getDate() - 30);
+          break;
+        case 'custom':
+          if (startDateInput.value) startDate = new Date(startDateInput.value);
+          if (endDateInput.value) {
+            endDate = new Date(endDateInput.value);
+            endDate.setHours(23, 59, 59, 999);
+          }
+          break;
+      }
+      
+      // 获取地域筛选条件
+      const regionFilter = document.getElementById('userRegionFilter').value;
+      const cityFilter = document.getElementById('userCityFilter').value;
+      
+      filteredUserData = userData.filter(u => {
+        const d = new Date(u.createdAt);
+        if (startDate && d < startDate) return false;
+        if (endDate && d > endDate) return false;
+        
+        // 地域筛选
+        if (regionFilter !== 'all') {
+          const userRegion = u.region || u.province || '';
+          if (userRegion !== regionFilter) return false;
+        }
+        
+        // 城市筛选
+        if (cityFilter !== 'all') {
+          const userCity = u.city || '';
+          if (userCity !== cityFilter) return false;
+        }
+        
+        return true;
+      });
+      
+      renderUserData();
+    }
+
+    function exportUserData() {
+      if (filteredUserData.length === 0) {
+        showToast('没有可导出的数据', 'error');
+        return;
+      }
+      
+      const csv = [
+        ['用户ID', '用户名', '注册时间', '省份', '城市'],
+        ...filteredUserData.map(u => [
+          u.id,
+          u.username,
+          new Date(u.createdAt).toLocaleString('zh-CN'),
+          u.region || u.province || '-',
+          u.city || '-'
+        ])
+      ].map(row => row.join(',')).join('\n');
+      
+      const blob = new Blob(['\ufeff' + csv], { type: 'text/csv;charset=utf-8;' });
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = `用户数据_${new Date().toLocaleDateString('zh-CN')}.csv`;
+      link.click();
+      
+      showToast('用户数据已导出', 'success');
+    }
+
+    // ==================== 客户端下载统计 ====================
+    let clientDownloadData = [];
+    let filteredClientDownloadData = [];
+    let clientDownloadChart = null;
+
+    async function viewClientDownloadStats() {
+      try {
+        showToast('正在加载客户端下载统计...', 'success');
+        
+        // 从云端获取下载记录
+        const response = await fetch(`${CONFIG.apiBaseUrl}/api/admin/client-downloads`, {
+          headers: {
+            'X-Admin-Password': CONFIG.adminPassword
+          }
+        });
+        
+        if (response.ok) {
+          const result = await response.json();
+          clientDownloadData = result.downloads || [];
+          filteredClientDownloadData = [...clientDownloadData];
+          renderClientDownloadStats();
+          openModal('clientDownloadModal');
+        } else {
+          // 如果 API 不存在，使用模拟数据演示
+          clientDownloadData = generateMockClientDownloadData();
+          filteredClientDownloadData = [...clientDownloadData];
+          renderClientDownloadStats();
+          openModal('clientDownloadModal');
+          showToast('API 未部署，显示演示数据', 'warning');
+        }
+      } catch (error) {
+        console.error('获取客户端下载统计失败:', error);
+        // 使用模拟数据
+        clientDownloadData = generateMockClientDownloadData();
+        filteredClientDownloadData = [...clientDownloadData];
+        renderClientDownloadStats();
+        openModal('clientDownloadModal');
+        showToast('获取失败，显示演示数据', 'warning');
+      }
+    }
+
+    // 生成模拟数据（用于演示）
+    function generateMockClientDownloadData() {
+      const data = [];
+      const sources = ['detail', 'home'];
+      const regions = ['北京', '上海', '广东', '江苏', '浙江', '四川', '湖北', '山东', '河南', '湖南'];
+      
+      for (let i = 0; i < 100; i++) {
+        const date = new Date();
+        date.setDate(date.getDate() - Math.floor(Math.random() * 30));
+        date.setHours(Math.floor(Math.random() * 24), Math.floor(Math.random() * 60));
+        
+        data.push({
+          id: Date.now() - i * 1000,
+          source: sources[Math.floor(Math.random() * sources.length)],
+          region: regions[Math.floor(Math.random() * regions.length)],
+          ip: `192.168.${Math.floor(Math.random() * 255)}.${Math.floor(Math.random() * 255)}`,
+          userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+          createdAt: date.toISOString()
+        });
+      }
+      
+      return data.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+    }
+
+    // 同步下载统计（客户端下载 + 游戏下载）
+    async function syncDownloadStats() {
+      showToast('正在同步下载统计...', 'success');
+      
+      try {
+        // 1. 同步游戏下载统计
+        const gameStatsResponse = await fetch(`${CONFIG.apiBaseUrl}/api/admin/download-stats`, {
+          headers: {
+            'X-Admin-Password': CONFIG.adminPassword
+          }
+        });
+        
+        if (gameStatsResponse.ok) {
+          const gameStats = await gameStatsResponse.json();
+          
+          // 更新 gamesData 中的下载数据
+          if (gameStats.games) {
+            gameStats.games.forEach(stat => {
+              const game = gamesData.find(g => String(g.id) === String(stat.id));
+              if (game) {
+                game.downloadsWeb = stat.downloadsWeb || 0;
+                game.downloadsApp = stat.downloadsApp || 0;
+              }
+            });
+            
+            // 保存到本地
+            saveData();
+            
+            // 同步到 data-embed.js
+            await syncToDataEmbed();
+            
+            console.log('游戏下载统计已同步:', gameStats.games.length, '条');
+          }
+        } else {
+          console.warn('游戏下载统计API返回错误');
+        }
+        
+        // 2. 同步客户端下载统计
+        const clientStatsResponse = await fetch(`${CONFIG.apiBaseUrl}/api/admin/client-downloads`, {
+          headers: {
+            'X-Admin-Password': CONFIG.adminPassword
+          }
+        });
+        
+        if (clientStatsResponse.ok) {
+          const clientStats = await clientStatsResponse.json();
+          
+          if (clientStats.downloads) {
+            clientDownloadData = clientStats.downloads;
+            filteredClientDownloadData = [...clientDownloadData];
+            console.log('客户端下载统计已同步:', clientStats.downloads.length, '条');
+          }
+        } else {
+          console.warn('客户端下载统计API返回错误');
+        }
+        
+        // 更新统计显示
+        updateStats();
+        renderGamesTable();
+        
+        showToast('下载统计同步完成！', 'success');
+        
+      } catch (error) {
+        console.error('同步下载统计失败:', error);
+        showToast('同步失败: ' + error.message, 'error');
+      }
+    }
+
+    function renderClientDownloadStats() {
+      updateClientDownloadStats();
+      renderClientDownloadChart();
+      renderRegionStats();
+      renderClientDownloadList();
+    }
+
+    function updateClientDownloadStats() {
+      // 按IP去重，同一个IP只算一次
+      const uniqueByIp = (data) => {
+        const seen = new Set();
+        return data.filter(d => {
+          const ip = d.ip || 'unknown';
+          if (seen.has(ip)) return false;
+          seen.add(ip);
+          return true;
+        });
+      };
+      
+      const uniqueData = uniqueByIp(filteredClientDownloadData);
+      const total = uniqueData.length;
+      
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      const todayCount = uniqueByIp(filteredClientDownloadData.filter(d => {
+        const date = new Date(d.createdAt);
+        return date >= today;
+      })).length;
+      
+      const weekAgo = new Date();
+      weekAgo.setDate(weekAgo.getDate() - 7);
+      const weekCount = uniqueByIp(filteredClientDownloadData.filter(d => {
+        const date = new Date(d.createdAt);
+        return date >= weekAgo;
+      })).length;
+      
+      const monthAgo = new Date();
+      monthAgo.setDate(monthAgo.getDate() - 30);
+      const monthCount = uniqueByIp(filteredClientDownloadData.filter(d => {
+        const date = new Date(d.createdAt);
+        return date >= monthAgo;
+      })).length;
+      
+      document.getElementById('totalClientDownloads').textContent = total;
+      document.getElementById('todayClientDownloads').textContent = todayCount;
+      document.getElementById('weekClientDownloads').textContent = weekCount;
+      document.getElementById('monthClientDownloads').textContent = monthCount;
+      document.getElementById('filteredClientDownloadCount').textContent = total;
+    }
+
+    function renderRegionStats() {
+      // 按IP去重后再统计地域
+      const seenIps = new Set();
+      const uniqueData = filteredClientDownloadData.filter(d => {
+        const ip = d.ip || 'unknown';
+        if (seenIps.has(ip)) return false;
+        seenIps.add(ip);
+        return true;
+      });
+      
+      // 统计省份
+      const regionMap = {};
+      // 统计城市
+      const cityMap = {};
+      
+      uniqueData.forEach(d => {
+        const region = d.region || '未知';
+        const city = d.city && d.city !== 'unknown' ? d.city : '';
+        
+        regionMap[region] = (regionMap[region] || 0) + 1;
+        
+        if (city) {
+          const cityKey = `${region} · ${city}`;
+          cityMap[cityKey] = (cityMap[cityKey] || 0) + 1;
+        }
+      });
+      
+      // 优先显示城市统计，如果没有城市则显示省份
+      const hasCityData = Object.keys(cityMap).length > 0;
+      const displayData = hasCityData ? cityMap : regionMap;
+      
+      const sortedData = Object.entries(displayData)
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 10);
+      
+      const container = document.getElementById('regionStats');
+      container.innerHTML = sortedData.map(([location, count]) => `
+        <div style="background: var(--bg-tertiary); padding: 8px 15px; border-radius: 20px; font-size: 13px;">
+          <span style="color: var(--text-primary);">${location}</span>
+          <span style="color: var(--accent-blue); margin-left: 5px; font-weight: bold;">${count}</span>
+        </div>
+      `).join('');
+    }
+
+    function renderClientDownloadChart() {
+      const ctx = document.getElementById('clientDownloadChart').getContext('2d');
+      
+      const dateMap = {};
+      filteredClientDownloadData.forEach(d => {
+        const date = new Date(d.createdAt).toLocaleDateString('zh-CN');
+        dateMap[date] = (dateMap[date] || 0) + 1;
+      });
+      
+      const sortedDates = Object.keys(dateMap).sort((a, b) => new Date(a) - new Date(b));
+      const recentDates = sortedDates.slice(-30);
+      const counts = recentDates.map(d => dateMap[d]);
+      
+      if (clientDownloadChart) {
+        clientDownloadChart.destroy();
+      }
+      
+      clientDownloadChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: recentDates,
+          datasets: [{
+            label: '每日客户端下载量',
+            data: counts,
+            borderColor: '#5c7e10',
+            backgroundColor: 'rgba(92, 126, 16, 0.1)',
+            borderWidth: 2,
+            fill: true,
+            tension: 0.4
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false }
+          },
+          scales: {
+            x: {
+              ticks: { color: '#8f98a0', maxTicksLimit: 10 },
+              grid: { color: 'rgba(255,255,255,0.1)' }
+            },
+            y: {
+              ticks: { color: '#8f98a0' },
+              grid: { color: 'rgba(255,255,255,0.1)' },
+              beginAtZero: true
+            }
+          }
+        }
+      });
+    }
+
+    function renderClientDownloadList() {
+      const list = document.getElementById('clientDownloadList');
+      
+      if (filteredClientDownloadData.length === 0) {
+        list.innerHTML = '<div style="padding: 40px; text-align: center; color: var(--text-secondary);">暂无下载记录</div>';
+        return;
+      }
+      
+      const sorted = [...filteredClientDownloadData].sort((a, b) => {
+        return new Date(b.createdAt) - new Date(a.createdAt);
+      }).slice(0, 100); // 只显示最近100条
+      
+      list.innerHTML = sorted.map(d => {
+        const date = new Date(d.createdAt).toLocaleString('zh-CN');
+        const sourceClass = d.source === 'detail' ? 'detail' : 'home';
+        const sourceText = d.source === 'detail' ? '详情页' : '主页';
+        const city = d.city && d.city !== 'unknown' ? d.city : '';
+        const location = d.region ? (city ? `${d.region} · ${city}` : d.region) : '未知地区';
+        
+        return `
+          <div class="user-list-item">
+            <div class="user-info-cell">
+              <span class="user-name">
+                <span class="download-source-tag ${sourceClass}">${sourceText}</span>
+                <span style="margin-left: 8px;">${location}</span>
+              </span>
+              <span class="user-date">${date} · IP: ${d.ip || '-'}</span>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function filterClientDownloadStats() {
+      const timeFilter = document.getElementById('clientDownloadTimeFilter').value;
+      const sourceFilter = document.getElementById('clientDownloadSourceFilter').value;
+      const startDateInput = document.getElementById('clientDownloadStartDate');
+      const endDateInput = document.getElementById('clientDownloadEndDate');
+      
+      if (timeFilter === 'custom') {
+        startDateInput.style.display = 'block';
+        endDateInput.style.display = 'block';
+      } else {
+        startDateInput.style.display = 'none';
+        endDateInput.style.display = 'none';
+      }
+      
+      const now = new Date();
+      let startDate = null;
+      let endDate = null;
+      
+      switch(timeFilter) {
+        case 'today':
+          startDate = new Date();
+          startDate.setHours(0, 0, 0, 0);
+          break;
+        case 'week':
+          startDate = new Date();
+          startDate.setDate(startDate.getDate() - 7);
+          break;
+        case 'month':
+          startDate = new Date();
+          startDate.setDate(startDate.getDate() - 30);
+          break;
+        case 'custom':
+          if (startDateInput.value) startDate = new Date(startDateInput.value);
+          if (endDateInput.value) {
+            endDate = new Date(endDateInput.value);
+            endDate.setHours(23, 59, 59, 999);
+          }
+          break;
+      }
+      
+      filteredClientDownloadData = clientDownloadData.filter(d => {
+        const date = new Date(d.createdAt);
+        if (startDate && date < startDate) return false;
+        if (endDate && date > endDate) return false;
+        if (sourceFilter !== 'all' && d.source !== sourceFilter) return false;
+        return true;
+      });
+      
+      renderClientDownloadStats();
+    }
+
+    // ==================== 游戏下载统计 ====================
+    let gameDownloadData = [];
+    let filteredGameDownloadData = [];
+    let gameDownloadChart = null;
+    let gameDownloadTrendChart = null;
+    let gameDownloadRawData = []; // 原始下载记录数据
+
+    // 游戏下载地域数据
+    let gameDownloadRegionData = [];
+    let gameDownloadCityData = {};
+
+    async function viewGameDownloadStats() {
+      try {
+        showToast('正在加载游戏下载统计...', 'success');
+        
+        // 并行获取游戏下载统计和地域统计
+        const [statsResponse, regionResponse] = await Promise.all([
+          fetch(`${CONFIG.apiBaseUrl}/api/admin/download-stats`, {
+            headers: { 'X-Admin-Password': CONFIG.adminPassword }
+          }),
+          fetch(`${CONFIG.apiBaseUrl}/api/admin/game-downloads`, {
+            headers: { 'X-Admin-Password': CONFIG.adminPassword }
+          }).catch(() => null) // 地域统计API可能不存在，忽略错误
+        ]);
+        
+        // 处理游戏下载统计
+        if (statsResponse.ok) {
+          const result = await statsResponse.json();
+          gameDownloadData = result.games.map(g => ({
+            id: g.id,
+            name: g.name,
+            webDownloads: g.downloadsWeb || 0,
+            appDownloads: g.downloadsApp || 0,
+            totalDownloads: (g.downloadsWeb || 0) + (g.downloadsApp || 0)
+          }));
+          filteredGameDownloadData = [...gameDownloadData];
+        }
+        
+        // 处理地域统计
+        if (regionResponse && regionResponse.ok) {
+          const regionResult = await regionResponse.json();
+          console.log('地域统计API返回:', regionResult);
+          gameDownloadRegionData = regionResult.regionStats || [];
+          gameDownloadCityData = regionResult.cityStats || {};
+          gameDownloadRawData = regionResult.downloads || []; // 保存原始下载记录
+          console.log('地域数据:', gameDownloadRegionData.length, '个省份');
+          
+          // 初始化地域筛选器
+          initGameDownloadRegionFilter();
+        } else {
+          console.warn('地域统计API错误:', regionResponse ? regionResponse.status : '无响应');
+          gameDownloadRegionData = [];
+          gameDownloadCityData = {};
+          gameDownloadRawData = [];
+        }
+        
+        renderGameDownloadStats();
+        renderGameDownloadRegionStats();
+        renderGameDownloadTrendChart(); // 渲染趋势折线图
+        openModal('gameDownloadModal');
+      } catch (error) {
+        console.error('获取游戏下载统计失败:', error);
+        // 使用本地游戏数据
+        gameDownloadData = gamesData.map(g => ({
+          id: g.id,
+          name: g.name,
+          webDownloads: g.downloadsWeb || 0,
+          appDownloads: g.downloadsApp || 0,
+          totalDownloads: (g.downloadsWeb || 0) + (g.downloadsApp || 0)
+        })).sort((a, b) => b.totalDownloads - a.totalDownloads);
+        filteredGameDownloadData = [...gameDownloadData];
+        renderGameDownloadStats();
+        openModal('gameDownloadModal');
+        showToast('网络错误，显示本地数据', 'warning');
+      }
+    }
+
+    function generateMockGameDownloadData() {
+      const games = [
+        { id: 1, name: '赛博朋克2077' },
+        { id: 2, name: '全面战争：三国' },
+        { id: 3, name: '骑马与砍杀2' },
+        { id: 4, name: 'NBA 2K26' },
+        { id: 5, name: 'FIFA 26' }
+      ];
+      
+      return games.map(g => ({
+        id: g.id,
+        name: g.name,
+        webDownloads: Math.floor(Math.random() * 500),
+        appDownloads: Math.floor(Math.random() * 300),
+        totalDownloads: 0
+      })).map(g => ({
+        ...g,
+        totalDownloads: g.webDownloads + g.appDownloads
+      })).sort((a, b) => b.totalDownloads - a.totalDownloads);
+    }
+
+    function renderGameDownloadStats() {
+      updateGameDownloadStats();
+      renderGameDownloadChart();
+      renderGameDownloadTrendChart();
+      renderGameDownloadList();
+      renderGameDownloadRegionStats();
+    }
+
+    function updateGameDownloadStats() {
+      const totalWeb = filteredGameDownloadData.reduce((sum, g) => sum + g.webDownloads, 0);
+      const totalApp = filteredGameDownloadData.reduce((sum, g) => sum + g.appDownloads, 0);
+      const total = totalWeb + totalApp;
+      
+      document.getElementById('totalGameDownloads').textContent = total;
+      document.getElementById('webGameDownloads').textContent = totalWeb;
+      document.getElementById('appGameDownloads').textContent = totalApp;
+      document.getElementById('filteredGameCount').textContent = filteredGameDownloadData.length;
+    }
+
+    // 渲染游戏下载地域统计
+    function renderGameDownloadRegionStats() {
+      const regionContainer = document.getElementById('gameRegionStats');
+      const detailList = document.getElementById('gameRegionDetailList');
+      
+      // 根据当前筛选条件计算地域分布
+      const regionFilter = document.getElementById('gameDownloadRegionFilter')?.value || 'all';
+      const timeFilter = document.getElementById('gameDownloadTimeFilter')?.value || 'all';
+      
+      // 筛选原始数据
+      let filteredRawData = [...gameDownloadRawData];
+      
+      if (timeFilter !== 'all') {
+        const now = new Date();
+        let startDate = null;
+        
+        switch(timeFilter) {
+          case 'today':
+            startDate = new Date();
+            startDate.setHours(0, 0, 0, 0);
+            break;
+          case 'week':
+            startDate = new Date();
+            startDate.setDate(startDate.getDate() - 7);
+            break;
+          case 'month':
+            startDate = new Date();
+            startDate.setDate(startDate.getDate() - 30);
+            break;
+        }
+        
+        if (startDate) {
+          filteredRawData = filteredRawData.filter(d => {
+            const date = new Date(d.createdAt);
+            return date >= startDate;
+          });
+        }
+      }
+      
+      if (regionFilter !== 'all') {
+        filteredRawData = filteredRawData.filter(d => d.region === regionFilter);
+      }
+      
+      // 计算地域分布
+      const regionMap = {};
+      const cityMap = {};
+      
+      filteredRawData.forEach(d => {
+        const region = d.region || '未知';
+        const city = d.city && d.city !== 'unknown' ? d.city : '-';
+        
+        regionMap[region] = (regionMap[region] || 0) + 1;
+        
+        if (!cityMap[region]) {
+          cityMap[region] = {};
+        }
+        cityMap[region][city] = (cityMap[region][city] || 0) + 1;
+      });
+      
+      const sortedRegions = Object.entries(regionMap)
+        .map(([name, count]) => ({ name, count }))
+        .sort((a, b) => b.count - a.count);
+      
+      // 渲染省份分布标签
+      if (sortedRegions.length === 0) {
+        regionContainer.innerHTML = '<span style="color: var(--text-secondary);">暂无地域数据（新下载会自动记录）</span>';
+        detailList.innerHTML = '<tr><td colspan="4" style="text-align: center; padding: 20px; color: var(--text-secondary);">暂无数据，请产生新的游戏下载后查看</td></tr>';
+        return;
+      }
+      
+      regionContainer.innerHTML = sortedRegions.slice(0, 10).map(r => `
+        <div style="background: var(--bg-tertiary); padding: 8px 15px; border-radius: 20px; font-size: 13px;">
+          <span style="color: var(--text-primary);">${r.name}</span>
+          <span style="color: var(--accent-blue); margin-left: 5px; font-weight: bold;">${r.count}</span>
+        </div>
+      `).join('');
+      
+      // 渲染城市明细表格
+      let detailHtml = '';
+      let rowNum = 1;
+      
+      sortedRegions.forEach(region => {
+        const cities = cityMap[region.name] || {};
+        const cityList = Object.entries(cities).sort((a, b) => b[1] - a[1]);
+        
+        cityList.forEach(([city, count]) => {
+          detailHtml += `
+            <tr>
+              <td style="text-align: center;">${rowNum++}</td>
+              <td>${region.name}</td>
+              <td>${city}</td>
+              <td style="text-align: center; font-weight: bold; color: var(--accent-blue);">${count}</td>
+            </tr>
+          `;
+        });
+      });
+      
+      detailList.innerHTML = detailHtml || '<tr><td colspan="4" style="text-align: center; padding: 20px; color: var(--text-secondary);">暂无数据</td></tr>';
+    }
+
+    function renderGameDownloadChart() {
+      const ctx = document.getElementById('gameDownloadChart').getContext('2d');
+      
+      // 检查数据是否存在
+      if (!filteredGameDownloadData || filteredGameDownloadData.length === 0) {
+        console.warn('没有游戏下载数据，跳过图表渲染');
+        return;
+      }
+      
+      // 取下载量前10的游戏
+      const topGames = filteredGameDownloadData.slice(0, 10);
+      
+      if (gameDownloadChart) {
+        gameDownloadChart.destroy();
+      }
+      
+      gameDownloadChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: topGames.map(g => g.name.length > 10 ? g.name.substring(0, 10) + '...' : g.name),
+          datasets: [
+            {
+              label: '网页版',
+              data: topGames.map(g => g.webDownloads),
+              backgroundColor: 'rgba(102, 192, 244, 0.8)',
+              borderColor: '#66c0f4',
+              borderWidth: 1
+            },
+            {
+              label: '客户端版',
+              data: topGames.map(g => g.appDownloads),
+              backgroundColor: 'rgba(92, 126, 16, 0.8)',
+              borderColor: '#5c7e10',
+              borderWidth: 1
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: true,
+              labels: { color: '#8f98a0' }
+            }
+          },
+          scales: {
+            x: {
+              ticks: { color: '#8f98a0' },
+              grid: { color: 'rgba(255,255,255,0.1)' }
+            },
+            y: {
+              ticks: { color: '#8f98a0' },
+              grid: { color: 'rgba(255,255,255,0.1)' },
+              beginAtZero: true
+            }
+          }
+        }
+      });
+    }
+
+    function renderGameDownloadList() {
+      const list = document.getElementById('gameDownloadList');
+      document.getElementById('gameListCount').textContent = filteredGameDownloadData.length;
+      
+      if (filteredGameDownloadData.length === 0) {
+        list.innerHTML = '<div style="padding: 40px; text-align: center; color: var(--text-secondary);">暂无游戏下载数据</div>';
+        return;
+      }
+      
+      list.innerHTML = filteredGameDownloadData.map(g => `
+        <div class="user-list-item">
+          <div class="user-info-cell">
+            <span class="user-name">${g.name}</span>
+            <span class="user-date">
+              <span style="color: #66c0f4;">网页版: ${g.webDownloads}</span>
+              <span style="margin: 0 8px;">|</span>
+              <span style="color: #5c7e10;">客户端版: ${g.appDownloads}</span>
+            </span>
+          </div>
+          <span style="font-size: 18px; font-weight: bold; color: var(--accent-blue);">${g.totalDownloads}</span>
+        </div>
+      `).join('');
+    }
+
+    // 初始化地域筛选器
+    function initGameDownloadRegionFilter() {
+      const select = document.getElementById('gameDownloadRegionFilter');
+      if (!select || gameDownloadRegionData.length === 0) return;
+      
+      let html = '<option value="all">全部地域</option>';
+      gameDownloadRegionData.slice(0, 20).forEach(r => {
+        html += `<option value="${r.name}">${r.name} (${r.count})</option>`;
+      });
+      select.innerHTML = html;
+    }
+
+    function filterGameDownloadStats() {
+      const sortType = document.getElementById('gameDownloadSort').value;
+      const regionFilter = document.getElementById('gameDownloadRegionFilter')?.value || 'all';
+      const timeFilter = document.getElementById('gameDownloadTimeFilter')?.value || 'all';
+      
+      // 根据时间筛选原始数据
+      let filteredRawData = [...gameDownloadRawData];
+      
+      if (timeFilter !== 'all') {
+        const now = new Date();
+        let startDate = null;
+        
+        switch(timeFilter) {
+          case 'today':
+            startDate = new Date();
+            startDate.setHours(0, 0, 0, 0);
+            break;
+          case 'week':
+            startDate = new Date();
+            startDate.setDate(startDate.getDate() - 7);
+            break;
+          case 'month':
+            startDate = new Date();
+            startDate.setDate(startDate.getDate() - 30);
+            break;
+        }
+        
+        if (startDate) {
+          filteredRawData = filteredRawData.filter(d => {
+            const date = new Date(d.createdAt);
+            return date >= startDate;
+          });
+        }
+      }
+      
+      // 根据地域筛选
+      if (regionFilter !== 'all') {
+        filteredRawData = filteredRawData.filter(d => d.region === regionFilter);
+      }
+      
+      // 重新计算游戏下载统计
+      const gameStats = {};
+      filteredRawData.forEach(d => {
+        const gameId = d.gameId;
+        if (!gameStats[gameId]) {
+          gameStats[gameId] = {
+            id: gameId,
+            name: d.gameName || '未知游戏',
+            webDownloads: 0,
+            appDownloads: 0,
+            totalDownloads: 0
+          };
+        }
+        if (d.source === 'web') {
+          gameStats[gameId].webDownloads++;
+        } else {
+          gameStats[gameId].appDownloads++;
+        }
+        gameStats[gameId].totalDownloads++;
+      });
+      
+      filteredGameDownloadData = Object.values(gameStats);
+      
+      // 排序
+      if (sortType === 'web') {
+        filteredGameDownloadData.sort((a, b) => b.webDownloads - a.webDownloads);
+      } else if (sortType === 'app') {
+        filteredGameDownloadData.sort((a, b) => b.appDownloads - a.appDownloads);
+      } else {
+        filteredGameDownloadData.sort((a, b) => b.totalDownloads - a.totalDownloads);
+      }
+      
+      renderGameDownloadStats();
+      renderGameDownloadTrendChart();
+    }
+
+    // 渲染下载趋势折线图
+    function renderGameDownloadTrendChart() {
+      const ctx = document.getElementById('gameDownloadTrendChart')?.getContext('2d');
+      if (!ctx) return;
+      
+      // 按日期统计下载量
+      const dateMap = {};
+      gameDownloadRawData.forEach(d => {
+        const date = new Date(d.createdAt).toLocaleDateString('zh-CN');
+        if (!dateMap[date]) {
+          dateMap[date] = { web: 0, app: 0 };
+        }
+        if (d.source === 'web') {
+          dateMap[date].web++;
+        } else {
+          dateMap[date].app++;
+        }
+      });
+      
+      const sortedDates = Object.keys(dateMap).sort((a, b) => new Date(a) - new Date(b));
+      const recentDates = sortedDates.slice(-30); // 最近30天
+      
+      if (gameDownloadTrendChart) {
+        gameDownloadTrendChart.destroy();
+      }
+      
+      gameDownloadTrendChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: recentDates,
+          datasets: [
+            {
+              label: '网页版',
+              data: recentDates.map(d => dateMap[d].web),
+              borderColor: '#66c0f4',
+              backgroundColor: 'rgba(102, 192, 244, 0.1)',
+              fill: true,
+              tension: 0.4
+            },
+            {
+              label: '客户端版',
+              data: recentDates.map(d => dateMap[d].app),
+              borderColor: '#5c7e10',
+              backgroundColor: 'rgba(92, 126, 16, 0.1)',
+              fill: true,
+              tension: 0.4
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { 
+              labels: { color: '#8f98a0' }
+            }
+          },
+          scales: {
+            x: {
+              ticks: { color: '#8f98a0', maxTicksLimit: 10 },
+              grid: { color: 'rgba(255,255,255,0.1)' }
+            },
+            y: {
+              ticks: { color: '#8f98a0' },
+              grid: { color: 'rgba(255,255,255,0.1)' },
+              beginAtZero: true
+            }
+          }
+        }
+      });
+    }
+
+    function exportGameDownloadStats() {
+      if (filteredGameDownloadData.length === 0) {
+        showToast('没有可导出的数据', 'error');
+        return;
+      }
+      
+      const csv = [
+        ['游戏名称', '网页版下载', '客户端版下载', '总下载量'],
+        ...filteredGameDownloadData.map(g => [
+          g.name,
+          g.webDownloads,
+          g.appDownloads,
+          g.totalDownloads
+        ])
+      ].map(row => row.join(',')).join('\n');
+      
+      const blob = new Blob(['\ufeff' + csv], { type: 'text/csv;charset=utf-8;' });
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = `游戏下载统计_${new Date().toLocaleDateString('zh-CN')}.csv`;
+      link.click();
+      
+      showToast('游戏下载统计已导出', 'success');
+    }
+
+    function exportClientDownloadStats() {
+      if (filteredClientDownloadData.length === 0) {
+        showToast('没有可导出的数据', 'error');
+        return;
+      }
+      
+      const csv = [
+        ['下载时间', '来源', '地区', 'IP地址'],
+        ...filteredClientDownloadData.map(d => [
+          new Date(d.createdAt).toLocaleString('zh-CN'),
+          d.source === 'detail' ? '详情页' : '主页',
+          d.region || '未知',
+          d.ip || '-'
+        ])
+      ].map(row => row.join(',')).join('\n');
+      
+      const blob = new Blob(['\ufeff' + csv], { type: 'text/csv;charset=utf-8;' });
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = `客户端下载统计_${new Date().toLocaleDateString('zh-CN')}.csv`;
+      link.click();
+      
+      showToast('下载统计已导出', 'success');
     }
 
     // ==================== 用户反馈 ====================
     // 反馈视图状态
     let currentFeedbackView = 'list';
     let currentFeedbackTab = 'pending';
+    let selectedFeedbacks = new Set(); // 存储选中的反馈ID
 
-    function viewFeedbacks() {
-      renderFeedbackList();
+    async function viewFeedbacks() {
+      try {
+        const response = await fetch(`${CONFIG.apiBaseUrl}/api/admin/feedbacks`, {
+          headers: {
+            'X-Admin-Password': CONFIG.adminPassword
+          }
+        });
+        
+        if (response.ok) {
+          const result = await response.json();
+          feedbackData = result.feedbacks || [];
+          renderFeedbackList();
+        } else {
+          const error = await response.json();
+          showToast('获取反馈失败: ' + (error.error || '未知错误'), 'error');
+        }
+      } catch (error) {
+        console.error('获取反馈失败:', error);
+        showToast('获取反馈失败: ' + error.message, 'error');
+      }
+      
       openModal('feedbackModal');
     }
 
@@ -2716,27 +5387,81 @@
       const processedCount = visibleData.filter(f => f.processed).length;
       document.getElementById('pendingCount').textContent = pendingCount;
       document.getElementById('processedCount').textContent = processedCount;
-      document.getElementById('totalFeedbackCount').textContent = visibleData.length;
+      
+      // 更新全选状态和选中计数
+      updateFeedbackSelectAllState(filteredData);
+      document.getElementById('feedbackSelectedCount').textContent = selectedFeedbacks.size;
       
       if (filteredData.length === 0) {
         list.innerHTML = '<div style="text-align: center; padding: 40px; color: var(--text-secondary);"><i class="fas fa-inbox" style="font-size: 48px; margin-bottom: 16px; display: block; opacity: 0.5;"></i>暂无' + (currentFeedbackTab === 'pending' ? '未处理' : '已处理') + '反馈</div>';
         return;
       }
 
-      const typeColors = { bug: '#e74c3c', feature: '#3498db', complaint: '#f39c12', other: '#95a5a6' };
-      const typeNames = { bug: 'Bug', feature: '建议', complaint: '投诉', other: '其他' };
+      // 反馈类型配置 - 与你的客户端/网页版保持一致
+      const typeColors = { 
+        '游戏增补': '#3498db', 
+        '链接失效': '#e74c3c', 
+        'BUG反馈': '#f39c12', 
+        '其他问题': '#95a5a6',
+        // 兼容旧数据
+        'bug': '#e74c3c', 
+        'feature': '#3498db', 
+        'complaint': '#f39c12', 
+        'other': '#95a5a6'
+      };
+      const typeNames = { 
+        '游戏增补': '游戏增补', 
+        '链接失效': '链接失效', 
+        'BUG反馈': 'BUG反馈', 
+        '其他问题': '其他问题',
+        // 兼容旧数据
+        'bug': 'BUG反馈', 
+        'feature': '游戏增补', 
+        'complaint': '链接失效', 
+        'other': '其他问题'
+      };
+
+      // 格式化时间 - 支持多种时间字段格式
+      function formatTime(feedback) {
+        const timeStr = feedback.createdAt || feedback.time || feedback.timestamp;
+        if (!timeStr) return '未知时间';
+        try {
+          const date = new Date(timeStr);
+          if (isNaN(date.getTime())) return '无效时间';
+          return date.toLocaleString('zh-CN', {
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit'
+          });
+        } catch (e) {
+          return '无效时间';
+        }
+      }
 
       list.innerHTML = filteredData.map((f, index) => {
         const originalIndex = feedbackData.indexOf(f);
+        const currentType = f.type || '其他问题';
+        const isSelected = selectedFeedbacks.has(f.id);
         return `
-          <div class="feedback-item ${f.processed ? 'processed' : ''}" data-index="${originalIndex}">
+          <div class="feedback-item ${f.processed ? 'processed' : ''} ${isSelected ? 'selected' : ''}" data-index="${originalIndex}" data-id="${f.id}">
             <div class="header">
-              <span class="type" style="background: ${typeColors[f.type] || typeColors.other};">${typeNames[f.type] || typeNames.other}</span>
-              <span class="time">${new Date(f.time).toLocaleString()}</span>
+              <div style="display: flex; align-items: center; flex: 1;">
+                <div class="feedback-checkbox ${isSelected ? 'checked' : ''}" onclick="toggleFeedbackSelect('${f.id}', event)"></div>
+                <select class="type-select" onchange="changeFeedbackType(${originalIndex}, this.value)" style="background: ${typeColors[currentType] || typeColors['其他问题']}; color: #fff; padding: 2px 8px; border: none; border-radius: 4px; font-size: 12px; cursor: pointer;">
+                  <option value="游戏增补" ${currentType === '游戏增补' ? 'selected' : ''}>游戏增补</option>
+                  <option value="链接失效" ${currentType === '链接失效' ? 'selected' : ''}>链接失效</option>
+                  <option value="BUG反馈" ${currentType === 'BUG反馈' ? 'selected' : ''}>BUG反馈</option>
+                  <option value="其他问题" ${currentType === '其他问题' ? 'selected' : ''}>其他问题</option>
+                </select>
+              </div>
+              <span class="time">${formatTime(f)}</span>
             </div>
             <div class="content">${f.content}</div>
             <div class="footer">
-              <div class="user-info"><i class="fas fa-user"></i> ${f.contact || '匿名'}</div>
+              <div class="user-info"><i class="fas fa-user"></i> ${f.user || f.contact || '匿名'}</div>
               <div class="actions">
                 <button class="btn-process" onclick="processFeedback(${originalIndex})">
                   ${f.processed ? '<i class="fas fa-check"></i> 已处理' : '<i class="fas fa-clock"></i> 未处理'}
@@ -2794,6 +5519,40 @@
       }
     }
 
+    // 修改反馈类型
+    async function changeFeedbackType(index, newType) {
+      if (!feedbackData[index]) return;
+      
+      const feedback = feedbackData[index];
+      feedback.type = newType;
+      
+      // 同步到云端
+      try {
+        const response = await fetch(`${CONFIG.apiBaseUrl}/api/admin/feedback`, {
+          method: 'PUT',
+          headers: {
+            'Content-Type': 'application/json',
+            'X-Admin-Password': CONFIG.adminPassword
+          },
+          body: JSON.stringify({
+            id: feedback.id,
+            type: newType,
+            status: feedback.status || (feedback.processed ? 'processed' : 'pending')
+          })
+        });
+        
+        if (response.ok) {
+          showToast('反馈类型已更新', 'success');
+          renderFeedbackList();
+        } else {
+          showToast('更新类型失败', 'error');
+        }
+      } catch (error) {
+        console.error('更新反馈类型失败:', error);
+        showToast('更新类型失败: ' + error.message, 'error');
+      }
+    }
+
     function processFeedback(index) {
       if (feedbackData[index]) {
         feedbackData[index].processed = !feedbackData[index].processed;
@@ -2803,14 +5562,38 @@
       }
     }
 
-    function deleteFeedback(index) {
-      if (feedbackData[index]) {
-        if (confirm('确定要删除这条反馈吗？')) {
-          feedbackData[index].deleted = true;
-          saveFeedbackData();
+    async function deleteFeedback(index) {
+      if (!feedbackData[index]) return;
+      
+      if (!confirm('确定要删除这条反馈吗？')) return;
+      
+      const feedback = feedbackData[index];
+      
+      // 同步到云端删除
+      try {
+        const response = await fetch(`${CONFIG.apiBaseUrl}/api/admin/feedback`, {
+          method: 'DELETE',
+          headers: {
+            'Content-Type': 'application/json',
+            'X-Admin-Password': CONFIG.adminPassword
+          },
+          body: JSON.stringify({
+            id: feedback.id
+          })
+        });
+        
+        if (response.ok) {
+          // 从本地数据中移除
+          feedbackData.splice(index, 1);
           renderFeedbackList();
           showToast('反馈已删除', 'success');
+        } else {
+          const error = await response.json();
+          showToast('删除失败: ' + (error.error || '未知错误'), 'error');
         }
+      } catch (error) {
+        console.error('删除反馈失败:', error);
+        showToast('删除失败: ' + error.message, 'error');
       }
     }
 
@@ -2818,9 +5601,115 @@
       localStorage.setItem(CONFIG.feedbackKey, JSON.stringify(feedbackData));
     }
 
-    function refreshFeedbacks() {
-      renderFeedbackList();
+    async function refreshFeedbacks() {
+      // 清空选择状态
+      selectedFeedbacks.clear();
+      await viewFeedbacks();
       showToast('反馈列表已刷新', 'success');
+    }
+
+    // 清除本地缓存并重新加载
+    function clearLocalStorageAndReload() {
+      if (!confirm('确定要清除本地缓存并从 data-embed.js 重新加载吗？')) return;
+      localStorage.clear();
+      location.reload();
+    }
+
+    // ==================== 反馈批量操作 ====================
+    function toggleFeedbackSelect(feedbackId, event) {
+      if (event) event.stopPropagation();
+      
+      if (selectedFeedbacks.has(feedbackId)) {
+        selectedFeedbacks.delete(feedbackId);
+      } else {
+        selectedFeedbacks.add(feedbackId);
+      }
+      renderFeedbackList();
+    }
+
+    function toggleFeedbackSelectAll() {
+      const list = document.getElementById('feedbackList');
+      const visibleItems = list.querySelectorAll('.feedback-item');
+      
+      // 获取当前可见的所有反馈ID
+      const visibleIds = Array.from(visibleItems).map(item => item.dataset.id);
+      
+      // 检查是否已全部选中
+      const allSelected = visibleIds.every(id => selectedFeedbacks.has(id));
+      
+      if (allSelected) {
+        // 取消全选
+        visibleIds.forEach(id => selectedFeedbacks.delete(id));
+      } else {
+        // 全选
+        visibleIds.forEach(id => selectedFeedbacks.add(id));
+      }
+      
+      renderFeedbackList();
+    }
+
+    function updateFeedbackSelectAllState(filteredData) {
+      const selectAllCheckbox = document.getElementById('feedbackSelectAll');
+      if (!selectAllCheckbox) return;
+      
+      const visibleIds = filteredData.map(f => f.id);
+      const allSelected = visibleIds.length > 0 && visibleIds.every(id => selectedFeedbacks.has(id));
+      
+      selectAllCheckbox.classList.toggle('checked', allSelected);
+    }
+
+    async function batchDeleteFeedbacks() {
+      if (selectedFeedbacks.size === 0) {
+        showToast('请先选择要删除的反馈', 'error');
+        return;
+      }
+      
+      if (!confirm(`确定要删除选中的 ${selectedFeedbacks.size} 条反馈吗？`)) return;
+      
+      let successCount = 0;
+      let failCount = 0;
+      
+      // 转换为数组以便遍历
+      const idsToDelete = Array.from(selectedFeedbacks);
+      
+      for (const feedbackId of idsToDelete) {
+        try {
+          const response = await fetch(`${CONFIG.apiBaseUrl}/api/admin/feedback`, {
+            method: 'DELETE',
+            headers: {
+              'Content-Type': 'application/json',
+              'X-Admin-Password': CONFIG.adminPassword
+            },
+            body: JSON.stringify({ id: feedbackId })
+          });
+          
+          if (response.ok) {
+            successCount++;
+            // 从本地数据中移除
+            const index = feedbackData.findIndex(f => f.id === feedbackId);
+            if (index !== -1) {
+              feedbackData.splice(index, 1);
+            }
+          } else {
+            failCount++;
+          }
+        } catch (error) {
+          console.error('删除反馈失败:', error);
+          failCount++;
+        }
+      }
+      
+      // 清空选择
+      selectedFeedbacks.clear();
+      
+      // 刷新列表
+      renderFeedbackList();
+      
+      if (failCount === 0) {
+        showToast(`成功删除 ${successCount} 条反馈`, 'success');
+      } else {
+        showToast(`删除完成：成功 ${successCount} 条，失败 ${failCount} 条`, 'error');
+      }
     }
 
     // ==================== 导入导出 ====================
@@ -3028,8 +5917,39 @@
     }
 
     function exportToDataEmbed() {
-      const jsContent = `// 游戏数据 - 由后台管理系统导出\nconst importedGames = ${JSON.stringify(gamesData, null, 2)};`;
-      const blob = new Blob([jsContent], { type: 'application/javascript' });
+      // 转换数据格式以匹配原文件结构
+      const exportData = gamesData.map(game => ({
+        id: game.id,
+        name: game.name || '',
+        nameEn: game.nameEn || '',
+        cover: game.cover || '',
+        screenshots: [],
+        category: getCategoryName(game.category) || game.category || '',
+        size: game.size || '',
+        description: game.desc || '',
+        baiduLink1: game.baiduLink1 || '',
+        baiduLink2: game.baiduLink2 || '',
+        thunderLink: game.thunderLink || '',
+        favorite: false,
+        dateAdded: new Date().toLocaleDateString('zh-CN'),
+        isDrm: game.isDrm || false,
+        downloadsWeb: game.downloadsWeb || 0,
+        downloadsApp: game.downloadsApp || 0,
+        updateTime: game.updateTime || Date.now()
+      }));
+      
+      const jsContent = `// 游戏数据 - 由后台管理系统自动生成
+// 生成时间: ${new Date().toLocaleString('zh-CN')}
+// 游戏数量: ${exportData.length}
+
+const importedGames = ${JSON.stringify(exportData, null, 2)};
+
+// 导出供其他模块使用
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = { importedGames };
+}`;
+      
+      const blob = new Blob([jsContent], { type: 'application/javascript;charset=utf-8' });
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
@@ -3040,13 +5960,19 @@
     }
 
     function clearAllData() {
-      if (!confirm('确定要清空所有游戏数据吗？此操作不可恢复！')) return;
       gamesData = [];
       selectedGames.clear();
       saveData();
       renderGamesTable();
       updateStats();
       showToast('数据已清空', 'success');
+    }
+    
+    // 带双重确认的清空数据
+    function clearAllDataWithConfirm() {
+      if (!confirm('⚠️ 警告：确定要清空所有游戏数据吗？\n\n此操作将删除所有游戏，不可恢复！\n\n点击"确定"继续，或点击"取消"返回。')) return;
+      if (!confirm('最后确认：你真的要清空所有数据吗？\n\n这是最后一次确认！')) return;
+      clearAllData();
     }
 
     function reloadFromSource() {
@@ -3131,7 +6057,7 @@
       
       gamesData = gamesData.filter(g => !selectedGames.has(String(g.id)));
       selectedGames.clear();
-      saveData();
+      saveDataAndBackup();
       renderGamesTable();
       updateStats();
       showToast('批量删除完成', 'success');
@@ -3139,6 +6065,153 @@
 
     function batchMoveCategory() {
       batchEditCategory();
+    }
+
+    // ==================== 批量修改大小 ====================
+    let batchSizeFilter = 'all';
+    let batchSizePage = 1;
+    const batchSizePageSize = 20;
+    let batchSizeChanges = new Map();
+
+    function batchEditSize() {
+      batchSizeFilter = 'all';
+      batchSizePage = 1;
+      batchSizeChanges.clear();
+      renderBatchSizeGrid();
+      updateBatchSizeFilterCounts();
+      openModal('batchSizeModal');
+    }
+
+    function setBatchSizeFilter(filter) {
+      batchSizeFilter = filter;
+      batchSizePage = 1;
+      
+      document.querySelectorAll('#batchSizeModal .tab-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.filter === filter);
+      });
+      
+      renderBatchSizeGrid();
+    }
+
+    function updateBatchSizeFilterCounts() {
+      const all = gamesData.filter(g => g.name !== '_banner_config').length;
+      const hasSize = gamesData.filter(g => g.name !== '_banner_config' && g.size && g.size.trim()).length;
+      const noSize = all - hasSize;
+      
+      const countAll = document.getElementById('tabSizeCountAll');
+      const countHas = document.getElementById('tabSizeCountHas');
+      const countNo = document.getElementById('tabSizeCountNo');
+      
+      if (countAll) countAll.textContent = all;
+      if (countHas) countHas.textContent = hasSize;
+      if (countNo) countNo.textContent = noSize;
+    }
+
+    function renderBatchSizeGrid() {
+      const grid = document.getElementById('batchSizeGrid');
+      if (!grid) return;
+      
+      const allGames = gamesData.filter(g => g.name !== '_banner_config');
+      
+      let filteredGames = allGames;
+      if (batchSizeFilter === 'hasSize') {
+        filteredGames = allGames.filter(g => g.size && g.size.trim());
+      } else if (batchSizeFilter === 'noSize') {
+        filteredGames = allGames.filter(g => !g.size || !g.size.trim());
+      }
+      
+      const totalPages = Math.ceil(filteredGames.length / batchSizePageSize) || 1;
+      const start = (batchSizePage - 1) * batchSizePageSize;
+      const pageGames = filteredGames.slice(start, start + batchSizePageSize);
+      
+      grid.innerHTML = pageGames.map(game => {
+        const currentSize = batchSizeChanges.has(String(game.id)) ? batchSizeChanges.get(String(game.id)) : (game.size || '');
+        const isChanged = batchSizeChanges.has(String(game.id));
+        return `
+          <div class="batch-cover-item" style="${isChanged ? 'border-color: var(--accent-green);' : ''}">
+            <div class="game-name" title="${game.name}">${game.name}</div>
+            <div style="display: flex; align-items: center; gap: 8px; min-width: 150px;">
+              <input type="text" 
+                     class="form-control" 
+                     value="${currentSize}" 
+                     placeholder="例如：50GB"
+                     onchange="updateBatchSize('${game.id}', this.value)"
+                     style="width: 120px; font-size: 13px; ${isChanged ? 'border-color: var(--accent-green);' : ''}">
+              ${isChanged ? '<i class="fas fa-check-circle" style="color: var(--accent-green);"></i>' : ''}
+            </div>
+          </div>
+        `;
+      }).join('');
+      
+      renderBatchSizePagination(totalPages);
+    }
+
+    function renderBatchSizePagination(totalPages) {
+      const pagination = document.getElementById('batchSizePagination');
+      if (!pagination) return;
+      
+      if (totalPages <= 1) {
+        pagination.innerHTML = '';
+        return;
+      }
+      
+      let html = `<span style="color: var(--text-secondary);">共 ${totalPages} 页</span><div class="pagination">`;
+      
+      html += `<button class="page-btn" onclick="changeBatchSizePage(${batchSizePage - 1})" ${batchSizePage === 1 ? 'disabled' : ''}><i class="fas fa-chevron-left"></i></button>`;
+      
+      for (let i = 1; i <= totalPages; i++) {
+        if (i === 1 || i === totalPages || (i >= batchSizePage - 2 && i <= batchSizePage + 2)) {
+          html += `<button class="page-btn ${i === batchSizePage ? 'active' : ''}" onclick="changeBatchSizePage(${i})">${i}</button>`;
+        } else if (i === batchSizePage - 3 || i === batchSizePage + 3) {
+          html += `<span class="page-btn" style="cursor: default;">...</span>`;
+        }
+      }
+      
+      html += `<button class="page-btn" onclick="changeBatchSizePage(${batchSizePage + 1})" ${batchSizePage === totalPages ? 'disabled' : ''}><i class="fas fa-chevron-right"></i></button>`;
+      html += '</div>';
+      
+      pagination.innerHTML = html;
+    }
+
+    function changeBatchSizePage(page) {
+      batchSizePage = page;
+      renderBatchSizeGrid();
+    }
+
+    function updateBatchSize(gameId, size) {
+      const game = gamesData.find(g => String(g.id) === String(gameId));
+      if (game) {
+        if (size.trim() === (game.size || '')) {
+          batchSizeChanges.delete(String(gameId));
+        } else {
+          batchSizeChanges.set(String(gameId), size.trim());
+        }
+        renderBatchSizeGrid();
+      }
+    }
+
+    function saveBatchSizes() {
+      if (batchSizeChanges.size === 0) {
+        showToast('没有需要保存的修改', 'info');
+        closeModal('batchSizeModal');
+        return;
+      }
+      
+      let changedCount = 0;
+      batchSizeChanges.forEach((size, gameId) => {
+        const game = gamesData.find(g => String(g.id) === String(gameId));
+        if (game) {
+          game.size = size;
+          changedCount++;
+        }
+      });
+      
+      saveDataAndBackup();
+      renderGamesTable();
+      updateStats();
+      showToast(`已更新 ${changedCount} 个游戏的大小`, 'success');
+      closeModal('batchSizeModal');
+      batchSizeChanges.clear();
     }
 
     // ==================== 工具函数 ====================
@@ -3156,6 +6229,198 @@
       toast.className = `toast ${type} show`;
       toast.querySelector('i').className = type === 'success' ? 'fas fa-check-circle' : 'fas fa-exclamation-circle';
       setTimeout(() => toast.classList.remove('show'), 3000);
+    }
+
+    // ==================== 游戏系列管理 ====================
+    let gameSeriesData = JSON.parse(localStorage.getItem('gamebox_series')) || {};
+
+    function manageGameSeries() {
+      renderGameSeriesList();
+      openModal('gameSeriesModal');
+    }
+
+    function renderGameSeriesList() {
+      const container = document.getElementById('gameSeriesList');
+      if (!container) return;
+      
+      const seriesNames = Object.keys(gameSeriesData);
+      
+      if (seriesNames.length === 0) {
+        container.innerHTML = '<div style="text-align:center;color:var(--text-secondary);padding:20px;">暂无游戏系列，请添加</div>';
+        return;
+      }
+      
+      container.innerHTML = seriesNames.map(seriesName => {
+        const games = gameSeriesData[seriesName] || [];
+        return `
+          <div class="series-item" style="margin-bottom:15px;padding:15px;background:var(--bg-tertiary);border-radius:8px;">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+              <h4 style="margin:0;color:var(--accent-blue);">${seriesName}</h4>
+              <div>
+                <button class="btn btn-sm" onclick="editGameSeries('${seriesName}')" style="margin-right:5px;">
+                  <i class="fas fa-edit"></i> 编辑
+                </button>
+                <button class="btn btn-sm btn-danger" onclick="deleteGameSeries('${seriesName}')">
+                  <i class="fas fa-trash"></i> 删除
+                </button>
+              </div>
+            </div>
+            <div style="color:var(--text-secondary);font-size:12px;">
+              包含 ${games.length} 个游戏: ${games.slice(0, 5).join(', ')}${games.length > 5 ? '...' : ''}
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function addGameSeries() {
+      const name = prompt('请输入系列名称:');
+      if (!name || !name.trim()) return;
+      
+      if (gameSeriesData[name]) {
+        showToast('该系列已存在', 'error');
+        return;
+      }
+      
+      gameSeriesData[name] = [];
+      localStorage.setItem('gamebox_series', JSON.stringify(gameSeriesData));
+      renderGameSeriesList();
+      showToast('系列添加成功', 'success');
+    }
+
+    function editGameSeries(seriesName) {
+      const games = gameSeriesData[seriesName] || [];
+      const gameNames = gamesData.map(g => g.name).filter(n => n && n !== '_banner_config');
+      
+      // 创建游戏选择弹窗
+      const selectedGames = [...games];
+      
+      const modalHtml = `
+        <div id="editSeriesModal" class="modal">
+          <div class="modal-content" style="max-width:600px;">
+            <div class="modal-header">
+              <h3><i class="fas fa-layer-group"></i> 编辑系列: ${seriesName}</h3>
+              <button class="btn-close" onclick="closeModal('editSeriesModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+              <div style="margin-bottom:15px;">
+                <label style="display:block;margin-bottom:5px;color:var(--text-secondary);">选择游戏:</label>
+                <div style="max-height:300px;overflow-y:auto;background:var(--bg-secondary);padding:10px;border-radius:8px;">
+                  ${gameNames.map(gameName => `
+                    <label style="display:block;padding:5px;cursor:pointer;">
+                      <input type="checkbox" value="${gameName}" ${selectedGames.includes(gameName) ? 'checked' : ''} 
+                        onchange="toggleSeriesGame('${seriesName}', '${gameName}', this.checked)">
+                      ${gameName}
+                    </label>
+                  `).join('')}
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" onclick="saveGameSeries('${seriesName}'); closeModal('editSeriesModal');">
+                <i class="fas fa-save"></i> 保存
+              </button>
+              <button class="btn" onclick="closeModal('editSeriesModal')">取消</button>
+            </div>
+          </div>
+        </div>
+      `;
+      
+      // 添加弹窗到页面
+      const existingModal = document.getElementById('editSeriesModal');
+      if (existingModal) existingModal.remove();
+      
+      document.body.insertAdjacentHTML('beforeend', modalHtml);
+      openModal('editSeriesModal');
+    }
+
+    function toggleSeriesGame(seriesName, gameName, checked) {
+      if (!gameSeriesData[seriesName]) {
+        gameSeriesData[seriesName] = [];
+      }
+      
+      if (checked) {
+        if (!gameSeriesData[seriesName].includes(gameName)) {
+          gameSeriesData[seriesName].push(gameName);
+        }
+      } else {
+        gameSeriesData[seriesName] = gameSeriesData[seriesName].filter(g => g !== gameName);
+      }
+    }
+
+    function saveGameSeries(seriesName) {
+      localStorage.setItem('gamebox_series', JSON.stringify(gameSeriesData));
+      renderGameSeriesList();
+      showToast('系列保存成功', 'success');
+    }
+
+    function deleteGameSeries(seriesName) {
+      if (!confirm(`确定要删除系列 "${seriesName}" 吗?`)) return;
+      
+      delete gameSeriesData[seriesName];
+      localStorage.setItem('gamebox_series', JSON.stringify(gameSeriesData));
+      renderGameSeriesList();
+      showToast('系列删除成功', 'success');
+    }
+
+    function exportGameSeries() {
+      const seriesJson = JSON.stringify(gameSeriesData, null, 2);
+      const blob = new Blob([seriesJson], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'game-series.json';
+      a.click();
+      URL.revokeObjectURL(url);
+      showToast('游戏系列已导出', 'success');
+    }
+
+    // ==================== 免责声明管理 ====================
+    let disclaimerData = JSON.parse(localStorage.getItem('gamebox_disclaimer')) || {
+      title: '# 免责声明 #',
+      content: '本站提供的资源转载自国内外各大媒体和网络，仅供试玩体验；不得将上述内容用于商业或者非法用途，否则，一切后果请用户自负。您必须在下载后的24个小时之内，从您的电脑中彻底删除上述内容。如果您喜欢该游戏内容，请支持正版，购买注册，得到更好的正版服务。我们非常重视版权问题，如有侵权请邮件与我们联系处理。敬请谅解！E-mail：danjiyouxihezi@gmail.com'
+    };
+
+    function manageDisclaimer() {
+      document.getElementById('disclaimerTitle').value = disclaimerData.title;
+      document.getElementById('disclaimerContent').value = disclaimerData.content;
+      updateDisclaimerPreview();
+      openModal('disclaimerModal');
+    }
+
+    function updateDisclaimerPreview() {
+      const title = document.getElementById('disclaimerTitle').value || '# 免责声明 #';
+      const content = document.getElementById('disclaimerContent').value || '';
+      
+      document.getElementById('disclaimerPreviewTitle').textContent = title;
+      document.getElementById('disclaimerPreviewContent').innerHTML = content.replace(/\n/g, '<br>');
+    }
+
+    function saveDisclaimer() {
+      const title = document.getElementById('disclaimerTitle').value.trim();
+      const content = document.getElementById('disclaimerContent').value.trim();
+      
+      disclaimerData = {
+        title: title,
+        content: content,
+        updateTime: Date.now()
+      };
+      
+      localStorage.setItem('gamebox_disclaimer', JSON.stringify(disclaimerData));
+      showToast('免责声明保存成功', 'success');
+      closeModal('disclaimerModal');
+    }
+
+    function exportDisclaimer() {
+      const disclaimerJson = JSON.stringify(disclaimerData, null, 2);
+      const blob = new Blob([disclaimerJson], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'disclaimer.json';
+      a.click();
+      URL.revokeObjectURL(url);
+      showToast('免责声明已导出', 'success');
     }
   </script>
 </body>
