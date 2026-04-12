@@ -3115,8 +3115,8 @@
             }
             return firstChar.toLowerCase();
           };
-          const keyA = getSortKey(a.cn || a.name);
-          const keyB = getSortKey(b.cn || b.name);
+          const keyA = getSortKey(a.name);
+          const keyB = getSortKey(b.name);
           return keyA.localeCompare(keyB, 'zh-CN');
         });
       } else if (sortType === 'update') {
