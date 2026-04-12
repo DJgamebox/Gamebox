@@ -45,13 +45,13 @@ games.forEach((game, index) => {
         
         let downloadButtons = '';
         if (baiduLink) {
-            downloadButtons += `<a href="${baiduLink}" target="_blank" class="download-btn baidu"><img src="../images/baidu-icon.png" alt="百度网盘" style="width:20px;height:20px;vertical-align:middle;margin-right:6px;">百度网盘下载</a>`;
+            downloadButtons += `<a href="${baiduLink}" target="_blank" class="download-btn baidu"><img src="../images/baidu-icon-v2.png" alt="百度网盘" style="width:20px;height:20px;vertical-align:middle;margin-right:6px;">百度网盘下载</a>`;
         }
         if (baidu2Link) {
-            downloadButtons += `<a href="${baidu2Link}" target="_blank" class="download-btn baidu"><img src="../images/baidu-icon.png" alt="百度网盘" style="width:20px;height:20px;vertical-align:middle;margin-right:6px;">百度网盘备用</a>`;
+            downloadButtons += `<a href="${baidu2Link}" target="_blank" class="download-btn baidu"><img src="../images/baidu-icon-v2.png" alt="百度网盘" style="width:20px;height:20px;vertical-align:middle;margin-right:6px;">百度网盘备用</a>`;
         }
         if (thunderLink) {
-            downloadButtons += `<a href="${thunderLink}" target="_blank" class="download-btn thunder"><img src="../images/xunlei-icon.png" alt="迅雷" style="width:20px;height:20px;vertical-align:middle;margin-right:6px;">迅雷云盘下载</a>`;
+            downloadButtons += `<a href="${thunderLink}" target="_blank" class="download-btn thunder"><img src="../images/xunlei-icon-v2.png" alt="迅雷" style="width:20px;height:20px;vertical-align:middle;margin-right:6px;">迅雷云盘下载</a>`;
         }
         
         let html = template;
