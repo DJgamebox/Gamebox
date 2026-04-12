@@ -60,9 +60,10 @@ function generateGamePage(game, index) {
     const canonical = `https://djgamebox.com/games/${safeName}.html`;
     
     // 生成下载按钮（使用 logo 图片）
-    const baiduLink = game.downloadLinks?.baidu || '';
-    const baidu2Link = game.downloadLinks?.baidu2 || '';
-    const thunderLink = game.downloadLinks?.thunder || '';
+    // 兼容两种字段格式：扁平字段 (baiduLink1) 和嵌套字段 (downloadLinks.baidu)
+    const baiduLink = game.baiduLink1 || game.downloadLinks?.baidu || '';
+    const baidu2Link = game.baiduLink2 || game.downloadLinks?.baidu2 || '';
+    const thunderLink = game.thunderLink || game.downloadLinks?.thunder || '';
     
     let downloadButtons = '';
     if (baiduLink) {

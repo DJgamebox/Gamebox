@@ -49,18 +49,19 @@ for (const game of uniqueGames) {
     const cover = game.cover || '';
     const desc = game.description || game.name + '是一款' + game.category + '游戏。本站提供' + game.name + '百度网盘、迅雷云盘高速下载，绿色免安装中文版，解压即可玩。';
     
-    // 构建下载链接
+    // 构建下载链接（兼容两种字段格式）
     let downloadLinks = '';
-    if (game.downloadLinks) {
-        if (game.downloadLinks.baidu) {
-            downloadLinks += '<a href="' + game.downloadLinks.baidu + '" target="_blank" class="download-btn baidu"><img src="../baidu-icon.jpg" style="width:20px;height:20px;border-radius:4px;vertical-align:middle;margin-right:8px;">百度网盘下载</a>';
-        }
-        if (game.downloadLinks.baidu2) {
-            downloadLinks += '<a href="' + game.downloadLinks.baidu2 + '" target="_blank" class="download-btn baidu"><img src="../baidu-icon.jpg" style="width:20px;height:20px;border-radius:4px;vertical-align:middle;margin-right:8px;">百度网盘备用</a>';
-        }
-        if (game.downloadLinks.thunder) {
-            downloadLinks += '<a href="' + game.downloadLinks.thunder + '" target="_blank" class="download-btn thunder"><img src="../xunlei-icon.jpg" style="width:20px;height:20px;border-radius:4px;vertical-align:middle;margin-right:8px;">迅雷云盘下载</a>';
-        }
+    const baidu = game.baiduLink1 || game.downloadLinks?.baidu || '';
+    const baidu2 = game.baiduLink2 || game.downloadLinks?.baidu2 || '';
+    const thunder = game.thunderLink || game.downloadLinks?.thunder || '';
+    if (baidu) {
+        downloadLinks += '<a href="' + baidu + '" target="_blank" class="download-btn baidu"><img src="../baidu-icon.jpg" style="width:20px;height:20px;border-radius:4px;vertical-align:middle;margin-right:8px;">百度网盘下载</a>';
+    }
+    if (baidu2) {
+        downloadLinks += '<a href="' + baidu2 + '" target="_blank" class="download-btn baidu"><img src="../baidu-icon.jpg" style="width:20px;height:20px;border-radius:4px;vertical-align:middle;margin-right:8px;">百度网盘备用</a>';
+    }
+    if (thunder) {
+        downloadLinks += '<a href="' + thunder + '" target="_blank" class="download-btn thunder"><img src="../xunlei-icon.jpg" style="width:20px;height:20px;border-radius:4px;vertical-align:middle;margin-right:8px;">迅雷云盘下载</a>';
     }
     
     let page = template;

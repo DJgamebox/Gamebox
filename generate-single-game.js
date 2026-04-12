@@ -43,9 +43,9 @@ const keywords = `${targetGame.name}下载,${targetGame.name}网盘,${targetGame
 const canonical = `https://djgamebox.com/games/${safeName}.html`;
 
 // 生成下载按钮
-const baiduLink = targetGame.downloadLinks?.baidu || '';
-const baidu2Link = targetGame.downloadLinks?.baidu2 || '';
-const thunderLink = targetGame.downloadLinks?.thunder || '';
+const baiduLink = targetGame.baiduLink1 || targetGame.downloadLinks?.baidu || '';
+const baidu2Link = targetGame.baiduLink2 || targetGame.downloadLinks?.baidu2 || '';
+const thunderLink = targetGame.thunderLink || targetGame.downloadLinks?.thunder || '';
 
 let downloadButtons = '';
 if (baiduLink) {
