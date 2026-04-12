@@ -944,6 +944,39 @@
       opacity: 1;
     }
 
+    /* 卡片收藏按钮 */
+    .game-card .card-favorite-btn {
+      display: flex;
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      width: 36px;
+      height: 36px;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.5);
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      z-index: 101;
+    }
+
+    .card-favorite-btn:hover {
+      background: rgba(0, 0, 0, 0.7);
+      transform: scale(1.1);
+    }
+
+    .card-favorite-btn i {
+      font-size: 18px;
+      color: #8f98a0;
+      transition: all 0.2s ease;
+    }
+
+    .card-favorite-btn.active i {
+      color: #e74c3c;
+    }
+
     .card-info {
       padding: 16px;
     }
@@ -2387,6 +2420,21 @@
       return getCurrentFavorites().includes(String(gameId));
     }
 
+    // 卡片收藏按钮点击处理
+    async function toggleCardFavorite(gameId, btnElement) {
+      await toggleFavoriteById(gameId);
+      const isFav = isFavorited(gameId);
+      // 更新按钮状态
+      btnElement.classList.toggle('active', isFav);
+      btnElement.title = isFav ? '取消收藏' : '收藏';
+      const icon = btnElement.querySelector('i');
+      if (icon) {
+        icon.className = isFav ? 'fas fa-heart' : 'far fa-heart';
+      }
+      // 更新收藏夹计数
+      updateFavoriteCount();
+    }
+
     // 切换收藏状态
     async function toggleFavoriteById(gameId) {
       const idStr = String(gameId);
@@ -2759,6 +2807,9 @@
                 >
                 <div class="no-cover" style="display:none;">暂无封面</div>
               ` : '<div class="no-cover">暂无封面</div>'}
+              <button class="card-favorite-btn ${isFav ? 'active' : ''}" onclick="event.preventDefault(); event.stopPropagation(); toggleCardFavorite('${game.id}', this)" title="${isFav ? '取消收藏' : '收藏'}">
+                <i class="${isFav ? 'fas' : 'far'} fa-heart"></i>
+              </button>
               <a href="${gamePageUrl}" class="card-download-btn" style="text-decoration:none;">下载游戏</a>
             </div>
           </a>
