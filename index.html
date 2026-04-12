@@ -1842,6 +1842,7 @@
           <span>下载桌面客户端</span>
         </button>
         <select class="sort-select" id="sortSelect" onchange="sortGames()">
+          <option value="default" selected>默认排序</option>
           <option value="hot">按下载热度排序</option>
           <option value="name">按字母排序</option>
           <option value="update">按更新时间排序</option>
@@ -3102,7 +3103,16 @@
     function sortGames() {
       const sortType = document.getElementById('sortSelect').value;
       
-      if (sortType === 'name') {
+      if (sortType === 'default') {
+        // 默认排序：保持原始顺序，不重新排序
+        // 从原始 games 数组恢复顺序
+        const gameOrder = new Map(games.map((g, i) => [g.id, i]));
+        filteredGames.sort((a, b) => {
+          const indexA = gameOrder.get(a.id) || 0;
+          const indexB = gameOrder.get(b.id) || 0;
+          return indexA - indexB;
+        });
+      } else if (sortType === 'name') {
         // 按字母排序：数字转换为拼音首字母（1→Y, 2→E, 3→S, 4→S, 5→W, 6→L, 7→Q, 8→B, 9→J, 0→L）
         const numToPinyin = {
           '0': 'L', '1': 'Y', '2': 'E', '3': 'S', '4': 'S',
@@ -3130,7 +3140,7 @@
           const timeB = b.updateTime || b.dateAdded || 0;
           return timeB - timeA;
         });
-      } else {
+      } else if (sortType === 'hot') {
         // 按下载热度排序（使用服务器统计的 downloadsWeb + downloadsApp，如果没有则使用 hot 字段）
         filteredGames.sort((a, b) => {
           const clicksA = (a.downloadsWeb || 0) + (a.downloadsApp || 0) || a.hot || 0;
