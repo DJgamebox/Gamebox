@@ -3055,16 +3055,23 @@
       } else if (sortType === 'update') {
         // 按更新时间排序（最新的在前）
         filteredGames.sort((a, b) => {
-          const dateA = new Date(a.updatedAt || a.createdAt || 0);
-          const dateB = new Date(b.updatedAt || b.createdAt || 0);
-          return dateB - dateA;
+          // 支持多种字段名：updateTime (timestamp), dateAdded (string), updatedAt/createdAt
+          const timeA = a.updateTime || new Date(a.dateAdded || a.updatedAt || 0).getTime();
+          const timeB = b.updateTime || new Date(b.dateAdded || b.updatedAt || 0).getTime();
+          return timeB - timeA;
         });
       } else {
-        // 按下载热度排序（默认，使用点击次数，如果没有则按ID排序保持原有顺序）
+        // 按下载热度排序（默认，使用点击次数，如果没有则按updateTime排序）
         filteredGames.sort((a, b) => {
           const clicksA = getDownloadClicks(a.id);
           const clicksB = getDownloadClicks(b.id);
-          return clicksB - clicksA;
+          if (clicksB !== clicksA) {
+            return clicksB - clicksA;
+          }
+          // 点击数相同则按更新时间排序
+          const timeA = a.updateTime || new Date(a.dateAdded || 0).getTime();
+          const timeB = b.updateTime || new Date(b.dateAdded || 0).getTime();
+          return timeB - timeA;
         });
       }
       
