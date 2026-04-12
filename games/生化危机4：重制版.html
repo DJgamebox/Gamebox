@@ -981,7 +981,7 @@
             const overlay = document.createElement('div');
             overlay.id = 'shortcutTipOverlay';
             overlay.className = 'modal-overlay show';
-            overlay.style.zIndex = '2001';
+            overlay.style.zIndex = '3000';
             overlay.onclick = function(e) {
                 if (e.target === overlay) {
                     document.body.removeChild(overlay);
@@ -989,17 +989,31 @@
             };
             
             overlay.innerHTML = `
-                <div class="modal" style="max-width: 360px; background: var(--bg-card); border-radius: 12px; border: 1px solid var(--border-color); overflow: hidden;" onclick="event.stopPropagation()">
-                    <div style="padding: 24px; text-align: center;">
+                <div class="modal" style="max-width: 380px; background: var(--bg-card); border-radius: 16px; border: 1px solid var(--border-color); overflow: hidden; text-align: center;" onclick="event.stopPropagation()">
+                    <div style="padding: 32px 24px 24px;">
                         <i class="fas fa-keyboard" style="font-size: 48px; color: var(--accent-blue); margin-bottom: 16px;"></i>
-                        <div style="font-size: 18px; font-weight: 600; color: var(--text-white); margin-bottom: 12px;">浏览器快捷键</div>
-                        <div style="font-size: 14px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 20px;">
-                            <p style="margin-bottom: 8px;"><strong>Chrome/Edge:</strong> Ctrl + J</p>
-                            <p style="margin-bottom: 8px;"><strong>Firefox:</strong> Ctrl + Shift + Y</p>
-                            <p><strong>Safari:</strong> Command + Option + L</p>
+                        <div style="font-size: 18px; font-weight: 600; color: var(--text-white); margin-bottom: 8px;">请按快捷键查看下载</div>
+                        <div style="font-size: 13px; color: var(--text-secondary); margin-bottom: 24px;">同时按下以下两个按键</div>
+                        
+                        <div style="display: flex; justify-content: center; align-items: center; gap: 12px; margin-bottom: 32px;">
+                            <div style="padding: 16px 24px; background: var(--bg-dark); border: 2px solid var(--border-color); border-radius: 8px; font-size: 18px; font-weight: 600; color: var(--text-white); min-width: 60px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+                                Ctrl
+                            </div>
+                            <span style="font-size: 24px; color: var(--text-secondary);">+</span>
+                            <div style="padding: 16px 24px; background: var(--bg-dark); border: 2px solid var(--accent-blue); border-radius: 8px; font-size: 18px; font-weight: 600; color: var(--accent-blue); min-width: 60px; box-shadow: 0 4px 12px rgba(102, 192, 244, 0.3);">
+                                J
+                            </div>
                         </div>
+                        
+                        <div style="background: rgba(102, 192, 244, 0.1); border-radius: 8px; padding: 16px; margin-bottom: 24px;">
+                            <i class="fas fa-info-circle" style="color: var(--accent-blue); margin-right: 8px;"></i>
+                            <span style="font-size: 13px; color: var(--text-secondary);">按完后浏览器会显示下载列表</span>
+                        </div>
+                        
                         <button onclick="document.getElementById('shortcutTipOverlay').remove();" 
-                                style="padding: 10px 24px; background: var(--accent-blue); border: none; border-radius: 6px; color: #fff; font-size: 14px; cursor: pointer;">
+                                style="padding: 12px 40px; background: var(--accent-blue); border: none; border-radius: 8px; color: #fff; font-size: 15px; font-weight: 600; cursor: pointer; transition: all 0.2s;"
+                                onmouseover="this.style.background='#4a9fd8'"
+                                onmouseout="this.style.background='var(--accent-blue)'">
                             知道了
                         </button>
                     </div>
