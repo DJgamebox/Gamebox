@@ -69,7 +69,7 @@ html = html.replace(/GAME_ID/g, targetGame.id || targetGame.name);
 html = html.replace(/GAME_CATEGORY/g, targetGame.category || '单机游戏');
 html = html.replace(/GAME_SIZE/g, targetGame.size || '未知');
 html = html.replace(/GAME_COVER/g, targetGame.cover || '');
-html = html.replace(/GAME_DATE/g, targetGame.date || '未知');
+html = html.replace(/GAME_DATE/g, targetGame.dateAdded || (targetGame.updateTime ? new Date(targetGame.updateTime).toLocaleDateString('zh-CN') : '未知'));
 
 const enName = targetGame.nameEn || '';
 html = html.replace(/EN_NAME/g, enName);

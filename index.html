@@ -2433,26 +2433,61 @@
     }
 
     async function syncFromCloud() {
-      // 如果有导入的本地数据，优先使用，不覆盖
-      if (typeof importedGames !== 'undefined' && importedGames.length > 0) {
-        updateSyncStatus('已加载 ' + games.length + ' 款游戏', true);
-        return;
-      }
-      
       updateSyncStatus('同步中...', true);
       try {
         const response = await fetch(`${CONFIG.apiBaseUrl}/api/games`);
         const data = await response.json();
         if (data.games && data.games.length > 0) {
-          games = data.games;
+          // 标准化 Worker API 返回的字段名（兼容 cn/en/type 格式）
+          games = data.games.map(game => ({
+            id: game.id,
+            name: game.name || game.cn || '',
+            nameEn: game.nameEn || game.en || '',
+            cover: game.cover || '',
+            screenshots: game.screenshots || [],
+            category: game.category || game.type || '',
+            size: game.size || '',
+            description: game.description || game.desc || '',
+            baiduLink1: game.baiduLink1 || game.link1 || '',
+            baiduLink2: game.baiduLink2 || game.link2 || '',
+            thunderLink: game.thunderLink || game.link3 || '',
+            favorite: false,
+            dateAdded: game.dateAdded || (game.updateTime ? new Date(game.updateTime).toLocaleDateString('zh-CN') : '') || (game.update ? new Date(game.update).toLocaleDateString('zh-CN') : ''),
+            updateTime: game.updateTime || game.update || Date.now(),
+            isDrm: game.isDrm || false,
+            downloadsWeb: game.downloadsWeb || 0,
+            downloadsApp: game.downloadsApp || 0,
+            hot: game.hot || 0
+          }));
           localStorage.setItem(CONFIG.localStorageKey, JSON.stringify(games));
           localStorage.setItem(CONFIG.localStorageTimeKey, new Date().toISOString());
           filterAndRender();
           updateStats();
           updateSyncStatus('同步完成', true);
+          return;
         }
       } catch (error) {
-        updateSyncStatus('同步失败', false);
+        console.error('云端同步失败:', error);
+      }
+      
+      // 云端获取失败，使用本地数据作为备用
+      if (typeof importedGames !== 'undefined' && importedGames.length > 0) {
+        games = importedGames.filter(game => game.id !== '_banner_config');
+        localStorage.setItem(CONFIG.localStorageKey, JSON.stringify(games));
+        localStorage.setItem(CONFIG.localStorageTimeKey, new Date().toISOString());
+        filterAndRender();
+        updateStats();
+        updateSyncStatus('已加载 ' + games.length + ' 款游戏 (本地)', true);
+      } else {
+        const localData = localStorage.getItem(CONFIG.localStorageKey);
+        if (localData) {
+          try {
+            games = JSON.parse(localData).filter(game => game.id !== '_banner_config');
+            filterAndRender();
+            updateStats();
+            updateSyncStatus('已加载 ' + games.length + ' 款游戏 (本地)', true);
+          } catch (e) {}
+        }
       }
     }
 
