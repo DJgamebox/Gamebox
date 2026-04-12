@@ -1363,8 +1363,9 @@
     }
 
     .feedback-submit {
+      flex: 1;
       padding: 12px 40px;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      background: #3b82f6;
       border: none;
       border-radius: 8px;
       color: #fff;
@@ -1375,8 +1376,28 @@
     }
 
     .feedback-submit:hover {
+      background: #2563eb;
       transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+      box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
+    }
+
+    .feedback-cancel {
+      flex: 1;
+      padding: 12px 40px;
+      background: #ef4444;
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .feedback-cancel:hover {
+      background: #dc2626;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(239, 68, 68, 0.4);
     }
 
     /* 白天模式 - 意见反馈样式 */
@@ -1411,11 +1432,21 @@
     }
 
     [data-theme="light"] .feedback-submit {
-      background: linear-gradient(135deg, #0969da 0%, #0550ae 100%);
+      background: #3b82f6;
     }
 
     [data-theme="light"] .feedback-submit:hover {
-      box-shadow: 0 8px 20px rgba(9, 105, 218, 0.3);
+      background: #2563eb;
+      box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+    }
+
+    [data-theme="light"] .feedback-cancel {
+      background: #ef4444;
+    }
+
+    [data-theme="light"] .feedback-cancel:hover {
+      background: #dc2626;
+      box-shadow: 0 8px 20px rgba(239, 68, 68, 0.3);
     }
 
     /* 表单样式 */
@@ -1986,8 +2017,9 @@
           <div class="form-group" style="margin-bottom: 20px;">
             <textarea class="form-control feedback-textarea" id="feedbackContent" rows="6" placeholder="请输入详细内容"></textarea>
           </div>
-          <div style="text-align: center;">
-            <button class="btn btn-primary feedback-submit" onclick="submitFeedback()">提交反馈</button>
+          <div style="display: flex; gap: 12px; justify-content: center;">
+            <button class="btn feedback-cancel" onclick="closeFeedbackModal()">取消</button>
+            <button class="btn feedback-submit" onclick="submitFeedback()">提交</button>
           </div>
         </div>
       </div>
@@ -2960,6 +2992,10 @@
     
     function showFeedback() { 
       document.getElementById('feedbackModal').classList.add('show');
+    }
+    
+    function closeFeedbackModal() {
+      document.getElementById('feedbackModal').classList.remove('show');
     }
     
     function showContact() { 
