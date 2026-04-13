@@ -105,15 +105,30 @@ function generateGamePage(game, index) {
     html = html.replace(/GAME_DESC/g, gameDesc);
     
     // 发布日期
-    // 更新时间 - 使用 updatedAt 字段并格式化为本地时间
-    const updatedAt = game.updatedAt || game.date;
+    // 更新时间 - 使用 updateTime 或 dateAdded 字段
+    // 优先级：updateTime (时间戳) > dateAdded (字符串)
+    let updatedAt = game.updateTime || game.updatedAt || game.date;
     let formattedDate = '未知';
+    
     if (updatedAt) {
         try {
-            const date = new Date(updatedAt);
-            formattedDate = date.toLocaleDateString('zh-CN', { year: 'numeric', month: '2-digit', day: '2-digit' });
+            // 如果是数字时间戳（毫秒）
+            if (typeof updatedAt === 'number' || !isNaN(Number(updatedAt))) {
+                const date = new Date(Number(updatedAt));
+                if (!isNaN(date.getTime())) {
+                    formattedDate = date.toLocaleDateString('zh-CN', { year: 'numeric', month: '2-digit', day: '2-digit' });
+                }
+            } else {
+                // 字符串日期，如 "2026/4/12"
+                const date = new Date(updatedAt);
+                if (!isNaN(date.getTime())) {
+                    formattedDate = date.toLocaleDateString('zh-CN', { year: 'numeric', month: '2-digit', day: '2-digit' });
+                } else {
+                    formattedDate = updatedAt;
+                }
+            }
         } catch (e) {
-            formattedDate = updatedAt;
+            formattedDate = String(updatedAt);
         }
     }
     html = html.replace(/GAME_DATE/g, formattedDate);
