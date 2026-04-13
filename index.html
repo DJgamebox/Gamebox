@@ -1055,6 +1055,15 @@
       border-radius: 3px;
     }
 
+    .card-size {
+      padding: 4px 10px;
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--text-secondary);
+      font-size: 12px;
+      border-radius: 3px;
+      margin-left: auto;
+    }
+
     /* 底部状态栏 */
     .status-bar {
       height: 40px;
@@ -2826,7 +2835,10 @@
               <div class="card-title">${game.name || '未命名'}</div>
               <div class="card-subtitle">${game.nameEn || ''}</div>
             </a>
-            <div class="card-tags"><span class="card-tag">${getMainCategory(game.category, game.name)}</span></div>
+            <div class="card-tags">
+              <span class="card-tag">${getMainCategory(game.category, game.name)}</span>
+              ${game.size ? `<span class="card-size">${game.size}</span>` : ''}
+            </div>
           </div>
         </div>
       `}).join('');
