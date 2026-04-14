@@ -514,26 +514,26 @@
         
         <div class="game-header">
             <div class="game-cover">
-                <img src="https://api.djgamebox.com/api/covers/covers/167.jpg" alt="死或生6" onerror="this.style.display='none'">
+                <img id="gameCover" src="https://api.djgamebox.com/api/covers/covers/167.jpg" alt="死或生6" onerror="this.style.display='none'">
             </div>
             <div class="game-info">
-                <h1 class="game-title">死或生6</h1>
-                <div class="game-title-en" style="display: block;">Dead or Alive 6</div>
+                <h1 class="game-title" id="gameName">死或生6</h1>
+                <div class="game-title-en" id="gameNameEn" style="display: block;">Dead or Alive 6</div>
                 <div class="game-meta">
                     <div class="meta-item">
                         <i class="fas fa-folder"></i>
                         <span class="meta-label">游戏类型：</span>
-                        <span class="meta-value">格斗</span>
+                        <span class="meta-value" id="gameCategory">格斗</span>
                     </div>
                     <div class="meta-item">
                         <i class="fas fa-hdd"></i>
                         <span class="meta-label">游戏大小：</span>
-                        <span class="meta-value">未知</span>
+                        <span class="meta-value" id="gameSize">未知</span>
                     </div>
                     <div class="meta-item">
                         <i class="far fa-calendar-alt"></i>
                         <span class="meta-label">更新时间：</span>
-                        <span class="meta-value">2026/04/09</span>
+                        <span class="meta-value" id="gameDate">2026/04/09</span>
                     </div>
                 </div>
                 <div class="action-buttons">
@@ -806,7 +806,7 @@
         // ========== 动态加载最新数据 ==========
         (async function loadDynamicData() {
             const gameId = '167';
-            if (!gameId || gameId === '167') {
+            if (!gameId) {
                 document.getElementById('loadingOverlay').classList.add('hidden');
                 return;
             }
@@ -851,7 +851,10 @@
                 }
                 
                 document.getElementById('gameCategory').textContent = category;
-                document.getElementById('gameSize').textContent = size || '未知';
+                // 只有 API 返回了有效的 size 才更新，否则保留硬编码值
+                if (game.size && game.size.trim() !== '') {
+                    document.getElementById('gameSize').textContent = game.size;
+                }
                 
                 // 格式化更新时间
                 if (updateTime) {
