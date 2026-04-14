@@ -832,7 +832,9 @@
                 
                 // 更新 DOM
                 document.getElementById('gameName').textContent = name;
-                document.getElementById('breadcrumbName').textContent = name;
+                // 安全更新面包屑导航（如果存在）
+                const breadcrumbEl = document.getElementById('breadcrumbName');
+                if (breadcrumbEl) breadcrumbEl.textContent = name;
                 document.title = name + ' - 游戏下载 - 游戏盒子';
                 
                 if (nameEn) {
