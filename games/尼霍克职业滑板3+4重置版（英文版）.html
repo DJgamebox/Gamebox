@@ -618,18 +618,19 @@
                 // 当前是白天，切换到夜晚模式，显示月亮
                 html.removeAttribute('data-theme');
                 icon.className = 'fas fa-moon';
-                localStorage.setItem('theme', 'dark');
+                localStorage.setItem('gamebox_theme', 'dark');
             } else {
                 // 当前是夜晚，切换到白天模式，显示太阳
                 html.setAttribute('data-theme', 'light');
                 icon.className = 'fas fa-sun';
-                localStorage.setItem('theme', 'light');
+                localStorage.setItem('gamebox_theme', 'light');
             }
         }
         
         // 页面加载时应用保存的主题
         document.addEventListener('DOMContentLoaded', function() {
-            const savedTheme = localStorage.getItem('theme');
+            // 优先从主界面同步主题，如果没有则使用本地保存的
+            const savedTheme = localStorage.getItem('gamebox_theme');
             const icon = document.getElementById('themeIcon');
             if (savedTheme === 'light') {
                 // 白天模式：显示太阳（点击切换到夜晚）
@@ -637,6 +638,7 @@
                 icon.className = 'fas fa-sun';
             } else {
                 // 夜晚模式：显示月亮（点击切换到白天）
+                document.documentElement.removeAttribute('data-theme');
                 icon.className = 'fas fa-moon';
             }
             
