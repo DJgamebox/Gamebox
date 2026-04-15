@@ -2978,8 +2978,6 @@
         // 设置页码并渲染（不调用 filterAndRender 避免重置页码）
         currentPage = pageNum;
         renderGames();
-        // 清除 URL 参数
-        window.history.replaceState({}, document.title, window.location.pathname);
       }
     }
 
