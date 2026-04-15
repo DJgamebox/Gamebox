@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>践踏之塔下载_Tower of Trample_百度网盘_迅雷云盘_免费下载 - 游戏盒子</title>
-    <meta name="description" content="践踏之塔免费下载，提供百度网盘、迅雷云盘高速下载链接，动作角色扮演游戏，绿色免安装中文版，游戏盒子提供最新最全的单机游戏资源下载。">
-    <meta name="keywords" content="践踏之塔下载,践踏之塔网盘,践踏之塔百度云,动作角色扮演游戏下载,单机游戏网盘,游戏盒子">
+    <meta name="description" content="践踏之塔免费下载，提供百度网盘、迅雷云盘高速下载链接，动作角色扮演游戏，绿色免安装中文版，游戏盒子提供最新最全的单机游戏资源下载�?>
+    <meta name="keywords" content="践踏之塔下载,践踏之塔网盘,践踏之塔百度�?动作角色扮演游戏下载,单机游戏网盘,游戏盒子">
     <link rel="canonical" href="https://djgamebox.com/games/践踏之塔.html">
     <link rel="icon" href="../favicon.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -268,7 +268,7 @@
             transition: all 0.2s;
             border: 1px solid var(--border-color);
         }
-        /* 夜晚模式 - 灰黑色底色 */
+        /* 夜晚模式 - 灰黑色底�?*/
         .download-btn.baidu {
             background: #2a2a3e;
             color: var(--text-primary);
@@ -488,24 +488,23 @@
                 <div class="game-meta">
                     <div class="meta-item">
                         <i class="fas fa-folder"></i>
-                        <span class="meta-label">游戏类型：</span>
+                        <span class="meta-label">游戏类型�?/span>
                         <span class="meta-value" id="gameCategory">动作角色扮演</span>
                     </div>
                     <div class="meta-item">
                         <i class="fas fa-hdd"></i>
-                        <span class="meta-label">游戏大小：</span>
+                        <span class="meta-label">游戏大小�?/span>
                         <span class="meta-value" id="gameSize">未知</span>
                     </div>
                     <div class="meta-item">
                         <i class="far fa-calendar-alt"></i>
-                        <span class="meta-label">更新时间：</span>
+                        <span class="meta-label">更新时间�?/span>
                         <span class="meta-value" id="gameDate">未知</span>
                     </div>
                 </div>
                 <div class="action-buttons">
                     <a href="https://pan.baidu.com/s/1ulz1H0Ga9NsN2InBi05EwA?pwd=8888" target="_blank" class="action-btn desktop">
-                        <i class="fas fa-download"></i>下载桌面客户端
-                    </a>
+                        <i class="fas fa-download"></i>下载桌面客户�?                    </a>
                     <button class="action-btn favorite" onclick="toggleFavorite()">
                         <i class="far fa-heart"></i><span id="favText">收藏</span>
                     </button>
@@ -522,7 +521,7 @@
         
         <div class="game-description">
             <h2><i class="fas fa-info-circle"></i>游戏介绍</h2>
-            <p>践踏之塔是一款动作角色扮演游戏。本站提供践踏之塔百度网盘、迅雷云盘高速下载，绿色免安装中文版，解压即可玩。</p>
+            <p>践踏之塔是一款动作角色扮演游戏。本站提供践踏之塔百度网盘、迅雷云盘高速下载，绿色免安装中文版，解压即可玩�?/p>
         </div>
         
         <a href="../" class="back-link" id="backLink"><i class="fas fa-arrow-left"></i>返回游戏列表</a>
@@ -542,13 +541,13 @@
                 btn.classList.remove('active');
                 text.textContent = '收藏';
                 icon.className = 'far fa-heart';
-                alert('已取消收藏');
+                alert('已取消收�?);
             } else {
                 favorites.push(gameId);
                 btn.classList.add('active');
-                text.textContent = '已收藏';
+                text.textContent = '已收�?;
                 icon.className = 'fas fa-heart';
-                alert('已添加到收藏夹');
+                alert('已添加到收藏�?);
             }
             
             localStorage.setItem('gamebox_favorites', JSON.stringify(favorites));
@@ -575,8 +574,7 @@
         
         // 页面加载时应用保存的主题
         document.addEventListener('DOMContentLoaded', function() {
-            // 优先从主界面同步主题，如果没有则使用本地保存的
-            const savedTheme = localStorage.getItem('gamebox_theme');
+            // 优先从主界面同步主题，如果没有则使用本地保存�?            const savedTheme = localStorage.getItem('gamebox_theme');
             const icon = document.getElementById('themeIcon');
             if (savedTheme === 'light') {
                 // 白天模式：显示太阳（点击切换到夜晚）
@@ -588,20 +586,18 @@
                 icon.className = 'fas fa-moon';
             }
             
-            // 收藏状态检查
-            const gameId = 'game_1695_1775791560088_ny80op';
+            // 收藏状态检�?            const gameId = 'game_1695_1775791560088_ny80op';
             const favorites = JSON.parse(localStorage.getItem('gamebox_favorites') || '[]');
             if (favorites.includes(gameId)) {
                 const btn = document.querySelector('.action-btn.favorite');
                 const text = document.getElementById('favText');
                 const icon = btn.querySelector('i');
                 btn.classList.add('active');
-                text.textContent = '已收藏';
+                text.textContent = '已收�?;
                 icon.className = 'fas fa-heart';
             }
             
-            // 检查登录状态
-            checkLoginStatus();
+            // 检查登录状�?            checkLoginStatus();
         });
         
         // 搜索功能
@@ -643,20 +639,18 @@
                     return;
                 }
                 const seriesData = await response.json();
-                console.log('game-series.json 加载成功, 系列数:', Object.keys(seriesData).length);
+                console.log('game-series.json 加载成功, 系列�?', Object.keys(seriesData).length);
                 const currentGame = document.querySelector('.game-title').textContent.trim();
                 console.log('当前游戏:', currentGame);
                 
                 let currentSeries = '';
                 for (const [seriesName, games] of Object.entries(seriesData)) {
-                    // 模糊匹配：提取游戏名称的核心部分（去除版本号、符号等）
-                    const isMatch = games.some(g => {
+                    // 模糊匹配：提取游戏名称的核心部分（去除版本号、符号等�?                    const isMatch = games.some(g => {
                         // 直接包含匹配
                         if (currentGame.includes(g) || g.includes(currentGame)) return true;
                         
-                        // 提取核心名称（去除冒号、斜杠、加号等符号后的第一部分）
-                        const currentCore = currentGame.split(/[：:\/\+_]/)[0].trim();
-                        const gameCore = g.split(/[：:\/\+_]/)[0].trim();
+                        // 提取核心名称（去除冒号、斜杠、加号等符号后的第一部分�?                        const currentCore = currentGame.split(/[�?\/\+_]/)[0].trim();
+                        const gameCore = g.split(/[�?\/\+_]/)[0].trim();
                         
                         // 核心名称匹配
                         if (currentCore === gameCore) return true;
@@ -692,21 +686,19 @@
             resolve();
             });
         }
-        // 添加免责声明（在游戏系列之后）
-        function addDisclaimer() {
+        // 添加免责声明（在游戏系列之后�?        function addDisclaimer() {
             const disclaimerHtml = `
                 <div class="disclaimer" style="margin-top: 40px; padding: 20px; background: var(--bg-card); border-radius: 8px; border: 1px solid var(--border-color);">
                     <h4 style="color: var(--accent-blue); text-align: center; margin-bottom: 12px; font-size: 14px;"># 免责声明 #</h4>
                     <p style="font-size: 11px; color: var(--text-secondary); line-height: 1.8; text-align: justify;">
-                        本站提供的资源转载自国内外各大媒体和网络，仅供试玩体验；不得将上述内容用于商业或者非法用途，否则，一切后果请用户自负。您必须在下载后的24个小时之内，从您的电脑中彻底删除上述内容。如果您喜欢该游戏内容，请支持正版，购买注册，得到更好的正版服务。我们非常重视版权问题，如有侵权请邮件与我们联系处理。敬请谅解！E-mail：<a href="mailto:danjiyouxihezi@gmail.com" style="color: var(--accent-blue);">danjiyouxihezi@gmail.com</a>
+                        本站提供的资源转载自国内外各大媒体和网络，仅供试玩体验；不得将上述内容用于商业或者非法用途，否则，一切后果请用户自负。您必须在下载后�?4个小时之内，从您的电脑中彻底删除上述内容。如果您喜欢该游戏内容，请支持正版，购买注册，得到更好的正版服务。我们非常重视版权问题，如有侵权请邮件与我们联系处理。敬请谅解！E-mail�?a href="mailto:danjiyouxihezi@gmail.com" style="color: var(--accent-blue);">danjiyouxihezi@gmail.com</a>
                     </p>
                 </div>
             `;
             document.querySelector('.container').insertAdjacentHTML('beforeend', disclaimerHtml);
         }
         
-        // 设置返回链接（带页码参数）
-        const urlParams = new URLSearchParams(window.location.search);
+        // 设置返回链接（带页码参数�?        const urlParams = new URLSearchParams(window.location.search);
         const page = urlParams.get('page');
         const filter = urlParams.get('filter');
         if (page) {
