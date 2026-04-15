@@ -2751,7 +2751,7 @@
       filterAndRender();
     }
 
-    function filterAndRender() {
+    function filterAndRender(keepPage = false) {
       const search = document.getElementById('searchInput').value.toLowerCase();
       filteredGames = games.filter(game => {
         const matchSearch = !search || 
@@ -2763,7 +2763,16 @@
         else if (currentFilter !== 'all') matchFilter = getMainCategory(game.category, game.name) === currentFilter;
         return matchSearch && matchFilter;
       });
-      currentPage = 0;
+      // 如果从游戏详情页返回，保留页码
+      if (!keepPage) {
+        const urlParams = new URLSearchParams(window.location.search);
+        const pageParam = urlParams.get('page');
+        if (pageParam) {
+          currentPage = parseInt(pageParam) - 1;
+        } else {
+          currentPage = 0;
+        }
+      }
       renderGames();
     }
 
