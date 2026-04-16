@@ -52,12 +52,13 @@ function getSafeFilename(name) {
 // 生成游戏详情页 HTML
 function generateGamePage(game, index) {
     const safeName = getSafeFilename(game.name);
+    const gameId = game.id || index + 1;
     
     // 准备替换数据
     const title = `${game.name}下载_${game.nameEn || '单机游戏'}_百度网盘_迅雷云盘_免费下载 - 游戏盒子`;
     const description = `${game.name}免费下载，提供百度网盘、迅雷云盘高速下载链接，${game.category || '单机'}游戏，绿色免安装中文版，游戏盒子提供最新最全的单机游戏资源下载。`;
     const keywords = `${game.name}下载,${game.name}网盘,${game.name}百度云,${game.category || '单机'}游戏下载,单机游戏网盘,游戏盒子`;
-    const canonical = `https://djgamebox.com/games/${safeName}.html`;
+    const canonical = `https://djgamebox.com/games/${gameId}.html`;
     
     // 生成下载按钮（使用 logo 图片）
     // 兼容两种字段格式：扁平字段 (baiduLink1) 和嵌套字段 (downloadLinks.baidu)
@@ -146,8 +147,8 @@ for (let i = 0; i < games.length; i++) {
     const game = games[i];
     if (!game.name) continue;
     
-    const safeName = getSafeFilename(game.name);
-    const filename = path.join(gamesDir, `${safeName}.html`);
+    const gameId = game.id || i + 1;
+    const filename = path.join(gamesDir, `${gameId}.html`);
     
     try {
         const html = generateGamePage(game, i);

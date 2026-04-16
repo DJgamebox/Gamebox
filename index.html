@@ -2829,7 +2829,7 @@
       
       grid.innerHTML = visibleGames.map((game, index) => {
         const isFav = isFavorited(game.id);
-        const gamePageUrl = `games/${getSafeFilename(game.name)}.html?page=${currentPage + 1}&filter=${currentFilter}`;
+        const gamePageUrl = `games/${game.id}.html?page=${currentPage + 1}&filter=${currentFilter}`;
         const isPriority = index < 8; // 前8张图片优先加载
         
         return `

@@ -39,9 +39,9 @@ let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 // 添加所有游戏页面
 for (const game of games) {
     if (!game.name) continue;
-    const safeName = getSafeFilename(game.name);
+    const gameId = game.id || game.name;
     sitemap += `  <url>
-    <loc>https://djgamebox.com/games/${safeName}.html</loc>
+    <loc>https://djgamebox.com/games/${gameId}.html</loc>
     <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
