@@ -2610,7 +2610,8 @@
             isDrm: game.isDrm || false,
             downloadsWeb: game.downloadsWeb || 0,
             downloadsApp: game.downloadsApp || 0,
-            hot: game.hot || 0
+            hot: game.hot || 0,
+            sortOrder: game.sortOrder !== undefined ? game.sortOrder : (game.id + 1000)
           }));
           localStorage.setItem(CONFIG.localStorageKey, JSON.stringify(games));
           localStorage.setItem(CONFIG.localStorageTimeKey, new Date().toISOString());
@@ -3140,13 +3141,11 @@
       const sortType = document.getElementById('sortSelect').value;
       
       if (sortType === 'default') {
-        // 默认排序：保持原始顺序，不重新排序
-        // 从原始 games 数组恢复顺序
-        const gameOrder = new Map(games.map((g, i) => [g.id, i]));
+        // 默认排序：按 sortOrder 排序（sortOrder 越小越靠前）
         filteredGames.sort((a, b) => {
-          const indexA = gameOrder.get(a.id) || 0;
-          const indexB = gameOrder.get(b.id) || 0;
-          return indexA - indexB;
+          const orderA = a.sortOrder !== undefined ? a.sortOrder : (a.id + 1000);
+          const orderB = b.sortOrder !== undefined ? b.sortOrder : (b.id + 1000);
+          return orderA - orderB;
         });
       } else if (sortType === 'name') {
         // 按字母排序：数字转换为拼音首字母（1→Y, 2→E, 3→S, 4→S, 5→W, 6→L, 7→Q, 8→B, 9→J, 0→L）
