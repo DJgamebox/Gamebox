@@ -2626,7 +2626,10 @@
       
       // 云端获取失败，使用本地数据作为备用
       if (typeof importedGames !== 'undefined' && importedGames.length > 0) {
-        games = importedGames.filter(game => game.id !== '_banner_config');
+        games = importedGames.filter(game => game.id !== '_banner_config').map(game => ({
+          ...game,
+          sortOrder: game.sortOrder !== undefined ? game.sortOrder : (game.id + 1000)
+        }));
         localStorage.setItem(CONFIG.localStorageKey, JSON.stringify(games));
         localStorage.setItem(CONFIG.localStorageTimeKey, new Date().toISOString());
         filterAndRender();
@@ -2636,7 +2639,10 @@
         const localData = localStorage.getItem(CONFIG.localStorageKey);
         if (localData) {
           try {
-            games = JSON.parse(localData).filter(game => game.id !== '_banner_config');
+            games = JSON.parse(localData).filter(game => game.id !== '_banner_config').map(game => ({
+              ...game,
+              sortOrder: game.sortOrder !== undefined ? game.sortOrder : (game.id + 1000)
+            }));
             filterAndRender();
             updateStats();
             updateSyncStatus('已加载 ' + games.length + ' 款游戏 (本地)', true);
