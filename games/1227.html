@@ -528,7 +528,7 @@
                     <div class="meta-item">
                         <i class="fas fa-hdd"></i>
                         <span class="meta-label">游戏大小：</span>
-                        <span class="meta-value">未知</span>
+                        <span class="meta-value" id="gameSize">未知</span>
                     </div>
                     <div class="meta-item">
                         <i class="far fa-calendar-alt"></i>
@@ -806,7 +806,7 @@
         // ========== 动态加载最新数据 ==========
         (async function loadDynamicData() {
             const gameId = '1227';
-            if (!gameId || gameId === '1227') {
+            if (!gameId) {
                 document.getElementById('loadingOverlay').classList.add('hidden');
                 return;
             }
@@ -817,12 +817,14 @@
                 if (!response.ok) throw new Error('API 请求失败: ' + response.status);
                 
                 const result = await response.json();
-                if (!result.success || !Array.isArray(result.data)) {
+                // 支持两种API格式: {games: [...]} 或 {success: true, data: [...]}
+                const games = result.games || result.data || [];
+                if (!Array.isArray(games)) {
                     throw new Error('API 返回格式错误');
                 }
                 
                 // 查找当前游戏
-                const game = result.data.find(g => String(g.id) === String(gameId));
+                const game = games.find(g => String(g.id) === String(gameId));
                 if (!game) {
                     console.log('[动态加载] 未找到游戏 ID:', gameId);
                     document.getElementById('loadingOverlay').classList.add('hidden');
