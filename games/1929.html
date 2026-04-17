@@ -577,13 +577,13 @@
                 btn.classList.remove('active');
                 text.textContent = '收藏';
                 icon.className = 'far fa-heart';
-                showToast('宸插彇娑堟敹钘?, 'info');
+                showToast('已取消收藏', 'info');
             } else {
                 favorites.push(gameId);
                 btn.classList.add('active');
-                text.textContent = '宸叉敹钘?;
+                text.textContent = '已收藏';
                 icon.className = 'fas fa-heart';
-                showToast('宸叉坊鍔犲埌鏀惰棌澶?, 'success');
+                showToast('已添加到收藏', 'success');
             }
             
             localStorage.setItem(FAVORITES_KEY, JSON.stringify(favorites));
@@ -658,7 +658,7 @@
                 const text = document.getElementById('favText');
                 const icon = btn.querySelector('i');
                 btn.classList.add('active');
-                text.textContent = '宸叉敹钘?;
+                text.textContent = '已收藏';
                 icon.className = 'fas fa-heart';
             }
             
@@ -669,7 +669,7 @@
                     const icon = btn.querySelector('i');
                     if (event.data.isFav) {
                         btn.classList.add('active');
-                        text.textContent = '宸叉敹钘?;
+                        text.textContent = '已收藏';
                         icon.className = 'fas fa-heart';
                     } else {
                         btn.classList.remove('active');
