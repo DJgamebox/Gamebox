@@ -804,7 +804,10 @@
         loadGameSeries().then(addDisclaimer).catch(addDisclaimer);
 
         // ========== 动态加载最新数据 ==========
-        (async function loadDynamicData() {
+        document.addEventListener('DOMContentLoaded', async function() {
+          // 延迟执行动态加载，确保 DOM 完全加载
+          setTimeout(async function() {
+            
             const gameId = '239';
             if (!gameId) {
                 document.getElementById('loadingOverlay').classList.add('hidden');
@@ -904,7 +907,9 @@
             } finally {
                 document.getElementById('loadingOverlay').classList.add('hidden');
             }
-        })();
+        
+          }, 100);
+        });
         
         // 下载桌面客户端（与主页保持一致）
         async function downloadClient(source = 'detail') {
