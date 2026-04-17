@@ -814,7 +814,7 @@
                 }
                 
                 // 鏌ユ壘褰撳墠娓告垙
-                const game = result.data.find(g => String(g.id) === String(gameId));
+                const game = games.find(g => String(g.id) === String(gameId));
                 if (!game) {
                     console.log('[鍔ㄦ€佸姞杞絔 鏈壘鍒版父鎴?ID:', gameId);
                     document.getElementById('loadingOverlay').classList.add('hidden');
