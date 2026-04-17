@@ -806,7 +806,7 @@
         // ========== 动态加载最新数据 ==========
         (async function loadDynamicData() {
             const gameId = '746';
-            if (!gameId || gameId === '746') {
+            if (!gameId) {
                 document.getElementById('loadingOverlay').classList.add('hidden');
                 return;
             }
