@@ -17,6 +17,9 @@ jobs:
         with:
           node-version: '20'
       
+      - name: Generate Game Pages
+        run: node generate-game-pages.js
+      
       - name: Install Vercel CLI
         run: npm install --global vercel@latest
       
