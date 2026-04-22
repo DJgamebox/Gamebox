@@ -528,7 +528,7 @@
                     <div class="meta-item">
                         <i class="fas fa-hdd"></i>
                         <span class="meta-label">游戏大小：</span>
-                        <span class="meta-value" id="gameSize">未知</span>
+                        <span class="meta-value">未知</span>
                     </div>
                     <div class="meta-item">
                         <i class="far fa-calendar-alt"></i>
@@ -804,12 +804,9 @@
         loadGameSeries().then(addDisclaimer).catch(addDisclaimer);
 
         // ========== 动态加载最新数据 ==========
-        document.addEventListener('DOMContentLoaded', async function() {
-          // 延迟执行动态加载，确保 DOM 完全加载
-          setTimeout(async function() {
-            
+        (async function loadDynamicData() {
             const gameId = '26';
-            if (!gameId) {
+            if (!gameId || gameId === '26') {
                 document.getElementById('loadingOverlay').classList.add('hidden');
                 return;
             }
@@ -820,14 +817,12 @@
                 if (!response.ok) throw new Error('API 请求失败: ' + response.status);
                 
                 const result = await response.json();
-                // 支持两种API格式: {games: [...]} 或 {success: true, data: [...]}
-                const games = result.games || result.data || [];
-                if (!Array.isArray(games)) {
+                if (!result.success || !Array.isArray(result.data)) {
                     throw new Error('API 返回格式错误');
                 }
                 
                 // 查找当前游戏
-                const game = games.find(g => String(g.id) === String(gameId));
+                const game = result.data.find(g => String(g.id) === String(gameId));
                 if (!game) {
                     console.log('[动态加载] 未找到游戏 ID:', gameId);
                     document.getElementById('loadingOverlay').classList.add('hidden');
@@ -881,13 +876,13 @@
                     const link3 = game.link3 || game.thunderLink;
                     
                     if (link1) {
-                        linksHtml += `<a href="javascript:void(0)" onclick="recordGameDownload(gameId, '${link1}')" class="download-btn baidu"><img src="../images/baidu-icon-v2.png" alt="百度网盘" style="width:20px;height:20px;vertical-align:middle;margin-right:6px;">百度网盘下载</a>`;
+                        linksHtml += `<a href="${link1}" target="_blank" class="download-btn baidu"><img src="../images/baidu-icon-v2.png" alt="百度网盘" style="width:20px;height:20px;vertical-align:middle;margin-right:6px;">百度网盘下载</a>`;
                     }
                     if (link2) {
-                        linksHtml += `<a href="javascript:void(0)" onclick="recordGameDownload(gameId, '${link2}')" class="download-btn baidu"><img src="../images/baidu-icon-v2.png" alt="百度网盘" style="width:20px;height:20px;vertical-align:middle;margin-right:6px;">百度网盘备用</a>`;
+                        linksHtml += `<a href="${link2}" target="_blank" class="download-btn baidu"><img src="../images/baidu-icon-v2.png" alt="百度网盘" style="width:20px;height:20px;vertical-align:middle;margin-right:6px;">百度网盘备用</a>`;
                     }
                     if (link3) {
-                        linksHtml += `<a href="javascript:void(0)" onclick="recordGameDownload(gameId, '${link3}')" class="download-btn thunder"><img src="../images/xunlei-icon-v2.png" alt="迅雷" style="width:20px;height:20px;vertical-align:middle;margin-right:6px;">迅雷下载</a>`;
+                        linksHtml += `<a href="${link3}" target="_blank" class="download-btn thunder"><img src="../images/xunlei-icon-v2.png" alt="迅雷" style="width:20px;height:20px;vertical-align:middle;margin-right:6px;">迅雷下载</a>`;
                     }
                     
                     if (linksHtml) {
@@ -907,9 +902,7 @@
             } finally {
                 document.getElementById('loadingOverlay').classList.add('hidden');
             }
-        
-          }, 100);
-        });
+        })();
         
         // 下载桌面客户端（与主页保持一致）
         async function downloadClient(source = 'detail') {
@@ -932,8 +925,8 @@
             
             // 直接下载本地安装包
             const link = document.createElement('a');
-            link.href = '../downloads/游戏盒子 Setup 1.1.0.exe';
-            link.download = '游戏盒子 Setup 1.1.0.exe';
+            link.href = '../downloads/游戏盒子 Setup 1.1.2.exe';
+            link.download = '游戏盒子 Setup 1.1.2.exe';
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
@@ -1041,28 +1034,6 @@
             
             document.body.appendChild(overlay);
         }
-    
-        // 记录游戏下载并跳转 - 5.27 新增
-        async function recordGameDownload(gameId, link) {
-            try {
-                await fetch('https://api.djgamebox.com/api/game-download', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        gameId: gameId,
-                        source: 'web',
-                        page: window.location.href,
-                        timestamp: new Date().toISOString()
-                    })
-                });
-            } catch (error) {
-                console.error('记录游戏下载失败:', error);
-            }
-            // 跳转
-            window.open(link, '_blank');
-        }
-</script>
+    </script>
 </body>
 </html>
